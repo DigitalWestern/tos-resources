@@ -278,6 +278,188 @@
             background: #196f3d;
         }
 
+        .explainer {
+            max-width: 720px;
+            padding: 40px 28px;
+            margin: 0 auto;
+            text-align: left;
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+        }
+
+        .explainer h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #1a5276;
+            margin-bottom: 16px;
+        }
+
+        .explainer p {
+            font-size: 0.95rem;
+            color: #5d7b96;
+            line-height: 1.75;
+            margin-bottom: 12px;
+        }
+
+        .explainer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .guided-flow {
+            max-width: 720px;
+            padding: 36px 28px;
+            margin: 24px auto 0;
+            text-align: left;
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-left: 4px solid #2980b9;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+        }
+
+        .guided-flow > h2 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1a5276;
+            margin-bottom: 6px;
+        }
+
+        .guided-flow > p {
+            font-size: 0.92rem;
+            color: #5d7b96;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .guided-flow > p.origin-note {
+            font-size: 0.85rem;
+            font-style: italic;
+            color: #85a5be;
+            margin-bottom: 20px;
+        }
+
+        .flow-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: #d6eaf8;
+            color: #1a5276;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 2px;
+        }
+
+        .flow-step strong {
+            display: block;
+            font-size: 0.95rem;
+            color: #1a3d5c;
+            margin-bottom: 4px;
+        }
+
+        .flow-step p {
+            font-size: 0.85rem;
+            color: #5d7b96;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .last-updated {
+            font-size: 0.72rem;
+            color: #85a5be;
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .section-label.community h2 {
+            color: #2e86c1;
+            border-bottom-color: #2e86c1;
+        }
+
+        .community-links {
+            max-width: 860px;
+            width: 100%;
+            padding: 24px;
+        }
+
+        .community-links > p {
+            font-size: 0.92rem;
+            color: #5d7b96;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            max-width: 620px;
+        }
+
+        .community-grid {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .community-link {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex: 1;
+            min-width: 240px;
+            max-width: 380px;
+            padding: 20px 22px;
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-radius: 12px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+        }
+
+        .community-link:hover {
+            border-color: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(26, 82, 118, 0.12);
+        }
+
+        .community-icon {
+            font-size: 1.6rem;
+            flex-shrink: 0;
+        }
+
+        .community-link strong {
+            display: block;
+            font-size: 0.95rem;
+            color: #1a3d5c;
+            margin-bottom: 2px;
+        }
+
+        .community-link span {
+            font-size: 0.8rem;
+            color: #85a5be;
+        }
+
+        .community-link .caveat {
+            font-size: 0.72rem;
+            color: #b7950b;
+            font-style: italic;
+            margin-top: 4px;
+            display: block;
+        }
+
         @media (max-width: 640px) {
             .hero {
                 padding: 48px 20px 24px;
@@ -288,6 +470,14 @@
             .cards {
                 flex-direction: column;
                 align-items: center;
+            }
+            .community-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .explainer, .guided-flow {
+                margin-left: 20px;
+                margin-right: 20px;
             }
         }
     </style>
@@ -302,6 +492,42 @@
         <p>Community-driven resources for understanding, diagnosing, and managing Thoracic Outlet Syndrome — compiled from insights gathered across the top Reddit posts and discussions.</p>
     </div>
 
+    <div class="explainer">
+        <h2>What is Thoracic Outlet Syndrome?</h2>
+        <p>Thoracic Outlet Syndrome (TOS) is a group of conditions that occur when the blood vessels or nerves in the thoracic outlet — the space between the collarbone and first rib — become compressed. It can cause pain, numbness, and tingling in the neck, shoulder, arm, and hand.</p>
+        <p>TOS is often underdiagnosed and can be difficult to pin down. There are three main types: <strong>neurogenic</strong> (nerve compression, the most common), <strong>venous</strong> (vein compression), and <strong>arterial</strong> (artery compression). Symptoms vary widely, which is part of what makes it so frustrating for many patients.</p>
+        <p>If you're newly diagnosed or suspect you may have TOS, you're not alone. The resources on this page were created by people who have been through the same process — and they're here to help you feel more informed and prepared.</p>
+    </div>
+
+    <div class="guided-flow">
+        <h2>How to Use These Resources</h2>
+        <p class="origin-note">These resources were initially built for a patient dealing with muscle tightness in the pec minor and interscalene triangle. Your situation may be different, and you may need to approach them accordingly — but the information should still be useful.</p>
+        <p>The resources below were compiled from a collection of stories and experiences shared in top Reddit posts on the thoracic outlet support subreddit, as well as published medical articles. Not sure where to start? Here's a suggested path:</p>
+        <div class="flow-steps">
+            <div class="flow-step">
+                <span class="step-number">1</span>
+                <div>
+                    <strong>Start with the Diagnostic Checklist</strong>
+                    <p>Use it to organize your symptoms and prepare for doctor visits. It helps ensure nothing gets overlooked.</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="step-number">2</span>
+                <div>
+                    <strong>Read the Community Research Report</strong>
+                    <p>Get a broad understanding of TOS — common experiences, treatment options, and what others have found helpful.</p>
+                </div>
+            </div>
+            <div class="flow-step">
+                <span class="step-number">3</span>
+                <div>
+                    <strong>Pick an Exercise Tracker</strong>
+                    <p>Once you have a diagnosis and your doctor's guidance, choose the 12-week plan that fits your needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="section-label reports">
         <h2>Reports & Guides</h2>
     </div>
@@ -314,6 +540,7 @@
             <h2>Community Research Report</h2>
             <p class="description">A comprehensive summary of experiences, treatments, and advice shared by the TOS community on Reddit.</p>
             <span class="file-type">Word Document (.docx)</span>
+            <span class="last-updated">Updated Mar 27, 2026</span>
             <a href="files/TOS_Community_Research_Report.docx" download class="download-btn doc">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -327,6 +554,7 @@
             <h2>Surgical Outcomes</h2>
             <p class="description">A detailed look at surgical interventions for TOS, including community-reported outcomes, recovery timelines, and key considerations.</p>
             <span class="file-type">Word Document (.docx)</span>
+            <span class="last-updated">Updated Mar 27, 2026</span>
             <a href="files/TOS_Surgical_Outcomes_Report.docx" download class="download-btn surgical">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -340,6 +568,7 @@
             <h2>Diagnostic Checklist</h2>
             <p class="description">A step-by-step checklist to help guide conversations with your doctor and navigate the TOS diagnostic process.</p>
             <span class="file-type">Word Document (.docx)</span>
+            <span class="last-updated">Updated Mar 27, 2026</span>
             <a href="files/TOS_Diagnostic_Checklist.docx" download class="download-btn checklist">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -359,6 +588,7 @@
             <h2>12-Week Exercise Tracker</h2>
             <p class="description">A structured 12-week exercise program compiled from the most recommended routines and exercises for TOS relief.</p>
             <span class="file-type">Excel Spreadsheet (.xlsx)</span>
+            <span class="last-updated">Updated Mar 27, 2026</span>
             <a href="files/TOS_12_Week_Exercise_Plan.xlsx" download class="download-btn sheet">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -372,6 +602,7 @@
             <h2>12-Week Exercise Tracker — No Nerve Flossing</h2>
             <p class="description">The same structured 12-week exercise program, but with all nerve flossing exercises removed for those who prefer to avoid them.</p>
             <span class="file-type">Excel Spreadsheet (.xlsx)</span>
+            <span class="last-updated">Updated Mar 27, 2026</span>
             <a href="files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" download class="download-btn sheet-alt">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -382,6 +613,38 @@
     <div class="disclaimer">
         <h3>Medical Disclaimer</h3>
         <p>The information provided on this website and in the downloadable files is for general informational and educational purposes only. It is not intended as, and should not be used as, a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician, physical therapist, or other qualified healthcare provider with any questions you may have regarding a medical condition, including Thoracic Outlet Syndrome. Never disregard professional medical advice or delay seeking it because of something you have read here. The content is compiled from community discussions on Reddit and has not been reviewed or verified by medical professionals. Use of any information provided is solely at your own risk. If you are experiencing a medical emergency, call your local emergency services immediately.</p>
+    </div>
+
+    <div class="section-label community">
+        <h2>Community</h2>
+    </div>
+
+    <div class="community-links">
+        <p>Connect with others navigating TOS. These communities are great places to ask questions, share experiences, and find support.</p>
+        <div class="community-grid">
+            <a href="https://www.reddit.com/r/thoracicoutlet/" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-icon">💬</span>
+                <div>
+                    <strong>r/thoracicoutlet</strong>
+                    <span>Reddit community for TOS discussion</span>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/groups/thoracicoutletsyndrome/" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-icon">👥</span>
+                <div>
+                    <strong>TOS Facebook Group</strong>
+                    <span>Active support group on Facebook</span>
+                    <span class="caveat">Note: This group tends to favor pro-surgery perspectives and moderates content accordingly.</span>
+                </div>
+            </a>
+            <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-icon">🌐</span>
+                <div>
+                    <strong>TOS Outreach</strong>
+                    <span>Dedicated TOS information and advocacy</span>
+                </div>
+            </a>
+        </div>
     </div>
 
     <footer>

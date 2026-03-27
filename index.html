@@ -388,5 +388,23 @@
         Built with insights from the TOS community on Reddit.<br>
         For more resources, visit <a href="https://www.tosoutreach.com" style="color: #2980b9; text-decoration: none; font-weight: 500;">tosoutreach.com</a>
     </footer>
+
+    <script data-goatcounter="https://digitalwestern.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+    <script>
+        document.querySelectorAll('.download-btn').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                if (window.goatcounter && goatcounter.count) {
+                    var filename = btn.getAttribute('href').replace('files/', '');
+                    goatcounter.count({
+                        path: 'download/' + filename,
+                        title: 'Download: ' + filename,
+                        event: true
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

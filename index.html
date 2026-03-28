@@ -460,6 +460,121 @@
             display: block;
         }
 
+        .tldr {
+            max-width: 720px;
+            margin: 24px auto 0;
+        }
+
+        .tldr details {
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+            overflow: hidden;
+        }
+
+        .tldr summary {
+            padding: 20px 28px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #1a5276;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.15s;
+        }
+
+        .tldr summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .tldr summary::before {
+            content: "▸";
+            font-size: 0.85rem;
+            transition: transform 0.2s;
+        }
+
+        .tldr details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .tldr summary:hover {
+            background: #f7fbfe;
+        }
+
+        .tldr .tldr-content {
+            padding: 0 28px 32px;
+        }
+
+        .tldr .tldr-content h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a5276;
+            margin: 28px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #eaf2f8;
+        }
+
+        .tldr .tldr-content h3:first-child {
+            margin-top: 8px;
+        }
+
+        .tldr .tldr-content p {
+            font-size: 0.9rem;
+            color: #5d7b96;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .tldr .tldr-content ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 8px;
+        }
+
+        .tldr .tldr-content ul li {
+            font-size: 0.88rem;
+            color: #5d7b96;
+            line-height: 1.6;
+            padding: 6px 0 6px 20px;
+            position: relative;
+        }
+
+        .tldr .tldr-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #85a5be;
+        }
+
+        .tldr .tldr-content .symptom-list li::before {
+            content: "•";
+            color: #2980b9;
+            font-weight: 700;
+        }
+
+        .tldr .tldr-content blockquote {
+            margin: 10px 0;
+            padding: 12px 16px;
+            background: #f7fbfe;
+            border-left: 3px solid #2980b9;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #5d7b96;
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .tldr .tldr-content blockquote .source {
+            display: block;
+            font-style: normal;
+            font-size: 0.75rem;
+            color: #85a5be;
+            margin-top: 6px;
+        }
+
         @media (max-width: 640px) {
             .hero {
                 padding: 48px 20px 24px;
@@ -531,6 +646,39 @@
             .guided-flow {
                 background: #162a3a;
                 border-color: #1e3a52;
+            }
+
+            .tldr details {
+                background: #162a3a;
+                border-color: #1e3a52;
+            }
+
+            .tldr summary {
+                color: #d6eaf8;
+            }
+
+            .tldr summary:hover {
+                background: #1a3350;
+            }
+
+            .tldr .tldr-content h3 {
+                color: #d6eaf8;
+                border-bottom-color: #1e3a52;
+            }
+
+            .tldr .tldr-content p,
+            .tldr .tldr-content ul li {
+                color: #8aa8c0;
+            }
+
+            .tldr .tldr-content blockquote {
+                background: #1a3350;
+                border-left-color: #2980b9;
+                color: #8aa8c0;
+            }
+
+            .tldr .tldr-content blockquote .source {
+                color: #6a8da8;
             }
 
             .guided-flow {
@@ -655,6 +803,59 @@
         <p>Thoracic Outlet Syndrome (TOS) is a group of conditions that occur when the blood vessels or nerves in the thoracic outlet — the space between the collarbone and first rib — become compressed. It can cause pain, numbness, and tingling in the neck, shoulder, arm, and hand.</p>
         <p>TOS is often underdiagnosed and can be difficult to pin down. There are three main types: <strong>neurogenic</strong> (nerve compression, the most common), <strong>venous</strong> (vein compression), and <strong>arterial</strong> (artery compression). Symptoms vary widely, which is part of what makes it so frustrating for many patients.</p>
         <p>If you're newly diagnosed or suspect you may have TOS, you're not alone. The resources on this page were created by people who have been through the same process — and they're here to help you feel more informed and prepared.</p>
+    </div>
+
+    <div class="tldr">
+        <details>
+            <summary>TL;DR — Quick Summary (click to expand)</summary>
+            <div class="tldr-content">
+                <h3>Why Is TOS So Hard to Diagnose?</h3>
+                <p>There is no single blood test, scan, or exam that confirms neurogenic TOS. It's a diagnosis of exclusion — doctors have to rule out everything else first, then piece together enough clinical evidence to make TOS the most likely explanation. Provocative tests have false-positive rates as high as 47% in healthy people, and standard EMG results come back normal in most TOS patients. Many people report it taking 1 to 5+ years and a dozen specialists before anyone even raises TOS as a possibility.</p>
+
+                <h3>Do You Have TOS? Common Symptoms</h3>
+                <ul class="symptom-list">
+                    <li>Pain, numbness, or tingling in the neck, shoulder, arm, or hand</li>
+                    <li>Ring and pinky finger numbness or tingling (ulnar nerve pattern)</li>
+                    <li>Hand weakness, grip problems, or dropping things</li>
+                    <li>Symptoms that get worse with arms raised or overhead</li>
+                    <li>Arm fatigue or heaviness during sustained overhead activity</li>
+                    <li>Tenderness or pain when pressing on the scalene muscles (side of neck)</li>
+                    <li>Tenderness or pain when pressing near the pec minor (upper chest/armpit)</li>
+                    <li>Symptoms that worsen with computer work, driving, or carrying things</li>
+                    <li>Visible neck asymmetry or one side feeling tighter than the other</li>
+                    <li>Symptoms that came on gradually and have been hard for doctors to explain</li>
+                </ul>
+
+                <h3>What Recovery Can Look Like</h3>
+                <blockquote>
+                    One user placed a large cork massage ball under their armpit to release the pec minor and reported near-complete resolution of symptoms over time.
+                    <span class="source">Community Research Report — Pec Minor Release</span>
+                </blockquote>
+                <blockquote>
+                    "I found that the pec minor being tight makes the serratus not fire. Which makes your neck do its job which I think starts the issue." Several users credit serratus anterior strengthening as the single breakthrough that resolved their TOS after months of failed physical therapy.
+                    <span class="source">Community Research Report — Serratus Anterior</span>
+                </blockquote>
+                <blockquote>
+                    For those who do pursue surgery, recovery timelines vary. Most community members report several weeks before returning to daily activities, with full recovery often taking 3 to 6 months. Many describe gradual improvement over that window — not overnight relief, but a slow, steady return to function.
+                    <span class="source">Community Research Report — Surgical Recovery</span>
+                </blockquote>
+                <blockquote>
+                    A user described almost crying after their first diagnostic scalene block: "It's kind of surreal to experience relief after being in pain for so long." Even brief relief from a block is both emotionally validating and diagnostically meaningful.
+                    <span class="source">Diagnostic Checklist — Scalene Block</span>
+                </blockquote>
+
+                <h3>What Actually Helps</h3>
+                <p>Across 100 Reddit posts and published literature, the same themes surface again and again in success stories:</p>
+                <ul>
+                    <li><strong>Serratus anterior strengthening</strong> — the single most cited exercise intervention in successful conservative recoveries. When the pec minor is tight, the serratus stops firing, and the neck muscles compensate. Retraining the serratus breaks the cycle.</li>
+                    <li><strong>Scalene strengthening, not just stretching</strong> — the Kjetil Larsen / MSK Neurology protocol is the most referenced approach. Weak scalenes go into protective spasm; strengthening them allows them to relax at rest. Note: Kjetil Larsen is notably controversial within the TOS community due to mixed views on scalene strengthening — some people find it transformative, while others report it aggravated their symptoms. Proceed carefully and with guidance.</li>
+                    <li><strong>Finding a TOS-specialized physical therapist</strong> — nearly every success story involves a PT who actually understands TOS biomechanics. General PTs and chain clinics are not equipped for this.</li>
+                    <li><strong>Pec minor self-release</strong> — cork massage ball under the armpit, doorway stretches, bench stretches with light dumbbells. Simple, low-risk, and consistently reported as helpful.</li>
+                    <li><strong>A whole-body approach</strong> — the most detailed recoveries address the full kinetic chain: anterior pelvic tilt, hip flexors, core strength, ribcage expansion — not just the neck and shoulder.</li>
+                    <li><strong>Diagnostic scalene and pec minor blocks</strong> — the closest thing to a confirmation test. If a lidocaine injection into your scalene provides 50%+ relief, that's the strongest available evidence for TOS and predicts a 94% surgical success rate.</li>
+                </ul>
+            </div>
+        </details>
     </div>
 
     <div class="guided-flow">

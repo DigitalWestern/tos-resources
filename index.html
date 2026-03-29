@@ -327,6 +327,247 @@
             }
         }
 
+        .search-container {
+            max-width: 720px;
+            margin: 24px auto 0;
+            padding: 28px;
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f7fbfe;
+            border: 1px solid #d4e6f1;
+            border-radius: 10px;
+            padding: 12px 16px;
+            transition: border-color 0.2s;
+        }
+
+        .search-input-wrapper:focus-within {
+            border-color: #2980b9;
+        }
+
+        .search-input-wrapper .search-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: #85a5be;
+        }
+
+        #doc-search {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 0.95rem;
+            color: #1e3a5c;
+            outline: none;
+            font-family: inherit;
+        }
+
+        #doc-search::placeholder {
+            color: #a8c4d8;
+        }
+
+        .search-clear {
+            display: none;
+            border: none;
+            background: none;
+            color: #85a5be;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        .search-clear.visible {
+            display: block;
+        }
+
+        .search-hint {
+            font-size: 0.75rem;
+            color: #a8c4d8;
+            margin-top: 8px;
+            text-align: right;
+        }
+
+        .search-hint kbd {
+            background: #eaf2f8;
+            border: 1px solid #d4e6f1;
+            border-radius: 4px;
+            padding: 1px 5px;
+            font-size: 0.7rem;
+            font-family: inherit;
+        }
+
+        .search-results {
+            margin-top: 16px;
+            display: none;
+        }
+
+        .search-results.active {
+            display: block;
+        }
+
+        .search-results-count {
+            font-size: 0.8rem;
+            color: #85a5be;
+            margin-bottom: 12px;
+        }
+
+        .search-doc-group {
+            margin-bottom: 16px;
+        }
+
+        .search-doc-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .search-doc-title {
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        .search-doc-title.doc { color: #1a5276; }
+        .search-doc-title.surgical { color: #6c3483; }
+        .search-doc-title.checklist { color: #b9770e; }
+        .search-doc-title.expanded { color: #2471a3; }
+
+        .search-doc-download {
+            font-size: 0.75rem;
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .search-doc-download:hover {
+            text-decoration: underline;
+        }
+
+        .search-match {
+            padding: 10px 14px;
+            background: #f7fbfe;
+            border-radius: 8px;
+            margin-bottom: 6px;
+        }
+
+        .search-match-heading {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #5d7b96;
+            margin-bottom: 4px;
+        }
+
+        .search-match-snippet {
+            font-size: 0.85rem;
+            color: #5d7b96;
+            line-height: 1.6;
+        }
+
+        .search-match-snippet mark {
+            background: #fef9c3;
+            color: #1e3a5c;
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        .search-no-results {
+            font-size: 0.88rem;
+            color: #85a5be;
+            padding: 8px 0;
+        }
+
+        @media (max-width: 640px) {
+            .search-container {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .search-container {
+                background: #162a3a;
+                border-color: #1e3a52;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .search-input-wrapper {
+                background: #1a3350;
+                border-color: #1e3a52;
+            }
+
+            .search-input-wrapper:focus-within {
+                border-color: #2980b9;
+            }
+
+            .search-input-wrapper .search-icon {
+                color: #6a8da8;
+            }
+
+            #doc-search {
+                color: #d6eaf8;
+            }
+
+            #doc-search::placeholder {
+                color: #4a7a9a;
+            }
+
+            .search-clear {
+                color: #6a8da8;
+            }
+
+            .search-hint {
+                color: #4a7a9a;
+            }
+
+            .search-hint kbd {
+                background: #1a3350;
+                border-color: #1e3a52;
+                color: #6a8da8;
+            }
+
+            .search-results-count {
+                color: #6a8da8;
+            }
+
+            .search-doc-title.doc { color: #5dade2; }
+            .search-doc-title.surgical { color: #bb8fce; }
+            .search-doc-title.checklist { color: #f0c040; }
+            .search-doc-title.expanded { color: #5dade2; }
+
+            .search-doc-download {
+                color: #5dade2;
+            }
+
+            .search-match {
+                background: #1a3350;
+            }
+
+            .search-match-heading {
+                color: #8aa8c0;
+            }
+
+            .search-match-snippet {
+                color: #8aa8c0;
+            }
+
+            .search-match-snippet mark {
+                background: #5c4b12;
+                color: #fef9c3;
+            }
+
+            .search-no-results {
+                color: #6a8da8;
+            }
+        }
+
         .explainer {
             max-width: 720px;
             padding: 40px 28px;
@@ -936,6 +1177,16 @@
         </div>
     </div>
 
+    <div class="search-container">
+        <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="doc-search" placeholder="Search across all documents... (e.g., Botox, scalene, Dr. Donahue)" autocomplete="off">
+            <button id="search-clear" class="search-clear" aria-label="Clear search">&times;</button>
+        </div>
+        <div class="search-hint">Press <kbd>/</kbd> to focus &middot; <kbd>Esc</kbd> to clear</div>
+        <div id="search-results" class="search-results"></div>
+    </div>
+
     <div class="section-label reports">
         <h2>Reports & Guides</h2>
     </div>
@@ -1108,6 +1359,274 @@
                 }
             });
         });
+    </script>
+
+    <script>
+    (function() {
+        var TOS_SEARCH_DATA = [
+            {
+                title: "Community Research Report",
+                downloadPath: "files/TOS_Community_Research_Report.docx",
+                colorClass: "doc",
+                sections: [
+                    { heading: "Executive Summary", text: "This report synthesizes findings from the top 100 posts on r/ThoracicOutletSupport, a Reddit community of people living with thoracic outlet syndrome. The goal is to identify what treatments, exercises, and interventions people report as helpful with particular focus on pec minor and scalene-related compression. Across these 100 posts and their top comments, a clear picture emerges: there is no single silver bullet, but a consistent set of approaches surfaces repeatedly in success stories. The most successful recoveries tend to involve a whole-body biomechanical approach rather than isolated stretching, targeted muscular retraining especially serratus anterior scalenes and lower trapezius, and for refractory cases surgical decompression including first rib resection scalenectomy and pec minor release." },
+                    { heading: "Serratus Anterior Strengthening", text: "This is the single most frequently cited exercise-based intervention in successful conservative recoveries. Multiple posts identify the serratus anterior as the linchpin muscle in the TOS puzzle. When the pec minor is tight it inhibits the serratus anterior from firing. When the serratus doesn't fire the neck muscles including scalenes compensate. This creates a vicious cycle hitting both compression sites. Key community insight: I found that the pec minor being tight makes the serratus not fire. Which makes your neck do its job which I think starts the issue. Several users credit serratus work as the breakthrough that resolved their TOS after months of failed PT." },
+                    { heading: "Scalene Strengthening Not Just Stretching", text: "The Kjetil Larsen MSK Neurology approach is the most-referenced specific protocol in the dataset. The core principle is counterintuitive: rather than stretching tight scalenes you strengthen them through controlled isometric and eccentric loading. One user overdid the scalene exercises and inflamed the muscles further. Start conservatively and progress slowly. Dosing guidance from the community: starting at 8 reps twice per week using a book to support the head and limit range of motion. Gradual progression over months. Website: mskneurology.com" },
+                    { heading: "Postural Correction Shoulders Up Not Back and Down", text: "This is a somewhat controversial but repeatedly successful finding. Multiple users report that the common PT cue of shoulders back and down worsens TOS by depressing the clavicle into the costoclavicular space. Instead keeping the shoulders slightly elevated opens the thoracic outlet. Critical caveat: the shoulders-up approach helps costoclavicular compression but may worsen interscalene triangle compression. Since you have interscalene involvement you may need a more nuanced approach elevating the shoulder girdle while also addressing scalene tone." },
+                    { heading: "Whole-Body Mechanics Approach", text: "Several of the most detailed success stories emphasize that TOS cannot be solved by treating only the neck and shoulder area. The recurring theme is a full kinetic chain approach: Anterior pelvic tilt correction which shifts ribcage positioning and directly affects the thoracic outlet. Hip flexor work as psoas and hip tightness contributes to postural cascade. Core strengthening as weak core allows compensatory patterns that close down the outlet. Ribcage expansion using PRI Postural Restoration Institute approach. Leg length discrepancy as one user's shoulders aligned after addressing this. Practitioners referenced: Zac Cupples and Bill Hartman on YouTube for the PRI full-body approach." },
+                    { heading: "Pec Minor Stretching and Manual Release", text: "Multiple users report relief from pec minor-targeted work. Cork massage ball technique: User placed a large 12cm cork massage ball under the armpit area to apply sustained pressure to the pec minor. Reports near-complete resolution of symptoms. Bench stretch: Laying flat on a bench arms hanging outward straight left and right with 5 to 10 lb dumbbells to force the pec minor to stretch open. Deep breathing: Expanding the ribcage with deep breaths helps counteract pec minor tightness especially during anxiety and panic flares. Important warning: If you have shoulder instability be cautious with pec minor release. The pec minor is a major shoulder stabilizer and one user reports worsened shoulder issues after surgical pec minor release." },
+                    { heading: "Pec Minor Serratus Anterior Connection", text: "The most actionable finding in this entire dataset for pec minor involvement is the reciprocal relationship between pec minor and serratus anterior. When the pec minor is chronically tight it prevents the serratus anterior from engaging properly. When the serratus doesn't fire the scapula doesn't protract and upwardly rotate correctly and the neck muscles scalenes levator scapulae upper traps compensate. This overloads both the costoclavicular and interscalene spaces. Simply stretching or releasing the pec minor without retraining the serratus anterior will only provide temporary relief." },
+                    { heading: "Pec Minor and the Pain-Anxiety Cycle", text: "One user describes how anxiety and panic directly tighten the pec minor creating a feedback loop: pain causes anxiety, anxiety tightens the pec minor, tighter pec minor causes more compression, more compression causes more pain. Breathing exercises that expand the ribcage are cited as a way to interrupt this cycle." },
+                    { heading: "Manual Techniques for Pec Minor", text: "Self-myofascial release: Cork massage ball 12cm diameter positioned under the armpit and chest wall. Apply body weight. Multiple sessions per day if needed. Passive stretch: Flat bench arms hanging laterally with light dumbbells 5 to 10 lbs. Let gravity do the work. Hold 1 to 2 minutes. Active release: Doorway stretches with arm at 90 degrees combined with deep breathing to expand the ribcage into the stretch. Rolfing and deep tissue: Rolfing massage therapy specifically targeting the pec minor was helpful." },
+                    { heading: "Surgical Pec Minor Interventions", text: "Pec minor release or resection is sometimes performed alongside first rib resection and scalenectomy as part of a full decompression. Dr. Donahue at MGH Massachusetts General Hospital is specifically named as performing pec minor resection in addition to FRR. Dr. Apple in Austin performed a combined first rib resection scalenectomy and pec release. The patient drove a manual car back to work the following Monday." },
+                    { heading: "Interscalene Triangle Compression", text: "Scalene Strengthening vs Stretching: The overwhelming community consensus driven largely by the MSK Neurology and Kjetil Larsen approach is that strengthening the scalenes is more effective than stretching them. The rationale: weak deconditioned scalenes go into protective spasm which compresses the brachial plexus. Strengthening them allows them to relax at rest. Protocol referenced most often: Lateral neck flexion against resistance isometrics progressing to isotonic exercises. Start with very light resistance and low volume." },
+                    { heading: "Scalene Botox and Lidocaine Injections", text: "Temporary chemical relaxation of the scalenes is frequently discussed. Scalene block with lidocaine: Multiple users report profound temporary relief to the point of tears. This is both therapeutic and diagnostic. If a scalene block relieves your symptoms it confirms scalene involvement. Botox injections: Mixed results. Some users report days of relief others weeks others minimal effect. One user had Botox five times before opting for surgery. Insurance sometimes covers it under cervical dystonia codes. Diagnostic value: If you haven't had a diagnostic scalene block multiple users and surgeons use this as a key decision point for whether surgery will help." },
+                    { heading: "Scalene-Related Symptoms", text: "Community members with interscalene compression specifically report: Visible neck asymmetry with enlarged scalenes on the affected side. Scalenes that don't respond to massage. Scalene tightness as the dominant symptom worse than the nerve symptoms themselves. Shoulders-up posture potentially worsening interscalene compression." },
+                    { heading: "Surgical Scalene Interventions", text: "Anterior scalenectomy is the most commonly performed scalene surgery often combined with first rib resection. Complete scalene resection both anterior and middle is performed in more severe cases. Scalenectomy without rib resection: Some surgeons operate on scalenes and pec minor only sparing the first rib if vascular compression isn't the primary issue. Post-surgical note: One surgeon noted the muscles were extremely tense and clamping down on nerves during surgery." },
+                    { heading: "Medications That Help Manage Symptoms", text: "Trigger point injections with lidocaine or bupivacaine into scalenes and pec minor provide temporary but dramatic relief for some. Botox injections into scalenes and pec minor provide longer lasting relief than lidocaine but mixed results and insurance coverage variable. PRP injections mentioned in one recovery story. Dry needling and acupuncture with multiple users reporting meaningful pain relief." },
+                    { heading: "Surgeons Named Positively in the Community", text: "Dr. Donahue at MGH Massachusetts General Hospital. Dr. Thompson at Washington University St. Louis. Dr. Freischlag at multiple institutions. Dr. Apple in Austin TX. Dr. Lum at Johns Hopkins. Dr. Kay Johansen in Seattle. Dr. Humphries at UC Davis. Dr. Agrusa at New York Presbyterian. Note: Surgical outcomes vary significantly. The community repeatedly emphasizes choosing a surgeon who specializes in TOS specifically not a general vascular surgeon." },
+                    { heading: "Physical Therapy Approaches", text: "Counterstrain PT: a gentle indirect technique. Multiple users describe it as uniquely effective compared to standard PT. PRI Postural Restoration Institute: focuses on ribcage expansion diaphragm and full-body asymmetry. Practitioners Bill Hartman and Zac Cupples. Nerve glides: when done consistently reduce the severity of bad days. Ulnar nerve glides would be particularly relevant. Finding a TOS-specialized PT: multiple users warn that general PTs and chain PT clinics are not equipped for TOS. Seek out a PT who explicitly understands TOS biomechanics." },
+                    { heading: "Lifestyle and Ergonomic Adjustments", text: "Sleep positioning: MedCline pillow body pillow plus wedge with arm cutout cited by multiple users. Sleep on the non-affected side with arm supported. Workstation setup: For computer work users recommend arm rests split keyboards vertical mice and monitor positioning to avoid forward head posture. Voice dictation: Multiple users switch to voice-to-text to reduce arm usage. Arm rests everywhere: Using chairs with armrests to keep shoulders elevated and supported at all times. Hot baths and heat therapy help nerve pain specifically. Ice packs at night. THC and CBD mentioned occasionally for pain management. Sauna sessions. Rolfing massage therapy for deep fascia work." },
+                    { heading: "Suggested Action Plan", text: "Immediate Weeks 1 to 4: Diagnostic scalene block is both therapeutic and diagnostic. Start self-myofascial release on pec minor with cork massage ball daily. Find a TOS-specialized PT ideally someone familiar with MSK Neurology or Kjetil Larsen or PRI-trained. Short-Term Weeks 4 to 12: Begin serratus anterior retraining with wall slides serratus punches protraction exercises. Begin scalene strengthening with isometric lateral neck flexion very low volume. Address lower kinetic chain including anterior pelvic tilt hip flexor tightness and leg length discrepancy. Consider Botox injection if diagnostic lidocaine block helps. Medium-Term Months 3 to 6: Gradually progress scalene and serratus strengthening. Integrate ribcage expansion and breathing work. Monitor whether scalene strengthening is reducing baseline tightness. If conservative treatment plateaus consider consultation with a TOS-specialized surgeon." },
+                    { heading: "Key Community Resources", text: "MSK Neurology Kjetil Larsen: mskneurology.com the most-referenced conservative TOS treatment resource. TOS Outreach: tosoutreach.com surgeon finder and symptom reference. TOS Exercise Discord: Community exercise group request invite via the subreddit. Zac Cupples and Bill Hartman: YouTube PRI and full-body mechanics approach." }
+                ]
+            },
+            {
+                title: "Surgical Outcomes Report",
+                downloadPath: "files/TOS_Surgical_Outcomes_Report.docx",
+                colorClass: "surgical",
+                sections: [
+                    { heading: "Executive Summary", text: "This report synthesizes surgical outcome data from community posts on r/ThoracicOutletSupport and published clinical literature. Surgery is highly effective for vascular TOS with 90 to 95 percent success rates, moderately effective for neurogenic TOS at 60 to 82 percent depending on timeframe and criteria, and carries real risks and a meaningful failure and recurrence rate of 15 to 20 percent. Surgeon specialization is the single biggest variable in outcomes." },
+                    { heading: "First Rib Resection FRR", text: "The most commonly discussed procedure by a wide margin. FRR removes the first rib to permanently widen the costoclavicular space and eliminate the bony compression point. Three surgical approaches: Transaxillary approach through the armpit most traditional. Supraclavicular approach above the collarbone allows simultaneous access to scalenes and brachial plexus often preferred for nTOS cases. Robotic approach a newer less invasive technique. Intraoperative findings: Surgeons frequently discover pathology worse than expected. Scalenes so thick they extended past the first rib into the second. Nerves embedded into scalenes with C8 and T1 roots tethered to the first rib. Broken or deformed rib only discovered during surgery. Extensive scar tissue and inflammation." },
+                    { heading: "Scalenectomy", text: "Removal or partial removal of the anterior scalene muscle and sometimes the middle scalene as well. Almost always performed alongside FRR though occasionally done alone. Anterior scalenectomy alone: Some surgeons prefer this for nTOS when vascular compression isn't the primary issue. Complete resection of both anterior and middle scalenes: More aggressive approach used for severe compression. Dr. Thompson at Washington University performed complete resection of both muscles. Scalenectomy without FRR: Published literature shows a 90.9 percent success rate for rib-sparing scalenectomy." },
+                    { heading: "Pec Minor Release and Resection", text: "Release or complete removal of the pec minor tendon to decompress the subcoracoid space. Combined with FRR plus scalenectomy as full decompression surgery. Dr. Apple in Austin performed this combination. Isolated pec minor resection: Dr. Donahue at MGH performed a standalone right pec minor resection after bilateral FRR. Published literature shows 90 percent good-to-excellent outcomes for isolated pectoralis minor syndrome at 1 to 3 year follow-up. Caution: One user reports worsened shoulder instability after pec minor release noting it is a major stabilizing muscle." },
+                    { heading: "Brachial Plexus Neurolysis", text: "Surgical freeing of the brachial plexus nerves from surrounding scar tissue and adhesions. Typically performed as part of a full decompression. Particularly relevant when nerves have become embedded in surrounding tissue." },
+                    { heading: "Long-Term Outcome Trajectory", text: "Published data reveals a concerning pattern of outcome deterioration over time: 3 months post-op 88 to 90 percent reporting improvement. 1 to 2 years 73 to 76 percent maintaining good outcomes. 3 to 4 years 69 to 71 percent. 5 plus years approximately 65 to 70 percent reporting sustained improvement with 54 percent complete relief. 10 to 15 years revision cases success drops to approximately 41 percent." },
+                    { heading: "Surgical Failures and Complications", text: "Published literature documents a 15 to 20 percent recurrence rate after first rib resection or scalenectomy. Community corroboration: My first FRRS went fantastic at first the mess came later purely due to my cervical rib. Rib cartilage left in place causes immense pain. Just make sure everything gets taken out. After rib resection I have shoulder pain 24/7 and it is horrible. This surgery crippled me and I am unable to move around without constant pain. Post-surgical complication rates include pneumothorax nerve injury phrenic nerve palsy wound infection bleeding and Horner syndrome." },
+                    { heading: "Why Surgeries Fail", text: "Incomplete decompression: Residual rib cartilage scar tissue reformation or failure to address all compression sites such as FRR without pec minor release. Wrong diagnosis: Shoulder instability cervical disc disease or other conditions mimicking TOS. Scar tissue and adhesion formation: Initial improvement followed by gradual regression. Cervical rib complications: Initial success undermined by a cervical rib that wasn't addressed. Biomechanical destabilization: Concerns about structural consequences of removing a rib. Surgeon inexperience: Community strongly emphasizes only using TOS-specialist surgeons." },
+                    { heading: "Named Surgeons and Community Reputation", text: "Dr. Donahue at MGH Massachusetts General Hospital described as phenomenal and incredibly thorough. Dr. Thompson at Washington University St. Louis performed complete resection of both anterior and middle scalenes. Dr. Freischlag at multiple institutions. Dr. Apple in Austin TX combined procedure with rapid recovery. Dr. Lum at Johns Hopkins. Dr. Kay Johansen in Seattle described as saving my life twice. Dr. Humphries at UC Davis. Dr. Agrusa at New York Presbyterian. Critical finding: some TOS Facebook groups censor negative surgical experiences and may have surgeon-affiliated staff as admins." },
+                    { heading: "Case Studies", text: "Case 1 Full Decompression Success: Transaxillary first rib resection plus anterior scalenectomy plus brachial plexus neurolysis. Back and better than ever at 5 months. Case 2 Bilateral vTOS Dr. Donahue: 3 total surgeries left FRR right FRR right pec minor resection. Case 3 vTOS Dr. Thompson: Complete first rib resection plus complete resection of both scalenes. Scalenes were abnormally thick extending past the first rib. Case 4 Dr. Apple Austin: First rib resection plus scalenectomy plus pec minor release. Drove a manual car back to work the following Monday. Case 5 Severe TOS: Nerves embedded into scalenes fused to lungs. Years of dismissal told it was anxiety. Case 6 Revision Surgery: Required second surgery 18 months after initial. Case 7 Surgical Failure: This surgery crippled me. Case 8 Recurring TOS Dr. Kay Johansen: Two surgeries. Saved my life twice." },
+                    { heading: "Post-Surgical Recovery Timeline", text: "Revision surgery has 84 percent success at 3 months but declines to 41 percent at 10 to 15 years. TOS-specialized PT is critical after surgery not just generic rehab. Finding a TOS-expert PT is the most important variable. Standard protocol is 2 months PT minimum. nTOS patients require median 4 months before symptom-free. 85 percent return to athletics at average 4.6 months." },
+                    { heading: "What Helped Post-Surgery", text: "Pregabalin: halving the dose 11 months post-surgery still needed but less. Nerve pain medications: Many users maintain gabapentin or amitriptyline long-term. Muscle relaxers for post-surgical spasm. Serratus anterior and scapular work even post-surgery. Nerve glides to prevent adhesion reformation. Strict activity restrictions: Know the NOs. Stick to them always or regret. Dorsal scapular nerve entrapment: Common alongside TOS. Duloxetine specifically helped one sufferer. Cervical disc disease: Multiple users have overlapping compression. Shoulder instability and labral tears. Ehlers-Danlos Syndrome and connective tissue disorders complicate outcomes. Counterstrain PT and dry needling. Ergonomic adaptations: split keyboards vertical mice dictation software arm rests. Mental health support for chronic pain and incomplete recovery." },
+                    { heading: "Predictors of Surgical Success", text: "Positive predictors: Positive scalene block with 63 percent complete improvement and 35 percent partial improvement. Classic nTOS symptoms including numbness tingling weakness and pain in hands and fingers. Vascular pathology confirmed on imaging. Cervical rib presence. Shorter symptom duration. Negative predictors: Negative scalene block. Major depression. High pre-operative disability scores DASH score above 50.5 or BPI above 73.5. Atypical symptom presentation. Co-existing structural pathology." },
+                    { heading: "Key Takeaways", text: "Surgeon selection is everything. vTOS surgery is highly effective while nTOS surgery is a gamble worth understanding. A positive scalene block is the strongest pre-surgical predictor. Incomplete decompression is the leading cause of failure. Surgery is not the end of the road as post-surgical PT medication management activity restrictions and ergonomic adaptations are required long-term. Forums skew negative as successful surgical patients leave and move on. Co-existing conditions must be identified before surgery." }
+                ]
+            },
+            {
+                title: "Diagnostic Checklist",
+                downloadPath: "files/TOS_Diagnostic_Checklist.docx",
+                colorClass: "checklist",
+                sections: [
+                    { heading: "The Reality of TOS Diagnosis", text: "TOS is a diagnosis of exclusion. There is no blood test no scan and no single exam that definitively confirms neurogenic TOS. Instead the diagnostic process works by systematically ruling out everything else while accumulating enough clinical evidence to make TOS the most likely remaining explanation. The Society for Vascular Surgery uses four criteria: Signs and symptoms of pathology at the thoracic outlet. Signs and symptoms of nerve compression. Absence of other pathology that explains the symptoms. Positive response to a properly-performed scalene or pec minor block with 50 percent or more symptom relief. Community reality: Multiple users report diagnosis taking 1 to 5 plus years with many initially told their symptoms were psychosomatic or anxiety." },
+                    { heading: "Phase 1 Rule Out the Mimics", text: "Before arriving at a TOS diagnosis you need to systematically eliminate conditions that produce similar symptoms. Provocative tests for TOS have false-positive rates of 9 to 47 percent in healthy people and 42 to 77 percent in patients with carpal tunnel syndrome. Differential diagnosis includes cervical disc herniation shoulder instability carpal tunnel syndrome cubital tunnel syndrome peripheral neuropathy rotator cuff pathology cervical radiculopathy and thoracic disc herniation. One user had a labrum tear and T7 T8 herniated disc mimicking TOS. Another discovered cervical rib via 3D X-ray that standard imaging missed." },
+                    { heading: "Phase 2 Clinical Examination and Provocative Tests", text: "No single provocative test is reliable on its own. False-positive rates are high. The value is in the pattern across multiple tests. Provocative test battery includes Adson test Eden test Wright hyperabduction test Roos test and Tinel sign. Combined testing improves accuracy significantly: Adson plus Eden plus Wright plus Roos plus Tinel combined has 94 percent sensitivity. Wright plus Adson plus Roos combined has 92 percent specificity. Supraclavicular pressure test reproducing ulnar symptoms and Wright hyperabduction test for pec minor involvement are particularly relevant." },
+                    { heading: "Phase 3 Imaging Workup", text: "Imaging serves two purposes: identifying anatomical contributors to compression such as cervical rib anomalous muscle or fibrous band and confirming vascular compromise if present. For neurogenic TOS imaging is often normal. ACR and SVS recommendations: Neurogenic TOS uses MRI chest plus chest X-ray. Venous TOS uses catheter venography Doppler US CT with contrast. Arterial TOS uses CT with contrast MR angiography Doppler US. Most nTOS patients report imaging was normal or inconclusive. Several users describe getting diagnosed only after dynamic ultrasound with arms in different positions." },
+                    { heading: "Phase 4 Electrodiagnostic Studies EMG NCS", text: "EMG and NCS are usually normal in TOS. A normal EMG does not rule out TOS. These tests serve two critical purposes: ruling out other nerve conditions and when abnormal providing objective evidence. Ask specifically for MABC medial antebrachial cutaneous nerve conduction studies. Published literature shows MABC abnormalities can be present even when standard nerve conduction studies are completely normal. This is the most sensitive early marker available. Community experience: Reddit users consistently report normal EMGs. One user with confirmed nTOS and vTOS stated my EMG came back completely normal." },
+                    { heading: "Phase 5 Diagnostic Injections", text: "Of all diagnostic tools for neurogenic TOS the scalene and pec minor blocks come closest to a definitive answer. These are both diagnostic and prognostic confirming the compression site and predicting whether surgical decompression would help. Scalene block with lidocaine into the anterior scalene muscle. Pec minor block. Community experience: One user described almost crying after trigger point injections saying it is kind of surreal to experience relief after being in pain for so long. Some users report no relief from blocks and were later found to have shoulder instability. Botox serves a dual diagnostic and therapeutic role providing 2 to 4 months of relief and further confirms the diagnosis." },
+                    { heading: "Phase 6 TOS Subtype Determination", text: "TOS is at least three conditions: neurogenic venous and arterial. The diagnostic pathway certainty level and treatment approach differ significantly. With ulnar nerve involvement interscalene triangle compression and pec minor compression the most likely diagnosis is neurogenic TOS possibly disputed neurogenic if standard EMG is normal or true neurogenic if MABC studies or EMG show lower trunk abnormalities." },
+                    { heading: "Who Should Diagnose You", text: "Vascular surgeon specializing in TOS is the gold standard. Find one via tosoutreach.com find-a-surgeon. Physiatrist or PM&R physician is good for initial workup EMG and NCS and differential diagnosis. Neurologist is useful for EMG and NCS and ruling out neurological mimics like MS and peripheral neuropathy. Most are not TOS experts. Orthopedic surgeon can rule out shoulder and spine pathology but one user reports an orthopedist chuckled when TOS was suggested. Pain management and interventional can perform diagnostic blocks. Community consensus: Repeating to doctors that your Roos test and Adson test were positive helps them take the diagnosis seriously." },
+                    { heading: "Diagnostic Red Flags and Appointment Preparation", text: "Bring the checklist with completed phases marked. Bring copies of all imaging on CD or digital. Bring EMG and NCS results with full report. Write a symptom timeline. Document which activities are limited with specific examples. List all providers seen and what they found. Note any family history of cervical ribs hypermobility Ehlers-Danlos or connective tissue disorders. Questions to ask: Can you perform the full provocative test battery? Can you order MABC sensory nerve conduction studies? Can you perform or refer for a diagnostic scalene block and pec minor block? How many TOS patients do you see per year?" },
+                    { heading: "Testing Honest Picture", text: "The diagnostic injection is the closest thing to a confirmation test that exists. Combined with a thorough rule-out workup positive provocative tests and a consistent symptom pattern it builds a strong case. Medicine does not always offer certainty but this approach gives you the highest-confidence answer available." }
+                ]
+            },
+            {
+                title: "Expanded Community Findings",
+                downloadPath: "files/TOS_Expanded_Findings.docx",
+                colorClass: "expanded",
+                sections: [
+                    { heading: "About This Document", text: "This companion document captures new findings from an expanded scrape of all 382 available posts in r/ThoracicOutletSupport. It highlights what 282 additional posts reveal that the original reports did not cover including new symptom patterns practical treatment details additional surgeons safety considerations and community-reported experiences." },
+                    { heading: "Cognitive and Cerebrovascular Symptoms", text: "Multiple users describe neurological and cognitive symptoms beyond arm and shoulder pain. Reported symptoms include memory problems word-finding difficulty severe confusion and brain fog head and eye pressure jaw pressure and vision changes. These may be connected to subclavian steal syndrome where TOS-related compression of the subclavian artery redirects blood flow away from the brain. Kjetil Larsen has published research on cerebrovascular hyperperfusion from TOS. Screening may include Doppler ultrasound with arm provocation or dedicated cerebrovascular imaging." },
+                    { heading: "POTS Dysautonomia and Autonomic Symptoms", text: "TOS and POTS Postural Orthostatic Tachycardia Syndrome appear together across multiple posts. The stellate ganglion part of the sympathetic nervous system sits within the thoracic outlet and can be compressed. This may cause panic attacks unexplained anxiety blood pooling dizziness exercise intolerance and fatigue. The vagus nerve also runs near the thoracic outlet. TOS EDS Ehlers-Danlos Syndrome and POTS frequently appear together as a triad." },
+                    { heading: "TMJ Facial Pain and Jaw Symptoms", text: "The expanded dataset reveals a connection between TOS and facial or jaw symptoms. Reported experiences include facial pain and numbness tongue numbness jaw paralysis-like sensations and ear symptoms initially mistaken for TMJ. These likely relate to scalene tightness affecting nearby nerves and structures in the neck." },
+                    { heading: "Botox Practical Guidance", text: "Dosing: Standard dose for anterior scalene injection is 100 units. First-time combined injection as low as 41 units total. High end 300 units across multiple sites. Insurance may cover under cervical dystonia codes. Rebound warning: Keep current on the Botox the rebound if it wears off is terrible. Timeline: Pain flare for 1 to 3 weeks after injection relief begins around week 3. Diminishing returns: Botox may stop working after 5 to 6 rounds as muscle atrophies. Trapezius Botox was called a godsend by one user. Sequential injections: Inject one site at a time to isolate compression. I had mine injected 1 at a time started with pec minor then anterior scalene then middle scalene." },
+                    { heading: "Cervical Instability Safety Consideration", text: "If cervical instability is present the scalene muscles may be compensating to stabilize the cervical spine. Paralyzing them with Botox or removing them surgically can make things significantly worse. I had a really bad reaction to Botox in my scalenes because those muscles were trying to stabilize my cervical spine. Recommendation: Before scalene Botox or scalenectomy ask about cervical stability screening. Flexion extension cervical X-rays and Beighton score assessment for hypermobility." },
+                    { heading: "Counterstrain Physical Therapy Stronger Evidence", text: "Counterstrain has improved mine 70 to 80 percent with about 8 to 10 sessions. Another user credits counterstrain with restoring their ability to sleep. Counterstrain is a gentle indirect manual therapy technique distinct from standard PT exercises or aggressive stretching. Multiple post-surgical patients also find it helpful." },
+                    { heading: "Exercises What to Avoid and What Works", text: "Exercises that aggravate TOS: Planks cause significant worsening for multiple users. Running with arm swing can aggravate compression. Push-ups and pull-ups warned against for vascular TOS. Incline walking promotes hunching. Yoga worsened some users. Exercises that help: Pilates modified is better tolerated than yoga. Glute resistance band work. Lower body strengthening. Shoulders-up during exercise to prevent clavicle crushing nerves." },
+                    { heading: "Sleep Expanded Guidance", text: "U-shaped pregnancy pillow to keep arms separated. Pillowise measured pillow sized to your body called a game changer. Sleeping upright for arterial TOS. Back sleeping with arm elevation pillows. Tennis ball trick sewing balls into sleep shirt to force back sleeping. Mattress firmness symptoms increased severely on a mattress that was way too soft. Holding small pillows to keep hands from going numb." },
+                    { heading: "Pain Medications Additional Data", text: "Cymbalta duloxetine changed my life for TOS nerve pain. Gabapentin dosing some doctors start too low. One user takes 900mg during the day and 1800mg before bed. Flare management with lidocaine patches and Lyrica on top of NSAIDs and Tylenol. Phoenix Theralase laser for consistent help. SheBREATH Somatics on YouTube for pain coping." },
+                    { heading: "Additional Conditions to Rule Out", text: "Eagles Syndrome vascular or cervical can cause overlapping neck jaw and vascular symptoms. Diagnosed via CT scan of styloid processes. Craniocervical Instability can mimic TOS. Evaluated with upright MRI. Pronator Teres Syndrome forearm nerve compression overlapping with TOS. Cervical Instability especially in hypermobile patients evaluated with flexion extension X-rays and Beighton score." },
+                    { heading: "Robotic-Assisted Surgery Expanded Data", text: "Robotic FRR may be more effective for vascular symptoms than neurogenic. My ATOS symptoms are totally gone but nerve sensation and pain are still there. Key concern is incomplete rib removal. It is very difficult to remove the entire first rib through robotic surgery. Facebook groups caution against robotic while Reddit users are more positive. NYU Langone performs robotic FRR. Recovery may be faster with robotic approach." },
+                    { heading: "Scapular Winging After Surgery", text: "Multiple users develop scapular winging after rib resection and scalenectomy. Shoulder girdle still moves too much. Trap is atrophied. Still fatigues significantly. Results from altered biomechanics after removing rib and scalene muscles combined with disuse during recovery. Post-surgical PT targeting scapular stabilization is critical." },
+                    { heading: "EDS Hypermobility and Surgical Risk", text: "Removing scalenes which stabilize the cervical spine may cause cervical instability in hypermobile patients. Very hypermobile with hypermobile shoulders and suspected EDS. Main concern is cervical instability. Main risk of removing scalene muscles is the neck could destabilize. Pre-operative cervical stability assessment strongly recommended before scalenectomy for hypermobile patients." },
+                    { heading: "Bilateral TOS Surgical Sequencing", text: "Worse side first approach or non-dominant side first for risk mitigation. Surgeon experience matters more for bilateral cases. If your surgeon has rarely seen this they probably don't have the expertise you need. Very long healing process with permanent lifestyle changes." },
+                    { heading: "Additional Surgeons", text: "Dr. Gelabert described as arguably the number 1 surgeon. Reports bicep nerve damage complication at 4 months expected to resolve. Dr. Pearl named in diagnostic CTA context. Dr. Senthil Jayarajan Allina Health Minneapolis recommended by TOS Outreach Network. Temple Hospital Philadelphia willing to operate based on clinical presentation. MUSC Charleston SC open supraclavicular approach multiple TOS cases per week." },
+                    { heading: "Practical Notes", text: "Pre-surgery: Ask about chest tube management. Don't let them take the chest tube out early. Surgery costs: Approximately 4500 dollars yearly out-of-pocket with insurance in the US. Free in Canada. Returning to athletics: One athlete back to full activity in 3 months. Another powerlifter unable to work or lift after surgery. Post-surgical PT is not optional. One user skipped PT developed scar tissue and needed a stent. Work and career: Trackball mouse for desk work. Voice dictation. Short-burst physical jobs. Multiple users on disability or SSDI." },
+                    { heading: "Rare But Notable", text: "Focal dystonia from TOS treated with 100 units Botox across six forearm injection sites. Langers Arch Muscles as anomalous muscle variant causing armpit compression. Subclavian steal syndrome persisting after surgery with morning headaches and memory problems." }
+                ]
+            }
+        ];
+
+        var TOS_SYNONYMS = {
+            "frr": ["first rib resection"],
+            "first rib resection": ["frr"],
+            "frrs": ["first rib resection", "first rib resection and scalenectomy"],
+            "ntos": ["neurogenic tos", "neurogenic thoracic outlet syndrome"],
+            "neurogenic tos": ["ntos"],
+            "vtos": ["venous tos", "venous thoracic outlet syndrome"],
+            "venous tos": ["vtos"],
+            "atos": ["arterial tos", "arterial thoracic outlet syndrome"],
+            "arterial tos": ["atos"],
+            "pec minor": ["pectoralis minor"],
+            "pectoralis minor": ["pec minor"],
+            "pt": ["physical therapy", "physical therapist"],
+            "physical therapy": ["pt"],
+            "botox": ["botulinum toxin", "botulinum"],
+            "pots": ["postural orthostatic tachycardia syndrome", "postural orthostatic tachycardia"],
+            "eds": ["ehlers-danlos", "ehlers-danlos syndrome"],
+            "ehlers-danlos": ["eds"],
+            "emg": ["electromyography", "electromyograph"],
+            "ncs": ["nerve conduction studies", "nerve conduction study"],
+            "mri": ["magnetic resonance imaging"],
+            "ct": ["computed tomography"],
+            "cci": ["craniocervical instability"],
+            "craniocervical instability": ["cci"],
+            "mgh": ["massachusetts general hospital"],
+            "massachusetts general hospital": ["mgh"],
+            "tmj": ["temporomandibular joint", "jaw pain"],
+            "mabc": ["medial antebrachial cutaneous"],
+            "pri": ["postural restoration institute"],
+            "postural restoration institute": ["pri"],
+            "msk neurology": ["kjetil larsen"],
+            "kjetil larsen": ["msk neurology"]
+        };
+
+        var searchInput = document.getElementById('doc-search');
+        var searchClear = document.getElementById('search-clear');
+        var searchResults = document.getElementById('search-results');
+        var debounceTimer;
+
+        function getSynonyms(query) {
+            var synonyms = [];
+            var q = query.toLowerCase();
+            if (TOS_SYNONYMS[q]) {
+                synonyms = TOS_SYNONYMS[q].slice();
+            }
+            Object.keys(TOS_SYNONYMS).forEach(function(key) {
+                if (key !== q && q.indexOf(key) !== -1) {
+                    synonyms = synonyms.concat(TOS_SYNONYMS[key]);
+                }
+            });
+            return synonyms;
+        }
+
+        function extractSnippet(text, matchIndex, termLength) {
+            var radius = 60;
+            var start = Math.max(0, matchIndex - radius);
+            var end = Math.min(text.length, matchIndex + termLength + radius);
+            if (start > 0) {
+                start = text.indexOf(' ', start);
+                if (start === -1 || start >= matchIndex) start = Math.max(0, matchIndex - radius);
+            }
+            if (end < text.length) {
+                var spaceAfter = text.lastIndexOf(' ', end);
+                if (spaceAfter > matchIndex + termLength) end = spaceAfter;
+            }
+            var snippet = text.substring(start, end).trim();
+            var prefix = start > 0 ? '...' : '';
+            var suffix = end < text.length ? '...' : '';
+            return prefix + snippet + suffix;
+        }
+
+        function highlightTerm(snippet, terms) {
+            var result = snippet;
+            terms.forEach(function(term) {
+                var regex = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+                result = result.replace(regex, '<mark>$1</mark>');
+            });
+            return result;
+        }
+
+        function doSearch(query) {
+            var q = query.trim().toLowerCase();
+            if (q.length < 2) {
+                searchResults.classList.remove('active');
+                searchResults.innerHTML = '';
+                return;
+            }
+            var searchTerms = [q].concat(getSynonyms(q));
+            var allResults = [];
+
+            TOS_SEARCH_DATA.forEach(function(doc) {
+                var docMatches = [];
+                doc.sections.forEach(function(section) {
+                    var textLower = section.text.toLowerCase();
+                    for (var i = 0; i < searchTerms.length; i++) {
+                        var idx = textLower.indexOf(searchTerms[i]);
+                        if (idx !== -1) {
+                            docMatches.push({
+                                heading: section.heading,
+                                snippet: extractSnippet(section.text, idx, searchTerms[i].length),
+                                matchedTerms: searchTerms
+                            });
+                            break;
+                        }
+                    }
+                });
+                if (docMatches.length > 0) {
+                    allResults.push({ doc: doc, matches: docMatches });
+                }
+            });
+
+            var html = '';
+            if (allResults.length === 0) {
+                html = '<p class="search-no-results">No results found for "' + query.trim().replace(/</g, '&lt;') + '". Try a different term, or browse the TL;DR summary above.</p>';
+            } else {
+                var totalMatches = allResults.reduce(function(sum, r) { return sum + r.matches.length; }, 0);
+                html += '<p class="search-results-count">' + totalMatches + ' match' + (totalMatches === 1 ? '' : 'es') + ' across ' + allResults.length + ' document' + (allResults.length === 1 ? '' : 's') + '</p>';
+                allResults.forEach(function(result) {
+                    html += '<div class="search-doc-group">';
+                    html += '<div class="search-doc-header">';
+                    html += '<span class="search-doc-title ' + result.doc.colorClass + '">' + result.doc.title + '</span>';
+                    html += '<a href="' + result.doc.downloadPath + '" download class="search-doc-download">Download</a>';
+                    html += '</div>';
+                    result.matches.forEach(function(match) {
+                        html += '<div class="search-match">';
+                        html += '<div class="search-match-heading">' + match.heading + '</div>';
+                        html += '<div class="search-match-snippet">' + highlightTerm(match.snippet, match.matchedTerms) + '</div>';
+                        html += '</div>';
+                    });
+                    html += '</div>';
+                });
+            }
+            searchResults.innerHTML = html;
+            searchResults.classList.add('active');
+
+            if (window.goatcounter && goatcounter.count) {
+                goatcounter.count({ path: 'search/' + q, title: 'Search: ' + q, event: true });
+            }
+        }
+
+        searchInput.addEventListener('input', function() {
+            searchClear.classList.toggle('visible', searchInput.value.length > 0);
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(function() {
+                doSearch(searchInput.value);
+            }, 300);
+        });
+
+        searchClear.addEventListener('click', function() {
+            searchInput.value = '';
+            searchClear.classList.remove('visible');
+            searchResults.classList.remove('active');
+            searchResults.innerHTML = '';
+            searchInput.focus();
+        });
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/' && document.activeElement !== searchInput && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                e.preventDefault();
+                searchInput.focus();
+                searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            if (e.key === 'Escape' && document.activeElement === searchInput) {
+                searchInput.value = '';
+                searchClear.classList.remove('visible');
+                searchResults.classList.remove('active');
+                searchResults.innerHTML = '';
+                searchInput.blur();
+            }
+        });
+    })();
     </script>
 </body>
 </html>

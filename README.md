@@ -2,7 +2,7 @@
 
 A static website hosting community-driven resources for understanding, diagnosing, and managing Thoracic Outlet Syndrome (TOS). All materials are compiled from insights gathered across top Reddit posts and discussions.
 
-**Live site:** [digitalwestern.github.io/tos-resources](https://digitalwestern.github.io/tos-resources/)
+**Live site:** [tosresources.com](https://tosresources.com)
 
 ## Resources
 

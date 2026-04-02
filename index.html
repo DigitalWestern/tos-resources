@@ -11,6 +11,29 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
             background: #f0f6fb;
@@ -201,6 +224,139 @@
         .download-btn svg {
             width: 18px;
             height: 18px;
+        }
+
+        .download-all-section {
+            max-width: 860px;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .download-all-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 36px;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: #1a5276;
+            color: #fff;
+            border: 2px solid #1a5276;
+            cursor: pointer;
+            transition: background 0.2s, transform 0.15s;
+            font-family: inherit;
+        }
+
+        .download-all-btn:hover {
+            background: #154360;
+            border-color: #154360;
+        }
+
+        .download-all-btn:active {
+            transform: scale(0.97);
+        }
+
+        .download-all-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .download-all-note {
+            font-size: 0.78rem;
+            color: #85a5be;
+            margin-top: 8px;
+        }
+
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            background: transparent;
+            color: #2980b9;
+            border: 1px solid #d4e6f1;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s;
+            font-family: inherit;
+            margin-top: 16px;
+        }
+
+        .share-btn:hover {
+            background: #eaf2f8;
+            border-color: #2980b9;
+        }
+
+        .share-btn.copied {
+            color: #1e8449;
+            border-color: #1e8449;
+        }
+
+        .contribute-callout {
+            max-width: 860px;
+            width: 100%;
+            padding: 20px 24px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contribute-callout p {
+            font-size: 0.88rem;
+            color: #5d7b96;
+            line-height: 1.6;
+        }
+
+        .contribute-callout a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contribute-callout a:hover {
+            text-decoration: underline;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .download-all-btn {
+                background: #2980b9;
+                border-color: #2980b9;
+            }
+
+            .download-all-btn:hover {
+                background: #2471a3;
+                border-color: #2471a3;
+            }
+
+            .download-all-note {
+                color: #6a8da8;
+            }
+
+            .share-btn {
+                color: #5dade2;
+                border-color: #1e3a52;
+            }
+
+            .share-btn:hover {
+                background: #1a3350;
+                border-color: #5dade2;
+            }
+
+            .share-btn.copied {
+                color: #58d68d;
+                border-color: #58d68d;
+            }
+
+            .contribute-callout p {
+                color: #8aa8c0;
+            }
+
+            .contribute-callout a {
+                color: #5dade2;
+            }
         }
 
         .disclaimer {
@@ -568,6 +724,82 @@
             }
         }
 
+        .whats-new {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 16px 28px;
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-left: 4px solid #2980b9;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+        }
+
+        .whats-new h3 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: #1a5276;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 10px;
+        }
+
+        .whats-new ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .whats-new li {
+            font-size: 0.82rem;
+            color: #5d7b96;
+            line-height: 1.6;
+            padding: 3px 0 3px 16px;
+            position: relative;
+        }
+
+        .whats-new li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #2980b9;
+            font-weight: 700;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+
+        .whats-new .wn-date {
+            color: #85a5be;
+            font-size: 0.75rem;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .whats-new {
+                background: #162a3a;
+                border-color: #1e3a52;
+                border-left-color: #2980b9;
+            }
+
+            .whats-new h3 {
+                color: #d6eaf8;
+            }
+
+            .whats-new li {
+                color: #8aa8c0;
+            }
+
+            .whats-new .wn-date {
+                color: #6a8da8;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .whats-new {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
         .explainer {
             max-width: 720px;
             padding: 40px 28px;
@@ -664,6 +896,16 @@
             margin-bottom: 4px;
         }
 
+        .flow-step a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .flow-step a:hover {
+            text-decoration: underline;
+        }
+
         .flow-step p {
             font-size: 0.85rem;
             color: #5d7b96;
@@ -674,8 +916,71 @@
         .last-updated {
             font-size: 0.72rem;
             color: #85a5be;
-            margin-bottom: 16px;
+            margin-bottom: 8px;
             font-style: italic;
+        }
+
+        .reading-time {
+            font-size: 0.72rem;
+            color: #85a5be;
+            margin-bottom: 16px;
+        }
+
+        .card-preview {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+        .card-preview summary {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #2980b9;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            justify-content: center;
+        }
+
+        .card-preview summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .card-preview summary::after {
+            content: "▸";
+            font-size: 0.7rem;
+            transition: transform 0.2s;
+        }
+
+        .card-preview[open] summary::after {
+            transform: rotate(90deg);
+        }
+
+        .card-preview summary:hover {
+            color: #1a5276;
+        }
+
+        .card-preview-list {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0;
+            text-align: left;
+        }
+
+        .card-preview-list li {
+            font-size: 0.75rem;
+            color: #5d7b96;
+            padding: 3px 0 3px 14px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .card-preview-list li::before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            color: #85a5be;
         }
 
         .section-label.community h2 {
@@ -740,6 +1045,79 @@
         .community-link span {
             font-size: 0.8rem;
             color: #85a5be;
+        }
+
+        .stats-bar {
+            max-width: 860px;
+            width: 100%;
+            padding: 24px;
+            margin: 32px auto 0;
+        }
+
+        .stats-grid {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            min-width: 140px;
+            max-width: 200px;
+            text-align: center;
+            padding: 20px 16px;
+            background: #ffffff;
+            border: 1px solid #d4e6f1;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(26, 82, 118, 0.06);
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #1a5276;
+            line-height: 1.2;
+        }
+
+        .stat-label {
+            display: block;
+            font-size: 0.78rem;
+            color: #85a5be;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .stat-item {
+                background: #162a3a;
+                border-color: #1e3a52;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            }
+
+            .stat-number {
+                color: #d6eaf8;
+            }
+
+            .stat-label {
+                color: #6a8da8;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .stats-grid {
+                gap: 10px;
+            }
+
+            .stat-item {
+                min-width: 100px;
+                padding: 14px 10px;
+            }
+
+            .stat-number {
+                font-size: 1.3rem;
+            }
         }
 
         .community-link .caveat {
@@ -865,6 +1243,128 @@
             margin-top: 6px;
         }
 
+        .sticky-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(26, 82, 118, 0.97);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            padding: 0;
+            z-index: 1000;
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .sticky-nav.visible {
+            transform: translateY(0);
+        }
+
+        .sticky-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sticky-nav a {
+            display: block;
+            padding: 12px 20px;
+            color: #d6eaf8;
+            text-decoration: none;
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.04em;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .sticky-nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: #fff;
+        }
+
+        @media (max-width: 640px) {
+            .sticky-nav a {
+                padding: 10px 12px;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .sticky-nav {
+                background: rgba(13, 33, 55, 0.97);
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            .sticky-nav a {
+                color: #8ab4d4;
+            }
+
+            .sticky-nav a:hover {
+                background: rgba(255, 255, 255, 0.06);
+                color: #d6eaf8;
+            }
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #1a5276;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 12px rgba(26, 82, 118, 0.3);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s, visibility 0.3s, transform 0.15s;
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-2px);
+            background: #154360;
+        }
+
+        .back-to-top:active {
+            transform: scale(0.95);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .back-to-top {
+                background: #2980b9;
+                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            .back-to-top:hover {
+                background: #2471a3;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
         @media (max-width: 640px) {
             .hero {
                 padding: 48px 20px 24px;
@@ -872,17 +1372,90 @@
             .hero h1 {
                 font-size: 1.6rem;
             }
+            .hero p {
+                font-size: 0.95rem;
+            }
             .cards {
                 flex-direction: column;
                 align-items: center;
+                padding: 16px 20px;
+                gap: 16px;
+            }
+            .card {
+                min-width: unset;
+                max-width: 100%;
+                width: 100%;
+                padding: 24px 20px;
             }
             .community-grid {
                 flex-direction: column;
                 align-items: center;
             }
+            .community-link {
+                min-width: unset;
+                max-width: 100%;
+                width: 100%;
+            }
             .explainer, .guided-flow {
                 margin-left: 20px;
                 margin-right: 20px;
+                padding: 28px 20px;
+            }
+            .tldr {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .tldr summary {
+                padding: 16px 20px;
+                font-size: 0.92rem;
+            }
+            .tldr .tldr-content {
+                padding: 0 20px 24px;
+            }
+            .section-label {
+                padding: 0 20px;
+            }
+            .download-btn {
+                padding: 14px 24px;
+                min-height: 48px;
+            }
+            .download-all-btn {
+                padding: 14px 28px;
+                min-height: 48px;
+                font-size: 0.92rem;
+            }
+            .download-all-section {
+                padding: 20px;
+            }
+            .expanded-note {
+                padding: 0 20px;
+            }
+            .disclaimer {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+            }
+            .stats-bar {
+                padding: 20px;
+            }
+            .community-links {
+                padding: 16px 20px;
+            }
+            .flow-step {
+                gap: 12px;
+            }
+            .step-number {
+                width: 28px;
+                height: 28px;
+                font-size: 0.82rem;
+            }
+            .guided-flow > p,
+            .flow-step p,
+            .flow-step strong {
+                font-size: 0.88rem;
+            }
+            .contribute-callout {
+                padding: 16px 20px;
             }
         }
 
@@ -930,6 +1503,10 @@
 
             .flow-step strong {
                 color: #c8d8e4;
+            }
+
+            .flow-step a {
+                color: #5dade2;
             }
 
             .explainer,
@@ -991,7 +1568,24 @@
             }
 
             .card .file-type,
-            .last-updated {
+            .last-updated,
+            .reading-time {
+                color: #6a8da8;
+            }
+
+            .card-preview summary {
+                color: #5dade2;
+            }
+
+            .card-preview summary:hover {
+                color: #85c1e9;
+            }
+
+            .card-preview-list li {
+                color: #8aa8c0;
+            }
+
+            .card-preview-list li::before {
                 color: #6a8da8;
             }
 
@@ -1076,9 +1670,74 @@
                 color: #5dade2 !important;
             }
         }
+
+        @media print {
+            body {
+                background: #fff;
+                color: #000;
+            }
+
+            .sticky-nav,
+            .back-to-top,
+            .header-bar,
+            .share-btn,
+            .download-btn,
+            .download-all-section,
+            .search-container,
+            .community-links,
+            .contribute-callout,
+            .whats-new,
+            .card-preview,
+            footer,
+            script {
+                display: none !important;
+            }
+
+            .hero h1 {
+                color: #000;
+            }
+
+            .card, .explainer, .guided-flow, .tldr details,
+            .disclaimer, .stat-item {
+                border-color: #ccc;
+                box-shadow: none;
+                break-inside: avoid;
+            }
+
+            .fade-in {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            .tldr details {
+                display: block;
+            }
+
+            .tldr details[open] .tldr-content {
+                display: block;
+            }
+
+            a {
+                color: #000 !important;
+                text-decoration: none !important;
+            }
+        }
     </style>
 </head>
 <body>
+    <nav class="sticky-nav" id="sticky-nav">
+        <ul>
+            <li><a href="#reports">Reports</a></li>
+            <li><a href="#trackers">Trackers</a></li>
+            <li><a href="#search">Search</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+    </nav>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
     <div class="header-bar">
         <span>Thoracic Outlet Syndrome — Community Resources</span>
     </div>
@@ -1086,6 +1745,10 @@
     <div class="hero">
         <h1>TOS Resources</h1>
         <p>Community-driven resources for understanding, diagnosing, and managing Thoracic Outlet Syndrome — compiled from insights gathered across the top Reddit posts and discussions.</p>
+        <button class="share-btn" id="share-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            Share this page
+        </button>
     </div>
 
     <div class="explainer">
@@ -1156,35 +1819,35 @@
             <div class="flow-step">
                 <span class="step-number">1</span>
                 <div>
-                    <strong>Start with the Diagnostic Checklist</strong>
+                    <strong><a href="#card-checklist">Start with the Diagnostic Checklist</a></strong>
                     <p>Use it to organize your symptoms and prepare for doctor visits. It helps ensure nothing gets overlooked.</p>
                 </div>
             </div>
             <div class="flow-step">
                 <span class="step-number">2</span>
                 <div>
-                    <strong>Read the Community Research Report</strong>
+                    <strong><a href="#card-research">Read the Community Research Report</a></strong>
                     <p>Get a broad understanding of TOS — common experiences, treatment options, and what others have found helpful.</p>
                 </div>
             </div>
             <div class="flow-step">
                 <span class="step-number">3</span>
                 <div>
-                    <strong>Pick an Exercise Tracker</strong>
+                    <strong><a href="#card-tracker">Pick an Exercise Tracker</a></strong>
                     <p>Once you have a diagnosis and your doctor's guidance, choose the 12-week plan that fits your needs.</p>
                 </div>
             </div>
             <div class="flow-step">
                 <span class="step-number">4</span>
                 <div>
-                    <strong>Search for Specific Topics</strong>
+                    <strong><a href="#search">Search for Specific Topics</a></strong>
                     <p>Looking for something specific? Use the search bar below to find any term across all four documents — from treatments and doctors to symptoms and exercises.</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="search-container">
+    <div id="search" class="search-container">
         <div class="search-input-wrapper">
             <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             <input type="text" id="doc-search" placeholder="Search across all documents... (e.g., Botox, scalene, Dr. Donahue)" autocomplete="off">
@@ -1194,12 +1857,12 @@
         <div id="search-results" class="search-results"></div>
     </div>
 
-    <div class="section-label reports">
+    <div id="reports" class="section-label reports">
         <h2>Reports & Guides</h2>
     </div>
 
     <div class="cards">
-        <div class="card">
+        <div id="card-research" class="card">
             <div class="card-icon doc">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             </div>
@@ -1207,6 +1870,21 @@
             <p class="description">A comprehensive summary of experiences, treatments, and advice shared by the TOS community on Reddit.</p>
             <span class="file-type">Word Document (.docx)</span>
             <span class="last-updated">Updated Mar 27, 2026</span>
+            <span class="reading-time">~16 min read</span>
+            <details class="card-preview">
+                <summary>See what's inside</summary>
+                <ul class="card-preview-list">
+                    <li>Executive Summary</li>
+                    <li>Serratus Anterior Strengthening</li>
+                    <li>Scalene Strengthening (Not Just Stretching)</li>
+                    <li>Pec Minor Stretching & Manual Release</li>
+                    <li>Scalene Botox & Lidocaine Injections</li>
+                    <li>Surgeons Named Positively</li>
+                    <li>Physical Therapy Approaches</li>
+                    <li>Lifestyle & Ergonomic Adjustments</li>
+                    <li>Suggested Action Plan</li>
+                </ul>
+            </details>
             <a href="files/TOS_Community_Research_Report.docx" download class="download-btn doc">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -1221,13 +1899,27 @@
             <p class="description">A detailed look at surgical interventions for TOS, including community-reported outcomes, recovery timelines, and key considerations.</p>
             <span class="file-type">Word Document (.docx)</span>
             <span class="last-updated">Updated Mar 27, 2026</span>
+            <span class="reading-time">~19 min read</span>
+            <details class="card-preview">
+                <summary>See what's inside</summary>
+                <ul class="card-preview-list">
+                    <li>First Rib Resection (FRR)</li>
+                    <li>Scalenectomy</li>
+                    <li>Pec Minor Release & Resection</li>
+                    <li>Long-Term Outcome Trajectory</li>
+                    <li>Surgical Failures & Complications</li>
+                    <li>Named Surgeons & Community Reputation</li>
+                    <li>Case Studies</li>
+                    <li>Predictors of Surgical Success</li>
+                </ul>
+            </details>
             <a href="files/TOS_Surgical_Outcomes_Report.docx" download class="download-btn surgical">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
             </a>
         </div>
 
-        <div class="card">
+        <div id="card-checklist" class="card">
             <div class="card-icon checklist">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
             </div>
@@ -1235,6 +1927,20 @@
             <p class="description">A step-by-step checklist to help guide conversations with your doctor and navigate the TOS diagnostic process.</p>
             <span class="file-type">Word Document (.docx)</span>
             <span class="last-updated">Updated Mar 27, 2026</span>
+            <span class="reading-time">~13 min read</span>
+            <details class="card-preview">
+                <summary>See what's inside</summary>
+                <ul class="card-preview-list">
+                    <li>Phase 1: Rule Out the Mimics</li>
+                    <li>Phase 2: Clinical Examination & Provocative Tests</li>
+                    <li>Phase 3: Imaging Workup</li>
+                    <li>Phase 4: Electrodiagnostic Studies (EMG/NCS)</li>
+                    <li>Phase 5: Diagnostic Injections</li>
+                    <li>Phase 6: TOS Subtype Determination</li>
+                    <li>Who Should Diagnose You</li>
+                    <li>Appointment Preparation</li>
+                </ul>
+            </details>
             <a href="files/TOS_Diagnostic_Checklist.docx" download class="download-btn checklist">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -1242,12 +1948,12 @@
         </div>
     </div>
 
-    <div class="section-label trackers">
+    <div id="trackers" class="section-label trackers">
         <h2>Exercise Trackers</h2>
     </div>
 
     <div class="cards">
-        <div class="card">
+        <div id="card-tracker" class="card">
             <div class="card-icon sheet">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
             </div>
@@ -1293,6 +1999,20 @@
             <p class="description">What 282 additional Reddit posts reveal beyond the original research — new symptoms, treatments, surgeons, and safety considerations not covered in the core reports.</p>
             <span class="file-type">Word Document (.docx)</span>
             <span class="last-updated">Added Mar 29, 2026</span>
+            <span class="reading-time">~22 min read</span>
+            <details class="card-preview">
+                <summary>See what's inside</summary>
+                <ul class="card-preview-list">
+                    <li>Cognitive & Cerebrovascular Symptoms</li>
+                    <li>POTS, Dysautonomia & Autonomic Symptoms</li>
+                    <li>TMJ, Facial Pain & Jaw Symptoms</li>
+                    <li>Botox Practical Guidance</li>
+                    <li>Counterstrain PT (Stronger Evidence)</li>
+                    <li>Additional Conditions to Rule Out</li>
+                    <li>EDS, Hypermobility & Surgical Risk</li>
+                    <li>Additional Surgeons</li>
+                </ul>
+            </details>
             <a href="files/TOS_Expanded_Findings.docx" download class="download-btn expanded">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download
@@ -1300,12 +2020,41 @@
         </div>
     </div>
 
+    <div class="download-all-section">
+        <button class="download-all-btn" id="download-all-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download All Resources (.zip)
+        </button>
+        <p class="download-all-note">All 6 files bundled into a single download</p>
+    </div>
+
     <div class="disclaimer">
         <h3>Medical Disclaimer</h3>
         <p>The information provided on this website and in the downloadable files is for general informational and educational purposes only. It is not intended as, and should not be used as, a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician, physical therapist, or other qualified healthcare provider with any questions you may have regarding a medical condition, including Thoracic Outlet Syndrome. Never disregard professional medical advice or delay seeking it because of something you have read here. The content is compiled from community discussions on Reddit and has not been reviewed or verified by medical professionals. Use of any information provided is solely at your own risk. If you are experiencing a medical emergency, call your local emergency services immediately.</p>
     </div>
 
-    <div class="section-label community">
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <span class="stat-number">382</span>
+                <span class="stat-label">Reddit posts analyzed</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">6</span>
+                <span class="stat-label">Free resources</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">15+</span>
+                <span class="stat-label">Surgeons referenced</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">~70 min</span>
+                <span class="stat-label">Total reading material</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="community" class="section-label community">
         <h2>Community</h2>
     </div>
 
@@ -1345,10 +2094,26 @@
         </div>
     </div>
 
+    <div class="contribute-callout">
+        <p>Have something to add? Found a treatment that helped, or want to share your experience? <a href="https://www.reddit.com/r/thoracicoutletsupport/comments/1s3xq05/" target="_blank" rel="noopener noreferrer">Join the conversation on Reddit</a> — community input is what makes these resources better.</p>
+    </div>
+
+    <div class="whats-new" style="max-width: 860px; margin: 0 auto;">
+        <h3>What's New</h3>
+        <ul>
+            <li><span class="wn-date">Apr 1</span> — New site navigation, download-all, preview snippets, and mobile improvements</li>
+            <li><span class="wn-date">Mar 29</span> — Full-text search across all documents with medical synonym support</li>
+            <li><span class="wn-date">Mar 28</span> — Expanded Findings document added (282 additional Reddit posts)</li>
+            <li><span class="wn-date">Mar 27</span> — Collapsible TL;DR, dark mode, community links, and guided flow for new visitors</li>
+        </ul>
+    </div>
+
     <footer>
         Built with insights from the TOS community on Reddit.<br>
         For more resources, visit <a href="https://www.tosoutreach.com" style="color: #2980b9; text-decoration: none; font-weight: 500;">tosoutreach.com</a>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script data-goatcounter="https://digitalwestern.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
@@ -1633,6 +2398,123 @@
                 searchInput.blur();
             }
         });
+    })();
+    </script>
+
+    <script>
+    (function() {
+        var stickyNav = document.getElementById('sticky-nav');
+        var backToTop = document.getElementById('back-to-top');
+        var hero = document.querySelector('.hero');
+        var showThreshold = 400;
+
+        window.addEventListener('scroll', function() {
+            var scrollY = window.scrollY || window.pageYOffset;
+            if (scrollY > showThreshold) {
+                stickyNav.classList.add('visible');
+                backToTop.classList.add('visible');
+            } else {
+                stickyNav.classList.remove('visible');
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.getElementById('share-btn').addEventListener('click', function() {
+            var btn = this;
+            var url = 'https://digitalwestern.github.io/tos-resources';
+            if (navigator.share) {
+                navigator.share({ title: 'TOS Resources', url: url }).catch(function() {});
+            } else if (navigator.clipboard) {
+                navigator.clipboard.writeText(url).then(function() {
+                    btn.classList.add('copied');
+                    btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Link copied!';
+                    setTimeout(function() {
+                        btn.classList.remove('copied');
+                        btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Share this page';
+                    }, 2000);
+                });
+            }
+        });
+
+        document.getElementById('download-all-btn').addEventListener('click', function() {
+            var btn = this;
+            var originalText = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Preparing download...';
+
+            var files = [
+                'files/TOS_Community_Research_Report.docx',
+                'files/TOS_Surgical_Outcomes_Report.docx',
+                'files/TOS_Diagnostic_Checklist.docx',
+                'files/TOS_Expanded_Findings.docx',
+                'files/TOS_12_Week_Exercise_Plan.xlsx',
+                'files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx'
+            ];
+
+            var zip = new JSZip();
+            Promise.all(files.map(function(filePath) {
+                return fetch(filePath)
+                    .then(function(resp) { return resp.blob(); })
+                    .then(function(blob) {
+                        var filename = filePath.split('/').pop();
+                        zip.file(filename, blob);
+                    });
+            })).then(function() {
+                return zip.generateAsync({ type: 'blob' });
+            }).then(function(content) {
+                var a = document.createElement('a');
+                a.href = URL.createObjectURL(content);
+                a.download = 'TOS_Resources.zip';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(a.href);
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+
+                if (window.goatcounter && goatcounter.count) {
+                    goatcounter.count({ path: 'download/TOS_Resources.zip', title: 'Download: TOS_Resources.zip', event: true });
+                }
+            }).catch(function() {
+                btn.disabled = false;
+                btn.innerHTML = originalText;
+                alert('Download failed. Please try downloading files individually.');
+            });
+        });
+
+        stickyNav.querySelectorAll('a[href^="#"]').forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                var target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    var navHeight = stickyNav.offsetHeight;
+                    var targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
+                    window.scrollTo({ top: targetTop, behavior: 'smooth' });
+                }
+            });
+        });
+
+        var fadeEls = document.querySelectorAll('.whats-new, .explainer, .tldr, .guided-flow, .search-container, .section-label, .cards, .expanded-note, .download-all-section, .disclaimer, .stats-bar, .community-links, .contribute-callout');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
     })();
     </script>
 </body>

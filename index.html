@@ -224,6 +224,31 @@
             height: 18px;
         }
 
+        .download-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+        }
+
+        .download-buttons .download-btn {
+            margin-top: 0;
+            flex: 1;
+            justify-content: center;
+            padding: 12px 16px;
+            font-size: 0.85rem;
+        }
+
+        .download-btn-pdf {
+            background: transparent !important;
+            color: #5c3d2e !important;
+            border: 1.5px solid #5c3d2e !important;
+        }
+
+        .download-btn-pdf:hover {
+            background: #5c3d2e !important;
+            color: #fff !important;
+        }
+
         .download-all-section {
             max-width: 860px;
             width: 100%;
@@ -1640,6 +1665,17 @@
                 background: #b08a5e;
             }
 
+            .download-btn-pdf {
+                background: transparent !important;
+                color: #c49a6c !important;
+                border: 1.5px solid #c49a6c !important;
+            }
+
+            .download-btn-pdf:hover {
+                background: #c49a6c !important;
+                color: #1a1714 !important;
+            }
+
             footer {
                 color: #7a7168;
             }
@@ -1846,7 +1882,7 @@
             </div>
             <h2>Community Research Report</h2>
             <p class="description">A comprehensive summary of experiences, treatments, and advice shared by the TOS community on Reddit.</p>
-            <span class="file-type">Word Document (.docx)</span>
+            <span class="file-type">Word (.docx) &amp; PDF</span>
             <span class="last-updated">Updated Mar 27, 2026</span>
             <span class="reading-time">~16 min read</span>
             <details class="card-preview">
@@ -1863,10 +1899,16 @@
                     <li>Suggested Action Plan</li>
                 </ul>
             </details>
-            <a href="files/TOS_Community_Research_Report.docx" download class="download-btn doc">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download
-            </a>
+            <div class="download-buttons">
+                <a href="files/TOS_Community_Research_Report.docx" download class="download-btn doc">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .docx
+                </a>
+                <a href="files/TOS_Community_Research_Report.pdf" download class="download-btn doc download-btn-pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .pdf
+                </a>
+            </div>
         </div>
 
         <div class="card">
@@ -1875,7 +1917,7 @@
             </div>
             <h2>Surgical Outcomes</h2>
             <p class="description">A detailed look at surgical interventions for TOS, including community-reported outcomes, recovery timelines, and key considerations.</p>
-            <span class="file-type">Word Document (.docx)</span>
+            <span class="file-type">Word (.docx) &amp; PDF</span>
             <span class="last-updated">Updated Mar 27, 2026</span>
             <span class="reading-time">~19 min read</span>
             <details class="card-preview">
@@ -1891,10 +1933,16 @@
                     <li>Predictors of Surgical Success</li>
                 </ul>
             </details>
-            <a href="files/TOS_Surgical_Outcomes_Report.docx" download class="download-btn surgical">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download
-            </a>
+            <div class="download-buttons">
+                <a href="files/TOS_Surgical_Outcomes_Report.docx" download class="download-btn surgical">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .docx
+                </a>
+                <a href="files/TOS_Surgical_Outcomes_Report.pdf" download class="download-btn surgical download-btn-pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .pdf
+                </a>
+            </div>
         </div>
 
         <div id="card-checklist" class="card">
@@ -1903,7 +1951,7 @@
             </div>
             <h2>Diagnostic Checklist</h2>
             <p class="description">A step-by-step checklist to help guide conversations with your doctor and navigate the TOS diagnostic process.</p>
-            <span class="file-type">Word Document (.docx)</span>
+            <span class="file-type">Word (.docx) &amp; PDF</span>
             <span class="last-updated">Updated Mar 27, 2026</span>
             <span class="reading-time">~13 min read</span>
             <details class="card-preview">
@@ -1919,10 +1967,16 @@
                     <li>Appointment Preparation</li>
                 </ul>
             </details>
-            <a href="files/TOS_Diagnostic_Checklist.docx" download class="download-btn checklist">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download
-            </a>
+            <div class="download-buttons">
+                <a href="files/TOS_Diagnostic_Checklist.docx" download class="download-btn checklist">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .docx
+                </a>
+                <a href="files/TOS_Diagnostic_Checklist.pdf" download class="download-btn checklist download-btn-pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .pdf
+                </a>
+            </div>
         </div>
     </div>
 
@@ -1975,7 +2029,7 @@
             </div>
             <h2>Expanded Community Findings</h2>
             <p class="description">What 282 additional Reddit posts reveal beyond the original research — new symptoms, treatments, surgeons, and safety considerations not covered in the core reports.</p>
-            <span class="file-type">Word Document (.docx)</span>
+            <span class="file-type">Word (.docx) &amp; PDF</span>
             <span class="last-updated">Added Mar 29, 2026</span>
             <span class="reading-time">~22 min read</span>
             <details class="card-preview">
@@ -1991,10 +2045,16 @@
                     <li>Additional Surgeons</li>
                 </ul>
             </details>
-            <a href="files/TOS_Expanded_Findings.docx" download class="download-btn expanded">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download
-            </a>
+            <div class="download-buttons">
+                <a href="files/TOS_Expanded_Findings.docx" download class="download-btn expanded">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .docx
+                </a>
+                <a href="files/TOS_Expanded_Findings.pdf" download class="download-btn expanded download-btn-pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .pdf
+                </a>
+            </div>
         </div>
     </div>
 
@@ -2003,7 +2063,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download All Resources (.zip)
         </button>
-        <p class="download-all-note">All 6 files bundled into a single download</p>
+        <p class="download-all-note">All 10 files bundled into a single download</p>
     </div>
 
     <div class="disclaimer">
@@ -2012,7 +2072,7 @@
     </div>
 
     <div class="stats-bar">
-        <p class="stats-line">382 Reddit posts · 6 free resources · 15+ surgeons referenced · ~70 min reading</p>
+        <p class="stats-line">382 Reddit posts · 10 free resources · 15+ surgeons referenced · ~70 min reading</p>
     </div>
 
     <div id="community" class="section-label community">
@@ -2409,9 +2469,13 @@
 
             var files = [
                 'files/TOS_Community_Research_Report.docx',
+                'files/TOS_Community_Research_Report.pdf',
                 'files/TOS_Surgical_Outcomes_Report.docx',
+                'files/TOS_Surgical_Outcomes_Report.pdf',
                 'files/TOS_Diagnostic_Checklist.docx',
+                'files/TOS_Diagnostic_Checklist.pdf',
                 'files/TOS_Expanded_Findings.docx',
+                'files/TOS_Expanded_Findings.pdf',
                 'files/TOS_12_Week_Exercise_Plan.xlsx',
                 'files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx'
             ];

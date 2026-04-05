@@ -35,3 +35,7 @@ Run a security review on my recent changes.
 - End with a clear PASS or FAIL verdict
 
 Be specific about line numbers. Do not give generic advice — only flag things that actually appear in the diff.
+
+4. After reporting, fix each issue you flagged. For secrets and passwords, replace the value with a placeholder (e.g., `YOUR_API_KEY_HERE` or an environment variable reference). For broken asset references, correct the path or remove the dead reference.
+
+Keep the user in the loop throughout — narrate what you're scanning, what you found, what you're fixing, and why. Don't work silently.

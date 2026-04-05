@@ -153,6 +153,11 @@
             color: #5c4a2e;
         }
 
+        .card-icon.medications {
+            background: #e0e8ed;
+            color: #2e4a5c;
+        }
+
         .card h2 {
             font-size: 1.15rem;
             font-weight: 600;
@@ -201,7 +206,8 @@
         .download-btn.surgical,
         .download-btn.checklist,
         .download-btn.sheet-alt,
-        .download-btn.expanded {
+        .download-btn.expanded,
+        .download-btn.medications {
             background: #5c3d2e;
             color: #fff;
         }
@@ -211,7 +217,8 @@
         .download-btn.surgical:hover,
         .download-btn.checklist:hover,
         .download-btn.sheet-alt:hover,
-        .download-btn.expanded:hover {
+        .download-btn.expanded:hover,
+        .download-btn.medications:hover {
             background: #4a3125;
         }
 
@@ -1594,6 +1601,11 @@
                 color: #c4a86c;
             }
 
+            .card-icon.medications {
+                background: #202530;
+                color: #6ca8c4;
+            }
+
             .section-label h2 {
                 color: #e8e0d5;
             }
@@ -1855,7 +1867,7 @@
                 <span class="step-number">4</span>
                 <div>
                     <strong><a href="#search">Search for Specific Topics</a></strong>
-                    <p>Looking for something specific? Use the search bar below to find any term across all four documents — from treatments and doctors to symptoms and exercises.</p>
+                    <p>Looking for something specific? Use the search bar below to find any term across all five documents — from treatments and doctors to symptoms, medications, and exercises.</p>
                 </div>
             </div>
         </div>
@@ -1978,6 +1990,42 @@
                 </a>
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-icon medications">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5"/><path d="M10.5 1.5v3h3v-3"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
+            </div>
+            <h2>Medications, Supplements & Vitamins Guide</h2>
+            <p class="description">Community-reported medications and evidence-based supplements relevant to TOS — neuropathic pain treatments, blood thinners for vTOS, and supportive vitamins.</p>
+            <span class="file-type">Word (.docx) &amp; PDF</span>
+            <span class="last-updated">Added Apr 5, 2026</span>
+            <span class="reading-time">~14 min read</span>
+            <details class="card-preview">
+                <summary>See what's inside</summary>
+                <ul class="card-preview-list">
+                    <li>Neuropathic Pain Medications (Gabapentin, Lyrica, Cymbalta, Amitriptyline)</li>
+                    <li>Muscle Relaxants</li>
+                    <li>Injections (Botox, Nerve Blocks, Lidocaine)</li>
+                    <li>Anti-Inflammatory Medications &amp; NSAIDs</li>
+                    <li>Blood Thinners for Venous TOS</li>
+                    <li>Cannabis (THC / CBD)</li>
+                    <li>Supplements &amp; Vitamins (Magnesium, B Vitamins, ALA, Vitamin D, Omega-3)</li>
+                    <li>POTS / Dysautonomia Support</li>
+                    <li>Multi-Modal Pain Management Strategies</li>
+                    <li>Questions to Discuss with Your Doctor</li>
+                </ul>
+            </details>
+            <div class="download-buttons">
+                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.docx" download class="download-btn medications">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .docx
+                </a>
+                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.pdf" download class="download-btn medications download-btn-pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    .pdf
+                </a>
+            </div>
+        </div>
     </div>
 
     <div id="trackers" class="section-label trackers">
@@ -2063,7 +2111,7 @@
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             Download All Resources (.zip)
         </button>
-        <p class="download-all-note">All 10 files bundled into a single download</p>
+        <p class="download-all-note">All 12 files bundled into a single download</p>
     </div>
 
     <div class="disclaimer">
@@ -2072,7 +2120,7 @@
     </div>
 
     <div class="stats-bar">
-        <p class="stats-line">382 Reddit posts · 10 free resources · 15+ surgeons referenced · ~70 min reading</p>
+        <p class="stats-line">382 Reddit posts · 12 free resources · 15+ surgeons referenced · ~84 min reading</p>
     </div>
 
     <div id="community" class="section-label community">
@@ -2223,6 +2271,34 @@
                 ]
             },
             {
+                title: "Medications, Supplements & Vitamins Guide",
+                downloadPath: "files/TOS_Medications_Supplements_Vitamins_Guide.docx",
+                colorClass: "medications",
+                sections: [
+                    { heading: "Overview", text: "This guide covers medications supplements and vitamins relevant to people living with Thoracic Outlet Syndrome TOS. It draws from community data of 382 posts from r/ThoracicOutletSupport and evidence-based supplemental information about treatments for neuropathic pain vascular conditions and supportive nutrition." },
+                    { heading: "Gabapentin Neurontin", text: "Gabapentin is an anticonvulsant widely prescribed for neuropathic pain and one of the most frequently mentioned medications in the TOS community. Works by modulating calcium channels reducing abnormal nerve signaling. One user noted high doses 900mg during the day and 1800mg before bed were necessary and many doctors start on doses too low. Multiple users maintained gabapentin long-term after surgery for residual nerve irritation. Common side effects include drowsiness dizziness and fatigue which often improve after the first few weeks." },
+                    { heading: "Pregabalin Lyrica", text: "Pregabalin is similar to gabapentin but generally considered more potent with more predictable absorption. One user described pregabalin and amitriptyline as life savers saying without them I would not have had any relief. A post-surgical user reported halving their pregabalin dose 11 months after surgery. One user combined lidocaine patches and Lyrica on top of NSAIDs and Tylenol as a multi-modal flare management approach. Pregabalin has FDA approval for neuropathic pain and is a Schedule V controlled substance." },
+                    { heading: "Duloxetine Cymbalta", text: "Duloxetine is a serotonin-norepinephrine reuptake inhibitor SNRI antidepressant with strong evidence for neuropathic pain. One user stated Cymbalta changed my life. Another with over 12 years of pain reported duloxetine was the first medication to provide real relief. Has FDA approval for diabetic peripheral neuropathy fibromyalgia and chronic musculoskeletal pain. Should not be stopped abruptly requires gradual taper." },
+                    { heading: "Amitriptyline Elavil", text: "Amitriptyline is a tricyclic antidepressant commonly used at low doses for chronic pain and neuropathy. Described alongside pregabalin as a life saver for managing TOS pain and improving sleep. At low doses 10 to 50mg at bedtime it modulates pain pathways and improves sleep. Multiple users maintained amitriptyline long-term after surgery." },
+                    { heading: "Muscle Relaxants", text: "Tight spasming muscles particularly the scalenes and pec minor are central to TOS. Muscle relaxants commonly prescribed alongside physical therapy to break the pain-spasm cycle. One post-surgical user recommended muscle relaxers and nerve pain medication rather than relying solely on narcotics which do not treat the cause of pain. Commonly prescribed include cyclobenzaprine Flexeril tizanidine Zanaflex methocarbamol Robaxin and baclofen. One user warned against baclofen specifically." },
+                    { heading: "Botox OnabotulinumtoxinA", text: "Botox was the single most discussed medication in the dataset. Results are highly variable from days to months of relief. One user had Botox five times before surgery another had 5 years of relief from PT combined with Botox. Pain flares after injection are normal allow 3 weeks for full effect. Rebound pain is real plan for consistent scheduling. Diminishing returns reported after 5 to 6 rounds. Trapezius Botox was called a godsend. Insurance often does not cover for TOS directly but may cover under cervical dystonia codes. Critical safety note about cervical instability in hypermobile patients." },
+                    { heading: "Lidocaine and Bupivacaine Nerve Blocks", text: "Scalene blocks with lidocaine produce profound temporary relief to the point of tears for some users. Key diagnostic tool if a scalene block relieves symptoms it confirms scalene involvement. Trigger point injections with lidocaine or bupivacaine into scalenes and pec minor provide temporary but dramatic relief. Topical lidocaine patches and cream used for surface-level nerve pain often as part of combination therapy during flares." },
+                    { heading: "Anti-Inflammatory Medications NSAIDs", text: "Ibuprofen Advil and NSAIDs mentioned as part of multi-modal pain management. Combining ibuprofen and acetaminophen Tylenol together more effective than either alone. NSAIDs alone generally not sufficient for neuropathic TOS pain but help with muscular and inflammatory component. Common NSAIDs include ibuprofen naproxen Aleve meloxicam and celecoxib Celebrex. Long-term daily use carries risks for stomach kidneys and cardiovascular system." },
+                    { heading: "Blood Thinners Venous TOS vTOS", text: "Venous TOS involves compression of the subclavian vein which can lead to deep vein thrombosis DVT also known as Paget-Schroetter syndrome. Anticoagulant therapy is critical. Multiple users on blood thinners after vTOS-related DVT some for life. Common anticoagulants include rivaroxaban Xarelto apixaban Eliquis heparin enoxaparin Lovenox and warfarin Coumadin. Catheter-directed thrombolysis tPA may be used acutely. Some supplements fish oil vitamin E turmeric can increase bleeding risk with anticoagulants." },
+                    { heading: "Cannabis THC CBD", text: "THC and CBD mentioned occasionally for pain management. Hot baths combined with THC described as a go-to strategy. CBD has some evidence for anti-inflammatory and analgesic effects. THC has stronger analgesic properties but psychoactive effects and legal variability. Cannabis products can interact with blood thinners and certain antidepressants." },
+                    { heading: "Magnesium", text: "Magnesium plays a role in nerve transmission and muscle relaxation. Deficiency is common and can contribute to muscle cramps tension and nerve sensitivity. Magnesium glycinate preferred for bioavailability. Typical dose 200 to 400mg daily. Topical magnesium via Epsom salt baths popular for localized muscle relaxation." },
+                    { heading: "B Vitamins B12 B6", text: "Vitamin B12 essential for nerve myelin sheath maintenance. Deficiency can cause or worsen neuropathy. Vitamin B6 supports nerve function but excessive intake over 100mg per day can paradoxically cause peripheral neuropathy. Consider having B12 levels tested deficiency is common especially in vegetarians and older adults." },
+                    { heading: "Alpha-Lipoic Acid ALA", text: "Alpha-lipoic acid is an antioxidant with the most supplement-level evidence for neuropathic pain primarily studied in diabetic neuropathy. Typical dose 600mg daily. Generally well-tolerated may lower blood sugar." },
+                    { heading: "Vitamin D", text: "Vitamin D deficiency associated with chronic pain muscle weakness and heightened pain sensitivity. Deficiency is extremely common especially in northern climates. Have your level tested before supplementing. Typical repletion doses 2000 to 5000 IU daily taken with fat for absorption." },
+                    { heading: "Omega-3 Fatty Acids Fish Oil", text: "Omega-3s EPA and DHA have well-established anti-inflammatory properties. Typical dose 1000 to 3000mg combined EPA and DHA daily. Caution high-dose fish oil has mild blood-thinning effects relevant for vTOS patients on anticoagulants." },
+                    { heading: "Turmeric Curcumin", text: "Curcumin the active compound in turmeric has anti-inflammatory properties studied for arthritis and general pain. Standard turmeric has low bioavailability look for formulations with piperine or liposomal delivery. Can have blood-thinning effects avoid or discuss if on anticoagulants." },
+                    { heading: "POTS Dysautonomia Support", text: "TOS frequently co-occurs with POTS Postural Orthostatic Tachycardia Syndrome. Increased sodium intake is first-line POTS management. Electrolyte drinks like LMNT Liquid IV or Normalyte help maintain sodium potassium and magnesium balance. Typical POTS guidance 2000 to 3000mg additional sodium per day. Compression garments recommended alongside salt loading for POTS. For vTOS arm compression sleeves may help with blood pooling." },
+                    { heading: "Surgical Recovery Support", text: "Vitamin C supports collagen synthesis and wound healing 500 to 1000mg daily around surgery. Zinc supports wound healing and immune function 15 to 30mg daily. Adequate protein intake 0.8 to 1.2g per kg body weight supports tissue repair after surgery. Collagen peptide supplements popular for connective tissue support." },
+                    { heading: "Multi-Modal Approaches", text: "No single medication or supplement resolves TOS on its own. Most effective strategies combine a nerve pain medication as foundation an anti-inflammatory component a muscle relaxant during flares physical therapy as the active treatment Botox as a bridge and supplements for nerve health. Medications should not be viewed as primary treatment but as tools that make physical therapy and muscle retraining possible." },
+                    { heading: "Questions for Your Doctor", text: "Is my current pain medication adequate for neuropathic pain or should we consider gabapentin pregabalin or duloxetine. Would a diagnostic scalene block help confirm my diagnosis. Am I a candidate for Botox injections should I be evaluated for cervical instability first. Should I have my vitamin D and B12 levels checked. Are any of my current supplements interacting with my medications. For vTOS what anticoagulant is best and what is the long-term plan. For POTS symptoms could my dizziness and blood pooling be related to my TOS." }
+                ]
+            },
+            {
                 title: "Expanded Community Findings",
                 downloadPath: "files/TOS_Expanded_Findings.docx",
                 colorClass: "expanded",
@@ -2280,7 +2356,29 @@
             "pri": ["postural restoration institute"],
             "postural restoration institute": ["pri"],
             "msk neurology": ["kjetil larsen"],
-            "kjetil larsen": ["msk neurology"]
+            "kjetil larsen": ["msk neurology"],
+            "gabapentin": ["neurontin"],
+            "neurontin": ["gabapentin"],
+            "pregabalin": ["lyrica"],
+            "lyrica": ["pregabalin"],
+            "duloxetine": ["cymbalta"],
+            "cymbalta": ["duloxetine"],
+            "amitriptyline": ["elavil"],
+            "elavil": ["amitriptyline"],
+            "nsaid": ["anti-inflammatory", "ibuprofen", "naproxen", "advil", "aleve"],
+            "nsaids": ["anti-inflammatory", "ibuprofen", "naproxen", "advil", "aleve"],
+            "ibuprofen": ["advil", "nsaid"],
+            "advil": ["ibuprofen", "nsaid"],
+            "naproxen": ["aleve", "nsaid"],
+            "aleve": ["naproxen", "nsaid"],
+            "blood thinner": ["anticoagulant", "warfarin", "xarelto", "eliquis"],
+            "anticoagulant": ["blood thinner"],
+            "dvt": ["deep vein thrombosis", "blood clot"],
+            "deep vein thrombosis": ["dvt"],
+            "ala": ["alpha-lipoic acid"],
+            "alpha-lipoic acid": ["ala"],
+            "cbd": ["cannabidiol", "cannabis"],
+            "thc": ["cannabis", "marijuana"]
         };
 
         var searchInput = document.getElementById('doc-search');
@@ -2474,6 +2572,8 @@
                 'files/TOS_Surgical_Outcomes_Report.pdf',
                 'files/TOS_Diagnostic_Checklist.docx',
                 'files/TOS_Diagnostic_Checklist.pdf',
+                'files/TOS_Medications_Supplements_Vitamins_Guide.docx',
+                'files/TOS_Medications_Supplements_Vitamins_Guide.pdf',
                 'files/TOS_Expanded_Findings.docx',
                 'files/TOS_Expanded_Findings.pdf',
                 'files/TOS_12_Week_Exercise_Plan.xlsx',

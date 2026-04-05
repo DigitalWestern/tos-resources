@@ -36,3 +36,7 @@ Review my recent code changes as a second pair of eyes.
 - **Why it matters** (one sentence)
 
 If everything looks clean, say so — don't manufacture issues. Be direct, not diplomatic.
+
+5. After reporting, fix each issue you flagged. Remove dead code, fix pattern violations to match the surrounding conventions, remove debug statements, and resolve logical inconsistencies.
+
+Keep the user in the loop throughout — narrate what you're reviewing, what you found, what you're fixing, and why. Don't work silently.

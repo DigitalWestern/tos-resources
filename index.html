@@ -2783,10 +2783,16 @@
     </script>
     <script>
     // Force PDF links to open in new tab — iOS Safari ignores target="_blank" on PDFs
+    // Open a blank tab first, then navigate it to the PDF URL
     document.querySelectorAll('.download-btn-pdf').forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            window.open(this.href, '_blank');
+            var newTab = window.open('', '_blank');
+            if (newTab) {
+                newTab.location.href = this.href;
+            } else {
+                window.location.href = this.href;
+            }
         });
     });
     </script>

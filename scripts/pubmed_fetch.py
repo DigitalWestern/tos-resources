@@ -66,6 +66,32 @@ def efetch(pmids):
         return ET.fromstring(resp.read())
 
 
+def classify_article_type(pub_types):
+    """Map PubMed publication types to a single display label."""
+    types_lower = [t.lower() for t in pub_types]
+    # Check in priority order (most specific first)
+    if "meta-analysis" in types_lower:
+        return "Meta-Analysis"
+    if "systematic review" in types_lower:
+        return "Systematic Review"
+    if "review" in types_lower:
+        return "Review"
+    if "case reports" in types_lower:
+        return "Case Report"
+    if "clinical trial" in types_lower or "randomized controlled trial" in types_lower:
+        return "Clinical Trial"
+    if "editorial" in types_lower:
+        return "Editorial"
+    if "letter" in types_lower or "comment" in types_lower:
+        return "Letter"
+    if "comparative study" in types_lower:
+        return "Comparative Study"
+    # Default: if it has "journal article", call it Research
+    if "journal article" in types_lower:
+        return "Research"
+    return "Other"
+
+
 def parse_article(article_elem):
     """Parse a single PubmedArticle XML element into a dict."""
     medline = article_elem.find("MedlineCitation")
@@ -149,7 +175,33 @@ def parse_article(article_elem):
                 parts.append(content)
         abstract = " ".join(parts)
 
-    return {
+    # Publication types
+    pub_types = []
+    pub_type_list = article.find("PublicationTypeList")
+    if pub_type_list is not None:
+        for pt in pub_type_list.findall("PublicationType"):
+            if pt.text:
+                pub_types.append(pt.text)
+
+    # Classify into a single display label
+    article_type = classify_article_type(pub_types)
+
+    # DOI
+    doi = ""
+    for eloc in article.findall("ELocationID"):
+        if eloc.get("EIdType") == "doi" and eloc.text:
+            doi = eloc.text
+            break
+    # Fallback: check ArticleIdList in PubmedData
+    if not doi:
+        pubmed_data = article_elem.find("PubmedData")
+        if pubmed_data is not None:
+            for aid in pubmed_data.findall("ArticleIdList/ArticleId"):
+                if aid.get("IdType") == "doi" and aid.text:
+                    doi = aid.text
+                    break
+
+    result = {
         "pmid": pmid,
         "title": title,
         "authors": authors,
@@ -157,8 +209,13 @@ def parse_article(article_elem):
         "date": pub_date_str,
         "date_sort": pub_date_sort,
         "abstract": abstract,
+        "article_type": article_type,
         "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/",
     }
+    if doi:
+        result["doi"] = f"https://doi.org/{doi}"
+
+    return result
 
 
 def main():

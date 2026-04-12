@@ -342,6 +342,150 @@
             text-decoration: underline;
         }
 
+        .article-links {
+            display: flex;
+            gap: 16px;
+            margin-top: 14px;
+        }
+
+        /* --- Article Type Badge --- */
+        .article-type {
+            display: inline-block;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            padding: 3px 8px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            background: #ede8e0;
+            color: #5a5347;
+        }
+
+        .article-type.review, .article-type.systematic-review {
+            background: #e0e8ed;
+            color: #2e4a5c;
+        }
+
+        .article-type.meta-analysis {
+            background: #e0ede4;
+            color: #2e5c3d;
+        }
+
+        .article-type.case-report {
+            background: #ede0e8;
+            color: #5c2e4a;
+        }
+
+        .article-type.clinical-trial {
+            background: #e4ede0;
+            color: #3d5c2e;
+        }
+
+        /* --- Controls Bar (Sort + Filter) --- */
+        .controls-bar {
+            max-width: 860px;
+            width: 100%;
+            padding: 0 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .controls-group {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .controls-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .control-btn {
+            padding: 6px 12px;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            background: #ffffff;
+            color: #5a5347;
+            font-size: 0.75rem;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: inherit;
+            transition: border-color 0.15s, background 0.15s;
+        }
+
+        .control-btn:hover {
+            border-color: #5c3d2e;
+        }
+
+        .control-btn.active {
+            background: #5c3d2e;
+            color: #fff;
+            border-color: #5c3d2e;
+        }
+
+        /* --- Load More --- */
+        .load-more-container {
+            max-width: 860px;
+            width: 100%;
+            padding: 8px 24px 32px;
+            text-align: center;
+        }
+
+        .load-more-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 32px;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            background: #ffffff;
+            color: #5c3d2e;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: inherit;
+            transition: border-color 0.15s, background 0.15s;
+        }
+
+        .load-more-btn:hover {
+            border-color: #5c3d2e;
+            background: #f2ede6;
+        }
+
+        .load-more-count {
+            font-size: 0.78rem;
+            color: #8a8279;
+            margin-top: 8px;
+        }
+
+        /* --- Fade-in --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+
         /* --- Loading / Empty --- */
         .loading, .error-msg, .no-results {
             text-align: center;
@@ -495,6 +639,17 @@
                 right: 20px;
                 width: 40px;
                 height: 40px;
+            }
+            .controls-bar {
+                padding: 0 20px;
+                gap: 8px;
+            }
+            .control-btn {
+                padding: 6px 10px;
+                font-size: 0.72rem;
+            }
+            .load-more-container {
+                padding: 8px 20px 24px;
             }
         }
 
@@ -666,6 +821,66 @@
                 color: #5a5347;
             }
 
+            .article-type {
+                background: #2a2520;
+                color: #a69d90;
+            }
+
+            .article-type.review, .article-type.systematic-review {
+                background: #1f2a30;
+                color: #6ca8c4;
+            }
+
+            .article-type.meta-analysis {
+                background: #1f2a22;
+                color: #8dbb6c;
+            }
+
+            .article-type.case-report {
+                background: #2a1f25;
+                color: #bb8faa;
+            }
+
+            .article-type.clinical-trial {
+                background: #222a1f;
+                color: #8dbb6c;
+            }
+
+            .controls-label {
+                color: #7a7168;
+            }
+
+            .control-btn {
+                background: #231f1b;
+                border-color: #3a3530;
+                color: #a69d90;
+            }
+
+            .control-btn:hover {
+                border-color: #c49a6c;
+            }
+
+            .control-btn.active {
+                background: #c49a6c;
+                color: #1a1714;
+                border-color: #c49a6c;
+            }
+
+            .load-more-btn {
+                background: #231f1b;
+                border-color: #3a3530;
+                color: #c49a6c;
+            }
+
+            .load-more-btn:hover {
+                background: #2a2520;
+                border-color: #c49a6c;
+            }
+
+            .load-more-count {
+                color: #7a7168;
+            }
+
             .back-to-top {
                 background: #c49a6c;
                 color: #1a1714;
@@ -725,6 +940,25 @@
         <div class="results-count" id="results-count"></div>
     </div>
 
+    <div class="controls-bar" id="controls-bar" style="display:none;">
+        <div class="controls-group">
+            <span class="controls-label">Sort:</span>
+            <button class="control-btn active" data-sort="date-desc">Newest</button>
+            <button class="control-btn" data-sort="date-asc">Oldest</button>
+            <button class="control-btn" data-sort="author">Author A-Z</button>
+            <button class="control-btn" data-sort="journal">Journal</button>
+        </div>
+        <div class="controls-group">
+            <span class="controls-label">Filter:</span>
+            <button class="control-btn active" data-filter="all">All</button>
+            <button class="control-btn" data-filter="Review">Reviews</button>
+            <button class="control-btn" data-filter="Case Report">Case Reports</button>
+            <button class="control-btn" data-filter="Research">Research</button>
+            <button class="control-btn" data-filter="Clinical Trial">Clinical Trials</button>
+            <button class="control-btn" data-filter="Meta-Analysis">Meta-Analyses</button>
+        </div>
+    </div>
+
     <div id="loading" class="loading">
         <div class="loading-spinner"></div>
         <p>Loading articles from PubMed database...</p>
@@ -733,6 +967,11 @@
     <div id="error" class="error-msg" style="display:none;"></div>
 
     <div class="articles" id="articles"></div>
+
+    <div class="load-more-container" id="load-more-container" style="display:none;">
+        <button class="load-more-btn" id="load-more-btn">Load More Articles</button>
+        <div class="load-more-count" id="load-more-count"></div>
+    </div>
 
     <div id="no-results" class="no-results" style="display:none;">
         No articles match your search.
@@ -748,10 +987,20 @@
         <div class="last-updated-note" id="last-updated"></div>
     </footer>
 
+    <script data-goatcounter="https://digitalwestern.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
     <script>
     (function() {
         var JSON_URL = 'pubmed_articles.json';
+        var PAGE_SIZE = 50;
         var allArticles = [];
+        var displayedArticles = [];
+        var currentPage = 0;
+        var currentSort = 'date-desc';
+        var currentFilter = 'all';
+        var currentTerms = null;
+
         var searchInput = document.getElementById('search-input');
         var searchClear = document.getElementById('search-clear');
         var articlesContainer = document.getElementById('articles');
@@ -762,8 +1011,12 @@
         var statsLineEl = document.getElementById('stats-line');
         var lastUpdatedEl = document.getElementById('last-updated');
         var backToTop = document.getElementById('back-to-top');
+        var controlsBar = document.getElementById('controls-bar');
+        var loadMoreContainer = document.getElementById('load-more-container');
+        var loadMoreBtn = document.getElementById('load-more-btn');
+        var loadMoreCount = document.getElementById('load-more-count');
 
-        // Load JSON — use XMLHttpRequest for file:// compatibility
+        // Load JSON
         function loadArticles() {
             var xhr = new XMLHttpRequest();
             xhr.open('GET', JSON_URL, true);
@@ -773,11 +1026,12 @@
                         var data = JSON.parse(xhr.responseText);
                         allArticles = data.articles || [];
                         loadingEl.style.display = 'none';
+                        controlsBar.style.display = 'flex';
 
                         statsLineEl.textContent = data.total_articles + ' articles \u00b7 ' + data.search_terms.length + ' search terms \u00b7 Updated ' + data.last_updated;
                         lastUpdatedEl.textContent = 'Article database last updated: ' + data.last_updated;
 
-                        renderArticles(allArticles);
+                        applyFiltersAndRender();
                     } catch (e) {
                         showError('Could not parse article database.');
                     }
@@ -799,52 +1053,156 @@
 
         loadArticles();
 
-        function renderArticles(articles, terms) {
+        // --- Core pipeline: filter → search → sort → paginate ---
+
+        function applyFiltersAndRender() {
+            var articles = allArticles;
+
+            // Filter by type
+            if (currentFilter !== 'all') {
+                articles = articles.filter(function(a) {
+                    return a.article_type === currentFilter;
+                });
+            }
+
+            // Search
+            var query = searchInput.value.trim().toLowerCase();
+            if (query) {
+                var terms = query.split(/\s+/);
+                currentTerms = terms;
+                articles = articles.filter(function(article) {
+                    var searchable = (
+                        article.title + ' ' +
+                        article.abstract + ' ' +
+                        article.authors.join(' ') + ' ' +
+                        article.journal + ' ' +
+                        (article.article_type || '')
+                    ).toLowerCase();
+                    return terms.every(function(term) {
+                        return searchable.indexOf(term) !== -1;
+                    });
+                });
+            } else {
+                currentTerms = null;
+            }
+
+            // Sort
+            articles = sortArticles(articles, currentSort);
+
+            // Reset pagination and render
+            displayedArticles = articles;
+            currentPage = 0;
+            renderPage();
+
+            // Analytics: track searches
+            if (query && window.goatcounter && goatcounter.count) {
+                goatcounter.count({ path: 'literature-search/' + query, title: 'Lit Search: ' + query, event: true });
+            }
+        }
+
+        function sortArticles(articles, sortKey) {
+            var sorted = articles.slice();
+            switch (sortKey) {
+                case 'date-desc':
+                    sorted.sort(function(a, b) { return b.date_sort.localeCompare(a.date_sort); });
+                    break;
+                case 'date-asc':
+                    sorted.sort(function(a, b) { return a.date_sort.localeCompare(b.date_sort); });
+                    break;
+                case 'author':
+                    sorted.sort(function(a, b) {
+                        var aName = a.authors.length ? a.authors[0] : 'ZZZ';
+                        var bName = b.authors.length ? b.authors[0] : 'ZZZ';
+                        return aName.localeCompare(bName);
+                    });
+                    break;
+                case 'journal':
+                    sorted.sort(function(a, b) { return (a.journal || '').localeCompare(b.journal || ''); });
+                    break;
+            }
+            return sorted;
+        }
+
+        function renderPage() {
             articlesContainer.innerHTML = '';
             noResultsEl.style.display = 'none';
 
-            if (articles.length === 0 && searchInput.value.trim()) {
+            if (displayedArticles.length === 0 && searchInput.value.trim()) {
                 noResultsEl.style.display = 'block';
                 resultsCountEl.textContent = '';
+                loadMoreContainer.style.display = 'none';
                 return;
             }
 
-            if (searchInput.value.trim()) {
-                resultsCountEl.textContent = articles.length + ' article' + (articles.length !== 1 ? 's' : '') + ' found';
+            // Results count
+            if (searchInput.value.trim() || currentFilter !== 'all') {
+                resultsCountEl.textContent = displayedArticles.length + ' article' + (displayedArticles.length !== 1 ? 's' : '') + ' found';
             } else {
                 resultsCountEl.textContent = '';
             }
 
-            articles.forEach(function(article) {
-                var card = document.createElement('div');
-                card.className = 'article-card';
+            // Render up to (currentPage + 1) * PAGE_SIZE
+            var showCount = Math.min((currentPage + 1) * PAGE_SIZE, displayedArticles.length);
+            for (var i = 0; i < showCount; i++) {
+                articlesContainer.appendChild(buildCard(displayedArticles[i], currentTerms));
+            }
 
-                var authorsText = article.authors.length > 3
-                    ? article.authors.slice(0, 3).join(', ') + ', et al.'
-                    : article.authors.join(', ');
+            // Load more button
+            var remaining = displayedArticles.length - showCount;
+            if (remaining > 0) {
+                loadMoreContainer.style.display = 'block';
+                loadMoreCount.textContent = 'Showing ' + showCount + ' of ' + displayedArticles.length + ' articles';
+            } else {
+                loadMoreContainer.style.display = 'none';
+            }
 
-                var titleHtml = highlight(escapeHtml(article.title), terms);
-                var journalHtml = highlight(escapeHtml(article.journal), terms);
-                var authorsHtml = highlight(escapeHtml(authorsText), terms);
-                var abstractHtml = highlight(escapeHtml(article.abstract), terms);
+            // Fade-in new cards
+            initFadeIn();
+        }
 
-                var html = '';
-                html += '<div class="article-title"><a href="' + article.url + '" target="_blank" rel="noopener">' + titleHtml + '</a></div>';
-                html += '<div class="article-meta"><span class="journal">' + journalHtml + '</span> &middot; ' + escapeHtml(article.date) + '</div>';
-                if (authorsText) {
-                    html += '<div class="article-authors">' + authorsHtml + '</div>';
-                }
-                if (article.abstract) {
-                    html += '<div class="article-abstract">';
-                    html += '<button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="arrow">&#9656;</span> Abstract</button>';
-                    html += '<div class="abstract-text">' + abstractHtml + '</div>';
-                    html += '</div>';
-                }
-                html += '<a class="article-link" href="' + article.url + '" target="_blank" rel="noopener">View on PubMed &rarr;</a>';
+        function buildCard(article, terms) {
+            var card = document.createElement('div');
+            card.className = 'article-card fade-in';
 
-                card.innerHTML = html;
-                articlesContainer.appendChild(card);
-            });
+            var authorsText = article.authors.length > 3
+                ? article.authors.slice(0, 3).join(', ') + ', et al.'
+                : article.authors.join(', ');
+
+            var titleHtml = highlight(escapeHtml(article.title), terms);
+            var journalHtml = highlight(escapeHtml(article.journal), terms);
+            var authorsHtml = highlight(escapeHtml(authorsText), terms);
+            var abstractHtml = highlight(escapeHtml(article.abstract), terms);
+
+            var html = '';
+
+            // Article type badge
+            if (article.article_type && article.article_type !== 'Other') {
+                var badgeClass = article.article_type.toLowerCase().replace(/\s+/g, '-');
+                html += '<span class="article-type ' + badgeClass + '">' + escapeHtml(article.article_type) + '</span>';
+            }
+
+            html += '<div class="article-title"><a href="' + article.url + '" target="_blank" rel="noopener" data-gc="lit-click/' + article.pmid + '">' + titleHtml + '</a></div>';
+            html += '<div class="article-meta"><span class="journal">' + journalHtml + '</span> &middot; ' + escapeHtml(article.date) + '</div>';
+            if (authorsText) {
+                html += '<div class="article-authors">' + authorsHtml + '</div>';
+            }
+            if (article.abstract) {
+                html += '<div class="article-abstract">';
+                html += '<button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="arrow">&#9656;</span> Abstract</button>';
+                html += '<div class="abstract-text">' + abstractHtml + '</div>';
+                html += '</div>';
+            }
+
+            // Links row
+            html += '<div class="article-links">';
+            html += '<a class="article-link" href="' + article.url + '" target="_blank" rel="noopener">View on PubMed &rarr;</a>';
+            if (article.doi) {
+                html += '<a class="article-link" href="' + article.doi + '" target="_blank" rel="noopener">Full Text (DOI) &rarr;</a>';
+            }
+            html += '</div>';
+
+            card.innerHTML = html;
+            return card;
         }
 
         function escapeHtml(text) {
@@ -855,7 +1213,6 @@
 
         function highlight(html, terms) {
             if (!terms || !terms.length) return html;
-            // Escape regex special chars in each term, then join with |
             var pattern = terms.map(function(t) {
                 return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
             }).join('|');
@@ -863,45 +1220,62 @@
             return html.replace(regex, '<mark>$1</mark>');
         }
 
-        // Search
+        // --- Load More ---
+        loadMoreBtn.addEventListener('click', function() {
+            currentPage++;
+            var showCount = Math.min((currentPage + 1) * PAGE_SIZE, displayedArticles.length);
+            var startIdx = currentPage * PAGE_SIZE;
+            for (var i = startIdx; i < showCount; i++) {
+                articlesContainer.appendChild(buildCard(displayedArticles[i], currentTerms));
+            }
+            var remaining = displayedArticles.length - showCount;
+            if (remaining > 0) {
+                loadMoreCount.textContent = 'Showing ' + showCount + ' of ' + displayedArticles.length + ' articles';
+            } else {
+                loadMoreContainer.style.display = 'none';
+            }
+            initFadeIn();
+        });
+
+        // --- Sort buttons ---
+        document.querySelectorAll('[data-sort]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('[data-sort]').forEach(function(b) { b.classList.remove('active'); });
+                this.classList.add('active');
+                currentSort = this.getAttribute('data-sort');
+                applyFiltersAndRender();
+            });
+        });
+
+        // --- Filter buttons ---
+        document.querySelectorAll('[data-filter]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('[data-filter]').forEach(function(b) { b.classList.remove('active'); });
+                this.classList.add('active');
+                currentFilter = this.getAttribute('data-filter');
+                applyFiltersAndRender();
+            });
+        });
+
+        // --- Search ---
         var searchTimeout;
         searchInput.addEventListener('input', function() {
             clearTimeout(searchTimeout);
             var query = this.value.trim().toLowerCase();
             searchClear.className = query ? 'search-clear visible' : 'search-clear';
-
             searchTimeout = setTimeout(function() {
-                if (!query) {
-                    renderArticles(allArticles);
-                    return;
-                }
-
-                var terms = query.split(/\s+/);
-                var filtered = allArticles.filter(function(article) {
-                    var searchable = (
-                        article.title + ' ' +
-                        article.abstract + ' ' +
-                        article.authors.join(' ') + ' ' +
-                        article.journal
-                    ).toLowerCase();
-                    return terms.every(function(term) {
-                        return searchable.indexOf(term) !== -1;
-                    });
-                });
-
-                renderArticles(filtered, terms);
+                applyFiltersAndRender();
             }, 150);
         });
 
         searchClear.addEventListener('click', function() {
             searchInput.value = '';
             searchClear.className = 'search-clear';
-            resultsCountEl.textContent = '';
-            renderArticles(allArticles);
+            applyFiltersAndRender();
             searchInput.focus();
         });
 
-        // Keyboard shortcuts
+        // --- Keyboard shortcuts ---
         document.addEventListener('keydown', function(e) {
             if (e.key === '/' && document.activeElement !== searchInput) {
                 e.preventDefault();
@@ -910,19 +1284,44 @@
             if (e.key === 'Escape' && document.activeElement === searchInput) {
                 searchInput.value = '';
                 searchClear.className = 'search-clear';
-                resultsCountEl.textContent = '';
-                renderArticles(allArticles);
+                applyFiltersAndRender();
                 searchInput.blur();
             }
         });
 
-        // Back to top
+        // --- Back to top ---
         window.addEventListener('scroll', function() {
             backToTop.className = window.scrollY > 400 ? 'back-to-top visible' : 'back-to-top';
         });
 
         backToTop.addEventListener('click', function() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // --- Fade-in via IntersectionObserver ---
+        function initFadeIn() {
+            var els = document.querySelectorAll('.fade-in:not(.visible)');
+            if ('IntersectionObserver' in window) {
+                var observer = new IntersectionObserver(function(entries) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.05 });
+                els.forEach(function(el) { observer.observe(el); });
+            } else {
+                els.forEach(function(el) { el.classList.add('visible'); });
+            }
+        }
+
+        // --- GoatCounter: track PubMed link clicks ---
+        document.addEventListener('click', function(e) {
+            var link = e.target.closest('[data-gc]');
+            if (link && window.goatcounter && goatcounter.count) {
+                goatcounter.count({ path: link.getAttribute('data-gc'), title: link.textContent.trim(), event: true });
+            }
         });
     })();
 

@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOS Literature — Published Research on Thoracic Outlet Syndrome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fraunces', Georgia, serif;
+        }
+
+        a {
+            color: #5c3d2e;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Header Bar --- */
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .header-bar a {
+            color: #f7f4ef;
+            text-decoration: none;
+        }
+
+        .header-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Nav --- */
+        .page-nav {
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 20px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.76rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .page-nav a.active {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* --- Hero --- */
+        .hero {
+            text-align: center;
+            padding: 72px 24px 32px;
+            max-width: 720px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 16px;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #5a5347;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Stats --- */
+        .stats-line {
+            text-align: center;
+            padding: 8px 24px 0;
+            font-size: 0.78rem;
+            font-weight: 500;
+            color: #8a8279;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+
+        /* --- Search --- */
+        .search-container {
+            max-width: 860px;
+            width: 100%;
+            margin: 32px auto 0;
+            padding: 24px 32px;
+        }
+
+        .search-input-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 14px 18px;
+            transition: border-color 0.2s;
+        }
+
+        .search-input-wrapper:focus-within {
+            border-color: #5c3d2e;
+        }
+
+        .search-icon {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            color: #8a8279;
+        }
+
+        .search-input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            font-size: 1.05rem;
+            color: #1c1c1c;
+            outline: none;
+            font-family: inherit;
+        }
+
+        .search-input::placeholder {
+            color: #a8a095;
+        }
+
+        .search-clear {
+            display: none;
+            border: none;
+            background: none;
+            color: #8a8279;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0 4px;
+            line-height: 1;
+        }
+
+        .search-clear.visible {
+            display: block;
+        }
+
+        .search-hint {
+            font-size: 0.75rem;
+            color: #a8a095;
+            margin-top: 8px;
+            text-align: right;
+        }
+
+        .search-hint kbd {
+            background: #ede8e0;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 1px 5px;
+            font-size: 0.7rem;
+            font-family: inherit;
+        }
+
+        .results-count {
+            font-size: 0.82rem;
+            color: #8a8279;
+            padding: 12px 0 0;
+        }
+
+        /* --- Article Cards --- */
+        .articles {
+            max-width: 860px;
+            width: 100%;
+            padding: 16px 24px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .article-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 28px 32px;
+            transition: border-color 0.2s;
+        }
+
+        .article-card:hover {
+            border-color: #c4b8aa;
+            border-left-color: #5c3d2e;
+        }
+
+        .article-title {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1c1c1c;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .article-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .article-title a:hover {
+            color: #5c3d2e;
+            text-decoration: underline;
+        }
+
+        .article-meta {
+            font-size: 0.82rem;
+            color: #8a8279;
+            margin-bottom: 6px;
+            line-height: 1.5;
+        }
+
+        .article-meta .journal {
+            font-weight: 500;
+            color: #5a5347;
+        }
+
+        .article-authors {
+            font-size: 0.82rem;
+            color: #8a8279;
+            margin-bottom: 14px;
+            line-height: 1.5;
+        }
+
+        .article-abstract {
+            font-size: 0.88rem;
+            color: #5a5347;
+            line-height: 1.7;
+        }
+
+        mark {
+            background: #f5e6c8;
+            color: #1c1c1c;
+            padding: 1px 2px;
+            border-radius: 2px;
+        }
+
+        .abstract-text {
+            display: none;
+        }
+
+        .abstract-text.expanded {
+            display: block;
+            margin-top: 8px;
+        }
+
+        .abstract-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            border: none;
+            background: none;
+            color: #5c3d2e;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            padding: 0;
+            font-family: inherit;
+        }
+
+        .abstract-toggle:hover {
+            text-decoration: underline;
+        }
+
+        .abstract-toggle .arrow {
+            font-size: 0.7rem;
+            transition: transform 0.2s;
+        }
+
+        .abstract-toggle.open .arrow {
+            transform: rotate(90deg);
+        }
+
+        .article-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: #5c3d2e;
+            text-decoration: none;
+        }
+
+        .article-link:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Loading / Empty --- */
+        .loading, .error-msg, .no-results {
+            text-align: center;
+            padding: 48px 24px;
+            color: #8a8279;
+            font-size: 0.95rem;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 2.5px solid #ddd8d0;
+            border-top-color: #5c3d2e;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin-bottom: 12px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* --- Disclaimer --- */
+        .disclaimer {
+            max-width: 680px;
+            margin: 40px auto 0;
+            padding: 24px 28px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer p {
+            font-size: 0.82rem;
+            color: #5a5347;
+            line-height: 1.7;
+        }
+
+        /* --- Footer --- */
+        footer {
+            margin-top: auto;
+            padding: 48px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #5c3d2e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .last-updated-note {
+            font-size: 0.78rem;
+            color: #a8a095;
+            margin-top: 4px;
+        }
+
+        /* --- Back to top --- */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, background 0.2s;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            background: #4a3125;
+        }
+
+        /* --- Mobile --- */
+        @media (max-width: 640px) {
+            .hero {
+                padding: 48px 20px 24px;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero p {
+                font-size: 0.95rem;
+            }
+            .search-container {
+                padding: 16px 20px;
+            }
+            .articles {
+                padding: 12px 20px 24px;
+            }
+            .article-card {
+                padding: 20px;
+            }
+            .article-title {
+                font-size: 1rem;
+            }
+            .disclaimer {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+            }
+            .page-nav a {
+                padding: 10px 12px;
+                font-size: 0.75rem;
+            }
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* --- Dark Mode --- */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1714;
+                color: #e8e0d5;
+            }
+
+            .header-bar {
+                background: #111010;
+            }
+
+            .header-bar span,
+            .header-bar a {
+                color: #e8e0d5;
+            }
+
+            .page-nav {
+                background: #111010;
+                border-top-color: rgba(255,255,255,0.04);
+            }
+
+            .page-nav a {
+                color: #e8e0d5;
+            }
+
+            .page-nav a:hover {
+                background: rgba(255, 255, 255, 0.06);
+            }
+
+            .page-nav a.active {
+                color: #fff;
+                background: rgba(255, 255, 255, 0.04);
+            }
+
+            .hero h1 {
+                color: #e8e0d5;
+            }
+
+            .hero p {
+                color: #a69d90;
+            }
+
+            .stats-line {
+                color: #7a7168;
+            }
+
+            .search-input-wrapper {
+                background: #231f1b;
+                border-color: #3a3530;
+            }
+
+            .search-input-wrapper:focus-within {
+                border-color: #c49a6c;
+            }
+
+            .search-icon {
+                color: #7a7168;
+            }
+
+            .search-input {
+                color: #e8e0d5;
+            }
+
+            .search-input::placeholder {
+                color: #5a5347;
+            }
+
+            .search-clear {
+                color: #7a7168;
+            }
+
+            .search-hint {
+                color: #5a5347;
+            }
+
+            .search-hint kbd {
+                background: #2a2520;
+                border-color: #3a3530;
+                color: #7a7168;
+            }
+
+            .results-count {
+                color: #7a7168;
+            }
+
+            .article-card {
+                background: #231f1b;
+                border-color: #3a3530;
+                border-left: 3px solid #c49a6c;
+            }
+
+            .article-card:hover {
+                border-color: #4a4540;
+                border-left-color: #c49a6c;
+            }
+
+            .article-title {
+                color: #e8e0d5;
+            }
+
+            .article-title a:hover {
+                color: #c49a6c;
+            }
+
+            .article-meta {
+                color: #7a7168;
+            }
+
+            .article-meta .journal {
+                color: #a69d90;
+            }
+
+            .article-authors {
+                color: #7a7168;
+            }
+
+            .article-abstract {
+                color: #a69d90;
+            }
+
+            .abstract-toggle {
+                color: #c49a6c;
+            }
+
+            .article-link {
+                color: #c49a6c;
+            }
+
+            mark {
+                background: #5c4b12;
+                color: #e8d8a0;
+            }
+
+            .loading, .error-msg, .no-results {
+                color: #7a7168;
+            }
+
+            .loading-spinner {
+                border-color: #3a3530;
+                border-top-color: #c49a6c;
+            }
+
+            .disclaimer {
+                background: #231f1b;
+                border-color: #3a3530;
+                border-left-color: #b09a3a;
+            }
+
+            .disclaimer h3 {
+                color: #b09a3a;
+            }
+
+            .disclaimer p {
+                color: #a69d90;
+            }
+
+            footer {
+                color: #7a7168;
+            }
+
+            footer a {
+                color: #c49a6c;
+            }
+
+            .last-updated-note {
+                color: #5a5347;
+            }
+
+            .back-to-top {
+                background: #c49a6c;
+                color: #1a1714;
+                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            .back-to-top:hover {
+                background: #b08a5e;
+            }
+
+            a {
+                color: #c49a6c;
+            }
+        }
+
+        /* --- Print --- */
+        @media print {
+            body { background: #fff; color: #000; }
+            .header-bar, .page-nav, .back-to-top, .search-container, footer, script { display: none !important; }
+            .article-card { border-color: #ccc; break-inside: avoid; }
+            .abstract-text { display: block !important; }
+            a { color: #000 !important; text-decoration: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span><a href="index.html">Thoracic Outlet Syndrome — Community Resources</a></span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="literature.html" class="active">Literature</a>
+    </nav>
+
+    <div class="hero">
+        <h1>Published Research</h1>
+        <p>Peer-reviewed articles on thoracic outlet syndrome sourced from PubMed. Updated monthly via automated search across 7 TOS-related terms.</p>
+    </div>
+
+    <div class="stats-line" id="stats-line"></div>
+
+    <div class="search-container">
+        <div class="search-input-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" class="search-input" id="search-input" placeholder="Search titles, abstracts, authors, or journals..." autocomplete="off">
+            <button class="search-clear" id="search-clear">&times;</button>
+        </div>
+        <div class="search-hint">
+            <kbd>/</kbd> to focus &nbsp; <kbd>Esc</kbd> to clear
+        </div>
+        <div class="results-count" id="results-count"></div>
+    </div>
+
+    <div id="loading" class="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading articles from PubMed database...</p>
+    </div>
+
+    <div id="error" class="error-msg" style="display:none;"></div>
+
+    <div class="articles" id="articles"></div>
+
+    <div id="no-results" class="no-results" style="display:none;">
+        No articles match your search.
+    </div>
+
+    <div class="disclaimer">
+        <h3>Medical Disclaimer</h3>
+        <p>This page indexes published research for informational purposes only. It is not medical advice. Always consult a qualified healthcare provider for diagnosis and treatment decisions. The inclusion of an article does not constitute an endorsement of its conclusions.</p>
+    </div>
+
+    <footer>
+        <a href="index.html">&larr; Back to TOS Resources</a>
+        <div class="last-updated-note" id="last-updated"></div>
+    </footer>
+
+    <script>
+    (function() {
+        var JSON_URL = 'pubmed_articles.json';
+        var allArticles = [];
+        var searchInput = document.getElementById('search-input');
+        var searchClear = document.getElementById('search-clear');
+        var articlesContainer = document.getElementById('articles');
+        var loadingEl = document.getElementById('loading');
+        var errorEl = document.getElementById('error');
+        var noResultsEl = document.getElementById('no-results');
+        var resultsCountEl = document.getElementById('results-count');
+        var statsLineEl = document.getElementById('stats-line');
+        var lastUpdatedEl = document.getElementById('last-updated');
+        var backToTop = document.getElementById('back-to-top');
+
+        // Load JSON — use XMLHttpRequest for file:// compatibility
+        function loadArticles() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', JSON_URL, true);
+            xhr.onload = function() {
+                if (xhr.status === 200 || xhr.status === 0) {
+                    try {
+                        var data = JSON.parse(xhr.responseText);
+                        allArticles = data.articles || [];
+                        loadingEl.style.display = 'none';
+
+                        statsLineEl.textContent = data.total_articles + ' articles \u00b7 ' + data.search_terms.length + ' search terms \u00b7 Updated ' + data.last_updated;
+                        lastUpdatedEl.textContent = 'Article database last updated: ' + data.last_updated;
+
+                        renderArticles(allArticles);
+                    } catch (e) {
+                        showError('Could not parse article database.');
+                    }
+                } else {
+                    showError('Could not load article database.');
+                }
+            };
+            xhr.onerror = function() {
+                showError('Could not load article database. If viewing locally, ensure pubmed_articles.json is in the same folder.');
+            };
+            xhr.send();
+        }
+
+        function showError(msg) {
+            loadingEl.style.display = 'none';
+            errorEl.style.display = 'block';
+            errorEl.textContent = msg;
+        }
+
+        loadArticles();
+
+        function renderArticles(articles, terms) {
+            articlesContainer.innerHTML = '';
+            noResultsEl.style.display = 'none';
+
+            if (articles.length === 0 && searchInput.value.trim()) {
+                noResultsEl.style.display = 'block';
+                resultsCountEl.textContent = '';
+                return;
+            }
+
+            if (searchInput.value.trim()) {
+                resultsCountEl.textContent = articles.length + ' article' + (articles.length !== 1 ? 's' : '') + ' found';
+            } else {
+                resultsCountEl.textContent = '';
+            }
+
+            articles.forEach(function(article) {
+                var card = document.createElement('div');
+                card.className = 'article-card';
+
+                var authorsText = article.authors.length > 3
+                    ? article.authors.slice(0, 3).join(', ') + ', et al.'
+                    : article.authors.join(', ');
+
+                var titleHtml = highlight(escapeHtml(article.title), terms);
+                var journalHtml = highlight(escapeHtml(article.journal), terms);
+                var authorsHtml = highlight(escapeHtml(authorsText), terms);
+                var abstractHtml = highlight(escapeHtml(article.abstract), terms);
+
+                var html = '';
+                html += '<div class="article-title"><a href="' + article.url + '" target="_blank" rel="noopener">' + titleHtml + '</a></div>';
+                html += '<div class="article-meta"><span class="journal">' + journalHtml + '</span> &middot; ' + escapeHtml(article.date) + '</div>';
+                if (authorsText) {
+                    html += '<div class="article-authors">' + authorsHtml + '</div>';
+                }
+                if (article.abstract) {
+                    html += '<div class="article-abstract">';
+                    html += '<button class="abstract-toggle" onclick="toggleAbstract(this)"><span class="arrow">&#9656;</span> Abstract</button>';
+                    html += '<div class="abstract-text">' + abstractHtml + '</div>';
+                    html += '</div>';
+                }
+                html += '<a class="article-link" href="' + article.url + '" target="_blank" rel="noopener">View on PubMed &rarr;</a>';
+
+                card.innerHTML = html;
+                articlesContainer.appendChild(card);
+            });
+        }
+
+        function escapeHtml(text) {
+            var div = document.createElement('div');
+            div.appendChild(document.createTextNode(text));
+            return div.innerHTML;
+        }
+
+        function highlight(html, terms) {
+            if (!terms || !terms.length) return html;
+            // Escape regex special chars in each term, then join with |
+            var pattern = terms.map(function(t) {
+                return t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            }).join('|');
+            var regex = new RegExp('(' + pattern + ')', 'gi');
+            return html.replace(regex, '<mark>$1</mark>');
+        }
+
+        // Search
+        var searchTimeout;
+        searchInput.addEventListener('input', function() {
+            clearTimeout(searchTimeout);
+            var query = this.value.trim().toLowerCase();
+            searchClear.className = query ? 'search-clear visible' : 'search-clear';
+
+            searchTimeout = setTimeout(function() {
+                if (!query) {
+                    renderArticles(allArticles);
+                    return;
+                }
+
+                var terms = query.split(/\s+/);
+                var filtered = allArticles.filter(function(article) {
+                    var searchable = (
+                        article.title + ' ' +
+                        article.abstract + ' ' +
+                        article.authors.join(' ') + ' ' +
+                        article.journal
+                    ).toLowerCase();
+                    return terms.every(function(term) {
+                        return searchable.indexOf(term) !== -1;
+                    });
+                });
+
+                renderArticles(filtered, terms);
+            }, 150);
+        });
+
+        searchClear.addEventListener('click', function() {
+            searchInput.value = '';
+            searchClear.className = 'search-clear';
+            resultsCountEl.textContent = '';
+            renderArticles(allArticles);
+            searchInput.focus();
+        });
+
+        // Keyboard shortcuts
+        document.addEventListener('keydown', function(e) {
+            if (e.key === '/' && document.activeElement !== searchInput) {
+                e.preventDefault();
+                searchInput.focus();
+            }
+            if (e.key === 'Escape' && document.activeElement === searchInput) {
+                searchInput.value = '';
+                searchClear.className = 'search-clear';
+                resultsCountEl.textContent = '';
+                renderArticles(allArticles);
+                searchInput.blur();
+            }
+        });
+
+        // Back to top
+        window.addEventListener('scroll', function() {
+            backToTop.className = window.scrollY > 400 ? 'back-to-top visible' : 'back-to-top';
+        });
+
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    })();
+
+    function toggleAbstract(btn) {
+        var textEl = btn.nextElementSibling;
+        textEl.classList.toggle('expanded');
+        btn.classList.toggle('open');
+    }
+    </script>
+</body>
+</html>

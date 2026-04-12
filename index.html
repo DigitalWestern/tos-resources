@@ -68,6 +68,80 @@
             text-transform: uppercase;
         }
 
+        .page-nav {
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 20px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.76rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+        }
+
+        .page-nav a.active {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .literature-callout {
+            max-width: 860px;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+        }
+
+        .literature-callout a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 16px 28px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #1c1c1c;
+            transition: border-color 0.2s;
+            max-width: 600px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .literature-callout a:hover {
+            border-color: #c4b8aa;
+            border-left-color: #5c3d2e;
+            text-decoration: none;
+        }
+
+        .literature-callout .callout-text strong {
+            display: block;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #1c1c1c;
+            margin-bottom: 2px;
+        }
+
+        .literature-callout .callout-text span {
+            font-size: 0.82rem;
+            color: #5a5347;
+        }
+
         .hero {
             text-align: center;
             padding: 72px 24px 48px;
@@ -1456,6 +1530,43 @@
                 color: #e8e0d5;
             }
 
+            .page-nav {
+                background: #111010;
+                border-top-color: rgba(255,255,255,0.04);
+            }
+
+            .page-nav a {
+                color: #e8e0d5;
+            }
+
+            .page-nav a:hover {
+                background: rgba(255, 255, 255, 0.06);
+            }
+
+            .page-nav a.active {
+                color: #fff;
+            }
+
+            .literature-callout a {
+                background: #231f1b;
+                border-color: #3a3530;
+                border-left-color: #c49a6c;
+                color: #e8e0d5;
+            }
+
+            .literature-callout a:hover {
+                border-color: #4a4540;
+                border-left-color: #c49a6c;
+            }
+
+            .literature-callout .callout-text strong {
+                color: #e8e0d5;
+            }
+
+            .literature-callout .callout-text span {
+                color: #a69d90;
+            }
+
             .hero h1 {
                 color: #e8e0d5;
             }
@@ -1757,6 +1868,7 @@
             <li><a href="#trackers">Trackers</a></li>
             <li><a href="#search">Search</a></li>
             <li><a href="#community">Community</a></li>
+            <li><a href="literature.html">Literature</a></li>
         </ul>
     </nav>
 
@@ -1767,6 +1879,11 @@
     <div class="header-bar">
         <span>Thoracic Outlet Syndrome — Community Resources</span>
     </div>
+
+    <nav class="page-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="literature.html">Literature</a>
+    </nav>
 
     <div class="hero">
         <h1>TOS Resources</h1>
@@ -2112,6 +2229,15 @@
             Download All Resources (.zip)
         </button>
         <p class="download-all-note">All 12 files bundled into a single download</p>
+    </div>
+
+    <div class="literature-callout">
+        <a href="literature.html">
+            <div class="callout-text">
+                <strong>Published Research on TOS</strong>
+                <span>Browse peer-reviewed articles from PubMed on thoracic outlet syndrome, updated monthly.</span>
+            </div>
+        </a>
     </div>
 
     <div class="disclaimer">

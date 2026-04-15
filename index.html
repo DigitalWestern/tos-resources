@@ -419,30 +419,6 @@
             border-color: #3d5c2e;
         }
 
-        .contribute-callout {
-            max-width: 860px;
-            width: 100%;
-            padding: 20px 24px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .contribute-callout p {
-            font-size: 0.88rem;
-            color: #5a5347;
-            line-height: 1.6;
-        }
-
-        .contribute-callout a {
-            color: #5c3d2e;
-            text-decoration: none;
-            font-weight: 500;
-        }
-
-        .contribute-callout a:hover {
-            text-decoration: underline;
-        }
-
         @media (prefers-color-scheme: dark) {
             .download-all-btn {
                 background: #c49a6c;
@@ -474,13 +450,6 @@
                 border-color: #8dbb6c;
             }
 
-            .contribute-callout p {
-                color: #a69d90;
-            }
-
-            .contribute-callout a {
-                color: #c49a6c;
-            }
         }
 
         .disclaimer {
@@ -1321,80 +1290,9 @@
             margin-top: 6px;
         }
 
-        .sticky-nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: #1c1c1c;
-            padding: 0;
-            z-index: 1000;
-            transform: translateY(-100%);
-            transition: transform 0.3s ease;
-        }
-
-        .sticky-nav.visible {
-            transform: translateY(0);
-        }
-
-        .sticky-nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sticky-nav a {
-            display: block;
-            padding: 12px 20px;
-            color: #f7f4ef;
-            text-decoration: none;
-            font-size: 0.76rem;
-            font-weight: 500;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            transition: background 0.15s, color 0.15s;
-        }
-
-        .sticky-nav a:hover {
-            background: rgba(255, 255, 255, 0.08);
-            color: #fff;
-        }
-
         @media (max-width: 640px) {
-            .sticky-nav ul {
-                justify-content: flex-start;
-                overflow-x: auto;
-                -webkit-overflow-scrolling: touch;
-                scrollbar-width: none;
-            }
-            .sticky-nav ul::-webkit-scrollbar {
-                display: none;
-            }
-            .sticky-nav a {
-                padding: 10px 12px;
-                font-size: 0.75rem;
-                white-space: nowrap;
-            }
             .page-nav a {
                 white-space: nowrap;
-            }
-        }
-
-        @media (prefers-color-scheme: dark) {
-            .sticky-nav {
-                background: #111010;
-            }
-
-            .sticky-nav a {
-                color: #e8e0d5;
-            }
-
-            .sticky-nav a:hover {
-                background: rgba(255, 255, 255, 0.06);
-                color: #fff;
             }
         }
 
@@ -1542,9 +1440,6 @@
             .flow-step p,
             .flow-step strong {
                 font-size: 0.88rem;
-            }
-            .contribute-callout {
-                padding: 16px 20px;
             }
         }
 
@@ -1854,15 +1749,12 @@
                 color: #000;
             }
 
-            .sticky-nav,
             .back-to-top,
             .header-bar,
             .share-btn,
             .download-btn,
             .download-all-section,
             .search-container,
-            .community-links,
-            .contribute-callout,
             .whats-new,
             .card-preview,
             footer,

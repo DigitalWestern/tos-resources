@@ -311,6 +311,22 @@
             margin-top: auto;
         }
 
+        .card-crosslink {
+            font-size: 0.75rem;
+            color: #8a8279;
+            margin-top: 12px;
+            line-height: 1.5;
+        }
+
+        .card-crosslink a {
+            color: #5c3d2e;
+            text-decoration: none;
+        }
+
+        .card-crosslink a:hover {
+            text-decoration: underline;
+        }
+
         .download-buttons .download-btn {
             margin-top: 0;
             flex: 1;
@@ -1696,6 +1712,14 @@
                 color: #d4aa7c;
             }
 
+            .card-crosslink {
+                color: #7a7168;
+            }
+
+            .card-crosslink a {
+                color: #c49a6c;
+            }
+
             .card-preview-list li {
                 color: #a69d90;
             }
@@ -1896,6 +1920,7 @@
     <nav class="page-nav">
         <a href="index.html" class="active">Home</a>
         <a href="literature.html">Literature</a>
+        <a href="community.html">Community</a>
     </nav>
 
     <div class="hero">
@@ -2051,6 +2076,7 @@
                     .pdf
                 </a>
             </div>
+            <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
         </div>
 
         <div class="card">
@@ -2085,6 +2111,8 @@
                     .pdf
                 </a>
             </div>
+            <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
+            <p class="card-crosslink">Looking for a TOS surgeon? → <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer">tosoutreach.com surgeon finder</a></p>
         </div>
 
         <div id="card-checklist" class="card">
@@ -2119,6 +2147,8 @@
                     .pdf
                 </a>
             </div>
+            <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
+            <p class="card-crosslink">Cross-reference symptoms → <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer">tosoutreach.com symptom reference</a></p>
         </div>
 
         <div class="card">
@@ -2192,7 +2222,7 @@
         </div>
     </div>
 
-    <div class="section-label expanded">
+    <div id="expanded" class="section-label expanded">
         <h2>Expanded Findings</h2>
     </div>
 

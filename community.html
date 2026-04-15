@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community & Resources — TOS Resources</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Fraunces', Georgia, serif;
+        }
+
+        a {
+            color: #5c3d2e;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Header Bar --- */
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .header-bar a {
+            color: #f7f4ef;
+            text-decoration: none;
+        }
+
+        .header-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Nav --- */
+        .page-nav {
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 20px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.76rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover {
+            background: rgba(255, 255, 255, 0.08);
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .page-nav a.active {
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* --- Hero --- */
+        .hero {
+            text-align: center;
+            padding: 72px 24px 32px;
+            max-width: 720px;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 16px;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+        }
+
+        .hero p {
+            font-size: 1rem;
+            color: #5a5347;
+            line-height: 1.7;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* --- Section Labels --- */
+        .section-label {
+            width: 100%;
+            max-width: 860px;
+            padding: 0 24px;
+            margin-top: 48px;
+            margin-bottom: -8px;
+        }
+
+        .section-label h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-family: 'Inter', sans-serif;
+            color: #1c1c1c;
+            position: relative;
+        }
+
+        .section-label h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: #ddd8d0;
+            margin-top: 10px;
+        }
+
+        /* --- Community Links --- */
+        .community-links {
+            max-width: 860px;
+            width: 100%;
+            padding: 24px;
+        }
+
+        .community-links > p {
+            font-size: 0.92rem;
+            color: #5a5347;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            max-width: 620px;
+        }
+
+        .community-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .community-link {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 16px 0;
+            border-bottom: 1px solid #ede8e0;
+            color: #1c1c1c;
+            text-decoration: none;
+            transition: opacity 0.15s;
+        }
+
+        .community-link:last-child {
+            border-bottom: none;
+        }
+
+        .community-link:hover {
+            opacity: 0.8;
+        }
+
+        .community-label {
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #5c3d2e;
+            min-width: 70px;
+            padding-top: 2px;
+        }
+
+        .community-link strong {
+            display: block;
+            font-size: 0.95rem;
+            color: #1c1c1c;
+            margin-bottom: 2px;
+        }
+
+        .community-link span {
+            font-size: 0.8rem;
+            color: #8a8279;
+        }
+
+        .community-link .caveat {
+            font-size: 0.72rem;
+            color: #8a7a2e;
+            font-style: italic;
+            margin-top: 4px;
+            display: block;
+        }
+
+        /* --- Disclaimer --- */
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 24px 28px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 10px;
+        }
+
+        .disclaimer p {
+            font-size: 0.82rem;
+            color: #5a5347;
+            line-height: 1.7;
+        }
+
+        /* --- Footer --- */
+        footer {
+            margin-top: auto;
+            padding: 48px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #5c3d2e;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* --- Back to top --- */
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s, background 0.2s;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+            z-index: 100;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .back-to-top:hover {
+            background: #4a3125;
+        }
+
+        /* --- Fade-in --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(16px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+
+        /* --- Mobile --- */
+        @media (max-width: 640px) {
+            .hero {
+                padding: 48px 20px 24px;
+            }
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+            .hero p {
+                font-size: 0.95rem;
+            }
+            .community-links {
+                padding: 16px 20px;
+            }
+            .disclaimer {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+            }
+            .page-nav a {
+                padding: 10px 12px;
+                font-size: 0.75rem;
+            }
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 40px;
+                height: 40px;
+            }
+            .section-label {
+                padding: 0 20px;
+            }
+        }
+
+        /* --- Dark Mode --- */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #1a1714;
+                color: #e8e0d5;
+            }
+
+            .header-bar {
+                background: #111010;
+            }
+
+            .header-bar span,
+            .header-bar a {
+                color: #e8e0d5;
+            }
+
+            .page-nav {
+                background: #111010;
+                border-top-color: rgba(255,255,255,0.04);
+            }
+
+            .page-nav a {
+                color: #e8e0d5;
+            }
+
+            .page-nav a:hover {
+                background: rgba(255, 255, 255, 0.06);
+            }
+
+            .page-nav a.active {
+                color: #fff;
+                background: rgba(255, 255, 255, 0.04);
+            }
+
+            .hero h1 {
+                color: #e8e0d5;
+            }
+
+            .hero p {
+                color: #a69d90;
+            }
+
+            .section-label h2 {
+                color: #e8e0d5;
+            }
+
+            .section-label h2::after {
+                background: #3a3530;
+            }
+
+            .community-links > p {
+                color: #a69d90;
+            }
+
+            .community-link {
+                border-color: #3a3530;
+            }
+
+            .community-link:last-child {
+                border-color: transparent;
+            }
+
+            .community-link strong {
+                color: #e8e0d5;
+            }
+
+            .community-link span {
+                color: #7a7168;
+            }
+
+            .community-label {
+                color: #c49a6c;
+            }
+
+            .community-link .caveat {
+                color: #b09a3a;
+            }
+
+            .disclaimer {
+                background: #231f1b;
+                border-color: #3a3530;
+                border-left-color: #b09a3a;
+            }
+
+            .disclaimer h3 {
+                color: #b09a3a;
+            }
+
+            .disclaimer p {
+                color: #a69d90;
+            }
+
+            footer {
+                color: #7a7168;
+            }
+
+            footer a {
+                color: #c49a6c;
+            }
+
+            a {
+                color: #c49a6c;
+            }
+
+            .back-to-top {
+                background: #c49a6c;
+                color: #1a1714;
+                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
+            }
+
+            .back-to-top:hover {
+                background: #b08a5e;
+            }
+        }
+
+        /* --- Print --- */
+        @media print {
+            body { background: #fff; color: #000; }
+            .header-bar, .page-nav, .back-to-top { display: none !important; }
+            a { color: #000 !important; text-decoration: none !important; }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span><a href="index.html">Thoracic Outlet Syndrome — Community Resources</a></span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="literature.html">Literature</a>
+        <a href="community.html" class="active">Community</a>
+    </nav>
+
+    <div class="hero fade-in">
+        <h1>Community &amp; Resources</h1>
+        <p>External tools, support communities, and educational resources curated for people navigating Thoracic Outlet Syndrome.</p>
+    </div>
+
+    <!-- ======================== FIND A SURGEON ======================== -->
+
+    <div class="section-label fade-in">
+        <h2>Find a Surgeon</h2>
+    </div>
+
+    <div class="community-links fade-in">
+        <p>Finding an experienced TOS surgeon is one of the most consequential decisions you'll make. These resources help you identify specialists with documented community experience.</p>
+        <div class="community-grid">
+            <!-- TODO: Replace with the direct URL for the TOS Outreach surgeon finder page once verified -->
+            <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Web</span>
+                <div>
+                    <strong>TOS Outreach — Surgeon Finder</strong>
+                    <span>Community-compiled directory of TOS surgeons organized by region, with notes on specialization and surgical approach</span>
+                </div>
+            </a>
+            <!-- TODO: Replace with the direct URL for the TOS Outreach symptom reference page once verified -->
+            <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Web</span>
+                <div>
+                    <strong>TOS Outreach — Symptom Reference</strong>
+                    <span>Clinical symptom guides and diagnostic information to help patients understand what they're experiencing</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ======================== SUPPORT COMMUNITIES ======================== -->
+
+    <div class="section-label fade-in">
+        <h2>Support Communities</h2>
+    </div>
+
+    <div class="community-links fade-in">
+        <p>Online communities where TOS patients share experiences, ask questions, and find support from others who understand the condition firsthand.</p>
+        <div class="community-grid">
+            <a href="https://www.reddit.com/r/thoracicoutletsupport/" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Reddit</span>
+                <div>
+                    <strong>r/ThoracicOutletSupport</strong>
+                    <span>The primary online community for TOS patients — treatment experiences, surgeon recommendations, peer support, and ongoing discussion</span>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/groups/thoracicoutletsyndrome/" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Facebook</span>
+                <div>
+                    <strong>TOS Facebook Group</strong>
+                    <span>Active Facebook support group for TOS patients and families</span>
+                    <span class="caveat">Note: This group tends to favor pro-surgery perspectives and moderates content accordingly.</span>
+                </div>
+            </a>
+            <a href="https://www.facebook.com/groups/TosSupport/" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Facebook</span>
+                <div>
+                    <strong>TOS Support Group</strong>
+                    <span>20,000+ member Facebook group for TOS discussion and support</span>
+                    <span class="caveat">Note: This group tends to favor pro-surgery perspectives and moderates content accordingly.</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ======================== EDUCATIONAL RESOURCES ======================== -->
+
+    <div class="section-label fade-in">
+        <h2>Educational Resources</h2>
+    </div>
+
+    <div class="community-links fade-in">
+        <p>Websites and video content on TOS mechanics, conservative treatment, and physical rehabilitation — the resources cited most frequently across the TOS community.</p>
+        <div class="community-grid">
+            <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Web</span>
+                <div>
+                    <strong>TOS Outreach</strong>
+                    <span>Dedicated TOS patient advocacy, clinical information, and community resources</span>
+                </div>
+            </a>
+            <a href="https://www.mskneurology.com" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">Web</span>
+                <div>
+                    <strong>MSK Neurology — Kjetil Larsen</strong>
+                    <span>The most-referenced conservative TOS treatment resource in the community — in-depth clinical writing on diagnosis, anatomy, and non-surgical approaches</span>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/results?search_query=zac+cupples+thoracic+outlet" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">YouTube</span>
+                <div>
+                    <strong>Zac Cupples</strong>
+                    <span>Physical therapist and PRI practitioner — frequently cited by the TOS community for full-body mechanics and rehabilitation programming</span>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/results?search_query=bill+hartman+thoracic+outlet" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">YouTube</span>
+                <div>
+                    <strong>Bill Hartman</strong>
+                    <span>Strength coach and rehabilitation specialist — cited for posture, mechanics, and exercise programming relevant to TOS</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ======================== RESEARCH & LITERATURE ======================== -->
+
+    <div class="section-label fade-in">
+        <h2>Research &amp; Literature</h2>
+    </div>
+
+    <div class="community-links fade-in">
+        <p>Peer-reviewed research and scientific literature on TOS — for patients who want to go deeper into the clinical evidence.</p>
+        <div class="community-grid">
+            <a href="literature.html" class="community-link">
+                <span class="community-label">Site</span>
+                <div>
+                    <strong>TOS Resources — Literature Page</strong>
+                    <span>669+ peer-reviewed articles from PubMed, searchable by topic, author, or journal — updated monthly via automated search</span>
+                </div>
+            </a>
+            <a href="https://pubmed.ncbi.nlm.nih.gov/?term=thoracic+outlet+syndrome" target="_blank" rel="noopener noreferrer" class="community-link">
+                <span class="community-label">PubMed</span>
+                <div>
+                    <strong>PubMed — Thoracic Outlet Syndrome</strong>
+                    <span>National Library of Medicine database — direct access to the full primary literature on TOS</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- ======================== DISCLAIMER ======================== -->
+
+    <div class="disclaimer fade-in">
+        <h3>Disclaimer</h3>
+        <p>These links are provided for informational and navigational purposes only. Inclusion of an external resource does not constitute an endorsement of its content or clinical claims. This site has no affiliation with any of the linked organizations. Always consult a qualified healthcare provider for diagnosis and treatment decisions.</p>
+    </div>
+
+    <footer>
+        <a href="index.html">&larr; Back to TOS Resources</a>
+    </footer>
+
+    <script data-goatcounter="https://digitalwestern.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+    <script>
+    (function() {
+        // Back to top
+        var backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }, { passive: true });
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Fade-in on scroll
+        var fadeEls = document.querySelectorAll('.fade-in');
+        if ('IntersectionObserver' in window) {
+            var observer = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            fadeEls.forEach(function(el) { observer.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    })();
+    </script>
+
+</body>
+</html>

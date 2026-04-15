@@ -1899,16 +1899,6 @@
     </style>
 </head>
 <body>
-    <nav class="sticky-nav" id="sticky-nav">
-        <ul>
-            <li><a href="#reports">Reports</a></li>
-            <li><a href="#trackers">Trackers</a></li>
-            <li><a href="#search">Search</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="literature.html">Literature</a></li>
-        </ul>
-    </nav>
-
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
     </button>
@@ -2112,7 +2102,7 @@
                 </a>
             </div>
             <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
-            <p class="card-crosslink">Looking for a TOS surgeon? → <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer">tosoutreach.com surgeon finder</a></p>
+            <p class="card-crosslink">Looking for a TOS surgeon? → <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener noreferrer">tosoutreach.com surgeon finder</a></p>
         </div>
 
         <div id="card-checklist" class="card">
@@ -2148,7 +2138,7 @@
                 </a>
             </div>
             <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
-            <p class="card-crosslink">Cross-reference symptoms → <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer">tosoutreach.com symptom reference</a></p>
+            <p class="card-crosslink">Cross-reference symptoms → <a href="https://www.tosoutreach.com/neurogenic-tos-symptoms" target="_blank" rel="noopener noreferrer">tosoutreach.com symptom reference</a></p>
         </div>
 
         <div class="card">
@@ -2290,50 +2280,6 @@
 
     <div class="stats-bar">
         <p class="stats-line">382 Reddit posts · 669 research articles · 12 free resources · 15+ surgeons referenced · ~84 min reading</p>
-    </div>
-
-    <div id="community" class="section-label community">
-        <h2>Community</h2>
-    </div>
-
-    <div class="community-links">
-        <p>Connect with others navigating TOS. These communities are great places to ask questions, share experiences, and find support.</p>
-        <div class="community-grid">
-            <a href="https://www.reddit.com/r/thoracicoutletsupport/" target="_blank" rel="noopener noreferrer" class="community-link">
-                <span class="community-label">Reddit</span>
-                <div>
-                    <strong>r/thoracicoutletsupport</strong>
-                    <span>Reddit community for TOS discussion</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/groups/thoracicoutletsyndrome/" target="_blank" rel="noopener noreferrer" class="community-link">
-                <span class="community-label">Facebook</span>
-                <div>
-                    <strong>TOS Facebook Group</strong>
-                    <span>Active support group on Facebook</span>
-                    <span class="caveat">Note: This group tends to favor pro-surgery perspectives and moderates content accordingly.</span>
-                </div>
-            </a>
-            <a href="https://www.facebook.com/groups/TosSupport/" target="_blank" rel="noopener noreferrer" class="community-link">
-                <span class="community-label">Facebook</span>
-                <div>
-                    <strong>TOS Support Group</strong>
-                    <span>20,000+ member Facebook group</span>
-                    <span class="caveat">Note: This group tends to favor pro-surgery perspectives and moderates content accordingly.</span>
-                </div>
-            </a>
-            <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer" class="community-link">
-                <span class="community-label">Web</span>
-                <div>
-                    <strong>TOS Outreach</strong>
-                    <span>Dedicated TOS information and advocacy</span>
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <div class="contribute-callout">
-        <p>Have something to add? Found a treatment that helped, or want to share your experience? <a href="https://www.reddit.com/r/thoracicoutletsupport/comments/1s3xq05/" target="_blank" rel="noopener noreferrer">Join the conversation on Reddit</a> — community input is what makes these resources better.</p>
     </div>
 
     <div class="whats-new" style="max-width: 860px; margin: 0 auto;">
@@ -2691,18 +2637,14 @@
 
     <script>
     (function() {
-        var stickyNav = document.getElementById('sticky-nav');
         var backToTop = document.getElementById('back-to-top');
-        var hero = document.querySelector('.hero');
         var showThreshold = 400;
 
         window.addEventListener('scroll', function() {
             var scrollY = window.scrollY || window.pageYOffset;
             if (scrollY > showThreshold) {
-                stickyNav.classList.add('visible');
                 backToTop.classList.add('visible');
             } else {
-                stickyNav.classList.remove('visible');
                 backToTop.classList.remove('visible');
             }
         });
@@ -2780,19 +2722,7 @@
             });
         });
 
-        stickyNav.querySelectorAll('a[href^="#"]').forEach(function(link) {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                var target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    var navHeight = stickyNav.offsetHeight;
-                    var targetTop = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 12;
-                    window.scrollTo({ top: targetTop, behavior: 'smooth' });
-                }
-            });
-        });
-
-        var fadeEls = document.querySelectorAll('.whats-new, .explainer, .tldr, .guided-flow, .search-container, .section-label, .cards, .expanded-note, .download-all-section, .disclaimer, .stats-bar, .community-links, .contribute-callout');
+        var fadeEls = document.querySelectorAll('.whats-new, .explainer, .tldr, .guided-flow, .search-container, .section-label, .cards, .expanded-note, .download-all-section, .disclaimer, .stats-bar');
         fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
 
         if ('IntersectionObserver' in window) {

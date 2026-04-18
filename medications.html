@@ -1,0 +1,1271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medications &amp; Injections — TOS Resources</title>
+    <meta name="description" content="A guide to medications, supplements, and injections used in TOS — nerve pain meds, Botox practical details, vTOS anticoagulants, and supplements for nerve health.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .badge::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .badge-community { background: #fdf6e3; color: #8a7a2e; border: 1px solid #ebe0bd; }
+        .badge-peer-reviewed { background: #e6f0f0; color: #2e5c5c; border: 1px solid #c2d9d9; }
+        .badge-clinical { background: #eaf0e4; color: #3d5c2e; border: 1px solid #c8d6bd; }
+        .badge-practical { background: #f5ece4; color: #5c3d2e; border: 1px solid #e2d4c3; }
+        .badge-anecdotal { background: #fdeee0; color: #a8582e; border: 1px solid #f3d4b5; }
+
+        .badge-legend {
+            width: 100%;
+            max-width: 760px;
+            padding: 0 24px 24px;
+            font-size: 0.78rem;
+            color: #8a8279;
+            line-height: 1.6;
+        }
+
+        .badge-legend details {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 0;
+        }
+
+        .badge-legend summary {
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #5a5347;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-legend summary::-webkit-details-marker { display: none; }
+        .badge-legend summary::before { content: "▸"; font-size: 0.75rem; transition: transform 0.2s; }
+        .badge-legend details[open] summary::before { transform: rotate(90deg); }
+
+        .badge-legend-body { padding: 0 18px 16px; }
+
+        .badge-legend-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .badge-legend-item:first-child { border-top: none; padding-top: 4px; }
+
+        .badge-legend-item > .badge { flex-shrink: 0; margin-top: 2px; }
+        .badge-legend-item > div { font-size: 0.82rem; }
+        .badge-legend-item strong { color: #1c1c1c; display: block; margin-bottom: 2px; }
+
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 28px 0 10px;
+        }
+
+        .topic-content h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 20px 0 6px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .topic-content p {
+            font-size: 0.98rem;
+            color: #3a352e;
+            line-height: 1.72;
+            margin-bottom: 14px;
+        }
+
+        .topic-content p.section-badges {
+            margin-bottom: 18px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .topic-content ul, .topic-content ol {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 18px;
+        }
+
+        .topic-content ul li, .topic-content ol li {
+            font-size: 0.96rem;
+            color: #3a352e;
+            line-height: 1.7;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .topic-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8279;
+        }
+
+        .topic-content ol { counter-reset: topiclist; }
+        .topic-content ol li { counter-increment: topiclist; }
+        .topic-content ol li::before {
+            content: counter(topiclist) ".";
+            position: absolute;
+            left: 0;
+            color: #5c3d2e;
+            font-weight: 600;
+        }
+
+        .topic-content li strong { color: #1c1c1c; }
+
+        .topic-content blockquote {
+            margin: 16px 0;
+            padding: 14px 20px;
+            background: #ffffff;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.92rem;
+            color: #5a5347;
+            line-height: 1.65;
+            font-style: italic;
+        }
+
+        .topic-content blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 0.75rem;
+            color: #8a8279;
+            margin-top: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .callout {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout-caution {
+            border-left-color: #a83528;
+            background: #fdf6f4;
+        }
+
+        .callout-tip {
+            border-left-color: #3d5c2e;
+            background: #f5f9f1;
+        }
+
+        .callout h4 {
+            margin: 0 0 6px;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: #5c3d2e;
+        }
+
+        .callout-caution h4 { color: #a83528; }
+        .callout-tip h4 { color: #3d5c2e; }
+
+        .callout p { font-size: 0.92rem; margin-bottom: 0; }
+        .callout p + p { margin-top: 8px; }
+
+        .data-block {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 4px 0;
+            margin: 16px 0 20px;
+        }
+
+        .data-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 18px;
+            padding: 12px 20px;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .data-row:first-child { border-top: none; }
+
+        .data-key {
+            font-weight: 600;
+            color: #1c1c1c;
+            font-size: 0.88rem;
+        }
+
+        .data-val {
+            font-size: 0.9rem;
+            color: #5a5347;
+            line-height: 1.65;
+        }
+
+        .topic-related {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px 8px;
+        }
+
+        .topic-related h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8a8279;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .related-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .related-card strong {
+            font-size: 0.92rem;
+            color: #1c1c1c;
+            display: block;
+        }
+
+        .related-card span {
+            font-size: 0.78rem;
+            color: #5a5347;
+            line-height: 1.5;
+        }
+
+        .topic-downloads {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px;
+        }
+
+        .topic-downloads h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .topic-downloads > p {
+            font-size: 0.95rem;
+            color: #5a5347;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .dl-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 14px;
+        }
+
+        .dl-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 4px;
+        }
+
+        .dl-card p {
+            font-size: 0.88rem;
+            color: #5a5347;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .dl-card .dl-meta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 0.72rem;
+            color: #8a8279;
+            letter-spacing: 0.04em;
+            margin-bottom: 14px;
+        }
+
+        .dl-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            background: #5c3d2e;
+            color: #fff;
+            border: 1.5px solid #5c3d2e;
+            transition: background 0.15s;
+        }
+
+        .dl-btn:hover { background: #4a3125; }
+
+        .dl-btn-pdf {
+            background: transparent;
+            color: #5c3d2e;
+        }
+
+        .dl-btn-pdf:hover { background: #5c3d2e; color: #fff; }
+
+        .dl-btn svg { width: 14px; height: 14px; }
+
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer p { font-size: 0.82rem; color: #5a5347; line-height: 1.7; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .topic-content h3 { font-size: 1.05rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .data-row { grid-template-columns: 1fr; gap: 4px; padding: 10px 16px; }
+            .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .topic-downloads { padding: 24px 20px; }
+            .dl-card { padding: 20px; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .badge-community { background: #2a2516; color: #d8b955; border-color: #3a3424; }
+            .badge-peer-reviewed { background: #1a2929; color: #7db8b8; border-color: #2a3a3a; }
+            .badge-clinical { background: #1c2a1a; color: #8dbb6c; border-color: #2c3a2a; }
+            .badge-practical { background: #2a221c; color: #c49a6c; border-color: #3a322c; }
+            .badge-anecdotal { background: #2a201a; color: #e08d7d; border-color: #3a2e28; }
+
+            .badge-legend details { background: #231f1b; border-color: #3a3530; }
+            .badge-legend summary { color: #a69d90; }
+            .badge-legend-item { border-color: #2a2520; }
+            .badge-legend-item strong { color: #e8e0d5; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2, .topic-content h3, .topic-content h4 { color: #e8e0d5; }
+            .topic-content p, .topic-content li { color: #c0b7a9; }
+            .topic-content li strong, .topic-content p strong { color: #e8e0d5; }
+            .topic-content ul li::before { color: #7a7168; }
+            .topic-content ol li::before { color: #c49a6c; }
+
+            .topic-content blockquote { background: #231f1b; border-left-color: #c49a6c; color: #a69d90; }
+            .topic-content blockquote cite { color: #7a7168; }
+
+            .callout { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .callout h4 { color: #c49a6c; }
+            .callout p { color: #c0b7a9; }
+            .callout-caution { background: #2a1f1c; border-left-color: #d36a5a; }
+            .callout-caution h4 { color: #e08d7d; }
+            .callout-tip { background: #1f2a1c; border-left-color: #8dbb6c; }
+            .callout-tip h4 { color: #8dbb6c; }
+
+            .data-block { background: #231f1b; border-color: #3a3530; }
+            .data-row { border-top-color: #2a2520; }
+            .data-key { color: #e8e0d5; }
+            .data-val { color: #a69d90; }
+
+            .topic-related h2 { color: #a69d90; }
+            .related-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .related-card strong { color: #e8e0d5; }
+            .related-card span { color: #a69d90; }
+
+            .topic-downloads h2 { color: #e8e0d5; }
+            .topic-downloads > p { color: #a69d90; }
+            .dl-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .dl-card h3 { color: #e8e0d5; }
+            .dl-card p { color: #a69d90; }
+            .dl-card .dl-meta { color: #7a7168; }
+            .dl-btn { background: #c49a6c; color: #1a1714; border-color: #c49a6c; }
+            .dl-btn:hover { background: #b08a5e; border-color: #b08a5e; }
+            .dl-btn-pdf { background: transparent; color: #c49a6c; }
+            .dl-btn-pdf:hover { background: #c49a6c; color: #1a1714; }
+
+            .disclaimer { background: #231f1b; border-color: #3a3530; border-left-color: #b09a3a; }
+            .disclaimer h3 { color: #d6b74c; }
+            .disclaimer p { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html" class="active">Medications</a>
+        <a href="surgery.html">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Topic · Medications &amp; Injections</p>
+        <h1>Medications &amp; Injections</h1>
+        <p class="topic-lede">Medications are tools, not cures, for TOS. They make it possible to sleep, work, and do the physical therapy that addresses the underlying compression. This page covers what the community and clinical literature say about nerve pain meds, Botox, diagnostic blocks, supplements, and anticoagulants for vTOS.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~17 min read</span>
+            <span class="meta-item">Sources: 382 Reddit posts + evidence-based supplemental info</span>
+        </div>
+    </header>
+
+    <div class="badge-legend">
+        <details>
+            <summary>About the badges on this page</summary>
+            <div class="badge-legend-body">
+                <div class="badge-legend-item">
+                    <span class="badge badge-peer-reviewed">Peer-reviewed</span>
+                    <div><strong>Published medical literature</strong>Findings from peer-reviewed journals or FDA-approved indications.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-clinical">Clinical reference</span>
+                    <div><strong>Standard medical practice</strong>Medications used routinely by TOS, pain management, and vascular specialists.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-community">Community-derived</span>
+                    <div><strong>Patient-reported experiences</strong>Themes from r/ThoracicOutletSupport. Useful signal about real-world response, but not clinical evidence.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-practical">Practical tool</span>
+                    <div><strong>Actionable guidance</strong>Specific dosing observations, injection sequencing, or questions to ask your prescriber.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-anecdotal">Anecdotal / caution</span>
+                    <div><strong>Individual report or mixed evidence</strong>One person's experience, or an intervention where the community is split.</div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#framing">Medications are tools, not cures</a></li>
+                <li><a href="#nerve-pain">Neuropathic pain medications</a></li>
+                <li><a href="#muscle-relaxants">Muscle relaxants</a></li>
+                <li><a href="#botox">Botox — practical guidance</a></li>
+                <li><a href="#blocks">Diagnostic &amp; therapeutic blocks</a></li>
+                <li><a href="#anti-inflammatory">NSAIDs &amp; anti-inflammatories</a></li>
+                <li><a href="#anticoagulants">Anticoagulants for vTOS</a></li>
+                <li><a href="#supplements">Supplements &amp; vitamins</a></li>
+                <li><a href="#pots">POTS &amp; dysautonomia support</a></li>
+                <li><a href="#multi-modal">Putting it together</a></li>
+                <li><a href="#questions">Questions to ask your prescriber</a></li>
+                <li><a href="#related">Related topics</a></li>
+                <li><a href="#downloads">Download the full guide</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="framing">
+            <h2>Medications are tools, not cures</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>Several community members who reached functional recovery emphasize the same framing: medications don't fix TOS — they make it possible to engage in the physical therapy and muscle retraining that do. Expecting a pill or injection to resolve the underlying compression leads to disappointment and escalating prescriptions.</p>
+
+            <p>That said, chronic nerve pain untreated can block sleep, wreck work, and kill any chance of doing PT well. The right medication plan is the one that makes the rest of your life possible while the biomechanical work takes effect.</p>
+
+            <div class="callout">
+                <h4>A useful layered approach</h4>
+                <p>A nerve pain medication as the <strong>foundation</strong>. An anti-inflammatory during <strong>flares</strong>. A muscle relaxant for <strong>acute spasm</strong>. Botox as a <strong>bridge</strong> that opens a window of reduced pain to make PT effective. Supplements to address <strong>underlying deficiencies</strong>. No one component does the whole job.</p>
+            </div>
+        </section>
+
+        <section id="nerve-pain">
+            <h2>Neuropathic pain medications</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Standard painkillers (NSAIDs, acetaminophen, opioids) don't address nerve pain well. The medications below target the specific mechanisms that cause neuropathic pain — abnormal nerve signaling and descending pain pathway modulation.</p>
+
+            <h3>Gabapentin (Neurontin)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Mechanism</div>
+                    <div class="data-val">Anticonvulsant that modulates calcium channels in the nervous system, reducing the abnormal nerve signaling behind neuropathic pain.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Community reports</div>
+                    <div class="data-val">Often effective, but dose matters. One user takes 900mg during the day and 1800mg at night. Many report that their doctor started them too low to notice any effect.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Side effects</div>
+                    <div class="data-val">Drowsiness, dizziness, fatigue. Often improve over the first 2–4 weeks as the body adjusts.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">If it's not working</div>
+                    <div class="data-val">Dose is often the issue before medication effectiveness is. Ask about titrating up before discontinuing.</div>
+                </div>
+            </div>
+
+            <h3>Pregabalin (Lyrica)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Mechanism</div>
+                    <div class="data-val">Similar to gabapentin but more potent with more predictable absorption. FDA-approved for diabetic neuropathy, postherpetic neuralgia, fibromyalgia, and spinal cord injury pain.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Community reports</div>
+                    <div class="data-val">"Pregabalin and amitriptyline — life savers. Without them I wouldn't have had any relief, no matter what the position." Lidocaine patches + Lyrica + NSAIDs + Tylenol also described as a practical flare-day combo.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Notes</div>
+                    <div class="data-val">Controlled substance (Schedule V) due to dependence potential. Side effects: drowsiness, dizziness, weight gain, edema. Similar profile to gabapentin.</div>
+                </div>
+            </div>
+
+            <h3>Duloxetine (Cymbalta)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Mechanism</div>
+                    <div class="data-val">SNRI antidepressant that also increases serotonin and norepinephrine in descending pain-inhibiting spinal pathways. FDA-approved for neuropathic pain, fibromyalgia, and chronic musculoskeletal pain.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Community reports</div>
+                    <div class="data-val">"Cymbalta changed my life." Another user after 12+ years of excruciating pain: first medication to provide real relief after trying everything else.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Notes</div>
+                    <div class="data-val">Common side effects: nausea (often temporary), dry mouth, drowsiness, constipation. <strong>Do not stop abruptly</strong> — requires gradual taper to avoid withdrawal.</div>
+                </div>
+            </div>
+
+            <h3>Amitriptyline (Elavil)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Mechanism</div>
+                    <div class="data-val">Tricyclic antidepressant. At low doses (10–50mg at bedtime), modulates pain pathways and improves sleep — a significant secondary benefit for chronic pain.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Community reports</div>
+                    <div class="data-val">Paired with pregabalin as a "life saver" by multiple users. Frequently maintained long-term after surgery for residual nerve irritation.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Notes</div>
+                    <div class="data-val">Side effects: dry mouth, morning drowsiness, constipation, weight gain. TCAs can affect heart rhythm at higher doses — baseline ECG may be recommended before starting.</div>
+                </div>
+            </div>
+
+            <h3>Low-dose naltrexone (LDN)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Mechanism</div>
+                    <div class="data-val">At standard doses (50mg), naltrexone blocks opioid receptors — used for alcohol and opioid dependence. At <strong>low doses (under ~5mg)</strong> it works through a different pathway: Toll-like receptor 4 (TLR4) antagonism on microglia and other glial cells, which reduces neuroinflammation and the release of proinflammatory cytokines that sensitize nerves and sustain chronic pain.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Dosing</div>
+                    <div class="data-val">Off-label; must be compounded at a specialty pharmacy. Typical starting dose <strong>1–1.5mg nightly</strong>, titrated up by 0.5–1.5mg every 1–2 weeks to a target of <strong>3–4.5mg nightly</strong>. Some protocols reach 6mg, but higher doses are not associated with better outcomes. Usually taken at bedtime.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Use cases</div>
+                    <div class="data-val">Strongest evidence in fibromyalgia, complex regional pain syndrome (CRPS), and painful diabetic neuropathy. Increasingly used for other neuropathic and inflammatory chronic pain conditions — including off-label for TOS-associated nerve pain that hasn't responded to gabapentinoids, SNRIs, or tricyclics.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Timeline</div>
+                    <div class="data-val">Slow onset — can take <strong>4–8 weeks</strong> for full effect. Vivid dreams and temporary sleep disruption are common in the first 1–2 weeks; starting at 1mg and titrating slowly usually mitigates this.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Notes</div>
+                    <div class="data-val">Not covered by most insurance; out-of-pocket cost is typically $30–60/month at compounding pharmacies. <strong>Incompatible with opioid pain medications</strong> — you must be off all opioids (including tramadol) before starting. Ask a pain specialist or integrative/functional-medicine physician whether LDN fits your picture.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="muscle-relaxants">
+            <h2>Muscle relaxants</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>Tight, spasming scalenes and pec minor are central to TOS. Muscle relaxants are commonly prescribed alongside PT to break the pain-spasm cycle and for post-surgical recovery. They don't fix the underlying compression, but they can reduce the reactive tension that makes everything worse.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Cyclobenzaprine (Flexeril)</div>
+                    <div class="data-val">Typically taken at bedtime; causes drowsiness. Common first-line choice.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Tizanidine (Zanaflex)</div>
+                    <div class="data-val">Sedating; may help with both spasm and sleep. Short half-life means dosing flexibility.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Methocarbamol (Robaxin)</div>
+                    <div class="data-val">Generally less sedating than cyclobenzaprine or tizanidine. Worth asking about if you need to stay functional during the day.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Baclofen</div>
+                    <div class="data-val">Works on a different (GABA-B) pathway; used for certain spasticity conditions. One community member reported a poor reaction. Individual response varies.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-tip">
+                <h4>Post-surgical note</h4>
+                <p>Post-op scar tissue often creates new tension patterns. Multiple community members recommend specifically asking about muscle relaxers and nerve pain medication post-surgery rather than relying only on narcotics, which "do not treat the cause of pain" and carry more significant side effects.</p>
+            </div>
+        </section>
+
+        <section id="botox">
+            <h2>Botox — practical guidance</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Botox is the single most discussed medication in the dataset, with a wide range of responses. The community reports make it clearer than most clinical references what to actually expect.</p>
+
+            <h3>Dosing</h3>
+            <ul>
+                <li><strong>Anterior scalene:</strong> Standard dose is typically 100 units.</li>
+                <li><strong>First-time combined (scalene + pec minor):</strong> Doses as low as 41 units total have been used to test tolerance.</li>
+                <li><strong>High-end combined:</strong> One user received 300 units across multiple sites.</li>
+                <li><strong>Insurance:</strong> Often doesn't cover Botox for TOS directly, but may cover under cervical dystonia codes.</li>
+            </ul>
+
+            <h3>Timeline</h3>
+            <ul>
+                <li><strong>Weeks 1–3:</strong> Potential pain flare as the Botox irritates nearby nerves before taking full effect.</li>
+                <li><strong>Around week 3:</strong> Relief typically begins.</li>
+                <li><strong>Duration:</strong> Days to months, highly variable.</li>
+            </ul>
+
+            <h3>Rebound</h3>
+            <blockquote>
+                "Keep current on the Botox. The rebound if it wears off is terrible."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+            <p>If you start Botox, plan for consistent scheduling rather than sporadic use. Letting it wear off fully between rounds is commonly described as much worse than baseline.</p>
+
+            <h3>Diminishing returns</h3>
+            <p>Multiple users report Botox stops working effectively after 5–6 rounds. "I've had 3 so far and they don't seem to be working as well as I hoped." Another had 6 rounds before effect faded. The muscle may atrophy with repeated injections, changing the underlying dynamic. Treat Botox as a medium-term bridge, not an indefinite solution.</p>
+
+            <h3>Sequential injection strategy — diagnostic gold</h3>
+            <p>One of the most actionable findings for anyone with compression at multiple sites: inject <strong>one site at a time</strong> rather than all sites simultaneously.</p>
+            <blockquote>
+                "I had mine injected 1 at a time, started with pec minor, then anterior scalene, then middle scalene. Each injection removed some symptoms, but the middle scalene was definitely the culprit for me as all symptoms resolved."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+            <p>Another user's accidental variant confirmed the same principle: scalenes alone only helped a little; adding pec minor the next round brought significant relief. This sequencing gives you diagnostic clarity about which site drives which symptoms — directly informing surgical planning if you go that route.</p>
+
+            <h3>Trapezius Botox</h3>
+            <p>One user reports trapezius Botox (rather than scalene) was "a godsend." This is a different injection target not in most standard protocols — worth raising if scalene Botox alone is insufficient.</p>
+
+            <div class="callout callout-caution">
+                <h4>Cervical instability must be screened first</h4>
+                <p>If your scalenes are stabilizing an unstable cervical spine — common in hEDS and hypermobility — Botox can cause a severe reaction. One community member: "I had a really bad reaction to Botox in my scalenes because those muscles were trying to stabilize my cervical spine." Ask about flexion/extension cervical X-rays and Beighton score before proceeding. See <a href="community-discussion.html#cervical">cervical instability</a>.</p>
+            </div>
+        </section>
+
+        <section id="blocks">
+            <h2>Diagnostic &amp; therapeutic blocks</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Lidocaine and bupivacaine injections into the scalenes and pec minor serve a dual role: they confirm which muscles drive your compression, and they provide short-term relief that can be diagnostic gold.</p>
+
+            <h3>Scalene / pec minor lidocaine blocks</h3>
+            <p>Image-guided (usually ultrasound) injection of lidocaine. A ≥50% symptom reduction is considered a positive result and aligns with the Society for Vascular Surgery diagnostic criteria. Published data places the predictive value for surgical success at approximately 94% when a properly-performed block is positive.</p>
+
+            <blockquote>
+                "It's kind of surreal to experience relief after being in pain for so long."
+                <cite>— r/ThoracicOutletSupport, on a first diagnostic scalene block</cite>
+            </blockquote>
+
+            <h3>Trigger point injections</h3>
+            <p>Direct lidocaine or bupivacaine injection into scalene and pec minor trigger points produces temporary but often dramatic relief. Useful for flare management and, again, for diagnostic confirmation.</p>
+
+            <h3>Topical lidocaine</h3>
+            <p>Prescription 5% lidocaine patches or OTC 4% lidocaine creams offer localized relief with minimal systemic absorption. Frequently mentioned in community multi-modal flare protocols.</p>
+
+            <div class="callout callout-tip">
+                <h4>If you haven't had a diagnostic block</h4>
+                <p>For suspected neurogenic TOS where imaging and EMG have been inconclusive, the diagnostic scalene (and/or pec minor) block is often the most definitive next step. Multiple users describe it as the turning point in getting a diagnosis after months or years of inconclusive workup.</p>
+            </div>
+        </section>
+
+        <section id="anti-inflammatory">
+            <h2>NSAIDs &amp; anti-inflammatories</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>TOS is primarily a compression syndrome, not an inflammatory one — but chronic muscle tension and nerve irritation do produce secondary inflammation. NSAIDs don't touch nerve pain directly but can reduce the muscular and inflammatory overlay, especially during flares.</p>
+
+            <h3>Common NSAIDs and considerations</h3>
+            <ul>
+                <li><strong>Ibuprofen, naproxen</strong> — OTC options; effective for flares but not designed for daily long-term use.</li>
+                <li><strong>Meloxicam, celecoxib (Celebrex)</strong> — prescription; more stomach-friendly for longer-term use.</li>
+                <li><strong>Ibuprofen + acetaminophen together</strong> — one user found the combination more effective than either alone. Different mechanisms stack well for short-term pain management.</li>
+            </ul>
+
+            <h3>Long-term daily NSAID caveats</h3>
+            <p>Chronic daily NSAID use carries real risks: stomach ulcers and bleeding, kidney effects, cardiovascular risk. If you're reaching for NSAIDs daily for months, it's a sign the core pain management plan needs to address nerve pain directly rather than layering more NSAIDs.</p>
+
+            <h3>Acetaminophen (Tylenol) caveats</h3>
+            <p>Not anti-inflammatory but often paired with NSAIDs. Max dose is 3,000–4,000mg/day in healthy adults. <strong>Check all combination products</strong> (cold medicines, some prescription pain pills) — hidden acetaminophen is a common cause of accidental overdose and liver damage.</p>
+        </section>
+
+        <section id="anticoagulants">
+            <h2>Anticoagulants for venous TOS</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>Venous TOS (vTOS / Paget-Schroetter syndrome) involves subclavian vein compression that can produce deep vein thrombosis (DVT) in the arm. Anticoagulants are a critical treatment component — but generally not the complete answer.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">DOACs</div>
+                    <div class="data-val">Direct oral anticoagulants — rivaroxaban (Xarelto), apixaban (Eliquis). Most commonly prescribed modern blood thinners. Oral, no regular blood monitoring.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Heparin / enoxaparin (Lovenox)</div>
+                    <div class="data-val">Injectable. Acute/hospital setting or as a bridge to oral therapy.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Warfarin (Coumadin)</div>
+                    <div class="data-val">Older oral anticoagulant. Requires regular INR blood monitoring. Still used in some cases.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Catheter-directed thrombolysis</div>
+                    <div class="data-val">tPA or similar clot-busting medication delivered directly to the clot, typically in the acute phase before surgical decompression.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-caution">
+                <h4>Blood thinners are not a long-term alternative to surgery</h4>
+                <p>Most vascular specialists recommend surgical decompression for vTOS to address the underlying compression that caused the clot. Anticoagulants alone leave the anatomy unchanged and the compression ongoing. One community member spent a year knowing they had vTOS with a chronic clot before finding a surgeon willing to operate.</p>
+                <p><strong>Supplement interactions:</strong> Fish oil, vitamin E, turmeric, and ginkgo all increase bleeding risk. Disclose every supplement to your prescriber. <strong>Do not start or stop blood thinners without medical guidance</strong> — abrupt discontinuation can cause rebound clotting.</p>
+            </div>
+        </section>
+
+        <section id="supplements">
+            <h2>Supplements &amp; vitamins</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>The supplements below have the strongest case from general medical literature, not from the Reddit dataset specifically. Supplements aren't regulated like prescription drugs — choose third-party-tested brands (USP, NSF, or ConsumerLab verified) where possible.</p>
+
+            <h3>For nerve health and neuropathic pain</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Magnesium</div>
+                    <div class="data-val">Plays a role in nerve transmission and muscle relaxation. Magnesium glycinate is preferred for bioavailability and minimal GI effects. Typical dose 200–400mg elemental daily. Epsom salt baths for localized muscle work.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">B vitamins (B12, B complex)</div>
+                    <div class="data-val">B12 is essential for nerve myelin sheath maintenance — deficiency can cause or worsen neuropathy. <strong>Test before megadosing.</strong> B6 >100mg/day chronically can paradoxically cause peripheral neuropathy.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Alpha-lipoic acid (ALA)</div>
+                    <div class="data-val">Antioxidant with the most supplement-level evidence for neuropathic pain, primarily studied in diabetic neuropathy. Study dose: 600mg daily. May lower blood sugar — relevant if diabetic.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Vitamin D</div>
+                    <div class="data-val">Deficiency is associated with chronic pain, muscle weakness, and heightened pain sensitivity. <strong>Test first.</strong> Repletion often 2,000–5,000 IU daily with a fatty meal.</div>
+                </div>
+            </div>
+
+            <h3>For inflammation</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Omega-3 / fish oil</div>
+                    <div class="data-val">Well-established anti-inflammatory. Typical dose 1,000–3,000mg combined EPA/DHA daily. <strong>Mild blood-thinning effect</strong> — discuss with prescriber if on anticoagulants (vTOS). Look for IFOS-certified products.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Turmeric / curcumin</div>
+                    <div class="data-val">Active compound has anti-inflammatory effects. Pair with piperine (black pepper) or use phytosome/liposomal forms for absorption. <strong>Also has blood-thinning effect</strong> — avoid or discuss if on anticoagulants.</div>
+                </div>
+            </div>
+
+            <h3>For neural inflammation</h3>
+            <p>A separate mechanism from general inflammation. Neuropathic pain is sustained in part by <strong>glial cells</strong> (microglia and astrocytes) in the central and peripheral nervous system releasing proinflammatory cytokines that sensitize nerves. Most OTC anti-inflammatories (NSAIDs, curcumin, omega-3) act on general tissue inflammation and cross poorly into this glial pathway.</p>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Low-dose naltrexone (LDN)</div>
+                    <div class="data-val"><strong>Prescription, not a supplement</strong> — covered in the <a href="#nerve-pain">Neuropathic pain medications</a> section above. Included here because it is the single most targeted option for glial neuroinflammation: at 1–4.5mg nightly, naltrexone antagonizes Toll-like receptor 4 (TLR4) on microglia, reducing the central-sensitization loop that drives many chronic TOS nerve-pain presentations. Requires a compounding pharmacy; not currently matched by any OTC supplement.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Palmitoylethanolamide (PEA)</div>
+                    <div class="data-val">Naturally occurring fatty acid amide. Downregulates mast-cell and microglial activation via PPAR-α and indirect cannabinoid pathways. Typical study dose 600–1,200mg daily (often 600mg twice daily), ideally in micronized or ultra-micronized form for absorption. 4–8 weeks to notice effect. Generally well-tolerated; limited but growing evidence in sciatica, carpal tunnel, and diabetic neuropathy.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Acetyl-L-carnitine (ALCAR)</div>
+                    <div class="data-val">Supports mitochondrial function in nerve cells; strongest evidence in chemotherapy-induced and diabetic peripheral neuropathy. Typical dose 1,000–2,000mg daily in divided doses. May cause mild GI upset or a "wired" feeling — take earlier in the day.</div>
+                </div>
+            </div>
+
+            <h3>For surgical preparation and recovery</h3>
+            <ul>
+                <li><strong>Vitamin C</strong> — supports collagen synthesis and wound healing. Some surgeons suggest 500–1,000mg daily around surgery.</li>
+                <li><strong>Zinc</strong> — 15–30mg daily supports wound healing. Excess zinc interferes with copper absorption.</li>
+                <li><strong>Protein</strong> — adequate intake (0.8–1.2g per kg body weight daily, higher during recovery) matters more than any specific collagen supplement.</li>
+            </ul>
+
+            <div class="callout callout-caution">
+                <h4>Always disclose supplements to surgeons</h4>
+                <p>Many supplements (fish oil, vitamin E, turmeric, ginkgo, high-dose vitamin C, garlic) affect bleeding. Some surgeons ask you to stop them 1–2 weeks before surgery. Bring a complete list to pre-op — don't guess which ones matter.</p>
+            </div>
+        </section>
+
+        <section id="pots">
+            <h2>POTS &amp; dysautonomia support</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>TOS and POTS show up together across the community data often enough that it's worth addressing. If you have dizziness on standing, blood pooling, heart rate spikes, or exercise intolerance alongside TOS, these are first-line supportive measures. See also the <a href="community-discussion.html#pots">POTS section on the community discussion page</a>.</p>
+
+            <ul>
+                <li><strong>Salt loading</strong> — under medical guidance, 2,000–3,000mg additional sodium per day increases blood volume and reduces orthostatic symptoms.</li>
+                <li><strong>Electrolyte drinks</strong> — LMNT, Liquid IV, Normalyte, and similar products help maintain sodium, potassium, magnesium balance.</li>
+                <li><strong>Compression garments</strong> — waist-high compression stockings or abdominal binders support venous return. Compression sleeves for the arm may help vTOS-related pooling.</li>
+                <li><strong>Formal POTS workup</strong> — tilt-table test or orthostatic vitals with a cardiologist or POTS specialist. Rule out or confirm; if confirmed, the treatment picture expands considerably.</li>
+            </ul>
+        </section>
+
+        <section id="multi-modal">
+            <h2>Putting it together</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>The most consistent theme across community recovery stories: no single medication or supplement resolves TOS on its own. The combinations that work follow a pattern:</p>
+
+            <ol>
+                <li><strong>Nerve pain medication as the foundation</strong> — gabapentin, pregabalin, or duloxetine.</li>
+                <li><strong>Anti-inflammatory for flares</strong> — NSAIDs short-term; curcumin or omega-3 as ongoing support if not on anticoagulants.</li>
+                <li><strong>Muscle relaxant for acute spasm</strong> — cyclobenzaprine or tizanidine at bedtime as needed.</li>
+                <li><strong>Physical therapy as the active treatment</strong> — medications manage symptoms so PT can address the root cause.</li>
+                <li><strong>Botox as a bridge</strong> — a 2–3 month window of reduced pain to make PT more tolerable and effective.</li>
+                <li><strong>Supplements to cover deficiencies</strong> — magnesium, B12, vitamin D tested and repleted as needed.</li>
+            </ol>
+        </section>
+
+        <section id="questions">
+            <h2>Questions to ask your prescriber</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <ul>
+                <li>Is my current pain medication adequate for neuropathic pain, or should we consider a nerve-specific medication like gabapentin, pregabalin, or duloxetine?</li>
+                <li>Would a diagnostic scalene block help confirm my diagnosis and guide treatment?</li>
+                <li>Am I a candidate for Botox injections? Should I be evaluated for cervical instability first?</li>
+                <li>Should I have my vitamin D and B12 levels checked?</li>
+                <li>Are any of my current supplements interacting with my medications? (Bring a complete list.)</li>
+                <li><strong>For vTOS:</strong> What anticoagulant is best for my situation, and what is the long-term plan — blood thinners alone or surgical decompression?</li>
+                <li><strong>For POTS symptoms:</strong> Could my dizziness and blood pooling be related to my TOS? Should I be evaluated for POTS/dysautonomia?</li>
+            </ul>
+        </section>
+
+        <section id="related">
+            <h2>Related topics</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <div class="related-grid">
+                <a href="diagnosis.html#blocks" class="related-card">
+                    <strong>Diagnostic blocks →</strong>
+                    <span>How scalene and pec minor blocks work, when to ask for them, and what a positive result means.</span>
+                </a>
+                <a href="conservative.html" class="related-card">
+                    <strong>Conservative Treatment →</strong>
+                    <span>The physical therapy work medications make possible — serratus, scalenes, pec minor.</span>
+                </a>
+                <a href="community-discussion.html#cervical" class="related-card">
+                    <strong>Cervical instability →</strong>
+                    <span>The critical pre-Botox screening most providers skip — why it matters, what to ask for.</span>
+                </a>
+                <a href="surgery.html" class="related-card">
+                    <strong>Surgery →</strong>
+                    <span>When medications and PT are no longer enough, what the surgical options look like.</span>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <section class="topic-downloads" id="downloads" aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">Take it with you</h2>
+        <p>The full medications, supplements, and vitamins guide covers every category above in more depth. Useful to bring to a pain-management or prescriber appointment.</p>
+        <div class="dl-card">
+            <h3>TOS Medications, Supplements &amp; Vitamins Guide</h3>
+            <p>Full guide — community-reported experiences plus evidence-based supplemental information on neuropathic pain meds, injections, blood thinners, supplements, and POTS support.</p>
+            <div class="dl-meta">
+                <span>Updated Apr 2026</span>
+                <span>~19 min read</span>
+                <span>Sources: 382 Reddit posts + general medical literature</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.docx" class="dl-btn" data-goatcounter-click="download/TOS_Medications_Supplements_Vitamins_Guide.docx" data-goatcounter-title="Download: TOS_Medications_Supplements_Vitamins_Guide.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Medications_Supplements_Vitamins_Guide.pdf" data-goatcounter-title="Download: TOS_Medications_Supplements_Vitamins_Guide.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <h3>Medical disclaimer</h3>
+        <p>This page is for informational purposes only and is not medical advice. Community-reported dosing, rebound, and response patterns are individual experiences, not prescriptions. Never start, stop, or change any medication or supplement without consulting your doctor or pharmacist. Disclose all supplements to your providers — especially before surgery or while on blood thinners.</p>
+    </div>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener');
+            link.addEventListener('click', function(e) {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    var blank = window.open('about:blank', '_blank');
+                    if (blank) { blank.location.href = link.href; }
+                }
+            });
+        });
+
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var fadeEls = document.querySelectorAll('.topic-hero, .badge-legend, .topic-toc, .topic-content section, .topic-related, .topic-downloads, .disclaimer');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

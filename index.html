@@ -991,6 +991,167 @@
             margin: 0;
         }
 
+        /* Red Flags — urgent care signals */
+        .red-flags {
+            max-width: 720px;
+            padding: 32px 28px;
+            margin: 24px auto 0;
+            background: #ffffff;
+            border: 1px solid #e8cfc5;
+            border-left: 4px solid #a83528;
+            border-radius: 4px;
+            text-align: left;
+        }
+
+        .red-flags h2 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #a83528;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .red-flags-lead {
+            font-size: 0.95rem;
+            color: #1c1c1c;
+            line-height: 1.65;
+            margin-bottom: 16px;
+        }
+
+        .red-flags-list {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 16px;
+        }
+
+        .red-flags-list li {
+            font-size: 0.9rem;
+            color: #5a5347;
+            line-height: 1.6;
+            padding: 10px 0 10px 28px;
+            position: relative;
+            border-bottom: 1px solid #f5e6e1;
+        }
+
+        .red-flags-list li:last-child {
+            border-bottom: none;
+        }
+
+        .red-flags-list li::before {
+            content: "!";
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #a83528;
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .red-flags-list li strong {
+            color: #1c1c1c;
+        }
+
+        .red-flags-note {
+            font-size: 0.82rem;
+            font-style: italic;
+            color: #8a8279;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Start Here — decision router */
+        .start-here {
+            max-width: 860px;
+            width: 100%;
+            padding: 48px 24px 24px;
+            text-align: left;
+        }
+
+        .start-here > h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 6px;
+            text-align: center;
+        }
+
+        .start-here-lead {
+            font-size: 0.95rem;
+            color: #5a5347;
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .start-here-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .start-here-card {
+            display: flex;
+            flex-direction: column;
+            padding: 28px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            color: inherit;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .start-here-card:hover {
+            border-color: #c4b8aa;
+            border-left-color: #5c3d2e;
+            transform: translateY(-2px);
+        }
+
+        .start-here-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .start-here-card h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+            line-height: 1.3;
+            font-family: 'Fraunces', Georgia, serif;
+        }
+
+        .start-here-card p {
+            font-size: 0.88rem;
+            color: #5a5347;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex-grow: 1;
+        }
+
+        .start-here-cta {
+            font-size: 0.82rem;
+            font-weight: 600;
+            color: #5c3d2e;
+            letter-spacing: 0.02em;
+            margin-top: auto;
+        }
+
         .last-updated {
             font-size: 0.72rem;
             color: #8a8279;
@@ -1388,6 +1549,20 @@
                 margin-right: 20px;
                 padding: 28px 20px;
             }
+            .red-flags {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 24px 20px;
+            }
+            .start-here {
+                padding: 32px 20px 16px;
+            }
+            .start-here-grid {
+                grid-template-columns: 1fr;
+            }
+            .start-here > h2 {
+                font-size: 1.3rem;
+            }
             .tldr {
                 margin-left: 20px;
                 margin-right: 20px;
@@ -1534,6 +1709,72 @@
             .guided-flow {
                 background: #231f1b;
                 border-color: #3a3530;
+            }
+
+            .red-flags {
+                background: #231f1b;
+                border-color: #4a3530;
+                border-left-color: #d36a5a;
+            }
+
+            .red-flags h2 {
+                color: #e08d7d;
+            }
+
+            .red-flags-lead {
+                color: #e8e0d5;
+            }
+
+            .red-flags-list li {
+                color: #a69d90;
+                border-bottom-color: #2a2520;
+            }
+
+            .red-flags-list li strong {
+                color: #e8e0d5;
+            }
+
+            .red-flags-list li::before {
+                background: #d36a5a;
+            }
+
+            .red-flags-note {
+                color: #7a7168;
+            }
+
+            .start-here > h2 {
+                color: #e8e0d5;
+            }
+
+            .start-here-lead {
+                color: #a69d90;
+            }
+
+            .start-here-card {
+                background: #231f1b;
+                border-color: #3a3530;
+                border-left-color: #c49a6c;
+            }
+
+            .start-here-card:hover {
+                border-color: #4a4540;
+                border-left-color: #c49a6c;
+            }
+
+            .start-here-label {
+                color: #7a7168;
+            }
+
+            .start-here-card h3 {
+                color: #e8e0d5;
+            }
+
+            .start-here-card p {
+                color: #a69d90;
+            }
+
+            .start-here-cta {
+                color: #c49a6c;
             }
 
             .tldr details {
@@ -1804,8 +2045,13 @@
 
     <nav class="page-nav">
         <a href="index.html" class="active">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
         <a href="literature.html">Literature</a>
-        <a href="community.html">Community</a>
+        <a href="outreach.html">Outreach</a>
     </nav>
 
     <div class="hero">
@@ -1819,106 +2065,52 @@
 
     <div class="explainer">
         <h2>What is Thoracic Outlet Syndrome?</h2>
-        <p>Thoracic Outlet Syndrome (TOS) is a group of conditions that occur when the blood vessels or nerves in the thoracic outlet — the space between the collarbone and first rib — become compressed. It can cause pain, numbness, and tingling in the neck, shoulder, arm, and hand.</p>
-        <p>TOS is often underdiagnosed and can be difficult to pin down. There are three main types: <strong>neurogenic</strong> (nerve compression, the most common), <strong>venous</strong> (vein compression), and <strong>arterial</strong> (artery compression). Symptoms vary widely, which is part of what makes it so frustrating for many patients.</p>
-        <p>If you're newly diagnosed or suspect you may have TOS, you're not alone. The resources on this page were created by people who have been through the same process — and they're here to help you feel more informed and prepared.</p>
+        <p>TOS is a group of conditions where nerves or blood vessels between the collarbone and first rib get compressed — causing pain, numbness, tingling, or weakness in the neck, shoulder, arm, or hand. There are three main types: <strong>neurogenic</strong> (nerve compression, the most common), <strong>venous</strong>, and <strong>arterial</strong>. It's often underdiagnosed and can take years to pin down.</p>
     </div>
 
-    <div class="tldr">
-        <details>
-            <summary>TL;DR — Quick Summary (click to expand)</summary>
-            <div class="tldr-content">
-                <h3>Why Is TOS So Hard to Diagnose?</h3>
-                <p>There is no single blood test, scan, or exam that confirms neurogenic TOS. It's a diagnosis of exclusion — doctors have to rule out everything else first, then piece together enough clinical evidence to make TOS the most likely explanation. Provocative tests have false-positive rates as high as 47% in healthy people, and standard EMG results come back normal in most TOS patients. Many people report it taking 1 to 5+ years and a dozen specialists before anyone even raises TOS as a possibility.</p>
+    <aside class="red-flags" aria-labelledby="red-flags-heading">
+        <h2 id="red-flags-heading">When to Seek Emergency Care</h2>
+        <p class="red-flags-lead">Most TOS symptoms are chronic, not emergencies — but some are. If you have any of the following, <strong>go to the ER or call 911</strong>. Do not wait.</p>
+        <ul class="red-flags-list">
+            <li><strong>Sudden arm swelling or discoloration</strong> (blue, purple, or mottled), or a feeling of fullness/heaviness in the arm — possible blood clot (venous TOS / effort thrombosis).</li>
+            <li><strong>Loss of pulse, a cold or pale hand,</strong> or sudden ischemic pain — possible arterial compromise.</li>
+            <li><strong>Sudden severe weakness</strong> or inability to move the arm or hand.</li>
+            <li><strong>Chest pain, shortness of breath, or coughing up blood</strong> — possible pulmonary embolism from an arm clot.</li>
+            <li><strong>Sudden severe headache, vision changes, slurred speech, or fainting</strong> — possible vascular event (including subclavian steal).</li>
+        </ul>
+        <p class="red-flags-note">These events are rare but time-sensitive. When in doubt, get checked.</p>
+    </aside>
 
-                <h3>Do You Have TOS? Common Symptoms</h3>
-                <ul class="symptom-list">
-                    <li>Pain, numbness, or tingling in the neck, shoulder, arm, or hand</li>
-                    <li>Ring and pinky finger numbness or tingling (ulnar nerve pattern)</li>
-                    <li>Hand weakness, grip problems, or dropping things</li>
-                    <li>Symptoms that get worse with arms raised or overhead</li>
-                    <li>Arm fatigue or heaviness during sustained overhead activity</li>
-                    <li>Tenderness or pain when pressing on the scalene muscles (side of neck)</li>
-                    <li>Tenderness or pain when pressing near the pec minor (upper chest/armpit)</li>
-                    <li>Symptoms that worsen with computer work, driving, or carrying things</li>
-                    <li>Visible neck asymmetry or one side feeling tighter than the other</li>
-                    <li>Symptoms that came on gradually and have been hard for doctors to explain</li>
-                </ul>
-
-                <h3>What Recovery Can Look Like</h3>
-                <blockquote>
-                    One user placed a large cork massage ball under their armpit to release the pec minor and reported near-complete resolution of symptoms over time.
-                    <span class="source">Community Research Report — Pec Minor Release</span>
-                </blockquote>
-                <blockquote>
-                    "I found that the pec minor being tight makes the serratus not fire. Which makes your neck do its job which I think starts the issue." Several users credit serratus anterior strengthening as the single breakthrough that resolved their TOS after months of failed physical therapy.
-                    <span class="source">Community Research Report — Serratus Anterior</span>
-                </blockquote>
-                <blockquote>
-                    For those who do pursue surgery, recovery timelines vary. Most community members report several weeks before returning to daily activities, with full recovery often taking 3 to 6 months. Many describe gradual improvement over that window — not overnight relief, but a slow, steady return to function.
-                    <span class="source">Community Research Report — Surgical Recovery</span>
-                </blockquote>
-                <blockquote>
-                    A user described almost crying after their first diagnostic scalene block: "It's kind of surreal to experience relief after being in pain for so long." Even brief relief from a block is both emotionally validating and diagnostically meaningful.
-                    <span class="source">Diagnostic Checklist — Scalene Block</span>
-                </blockquote>
-
-                <h3>What Actually Helps</h3>
-                <p>Across 100 Reddit posts and published literature, the same themes surface again and again in success stories:</p>
-                <ul>
-                    <li><strong>Serratus anterior strengthening</strong> — the single most cited exercise intervention in successful conservative recoveries. When the pec minor is tight, the serratus stops firing, and the neck muscles compensate. Retraining the serratus breaks the cycle.</li>
-                    <li><strong>Scalene strengthening, not just stretching</strong> — the Kjetil Larsen / MSK Neurology protocol is the most referenced approach. Weak scalenes go into protective spasm; strengthening them allows them to relax at rest. Note: Kjetil Larsen is notably controversial within the TOS community due to mixed views on scalene strengthening — some people find it transformative, while others report it aggravated their symptoms. Proceed carefully and with guidance.</li>
-                    <li><strong>Finding a TOS-specialized physical therapist</strong> — nearly every success story involves a PT who actually understands TOS biomechanics. General PTs and chain clinics are not equipped for this.</li>
-                    <li><strong>Pec minor self-release</strong> — cork massage ball under the armpit, doorway stretches, bench stretches with light dumbbells. Simple, low-risk, and consistently reported as helpful.</li>
-                    <li><strong>A whole-body approach</strong> — the most detailed recoveries address the full kinetic chain: anterior pelvic tilt, hip flexors, core strength, ribcage expansion — not just the neck and shoulder.</li>
-                    <li><strong>Diagnostic scalene and pec minor blocks</strong> — the closest thing to a confirmation test. If a lidocaine injection into your scalene provides 50%+ relief, that's the strongest available evidence for TOS and predicts a 94% surgical success rate.</li>
-                </ul>
-            </div>
-        </details>
-    </div>
-
-    <div class="guided-flow">
-        <h2>How to Use These Resources</h2>
-        <p class="origin-note">These resources were initially built for a patient dealing with muscle tightness in the pec minor and interscalene triangle. Your situation may be different, and you may need to approach them accordingly — but the information should still be useful.</p>
-        <p>The resources below were compiled from a collection of stories and experiences shared in top Reddit posts on the thoracic outlet support subreddit, as well as published medical articles. Not sure where to start? Here's a suggested path:</p>
-        <div class="flow-steps">
-            <div class="flow-step">
-                <span class="step-number">1</span>
-                <div>
-                    <strong><a href="#card-checklist">Start with the Diagnostic Checklist</a></strong>
-                    <p>Use it to organize your symptoms and prepare for doctor visits. It helps ensure nothing gets overlooked.</p>
-                </div>
-            </div>
-            <div class="flow-step">
-                <span class="step-number">2</span>
-                <div>
-                    <strong><a href="#card-research">Read the Community Research Report</a></strong>
-                    <p>Get a broad understanding of TOS — common experiences, treatment options, and what others have found helpful.</p>
-                </div>
-            </div>
-            <div class="flow-step">
-                <span class="step-number">3</span>
-                <div>
-                    <strong><a href="#card-tracker">Pick an Exercise Tracker</a></strong>
-                    <p>Once you have a diagnosis and your doctor's guidance, choose the 12-week plan that fits your needs.</p>
-                </div>
-            </div>
-            <div class="flow-step">
-                <span class="step-number">4</span>
-                <div>
-                    <strong><a href="#search">Search for Specific Topics</a></strong>
-                    <p>Looking for something specific? Use the search bar below to find any term across all five documents — from treatments and doctors to symptoms, medications, and exercises.</p>
-                </div>
-            </div>
-            <div class="flow-step">
-                <span class="step-number">5</span>
-                <div>
-                    <strong><a href="literature.html">Explore the Literature and Community Pages</a></strong>
-                    <p>Browse 669+ peer-reviewed TOS articles on the <a href="literature.html">Literature page</a>, or find surgeon directories, support communities, and educational resources on the <a href="community.html">Community page</a>.</p>
-                </div>
-            </div>
+    <section class="start-here" id="start-here" aria-labelledby="start-here-heading">
+        <h2 id="start-here-heading">Start Here</h2>
+        <p class="start-here-lead">Where are you in your TOS journey? Pick the path that fits.</p>
+        <div class="start-here-grid">
+            <a href="diagnosis.html" class="start-here-card">
+                <span class="start-here-label">Path 01</span>
+                <h3>I think I may have TOS</h3>
+                <p>Start with the diagnostic checklist — organize your symptoms, learn what tests actually matter, and prepare for doctor visits.</p>
+                <span class="start-here-cta">Go to Diagnosis &rarr;</span>
+            </a>
+            <a href="conservative.html" class="start-here-card">
+                <span class="start-here-label">Path 02</span>
+                <h3>I'm diagnosed &mdash; conservative treatment</h3>
+                <p>What the community has tried that works: PT protocols, serratus and scalene work, pec minor release, and realistic recovery timelines.</p>
+                <span class="start-here-cta">Conservative Treatment &rarr;</span>
+            </a>
+            <a href="surgery.html" class="start-here-card">
+                <span class="start-here-label">Path 03</span>
+                <h3>I'm considering surgery</h3>
+                <p>Reported outcomes, pre-op workup, diagnostic blocks, surgeon directories, recovery data, and the reasons some people regret it.</p>
+                <span class="start-here-cta">Surgery &rarr;</span>
+            </a>
+            <a href="literature.html" class="start-here-card">
+                <span class="start-here-label">Path 04</span>
+                <h3>I want research &amp; doctor prep</h3>
+                <p>Browse 669+ peer-reviewed articles and bring the diagnostic checklist to your next appointment so nothing gets overlooked.</p>
+                <span class="start-here-cta">Research Library &rarr;</span>
+            </a>
         </div>
-    </div>
+    </section>
 
     <div id="search" class="search-container">
         <div class="search-input-wrapper">
@@ -2181,7 +2373,7 @@
     </div>
 
     <div class="stats-bar">
-        <p class="stats-line">382 Reddit posts · 669 research articles · 12 free resources · 15+ surgeons referenced · ~84 min reading</p>
+        <p class="stats-line">382 Reddit posts · 669 research articles · 7 free guides &amp; trackers · 15+ surgeons referenced · ~84 min reading</p>
     </div>
 
     <div class="whats-new" style="max-width: 860px; margin: 0 auto;">
@@ -2624,7 +2816,7 @@
             });
         });
 
-        var fadeEls = document.querySelectorAll('.whats-new, .explainer, .tldr, .guided-flow, .search-container, .section-label, .cards, .expanded-note, .download-all-section, .disclaimer, .stats-bar');
+        var fadeEls = document.querySelectorAll('.whats-new, .explainer, .red-flags, .start-here, .search-container, .section-label, .cards, .expanded-note, .download-all-section, .disclaimer, .stats-bar');
         fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
 
         if ('IntersectionObserver' in window) {

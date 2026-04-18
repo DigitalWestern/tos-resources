@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosis — TOS Resources</title>
+    <meta name="description" content="A systematic, community-informed guide to getting diagnosed with Thoracic Outlet Syndrome — from ruling out mimics to diagnostic blocks.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        /* Topic hero */
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        /* Source-type badges (Phase 3 system) */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .badge::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .badge-community { background: #fdf6e3; color: #8a7a2e; border: 1px solid #ebe0bd; }
+        .badge-peer-reviewed { background: #e6f0f0; color: #2e5c5c; border: 1px solid #c2d9d9; }
+        .badge-clinical { background: #eaf0e4; color: #3d5c2e; border: 1px solid #c8d6bd; }
+        .badge-practical { background: #f5ece4; color: #5c3d2e; border: 1px solid #e2d4c3; }
+        .badge-anecdotal { background: #fdeee0; color: #a8582e; border: 1px solid #f3d4b5; }
+
+        .badge-legend {
+            width: 100%;
+            max-width: 760px;
+            padding: 0 24px 24px;
+            font-size: 0.78rem;
+            color: #8a8279;
+            line-height: 1.6;
+        }
+
+        .badge-legend details {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 0;
+        }
+
+        .badge-legend summary {
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #5a5347;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-legend summary::-webkit-details-marker { display: none; }
+        .badge-legend summary::before { content: "▸"; font-size: 0.75rem; transition: transform 0.2s; }
+        .badge-legend details[open] summary::before { transform: rotate(90deg); }
+
+        .badge-legend-body { padding: 0 18px 16px; }
+
+        .badge-legend-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .badge-legend-item:first-child { border-top: none; padding-top: 4px; }
+
+        .badge-legend-item > .badge { flex-shrink: 0; margin-top: 2px; }
+        .badge-legend-item > div { font-size: 0.82rem; }
+        .badge-legend-item strong { color: #1c1c1c; display: block; margin-bottom: 2px; }
+
+        /* Table of contents */
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        /* Topic content */
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 28px 0 10px;
+        }
+
+        .topic-content h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 20px 0 6px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .topic-content p {
+            font-size: 0.98rem;
+            color: #3a352e;
+            line-height: 1.72;
+            margin-bottom: 14px;
+        }
+
+        .topic-content p.section-badges {
+            margin-bottom: 18px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .topic-content ul, .topic-content ol {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 18px;
+        }
+
+        .topic-content ul li, .topic-content ol li {
+            font-size: 0.96rem;
+            color: #3a352e;
+            line-height: 1.7;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .topic-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8279;
+        }
+
+        .topic-content ol { counter-reset: topiclist; }
+        .topic-content ol li { counter-increment: topiclist; }
+        .topic-content ol li::before {
+            content: counter(topiclist) ".";
+            position: absolute;
+            left: 0;
+            color: #5c3d2e;
+            font-weight: 600;
+        }
+
+        .topic-content li strong { color: #1c1c1c; }
+
+        .topic-content blockquote {
+            margin: 16px 0;
+            padding: 14px 20px;
+            background: #ffffff;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.92rem;
+            color: #5a5347;
+            line-height: 1.65;
+            font-style: italic;
+        }
+
+        .topic-content blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 0.75rem;
+            color: #8a8279;
+            margin-top: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        /* Callout boxes */
+        .callout {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout-caution {
+            border-left-color: #a83528;
+            background: #fdf6f4;
+        }
+
+        .callout-tip {
+            border-left-color: #3d5c2e;
+            background: #f5f9f1;
+        }
+
+        .callout h4 {
+            margin: 0 0 6px;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: #5c3d2e;
+        }
+
+        .callout-caution h4 { color: #a83528; }
+        .callout-tip h4 { color: #3d5c2e; }
+
+        .callout p { font-size: 0.92rem; margin-bottom: 0; }
+        .callout p + p { margin-top: 8px; }
+
+        /* Provider / table-style data block */
+        .data-block {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 4px 0;
+            margin: 16px 0 20px;
+        }
+
+        .data-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 18px;
+            padding: 12px 20px;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .data-row:first-child { border-top: none; }
+
+        .data-key {
+            font-weight: 600;
+            color: #1c1c1c;
+            font-size: 0.88rem;
+        }
+
+        .data-val {
+            font-size: 0.9rem;
+            color: #5a5347;
+            line-height: 1.65;
+        }
+
+        /* Related pages */
+        .topic-related {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px 8px;
+        }
+
+        .topic-related h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8a8279;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .related-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .related-card strong {
+            font-size: 0.92rem;
+            color: #1c1c1c;
+            display: block;
+        }
+
+        .related-card span {
+            font-size: 0.78rem;
+            color: #5a5347;
+            line-height: 1.5;
+        }
+
+        /* Downloads at bottom of page */
+        .topic-downloads {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px;
+        }
+
+        .topic-downloads h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .topic-downloads > p {
+            font-size: 0.95rem;
+            color: #5a5347;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .dl-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 14px;
+        }
+
+        .dl-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 4px;
+        }
+
+        .dl-card p {
+            font-size: 0.88rem;
+            color: #5a5347;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .dl-card .dl-meta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 0.72rem;
+            color: #8a8279;
+            letter-spacing: 0.04em;
+            margin-bottom: 14px;
+        }
+
+        .dl-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            background: #5c3d2e;
+            color: #fff;
+            border: 1.5px solid #5c3d2e;
+            transition: background 0.15s;
+        }
+
+        .dl-btn:hover { background: #4a3125; }
+
+        .dl-btn-pdf {
+            background: transparent;
+            color: #5c3d2e;
+        }
+
+        .dl-btn-pdf:hover { background: #5c3d2e; color: #fff; }
+
+        .dl-btn svg { width: 14px; height: 14px; }
+
+        /* Disclaimer + footer */
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer p { font-size: 0.82rem; color: #5a5347; line-height: 1.7; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .topic-content h3 { font-size: 1.05rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .data-row { grid-template-columns: 1fr; gap: 4px; padding: 10px 16px; }
+            .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .topic-downloads { padding: 24px 20px; }
+            .dl-card { padding: 20px; }
+        }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .badge-community { background: #2a2516; color: #d8b955; border-color: #3a3424; }
+            .badge-peer-reviewed { background: #1a2929; color: #7db8b8; border-color: #2a3a3a; }
+            .badge-clinical { background: #1c2a1a; color: #8dbb6c; border-color: #2c3a2a; }
+            .badge-practical { background: #2a221c; color: #c49a6c; border-color: #3a322c; }
+            .badge-anecdotal { background: #2a201a; color: #e08d7d; border-color: #3a2e28; }
+
+            .badge-legend details { background: #231f1b; border-color: #3a3530; }
+            .badge-legend summary { color: #a69d90; }
+            .badge-legend-item { border-color: #2a2520; }
+            .badge-legend-item strong { color: #e8e0d5; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2, .topic-content h3, .topic-content h4 { color: #e8e0d5; }
+            .topic-content p, .topic-content li { color: #c0b7a9; }
+            .topic-content li strong, .topic-content p strong { color: #e8e0d5; }
+            .topic-content ul li::before { color: #7a7168; }
+            .topic-content ol li::before { color: #c49a6c; }
+
+            .topic-content blockquote { background: #231f1b; border-left-color: #c49a6c; color: #a69d90; }
+            .topic-content blockquote cite { color: #7a7168; }
+
+            .callout { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .callout h4 { color: #c49a6c; }
+            .callout p { color: #c0b7a9; }
+            .callout-caution { background: #2a1f1c; border-left-color: #d36a5a; }
+            .callout-caution h4 { color: #e08d7d; }
+            .callout-tip { background: #1f2a1c; border-left-color: #8dbb6c; }
+            .callout-tip h4 { color: #8dbb6c; }
+
+            .data-block { background: #231f1b; border-color: #3a3530; }
+            .data-row { border-top-color: #2a2520; }
+            .data-key { color: #e8e0d5; }
+            .data-val { color: #a69d90; }
+
+            .topic-related h2 { color: #a69d90; }
+            .related-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .related-card strong { color: #e8e0d5; }
+            .related-card span { color: #a69d90; }
+
+            .topic-downloads h2 { color: #e8e0d5; }
+            .topic-downloads > p { color: #a69d90; }
+            .dl-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .dl-card h3 { color: #e8e0d5; }
+            .dl-card p { color: #a69d90; }
+            .dl-card .dl-meta { color: #7a7168; }
+            .dl-btn { background: #c49a6c; color: #1a1714; border-color: #c49a6c; }
+            .dl-btn:hover { background: #b08a5e; border-color: #b08a5e; }
+            .dl-btn-pdf { background: transparent; color: #c49a6c; }
+            .dl-btn-pdf:hover { background: #c49a6c; color: #1a1714; }
+
+            .disclaimer { background: #231f1b; border-color: #3a3530; border-left-color: #b09a3a; }
+            .disclaimer h3 { color: #d6b74c; }
+            .disclaimer p { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html" class="active">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Topic · Start Here Path 01</p>
+        <h1>Diagnosis</h1>
+        <p class="topic-lede">TOS is a diagnosis of exclusion — there is no single test that confirms it. This is a systematic, community-informed guide to getting there anyway: ruling out the mimics, running the right exams, and finding the providers who actually know what to do.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~15 min read</span>
+            <span class="meta-item">Sources: SVS guidelines, published literature, 382 Reddit posts</span>
+        </div>
+    </header>
+
+    <div class="badge-legend">
+        <details>
+            <summary>About the badges on this page</summary>
+            <div class="badge-legend-body">
+                <div class="badge-legend-item">
+                    <span class="badge badge-peer-reviewed">Peer-reviewed</span>
+                    <div><strong>Published medical literature</strong>Findings from peer-reviewed journals or clinical guidelines (e.g., Society for Vascular Surgery).</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-clinical">Clinical reference</span>
+                    <div><strong>Standard medical practice</strong>Approaches described in clinical references and used routinely by TOS-specialized physicians.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-community">Community-derived</span>
+                    <div><strong>Patient-reported patterns</strong>Themes from r/ThoracicOutletSupport (382 posts). Useful signal, but not clinical evidence.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-practical">Practical tool</span>
+                    <div><strong>Actionable checklist or worksheet</strong>Something you can print, bring to an appointment, or work through on your own.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-anecdotal">Anecdotal / caution</span>
+                    <div><strong>Single-report or mixed evidence</strong>One person's experience, or an approach where the community is split. Treat with caution.</div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#reality">The reality of TOS diagnosis</a></li>
+                <li><a href="#rule-out">Phase 1: Rule out the mimics</a></li>
+                <li><a href="#exam">Phase 2: Clinical &amp; provocative exam</a></li>
+                <li><a href="#imaging">Phase 3: Imaging</a></li>
+                <li><a href="#emg">Phase 4: EMG and MABC studies</a></li>
+                <li><a href="#blocks">Phase 5: Diagnostic blocks</a></li>
+                <li><a href="#subtype">Phase 6: Determine your subtype</a></li>
+                <li><a href="#providers">Who should diagnose you</a></li>
+                <li><a href="#prep">Appointment prep</a></li>
+                <li><a href="#related">Related topics</a></li>
+                <li><a href="#downloads">Download the full checklist</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="reality">
+            <h2>The reality of TOS diagnosis</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>TOS is a <strong>diagnosis of exclusion</strong>. There is no blood test, no scan, and no single exam that definitively confirms neurogenic TOS. The process works by systematically ruling out everything else that could explain your symptoms, while accumulating enough clinical evidence to make TOS the most likely remaining explanation.</p>
+
+            <p>The Society for Vascular Surgery uses four criteria for neurogenic TOS diagnosis:</p>
+            <ol>
+                <li>Signs and symptoms of pathology at the thoracic outlet (pain, tenderness in the scalene and pec minor region).</li>
+                <li>Signs and symptoms of nerve compression (distal neurologic changes — numbness, tingling, weakness).</li>
+                <li>Absence of other pathology that explains the symptoms (negative workup for cervical disc disease, carpal tunnel, etc.).</li>
+                <li>Positive response to a properly-performed scalene or pec minor block (≥50% symptom relief).</li>
+            </ol>
+
+            <div class="callout">
+                <h4>Community reality</h4>
+                <p>Multiple Reddit users report diagnosis taking <strong>1–5+ years</strong>, with many initially told their symptoms were psychosomatic or anxiety. One user described being diagnosed after 5 years; another bounced between a dozen specialists before TOS was even raised. Most primary care doctors — and even many specialists — have never treated it.</p>
+            </div>
+        </section>
+
+        <section id="rule-out">
+            <h2>Phase 1: Rule out the mimics</h2>
+            <p class="section-badges"><span class="badge badge-clinical">Clinical reference</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>Before you arrive at a TOS diagnosis, you need to systematically eliminate conditions that produce similar symptoms. This isn't busywork — it's the foundation of the diagnosis. Many "TOS" patients actually have one of these conditions instead, or in addition to TOS.</p>
+
+            <div class="callout callout-caution">
+                <h4>Why this matters</h4>
+                <p>Provocative tests for TOS have false-positive rates of <strong>9–47% in healthy people</strong> and <strong>42–77% in patients with carpal tunnel syndrome</strong>. If you skip the rule-out phase, you risk treating the wrong condition.</p>
+            </div>
+
+            <h3>Common mimics to rule out</h3>
+            <ul>
+                <li><strong>Cervical radiculopathy</strong> — disc herniation compressing a nerve root in the neck. MRI of the cervical spine rules this out.</li>
+                <li><strong>Carpal tunnel syndrome</strong> — median nerve compression at the wrist. EMG/NCS with wrist focus.</li>
+                <li><strong>Cubital tunnel syndrome</strong> — ulnar nerve at the elbow. Often mistaken for TOS because ulnar symptoms overlap.</li>
+                <li><strong>Rotator cuff pathology</strong> — shoulder MRI and orthopedic exam.</li>
+                <li><strong>Cervical instability / CCI</strong> — upright MRI; relevant if you have hypermobility (EDS) signs.</li>
+                <li><strong>Thoracic disc herniation</strong> — one community member's "TOS" turned out to be a T7–T8 herniation.</li>
+                <li><strong>Fibromyalgia and central sensitization syndromes</strong> — diagnosis of exclusion themselves; worth considering if workup is otherwise clean.</li>
+            </ul>
+
+            <div class="callout">
+                <h4>Community insight</h4>
+                <p>One user had a labrum tear and T7–T8 herniated disc masquerading as TOS. Another discovered a cervical rib via 3D X-ray that standard 2D imaging missed. Thoroughness here saves you from unnecessary TOS interventions.</p>
+            </div>
+        </section>
+
+        <section id="exam">
+            <h2>Phase 2: Clinical &amp; provocative exam</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>Once the major mimics are ruled out, the next step is a focused physical exam. This should be done by a provider familiar with TOS — ideally a vascular surgeon who specializes in it, or a physiatrist/neurologist with TOS experience.</p>
+
+            <div class="callout callout-caution">
+                <h4>No single test is reliable on its own</h4>
+                <p>False-positive rates are high. The value is in the <em>pattern across multiple tests</em>, combined with your symptom history and the rule-out workup.</p>
+            </div>
+
+            <h3>The provocative test battery</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Adson's test</div>
+                    <div class="data-val">Pulse and symptoms while extending neck and taking deep breath with head turned toward affected side.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Wright's (hyperabduction) test</div>
+                    <div class="data-val">Arm raised to 90°+ with external rotation; assesses pec minor involvement.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Roos / EAST</div>
+                    <div class="data-val">Arms held overhead, opening and closing hands for 3 minutes; reproduces symptoms in most TOS patients.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Costoclavicular (Eden's)</div>
+                    <div class="data-val">Shoulders rolled back and down; assesses costoclavicular space.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Scalene Tinel's</div>
+                    <div class="data-val">Tapping or pressing on the scalene muscles to reproduce distal nerve symptoms.</div>
+                </div>
+            </div>
+
+            <h4>Combined testing is much more accurate</h4>
+            <ul>
+                <li>Adson's + Eden's + Wright's + Roos + Tinel's combined: <strong>94% sensitivity</strong>.</li>
+                <li>Wright's + Adson's + Roos combined: <strong>92% specificity</strong>.</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <h4>One of the most meaningful clinical findings</h4>
+                <p>If direct pressure on your scalene or pec minor insertion reproduces your exact symptoms, that's essentially a manual provocation of the compression site. Ask specifically for this.</p>
+            </div>
+        </section>
+
+        <section id="imaging">
+            <h2>Phase 3: Imaging</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>Imaging in TOS serves two purposes: (1) identifying anatomical contributors to compression (cervical rib, anomalous muscle, fibrous band), and (2) confirming vascular compromise if present. For neurogenic TOS, imaging is often normal or shows only subtle findings. <strong>That doesn't mean you don't have it.</strong></p>
+
+            <h3>ACR/SVS imaging recommendations</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Neurogenic TOS</div>
+                    <div class="data-val">MRI of the chest + chest X-ray (to screen for cervical rib). Usually appropriate.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Venous TOS</div>
+                    <div class="data-val">Catheter venography, Doppler ultrasound, CT with contrast, chest X-ray.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Arterial TOS</div>
+                    <div class="data-val">CT with contrast, MR angiography, chest X-ray, Doppler ultrasound.</div>
+                </div>
+            </div>
+
+            <div class="callout">
+                <h4>Community reality</h4>
+                <p>Most neurogenic TOS patients report their imaging was "normal" or "inconclusive." This is expected. Several users describe getting diagnosed only after a vascular surgeon performed <strong>dynamic ultrasound</strong> — moving arms into different positions during the scan to reveal positional compression.</p>
+            </div>
+        </section>
+
+        <section id="emg">
+            <h2>Phase 4: EMG and MABC studies</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Let's be blunt: <strong>EMG/NCS are usually normal in TOS</strong>. Multiple published studies and dozens of community members confirm this. A normal EMG does not rule out TOS.</p>
+
+            <p>These tests serve two real purposes: ruling out other nerve conditions (carpal tunnel, cubital tunnel, cervical radiculopathy), and — when abnormal — providing objective evidence of nerve compression.</p>
+
+            <div class="callout callout-tip">
+                <h4>Ask for MABC studies specifically</h4>
+                <p>If your doctor says your EMG is normal so you don't have TOS, push back. Ask specifically for <strong>MABC (medial antebrachial cutaneous) nerve conduction studies</strong>. Published literature shows MABC abnormalities can be present even when standard nerve conduction studies are completely normal — it's the most sensitive early marker available.</p>
+            </div>
+
+            <div class="callout">
+                <h4>Community experience</h4>
+                <p>Reddit users consistently report normal EMGs. One user with confirmed nTOS and vTOS said: "my EMG came back completely normal. I only got my diagnosis because they finally sent me for tests I requested and found a blood clot." The pattern is near-universal.</p>
+            </div>
+        </section>
+
+        <section id="blocks">
+            <h2>Phase 5: Diagnostic blocks</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-clinical">Clinical reference</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Of all diagnostic tools for neurogenic TOS, the <strong>scalene and pec minor blocks come closest to a definitive answer</strong>. They're both diagnostic and prognostic — confirming the compression site AND predicting whether surgical decompression would help.</p>
+
+            <h3>Scalene block</h3>
+            <p>Image-guided (usually ultrasound) injection of lidocaine into the anterior scalene muscle. A ≥50% reduction in symptoms is a positive result and aligns with the SVS diagnostic criteria. Published data puts the predictive value for surgical success at roughly 94% when the block is positive.</p>
+
+            <h3>Pec minor block</h3>
+            <p>Similar approach, injection into the pec minor. Relevant for anyone with retropectoralis-space compression — common in overhead-athlete and keyboard-worker presentations.</p>
+
+            <h3>Botox as a longer-acting diagnostic bridge</h3>
+            <p>If a lidocaine block provides brief relief, Botox into the same muscle can provide 2–4 months of relief and further confirms the diagnosis. Several community members describe Botox as a bridge between conservative care and surgery.</p>
+
+            <div class="callout">
+                <h4>Community experience</h4>
+                <p>One user described almost crying after their first diagnostic scalene block: "It's kind of surreal to experience relief after being in pain for so long." Another noted the block confirmed their diagnosis and gave them confidence to proceed with surgery.</p>
+                <p>Not everyone responds — one user had "almost no reaction" to either lidocaine or Botox into scalenes and pec minor, and was later diagnosed with shoulder instability as the primary issue. A negative block is useful data too.</p>
+            </div>
+        </section>
+
+        <section id="subtype">
+            <h2>Phase 6: Determine your subtype</h2>
+            <p class="section-badges"><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>TOS is not one condition. It's at least three — and the diagnostic pathway, certainty level, and treatment approach differ significantly between subtypes.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Neurogenic TOS (nTOS)</div>
+                    <div class="data-val">~95% of cases. Nerve compression (brachial plexus). Often "disputed" when standard EMG is normal, "true" when lower trunk abnormalities are documented.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Venous TOS (vTOS)</div>
+                    <div class="data-val">~3–5% of cases. Subclavian vein compression, sometimes with clot (Paget-Schroetter / effort thrombosis). Arm swelling, discoloration.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Arterial TOS (aTOS)</div>
+                    <div class="data-val">&lt;1% of cases. Subclavian artery compression, often with cervical rib. Cold/pale hand, loss of pulse — medical emergency if acute.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-caution">
+                <h4>Emergency flags</h4>
+                <p>Sudden arm swelling, loss of pulse, or acute weakness — go to the ER. See the <a href="index.html#red-flags-heading">red flags block on the home page</a> for the full list.</p>
+            </div>
+        </section>
+
+        <section id="providers">
+            <h2>Who should diagnose you</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Not all doctors are equipped to diagnose TOS. The community is near-unanimous on this.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Vascular surgeon (TOS-specialized)</div>
+                    <div class="data-val">The gold standard. Can perform the full diagnostic workup — imaging, blocks, exam. Find one via <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener">tosoutreach.com/find-a-surgeon</a>.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Physiatrist (PM&amp;R)</div>
+                    <div class="data-val">Good for initial workup, EMG/NCS, differential diagnosis. Can often identify TOS clinically and refer out.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Neurologist</div>
+                    <div class="data-val">Useful for EMG/NCS and ruling out MS, peripheral neuropathy. Most are not TOS experts.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Orthopedic surgeon</div>
+                    <div class="data-val">Can rule out shoulder/spine pathology. Orthopedics generally does not manage TOS.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Pain management / interventional</div>
+                    <div class="data-val">Can perform diagnostic blocks if vascular surgery isn't accessible locally.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="prep">
+            <h2>Appointment prep</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <p>TOS appointments are often short, and specialists are hard to get. Arrive prepared.</p>
+
+            <h3>Bring</h3>
+            <ul>
+                <li>The downloadable diagnostic checklist (below) with phases marked.</li>
+                <li>Copies of all imaging on CD or digital — don't rely on records transfer.</li>
+                <li>EMG/NCS results with the full report, not just the summary.</li>
+                <li>A symptom timeline: when it started, what makes it worse/better, progression.</li>
+                <li>Specific activity limits — "can't hold phone for &gt;2 minutes," "hand goes numb typing."</li>
+                <li>A list of every provider you've seen and what they found or ruled out.</li>
+                <li>Family history of cervical ribs, hypermobility (EDS), connective tissue disorders.</li>
+            </ul>
+
+            <h3>Questions to ask</h3>
+            <ul>
+                <li>Can you perform the full provocative test battery (Adson's, Wright's, Roos, costoclavicular, scalene Tinel's)?</li>
+                <li>Can you order MABC sensory nerve conduction studies specifically — not just standard EMG?</li>
+                <li>Can you perform or refer me for a diagnostic scalene block and pec minor block?</li>
+                <li>Have you ruled out all the conditions in my differential checklist?</li>
+                <li>How many TOS patients do you see per year?</li>
+                <li>If this is TOS, what subtype do you think it is, and what's the evidence?</li>
+            </ul>
+        </section>
+
+        <section id="related">
+            <h2>Related topics</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <p>Once you have a working diagnosis (or a strong suspicion), the next steps branch:</p>
+            <div class="related-grid">
+                <a href="conservative.html" class="related-card">
+                    <strong>Conservative Treatment →</strong>
+                    <span>PT, serratus and scalene work, pec minor release, recovery timelines.</span>
+                </a>
+                <a href="surgery.html" class="related-card">
+                    <strong>Surgery →</strong>
+                    <span>When surgery is considered, what procedures exist, and recovery data.</span>
+                </a>
+                <a href="medications.html" class="related-card">
+                    <strong>Medications &amp; Injections →</strong>
+                    <span>Botox, lidocaine blocks, nerve pain medications, supplements.</span>
+                </a>
+                <a href="literature.html" class="related-card">
+                    <strong>Research Library →</strong>
+                    <span>669+ peer-reviewed TOS articles from PubMed, searchable.</span>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <section class="topic-downloads" id="downloads" aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">Take it with you</h2>
+        <p>The web page is the primary read. If you want a printable version to bring to an appointment, download it here.</p>
+        <div class="dl-card">
+            <h3>TOS Diagnostic Checklist</h3>
+            <p>Step-by-step diagnostic guide — 6 phases, differential diagnosis list, provocative test battery, imaging recommendations, provider checklist, and appointment prep.</p>
+            <div class="dl-meta">
+                <span>Updated Mar 27, 2026</span>
+                <span>~13 min read</span>
+                <span>Sources: SVS guidelines, 382 Reddit posts, peer-reviewed literature</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Diagnostic_Checklist.docx" class="dl-btn" data-goatcounter-click="download/TOS_Diagnostic_Checklist.docx" data-goatcounter-title="Download: TOS_Diagnostic_Checklist.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Diagnostic_Checklist.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Diagnostic_Checklist.pdf" data-goatcounter-title="Download: TOS_Diagnostic_Checklist.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <h3>Medical disclaimer</h3>
+        <p>This page is for informational purposes only and is not medical advice. The resources compiled here draw on community experience, published literature, and clinical references — but they are not a substitute for a qualified healthcare provider. Always consult a physician before making treatment decisions.</p>
+    </div>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        // iOS Safari PDF new-tab workaround — match pattern from index.html
+        document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener');
+            link.addEventListener('click', function(e) {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    var blank = window.open('about:blank', '_blank');
+                    if (blank) { blank.location.href = link.href; }
+                }
+            });
+        });
+
+        // Back to top
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Fade-in
+        var fadeEls = document.querySelectorAll('.topic-hero, .badge-legend, .topic-toc, .topic-content section, .topic-related, .topic-downloads, .disclaimer');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <!-- GoatCounter analytics -->
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

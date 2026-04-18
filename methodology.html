@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methodology — TOS Resources</title>
+    <meta name="description" content="How this site was built — who compiled the resources, data sources, update cadence, limitations, and how to report issues.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 28px 0 10px;
+        }
+
+        .topic-content p {
+            font-size: 0.98rem;
+            color: #3a352e;
+            line-height: 1.72;
+            margin-bottom: 14px;
+        }
+
+        .topic-content ul, .topic-content ol {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 18px;
+        }
+
+        .topic-content ul li, .topic-content ol li {
+            font-size: 0.96rem;
+            color: #3a352e;
+            line-height: 1.7;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .topic-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8279;
+        }
+
+        .topic-content ol { counter-reset: topiclist; }
+        .topic-content ol li { counter-increment: topiclist; }
+        .topic-content ol li::before {
+            content: counter(topiclist) ".";
+            position: absolute;
+            left: 0;
+            color: #5c3d2e;
+            font-weight: 600;
+        }
+
+        .topic-content li strong { color: #1c1c1c; }
+
+        .topic-content a {
+            color: #5c3d2e;
+            text-decoration: underline;
+            text-decoration-color: #c4b8aa;
+            text-underline-offset: 3px;
+        }
+        .topic-content a:hover { text-decoration-color: #5c3d2e; }
+
+        .callout {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout h4 {
+            margin: 0 0 6px;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: #5c3d2e;
+            text-transform: uppercase;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .callout p { font-size: 0.92rem; margin-bottom: 0; }
+        .callout p + p { margin-top: 8px; }
+
+        /* Badge system (for inline reference) */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .badge::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .badge-community { background: #fdf6e3; color: #8a7a2e; border: 1px solid #ebe0bd; }
+        .badge-peer-reviewed { background: #e6f0f0; color: #2e5c5c; border: 1px solid #c2d9d9; }
+        .badge-clinical { background: #eaf0e4; color: #3d5c2e; border: 1px solid #c8d6bd; }
+        .badge-practical { background: #f5ece4; color: #5c3d2e; border: 1px solid #e2d4c3; }
+        .badge-anecdotal { background: #fdeee0; color: #a8582e; border: 1px solid #f3d4b5; }
+
+        .badge-explainer {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 14px 18px;
+            margin: 12px 0 20px;
+            padding: 16px 20px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            align-items: start;
+        }
+
+        .badge-explainer > .badge { margin-top: 2px; justify-self: start; }
+        .badge-explainer > div { font-size: 0.9rem; color: #5a5347; line-height: 1.6; }
+        .badge-explainer > div strong { color: #1c1c1c; display: block; margin-bottom: 2px; }
+
+        /* Review log */
+        .review-log {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            margin: 16px 0 20px;
+        }
+
+        .review-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 18px;
+            padding: 12px 20px;
+            border-top: 1px solid #ede8e0;
+            font-size: 0.88rem;
+        }
+
+        .review-row:first-child { border-top: none; background: #f7f4ef; font-weight: 600; font-size: 0.78rem; color: #8a8279; text-transform: uppercase; letter-spacing: 0.05em; }
+        .review-row .r-page { color: #1c1c1c; font-weight: 500; }
+        .review-row .r-reviewed, .review-row .r-source { color: #5a5347; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .badge-explainer { grid-template-columns: 1fr; gap: 6px; }
+            .review-row { grid-template-columns: 1fr; gap: 2px; padding: 10px 16px; }
+            .review-row:first-child { display: none; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2, .topic-content h3 { color: #e8e0d5; }
+            .topic-content p, .topic-content li { color: #c0b7a9; }
+            .topic-content li strong, .topic-content p strong { color: #e8e0d5; }
+            .topic-content ul li::before { color: #7a7168; }
+            .topic-content ol li::before { color: #c49a6c; }
+            .topic-content a { color: #c49a6c; text-decoration-color: #5c4a3e; }
+            .topic-content a:hover { text-decoration-color: #c49a6c; }
+
+            .callout { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .callout h4 { color: #c49a6c; }
+            .callout p { color: #c0b7a9; }
+
+            .badge-community { background: #2a2516; color: #d8b955; border-color: #3a3424; }
+            .badge-peer-reviewed { background: #1a2929; color: #7db8b8; border-color: #2a3a3a; }
+            .badge-clinical { background: #1c2a1a; color: #8dbb6c; border-color: #2c3a2a; }
+            .badge-practical { background: #2a221c; color: #c49a6c; border-color: #3a322c; }
+            .badge-anecdotal { background: #2a201a; color: #e08d7d; border-color: #3a2e28; }
+
+            .badge-explainer { background: #231f1b; border-color: #3a3530; }
+            .badge-explainer > div { color: #a69d90; }
+            .badge-explainer > div strong { color: #e8e0d5; }
+
+            .review-log { background: #231f1b; border-color: #3a3530; }
+            .review-row { border-top-color: #2a2520; }
+            .review-row:first-child { background: #1a1714; color: #7a7168; }
+            .review-row .r-page { color: #e8e0d5; }
+            .review-row .r-reviewed, .review-row .r-source { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Methodology &amp; Transparency</p>
+        <h1>How this site was built</h1>
+        <p class="topic-lede">Who compiled these resources, where the data comes from, how it's labelled, what the limitations are, and how to report issues. This page exists so you can judge the material on this site for yourself.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~8 min read</span>
+        </div>
+    </header>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#who">Who compiled this</a></li>
+                <li><a href="#sources">Data sources</a></li>
+                <li><a href="#community-vs-literature">Community-derived vs. peer-reviewed</a></li>
+                <li><a href="#badges">The source-type badge system</a></li>
+                <li><a href="#cadence">Update cadence</a></li>
+                <li><a href="#review-log">Page review log</a></li>
+                <li><a href="#limitations">Limitations &amp; biases</a></li>
+                <li><a href="#ai-disclosure">AI &amp; automation disclosure</a></li>
+                <li><a href="#issues">Reporting issues</a></li>
+                <li><a href="#disclaimer">Medical disclaimer</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="who">
+            <h2>Who compiled this</h2>
+            <p>This site is maintained by Ethan Abbate — a patient with neurogenic TOS (confirmed compression at the interscalene triangle and pec minor space, ulnar nerve involvement, ~15 months duration as of March 2026). I am not a clinician. I built this project to navigate my own TOS and found that the aggregated patient experience on r/ThoracicOutletSupport was a more useful starting point than any single website or paper I could find. The research documents and this website are the output of trying to organize that material into something other patients could use.</p>
+
+            <p>Because I am a patient, not a provider, the framing on this site is patient-centered: what to try, what to ask for, what to watch out for. Nothing here replaces a clinician. The goal is to help you have better conversations with your clinicians — not to substitute for them.</p>
+        </section>
+
+        <section id="sources">
+            <h2>Data sources</h2>
+            <p>Three categories of source feed into the pages on this site.</p>
+
+            <h3>Community data — r/ThoracicOutletSupport</h3>
+            <p>The core community dataset is 382 posts from r/ThoracicOutletSupport — the entire subreddit at time of scrape. The posts were collected using a Python script that queries Reddit's public JSON API with a 2-second rate limit between requests. The scraping process is described in <code>reddit-scraper/</code> in the project repo. Post numbers referenced on the topic pages (e.g., "Post #42") correspond to positions in this dataset.</p>
+            <p>From that dataset, four research documents were synthesized:</p>
+            <ul>
+                <li><strong>TOS Community Research Report</strong> — treatments, exercises, recovery patterns (100 posts + expanded dataset).</li>
+                <li><strong>TOS Surgical Outcomes Report</strong> — procedures, surgeons, outcomes, failures (100 posts + expanded dataset).</li>
+                <li><strong>TOS Diagnostic Checklist</strong> — step-by-step diagnostic guide (100 posts + literature + expanded dataset).</li>
+                <li><strong>TOS Expanded Findings</strong> — companion doc covering the additional 282 posts beyond the first 100 (gaps the main docs didn't cover: POTS, cervical instability, EDS, cognitive symptoms, Botox practical details, robotic surgery).</li>
+            </ul>
+
+            <h3>Peer-reviewed literature — PubMed</h3>
+            <p>The <a href="literature.html">Literature page</a> indexes 669+ peer-reviewed articles sourced from PubMed via the E-utilities API. The fetch script (<code>scripts/pubmed_fetch.py</code>) queries seven TOS-related search terms and outputs a JSON database the page consumes client-side. It refreshes automatically on the 1st of every month via a GitHub Actions workflow (<code>pubmed-refresh.yml</code>) — the page shows the "last updated" date.</p>
+
+            <h3>Clinical references embedded on the topic pages</h3>
+            <p>The Surgical Outcomes Report and Medications guide cite specific published statistics (success rates, complication rates, follow-up trajectory data) from vascular and thoracic surgery journals. References are listed at the bottom of each report. Where a claim on a topic page is drawn from published literature, it carries the <span class="badge badge-peer-reviewed">Peer-reviewed</span> badge.</p>
+        </section>
+
+        <section id="community-vs-literature">
+            <h2>Community-derived vs. peer-reviewed</h2>
+            <p>The signal from 382 patient posts and the signal from peer-reviewed literature are different kinds of evidence. They're not interchangeable.</p>
+
+            <ul>
+                <li><strong>Community data</strong> is strong for: what patients actually experience, what real-world recovery looks like, which surgeons have community reputation, how medications and injections feel in practice, which conservative strategies patients credit, what the timeline really is between "starting PT" and "feeling better."</li>
+                <li><strong>Community data</strong> is weak for: absolute rates (e.g., "X% of nTOS patients respond to Botox"), because forum populations skew toward patients still struggling; causation, because self-reports can't disentangle intervention from natural history; and anything where selection bias in who posts matters.</li>
+                <li><strong>Peer-reviewed literature</strong> is strong for: success rates with defined outcome criteria, complication rates from large registries, controlled comparisons, and claims about mechanism.</li>
+                <li><strong>Peer-reviewed literature</strong> is weak for: the patient experience between data points, nuanced practical guidance (specific dosing adjustments, sequential Botox strategies, PT exercise modifications), and long-term outcomes beyond typical 5-year study horizons.</li>
+            </ul>
+
+            <p>The topic pages try to combine both — using community data for the practical texture and peer-reviewed data for the rate claims. The badge system (next section) is the mechanism for keeping them distinct.</p>
+        </section>
+
+        <section id="badges">
+            <h2>The source-type badge system</h2>
+            <p>Each content section on the topic pages is labeled with one or more badges indicating the kind of evidence behind it. This is deliberately up-front so you can weight claims accordingly.</p>
+
+            <div class="badge-explainer">
+                <span class="badge badge-peer-reviewed">Peer-reviewed</span>
+                <div><strong>Published medical literature</strong>Findings from peer-reviewed journals, FDA-approved indications, or clinical society guidelines. These are the claims with the strongest independent verification.</div>
+
+                <span class="badge badge-clinical">Clinical reference</span>
+                <div><strong>Standard medical practice</strong>Descriptions of technique, standards of care, or common approaches used by TOS, pain management, and vascular specialists. Established but not necessarily RCT-grade.</div>
+
+                <span class="badge badge-community">Community-derived</span>
+                <div><strong>Patient-reported experiences</strong>Themes, patterns, or practical observations from r/ThoracicOutletSupport. Useful signal about real-world experience, but not clinical evidence.</div>
+
+                <span class="badge badge-practical">Practical tool</span>
+                <div><strong>Actionable guidance</strong>Specific checklists, dosing observations, questions to ask, or sequencing suggestions drawn from the combined data.</div>
+
+                <span class="badge badge-anecdotal">Anecdotal / caution</span>
+                <div><strong>Individual report or mixed evidence</strong>A single person's experience, or an intervention where the community signal is split. Important to surface — not generalizable without context.</div>
+            </div>
+
+            <p>Sections that combine evidence types carry multiple badges. The first two badges — peer-reviewed and clinical reference — represent the strongest evidence. The third — community-derived — is the largest proportion of content on this site, and its value is exactly what it is: high-volume, real-world patient reports that are not themselves clinical evidence but reveal patterns clinical evidence often misses.</p>
+        </section>
+
+        <section id="cadence">
+            <h2>Update cadence</h2>
+            <ul>
+                <li><strong>Literature page.</strong> Automated monthly refresh on the 1st of each month via GitHub Actions. No manual intervention required — new PubMed articles appear within a day of being indexed.</li>
+                <li><strong>Topic pages &amp; research documents.</strong> Manually reviewed and updated when significant new patterns emerge from the community data or from published literature. Each page shows a "Last reviewed" date in its hero. The target review cadence is quarterly; substantive updates happen as needed between scheduled reviews.</li>
+                <li><strong>Reddit scrape.</strong> The current dataset (382 posts) is the full subreddit at time of scrape. Re-scraping is done on an as-needed basis when significant new community discussion accumulates, not on a fixed schedule.</li>
+                <li><strong>External links.</strong> The Outreach page is manually verified when referenced resources change — no automated link-checking.</li>
+            </ul>
+        </section>
+
+        <section id="review-log">
+            <h2>Page review log</h2>
+            <p>Each topic page's most recent review date and its primary source document. If the "Last reviewed" date on a page is more than six months old and substantive, please <a href="#issues">report it</a>.</p>
+            <div class="review-log">
+                <div class="review-row"><div class="r-page">Page</div><div class="r-reviewed">Last reviewed</div><div class="r-source">Primary source</div></div>
+                <div class="review-row"><div class="r-page">Home</div><div class="r-reviewed">Apr 2026</div><div class="r-source">All docs (search index)</div></div>
+                <div class="review-row"><div class="r-page">Diagnosis</div><div class="r-reviewed">Apr 2026</div><div class="r-source">Diagnostic Checklist</div></div>
+                <div class="review-row"><div class="r-page">Conservative</div><div class="r-reviewed">Apr 2026</div><div class="r-source">Community Research Report</div></div>
+                <div class="review-row"><div class="r-page">Community Discussion</div><div class="r-reviewed">Apr 2026</div><div class="r-source">Expanded Findings</div></div>
+                <div class="review-row"><div class="r-page">Medications</div><div class="r-reviewed">Apr 2026</div><div class="r-source">Medications Guide</div></div>
+                <div class="review-row"><div class="r-page">Surgery</div><div class="r-reviewed">Apr 2026</div><div class="r-source">Surgical Outcomes Report</div></div>
+                <div class="review-row"><div class="r-page">Literature</div><div class="r-reviewed">Auto (monthly)</div><div class="r-source">PubMed E-utilities API</div></div>
+                <div class="review-row"><div class="r-page">Outreach</div><div class="r-reviewed">Apr 2026</div><div class="r-source">Manual curation</div></div>
+            </div>
+        </section>
+
+        <section id="limitations">
+            <h2>Limitations &amp; biases</h2>
+            <p>Things worth being explicit about.</p>
+
+            <h3>Forum population bias</h3>
+            <p>Patients who post on r/ThoracicOutletSupport are not a random sample of TOS patients. People with full, clean surgical recoveries often leave the community; people still struggling disproportionately remain and post. This biases the community signal <em>negative</em> on surgery and <em>toward</em> conservative-treatment advocacy. The topic pages try to flag this where relevant (especially on the <a href="surgery.html#surgeons">Surgery page</a>) but the bias is structural and unfixable from within the dataset.</p>
+
+            <h3>My personal bias</h3>
+            <p>I am currently pursuing conservative treatment for my own nTOS. That means I have read the conservative-treatment material more carefully than the surgical material, and I've probably unconsciously weighted the conservative-treatment page more heavily toward nuance than I have the surgery page. I've tried to counterbalance this by leaning on the peer-reviewed literature more heavily in the surgical content, but the bias is real.</p>
+
+            <h3>No RCT-grade evidence for many community claims</h3>
+            <p>Several of the specific practical claims on this site — serratus-before-scalenes sequencing, shoulders-up posture cues, sequential Botox injection strategy, cork-ball pec minor release — have strong community signal and mechanistic plausibility but no randomized controlled trial support. The badge system labels these as <span class="badge badge-community">Community-derived</span> or <span class="badge badge-practical">Practical tool</span> for exactly this reason.</p>
+
+            <h3>Named surgeons are a snapshot</h3>
+            <p>The named surgeons on the <a href="surgery.html#surgeons">Surgery page</a> are those with positive community sentiment in the 382-post dataset. Surgeons change practices, retire, or move. Community sentiment itself can lag reality. Treat the named list as a starting point, not a current directory. <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener">tosoutreach.com/find-a-surgeon</a> maintains a more actively curated directory.</p>
+
+            <h3>Single-maintainer project</h3>
+            <p>This site is maintained by one person (me). Content gaps, outdated sections, and inaccuracies are possible. The review log above is the honest current state — not a polished ideal.</p>
+        </section>
+
+        <section id="ai-disclosure">
+            <h2>AI &amp; automation disclosure</h2>
+            <p>For full transparency about how this site is built and maintained.</p>
+            <ul>
+                <li><strong>Reddit scraping:</strong> automated via a Python script using Reddit's public JSON API. Deterministic — no AI involved.</li>
+                <li><strong>PubMed literature fetch:</strong> automated via the PubMed E-utilities API on a monthly schedule. Deterministic — no AI involved.</li>
+                <li><strong>Research document synthesis:</strong> I worked with Claude (Anthropic) as a drafting and editing assistant while synthesizing the 382 raw posts into the research documents. The post-level findings, pattern extraction, and clinical interpretation are mine; Claude helped with structure, summarization, and prose. All content was reviewed by me before publication.</li>
+                <li><strong>Website content:</strong> Same process. Topic pages are written with Claude as a drafting partner, from source material I've curated and reviewed. Every page is read and revised by me before it goes live.</li>
+                <li><strong>No AI is used to diagnose or interpret user health data on this site.</strong> There is no user-facing AI feature at the time of this writing. A future RAG chatbot is in the architecture stage but not yet built; when it ships, it will have its own disclosure on this page.</li>
+            </ul>
+        </section>
+
+        <section id="issues">
+            <h2>Reporting issues</h2>
+            <p>If something on this site is wrong, outdated, or misleading, I want to know.</p>
+            <ul>
+                <li><strong>Factual corrections, broken links, clinical accuracy concerns:</strong> open an issue on the project's GitHub repository (linked from the site root) or email me directly via the contact on <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a>.</li>
+                <li><strong>Surgeon or provider corrections:</strong> if you are a named surgeon on the Surgery page whose practice details need updating, or if you have new information about a named surgeon, please reach out.</li>
+                <li><strong>Content requests:</strong> if there's a TOS topic you'd like to see covered that isn't here, say so. The topic list is not fixed.</li>
+            </ul>
+            <div class="callout">
+                <h4>A note on feedback</h4>
+                <p>The best feedback I've gotten has been from other TOS patients reading the material critically. If you've been through something this site described incorrectly or incompletely, your experience is the correction — please share it.</p>
+            </div>
+        </section>
+
+        <section id="disclaimer">
+            <h2>Medical disclaimer</h2>
+            <p>All content on this site is for informational purposes only and does not constitute medical advice. Community-reported experiences, practical guidance, dosing observations, and surgical outcomes are not prescriptions or treatment plans. Always consult a qualified healthcare provider for diagnosis and treatment decisions. The inclusion of an external resource, a named surgeon, or a specific intervention does not constitute an endorsement. This site has no affiliation with any linked organization, named surgeon, or clinical practice.</p>
+        </section>
+    </article>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var fadeEls = document.querySelectorAll('.topic-hero, .topic-toc, .topic-content section');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

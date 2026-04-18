@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Discussion — TOS Resources</title>
+    <meta name="description" content="Deeper patterns from the r/ThoracicOutletSupport community — cognitive symptoms, POTS, cervical instability, EDS, scapular winging, and other topics the main reports don't cover in depth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .badge::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .badge-community { background: #fdf6e3; color: #8a7a2e; border: 1px solid #ebe0bd; }
+        .badge-peer-reviewed { background: #e6f0f0; color: #2e5c5c; border: 1px solid #c2d9d9; }
+        .badge-clinical { background: #eaf0e4; color: #3d5c2e; border: 1px solid #c8d6bd; }
+        .badge-practical { background: #f5ece4; color: #5c3d2e; border: 1px solid #e2d4c3; }
+        .badge-anecdotal { background: #fdeee0; color: #a8582e; border: 1px solid #f3d4b5; }
+
+        .badge-legend {
+            width: 100%;
+            max-width: 760px;
+            padding: 0 24px 24px;
+            font-size: 0.78rem;
+            color: #8a8279;
+            line-height: 1.6;
+        }
+
+        .badge-legend details {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 0;
+        }
+
+        .badge-legend summary {
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #5a5347;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-legend summary::-webkit-details-marker { display: none; }
+        .badge-legend summary::before { content: "▸"; font-size: 0.75rem; transition: transform 0.2s; }
+        .badge-legend details[open] summary::before { transform: rotate(90deg); }
+
+        .badge-legend-body { padding: 0 18px 16px; }
+
+        .badge-legend-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .badge-legend-item:first-child { border-top: none; padding-top: 4px; }
+
+        .badge-legend-item > .badge { flex-shrink: 0; margin-top: 2px; }
+        .badge-legend-item > div { font-size: 0.82rem; }
+        .badge-legend-item strong { color: #1c1c1c; display: block; margin-bottom: 2px; }
+
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 28px 0 10px;
+        }
+
+        .topic-content h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 20px 0 6px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .topic-content p {
+            font-size: 0.98rem;
+            color: #3a352e;
+            line-height: 1.72;
+            margin-bottom: 14px;
+        }
+
+        .topic-content p.section-badges {
+            margin-bottom: 18px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .topic-content ul, .topic-content ol {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 18px;
+        }
+
+        .topic-content ul li, .topic-content ol li {
+            font-size: 0.96rem;
+            color: #3a352e;
+            line-height: 1.7;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .topic-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8279;
+        }
+
+        .topic-content ol { counter-reset: topiclist; }
+        .topic-content ol li { counter-increment: topiclist; }
+        .topic-content ol li::before {
+            content: counter(topiclist) ".";
+            position: absolute;
+            left: 0;
+            color: #5c3d2e;
+            font-weight: 600;
+        }
+
+        .topic-content li strong { color: #1c1c1c; }
+
+        .topic-content blockquote {
+            margin: 16px 0;
+            padding: 14px 20px;
+            background: #ffffff;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.92rem;
+            color: #5a5347;
+            line-height: 1.65;
+            font-style: italic;
+        }
+
+        .topic-content blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 0.75rem;
+            color: #8a8279;
+            margin-top: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .callout {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout-caution {
+            border-left-color: #a83528;
+            background: #fdf6f4;
+        }
+
+        .callout-tip {
+            border-left-color: #3d5c2e;
+            background: #f5f9f1;
+        }
+
+        .callout h4 {
+            margin: 0 0 6px;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: #5c3d2e;
+        }
+
+        .callout-caution h4 { color: #a83528; }
+        .callout-tip h4 { color: #3d5c2e; }
+
+        .callout p { font-size: 0.92rem; margin-bottom: 0; }
+        .callout p + p { margin-top: 8px; }
+
+        .data-block {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 4px 0;
+            margin: 16px 0 20px;
+        }
+
+        .data-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 18px;
+            padding: 12px 20px;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .data-row:first-child { border-top: none; }
+
+        .data-key {
+            font-weight: 600;
+            color: #1c1c1c;
+            font-size: 0.88rem;
+        }
+
+        .data-val {
+            font-size: 0.9rem;
+            color: #5a5347;
+            line-height: 1.65;
+        }
+
+        .topic-related {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px 8px;
+        }
+
+        .topic-related h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8a8279;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .related-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .related-card strong {
+            font-size: 0.92rem;
+            color: #1c1c1c;
+            display: block;
+        }
+
+        .related-card span {
+            font-size: 0.78rem;
+            color: #5a5347;
+            line-height: 1.5;
+        }
+
+        .topic-downloads {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px;
+        }
+
+        .topic-downloads h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .topic-downloads > p {
+            font-size: 0.95rem;
+            color: #5a5347;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .dl-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 14px;
+        }
+
+        .dl-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 4px;
+        }
+
+        .dl-card p {
+            font-size: 0.88rem;
+            color: #5a5347;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .dl-card .dl-meta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 0.72rem;
+            color: #8a8279;
+            letter-spacing: 0.04em;
+            margin-bottom: 14px;
+        }
+
+        .dl-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            background: #5c3d2e;
+            color: #fff;
+            border: 1.5px solid #5c3d2e;
+            transition: background 0.15s;
+        }
+
+        .dl-btn:hover { background: #4a3125; }
+
+        .dl-btn-pdf {
+            background: transparent;
+            color: #5c3d2e;
+        }
+
+        .dl-btn-pdf:hover { background: #5c3d2e; color: #fff; }
+
+        .dl-btn svg { width: 14px; height: 14px; }
+
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer p { font-size: 0.82rem; color: #5a5347; line-height: 1.7; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .topic-content h3 { font-size: 1.05rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .data-row { grid-template-columns: 1fr; gap: 4px; padding: 10px 16px; }
+            .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .topic-downloads { padding: 24px 20px; }
+            .dl-card { padding: 20px; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .badge-community { background: #2a2516; color: #d8b955; border-color: #3a3424; }
+            .badge-peer-reviewed { background: #1a2929; color: #7db8b8; border-color: #2a3a3a; }
+            .badge-clinical { background: #1c2a1a; color: #8dbb6c; border-color: #2c3a2a; }
+            .badge-practical { background: #2a221c; color: #c49a6c; border-color: #3a322c; }
+            .badge-anecdotal { background: #2a201a; color: #e08d7d; border-color: #3a2e28; }
+
+            .badge-legend details { background: #231f1b; border-color: #3a3530; }
+            .badge-legend summary { color: #a69d90; }
+            .badge-legend-item { border-color: #2a2520; }
+            .badge-legend-item strong { color: #e8e0d5; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2, .topic-content h3, .topic-content h4 { color: #e8e0d5; }
+            .topic-content p, .topic-content li { color: #c0b7a9; }
+            .topic-content li strong, .topic-content p strong { color: #e8e0d5; }
+            .topic-content ul li::before { color: #7a7168; }
+            .topic-content ol li::before { color: #c49a6c; }
+
+            .topic-content blockquote { background: #231f1b; border-left-color: #c49a6c; color: #a69d90; }
+            .topic-content blockquote cite { color: #7a7168; }
+
+            .callout { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .callout h4 { color: #c49a6c; }
+            .callout p { color: #c0b7a9; }
+            .callout-caution { background: #2a1f1c; border-left-color: #d36a5a; }
+            .callout-caution h4 { color: #e08d7d; }
+            .callout-tip { background: #1f2a1c; border-left-color: #8dbb6c; }
+            .callout-tip h4 { color: #8dbb6c; }
+
+            .data-block { background: #231f1b; border-color: #3a3530; }
+            .data-row { border-top-color: #2a2520; }
+            .data-key { color: #e8e0d5; }
+            .data-val { color: #a69d90; }
+
+            .topic-related h2 { color: #a69d90; }
+            .related-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .related-card strong { color: #e8e0d5; }
+            .related-card span { color: #a69d90; }
+
+            .topic-downloads h2 { color: #e8e0d5; }
+            .topic-downloads > p { color: #a69d90; }
+            .dl-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .dl-card h3 { color: #e8e0d5; }
+            .dl-card p { color: #a69d90; }
+            .dl-card .dl-meta { color: #7a7168; }
+            .dl-btn { background: #c49a6c; color: #1a1714; border-color: #c49a6c; }
+            .dl-btn:hover { background: #b08a5e; border-color: #b08a5e; }
+            .dl-btn-pdf { background: transparent; color: #c49a6c; }
+            .dl-btn-pdf:hover { background: #c49a6c; color: #1a1714; }
+
+            .disclaimer { background: #231f1b; border-color: #3a3530; border-left-color: #b09a3a; }
+            .disclaimer h3 { color: #d6b74c; }
+            .disclaimer p { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html" class="active">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Topic · Community Discussion</p>
+        <h1>Patterns the Main Reports Don't Cover</h1>
+        <p class="topic-lede">Not every important TOS pattern shows up in the top-100 Reddit posts. This page collects the deeper threads from the full 382-post dataset — cognitive symptoms, POTS, cervical instability, scapular winging, EDS, and the other topics that kept coming up once you read more widely.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~20 min read</span>
+            <span class="meta-item">Sources: 282 additional Reddit posts (#101–382)</span>
+        </div>
+    </header>
+
+    <div class="badge-legend">
+        <details>
+            <summary>About the badges on this page</summary>
+            <div class="badge-legend-body">
+                <div class="badge-legend-item">
+                    <span class="badge badge-community">Community-derived</span>
+                    <div><strong>Patient-reported patterns</strong>Themes from r/ThoracicOutletSupport. Useful signal, but not clinical evidence.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-peer-reviewed">Peer-reviewed</span>
+                    <div><strong>Published medical literature</strong>Findings from peer-reviewed journals or clinical guidelines.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-clinical">Clinical reference</span>
+                    <div><strong>Standard medical practice</strong>Approaches described in clinical references and used routinely by TOS-specialized physicians.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-practical">Practical tool</span>
+                    <div><strong>Actionable insight</strong>Something you can ask about at an appointment or factor into a decision.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-anecdotal">Anecdotal / caution</span>
+                    <div><strong>Single-report or mixed evidence</strong>One person's experience, or an approach where the community is split. Treat with caution.</div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#why">Why this page exists</a></li>
+                <li><a href="#cognitive">Cognitive &amp; cerebrovascular symptoms</a></li>
+                <li><a href="#pots">POTS and dysautonomia</a></li>
+                <li><a href="#tmj">TMJ, facial, and jaw symptoms</a></li>
+                <li><a href="#cervical">Cervical instability — a safety concern</a></li>
+                <li><a href="#eds">The EDS / hypermobility connection</a></li>
+                <li><a href="#scapular">Scapular winging after surgery</a></li>
+                <li><a href="#bilateral">Bilateral TOS — surgical sequencing</a></li>
+                <li><a href="#mimics">Less-common conditions that mimic TOS</a></li>
+                <li><a href="#counterstrain">Counterstrain PT — stronger evidence</a></li>
+                <li><a href="#exercises">Exercises to avoid, exercises that help</a></li>
+                <li><a href="#rare">Rare but notable</a></li>
+                <li><a href="#related">Related topics</a></li>
+                <li><a href="#downloads">Download the expanded findings</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="why">
+            <h2>Why this page exists</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span></p>
+            <p>The Community Research Report, Diagnostic Checklist, and Surgical Outcomes Report were compiled from the top 100 posts on r/ThoracicOutletSupport. The expanded scrape of the full 382-post subreddit surfaced a set of patterns the top-100 didn't capture — either because they appeared across many lower-engagement posts or because they touched topics the core reports weren't built around.</p>
+            <p>This page is the home for those patterns. Nothing here contradicts the main reports; it extends them. These are the threads worth knowing about if your TOS doesn't look like the textbook case.</p>
+            <div class="callout">
+                <h4>Signal, not evidence</h4>
+                <p>Community data is strong when it corroborates published research or reveals practical details medicine hasn't written up yet. It's weakest when a single post describes something unusual. Most of what follows is recurring across multiple posts; single-post patterns are flagged as such.</p>
+            </div>
+        </section>
+
+        <section id="cognitive">
+            <h2>Cognitive &amp; cerebrovascular symptoms</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-anecdotal">Anecdotal / caution</span></p>
+            <p>The single biggest gap in the original reports. Multiple users describe neurological and cognitive symptoms well beyond arm and shoulder pain — memory problems, word-finding difficulty, severe confusion, brain fog, head and eye pressure, jaw pressure, and vision changes.</p>
+
+            <blockquote>
+                "It definitely causes issues. I've had memory problems, word finding issues, strange sensations, head and eye and jaw pressure, vision issues, severe confusion. I think it could be due to subclavian steal syndrome."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+
+            <h3>Subclavian steal syndrome</h3>
+            <p>The mechanism most often discussed: TOS-related compression of the subclavian artery can reverse blood flow in the vertebral artery, redirecting blood away from the brain. Classic subclavian steal is a recognized condition, but its overlap with neurogenic TOS is poorly studied.</p>
+
+            <h3>Cerebrovascular hyperperfusion (hypothesis)</h3>
+            <p>A user referenced Kjetil Larsen's paper <em>"Does Thoracic Outlet Syndrome Cause Cerebrovascular Hyperperfusion?"</em> as a proposed mechanism. This is not yet medically accepted — treat it as hypothesis, not diagnosis.</p>
+
+            <div class="callout callout-tip">
+                <h4>What to ask for</h4>
+                <p>If cognitive symptoms are a real part of your presentation, tell your TOS specialist. Screening can include <strong>Doppler ultrasound with arm provocation</strong> (to check for positional subclavian flow changes) or dedicated cerebrovascular imaging. This is not standard TOS workup — you may need to specifically raise it.</p>
+            </div>
+        </section>
+
+        <section id="pots">
+            <h2>POTS and dysautonomia</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>TOS and POTS (Postural Orthostatic Tachycardia Syndrome) appear together often enough across the expanded dataset that the overlap is hard to dismiss as coincidence.</p>
+
+            <h3>The anatomical connection</h3>
+            <p>The <strong>stellate ganglion</strong> — part of the sympathetic nervous system — sits within the thoracic outlet and can be compressed alongside the brachial plexus. The <strong>vagus nerve</strong> also runs nearby. Both are plausible mechanisms for autonomic symptoms that appear with TOS.</p>
+
+            <blockquote>
+                "The stellate ganglion however is in the thoracic and can get compressed — panic attacks? Unexplained anxiety?"
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+
+            <h3>Overlap symptoms community members report</h3>
+            <ul>
+                <li>Blood pooling in extremities, dizziness on standing</li>
+                <li>Exercise intolerance beyond what arm pain alone would cause</li>
+                <li>Unexplained anxiety, panic attacks</li>
+                <li>Heart rate irregularities, nausea, gut dysfunction (vagus-related)</li>
+                <li>Fatigue disproportionate to physical activity</li>
+            </ul>
+
+            <div class="callout">
+                <h4>The TOS + EDS + POTS triad</h4>
+                <p>Multiple community members describe this combination as a single diagnostic pattern. If you have TOS plus autonomic symptoms plus hypermobility, it's worth asking about dysautonomia screening (tilt-table test, orthostatic vitals) and formal hypermobility assessment. Treating them as one interconnected problem is often more productive than chasing them separately.</p>
+            </div>
+        </section>
+
+        <section id="tmj">
+            <h2>TMJ, facial, and jaw symptoms</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span></p>
+            <p>Users in the expanded dataset describe face and jaw symptoms that do not appear in the original reports — and that are often first misdiagnosed as TMJ or ear problems before TOS is considered.</p>
+
+            <ul>
+                <li>Facial pain and numbness on the TOS-affected side</li>
+                <li>Tongue numbness ("my tongue went slightly numb on one side")</li>
+                <li>Jaw paralysis-like sensations ("the lower half of my jaw on that side immediately became paralyzed feeling")</li>
+                <li>Ear symptoms initially mistaken for TMJ ("I thought I had an ear and TMJ jaw problem that turned out to actually be TOS")</li>
+            </ul>
+
+            <p>The likely mechanism is scalene tightness affecting nearby nerves and structures in the neck. If you have ongoing jaw, ear, or facial symptoms on your TOS side, they may be part of the same picture rather than a separate problem.</p>
+        </section>
+
+        <section id="cervical">
+            <h2>Cervical instability — a safety concern</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>This is the single most important safety topic the main reports don't cover.</p>
+
+            <p>In patients with cervical instability — common in hypermobile / EDS populations — the scalene muscles are actively stabilizing the cervical spine. Paralyzing them with Botox, or removing them surgically (scalenectomy), can make instability significantly worse.</p>
+
+            <blockquote>
+                "I had a really bad reaction to Botox in my scalenes because those muscles (along with my traps and such) were trying to stabilize my cervical spine. Before they paralyze other muscles... think about any possible cervical instability."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+
+            <p>Another user with craniocervical instability found that neck cracking and manipulation "made things worse by shifting things in the wrong direction, which could also lead to compression." Aggressive cervical manipulation is not benign in this population.</p>
+
+            <div class="callout callout-caution">
+                <h4>Ask about screening before Botox or surgery</h4>
+                <p>Before scalene Botox or scalenectomy, reasonable pre-screening includes:</p>
+                <p><strong>Flexion/extension cervical X-rays</strong> — cheap, widely available, and can show dynamic instability. <strong>Upright MRI of the craniocervical junction</strong> — more sensitive, available at specialty centers. <strong>Beighton score assessment</strong> — a quick physical test for generalized hypermobility.</p>
+                <p>This is especially important if you have known or suspected EDS, hypermobility, or a history of cervical trauma.</p>
+            </div>
+        </section>
+
+        <section id="eds">
+            <h2>The EDS / hypermobility connection</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>Hypermobility and connective tissue disorders show up across the expanded dataset in roles ranging from suspected risk factor to significant surgical complication risk.</p>
+
+            <h3>Hypermobility as a risk factor</h3>
+            <p>Lax ligaments mean less structural support in the thoracic outlet. The surrounding muscles (scalenes, pec minor, traps) then work overtime to stabilize, setting up the chronic tension pattern that drives compression.</p>
+
+            <h3>vTOS in hEDS</h3>
+            <p>One user describes three blood clots over 15+ years before finally pursuing surgery for vTOS + hEDS. After VATS first rib resection, she reports improvement in neck, clavicle, and trap tightness. For vTOS specifically, delaying surgery while clots recur carries real risk.</p>
+
+            <h3>Scalene removal concerns in hEDS</h3>
+            <blockquote>
+                "Very hypermobile with hypermobile shoulders and suspected EDS. Main concern is cervical instability. Main risk of removing scalene muscles is the neck could destabilize."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+            <p>A year-plus post-scalenectomy hypermobile patient: "Shoulder girdle still moves too much. Pressure around the clavicle." This pattern — symptom relief in the original compression area but new stability problems — shows up enough to warrant pre-op planning.</p>
+
+            <div class="callout callout-tip">
+                <h4>If you have or suspect hEDS</h4>
+                <p>Get a formal Beighton score assessment. Consider a genetics referral. Screen for cervical instability before any scalene intervention. Post-surgical PT needs to include aggressive scapular and cervical stabilization work. These additions don't change whether surgery is indicated — they change how the post-op plan should look.</p>
+            </div>
+        </section>
+
+        <section id="scapular">
+            <h2>Scapular winging after surgery</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span></p>
+            <p>A post-surgical complication not addressed in the original Surgical Outcomes Report: multiple users develop scapular winging after first rib resection and scalenectomy.</p>
+
+            <blockquote>
+                "I still have symptoms after mine. Hypermobile. Shoulder girdle still moves too much. Pressure around the clavicle. It's been over a year now. I'm thinking my trap is atrophied. Still fatigues significantly."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+
+            <p>Another user describes visible asymmetry: "I have the same thing where the side of surgery, the trap looks like it attaches higher up on the neck."</p>
+
+            <p>The likely mechanism: altered shoulder-girdle biomechanics after removal of structural components (rib, scalenes), combined with disuse during recovery, leading to serratus anterior deconditioning or long thoracic nerve irritation. The result is the scapula wings off the ribcage during arm movement.</p>
+
+            <div class="callout callout-tip">
+                <h4>Prevention is through post-surgical PT</h4>
+                <p>Post-op PT that specifically targets <strong>serratus anterior reactivation</strong> and <strong>scapular stabilization</strong> appears to be the key to avoiding this outcome. Users who were told PT wasn't necessary are the ones most likely to describe winging a year later. See also: <a href="conservative.html#serratus">serratus anterior strengthening</a>.</p>
+            </div>
+        </section>
+
+        <section id="bilateral">
+            <h2>Bilateral TOS — surgical sequencing</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>For patients with bilateral TOS considering surgery, the community discussion about which side to operate on first is informative.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Worse side first</div>
+                    <div class="data-val">"I have marked weakness on my left side, which is where it started. Although I have strong flareups on my right side, I am choosing my left side first due to said weakness." Logic: fix the most limiting side first, then reassess.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Non-dominant side first</div>
+                    <div class="data-val">"I'm right handed but my left side was slightly worse so I started on my left side. If surgery makes things a lot worse permanently it's not my dominant side." Logic: risk mitigation; preserve function on the dominant side in case of complications.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Wait-and-see second side</div>
+                    <div class="data-val">Several users describe doing the first side, allowing 6–12 months of recovery, and only doing the second side if symptoms there persist. Some find the second side improves on its own once the first is resolved.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-caution">
+                <h4>Surgeon experience matters more in bilateral cases</h4>
+                <p>"If your surgeon has rarely seen this, he probably doesn't have the level of expertise you need for bilateral TOS." One user who had surgery on both sides over a decade emphasizes: "Very long healing process. Key thing I wish I had known sooner are all the movements, activities to AVOID." Bilateral cases benefit disproportionately from a high-volume TOS surgeon.</p>
+            </div>
+        </section>
+
+        <section id="mimics">
+            <h2>Less-common conditions that mimic TOS</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>The diagnostic checklist covers the main mimics. The expanded dataset adds a few that appear less frequently but are worth knowing about.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Eagle's syndrome (vascular or cervical)</div>
+                    <div class="data-val">Elongated styloid process compressing nearby structures. Shows up as a comorbidity in multiple posts. Diagnosed via CT scan of styloid processes. Symptoms can overlap with neck, jaw, and vascular TOS complaints.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Craniocervical instability (CCI)</div>
+                    <div class="data-val">Instability at the skull-upper cervical junction. Mimics TOS symptoms and complicates treatment, especially in hypermobile patients. Evaluated with upright MRI of the craniocervical junction.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Pronator teres syndrome</div>
+                    <div class="data-val">Median nerve compression in the forearm. Overlaps with TOS symptoms. One user had both: "TOS combined with pronator teres syndrome ... diagnosed by a Physiotherapist and therapy took me about one year to recover."</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">General cervical instability</div>
+                    <div class="data-val">Broader cervical spine instability, especially in hypermobile patients. Covered in more detail in the <a href="#cervical">cervical instability section</a> above. Evaluated with flexion/extension cervical X-rays and Beighton score.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="counterstrain">
+            <h2>Counterstrain PT — stronger evidence</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>The original reports mention counterstrain briefly. The expanded dataset makes a much stronger case for specifically seeking it out if standard PT hasn't worked.</p>
+
+            <blockquote>
+                "Counterstrain has improved mine 70–80%. I've probably had about 8–10 sessions at this point now and I feel like I'm back to living my life pretty normally now."
+                <cite>— r/ThoracicOutletSupport</cite>
+            </blockquote>
+
+            <p>Another user: "My physical therapist used counterstrain to unlock my back ... started sleeping again ... technique restored my sleep."</p>
+
+            <p>Counterstrain is a <strong>gentle, indirect manual therapy</strong> — the practitioner positions joints and muscles into pain-free positions and holds to allow involuntary release. It looks very different from exercise-based PT. Multiple post-surgical patients also find it helpful for residual symptoms.</p>
+
+            <p>If standard TOS PT hasn't moved the needle over 3+ months, searching specifically for a <a href="https://www.jonescounterstrain.com" target="_blank" rel="noopener">Jones Counterstrain</a>-trained PT is worth the effort.</p>
+        </section>
+
+        <section id="exercises">
+            <h2>Exercises to avoid, exercises that help</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>The expanded dataset gives clearer guidance than the originals on which exercises aggravate vs. help TOS. Individual response varies, but the patterns are consistent.</p>
+
+            <h3>Exercises community members flag as aggravating</h3>
+            <ul>
+                <li><strong>Planks</strong> — multiple users report significant worsening.</li>
+                <li><strong>Running</strong> — arm swing and impact aggravate compression for some; may be posture-related.</li>
+                <li><strong>Push-ups and pull-ups</strong> — specifically warned against for vascular TOS.</li>
+                <li><strong>Incline walking</strong> — promotes hunching, closes down the outlet.</li>
+                <li><strong>Yoga</strong> — some users worsened; one user's doctor specifically prescribed Pilates instead.</li>
+            </ul>
+
+            <h3>Exercises community members report help</h3>
+            <ul>
+                <li><strong>Pilates (modified)</strong> — repeatedly cited as better-tolerated than yoga.</li>
+                <li><strong>Glute resistance band work</strong> — encouraged by physios and reinforces bottom-up kinetic chain correction.</li>
+                <li><strong>Lower-body strengthening</strong> — "Low ab work. Glute work. Hamstrings. Give the upper body a reason to relax."</li>
+                <li><strong>Shoulders-up gym work</strong> — "I've learned the key is keeping shoulders up to prevent clavicle crushing nerves. With this approach I can do everything in the gym." (See caveat on <a href="conservative.html#posture">posture</a>.)</li>
+            </ul>
+
+            <div class="callout">
+                <h4>The underlying principle</h4>
+                <p>Most TOS-aggravating exercises share a pattern: sustained arm-overhead or internal-rotation positions, static loading of the upper body, or high arm-use cardio. Most TOS-friendly exercises share a different pattern: lower-body work that builds the foundation, gentle scapular/rib cage mobility, and avoidance of overhead sustained positions.</p>
+            </div>
+        </section>
+
+        <section id="rare">
+            <h2>Rare but notable</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-anecdotal">Anecdotal / caution</span></p>
+            <p>Single- or few-post patterns that are worth knowing about even if they're uncommon:</p>
+
+            <ul>
+                <li><strong>Focal dystonia from TOS</strong> — one user developed focal dystonia in the forearm caused by TOS, treated successfully with 100 units of Botox across six forearm injection sites.</li>
+                <li><strong>Langer's arch muscle</strong> — an anomalous muscle variant raised as a potential compression source in the armpit area. Rare, but worth naming if armpit symptoms persist without explanation.</li>
+                <li><strong>Residual subclavian steal symptoms after FRR</strong> — one user who already had a rib removed still experiences morning headaches and memory problems, raising the possibility of residual vascular compression.</li>
+                <li><strong>Phoenix Theralase laser</strong> — one user reports consistent help from this modality. Single data point.</li>
+                <li><strong>SheBREATH Somatics (YouTube)</strong> — cited as helpful for coping with severe pain during the diagnostic waiting period.</li>
+            </ul>
+
+            <div class="callout">
+                <h4>How to read these</h4>
+                <p>Single-post patterns are hypotheses, not established associations. They're worth knowing because if one describes your situation and nobody has mentioned it, you may save time getting to the right answer. They are not worth assuming until confirmed by additional data or your own clinicians.</p>
+            </div>
+        </section>
+
+        <section id="related">
+            <h2>Related topics</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <p>Many of the threads above connect to the main topic pages:</p>
+            <div class="related-grid">
+                <a href="diagnosis.html" class="related-card">
+                    <strong>Diagnosis →</strong>
+                    <span>Systematic differential, provocative tests, imaging, and diagnostic blocks.</span>
+                </a>
+                <a href="conservative.html" class="related-card">
+                    <strong>Conservative Treatment →</strong>
+                    <span>Serratus, scalene, pec minor work. Counterstrain, posture, exercise progression.</span>
+                </a>
+                <a href="medications.html" class="related-card">
+                    <strong>Medications &amp; Injections →</strong>
+                    <span>Botox practical guidance, cervical instability warning, dosing and rebound details.</span>
+                </a>
+                <a href="surgery.html" class="related-card">
+                    <strong>Surgery →</strong>
+                    <span>Scapular winging prevention, bilateral sequencing, hEDS surgical considerations.</span>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <section class="topic-downloads" id="downloads" aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">Take it with you</h2>
+        <p>These patterns are documented in detail in the Expanded Findings companion doc — the full dataset version of what's on this page.</p>
+        <div class="dl-card">
+            <h3>TOS Expanded Findings</h3>
+            <p>Standalone companion to the main reports — 282 additional Reddit posts (#101–382) covering cognitive symptoms, POTS, cervical instability, Botox practical guidance, robotic surgery, and scapular winging.</p>
+            <div class="dl-meta">
+                <span>Updated Mar 28, 2026</span>
+                <span>~22 min read</span>
+                <span>Sources: Posts #101–382 on r/ThoracicOutletSupport</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Expanded_Findings.docx" class="dl-btn" data-goatcounter-click="download/TOS_Expanded_Findings.docx" data-goatcounter-title="Download: TOS_Expanded_Findings.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Expanded_Findings.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Expanded_Findings.pdf" data-goatcounter-title="Download: TOS_Expanded_Findings.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <h3>TOS Community Research Report</h3>
+            <p>The main synthesis doc — treatments, exercises, pec minor and scalene deep dives from the top 100 posts. Read alongside the Expanded Findings for the full picture.</p>
+            <div class="dl-meta">
+                <span>Updated Mar 27, 2026</span>
+                <span>~16 min read</span>
+                <span>Sources: 100 Reddit posts + expanded dataset</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Community_Research_Report.docx" class="dl-btn" data-goatcounter-click="download/TOS_Community_Research_Report.docx" data-goatcounter-title="Download: TOS_Community_Research_Report.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Community_Research_Report.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Community_Research_Report.pdf" data-goatcounter-title="Download: TOS_Community_Research_Report.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <h3>Medical disclaimer</h3>
+        <p>This page aggregates patterns reported in an online community. It is not medical advice. Some findings here (cerebrovascular hyperperfusion, single-post conditions, specific Botox dosing) represent hypotheses or individual experiences, not accepted medicine. Treat them as topics to raise with a qualified TOS specialist, not as conclusions.</p>
+    </div>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener');
+            link.addEventListener('click', function(e) {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    var blank = window.open('about:blank', '_blank');
+                    if (blank) { blank.location.href = link.href; }
+                }
+            });
+        });
+
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var fadeEls = document.querySelectorAll('.topic-hero, .badge-legend, .topic-toc, .topic-content section, .topic-related, .topic-downloads, .disclaimer');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

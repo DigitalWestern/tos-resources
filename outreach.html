@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outreach &amp; External Resources — TOS Resources</title>
+    <meta name="description" content="A curated hub of external TOS resources — surgeon finders, support communities, educational sites, and peer-reviewed literature.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 8px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content .section-lede {
+            font-size: 0.98rem;
+            color: #5a5347;
+            line-height: 1.65;
+            margin-bottom: 18px;
+            max-width: 620px;
+        }
+
+        /* External resource cards */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .resource-card {
+            display: grid;
+            grid-template-columns: 72px 1fr;
+            gap: 18px;
+            align-items: start;
+            padding: 18px 20px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .resource-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .resource-label {
+            font-size: 0.66rem;
+            font-weight: 700;
+            color: #5c3d2e;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 4px 8px;
+            background: #f5ece4;
+            border-radius: 3px;
+            text-align: center;
+            line-height: 1.3;
+            align-self: start;
+            margin-top: 2px;
+        }
+
+        .resource-body {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .resource-body strong {
+            font-size: 1rem;
+            color: #1c1c1c;
+            line-height: 1.35;
+        }
+
+        .resource-body .resource-desc {
+            font-size: 0.88rem;
+            color: #5a5347;
+            line-height: 1.55;
+        }
+
+        .resource-body .resource-caveat {
+            font-size: 0.78rem;
+            color: #a8582e;
+            font-style: italic;
+            line-height: 1.5;
+            padding-top: 2px;
+        }
+
+        .topic-related {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px 8px;
+        }
+
+        .topic-related h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8a8279;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .related-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .related-card strong {
+            font-size: 0.92rem;
+            color: #1c1c1c;
+            display: block;
+        }
+
+        .related-card span {
+            font-size: 0.78rem;
+            color: #5a5347;
+            line-height: 1.5;
+        }
+
+        .topic-downloads {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px;
+        }
+
+        .topic-downloads h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .topic-downloads > p {
+            font-size: 0.95rem;
+            color: #5a5347;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .dl-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+        }
+
+        .dl-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 4px;
+        }
+
+        .dl-card p {
+            font-size: 0.85rem;
+            color: #5a5347;
+            margin-bottom: 12px;
+            line-height: 1.55;
+        }
+
+        .dl-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            font-size: 0.82rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            background: #5c3d2e;
+            color: #fff;
+            border: 1.5px solid #5c3d2e;
+            transition: background 0.15s;
+        }
+
+        .dl-btn:hover { background: #4a3125; }
+
+        .dl-btn-pdf {
+            background: transparent;
+            color: #5c3d2e;
+        }
+
+        .dl-btn-pdf:hover { background: #5c3d2e; color: #fff; }
+
+        .dl-btn svg { width: 12px; height: 12px; }
+
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer p { font-size: 0.82rem; color: #5a5347; line-height: 1.7; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .resource-card { grid-template-columns: 1fr; gap: 8px; padding: 16px 18px; }
+            .resource-label { justify-self: start; }
+            .related-grid { grid-template-columns: 1fr; }
+            .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .topic-downloads { padding: 24px 20px; }
+            .dl-card { padding: 16px 18px; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2 { color: #e8e0d5; }
+            .topic-content .section-lede { color: #a69d90; }
+
+            .resource-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .resource-label { background: #2a221c; color: #c49a6c; }
+            .resource-body strong { color: #e8e0d5; }
+            .resource-body .resource-desc { color: #a69d90; }
+            .resource-body .resource-caveat { color: #e08d7d; }
+
+            .topic-related h2 { color: #a69d90; }
+            .related-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .related-card strong { color: #e8e0d5; }
+            .related-card span { color: #a69d90; }
+
+            .topic-downloads h2 { color: #e8e0d5; }
+            .topic-downloads > p { color: #a69d90; }
+            .dl-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .dl-card h3 { color: #e8e0d5; }
+            .dl-card p { color: #a69d90; }
+            .dl-btn { background: #c49a6c; color: #1a1714; border-color: #c49a6c; }
+            .dl-btn:hover { background: #b08a5e; border-color: #b08a5e; }
+            .dl-btn-pdf { background: transparent; color: #c49a6c; }
+            .dl-btn-pdf:hover { background: #c49a6c; color: #1a1714; }
+
+            .disclaimer { background: #231f1b; border-color: #3a3530; border-left-color: #b09a3a; }
+            .disclaimer h3 { color: #d6b74c; }
+            .disclaimer p { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html" class="active">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Topic · Outreach &amp; External Resources</p>
+        <h1>Outreach &amp; External Resources</h1>
+        <p class="topic-lede">A curated directory of the external tools, support communities, and educational resources most consistently referenced by the TOS community. This page is a hub — the content lives on other sites, and the caveats are here where relevant.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~5 min scan</span>
+            <span class="meta-item">Curated from 382 Reddit posts</span>
+        </div>
+    </header>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#surgeons">Find a surgeon</a></li>
+                <li><a href="#communities">Support communities</a></li>
+                <li><a href="#education">Educational resources</a></li>
+                <li><a href="#specialists">Specialized clinicians</a></li>
+                <li><a href="#research">Research &amp; literature</a></li>
+                <li><a href="#related">Related topics on this site</a></li>
+                <li><a href="#downloads">All downloadable resources</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="surgeons">
+            <h2>Find a surgeon</h2>
+            <p class="section-lede">Finding an experienced TOS specialist is the single most consequential surgical decision you'll make. These are the resources most consistently cited for identifying surgeons with documented TOS specialization.</p>
+            <div class="resource-grid">
+                <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Directory</span>
+                    <div class="resource-body">
+                        <strong>TOS Outreach — Surgeon Finder</strong>
+                        <span class="resource-desc">Community-compiled directory of TOS surgeons organized by region, with notes on specialization and surgical approach.</span>
+                    </div>
+                </a>
+                <a href="https://www.tosoutreach.com/neurogenic-tos-symptoms" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Clinical</span>
+                    <div class="resource-body">
+                        <strong>TOS Outreach — Symptom Reference</strong>
+                        <span class="resource-desc">Clinical symptom guides and diagnostic information to help patients understand what they're experiencing before a consult.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="communities">
+            <h2>Support communities</h2>
+            <p class="section-lede">Online communities where TOS patients share experiences, ask questions, and find support. Each has its own culture — the caveats below matter.</p>
+            <div class="resource-grid">
+                <a href="https://www.reddit.com/r/thoracicoutletsupport/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Reddit</span>
+                    <div class="resource-body">
+                        <strong>r/ThoracicOutletSupport</strong>
+                        <span class="resource-desc">The primary online community for TOS patients — treatment experiences, surgeon recommendations, peer support, and ongoing discussion. This subreddit is the source for the 382 posts behind the research documents on this site.</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/thoracicoutletsyndrome/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Facebook</span>
+                    <div class="resource-body">
+                        <strong>TOS Facebook Group</strong>
+                        <span class="resource-desc">Active Facebook support group for TOS patients and families.</span>
+                        <span class="resource-caveat">Community caveat: some Facebook TOS groups favor pro-surgery perspectives and moderate content accordingly. One user (Post #10) warns that admins may be surgeon-affiliated.</span>
+                    </div>
+                </a>
+                <a href="https://www.facebook.com/groups/TosSupport/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Facebook</span>
+                    <div class="resource-body">
+                        <strong>TOS Support Group</strong>
+                        <span class="resource-desc">20,000+ member Facebook group for TOS discussion and support.</span>
+                        <span class="resource-caveat">Community caveat: same moderation pattern as other Facebook TOS groups — balance negative surgical experiences against the Reddit community.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Educational resources</h2>
+            <p class="section-lede">Websites and video content on TOS mechanics, conservative treatment, and rehabilitation — the sources cited most frequently across the TOS community.</p>
+            <div class="resource-grid">
+                <a href="https://www.tosoutreach.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Web</span>
+                    <div class="resource-body">
+                        <strong>TOS Outreach</strong>
+                        <span class="resource-desc">Dedicated TOS patient advocacy with clinical information, surgeon directory, and community resources. The most comprehensive patient-facing TOS site.</span>
+                    </div>
+                </a>
+                <a href="https://www.mskneurology.com" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Web</span>
+                    <div class="resource-body">
+                        <strong>MSK Neurology — Kjetil Larsen</strong>
+                        <span class="resource-desc">The most-referenced conservative TOS treatment resource in the community. In-depth clinical writing on diagnosis, anatomy, and non-surgical approaches. The source for much of the serratus-strengthening and scalene-strengthening (not stretching) approach described on the <a href="conservative.html">conservative treatment page</a>.</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/results?search_query=zac+cupples+thoracic+outlet" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">YouTube</span>
+                    <div class="resource-body">
+                        <strong>Zac Cupples</strong>
+                        <span class="resource-desc">Physical therapist and PRI practitioner — frequently cited by the TOS community for full-body mechanics and rehabilitation programming.</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/results?search_query=bill+hartman+thoracic+outlet" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">YouTube</span>
+                    <div class="resource-body">
+                        <strong>Bill Hartman</strong>
+                        <span class="resource-desc">Strength coach and rehabilitation specialist. Cited for posture, mechanics, and exercise programming relevant to TOS.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="specialists">
+            <h2>Specialized clinicians</h2>
+            <p class="section-lede">TOS-specific clinical specialties worth knowing about — useful when assembling a treatment team beyond a surgeon.</p>
+            <div class="resource-grid">
+                <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">PT / MD</span>
+                    <div class="resource-body">
+                        <strong>TOS-specialized physical therapists</strong>
+                        <span class="resource-desc">Generic PT is not the same as TOS-specialized PT — a distinction community members and published data both emphasize. TOS Outreach's directory is the best starting point for finding TOS PTs by region.</span>
+                    </div>
+                </a>
+                <a href="https://www.jonesinstitute.com/find-a-counterstrain-practitioner/" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">Manual PT</span>
+                    <div class="resource-body">
+                        <strong>Jones Institute — Counterstrain practitioner finder</strong>
+                        <span class="resource-desc">Counterstrain is a gentle manual technique repeatedly cited in the community for post-surgical residual symptoms and nTOS flares. The Jones Institute maintains a practitioner directory.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research &amp; literature</h2>
+            <p class="section-lede">Peer-reviewed research and scientific literature on TOS, for patients who want to go deeper into the clinical evidence.</p>
+            <div class="resource-grid">
+                <a href="literature.html" class="resource-card">
+                    <span class="resource-label">Site</span>
+                    <div class="resource-body">
+                        <strong>TOS Resources — Literature page</strong>
+                        <span class="resource-desc">669+ peer-reviewed articles from PubMed, searchable by topic, author, or journal. Auto-refreshed monthly via a GitHub Actions workflow that queries seven TOS-specific search terms.</span>
+                    </div>
+                </a>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/?term=thoracic+outlet+syndrome" target="_blank" rel="noopener noreferrer" class="resource-card">
+                    <span class="resource-label">PubMed</span>
+                    <div class="resource-body">
+                        <strong>PubMed — Thoracic Outlet Syndrome</strong>
+                        <span class="resource-desc">National Library of Medicine database — direct access to the full primary literature on TOS.</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="related">
+            <h2>Related topics on this site</h2>
+            <p class="section-lede">If you're here because you're new to TOS, these are the pages most useful depending on where you are.</p>
+            <div class="related-grid">
+                <a href="diagnosis.html" class="related-card">
+                    <strong>Diagnosis →</strong>
+                    <span>A systematic, community-informed path to getting diagnosed — from ruling out mimics to diagnostic blocks.</span>
+                </a>
+                <a href="conservative.html" class="related-card">
+                    <strong>Conservative Treatment →</strong>
+                    <span>What to do before surgery — serratus, scalenes, pec minor, posture, full-body mechanics.</span>
+                </a>
+                <a href="medications.html" class="related-card">
+                    <strong>Medications &amp; Injections →</strong>
+                    <span>Nerve pain medications, Botox practical guidance, diagnostic blocks, supplements.</span>
+                </a>
+                <a href="surgery.html" class="related-card">
+                    <strong>Surgery →</strong>
+                    <span>Procedures, success rates, surgeon selection, complications, recovery, and predictors of success.</span>
+                </a>
+                <a href="community-discussion.html" class="related-card">
+                    <strong>Community Discussion →</strong>
+                    <span>Patterns the main reports don't cover — POTS, cervical instability, EDS, cognitive symptoms.</span>
+                </a>
+                <a href="literature.html" class="related-card">
+                    <strong>Literature →</strong>
+                    <span>669+ peer-reviewed TOS articles, searchable. Auto-refreshed monthly.</span>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <section class="topic-downloads" id="downloads" aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">All downloadable resources</h2>
+        <p>Every document hosted on this site, in one place. The individual topic pages embed the downloads most relevant to that topic — this section is the full set.</p>
+
+        <div class="dl-card">
+            <h3>TOS Community Research Report</h3>
+            <p>Treatments, exercises, and recovery patterns from 100 community posts on r/ThoracicOutletSupport.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_Community_Research_Report.docx" class="dl-btn" data-goatcounter-click="download/TOS_Community_Research_Report.docx" data-goatcounter-title="Download: TOS_Community_Research_Report.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Community_Research_Report.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Community_Research_Report.pdf" data-goatcounter-title="Download: TOS_Community_Research_Report.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS Surgical Outcomes Report</h3>
+            <p>Surgery data, surgeon names, success rates, and post-op recovery from 100 community posts cross-referenced with published literature.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_Surgical_Outcomes_Report.docx" class="dl-btn" data-goatcounter-click="download/TOS_Surgical_Outcomes_Report.docx" data-goatcounter-title="Download: TOS_Surgical_Outcomes_Report.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Surgical_Outcomes_Report.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Surgical_Outcomes_Report.pdf" data-goatcounter-title="Download: TOS_Surgical_Outcomes_Report.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS Diagnostic Checklist</h3>
+            <p>A step-by-step diagnostic guide synthesized from community posts and clinical literature.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_Diagnostic_Checklist.docx" class="dl-btn" data-goatcounter-click="download/TOS_Diagnostic_Checklist.docx" data-goatcounter-title="Download: TOS_Diagnostic_Checklist.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Diagnostic_Checklist.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Diagnostic_Checklist.pdf" data-goatcounter-title="Download: TOS_Diagnostic_Checklist.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS Expanded Findings</h3>
+            <p>Companion document covering 282 additional Reddit posts beyond the original 100 — POTS, cervical instability, EDS, cognitive symptoms, and robotic surgery details.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_Expanded_Findings.docx" class="dl-btn" data-goatcounter-click="download/TOS_Expanded_Findings.docx" data-goatcounter-title="Download: TOS_Expanded_Findings.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Expanded_Findings.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Expanded_Findings.pdf" data-goatcounter-title="Download: TOS_Expanded_Findings.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS Medications, Supplements &amp; Vitamins Guide</h3>
+            <p>Medications, supplements, and vitamins for TOS — nerve pain meds, Botox practical details, blood thinners for vTOS, supplements for nerve health.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.docx" class="dl-btn" data-goatcounter-click="download/TOS_Medications_Supplements_Vitamins_Guide.docx" data-goatcounter-title="Download: TOS_Medications_Supplements_Vitamins_Guide.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Medications_Supplements_Vitamins_Guide.pdf" data-goatcounter-title="Download: TOS_Medications_Supplements_Vitamins_Guide.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS 12-Week Exercise Plan</h3>
+            <p>Week-by-week exercise tracker covering serratus, scalenes, pec minor, posture, and nerve glides.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_12_Week_Exercise_Plan.xlsx" class="dl-btn" data-goatcounter-click="download/TOS_12_Week_Exercise_Plan.xlsx" data-goatcounter-title="Download: TOS_12_Week_Exercise_Plan.xlsx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Excel (.xlsx)
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS 12-Week Exercise Plan — No Nerve Flossing</h3>
+            <p>Same 12-week tracker without nerve flossing exercises, for patients whose symptoms are aggravated by nerve gliding work.</p>
+            <div class="dl-buttons">
+                <a href="files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" class="dl-btn" data-goatcounter-click="download/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" data-goatcounter-title="Download: TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Excel (.xlsx)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <h3>Disclaimer</h3>
+        <p>External links are provided for informational and navigational purposes only. Inclusion of an external resource does not constitute an endorsement of its content or clinical claims. This site has no affiliation with any of the linked organizations. Always consult a qualified healthcare provider for diagnosis and treatment decisions.</p>
+    </div>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener');
+            link.addEventListener('click', function(e) {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    var blank = window.open('about:blank', '_blank');
+                    if (blank) { blank.location.href = link.href; }
+                }
+            });
+        });
+
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var fadeEls = document.querySelectorAll('.topic-hero, .topic-toc, .topic-content section, .topic-related, .topic-downloads, .disclaimer');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conservative Treatment — TOS Resources</title>
+    <meta name="description" content="A guide to non-surgical TOS treatment — serratus anterior, scalene strengthening, pec minor release, posture, and what actually works based on community data and clinical references.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .badge::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .badge-community { background: #fdf6e3; color: #8a7a2e; border: 1px solid #ebe0bd; }
+        .badge-peer-reviewed { background: #e6f0f0; color: #2e5c5c; border: 1px solid #c2d9d9; }
+        .badge-clinical { background: #eaf0e4; color: #3d5c2e; border: 1px solid #c8d6bd; }
+        .badge-practical { background: #f5ece4; color: #5c3d2e; border: 1px solid #e2d4c3; }
+        .badge-anecdotal { background: #fdeee0; color: #a8582e; border: 1px solid #f3d4b5; }
+
+        .badge-legend {
+            width: 100%;
+            max-width: 760px;
+            padding: 0 24px 24px;
+            font-size: 0.78rem;
+            color: #8a8279;
+            line-height: 1.6;
+        }
+
+        .badge-legend details {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 0;
+        }
+
+        .badge-legend summary {
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #5a5347;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-legend summary::-webkit-details-marker { display: none; }
+        .badge-legend summary::before { content: "▸"; font-size: 0.75rem; transition: transform 0.2s; }
+        .badge-legend details[open] summary::before { transform: rotate(90deg); }
+
+        .badge-legend-body { padding: 0 18px 16px; }
+
+        .badge-legend-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .badge-legend-item:first-child { border-top: none; padding-top: 4px; }
+
+        .badge-legend-item > .badge { flex-shrink: 0; margin-top: 2px; }
+        .badge-legend-item > div { font-size: 0.82rem; }
+        .badge-legend-item strong { color: #1c1c1c; display: block; margin-bottom: 2px; }
+
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 28px 0 10px;
+        }
+
+        .topic-content h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 20px 0 6px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .topic-content p {
+            font-size: 0.98rem;
+            color: #3a352e;
+            line-height: 1.72;
+            margin-bottom: 14px;
+        }
+
+        .topic-content p.section-badges {
+            margin-bottom: 18px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .topic-content ul, .topic-content ol {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 18px;
+        }
+
+        .topic-content ul li, .topic-content ol li {
+            font-size: 0.96rem;
+            color: #3a352e;
+            line-height: 1.7;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .topic-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8279;
+        }
+
+        .topic-content ol { counter-reset: topiclist; }
+        .topic-content ol li { counter-increment: topiclist; }
+        .topic-content ol li::before {
+            content: counter(topiclist) ".";
+            position: absolute;
+            left: 0;
+            color: #5c3d2e;
+            font-weight: 600;
+        }
+
+        .topic-content li strong { color: #1c1c1c; }
+
+        .topic-content blockquote {
+            margin: 16px 0;
+            padding: 14px 20px;
+            background: #ffffff;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.92rem;
+            color: #5a5347;
+            line-height: 1.65;
+            font-style: italic;
+        }
+
+        .topic-content blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 0.75rem;
+            color: #8a8279;
+            margin-top: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .callout {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout-caution {
+            border-left-color: #a83528;
+            background: #fdf6f4;
+        }
+
+        .callout-tip {
+            border-left-color: #3d5c2e;
+            background: #f5f9f1;
+        }
+
+        .callout h4 {
+            margin: 0 0 6px;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: #5c3d2e;
+        }
+
+        .callout-caution h4 { color: #a83528; }
+        .callout-tip h4 { color: #3d5c2e; }
+
+        .callout p { font-size: 0.92rem; margin-bottom: 0; }
+        .callout p + p { margin-top: 8px; }
+
+        .data-block {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 4px 0;
+            margin: 16px 0 20px;
+        }
+
+        .data-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 18px;
+            padding: 12px 20px;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .data-row:first-child { border-top: none; }
+
+        .data-key {
+            font-weight: 600;
+            color: #1c1c1c;
+            font-size: 0.88rem;
+        }
+
+        .data-val {
+            font-size: 0.9rem;
+            color: #5a5347;
+            line-height: 1.65;
+        }
+
+        .topic-related {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px 8px;
+        }
+
+        .topic-related h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8a8279;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .related-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .related-card strong {
+            font-size: 0.92rem;
+            color: #1c1c1c;
+            display: block;
+        }
+
+        .related-card span {
+            font-size: 0.78rem;
+            color: #5a5347;
+            line-height: 1.5;
+        }
+
+        .topic-downloads {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px;
+        }
+
+        .topic-downloads h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .topic-downloads > p {
+            font-size: 0.95rem;
+            color: #5a5347;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .dl-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 14px;
+        }
+
+        .dl-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 4px;
+        }
+
+        .dl-card p {
+            font-size: 0.88rem;
+            color: #5a5347;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .dl-card .dl-meta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 0.72rem;
+            color: #8a8279;
+            letter-spacing: 0.04em;
+            margin-bottom: 14px;
+        }
+
+        .dl-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            background: #5c3d2e;
+            color: #fff;
+            border: 1.5px solid #5c3d2e;
+            transition: background 0.15s;
+        }
+
+        .dl-btn:hover { background: #4a3125; }
+
+        .dl-btn-pdf {
+            background: transparent;
+            color: #5c3d2e;
+        }
+
+        .dl-btn-pdf:hover { background: #5c3d2e; color: #fff; }
+
+        .dl-btn svg { width: 14px; height: 14px; }
+
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer p { font-size: 0.82rem; color: #5a5347; line-height: 1.7; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .topic-content h3 { font-size: 1.05rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .data-row { grid-template-columns: 1fr; gap: 4px; padding: 10px 16px; }
+            .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .topic-downloads { padding: 24px 20px; }
+            .dl-card { padding: 20px; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .badge-community { background: #2a2516; color: #d8b955; border-color: #3a3424; }
+            .badge-peer-reviewed { background: #1a2929; color: #7db8b8; border-color: #2a3a3a; }
+            .badge-clinical { background: #1c2a1a; color: #8dbb6c; border-color: #2c3a2a; }
+            .badge-practical { background: #2a221c; color: #c49a6c; border-color: #3a322c; }
+            .badge-anecdotal { background: #2a201a; color: #e08d7d; border-color: #3a2e28; }
+
+            .badge-legend details { background: #231f1b; border-color: #3a3530; }
+            .badge-legend summary { color: #a69d90; }
+            .badge-legend-item { border-color: #2a2520; }
+            .badge-legend-item strong { color: #e8e0d5; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2, .topic-content h3, .topic-content h4 { color: #e8e0d5; }
+            .topic-content p, .topic-content li { color: #c0b7a9; }
+            .topic-content li strong, .topic-content p strong { color: #e8e0d5; }
+            .topic-content ul li::before { color: #7a7168; }
+            .topic-content ol li::before { color: #c49a6c; }
+
+            .topic-content blockquote { background: #231f1b; border-left-color: #c49a6c; color: #a69d90; }
+            .topic-content blockquote cite { color: #7a7168; }
+
+            .callout { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .callout h4 { color: #c49a6c; }
+            .callout p { color: #c0b7a9; }
+            .callout-caution { background: #2a1f1c; border-left-color: #d36a5a; }
+            .callout-caution h4 { color: #e08d7d; }
+            .callout-tip { background: #1f2a1c; border-left-color: #8dbb6c; }
+            .callout-tip h4 { color: #8dbb6c; }
+
+            .data-block { background: #231f1b; border-color: #3a3530; }
+            .data-row { border-top-color: #2a2520; }
+            .data-key { color: #e8e0d5; }
+            .data-val { color: #a69d90; }
+
+            .topic-related h2 { color: #a69d90; }
+            .related-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .related-card strong { color: #e8e0d5; }
+            .related-card span { color: #a69d90; }
+
+            .topic-downloads h2 { color: #e8e0d5; }
+            .topic-downloads > p { color: #a69d90; }
+            .dl-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .dl-card h3 { color: #e8e0d5; }
+            .dl-card p { color: #a69d90; }
+            .dl-card .dl-meta { color: #7a7168; }
+            .dl-btn { background: #c49a6c; color: #1a1714; border-color: #c49a6c; }
+            .dl-btn:hover { background: #b08a5e; border-color: #b08a5e; }
+            .dl-btn-pdf { background: transparent; color: #c49a6c; }
+            .dl-btn-pdf:hover { background: #c49a6c; color: #1a1714; }
+
+            .disclaimer { background: #231f1b; border-color: #3a3530; border-left-color: #b09a3a; }
+            .disclaimer h3 { color: #d6b74c; }
+            .disclaimer p { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html" class="active">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Topic · Start Here Path 02</p>
+        <h1>Conservative Treatment</h1>
+        <p class="topic-lede">Most TOS cases improve without surgery — if the right conservative approach is used. The community data is surprisingly consistent about which exercises actually move the needle, and the answer is not the PT that most patients are first prescribed.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~18 min read</span>
+            <span class="meta-item">Sources: MSK Neurology, PRI, 382 Reddit posts</span>
+        </div>
+    </header>
+
+    <div class="badge-legend">
+        <details>
+            <summary>About the badges on this page</summary>
+            <div class="badge-legend-body">
+                <div class="badge-legend-item">
+                    <span class="badge badge-peer-reviewed">Peer-reviewed</span>
+                    <div><strong>Published medical literature</strong>Findings from peer-reviewed journals or clinical guidelines.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-clinical">Clinical reference</span>
+                    <div><strong>Standard medical practice</strong>Approaches described in clinical references and used routinely by TOS-specialized physicians and physical therapists.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-community">Community-derived</span>
+                    <div><strong>Patient-reported patterns</strong>Themes from r/ThoracicOutletSupport (382 posts). Useful signal, but not clinical evidence.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-practical">Practical tool</span>
+                    <div><strong>Actionable routine or exercise</strong>Something you can try, track, or bring to a PT appointment.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-anecdotal">Anecdotal / caution</span>
+                    <div><strong>Single-report or mixed evidence</strong>One person's experience, or an approach where the community is split. Treat with caution.</div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#reality">Can TOS really improve without surgery?</a></li>
+                <li><a href="#linchpin">The linchpin: pec minor → serratus → scalenes</a></li>
+                <li><a href="#serratus">Serratus anterior strengthening</a></li>
+                <li><a href="#scalenes">Scalene strengthening (not stretching)</a></li>
+                <li><a href="#pec-minor">Pec minor release</a></li>
+                <li><a href="#posture">Posture: shoulders up, not back and down</a></li>
+                <li><a href="#whole-body">Whole-body mechanics</a></li>
+                <li><a href="#nerve-glides">Nerve glides</a></li>
+                <li><a href="#pt">Finding a TOS-specialized PT</a></li>
+                <li><a href="#lifestyle">Sleep, ergonomics, and daily load</a></li>
+                <li><a href="#timeline">A realistic timeline</a></li>
+                <li><a href="#related">Related topics</a></li>
+                <li><a href="#downloads">Download the full reports</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="reality">
+            <h2>Can TOS really improve without surgery?</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>For most patients with neurogenic TOS, the answer is <strong>yes — but not with generic PT</strong>. Published literature and community data both support conservative-first treatment, with surgery reserved for patients who either plateau or have structural findings (cervical rib, confirmed compression) that conservative work cannot resolve.</p>
+
+            <p>The caveat is that "conservative treatment" is doing a lot of work in that sentence. A generic chain-clinic PT handing you resistance band rows and foam-roller stretches is <em>not</em> the conservative approach that succeeds in recovery stories. The approaches that actually work have three things in common:</p>
+            <ol>
+                <li>They treat TOS as a <strong>biomechanical whole-body problem</strong>, not an isolated shoulder or neck problem.</li>
+                <li>They <strong>strengthen the scalenes and serratus anterior</strong> rather than just stretching tight tissues.</li>
+                <li>They <strong>take months, not weeks</strong>, and require patient progression.</li>
+            </ol>
+
+            <div class="callout">
+                <h4>Community reality</h4>
+                <p>Multiple Reddit users describe cycling through 2–4 unsuccessful rounds of generic PT before finding a TOS-informed approach that worked. One common pattern: "My PT had me doing chin tucks and rows for four months and I got worse. I switched to serratus and scalene-strengthening work and started improving within weeks."</p>
+            </div>
+
+            <div class="callout callout-caution">
+                <h4>When conservative treatment is unlikely to be enough</h4>
+                <p>If you have a cervical rib, confirmed arterial or venous compression, progressive neurologic deficit (measurable weakness or muscle atrophy), or a positive diagnostic scalene block but no improvement after 6–12 months of TOS-specific conservative care, it's reasonable to consult a TOS-specialized surgeon. See the <a href="surgery.html">Surgery</a> page.</p>
+            </div>
+        </section>
+
+        <section id="linchpin">
+            <h2>The linchpin: pec minor → serratus → scalenes</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>The single most actionable insight from the community data is the reciprocal relationship between three muscles: the pec minor, the serratus anterior, and the scalenes. Understanding this chain explains why isolated treatments fail.</p>
+
+            <h3>The cycle</h3>
+            <ol>
+                <li><strong>Pec minor is chronically tight</strong> (from forward posture, desk work, stress, or just bad luck).</li>
+                <li>The tight pec minor <strong>inhibits the serratus anterior</strong> from firing properly — it essentially holds the scapula in a position where the serratus can't do its job.</li>
+                <li>With the serratus offline, the <strong>scapula doesn't protract and upwardly rotate</strong> correctly during arm use.</li>
+                <li>The <strong>neck muscles compensate</strong> — scalenes, levator scapulae, and upper trapezius pick up the workload.</li>
+                <li>Now the <strong>scalenes are chronically overloaded</strong>, going into protective spasm, compressing the brachial plexus at the interscalene triangle.</li>
+                <li>The pec minor stays tight because the whole chain is locked. Repeat.</li>
+            </ol>
+
+            <blockquote>
+                "I found that the pec minor being tight makes the serratus not fire. Which makes your neck do its job which I think starts the issue."
+                <cite>— r/ThoracicOutletSupport, Post #4</cite>
+            </blockquote>
+
+            <div class="callout callout-tip">
+                <h4>Why this matters for your protocol</h4>
+                <p>Simply stretching or releasing the pec minor without retraining the serratus will only provide temporary relief — the pec minor tightens back up because the serratus still isn't doing its job. Likewise, strengthening the scalenes without addressing pec minor and serratus misses the upstream cause. The three have to be worked as a system.</p>
+            </div>
+        </section>
+
+        <section id="serratus">
+            <h2>Serratus anterior strengthening</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>This is the single most frequently cited exercise-based intervention in successful conservative recoveries. Multiple users credit serratus work as the breakthrough that resolved their TOS after months of failed PT.</p>
+
+            <h3>Starter exercises</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Wall slides (scaption)</div>
+                    <div class="data-val">Back against wall, arms in a W shape, slowly slide up and down while keeping contact with the wall. Focus on scapular protraction at the top.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Serratus punches</div>
+                    <div class="data-val">Lying on back or standing, arm extended forward, "punch" forward by protracting the scapula. No movement at the elbow. 2–3 sets of 10–15 reps.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Plus push-ups</div>
+                    <div class="data-val">At the top of a push-up (or wall / incline push-up if full is too much), push further to protract the scapulae. The "plus" is what activates the serratus.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Bear-crawl serratus hold</div>
+                    <div class="data-val">Quadruped position with knees hovering. Actively push the floor away to protract both scapulae. Hold 15–30 seconds.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-tip">
+                <h4>Cue to focus on</h4>
+                <p>You should feel the work across the side of the ribcage, not in the shoulder joint or traps. If you feel it in the upper traps, drop the intensity and re-cue.</p>
+            </div>
+        </section>
+
+        <section id="scalenes">
+            <h2>Scalene strengthening (not stretching)</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-anecdotal">Anecdotal / caution</span></p>
+            <p>The MSK Neurology / Kjetil Larsen approach is the most-referenced specific protocol in the dataset. The core principle is counterintuitive: rather than stretching tight scalenes, you <strong>strengthen them through controlled isometric and eccentric loading</strong>.</p>
+
+            <p>The rationale: weak, deconditioned scalenes go into protective spasm, which compresses the brachial plexus. Strengthening them allows them to relax at rest. Stretching alone, especially aggressive stretching, can inflame an already-irritated muscle.</p>
+
+            <h3>The starter protocol</h3>
+            <ul>
+                <li><strong>Starting position:</strong> Side-lying on a bench with a book (about 2.5cm / 1 inch) supporting the head to limit end-range neck side-bend.</li>
+                <li><strong>Movement:</strong> Slow, controlled lateral neck flexion — lifting the head laterally off the book, returning with control.</li>
+                <li><strong>Volume to start:</strong> 8 reps, twice per week. That is intentionally low.</li>
+                <li><strong>Progression:</strong> Very gradual over weeks to months. Add reps before adding range of motion. Add range of motion before adding resistance.</li>
+            </ul>
+
+            <div class="callout callout-caution">
+                <h4>This is the easiest exercise to mess up</h4>
+                <p>One community member overdid scalene strengthening in the first month and inflamed the muscles significantly, setting them back weeks. <strong>Start conservatively and progress slowly.</strong> Temporary soreness 24 hours after is fine; lingering symptom flare is a signal to back off.</p>
+                <p>If you have acute inflammation or recent flare, do not start strengthening — address the flare first (rest, ice, anti-inflammatories) and restart conservatively.</p>
+            </div>
+
+            <div class="callout">
+                <h4>Full protocol reference</h4>
+                <p>The specific progression, imagery, and full exercise library are maintained at <a href="https://mskneurology.com" target="_blank" rel="noopener">mskneurology.com</a> (Kjetil Larsen). It is the single most-referenced conservative TOS resource in the community. A TOS-specialized PT familiar with this work is ideal.</p>
+            </div>
+        </section>
+
+        <section id="pec-minor">
+            <h2>Pec minor release</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Pec minor release is one of the highest-leverage and lowest-risk self-treatments in the dataset. Done daily alongside serratus strengthening, it breaks the chain described above.</p>
+
+            <h3>Techniques</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Cork ball self-release</div>
+                    <div class="data-val">12cm cork massage ball placed under the armpit/chest wall near the pec minor. Lie on it, let body weight apply sustained pressure. 2–5 minutes per side. Repeat daily. Multiple community members report this as transformative.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Bench passive stretch</div>
+                    <div class="data-val">Lie flat on a bench, arms hanging laterally straight left and right, holding 5–10 lb dumbbells. Let gravity pull the pec minor into length. 1–2 minutes. Do not force.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Active doorway stretch</div>
+                    <div class="data-val">Arm at 90° against a doorframe, slight lean forward. Combine with deep diaphragmatic breathing to expand the ribcage into the stretch. 30–60 seconds.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Deep ribcage breathing</div>
+                    <div class="data-val">Expanding the ribcage laterally on inhale counteracts pec minor tightness. Particularly useful during anxiety/panic flares, which tighten the pec minor further and can trigger symptoms.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Rolfing / deep tissue</div>
+                    <div class="data-val">Manual therapy targeting the pec minor specifically. One user reports Rolfing as a breakthrough, especially alongside home self-release.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-caution">
+                <h4>If you have shoulder instability, go carefully</h4>
+                <p>The pec minor is a major shoulder stabilizer. Aggressive release in someone with underlying shoulder instability (e.g. labral tear, hypermobility) can worsen shoulder symptoms. One community member reports worsened instability after surgical pec minor release. If you have shoulder laxity, start very gently and pair release with rotator cuff stability work.</p>
+            </div>
+        </section>
+
+        <section id="posture">
+            <h2>Posture: shoulders up, not back and down</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-anecdotal">Anecdotal / caution</span></p>
+            <p>This is a somewhat controversial but repeatedly successful finding in community data. Multiple users report that the standard PT cue — <em>"shoulders back and down"</em> — worsens TOS by depressing the clavicle into the costoclavicular space. Instead, keeping the shoulders slightly elevated opens the thoracic outlet.</p>
+
+            <p>The practical cue is <strong>"tall neck, shoulders slightly lifted, chest open"</strong> — not forced, just neutral-to-slightly-elevated rather than actively pulled down.</p>
+
+            <div class="callout callout-caution">
+                <h4>Important caveat by compression site</h4>
+                <p>The "shoulders up" cue primarily helps <strong>costoclavicular</strong> compression (between clavicle and first rib). For <strong>interscalene triangle</strong> compression, elevating the shoulders can actually <em>increase</em> scalene tension. If you have confirmed interscalene involvement, you likely need a more nuanced cue — elevating the shoulder girdle while keeping scalene tone low. A TOS-informed PT can dial this in.</p>
+            </div>
+        </section>
+
+        <section id="whole-body">
+            <h2>Whole-body mechanics</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>The most detailed recovery stories in the dataset consistently emphasize that TOS cannot be solved by treating only the neck and shoulder. The thoracic outlet sits on top of a kinetic chain, and problems downstream show up as compression upstream.</p>
+
+            <h3>Downstream contributors worth assessing</h3>
+            <ul>
+                <li><strong>Anterior pelvic tilt</strong> — shifts the ribcage forward and rotates it, directly affecting the thoracic outlet. Correcting pelvic position changes upstream mechanics.</li>
+                <li><strong>Hip flexor / psoas tightness</strong> — contributes to the postural cascade; one user specifically credits hip flexor work.</li>
+                <li><strong>Weak core</strong> — allows compensatory patterns at the shoulder and neck. Diaphragmatic breathing and transverse abdominis work help.</li>
+                <li><strong>Ribcage expansion asymmetry</strong> — PRI (Postural Restoration Institute) approach targets the inability to fully expand the affected side's ribcage.</li>
+                <li><strong>Leg length discrepancy</strong> — one community member's shoulders aligned properly only after addressing a real leg length difference with a heel lift.</li>
+            </ul>
+
+            <div class="callout">
+                <h4>Practitioners to look up</h4>
+                <p><a href="https://www.youtube.com/@zaccupples" target="_blank" rel="noopener">Zac Cupples</a> and <a href="https://billhartmanpt.com" target="_blank" rel="noopener">Bill Hartman</a> are the most-referenced PRI-adjacent practitioners in the community. Their YouTube content explains the full-body mechanics approach well — worth watching before committing to any PT plan.</p>
+            </div>
+
+            <h3>Counterstrain PT — the surprising outlier</h3>
+            <p>Counterstrain (a gentle, indirect osteopathic technique) is cited by multiple community members as uniquely effective compared to standard PT. It does not look like typical exercise-based PT — it involves positioning joints and muscles in their pain-free range and holding to allow involuntary release. Worth asking about if you can find a counterstrain-trained practitioner.</p>
+        </section>
+
+        <section id="nerve-glides">
+            <h2>Nerve glides</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Nerve glides (neural mobilization) — slow, controlled movements that slide the nerve through its sheath without stretching it — reduce the severity of flares for many community members when done consistently. For ulnar nerve involvement (the most common in nTOS), ulnar glides are the most relevant.</p>
+
+            <div class="callout callout-caution">
+                <h4>Flossing vs. tensioning</h4>
+                <p>There is an important distinction: <strong>nerve flossing</strong> (the nerve slides with neutral tension on both ends) is generally well-tolerated. <strong>Nerve tensioning</strong> (both ends held in stretch simultaneously) is more aggressive and can inflame an already-irritated nerve. If gentle glides flare your symptoms for more than a day, stop and reassess with your PT. This is why one of the exercise tracker versions omits nerve flossing entirely.</p>
+            </div>
+        </section>
+
+        <section id="pt">
+            <h2>Finding a TOS-specialized PT</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Across almost every detailed recovery story in the dataset, one factor shows up repeatedly: <strong>the quality and specialization of the PT</strong>. General PTs and chain clinics are consistently described as inadequate for TOS. Multiple users describe worsening during generic PT and only improving after finding someone who understood the mechanics.</p>
+
+            <h3>What to look for</h3>
+            <ul>
+                <li>Familiarity with the MSK Neurology / Kjetil Larsen approach, or PRI training, or counterstrain training.</li>
+                <li>Experience with TOS specifically — not just "necks and shoulders."</li>
+                <li>Willingness to progress slowly and adjust based on your symptoms.</li>
+                <li>Understanding that stretching tight scalenes is usually the wrong first move.</li>
+                <li>An assessment of downstream mechanics (pelvis, ribcage, breathing), not just the neck.</li>
+            </ul>
+
+            <h3>Questions to ask a prospective PT</h3>
+            <ul>
+                <li>How many TOS patients have you treated?</li>
+                <li>What's your approach to scalene involvement — do you strengthen or stretch?</li>
+                <li>Are you familiar with Kjetil Larsen's work or PRI?</li>
+                <li>How do you distinguish TOS-driven symptoms from cervical radiculopathy in treatment?</li>
+                <li>What's your view on "shoulders back and down"?</li>
+            </ul>
+
+            <div class="callout callout-tip">
+                <h4>A negative answer is still useful</h4>
+                <p>If a PT says they'll have you do rows, chin tucks, and pec stretches as the first-line approach, they're not wrong about those being real exercises — but if they're your <em>entire</em> program and the PT has no specific answer about serratus retraining or downstream mechanics, the community data says you're unlikely to see much change.</p>
+            </div>
+        </section>
+
+        <section id="lifestyle">
+            <h2>Sleep, ergonomics, and daily load</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Exercise work happens once a day. The other 23 hours — how you sleep, sit, type, and carry things — determine whether that work sticks or gets undone.</p>
+
+            <h3>Sleep</h3>
+            <ul>
+                <li><strong>MedCline pillow</strong> (body pillow + wedge with arm cutout) is cited by multiple community members as the single best sleep upgrade.</li>
+                <li>Sleep on the <strong>non-affected side</strong> with the affected arm supported forward, not compressed underneath.</li>
+                <li>Avoid sleeping on your back with arms overhead — classic position for reproducing symptoms at night.</li>
+            </ul>
+
+            <h3>Workstation</h3>
+            <ul>
+                <li><strong>Arm rests</strong> — keep shoulders supported and slightly elevated, not hanging.</li>
+                <li><strong>Split keyboard</strong> and <strong>vertical mouse</strong> — reduces the internal rotation and forward reach that tightens pec minor.</li>
+                <li><strong>Monitor at eye level</strong> — forward head posture crushes the thoracic outlet; look forward, not down.</li>
+                <li><strong>Voice-to-text</strong> — multiple community members switch to dictation to reduce arm load; macOS and iOS have usable dictation built in.</li>
+                <li><strong>Timer-based movement breaks</strong> — every 30–45 minutes, stand, reset posture, do 30 seconds of active mobility.</li>
+            </ul>
+
+            <h3>Daily load</h3>
+            <ul>
+                <li><strong>Backpacks, not shoulder bags</strong> — and loaded on both straps, not one.</li>
+                <li><strong>Carry groceries</strong> in a cart or split between both arms; avoid single heavy load on the affected side.</li>
+                <li><strong>Heat</strong> helps nerve pain specifically — hot baths, heating pads on the neck/shoulder region.</li>
+                <li><strong>Ice</strong> at night helps some users; others find it aggravating. Experiment.</li>
+            </ul>
+        </section>
+
+        <section id="timeline">
+            <h2>A realistic timeline</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>Conservative TOS treatment is a months-to-years process, not weeks. Expectations matter — many users who "failed PT" in six weeks actually just hadn't done it long enough with the right protocol.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Weeks 1–4</div>
+                    <div class="data-val">Establish baseline. Start daily pec minor release, deep breathing. Find a TOS-informed PT. Get a diagnostic scalene block if you haven't.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Weeks 4–12</div>
+                    <div class="data-val">Begin serratus retraining (wall slides, punches, bear-crawl holds). Start scalene strengthening at very low volume. Begin addressing downstream mechanics (pelvis, ribcage).</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Months 3–6</div>
+                    <div class="data-val">Gradual progression of scalene and serratus load. Integrate breathing/PRI work. Baseline tightness should start decreasing. If not, reassess protocol and practitioner.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Months 6–12</div>
+                    <div class="data-val">Consolidation. Many conservative recoveries describe noticeable functional improvement here — not necessarily pain-free, but able to do more without flaring.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Year 1+</div>
+                    <div class="data-val">If conservative treatment has truly plateaued with no functional gains over 3–6 months, consider surgical consultation — not necessarily for surgery, but to understand your options.</div>
+                </div>
+            </div>
+
+            <div class="callout">
+                <h4>Flares are normal</h4>
+                <p>Recovery is not linear. Expect occasional flares — after overuse, stress, illness, or sometimes for no clear reason. A flare is not a failure of the protocol; it's data about your current tolerance. Back off, recover, and return to the work.</p>
+            </div>
+        </section>
+
+        <section id="related">
+            <h2>Related topics</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <p>Conservative treatment rarely works in isolation. These adjacent topics matter:</p>
+            <div class="related-grid">
+                <a href="diagnosis.html" class="related-card">
+                    <strong>Diagnosis →</strong>
+                    <span>Confirming your subtype and compression site changes which conservative approach is most relevant.</span>
+                </a>
+                <a href="medications.html" class="related-card">
+                    <strong>Medications &amp; Injections →</strong>
+                    <span>Botox, lidocaine blocks, nerve pain medications as bridges during conservative work.</span>
+                </a>
+                <a href="community-discussion.html" class="related-card">
+                    <strong>Community Discussion →</strong>
+                    <span>Deeper dives — POTS, cervical instability, scapular winging, and other patterns.</span>
+                </a>
+                <a href="surgery.html" class="related-card">
+                    <strong>Surgery →</strong>
+                    <span>When conservative treatment has been fully explored and hasn't worked, what comes next.</span>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <section class="topic-downloads" id="downloads" aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">Take it with you</h2>
+        <p>The web page is the primary read. For printable versions to bring to a PT appointment or track exercises at home, download the companion files.</p>
+        <div class="dl-card">
+            <h3>TOS Community Research Report</h3>
+            <p>Synthesis of treatments, exercises, and recovery patterns from 100 Reddit posts on r/ThoracicOutletSupport, with deep dives on pec minor and scalene work.</p>
+            <div class="dl-meta">
+                <span>Updated Mar 27, 2026</span>
+                <span>~16 min read</span>
+                <span>Sources: 100 Reddit posts + expanded dataset</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Community_Research_Report.docx" class="dl-btn" data-goatcounter-click="download/TOS_Community_Research_Report.docx" data-goatcounter-title="Download: TOS_Community_Research_Report.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Community_Research_Report.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Community_Research_Report.pdf" data-goatcounter-title="Download: TOS_Community_Research_Report.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <h3>12-Week Exercise Plan</h3>
+            <p>Week-by-week exercise tracker derived from community data: serratus, scalene strengthening, pec minor, nerve glides, and progression. Includes nerve flossing.</p>
+            <div class="dl-meta">
+                <span>Spreadsheet (.xlsx)</span>
+                <span>Sources: Community data + MSK Neurology protocols</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_12_Week_Exercise_Plan.xlsx" class="dl-btn" data-goatcounter-click="download/TOS_12_Week_Exercise_Plan.xlsx" data-goatcounter-title="Download: TOS_12_Week_Exercise_Plan.xlsx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Excel (.xlsx)
+                </a>
+            </div>
+        </div>
+        <div class="dl-card">
+            <h3>12-Week Exercise Plan — No Nerve Flossing</h3>
+            <p>Same tracker, with nerve flossing removed. Recommended if gentle glides flare your symptoms or if your PT has advised against flossing for your presentation.</p>
+            <div class="dl-meta">
+                <span>Spreadsheet (.xlsx)</span>
+                <span>Sources: Community data + MSK Neurology protocols</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" class="dl-btn" data-goatcounter-click="download/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" data-goatcounter-title="Download: TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Excel (.xlsx)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <h3>Medical disclaimer</h3>
+        <p>This page is for informational purposes only and is not medical advice. Exercise recommendations are synthesized from community experience and public protocols — they are not a personalized program. Work with a qualified TOS-informed physical therapist before starting any strengthening program, and stop any exercise that consistently flares your symptoms.</p>
+    </div>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener');
+            link.addEventListener('click', function(e) {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    var blank = window.open('about:blank', '_blank');
+                    if (blank) { blank.location.href = link.href; }
+                }
+            });
+        });
+
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var fadeEls = document.querySelectorAll('.topic-hero, .badge-legend, .topic-toc, .topic-content section, .topic-related, .topic-downloads, .disclaimer');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

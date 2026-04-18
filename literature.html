@@ -385,6 +385,90 @@
             color: #3d5c2e;
         }
 
+        /* --- Topic Filter Chips --- */
+        .topic-filter {
+            max-width: 860px;
+            width: 100%;
+            padding: 16px 24px 0;
+            margin-bottom: 28px;
+        }
+
+        .topic-filter-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+        }
+
+        .topic-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .topic-chip {
+            padding: 6px 12px;
+            border: 1px solid #ddd8d0;
+            border-radius: 20px;
+            background: #ffffff;
+            color: #5a5347;
+            font-size: 0.78rem;
+            font-weight: 500;
+            cursor: pointer;
+            font-family: inherit;
+            transition: border-color 0.15s, background 0.15s, color 0.15s;
+        }
+
+        .topic-chip:hover { border-color: #5c3d2e; color: #5c3d2e; }
+
+        .topic-chip.active {
+            background: #5c3d2e;
+            color: #fff;
+            border-color: #5c3d2e;
+        }
+
+        /* --- Advanced Search (collapsible) --- */
+        .advanced-search {
+            max-width: 860px;
+            width: 100%;
+            padding: 0 24px;
+            margin-top: 12px;
+        }
+
+        .advanced-search details {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+        }
+
+        .advanced-search summary {
+            padding: 10px 16px;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #5a5347;
+            letter-spacing: 0.03em;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .advanced-search summary::-webkit-details-marker { display: none; }
+        .advanced-search summary::before { content: "▸"; font-size: 0.7rem; transition: transform 0.2s; }
+        .advanced-search details[open] summary::before { transform: rotate(90deg); }
+
+        .advanced-search-body {
+            padding: 4px 16px 16px;
+            border-top: 1px solid #ede8e0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            align-items: center;
+        }
+
         /* --- Controls Bar (Sort + Filter) --- */
         .controls-bar {
             max-width: 860px;
@@ -859,6 +943,23 @@
                 border-color: #c49a6c;
             }
 
+            .topic-filter-label { color: #7a7168; }
+            .topic-chip {
+                background: #231f1b;
+                border-color: #3a3530;
+                color: #a69d90;
+            }
+            .topic-chip:hover { border-color: #c49a6c; color: #c49a6c; }
+            .topic-chip.active {
+                background: #c49a6c;
+                color: #1a1714;
+                border-color: #c49a6c;
+            }
+
+            .advanced-search details { background: #231f1b; border-color: #3a3530; }
+            .advanced-search summary { color: #a69d90; }
+            .advanced-search-body { border-top-color: #2a2520; }
+
             .load-more-btn {
                 background: #231f1b;
                 border-color: #3a3530;
@@ -911,8 +1012,13 @@
 
     <nav class="page-nav">
         <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html">Surgery</a>
         <a href="literature.html" class="active">Literature</a>
-        <a href="community.html">Community</a>
+        <a href="outreach.html">Outreach</a>
     </nav>
 
     <div class="hero">
@@ -934,6 +1040,22 @@
         <div class="results-count" id="results-count"></div>
     </div>
 
+    <div class="topic-filter" id="topic-filter" style="display:none;">
+        <div class="topic-filter-label">Filter by topic</div>
+        <div class="topic-chips">
+            <button class="topic-chip active" data-topic="all">All topics</button>
+            <button class="topic-chip" data-topic="diagnosis">Diagnosis &amp; imaging</button>
+            <button class="topic-chip" data-topic="surgery">Surgery &amp; outcomes</button>
+            <button class="topic-chip" data-topic="conservative">PT / conservative</button>
+            <button class="topic-chip" data-topic="medications">Medications &amp; injections</button>
+            <button class="topic-chip" data-topic="venous">Venous TOS</button>
+            <button class="topic-chip" data-topic="neurogenic">Neurogenic TOS</button>
+            <button class="topic-chip" data-topic="arterial">Arterial TOS</button>
+            <button class="topic-chip" data-topic="recovery">Recovery &amp; outcomes</button>
+            <button class="topic-chip" data-topic="comorbidities">Comorbidities</button>
+        </div>
+    </div>
+
     <div class="controls-bar" id="controls-bar" style="display:none;">
         <div class="controls-group">
             <span class="controls-label">Sort:</span>
@@ -942,15 +1064,23 @@
             <button class="control-btn" data-sort="author">Author A-Z</button>
             <button class="control-btn" data-sort="journal">Journal</button>
         </div>
-        <div class="controls-group">
-            <span class="controls-label">Filter:</span>
-            <button class="control-btn active" data-filter="all">All</button>
-            <button class="control-btn" data-filter="Review">Reviews</button>
-            <button class="control-btn" data-filter="Case Report">Case Reports</button>
-            <button class="control-btn" data-filter="Research">Research</button>
-            <button class="control-btn" data-filter="Clinical Trial">Clinical Trials</button>
-            <button class="control-btn" data-filter="Meta-Analysis">Meta-Analyses</button>
-        </div>
+    </div>
+
+    <div class="advanced-search" id="advanced-search" style="display:none;">
+        <details>
+            <summary>Advanced search — filter by article type</summary>
+            <div class="advanced-search-body">
+                <div class="controls-group">
+                    <span class="controls-label">Article type:</span>
+                    <button class="control-btn active" data-filter="all">All</button>
+                    <button class="control-btn" data-filter="Review">Reviews</button>
+                    <button class="control-btn" data-filter="Case Report">Case Reports</button>
+                    <button class="control-btn" data-filter="Research">Research</button>
+                    <button class="control-btn" data-filter="Clinical Trial">Clinical Trials</button>
+                    <button class="control-btn" data-filter="Meta-Analysis">Meta-Analyses</button>
+                </div>
+            </div>
+        </details>
     </div>
 
     <div id="loading" class="loading">
@@ -993,7 +1123,20 @@
         var currentPage = 0;
         var currentSort = 'date-desc';
         var currentFilter = 'all';
+        var currentTopic = 'all';
         var currentTerms = null;
+
+        var topicKeywords = {
+            diagnosis: ['diagnos', 'imaging', 'ultrasound', 'doppler', 'mri', 'magnetic resonance', 'emg', 'electromyograph', 'nerve conduction', 'scalene block', 'adson', 'roos', 'east', 'provocative', 'physical exam'],
+            surgery: ['resection', 'scalenectomy', 'first rib', 'decompression', 'surgical', 'surgery', 'operative', 'transaxillary', 'supraclavicular', 'robotic', 'neurolysis', 'thoracotomy', 'thoracoscopic'],
+            conservative: ['physical therap', 'physiotherap', 'rehabilitation', 'conservative', 'exercise', 'stretching', 'posture', 'non-operative', 'nonsurgical', 'nonoperative'],
+            medications: ['botulinum', 'botox', 'gabapentin', 'pregabalin', 'injection', 'anesthetic block', 'anticoagulant', 'heparin', 'warfarin', 'thromboly', 'pharmacolog', 'medication'],
+            venous: ['venous', 'paget-schroetter', 'paget schroetter', 'subclavian vein', 'thrombo', 'dvt', 'deep vein', 'venogra', 'axillosubclavian'],
+            neurogenic: ['neurogenic', 'brachial plexus', 'ntos', 'neuropath', 'compression neuropath', 'nerve compress'],
+            arterial: ['arterial', 'aneurysm', 'embol', 'atos', 'subclavian artery', 'ischemi'],
+            recovery: ['outcome', 'long-term', 'long term', 'follow-up', 'follow up', 'quality of life', 'return to', 'recovery', 'dash score', 'disability'],
+            comorbidities: ['ehlers-danlos', 'ehlers danlos', 'eds', 'hypermobil', 'pots', 'dysautonomia', 'postural orthostatic', 'cervical instabil', 'comorbid']
+        };
 
         var searchInput = document.getElementById('search-input');
         var searchClear = document.getElementById('search-clear');
@@ -1006,6 +1149,8 @@
         var lastUpdatedEl = document.getElementById('last-updated');
         var backToTop = document.getElementById('back-to-top');
         var controlsBar = document.getElementById('controls-bar');
+        var topicFilter = document.getElementById('topic-filter');
+        var advancedSearch = document.getElementById('advanced-search');
         var loadMoreContainer = document.getElementById('load-more-container');
         var loadMoreBtn = document.getElementById('load-more-btn');
         var loadMoreCount = document.getElementById('load-more-count');
@@ -1020,7 +1165,9 @@
                         var data = JSON.parse(xhr.responseText);
                         allArticles = data.articles || [];
                         loadingEl.style.display = 'none';
+                        topicFilter.style.display = 'block';
                         controlsBar.style.display = 'flex';
+                        advancedSearch.style.display = 'block';
 
                         statsLineEl.textContent = data.total_articles + ' articles \u00b7 ' + data.search_terms.length + ' search terms \u00b7 Updated ' + data.last_updated;
                         lastUpdatedEl.textContent = 'Article database last updated: ' + data.last_updated;
@@ -1051,6 +1198,15 @@
 
         function applyFiltersAndRender() {
             var articles = allArticles;
+
+            // Filter by topic (keyword match in title + abstract)
+            if (currentTopic !== 'all') {
+                var keywords = topicKeywords[currentTopic] || [];
+                articles = articles.filter(function(a) {
+                    var hay = ((a.title || '') + ' ' + (a.abstract || '')).toLowerCase();
+                    return keywords.some(function(kw) { return hay.indexOf(kw) !== -1; });
+                });
+            }
 
             // Filter by type
             if (currentFilter !== 'all') {
@@ -1129,7 +1285,7 @@
             }
 
             // Results count
-            if (searchInput.value.trim() || currentFilter !== 'all') {
+            if (searchInput.value.trim() || currentFilter !== 'all' || currentTopic !== 'all') {
                 resultsCountEl.textContent = displayedArticles.length + ' article' + (displayedArticles.length !== 1 ? 's' : '') + ' found';
             } else {
                 resultsCountEl.textContent = '';
@@ -1247,6 +1403,19 @@
                 document.querySelectorAll('[data-filter]').forEach(function(b) { b.classList.remove('active'); });
                 this.classList.add('active');
                 currentFilter = this.getAttribute('data-filter');
+                applyFiltersAndRender();
+            });
+        });
+
+        // --- Topic chips ---
+        document.querySelectorAll('[data-topic]').forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('[data-topic]').forEach(function(b) { b.classList.remove('active'); });
+                this.classList.add('active');
+                currentTopic = this.getAttribute('data-topic');
+                if (window.goatcounter && window.goatcounter.count) {
+                    window.goatcounter.count({ path: 'literature-topic/' + currentTopic, event: true });
+                }
                 applyFiltersAndRender();
             });
         });

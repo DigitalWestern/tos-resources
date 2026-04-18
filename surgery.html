@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surgery — TOS Resources</title>
+    <meta name="description" content="Community-reported and literature-backed guide to TOS surgery — procedures, success rates by subtype, surgeon selection, complications, predictors of success, and recovery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+
+        .fade-in { opacity: 0; transform: translateY(16px); transition: opacity 0.5s ease, transform 0.5s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        @media (prefers-reduced-motion: reduce) {
+            .fade-in { opacity: 1; transform: none; transition: none; }
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f7f4ef;
+            color: #1c1c1c;
+            font-size: 17px;
+            line-height: 1.7;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1, h2, h3, h4 { font-family: 'Fraunces', Georgia, serif; }
+
+        .header-bar {
+            width: 100%;
+            background: #1c1c1c;
+            padding: 16px 24px;
+            text-align: center;
+        }
+
+        .header-bar span {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: #f7f4ef;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .page-nav {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            width: 100%;
+            background: #1c1c1c;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            display: flex;
+            justify-content: center;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        .page-nav a {
+            display: block;
+            padding: 12px 16px;
+            color: #f7f4ef;
+            text-decoration: none;
+            font-size: 0.72rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            white-space: nowrap;
+            transition: background 0.15s, color 0.15s;
+        }
+
+        .page-nav a:hover { background: rgba(255, 255, 255, 0.08); color: #fff; }
+        .page-nav a.active { color: #fff; background: rgba(255, 255, 255, 0.05); }
+
+        .topic-hero {
+            width: 100%;
+            max-width: 760px;
+            padding: 64px 24px 24px;
+            text-align: left;
+        }
+
+        .topic-eyebrow {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #8a8279;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .topic-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+
+        .topic-lede {
+            font-size: 1.1rem;
+            color: #5a5347;
+            line-height: 1.55;
+            max-width: 640px;
+            margin-bottom: 20px;
+        }
+
+        .topic-meta {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            font-size: 0.8rem;
+            color: #8a8279;
+            letter-spacing: 0.02em;
+        }
+
+        .topic-meta .meta-item::before {
+            content: "·";
+            margin-right: 8px;
+            color: #c4b8aa;
+        }
+
+        .topic-meta .meta-item:first-child::before { content: none; }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 3px 9px;
+            border-radius: 3px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            vertical-align: middle;
+            line-height: 1.6;
+        }
+
+        .badge::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: currentColor;
+            display: inline-block;
+        }
+
+        .badge-community { background: #fdf6e3; color: #8a7a2e; border: 1px solid #ebe0bd; }
+        .badge-peer-reviewed { background: #e6f0f0; color: #2e5c5c; border: 1px solid #c2d9d9; }
+        .badge-clinical { background: #eaf0e4; color: #3d5c2e; border: 1px solid #c8d6bd; }
+        .badge-practical { background: #f5ece4; color: #5c3d2e; border: 1px solid #e2d4c3; }
+        .badge-anecdotal { background: #fdeee0; color: #a8582e; border: 1px solid #f3d4b5; }
+
+        .badge-legend {
+            width: 100%;
+            max-width: 760px;
+            padding: 0 24px 24px;
+            font-size: 0.78rem;
+            color: #8a8279;
+            line-height: 1.6;
+        }
+
+        .badge-legend details {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 0;
+        }
+
+        .badge-legend summary {
+            padding: 12px 18px;
+            font-weight: 600;
+            color: #5a5347;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-legend summary::-webkit-details-marker { display: none; }
+        .badge-legend summary::before { content: "▸"; font-size: 0.75rem; transition: transform 0.2s; }
+        .badge-legend details[open] summary::before { transform: rotate(90deg); }
+
+        .badge-legend-body { padding: 0 18px 16px; }
+
+        .badge-legend-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            padding: 8px 0;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .badge-legend-item:first-child { border-top: none; padding-top: 4px; }
+
+        .badge-legend-item > .badge { flex-shrink: 0; margin-top: 2px; }
+        .badge-legend-item > div { font-size: 0.82rem; }
+        .badge-legend-item strong { color: #1c1c1c; display: block; margin-bottom: 2px; }
+
+        .topic-toc {
+            width: 100%;
+            max-width: 760px;
+            padding: 16px 24px 24px;
+        }
+
+        .topic-toc-inner {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 20px 24px;
+        }
+
+        .topic-toc h2 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: #8a8279;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .topic-toc ol {
+            list-style: none;
+            counter-reset: toc;
+            padding: 0;
+            columns: 2;
+            column-gap: 24px;
+        }
+
+        .topic-toc li {
+            counter-increment: toc;
+            padding: 4px 0;
+            break-inside: avoid;
+        }
+
+        .topic-toc a {
+            color: #1c1c1c;
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            display: flex;
+            gap: 10px;
+        }
+
+        .topic-toc a::before {
+            content: counter(toc, decimal-leading-zero);
+            font-size: 0.7rem;
+            color: #8a8279;
+            letter-spacing: 0.08em;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            padding-top: 3px;
+        }
+
+        .topic-toc a:hover { color: #5c3d2e; }
+
+        .topic-content {
+            width: 100%;
+            max-width: 760px;
+            padding: 24px;
+        }
+
+        .topic-content section {
+            padding: 32px 0;
+            border-top: 1px solid #e8e1d5;
+        }
+
+        .topic-content section:first-child { border-top: none; padding-top: 16px; }
+
+        .topic-content h2 {
+            font-size: 1.65rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            line-height: 1.25;
+            margin-bottom: 14px;
+            letter-spacing: -0.01em;
+        }
+
+        .topic-content h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 28px 0 10px;
+        }
+
+        .topic-content h4 {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin: 20px 0 6px;
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .topic-content p {
+            font-size: 0.98rem;
+            color: #3a352e;
+            line-height: 1.72;
+            margin-bottom: 14px;
+        }
+
+        .topic-content p.section-badges {
+            margin-bottom: 18px;
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+
+        .topic-content ul, .topic-content ol {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 18px;
+        }
+
+        .topic-content ul li, .topic-content ol li {
+            font-size: 0.96rem;
+            color: #3a352e;
+            line-height: 1.7;
+            padding: 6px 0 6px 22px;
+            position: relative;
+        }
+
+        .topic-content ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8a8279;
+        }
+
+        .topic-content ol { counter-reset: topiclist; }
+        .topic-content ol li { counter-increment: topiclist; }
+        .topic-content ol li::before {
+            content: counter(topiclist) ".";
+            position: absolute;
+            left: 0;
+            color: #5c3d2e;
+            font-weight: 600;
+        }
+
+        .topic-content li strong { color: #1c1c1c; }
+
+        .topic-content blockquote {
+            margin: 16px 0;
+            padding: 14px 20px;
+            background: #ffffff;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.92rem;
+            color: #5a5347;
+            line-height: 1.65;
+            font-style: italic;
+        }
+
+        .topic-content blockquote cite {
+            display: block;
+            font-style: normal;
+            font-size: 0.75rem;
+            color: #8a8279;
+            margin-top: 6px;
+            letter-spacing: 0.02em;
+        }
+
+        .callout {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 16px 20px;
+            margin: 20px 0;
+        }
+
+        .callout-caution {
+            border-left-color: #a83528;
+            background: #fdf6f4;
+        }
+
+        .callout-tip {
+            border-left-color: #3d5c2e;
+            background: #f5f9f1;
+        }
+
+        .callout h4 {
+            margin: 0 0 6px;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            color: #5c3d2e;
+        }
+
+        .callout-caution h4 { color: #a83528; }
+        .callout-tip h4 { color: #3d5c2e; }
+
+        .callout p { font-size: 0.92rem; margin-bottom: 0; }
+        .callout p + p { margin-top: 8px; }
+
+        .data-block {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-radius: 4px;
+            padding: 4px 0;
+            margin: 16px 0 20px;
+        }
+
+        .data-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 18px;
+            padding: 12px 20px;
+            border-top: 1px solid #ede8e0;
+        }
+
+        .data-row:first-child { border-top: none; }
+
+        .data-key {
+            font-weight: 600;
+            color: #1c1c1c;
+            font-size: 0.88rem;
+        }
+
+        .data-val {
+            font-size: 0.9rem;
+            color: #5a5347;
+            line-height: 1.65;
+        }
+
+        .topic-related {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px 8px;
+        }
+
+        .topic-related h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #8a8279;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 14px;
+        }
+
+        .related-card {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding: 16px 18px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: border-color 0.2s, transform 0.15s;
+        }
+
+        .related-card:hover { border-color: #c4b8aa; transform: translateY(-1px); }
+
+        .related-card strong {
+            font-size: 0.92rem;
+            color: #1c1c1c;
+            display: block;
+        }
+
+        .related-card span {
+            font-size: 0.78rem;
+            color: #5a5347;
+            line-height: 1.5;
+        }
+
+        .topic-downloads {
+            width: 100%;
+            max-width: 760px;
+            padding: 32px 24px;
+        }
+
+        .topic-downloads h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 8px;
+        }
+
+        .topic-downloads > p {
+            font-size: 0.95rem;
+            color: #5a5347;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .dl-card {
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 3px solid #5c3d2e;
+            border-radius: 4px;
+            padding: 24px;
+            margin-bottom: 14px;
+        }
+
+        .dl-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #1c1c1c;
+            margin-bottom: 4px;
+        }
+
+        .dl-card p {
+            font-size: 0.88rem;
+            color: #5a5347;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .dl-card .dl-meta {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            font-size: 0.72rem;
+            color: #8a8279;
+            letter-spacing: 0.04em;
+            margin-bottom: 14px;
+        }
+
+        .dl-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .dl-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border-radius: 4px;
+            text-decoration: none;
+            background: #5c3d2e;
+            color: #fff;
+            border: 1.5px solid #5c3d2e;
+            transition: background 0.15s;
+        }
+
+        .dl-btn:hover { background: #4a3125; }
+
+        .dl-btn-pdf {
+            background: transparent;
+            color: #5c3d2e;
+        }
+
+        .dl-btn-pdf:hover { background: #5c3d2e; color: #fff; }
+
+        .dl-btn svg { width: 14px; height: 14px; }
+
+        .disclaimer {
+            max-width: 680px;
+            margin: 48px auto 0;
+            padding: 20px 24px;
+            background: #ffffff;
+            border: 1px solid #ddd8d0;
+            border-left: 4px solid #b09a3a;
+            border-radius: 4px;
+        }
+
+        .disclaimer h3 {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #8a7a2e;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 8px;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .disclaimer p { font-size: 0.82rem; color: #5a5347; line-height: 1.7; }
+
+        footer {
+            margin-top: auto;
+            padding: 40px 24px;
+            text-align: center;
+            color: #8a8279;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: #5c3d2e; text-decoration: none; }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #5c3d2e;
+            color: #fff;
+            border: none;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s, background 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 50;
+        }
+
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: #4a3125; }
+
+        @media (max-width: 640px) {
+            .topic-hero { padding: 40px 20px 16px; }
+            .topic-hero h1 { font-size: 2rem; }
+            .topic-lede { font-size: 1rem; }
+            .topic-toc { padding: 12px 20px 20px; }
+            .topic-toc ol { columns: 1; }
+            .topic-content { padding: 20px; }
+            .topic-content h2 { font-size: 1.35rem; }
+            .topic-content h3 { font-size: 1.05rem; }
+            .related-grid { grid-template-columns: 1fr; }
+            .data-row { grid-template-columns: 1fr; gap: 4px; padding: 10px 16px; }
+            .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .topic-downloads { padding: 24px 20px; }
+            .dl-card { padding: 20px; }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body { background: #1a1714; color: #e8e0d5; }
+            .header-bar { background: #111010; }
+            .header-bar span { color: #e8e0d5; }
+            .page-nav { background: #111010; border-top-color: rgba(255,255,255,0.04); }
+            .page-nav a { color: #e8e0d5; }
+            .page-nav a.active { color: #fff; }
+
+            .topic-hero h1 { color: #e8e0d5; }
+            .topic-lede { color: #a69d90; }
+            .topic-eyebrow, .topic-meta, .topic-meta .meta-item::before { color: #7a7168; }
+
+            .badge-community { background: #2a2516; color: #d8b955; border-color: #3a3424; }
+            .badge-peer-reviewed { background: #1a2929; color: #7db8b8; border-color: #2a3a3a; }
+            .badge-clinical { background: #1c2a1a; color: #8dbb6c; border-color: #2c3a2a; }
+            .badge-practical { background: #2a221c; color: #c49a6c; border-color: #3a322c; }
+            .badge-anecdotal { background: #2a201a; color: #e08d7d; border-color: #3a2e28; }
+
+            .badge-legend details { background: #231f1b; border-color: #3a3530; }
+            .badge-legend summary { color: #a69d90; }
+            .badge-legend-item { border-color: #2a2520; }
+            .badge-legend-item strong { color: #e8e0d5; }
+
+            .topic-toc-inner { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .topic-toc h2 { color: #a69d90; }
+            .topic-toc a { color: #e8e0d5; }
+            .topic-toc a::before { color: #7a7168; }
+            .topic-toc a:hover { color: #c49a6c; }
+
+            .topic-content section { border-top-color: #2a2520; }
+            .topic-content h2, .topic-content h3, .topic-content h4 { color: #e8e0d5; }
+            .topic-content p, .topic-content li { color: #c0b7a9; }
+            .topic-content li strong, .topic-content p strong { color: #e8e0d5; }
+            .topic-content ul li::before { color: #7a7168; }
+            .topic-content ol li::before { color: #c49a6c; }
+
+            .topic-content blockquote { background: #231f1b; border-left-color: #c49a6c; color: #a69d90; }
+            .topic-content blockquote cite { color: #7a7168; }
+
+            .callout { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .callout h4 { color: #c49a6c; }
+            .callout p { color: #c0b7a9; }
+            .callout-caution { background: #2a1f1c; border-left-color: #d36a5a; }
+            .callout-caution h4 { color: #e08d7d; }
+            .callout-tip { background: #1f2a1c; border-left-color: #8dbb6c; }
+            .callout-tip h4 { color: #8dbb6c; }
+
+            .data-block { background: #231f1b; border-color: #3a3530; }
+            .data-row { border-top-color: #2a2520; }
+            .data-key { color: #e8e0d5; }
+            .data-val { color: #a69d90; }
+
+            .topic-related h2 { color: #a69d90; }
+            .related-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .related-card strong { color: #e8e0d5; }
+            .related-card span { color: #a69d90; }
+
+            .topic-downloads h2 { color: #e8e0d5; }
+            .topic-downloads > p { color: #a69d90; }
+            .dl-card { background: #231f1b; border-color: #3a3530; border-left-color: #c49a6c; }
+            .dl-card h3 { color: #e8e0d5; }
+            .dl-card p { color: #a69d90; }
+            .dl-card .dl-meta { color: #7a7168; }
+            .dl-btn { background: #c49a6c; color: #1a1714; border-color: #c49a6c; }
+            .dl-btn:hover { background: #b08a5e; border-color: #b08a5e; }
+            .dl-btn-pdf { background: transparent; color: #c49a6c; }
+            .dl-btn-pdf:hover { background: #c49a6c; color: #1a1714; }
+
+            .disclaimer { background: #231f1b; border-color: #3a3530; border-left-color: #b09a3a; }
+            .disclaimer h3 { color: #d6b74c; }
+            .disclaimer p { color: #a69d90; }
+
+            footer { color: #7a7168; }
+            footer a { color: #c49a6c; }
+
+            .back-to-top { background: #c49a6c; color: #1a1714; }
+            .back-to-top:hover { background: #b08a5e; }
+        }
+    </style>
+</head>
+<body>
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <div class="header-bar">
+        <span>Thoracic Outlet Syndrome — Community Resources</span>
+    </div>
+
+    <nav class="page-nav">
+        <a href="index.html">Home</a>
+        <a href="diagnosis.html">Diagnosis</a>
+        <a href="conservative.html">Conservative</a>
+        <a href="community-discussion.html">Community</a>
+        <a href="medications.html">Medications</a>
+        <a href="surgery.html" class="active">Surgery</a>
+        <a href="literature.html">Literature</a>
+        <a href="outreach.html">Outreach</a>
+    </nav>
+
+    <header class="topic-hero">
+        <p class="topic-eyebrow">Topic · Surgery</p>
+        <h1>Surgery for TOS</h1>
+        <p class="topic-lede">Surgery is highly effective for vascular TOS, moderately effective for neurogenic TOS, and carries real risks. Surgeon specialization is the single biggest variable in outcome. This page synthesizes 100 community surgical narratives with published literature — procedures, success rates, failures, recovery, and the predictors that separate good outcomes from bad.</p>
+        <div class="topic-meta">
+            <span class="meta-item">Last reviewed: Apr 18, 2026</span>
+            <span class="meta-item">~20 min read</span>
+            <span class="meta-item">Sources: 382 Reddit posts + peer-reviewed literature</span>
+        </div>
+    </header>
+
+    <div class="badge-legend">
+        <details>
+            <summary>About the badges on this page</summary>
+            <div class="badge-legend-body">
+                <div class="badge-legend-item">
+                    <span class="badge badge-peer-reviewed">Peer-reviewed</span>
+                    <div><strong>Published surgical literature</strong>Outcomes, complication rates, and long-term data from peer-reviewed vascular and thoracic surgery journals.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-clinical">Clinical reference</span>
+                    <div><strong>Standard surgical practice</strong>Established technique descriptions and standards of care among TOS specialists.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-community">Community-derived</span>
+                    <div><strong>Patient-reported surgical experiences</strong>Outcome narratives, surgeon reputations, and real-world recovery timelines from r/ThoracicOutletSupport.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-practical">Practical tool</span>
+                    <div><strong>Actionable guidance</strong>Pre-surgical checklists, questions to ask, and post-op expectations drawn from the data.</div>
+                </div>
+                <div class="badge-legend-item">
+                    <span class="badge badge-anecdotal">Anecdotal / caution</span>
+                    <div><strong>Individual report or cautionary signal</strong>One person's experience — important to hear, but not generalizable without context.</div>
+                </div>
+            </div>
+        </details>
+    </div>
+
+    <nav class="topic-toc" aria-label="On this page">
+        <div class="topic-toc-inner">
+            <h2>On this page</h2>
+            <ol>
+                <li><a href="#framing">When surgery enters the picture</a></li>
+                <li><a href="#procedures">The procedures, explained</a></li>
+                <li><a href="#approaches">Surgical approaches</a></li>
+                <li><a href="#success-rates">Success rates — vTOS vs. nTOS</a></li>
+                <li><a href="#long-term">Long-term outcome trajectory</a></li>
+                <li><a href="#failures">Why surgeries fail</a></li>
+                <li><a href="#complications">Post-surgical complications</a></li>
+                <li><a href="#surgeons">Choosing a surgeon</a></li>
+                <li><a href="#predictors">Predictors of success</a></li>
+                <li><a href="#recovery">Recovery timeline</a></li>
+                <li><a href="#residual">When surgery doesn't fully resolve</a></li>
+                <li><a href="#coexisting">Co-existing conditions to screen</a></li>
+                <li><a href="#questions">Questions to ask your surgeon</a></li>
+                <li><a href="#related">Related topics</a></li>
+                <li><a href="#downloads">Download the full report</a></li>
+            </ol>
+        </div>
+    </nav>
+
+    <article class="topic-content">
+        <section id="framing">
+            <h2>When surgery enters the picture</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-clinical">Clinical reference</span></p>
+            <p>Surgery is not the starting line for TOS treatment. For neurogenic TOS, the standard-of-care sequence is: a confirmed diagnosis, a trial of TOS-specialized physical therapy (typically 3–6 months), often a diagnostic scalene block, and only then consideration of surgical decompression. For vascular TOS — especially a confirmed blood clot or active positional vascular compression — the path to surgery is faster and more direct.</p>
+
+            <p>The clearest community takeaway across 100 surgical posts: surgery works best when it addresses a confirmed, specific compression that conservative care can't resolve. Surgery chosen out of frustration with slow PT progress — without a clear structural target — is the pattern behind the most painful outcomes in the dataset.</p>
+
+            <div class="callout">
+                <h4>The surgical-decision sequence most community members describe</h4>
+                <p><strong>1.</strong> Confirmed TOS diagnosis by a specialist.<br>
+                <strong>2.</strong> 3–6 months of TOS-specialized PT (not generic PT).<br>
+                <strong>3.</strong> For nTOS: a positive diagnostic scalene block — the strongest pre-surgical predictor of success.<br>
+                <strong>4.</strong> Imaging that identifies a specific compression site: cervical rib, hypertrophied scalene, pec minor involvement, vascular narrowing.<br>
+                <strong>5.</strong> Consultation with a <em>TOS-specialist</em> surgeon — not a general vascular surgeon or general thoracic surgeon who occasionally treats TOS.</p>
+            </div>
+        </section>
+
+        <section id="procedures">
+            <h2>The procedures, explained</h2>
+            <p class="section-badges"><span class="badge badge-clinical">Clinical reference</span><span class="badge badge-community">Community-derived</span></p>
+            <p>TOS surgery is not one procedure. It is a family of decompressions, often combined. What the surgeon does depends on where the compression is, which subtype you have, and their training.</p>
+
+            <h3>First Rib Resection (FRR)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">What it is</div>
+                    <div class="data-val">Removal of the first rib to permanently widen the costoclavicular space and eliminate the bony compression point between the clavicle and the first rib.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">When it's used</div>
+                    <div class="data-val">The most commonly discussed procedure in the dataset by a wide margin. Used for vTOS, nTOS, and combined presentations — especially when imaging shows compression at the costoclavicular space.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Typical combination</div>
+                    <div class="data-val">Almost always performed with an anterior scalenectomy in the same operation. Pec minor release is added if subcoracoid compression is also present.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Intraoperative findings</div>
+                    <div class="data-val">Surgeons frequently discover pathology worse than imaging suggested: scalenes extending past the first rib into the second (Post #34), three attempts needed to cut through hypertrophied muscle (Post #18), nerves embedded into scalenes with C8/T1 tethered to the rib (Post #3), broken or deformed rib only found at surgery (Post #67).</div>
+                </div>
+            </div>
+
+            <h3>Scalenectomy</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">What it is</div>
+                    <div class="data-val">Partial or complete removal of the anterior scalene muscle, and sometimes the middle scalene. Decompresses the interscalene triangle.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Anterior scalenectomy alone</div>
+                    <div class="data-val">Some surgeons prefer this for nTOS when vascular compression isn't the primary issue. One surgeon in the dataset explicitly states nTOS cases don't always require rib removal (Posts #18, #58).</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Complete resection of both scalenes</div>
+                    <div class="data-val">More aggressive approach for severe compression. Dr. Thompson at Washington University performed complete resection of both anterior and middle scalenes for one vTOS case (Post #34).</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Rib-sparing scalenectomy</div>
+                    <div class="data-val">Published literature shows a 90.9% success rate for rib-sparing scalenectomy using QuickDASH improvement scores, with lower complication rates than combined procedures.</div>
+                </div>
+            </div>
+
+            <h3>Pec Minor Release / Resection</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">What it is</div>
+                    <div class="data-val">Release or complete removal of the pectoralis minor tendon to decompress the subcoracoid space (the second major compression zone).</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Combined with FRR + scalenectomy</div>
+                    <div class="data-val">Full decompression. Dr. Apple in Austin performed this combination (Posts #31, #39, #42) — one patient drove a manual car back to work the following Monday (exceptionally fast recovery, not typical).</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Isolated pec minor release</div>
+                    <div class="data-val">Dr. Donahue at MGH performed a standalone right pec minor resection after bilateral FRR (Post #42). Published literature shows 90% good-to-excellent outcomes for isolated pec minor syndrome at 1–3 year follow-up.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Recurrence rates</div>
+                    <div class="data-val">Published data: 15% recurrence after isolated pec minor release vs. 5% when combined with supraclavicular decompression.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-caution">
+                <h4>Pec minor release isn't risk-free</h4>
+                <p>One user reports worsened shoulder instability after pec minor release, noting it's a major stabilizing muscle (Post #20). Pre-surgical shoulder imaging matters — a labral tear or rotator cuff issue can worsen when the pec minor is released and should be identified first.</p>
+            </div>
+
+            <h3>Brachial Plexus Neurolysis</h3>
+            <p>Surgical freeing of the brachial plexus nerves from surrounding scar tissue and adhesions. Typically performed as part of a full decompression (Post #31). Particularly relevant when nerves have become embedded in surrounding tissue or tethered to anatomy — as in Post #3, where C8 and T1 were tethered to the first rib.</p>
+        </section>
+
+        <section id="approaches">
+            <h2>Surgical approaches</h2>
+            <p class="section-badges"><span class="badge badge-clinical">Clinical reference</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Three approaches appear in the community data. The choice depends on the surgeon's training, what needs to be accessed, and the TOS subtype.</p>
+
+            <h3>Transaxillary (through the armpit)</h3>
+            <p>Incision through the armpit. The most traditional approach. The rib is accessed from below. Described in Posts #31, #67, #77. Works well for first rib access but limits simultaneous access to the scalenes and brachial plexus.</p>
+
+            <h3>Supraclavicular (above the collarbone)</h3>
+            <p>Incision above the collarbone. Allows simultaneous access to the scalenes, brachial plexus, and first rib. Often preferred for nTOS cases where nerve work is central. Described in Post #3.</p>
+
+            <h3>Robotic</h3>
+            <p>A newer, less invasive technique using robotic instrumentation. One user describes robotic first rib removal with scalenectomy (Post #13). Outcomes data is still accumulating — robotic surgery is promising but should only be done by high-volume TOS surgeons specifically trained in the robotic approach.</p>
+
+            <div class="callout">
+                <h4>What surgeons in the data actually do</h4>
+                <p>Most named TOS specialists in the community (Thompson, Donahue, Freischlag, Johansen) use the <strong>supraclavicular approach for nTOS</strong> and select the approach for vTOS based on the specific anatomy and whether venous reconstruction is needed. Ask your surgeon which approach they will use and why.</p>
+            </div>
+        </section>
+
+        <section id="success-rates">
+            <h2>Success rates — vTOS vs. nTOS</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>The single most important distinction for setting expectations: vascular and neurogenic TOS have very different surgical response rates. Conflating them is a common source of over- or under-optimism.</p>
+
+            <h3>Vascular TOS (vTOS)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Published success rate</div>
+                    <div class="data-val"><strong>90–95%</strong>. When the compression is a confirmed clot or a visibly compressed subclavian vein or artery on imaging, surgery addresses a clear structural target.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Community alignment</div>
+                    <div class="data-val">Community reports align closely. vTOS surgical narratives in the data are overwhelmingly positive once the correct procedure is done by a specialist.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Key caveat</div>
+                    <div class="data-val">Long-term patency of the vein or artery depends on timing (earlier intervention = better) and on whether anticoagulation and activity modifications are followed post-op.</div>
+                </div>
+            </div>
+
+            <h3>Neurogenic TOS (nTOS)</h3>
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Published success rate</div>
+                    <div class="data-val"><strong>60–82%</strong> depending on timeframe and success criteria — a substantially wider range than vTOS, with meaningful decline over time.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Why the range is wide</div>
+                    <div class="data-val">nTOS is diagnosed clinically, not definitively by imaging. Success depends heavily on accurate patient selection, positive scalene block, and whether concurrent compression sites were addressed.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Community alignment</div>
+                    <div class="data-val">The Reddit community reports a mix of outstanding outcomes and devastating ones. Forums skew negative because people with full recoveries often leave the community.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="long-term">
+            <h2>Long-term outcome trajectory</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>Published data reveals a concerning pattern of outcome deterioration over time — information rarely emphasized in surgical consultations.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">3 months post-op</div>
+                    <div class="data-val">88–90% reporting improvement.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">1–2 years</div>
+                    <div class="data-val">73–76% maintaining good outcomes.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">3–4 years</div>
+                    <div class="data-val">69–71% maintaining good outcomes.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">5+ years</div>
+                    <div class="data-val">~65–70% reporting sustained improvement. 54% complete relief.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">10–15 years (revision cases)</div>
+                    <div class="data-val">Success drops to ~41%.</div>
+                </div>
+            </div>
+
+            <p style="font-size: 0.82rem; color: #8a8279;">Sources: <em>Journal of Vascular Surgery</em>; PMC5871990; Royal College of Surgeons review of 17 years experience.</p>
+
+            <p>This doesn't mean surgery is a bad choice — it means post-operative maintenance matters. Most of the decline appears driven by scar tissue reformation, unaddressed biomechanical contributors, and return to pre-surgical postural or activity patterns. The community members with sustained long-term outcomes consistently describe ongoing PT, permanent ergonomic adaptations, and strict activity restrictions ("Know the NO's") years after surgery.</p>
+        </section>
+
+        <section id="failures">
+            <h2>Why surgeries fail</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>Published literature documents a 15–20% recurrence rate after FRR or scalenectomy. The community data corroborates this. Here are the recurring patterns behind the failures in the dataset.</p>
+
+            <h3>Incomplete decompression</h3>
+            <blockquote>"Just make sure everything gets taken out if you do surgery." Rib cartilage left in place causes immense pain.<cite>Post #42</cite></blockquote>
+            <p>Residual rib cartilage, scar tissue reformation, or failure to address all compression sites. FRR without pec minor release when pec minor is also involved is a classic incomplete-decompression pattern.</p>
+
+            <h3>Wrong diagnosis</h3>
+            <p>Post #20 describes a patient told they don't have TOS after failed diagnostic injections. Shoulder instability, cervical disc disease, cervical instability, or dorsal scapular nerve entrapment can all mimic TOS. A negative scalene block before surgery should trigger rediagnostic work, not a push to operate anyway.</p>
+
+            <h3>Scar tissue and adhesion formation</h3>
+            <p>Multiple users report initial improvement followed by gradual regression as scar tissue reforms around the brachial plexus. This is the dominant pattern behind the long-term outcome decline. Post-operative nerve glides and movement are community-credited with keeping adhesions loose.</p>
+
+            <h3>Unaddressed cervical rib</h3>
+            <blockquote>"My first FRRS went fantastic at first, the mess came later purely due to my cervical rib."<cite>Post #95</cite></blockquote>
+            <p>Initial success undermined by a cervical rib that wasn't addressed. Not all TOS cases involve cervical ribs, but when present, they must be part of the surgical plan.</p>
+
+            <h3>Biomechanical destabilization</h3>
+            <blockquote>"This surgery crippled me and I am unable to move around without constant pain."<cite>Post #72</cite></blockquote>
+            <p>One of the most negative outcomes in the dataset. Raises the under-discussed concern that ribs are critical to thoracic biomechanics and that removing one can have structural consequences, particularly in patients with hypermobility or connective-tissue disorders.</p>
+
+            <h3>Surgeon inexperience</h3>
+            <p>Post #74 describes a frightening post-surgical experience. The community is near-unanimous on this: only use surgeons who specialize in TOS (Posts #42, #10). A general vascular surgeon or thoracic surgeon who does TOS "sometimes" is not the same as a high-volume TOS specialist.</p>
+        </section>
+
+        <section id="complications">
+            <h2>Post-surgical complications</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>Published complication rates from large database reviews provide a realistic baseline. Most are uncommon; a few are common enough to warrant explicit pre-op conversation.</p>
+
+            <h3>Common (or expected)</h3>
+            <ul>
+                <li><strong>Temporary numbness and paresthesia</strong> — nerve manipulation during surgery produces transient neurological symptoms that typically resolve over weeks to months.</li>
+                <li><strong>Shoulder stiffness and restricted ROM</strong> — common in the first 2–3 months; responds to progressive PT.</li>
+                <li><strong>Scar tissue</strong> — accumulates over time; the largest contributor to long-term outcome decline.</li>
+            </ul>
+
+            <h3>Less common but significant</h3>
+            <ul>
+                <li><strong>Pneumothorax</strong> — collapsed lung during surgery; usually managed intraoperatively.</li>
+                <li><strong>Phrenic nerve injury</strong> — temporary or permanent diaphragm weakness. Published rate: 3.7% in revision cases.</li>
+                <li><strong>Brachial plexus injury</strong> — temporary in 0.7% of revisions; permanent injury is rare but devastating.</li>
+                <li><strong>Persistent shoulder pain</strong> — Post #36: <em>"After rib resection I have [shoulder pain] 24/7 and it's horrible. Didn't have any of that pain prior to surgery."</em></li>
+                <li><strong>Long thoracic nerve injury / scapular winging</strong> — see <a href="community-discussion.html#scapular">community discussion</a> for the post-op scapular winging patterns.</li>
+            </ul>
+
+            <p style="font-size: 0.82rem; color: #8a8279;">Sources: PMC6759959; PMC5295481; Annals of Vascular Surgery contemporary practices review; ScienceDirect Finland national registry 2025.</p>
+        </section>
+
+        <section id="surgeons">
+            <h2>Choosing a surgeon</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-practical">Practical tool</span></p>
+            <p>This is the single most emphasized variable across the 100 surgical posts. Surgeon selection changes outcomes more than any other decision you will make about this surgery.</p>
+
+            <h3>Named surgeons with strong community reputation</h3>
+            <p>The following surgeons appear in the dataset with overwhelmingly positive community sentiment. This list is not exhaustive — for a fuller and more current list, <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener">tosoutreach.com/find-a-surgeon</a> maintains a surgeon directory with geographic filters.</p>
+            <ul>
+                <li><strong>Dr. Robert Thompson</strong> — Washington University. Complete resection specialist. Performed aggressive anterior + middle scalenectomy on a severe vTOS case (Post #34).</li>
+                <li><strong>Dr. Dean Donahue</strong> — MGH. Described by one patient as "phenomenal" and "incredibly thorough." Performed bilateral FRR plus standalone pec minor resection across three surgeries (Post #42).</li>
+                <li><strong>Dr. Julie Freischlag</strong> — established vascular surgeon with published outcomes data.</li>
+                <li><strong>Dr. Kay Johansen</strong> — Seattle. Performed two surgeries on the same recurring-TOS patient: <em>"Saved my life twice"</em> (Post #42).</li>
+                <li><strong>Dr. Greg Pearl</strong> — Dallas. Frequently mentioned as a TOS specialist in community threads.</li>
+                <li><strong>Dr. Apple</strong> — Austin. Performed combined FRR + scalenectomy + pec minor release (Posts #31, #39, #42).</li>
+            </ul>
+
+            <h3>What community members screen for</h3>
+            <ul>
+                <li><strong>TOS-specific volume.</strong> Ask how many TOS surgeries they do per year and what proportion of their practice is TOS.</li>
+                <li><strong>Subtype experience.</strong> vTOS, nTOS, and aTOS have different surgical considerations. A surgeon who primarily does vTOS may not be your best choice for nTOS.</li>
+                <li><strong>Published outcomes.</strong> The named specialists above have peer-reviewed outcomes data.</li>
+                <li><strong>Team approach.</strong> The best TOS centers have dedicated TOS PTs, pain management, and vascular imaging.</li>
+                <li><strong>Willingness to discuss failures.</strong> A surgeon who can't or won't discuss their failure rate is a warning sign.</li>
+            </ul>
+
+            <div class="callout callout-caution">
+                <h4>A community-flagged caution about TOS forums and groups</h4>
+                <p>Post #10 warns that some TOS Facebook groups censor negative surgical experiences and may have surgeon-affiliated staff as admins. Post #42 explicitly solicits both good and bad experiences. The Reddit community (r/ThoracicOutletSupport) generally allows more balanced reporting than some of the Facebook groups.</p>
+            </div>
+        </section>
+
+        <section id="predictors">
+            <h2>Predictors of success</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Both published data and community experience point to a consistent set of factors that predict whether surgery will help you.</p>
+
+            <h3>Positive predictors</h3>
+            <ul>
+                <li><strong>Positive diagnostic scalene block.</strong> Published data: 63% complete improvement and 35% partial improvement when patients respond to a scalene block before surgery. The block serves as a "surrogate for surgical expectations."</li>
+                <li><strong>Classic nTOS symptoms.</strong> Post #40: <em>"People who have the best response to surgery are those that have the classic symptoms"</em> — numbness, tingling, weakness, pain in hands/fingers.</li>
+                <li><strong>Confirmed vascular pathology.</strong> Blood clots, positional vascular compression confirmed on imaging, or visible discoloration all predict a strong surgical response.</li>
+                <li><strong>Cervical rib presence.</strong> Post #88 observes that nTOS surgery appears much more beneficial for people with cervical ribs. Published data supports this.</li>
+                <li><strong>Shorter symptom duration.</strong> Earlier intervention correlates with better outcomes across multiple published series.</li>
+            </ul>
+
+            <h3>Negative predictors</h3>
+            <ul>
+                <li><strong>Negative scalene block.</strong> Post #20: no reaction to diagnostic injections, later told they don't have TOS. Non-response predicts poor surgical outcome.</li>
+                <li><strong>Major depression.</strong> Published data identifies depression as a predictor of poor surgical outcome — not because the surgery is different but because chronic pain recovery depends on psychological resources.</li>
+                <li><strong>High pre-operative disability scores.</strong> DASH score > 50.5 or BPI > 73.5 predict worse outcomes.</li>
+                <li><strong>Atypical symptom presentation.</strong> Non-classic presentations have lower surgical success rates.</li>
+                <li><strong>Unaddressed co-existing pathology.</strong> Cervical disc disease, labral tears, or hypermobility/EDS can confound outcomes — see <a href="#coexisting">the next section</a>.</li>
+            </ul>
+        </section>
+
+        <section id="recovery">
+            <h2>Recovery timeline</h2>
+            <p class="section-badges"><span class="badge badge-peer-reviewed">Peer-reviewed</span><span class="badge badge-community">Community-derived</span></p>
+            <p>Synthesized from community reports and published rehabilitation data. Individual recovery varies widely — these are realistic expectations, not guarantees.</p>
+
+            <div class="data-block">
+                <div class="data-row">
+                    <div class="data-key">Week 1–2</div>
+                    <div class="data-val">Hospital discharge, pain management, limited arm movement. Sleep disrupted by incision pain. Most community members take 2 weeks fully off work.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Weeks 2–6</div>
+                    <div class="data-val">Gentle ROM exercises begin under PT guidance. Most daily activities resume. Driving restrictions lift around week 2–3 for most surgeons.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Months 2–4</div>
+                    <div class="data-val">Progressive PT. Most community members describe this as the hardest period — nerve pain can briefly worsen as the plexus decompresses and adhesions shift.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Month 4+</div>
+                    <div class="data-val">Published: nTOS patients require <strong>median 4 months before symptom-free</strong>. 85% return to athletics at an average of 4.6 months.</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-key">Year 1+</div>
+                    <div class="data-val">Full strength return typically by 6–12 months with consistent PT. Activity restrictions — even long-term — remain a feature of sustained recovery.</div>
+                </div>
+            </div>
+
+            <div class="callout callout-tip">
+                <h4>TOS-specialized post-op PT is non-negotiable</h4>
+                <p>Post #73: <em>"Finding a TOS-expert PT is the most important variable."</em> Post #94: <em>"PT exasperated and made worse issues after surgery"</em> when not specialized. Published standard: 2 months PT minimum; nTOS patients require median 4 months before symptom-free. Ask your surgeon for their PT referral <strong>before</strong> surgery and confirm the PT has handled TOS post-ops specifically.</p>
+            </div>
+        </section>
+
+        <section id="residual">
+            <h2>When surgery doesn't fully resolve symptoms</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>One of the most practically useful threads in the data is what community members with partial recoveries did next. Surgery rarely being a clean "before and after" is part of why this page exists — many people improve significantly and still have residual work to do.</p>
+
+            <h3>Revision surgery</h3>
+            <p>Post #55 describes revision FRR + scalenectomy at 18 months post initial surgery, with significant improvement after the second procedure. Dr. Kay Johansen performed two surgeries for a recurring-TOS patient — described as "life-saving both times" (Post #42). Published data: revision surgery has 84% success at 3 months but declines to 41% at 10–15 years. Temporary plexus injury occurs in 0.7% of revisions; phrenic palsy in 3.7%.</p>
+
+            <h3>Post-surgical physical therapy</h3>
+            <p>See the recovery section. TOS-specialized PT is the most commonly credited intervention for residual symptoms. Post #57 describes continuing scalene and scapular rehab post-operatively for months.</p>
+
+            <h3>Medications for residual symptoms</h3>
+            <p>Post #88 describes halving gabapentin dose 11 months post-surgery — still needed but less. Post #100 uses pregabalin for ongoing partial-recovery management. Muscle relaxants for post-surgical spasm and new scar-tissue tension patterns are common. See the <a href="medications.html">medications page</a> for the full picture.</p>
+
+            <h3>Continued exercise-based work</h3>
+            <p>Even post-surgery, the underlying muscular imbalances that contributed to TOS often persist. Serratus and scapular work, pec minor release, and nerve glides remain relevant — the <a href="conservative.html">conservative treatment page</a> covers the mechanics in detail.</p>
+
+            <h3>Permanent lifestyle modifications</h3>
+            <blockquote>"Know the NO's. Stick to them always or regret."<cite>Post #42 (Dr. Johansen's patient)</cite></blockquote>
+            <p>Strict activity restrictions emerge as a common feature of sustained long-term recovery. Workstation modifications (split keyboards, vertical mice, dictation software, arm rests) are reported as permanent by many post-surgical community members (Posts #61, #91). Mental health support is specifically recommended for the anxiety and depression that can arise from chronic pain cycles (Post #82).</p>
+        </section>
+
+        <section id="coexisting">
+            <h2>Co-existing conditions to screen for</h2>
+            <p class="section-badges"><span class="badge badge-community">Community-derived</span><span class="badge badge-peer-reviewed">Peer-reviewed</span></p>
+            <p>Several conditions either mimic TOS or co-exist with it and substantially change surgical outcomes. Pre-surgical workup should explicitly address these.</p>
+
+            <ul>
+                <li><strong>Cervical disc disease.</strong> Posts #20, #35: multiple users have overlapping cervical compression. Cervical MRI is repeatedly emphasized before TOS surgery.</li>
+                <li><strong>Shoulder instability / labral tears.</strong> Can mimic TOS or co-exist. Must be identified before pec minor release, which can worsen pre-existing instability (Post #20).</li>
+                <li><strong>Dorsal scapular nerve entrapment.</strong> Post #98, plus published data from China: common alongside TOS. Surgeons need to address DSN entrapment to clear all pain. Duloxetine specifically helped one 12+ year sufferer.</li>
+                <li><strong>Ehlers-Danlos Syndrome / hypermobility.</strong> Posts #71, #72: connective tissue disorders complicate TOS surgery outcomes. Some surgeons note that PT alone won't be sufficient, but the hypermobile population also appears over-represented in negative surgical outcomes — see <a href="community-discussion.html#eds">the EDS discussion</a>.</li>
+                <li><strong>Cervical instability.</strong> See <a href="community-discussion.html#cervical">the cervical-instability section</a> — relevant to surgical risk assessment and to Botox safety.</li>
+                <li><strong>POTS / dysautonomia.</strong> Often co-exists with nTOS, particularly in hypermobile patients. See <a href="community-discussion.html#pots">the POTS section</a>.</li>
+            </ul>
+        </section>
+
+        <section id="questions">
+            <h2>Questions to ask your surgeon</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <ul>
+                <li>How many TOS surgeries do you do per year? What proportion of your practice is TOS?</li>
+                <li>Do you have published outcomes data? What is your complication rate?</li>
+                <li>Based on my imaging and clinical findings, what specific compression site(s) are we addressing? What procedure(s) do you propose?</li>
+                <li>Which surgical approach (transaxillary, supraclavicular, robotic) are you using and why?</li>
+                <li>Have I had a diagnostic scalene block? If not, should I have one before surgery?</li>
+                <li>Have we ruled out cervical disc disease, shoulder instability, and other mimics with appropriate imaging?</li>
+                <li>For nTOS: what is your realistic expected success rate for a patient with my presentation?</li>
+                <li>Who will be my post-operative PT, and do they have specific experience with TOS post-ops?</li>
+                <li>What activity restrictions will I have — for the first 6 weeks, 6 months, and long-term?</li>
+                <li>What is your revision rate, and what factors predict the need for revision surgery?</li>
+                <li><strong>For hypermobile or EDS patients:</strong> How does my connective tissue status change your approach, and what does success look like in this population?</li>
+            </ul>
+        </section>
+
+        <section id="related">
+            <h2>Related topics</h2>
+            <p class="section-badges"><span class="badge badge-practical">Practical tool</span></p>
+            <div class="related-grid">
+                <a href="diagnosis.html" class="related-card">
+                    <strong>Diagnosis →</strong>
+                    <span>The diagnostic work that precedes surgery — imaging, physical exam, ruling out mimics, diagnostic blocks.</span>
+                </a>
+                <a href="conservative.html" class="related-card">
+                    <strong>Conservative Treatment →</strong>
+                    <span>The PT work that comes first — and that remains relevant before and after surgery.</span>
+                </a>
+                <a href="medications.html" class="related-card">
+                    <strong>Medications &amp; Injections →</strong>
+                    <span>Pre- and post-surgical medication management — nerve pain, blocks, anticoagulants for vTOS.</span>
+                </a>
+                <a href="community-discussion.html" class="related-card">
+                    <strong>Community Discussion →</strong>
+                    <span>Cervical instability, EDS, POTS, scapular winging — patterns that affect surgical decisions and outcomes.</span>
+                </a>
+            </div>
+        </section>
+    </article>
+
+    <section class="topic-downloads" id="downloads" aria-labelledby="downloads-heading">
+        <h2 id="downloads-heading">Take it with you</h2>
+        <p>The full Surgical Outcomes Report expands every section above with additional community case narratives, references, and the named-surgeon directory. The Diagnostic Checklist is useful pre-surgical reading to make sure the diagnostic workup is complete.</p>
+        <div class="dl-card">
+            <h3>TOS Surgical Outcomes Report</h3>
+            <p>Community-reported surgical data from r/ThoracicOutletSupport cross-referenced with published clinical literature — procedures, surgeons, outcomes, failures, and post-op recovery.</p>
+            <div class="dl-meta">
+                <span>Updated Apr 2026</span>
+                <span>~22 min read</span>
+                <span>Sources: 100 community posts + peer-reviewed literature</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Surgical_Outcomes_Report.docx" class="dl-btn" data-goatcounter-click="download/TOS_Surgical_Outcomes_Report.docx" data-goatcounter-title="Download: TOS_Surgical_Outcomes_Report.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Surgical_Outcomes_Report.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Surgical_Outcomes_Report.pdf" data-goatcounter-title="Download: TOS_Surgical_Outcomes_Report.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+
+        <div class="dl-card">
+            <h3>TOS Diagnostic Checklist</h3>
+            <p>A step-by-step diagnostic guide — useful pre-surgical reading to confirm the workup is complete before committing to surgery.</p>
+            <div class="dl-meta">
+                <span>Updated Apr 2026</span>
+                <span>~14 min read</span>
+                <span>Sources: 100 posts + literature + expanded dataset</span>
+            </div>
+            <div class="dl-buttons">
+                <a href="files/TOS_Diagnostic_Checklist.docx" class="dl-btn" data-goatcounter-click="download/TOS_Diagnostic_Checklist.docx" data-goatcounter-title="Download: TOS_Diagnostic_Checklist.docx">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Word (.docx)
+                </a>
+                <a href="files/TOS_Diagnostic_Checklist.pdf" class="dl-btn dl-btn-pdf" data-goatcounter-click="download/TOS_Diagnostic_Checklist.pdf" data-goatcounter-title="Download: TOS_Diagnostic_Checklist.pdf">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="disclaimer">
+        <h3>Medical disclaimer</h3>
+        <p>This page is for informational purposes only and is not medical advice. Community outcomes are individual cases and may not generalize. Surgical decisions must be made in consultation with a qualified TOS specialist after full diagnostic workup. Surgeon names are included based on community sentiment in the dataset and do not constitute an endorsement.</p>
+    </div>
+
+    <footer>
+        <p>TOS Resources &middot; <a href="index.html">Home</a> &middot; <a href="methodology.html">Methodology</a> &middot; <a href="https://www.tosoutreach.com" target="_blank" rel="noopener">tosoutreach.com</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href$=".pdf"]').forEach(function(link) {
+            link.setAttribute('target', '_blank');
+            link.setAttribute('rel', 'noopener');
+            link.addEventListener('click', function(e) {
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    e.preventDefault();
+                    var blank = window.open('about:blank', '_blank');
+                    if (blank) { blank.location.href = link.href; }
+                }
+            });
+        });
+
+        var btt = document.getElementById('back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 400) { btt.classList.add('visible'); }
+            else { btt.classList.remove('visible'); }
+        });
+        btt.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        var fadeEls = document.querySelectorAll('.topic-hero, .badge-legend, .topic-toc, .topic-content section, .topic-related, .topic-downloads, .disclaimer');
+        fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
+        if ('IntersectionObserver' in window) {
+            var fadeObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        fadeObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.08 });
+            fadeEls.forEach(function(el) { fadeObserver.observe(el); });
+        } else {
+            fadeEls.forEach(function(el) { el.classList.add('visible'); });
+        }
+    </script>
+
+    <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

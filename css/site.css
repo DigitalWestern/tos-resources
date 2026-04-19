@@ -491,7 +491,7 @@ body.drawer-open .drawer {
     display: block;
     padding: 18px 20px 8px;
     font-family: var(--font-sans);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -682,7 +682,7 @@ body.filter-open .filter-sheet-backdrop {
         border-radius: 10px;
         background: var(--color-accent);
         color: #fff;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         font-weight: 700;
         margin-left: 4px;
     }
@@ -867,5 +867,19 @@ body.filter-open .filter-sheet-backdrop {
     .entry-collapse > summary::after,
     .section-collapse > summary::after {
         transition: none;
+    }
+}
+
+/* ============================================================
+   Phase 5 — Typography + polish pass on mobile
+
+   - Badge font floor raised to 0.8rem on mobile (inline pages
+     define 0.68rem; this override wins at equal specificity
+     because site.css loads after the inline <style> block)
+   ============================================================ */
+
+@media (max-width: 899px) {
+    .badge {
+        font-size: 0.8rem;
     }
 }

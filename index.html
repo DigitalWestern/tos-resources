@@ -1035,7 +1035,7 @@
         .start-here {
             max-width: 860px;
             width: 100%;
-            padding: 48px 24px 24px;
+            padding: 24px 24px 24px;
             text-align: left;
         }
 
@@ -1620,6 +1620,176 @@
                 text-decoration: none !important;
             }
         }
+
+        /* ─── Phase: Homepage overhaul ─────────────────────────── */
+
+        /* Start Here — keep 2-column on mobile, hide description */
+        @media (max-width: 640px) {
+            .start-here-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            .start-here-card {
+                padding: 16px 12px;
+            }
+            .start-here-card p {
+                display: none;
+            }
+        }
+
+        /* Download list */
+        .downloads-section {
+            max-width: 860px;
+            width: 100%;
+            padding: 0 24px 32px;
+        }
+        .downloads-section > h2 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--color-text);
+            margin-bottom: 20px;
+            margin-top: 48px;
+            position: relative;
+        }
+        .downloads-section > h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 1px;
+            background: var(--color-border);
+            margin-top: 10px;
+        }
+        .download-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            border-top: 1px solid var(--color-border);
+        }
+        .download-list-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 16px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        .download-list-item-body {
+            flex: 1;
+            min-width: 0;
+        }
+        .download-list-item-title {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--color-text);
+            display: block;
+            margin-bottom: 3px;
+        }
+        .download-list-item-desc {
+            font-size: 0.82rem;
+            color: var(--color-text-subtle);
+            line-height: 1.55;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .download-list-item-links {
+            font-size: 0.78rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-wrap: wrap;
+        }
+        .download-list-item-links a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 3px 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 2px;
+            transition: background 0.15s, border-color 0.15s;
+            min-height: 30px;
+            display: inline-flex;
+            align-items: center;
+        }
+        .download-list-item-links a:hover {
+            background: var(--color-surface-alt);
+            border-color: var(--color-border-strong);
+            text-decoration: none;
+        }
+        .download-list-item-links .sep {
+            color: var(--color-text-subtle);
+            font-size: 0.7rem;
+            user-select: none;
+        }
+        .download-list-preview > summary {
+            list-style: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: var(--color-accent);
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 6px;
+        }
+        .download-list-preview > summary::-webkit-details-marker { display: none; }
+        .download-list-preview > summary::after {
+            content: "▸";
+            font-size: 0.65rem;
+            transition: transform 0.2s;
+        }
+        .download-list-preview[open] > summary::after { transform: rotate(90deg); }
+        .download-list-preview > ul {
+            list-style: none;
+            padding: 0 0 6px 12px;
+            margin: 0;
+            border-left: 2px solid var(--color-border);
+        }
+        .download-list-preview > ul li {
+            font-size: 0.75rem;
+            color: var(--color-text-muted);
+            padding: 2px 0 2px 10px;
+            position: relative;
+            line-height: 1.5;
+        }
+        .download-list-preview > ul li::before {
+            content: "–";
+            position: absolute;
+            left: 0;
+            color: var(--color-text-subtle);
+        }
+        @media (max-width: 640px) {
+            .downloads-section { padding: 0 20px 24px; }
+            .download-list-item { padding: 14px 0; }
+        }
+
+        /* Site origin / About */
+        .site-origin {
+            max-width: 720px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 24px 28px;
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
+            border-radius: 2px;
+        }
+        .site-origin p {
+            font-size: 0.92rem;
+            color: var(--color-text-muted);
+            line-height: 1.75;
+            margin: 0;
+        }
+        .site-origin a {
+            color: var(--color-accent);
+            font-weight: 600;
+        }
+        @media (max-width: 640px) {
+            .site-origin {
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 20px;
+            }
+        }
     </style>
     <link rel="stylesheet" href="css/site.css">
 </head>
@@ -1674,17 +1844,9 @@
 
     <div class="hero">
         <h1>TOS Resources</h1>
-        <p>Community-driven resources for understanding, diagnosing, and managing Thoracic Outlet Syndrome — compiled from insights gathered across the top Reddit posts and discussions.</p>
-        <button class="share-btn" id="share-btn">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-            Share this page
-        </button>
+        <p>Free guides for understanding, diagnosing, and treating Thoracic Outlet Syndrome — built from 382 community posts and 669 peer-reviewed articles.</p>
     </div>
 
-    <details class="explainer" data-mobile-only open>
-        <summary>What is Thoracic Outlet Syndrome?</summary>
-        <p>TOS is a group of conditions where nerves or blood vessels between the collarbone and first rib get compressed — causing pain, numbness, tingling, or weakness in the neck, shoulder, arm, or hand. There are three main types: <strong>neurogenic</strong> (nerve compression, the most common), <strong>venous</strong>, and <strong>arterial</strong>. It's often underdiagnosed and can take years to pin down.</p>
-    </details>
 
     <section class="start-here" id="start-here" aria-labelledby="start-here-heading">
         <h2 id="start-here-heading">Start Here</h2>
@@ -1727,6 +1889,151 @@
         <div id="search-results" class="search-results"></div>
     </div>
 
+    <section class="downloads-section" id="downloads">
+        <h2>Guides &amp; Resources</h2>
+
+        <div class="download-all-section" style="margin-bottom: 28px; text-align: center;">
+            <button class="download-all-btn" id="download-all-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download All Resources (.zip)
+            </button>
+            <p class="download-all-note">All 12 files bundled &mdash; reports, trackers, and expanded findings</p>
+        </div>
+
+        <ul class="download-list">
+
+            <li class="download-list-item">
+                <div class="download-list-item-body">
+                    <span class="download-list-item-title">Community Research Report</span>
+                    <span class="download-list-item-desc">What 382 Reddit posts reveal about treatment &mdash; exercises, PT protocols, Botox, ergonomics, and named surgeons.</span>
+                    <details class="download-list-preview">
+                        <summary>See what&#39;s inside</summary>
+                        <ul>
+                            <li>Serratus Anterior Strengthening</li>
+                            <li>Scalene Strengthening (Not Just Stretching)</li>
+                            <li>Pec Minor Stretching &amp; Manual Release</li>
+                            <li>Scalene Botox &amp; Lidocaine Injections</li>
+                            <li>Surgeons Named Positively</li>
+                            <li>Lifestyle &amp; Ergonomic Adjustments</li>
+                        </ul>
+                    </details>
+                    <div class="download-list-item-links">
+                        <a href="files/TOS_Community_Research_Report.docx" download data-goatcounter-click="download/TOS_Community_Research_Report.docx">.docx</a>
+                        <span class="sep">&middot;</span>
+                        <a href="files/TOS_Community_Research_Report.pdf" target="_blank" rel="noopener" class="download-btn-pdf" data-goatcounter-click="download/TOS_Community_Research_Report.pdf">.pdf</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="download-list-item">
+                <div class="download-list-item-body">
+                    <span class="download-list-item-title">Surgical Outcomes Report</span>
+                    <span class="download-list-item-desc">Procedures, recovery timelines, named surgeons, complication rates, and predictors of surgical success.</span>
+                    <details class="download-list-preview">
+                        <summary>See what&#39;s inside</summary>
+                        <ul>
+                            <li>First Rib Resection (FRR)</li>
+                            <li>Scalenectomy</li>
+                            <li>Long-Term Outcome Trajectory</li>
+                            <li>Surgical Failures &amp; Complications</li>
+                            <li>Named Surgeons &amp; Community Reputation</li>
+                            <li>Predictors of Surgical Success</li>
+                        </ul>
+                    </details>
+                    <div class="download-list-item-links">
+                        <a href="files/TOS_Surgical_Outcomes_Report.docx" download data-goatcounter-click="download/TOS_Surgical_Outcomes_Report.docx">.docx</a>
+                        <span class="sep">&middot;</span>
+                        <a href="files/TOS_Surgical_Outcomes_Report.pdf" target="_blank" rel="noopener" class="download-btn-pdf" data-goatcounter-click="download/TOS_Surgical_Outcomes_Report.pdf">.pdf</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="download-list-item">
+                <div class="download-list-item-body">
+                    <span class="download-list-item-title">Diagnostic Checklist</span>
+                    <span class="download-list-item-desc">A 6-phase guide to organizing symptoms, navigating specialist visits, and understanding which tests matter.</span>
+                    <details class="download-list-preview">
+                        <summary>See what&#39;s inside</summary>
+                        <ul>
+                            <li>Phase 1: Rule Out the Mimics</li>
+                            <li>Phase 2: Clinical Examination &amp; Provocative Tests</li>
+                            <li>Phase 3: Imaging Workup</li>
+                            <li>Phase 5: Diagnostic Injections</li>
+                            <li>Phase 6: TOS Subtype Determination</li>
+                            <li>Appointment Preparation</li>
+                        </ul>
+                    </details>
+                    <div class="download-list-item-links">
+                        <a href="files/TOS_Diagnostic_Checklist.docx" download data-goatcounter-click="download/TOS_Diagnostic_Checklist.docx">.docx</a>
+                        <span class="sep">&middot;</span>
+                        <a href="files/TOS_Diagnostic_Checklist.pdf" target="_blank" rel="noopener" class="download-btn-pdf" data-goatcounter-click="download/TOS_Diagnostic_Checklist.pdf">.pdf</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="download-list-item">
+                <div class="download-list-item-body">
+                    <span class="download-list-item-title">Medications, Supplements &amp; Vitamins Guide</span>
+                    <span class="download-list-item-desc">Neuropathic pain meds, Botox practical guidance, blood thinners for venous TOS, nerve-support supplements, and POTS considerations.</span>
+                    <details class="download-list-preview">
+                        <summary>See what&#39;s inside</summary>
+                        <ul>
+                            <li>Gabapentin, Pregabalin, Duloxetine, Amitriptyline, LDN</li>
+                            <li>Botox &mdash; dosing, rebound, sequential injection strategy</li>
+                            <li>Blood Thinners for Venous TOS</li>
+                            <li>PEA, ALCAR, Magnesium, B12, Vitamin D</li>
+                            <li>POTS / Dysautonomia Support</li>
+                        </ul>
+                    </details>
+                    <div class="download-list-item-links">
+                        <a href="files/TOS_Medications_Supplements_Vitamins_Guide.docx" download data-goatcounter-click="download/TOS_Medications_Supplements_Vitamins_Guide.docx">.docx</a>
+                        <span class="sep">&middot;</span>
+                        <a href="files/TOS_Medications_Supplements_Vitamins_Guide.pdf" target="_blank" rel="noopener" class="download-btn-pdf" data-goatcounter-click="download/TOS_Medications_Supplements_Vitamins_Guide.pdf">.pdf</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="download-list-item">
+                <div class="download-list-item-body">
+                    <span class="download-list-item-title">Expanded Community Findings</span>
+                    <span class="download-list-item-desc">Deeper analysis from 282 additional posts &mdash; cognitive symptoms, POTS, Botox sequencing, cervical instability warnings, and more surgeons.</span>
+                    <details class="download-list-preview">
+                        <summary>See what&#39;s inside</summary>
+                        <ul>
+                            <li>Cognitive &amp; Cerebrovascular Symptoms</li>
+                            <li>POTS, Dysautonomia &amp; Autonomic Symptoms</li>
+                            <li>Botox Practical Guidance (dosing, rebound, sequencing)</li>
+                            <li>Cervical Instability Safety Consideration</li>
+                            <li>EDS, Hypermobility &amp; Surgical Risk</li>
+                        </ul>
+                    </details>
+                    <div class="download-list-item-links">
+                        <a href="files/TOS_Expanded_Findings.docx" download data-goatcounter-click="download/TOS_Expanded_Findings.docx">.docx</a>
+                        <span class="sep">&middot;</span>
+                        <a href="files/TOS_Expanded_Findings.pdf" target="_blank" rel="noopener" class="download-btn-pdf" data-goatcounter-click="download/TOS_Expanded_Findings.pdf">.pdf</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="download-list-item">
+                <div class="download-list-item-body">
+                    <span class="download-list-item-title">12-Week Exercise Tracker</span>
+                    <span class="download-list-item-desc">Structured program built from the most recommended community exercises. Two versions &mdash; with and without nerve flossing.</span>
+                    <div class="download-list-item-links">
+                        <a href="files/TOS_12_Week_Exercise_Plan.xlsx" download data-goatcounter-click="download/TOS_12_Week_Exercise_Plan.xlsx">Full version (.xlsx)</a>
+                        <span class="sep">&middot;</span>
+                        <a href="files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" download data-goatcounter-click="download/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx">No nerve flossing (.xlsx)</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="site-origin">
+        <p>Built by a patient with neurogenic TOS. A Python script collected 382 posts from r/ThoracicOutletSupport &mdash; the entire subreddit at the time. That data, combined with 669 peer-reviewed PubMed articles, was synthesized into the guides above. <a href="methodology.html">Read the full methodology &rarr;</a></p>
+    </section>
+
     <details class="red-flags" data-mobile-only aria-labelledby="red-flags-heading">
         <summary id="red-flags-heading">When to Seek Emergency Care</summary>
         <p class="red-flags-lead">Most TOS symptoms are chronic, not emergencies — but some are. If you have any of the following, <strong>go to the ER or call 911</strong>. Do not wait.</p>
@@ -1740,253 +2047,6 @@
         <p class="red-flags-note">These events are rare but time-sensitive. When in doubt, get checked.</p>
     </details>
 
-    <div id="reports" class="section-label reports">
-        <h2>Reports & Guides</h2>
-    </div>
-
-    <div class="cards">
-        <div id="card-research" class="card">
-            <div class="card-icon doc">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            </div>
-            <h2>Community Research Report</h2>
-            <p class="description">A comprehensive summary of experiences, treatments, and advice shared by the TOS community on Reddit.</p>
-            <span class="file-type">Word (.docx) &amp; PDF</span>
-            <span class="last-updated">Updated Mar 27, 2026</span>
-            <span class="reading-time">~16 min read</span>
-            <details class="card-preview">
-                <summary>See what's inside</summary>
-                <ul class="card-preview-list">
-                    <li>Executive Summary</li>
-                    <li>Serratus Anterior Strengthening</li>
-                    <li>Scalene Strengthening (Not Just Stretching)</li>
-                    <li>Pec Minor Stretching & Manual Release</li>
-                    <li>Scalene Botox & Lidocaine Injections</li>
-                    <li>Surgeons Named Positively</li>
-                    <li>Physical Therapy Approaches</li>
-                    <li>Lifestyle & Ergonomic Adjustments</li>
-                    <li>Suggested Action Plan</li>
-                </ul>
-            </details>
-            <div class="download-buttons">
-                <a href="files/TOS_Community_Research_Report.docx" download class="download-btn doc">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .docx
-                </a>
-                <a href="files/TOS_Community_Research_Report.pdf" target="_blank" rel="noopener" class="download-btn doc download-btn-pdf">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .pdf
-                </a>
-            </div>
-            <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon surgical">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-            </div>
-            <h2>Surgical Outcomes</h2>
-            <p class="description">A detailed look at surgical interventions for TOS, including community-reported outcomes, recovery timelines, and key considerations.</p>
-            <span class="file-type">Word (.docx) &amp; PDF</span>
-            <span class="last-updated">Updated Mar 27, 2026</span>
-            <span class="reading-time">~19 min read</span>
-            <details class="card-preview">
-                <summary>See what's inside</summary>
-                <ul class="card-preview-list">
-                    <li>First Rib Resection (FRR)</li>
-                    <li>Scalenectomy</li>
-                    <li>Pec Minor Release & Resection</li>
-                    <li>Long-Term Outcome Trajectory</li>
-                    <li>Surgical Failures & Complications</li>
-                    <li>Named Surgeons & Community Reputation</li>
-                    <li>Case Studies</li>
-                    <li>Predictors of Surgical Success</li>
-                </ul>
-            </details>
-            <div class="download-buttons">
-                <a href="files/TOS_Surgical_Outcomes_Report.docx" download class="download-btn surgical">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .docx
-                </a>
-                <a href="files/TOS_Surgical_Outcomes_Report.pdf" target="_blank" rel="noopener" class="download-btn surgical download-btn-pdf">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .pdf
-                </a>
-            </div>
-            <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
-            <p class="card-crosslink">Looking for a TOS surgeon? → <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener noreferrer">tosoutreach.com surgeon finder</a></p>
-        </div>
-
-        <div id="card-checklist" class="card">
-            <div class="card-icon checklist">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-            </div>
-            <h2>Diagnostic Checklist</h2>
-            <p class="description">A step-by-step checklist to help guide conversations with your doctor and navigate the TOS diagnostic process.</p>
-            <span class="file-type">Word (.docx) &amp; PDF</span>
-            <span class="last-updated">Updated Mar 27, 2026</span>
-            <span class="reading-time">~13 min read</span>
-            <details class="card-preview">
-                <summary>See what's inside</summary>
-                <ul class="card-preview-list">
-                    <li>Phase 1: Rule Out the Mimics</li>
-                    <li>Phase 2: Clinical Examination & Provocative Tests</li>
-                    <li>Phase 3: Imaging Workup</li>
-                    <li>Phase 4: Electrodiagnostic Studies (EMG/NCS)</li>
-                    <li>Phase 5: Diagnostic Injections</li>
-                    <li>Phase 6: TOS Subtype Determination</li>
-                    <li>Who Should Diagnose You</li>
-                    <li>Appointment Preparation</li>
-                </ul>
-            </details>
-            <div class="download-buttons">
-                <a href="files/TOS_Diagnostic_Checklist.docx" download class="download-btn checklist">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .docx
-                </a>
-                <a href="files/TOS_Diagnostic_Checklist.pdf" target="_blank" rel="noopener" class="download-btn checklist download-btn-pdf">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .pdf
-                </a>
-            </div>
-            <p class="card-crosslink">Based on the top 100 Reddit posts. See also: <a href="#expanded">Expanded Findings ↓</a> — covers the full 382-post dataset.</p>
-            <p class="card-crosslink">Cross-reference symptoms → <a href="https://www.tosoutreach.com/neurogenic-tos-symptoms" target="_blank" rel="noopener noreferrer">tosoutreach.com symptom reference</a></p>
-        </div>
-
-        <div class="card">
-            <div class="card-icon medications">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5"/><path d="M10.5 1.5v3h3v-3"/><line x1="12" y1="11" x2="12" y2="17"/><line x1="9" y1="14" x2="15" y2="14"/></svg>
-            </div>
-            <h2>Medications, Supplements & Vitamins Guide</h2>
-            <p class="description">Community-reported medications and evidence-based supplements relevant to TOS — neuropathic pain treatments, blood thinners for vTOS, and supportive vitamins.</p>
-            <span class="file-type">Word (.docx) &amp; PDF</span>
-            <span class="last-updated">Added Apr 5, 2026</span>
-            <span class="reading-time">~14 min read</span>
-            <details class="card-preview">
-                <summary>See what's inside</summary>
-                <ul class="card-preview-list">
-                    <li>Neuropathic Pain Medications (Gabapentin, Lyrica, Cymbalta, Amitriptyline)</li>
-                    <li>Muscle Relaxants</li>
-                    <li>Injections (Botox, Nerve Blocks, Lidocaine)</li>
-                    <li>Anti-Inflammatory Medications &amp; NSAIDs</li>
-                    <li>Blood Thinners for Venous TOS</li>
-                    <li>Cannabis (THC / CBD)</li>
-                    <li>Supplements &amp; Vitamins (Magnesium, B Vitamins, ALA, Vitamin D, Omega-3)</li>
-                    <li>POTS / Dysautonomia Support</li>
-                    <li>Multi-Modal Pain Management Strategies</li>
-                    <li>Questions to Discuss with Your Doctor</li>
-                </ul>
-            </details>
-            <div class="download-buttons">
-                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.docx" download class="download-btn medications">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .docx
-                </a>
-                <a href="files/TOS_Medications_Supplements_Vitamins_Guide.pdf" target="_blank" rel="noopener" class="download-btn medications download-btn-pdf">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .pdf
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <p class="mobile-downloads-link" style="text-align:center; padding: 4px 20px 16px; font-size: 0.9rem;"><a href="outreach.html#downloads">See all downloads (exercise trackers &amp; more) &rarr;</a></p>
-
-    <div id="trackers" class="section-label trackers mobile-downloads-hide">
-        <h2>Exercise Trackers</h2>
-    </div>
-
-    <div class="cards mobile-downloads-hide">
-        <div id="card-tracker" class="card">
-            <div class="card-icon sheet">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-            </div>
-            <h2>12-Week Exercise Tracker</h2>
-            <p class="description">A structured 12-week exercise program compiled from the most recommended routines and exercises for TOS relief.</p>
-            <span class="file-type">Excel Spreadsheet (.xlsx)</span>
-            <span class="last-updated">Updated Mar 27, 2026</span>
-            <a href="files/TOS_12_Week_Exercise_Plan.xlsx" download class="download-btn sheet">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download
-            </a>
-        </div>
-
-        <div class="card">
-            <div class="card-icon sheet-alt">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/></svg>
-            </div>
-            <h2>12-Week Exercise Tracker — No Nerve Flossing</h2>
-            <p class="description">The same structured 12-week exercise program, but with all nerve flossing exercises removed for those who prefer to avoid them.</p>
-            <span class="file-type">Excel Spreadsheet (.xlsx)</span>
-            <span class="last-updated">Updated Mar 27, 2026</span>
-            <a href="files/TOS_12_Week_Exercise_Plan_No_Nerve_Flossing.xlsx" download class="download-btn sheet-alt">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Download
-            </a>
-        </div>
-    </div>
-
-    <div id="expanded" class="section-label expanded mobile-downloads-hide">
-        <h2>Expanded Findings</h2>
-    </div>
-
-    <div class="expanded-note mobile-downloads-hide">
-        <p>The reports above were compiled from the top 100 posts on r/ThoracicOutletSupport. A further scrape captured all 382 available posts in the subreddit. The document below covers what those additional 282 posts reveal that the original reports did not — including new symptom patterns, practical Botox guidance, additional surgeon names, safety considerations, and topics like cognitive symptoms and dysautonomia that weren't represented in the original dataset.</p>
-    </div>
-
-    <div class="cards mobile-downloads-hide">
-        <div class="card">
-            <div class="card-icon expanded">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
-            </div>
-            <h2>Expanded Community Findings</h2>
-            <p class="description">What 282 additional Reddit posts reveal beyond the original research — new symptoms, treatments, surgeons, and safety considerations not covered in the core reports.</p>
-            <span class="file-type">Word (.docx) &amp; PDF</span>
-            <span class="last-updated">Added Mar 29, 2026</span>
-            <span class="reading-time">~22 min read</span>
-            <details class="card-preview">
-                <summary>See what's inside</summary>
-                <ul class="card-preview-list">
-                    <li>Cognitive & Cerebrovascular Symptoms</li>
-                    <li>POTS, Dysautonomia & Autonomic Symptoms</li>
-                    <li>TMJ, Facial Pain & Jaw Symptoms</li>
-                    <li>Botox Practical Guidance</li>
-                    <li>Counterstrain PT (Stronger Evidence)</li>
-                    <li>Additional Conditions to Rule Out</li>
-                    <li>EDS, Hypermobility & Surgical Risk</li>
-                    <li>Additional Surgeons</li>
-                </ul>
-            </details>
-            <div class="download-buttons">
-                <a href="files/TOS_Expanded_Findings.docx" download class="download-btn expanded">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .docx
-                </a>
-                <a href="files/TOS_Expanded_Findings.pdf" target="_blank" rel="noopener" class="download-btn expanded download-btn-pdf">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                    .pdf
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="download-all-section">
-        <button class="download-all-btn" id="download-all-btn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download All Resources (.zip)
-        </button>
-        <p class="download-all-note">All 12 files bundled into a single download</p>
-    </div>
-
-    <div class="literature-callout">
-        <a href="literature.html">
-            <div class="callout-text">
-                <strong>Published Research on TOS</strong>
-                <span>Browse peer-reviewed articles from PubMed on thoracic outlet syndrome, updated monthly.</span>
-            </div>
-        </a>
-    </div>
-
     <div class="disclaimer">
         <h3>Medical Disclaimer</h3>
         <p>The information provided on this website and in the downloadable files is for general informational and educational purposes only. It is not intended as, and should not be used as, a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician, physical therapist, or other qualified healthcare provider with any questions you may have regarding a medical condition, including Thoracic Outlet Syndrome. Never disregard professional medical advice or delay seeking it because of something you have read here. The content is compiled from community discussions on Reddit and has not been reviewed or verified by medical professionals. Use of any information provided is solely at your own risk. If you are experiencing a medical emergency, call your local emergency services immediately.</p>
@@ -1995,16 +2055,6 @@
     <div class="stats-bar">
         <p class="stats-line">382 Reddit posts · 669 research articles · 7 free guides &amp; trackers · 15+ surgeons referenced · ~84 min reading</p>
     </div>
-
-    <details class="whats-new" data-mobile-only style="max-width: 860px; margin: 0 auto;">
-        <summary>What's New</summary>
-        <ul>
-            <li><span class="wn-date">Apr 12</span> — Literature page now has sorting, filtering by article type, color-coded badges, and DOI full-text links</li>
-            <li><span class="wn-date">Apr 11</span> — PubMed literature page launched with 669 peer-reviewed TOS articles</li>
-            <li><span class="wn-date">Apr 4</span> — Editorial redesign with warm palette and PDF versions of all documents</li>
-            <li><span class="wn-date">Apr 1</span> — Site navigation, full-text search, download-all, and preview snippets</li>
-        </ul>
-    </details>
 
     <footer>
         Built with insights from the TOS community on Reddit.<br>
@@ -2015,21 +2065,6 @@
 
     <script data-goatcounter="https://digitalwestern.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
-
-    <script>
-        document.querySelectorAll('.download-btn').forEach(function(btn) {
-            btn.addEventListener('click', function() {
-                if (window.goatcounter && goatcounter.count) {
-                    var filename = btn.getAttribute('href').replace('files/', '');
-                    goatcounter.count({
-                        path: 'download/' + filename,
-                        title: 'Download: ' + filename,
-                        event: true
-                    });
-                }
-            });
-        });
-    </script>
 
     <script>
     (function() {
@@ -2367,23 +2402,6 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        document.getElementById('share-btn').addEventListener('click', function() {
-            var btn = this;
-            var url = 'https://tosresources.com';
-            if (navigator.share) {
-                navigator.share({ title: 'TOS Resources', url: url }).catch(function() {});
-            } else if (navigator.clipboard) {
-                navigator.clipboard.writeText(url).then(function() {
-                    btn.classList.add('copied');
-                    btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Link copied!';
-                    setTimeout(function() {
-                        btn.classList.remove('copied');
-                        btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg> Share this page';
-                    }, 2000);
-                });
-            }
-        });
-
         document.getElementById('download-all-btn').addEventListener('click', function() {
             var btn = this;
             var originalText = btn.innerHTML;
@@ -2436,7 +2454,7 @@
             });
         });
 
-        var fadeEls = document.querySelectorAll('.whats-new, .explainer, .red-flags, .start-here, .search-container, .section-label, .cards, .expanded-note, .download-all-section, .disclaimer, .stats-bar');
+        var fadeEls = document.querySelectorAll('.red-flags, .start-here, .search-container, .downloads-section, .site-origin, .disclaimer, .stats-bar');
         fadeEls.forEach(function(el) { el.classList.add('fade-in'); });
 
         if ('IntersectionObserver' in window) {

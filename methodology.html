@@ -398,6 +398,9 @@
 
     <div class="header-bar">
         <span>Thoracic Outlet Syndrome — Community Resources</span>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-drawer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
     </div>
 
     <nav class="page-nav">
@@ -410,6 +413,32 @@
         <a href="surgery.html">Surgery</a>
         <a href="outreach.html">Outreach</a>
     </nav>
+
+    <div class="drawer-backdrop" aria-hidden="true"></div>
+    <aside class="drawer" id="site-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+        <div class="drawer-header">
+            <span class="drawer-title" id="drawer-title">TOS Resources</span>
+            <button class="drawer-close" aria-label="Close menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg>
+            </button>
+        </div>
+        <nav aria-label="Primary">
+            <a href="index.html">Home</a>
+            <a href="literature.html">Literature</a>
+            <a href="diagnosis.html">Diagnosis</a>
+            <a href="conservative.html">Conservative</a>
+            <a href="community-discussion.html">Community</a>
+            <a href="medications.html">Medications</a>
+            <a href="surgery.html">Surgery</a>
+            <a href="outreach.html">Outreach</a>
+        </nav>
+        <hr class="drawer-divider">
+        <span class="drawer-section-label drawer-onpage-label">On this page</span>
+        <nav class="drawer-onpage" aria-label="On this page"></nav>
+        <div class="drawer-footer">
+            <a href="methodology.html" class="active">Methodology & Transparency →</a>
+        </div>
+    </aside>
 
     <header class="topic-hero">
         <p class="topic-eyebrow">Methodology &amp; Transparency</p>
@@ -616,5 +645,6 @@
     </script>
 
     <script data-goatcounter="https://tos-resources.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+    <script src="js/site.js" defer></script>
 </body>
 </html>

@@ -143,7 +143,7 @@ done
 PII_PATTERNS=(
     '\b[0-9]{3}-[0-9]{2}-[0-9]{4}\b'                          # SSN format (XXX-XX-XXXX)
     '\b[0-9]{9}\b'                                              # SSN without dashes (9 digits)
-    '\b(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(?:011|5[0-9]{2})[0-9]{12})\b'  # Credit card numbers
+    '\b(4[0-9]{12}([0-9]{3})?|5[1-5][0-9]{14}|3[47][0-9]{13}|6(011|5[0-9]{2})[0-9]{12})\b'  # Credit card numbers
     '\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b'     # Email addresses
 )
 
@@ -170,7 +170,7 @@ for file in $CHANGED_FILES; do
     for i in "${!PII_PATTERNS[@]}"; do
         pattern="${PII_PATTERNS[$i]}"
         label="${PII_NAMES[$i]}"
-        matches=$(grep -nP "$pattern" "$file" 2>/dev/null)
+        matches=$(grep -nE "$pattern" "$file" 2>/dev/null)
         if [ -n "$matches" ]; then
             echo -e "${RED}${BOLD}BLOCKED — Possible sensitive personal data${RESET}"
             echo -e "  File:    ${YELLOW}$file${RESET}"
@@ -198,8 +198,8 @@ for file in $CHANGED_FILES; do
     esac
 
     # Extract href="..." and src="..." values, filter to local paths
-    refs=$(grep -oP '(?:href|src)\s*=\s*"[^"]*"' "$file" 2>/dev/null \
-        | grep -oP '"[^"]*"' \
+    refs=$(grep -oE '(href|src) *= *"[^"]*"' "$file" 2>/dev/null \
+        | grep -oE '"[^"]*"' \
         | tr -d '"' \
         | grep -v '^http' \
         | grep -v '^//' \

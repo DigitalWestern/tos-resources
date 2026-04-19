@@ -564,3 +564,186 @@ body.drawer-open .drawer {
         transition: none;
     }
 }
+
+/* ============================================================
+   Phase 3 — data-mobile-only details auto-expand on desktop
+
+   On mobile the element acts as a normal collapsible <details>.
+   On desktop (≥900px): display:contents makes the wrapper
+   transparent so badge items (or other content) always show;
+   the summary toggle is hidden. JS in site.js also sets
+   open=true on desktop as a belt-and-suspenders guarantee.
+   ============================================================ */
+@media (min-width: 900px) {
+    .badge-legend details[data-mobile-only] {
+        display: contents;
+    }
+    .badge-legend details[data-mobile-only] > summary {
+        display: none;
+    }
+}
+
+/* ============================================================
+   Phase 3 — Filter bottom sheet (literature page, mobile only)
+   ============================================================ */
+
+.filter-toggle {
+    display: none; /* shown on mobile via @media below */
+}
+
+.filter-sheet-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.22s ease, visibility 0.22s ease;
+    z-index: 148;
+}
+
+body.filter-open .filter-sheet-backdrop {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Filter panel: inline block on desktop, bottom sheet on mobile */
+#filter-panel {
+    /* desktop: transparent wrapper — children display at their
+       normal positions in the page flow */
+}
+
+@media (max-width: 899px) {
+    .filter-toggle {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 20px 12px;
+        padding: 0 20px;
+        min-height: 44px;
+        width: calc(100% - 40px);
+        box-sizing: border-box;
+        background: #ffffff;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-sm);
+        font-size: 0.88rem;
+        font-weight: 600;
+        color: var(--color-text);
+        cursor: pointer;
+        letter-spacing: 0.02em;
+        transition: border-color 0.15s;
+    }
+    .filter-toggle:hover {
+        border-color: var(--color-border-strong);
+    }
+    .filter-toggle svg {
+        flex-shrink: 0;
+    }
+    .filter-count {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 20px;
+        height: 20px;
+        padding: 0 5px;
+        border-radius: 10px;
+        background: var(--color-accent);
+        color: #fff;
+        font-size: 0.7rem;
+        font-weight: 700;
+        margin-left: 4px;
+    }
+    .filter-count:empty {
+        display: none;
+    }
+    #filter-panel {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--color-bg);
+        border-top: 1px solid var(--color-border);
+        box-shadow: 0 -4px 24px rgba(0, 0, 0, 0.12);
+        transform: translateY(100%);
+        transition: transform 0.25s ease;
+        z-index: 149;
+        max-height: 72vh;
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+    body.filter-open #filter-panel {
+        transform: translateY(0);
+    }
+    .filter-panel-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px 20px;
+        background: var(--color-header-bg);
+        color: var(--color-header-text);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+    .filter-panel-title {
+        font-size: 0.78rem;
+        font-weight: 500;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-header-text);
+    }
+    .filter-panel-close {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: var(--radius-sm);
+        color: var(--color-header-text);
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.1rem;
+        transition: background 0.15s;
+    }
+    .filter-panel-close:hover {
+        background: var(--color-header-hover);
+    }
+    /* Inside-panel layout adjustments */
+    #filter-panel .topic-filter,
+    #filter-panel .controls-bar,
+    #filter-panel .advanced-search {
+        max-width: none;
+        width: 100%;
+    }
+    #filter-panel .topic-filter {
+        padding: 16px 20px;
+    }
+    #filter-panel .topic-filter-label {
+        margin-bottom: 12px;
+    }
+    #filter-panel .controls-bar {
+        padding: 0 20px 16px;
+    }
+    #filter-panel .advanced-search {
+        padding: 0 20px 16px;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 900px) {
+    .filter-panel-header {
+        display: none;
+    }
+    .filter-sheet-backdrop {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #filter-panel,
+    .filter-sheet-backdrop {
+        transition: none;
+    }
+}

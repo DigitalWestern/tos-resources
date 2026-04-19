@@ -824,47 +824,62 @@
         <div class="results-count" id="results-count"></div>
     </div>
 
-    <div class="topic-filter" id="topic-filter" style="display:none;">
-        <div class="topic-filter-label">Filter by topic</div>
-        <div class="topic-chips">
-            <button class="topic-chip active" data-topic="all">All topics</button>
-            <button class="topic-chip" data-topic="diagnosis">Diagnosis &amp; imaging</button>
-            <button class="topic-chip" data-topic="surgery">Surgery &amp; outcomes</button>
-            <button class="topic-chip" data-topic="conservative">PT / conservative</button>
-            <button class="topic-chip" data-topic="medications">Medications &amp; injections</button>
-            <button class="topic-chip" data-topic="venous">Venous TOS</button>
-            <button class="topic-chip" data-topic="neurogenic">Neurogenic TOS</button>
-            <button class="topic-chip" data-topic="arterial">Arterial TOS</button>
-            <button class="topic-chip" data-topic="recovery">Recovery &amp; outcomes</button>
-            <button class="topic-chip" data-topic="comorbidities">Comorbidities</button>
-        </div>
-    </div>
+    <button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel" style="display:none;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+        Filter &amp; Sort
+        <span class="filter-count" id="filter-count" aria-label="active filters"></span>
+    </button>
 
-    <div class="controls-bar" id="controls-bar" style="display:none;">
-        <div class="controls-group">
-            <span class="controls-label">Sort:</span>
-            <button class="control-btn active" data-sort="date-desc">Newest</button>
-            <button class="control-btn" data-sort="date-asc">Oldest</button>
-            <button class="control-btn" data-sort="author">Author A-Z</button>
-            <button class="control-btn" data-sort="journal">Journal</button>
-        </div>
-    </div>
+    <div class="filter-sheet-backdrop" id="filter-sheet-backdrop"></div>
 
-    <div class="advanced-search" id="advanced-search" style="display:none;">
-        <details>
-            <summary>Advanced search — filter by article type</summary>
-            <div class="advanced-search-body">
-                <div class="controls-group">
-                    <span class="controls-label">Article type:</span>
-                    <button class="control-btn active" data-filter="all">All</button>
-                    <button class="control-btn" data-filter="Review">Reviews</button>
-                    <button class="control-btn" data-filter="Case Report">Case Reports</button>
-                    <button class="control-btn" data-filter="Research">Research</button>
-                    <button class="control-btn" data-filter="Clinical Trial">Clinical Trials</button>
-                    <button class="control-btn" data-filter="Meta-Analysis">Meta-Analyses</button>
-                </div>
+    <div id="filter-panel" aria-hidden="true">
+        <div class="filter-panel-header">
+            <span class="filter-panel-title">Filter &amp; Sort</span>
+            <button class="filter-panel-close" id="filter-panel-close" aria-label="Close filters">&times;</button>
+        </div>
+
+        <div class="topic-filter" id="topic-filter" style="display:none;">
+            <div class="topic-filter-label">Filter by topic</div>
+            <div class="topic-chips">
+                <button class="topic-chip active" data-topic="all">All topics</button>
+                <button class="topic-chip" data-topic="diagnosis">Diagnosis &amp; imaging</button>
+                <button class="topic-chip" data-topic="surgery">Surgery &amp; outcomes</button>
+                <button class="topic-chip" data-topic="conservative">PT / conservative</button>
+                <button class="topic-chip" data-topic="medications">Medications &amp; injections</button>
+                <button class="topic-chip" data-topic="venous">Venous TOS</button>
+                <button class="topic-chip" data-topic="neurogenic">Neurogenic TOS</button>
+                <button class="topic-chip" data-topic="arterial">Arterial TOS</button>
+                <button class="topic-chip" data-topic="recovery">Recovery &amp; outcomes</button>
+                <button class="topic-chip" data-topic="comorbidities">Comorbidities</button>
             </div>
-        </details>
+        </div>
+
+        <div class="controls-bar" id="controls-bar" style="display:none;">
+            <div class="controls-group">
+                <span class="controls-label">Sort:</span>
+                <button class="control-btn active" data-sort="date-desc">Newest</button>
+                <button class="control-btn" data-sort="date-asc">Oldest</button>
+                <button class="control-btn" data-sort="author">Author A-Z</button>
+                <button class="control-btn" data-sort="journal">Journal</button>
+            </div>
+        </div>
+
+        <div class="advanced-search" id="advanced-search" style="display:none;">
+            <details>
+                <summary>Advanced search — filter by article type</summary>
+                <div class="advanced-search-body">
+                    <div class="controls-group">
+                        <span class="controls-label">Article type:</span>
+                        <button class="control-btn active" data-filter="all">All</button>
+                        <button class="control-btn" data-filter="Review">Reviews</button>
+                        <button class="control-btn" data-filter="Case Report">Case Reports</button>
+                        <button class="control-btn" data-filter="Research">Research</button>
+                        <button class="control-btn" data-filter="Clinical Trial">Clinical Trials</button>
+                        <button class="control-btn" data-filter="Meta-Analysis">Meta-Analyses</button>
+                    </div>
+                </div>
+            </details>
+        </div>
     </div>
 
     <div id="loading" class="loading">
@@ -901,7 +916,7 @@
     <script>
     (function() {
         var JSON_URL = 'pubmed_articles.json';
-        var PAGE_SIZE = 50;
+        var PAGE_SIZE = window.innerWidth < 900 ? 25 : 50;
         var allArticles = [];
         var displayedArticles = [];
         var currentPage = 0;
@@ -949,9 +964,19 @@
                         var data = JSON.parse(xhr.responseText);
                         allArticles = data.articles || [];
                         loadingEl.style.display = 'none';
-                        topicFilter.style.display = 'block';
-                        controlsBar.style.display = 'flex';
-                        advancedSearch.style.display = 'block';
+                        var filterToggle = document.getElementById('filter-toggle');
+                        if (window.innerWidth < 900) {
+                            if (filterToggle) { filterToggle.style.display = 'flex'; }
+                            var filterPanel = document.getElementById('filter-panel');
+                            if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'true'); }
+                        } else {
+                            topicFilter.style.display = 'block';
+                            controlsBar.style.display = 'flex';
+                            advancedSearch.style.display = 'block';
+                            if (filterToggle) { filterToggle.style.display = 'none'; }
+                            var filterPanel = document.getElementById('filter-panel');
+                            if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'false'); }
+                        }
 
                         statsLineEl.textContent = data.total_articles + ' articles \u00b7 ' + data.search_terms.length + ' search terms \u00b7 Updated ' + data.last_updated;
                         lastUpdatedEl.textContent = 'Article database last updated: ' + data.last_updated;
@@ -1171,6 +1196,16 @@
             initFadeIn();
         });
 
+        // Update the mobile filter-count badge
+        function updateFilterCount() {
+            var countEl = document.getElementById('filter-count');
+            if (!countEl) { return; }
+            var n = 0;
+            if (currentTopic !== 'all') { n++; }
+            if (currentFilter !== 'all') { n++; }
+            countEl.textContent = n > 0 ? n : '';
+        }
+
         // --- Sort buttons ---
         document.querySelectorAll('[data-sort]').forEach(function(btn) {
             btn.addEventListener('click', function() {
@@ -1178,6 +1213,7 @@
                 this.classList.add('active');
                 currentSort = this.getAttribute('data-sort');
                 applyFiltersAndRender();
+                updateFilterCount();
             });
         });
 
@@ -1188,6 +1224,7 @@
                 this.classList.add('active');
                 currentFilter = this.getAttribute('data-filter');
                 applyFiltersAndRender();
+                updateFilterCount();
             });
         });
 
@@ -1201,6 +1238,7 @@
                     window.goatcounter.count({ path: 'literature-topic/' + currentTopic, event: true });
                 }
                 applyFiltersAndRender();
+                updateFilterCount();
             });
         });
 

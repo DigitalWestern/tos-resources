@@ -1,10 +1,11 @@
 /* ============================================================
    TOS Resources — Shared site script
 
-   Currently owns the mobile nav drawer: hamburger toggle,
-   drawer open/close, body-scroll lock, Esc/backdrop to close,
-   focus trap, and auto-populating the "On this page" list
-   from the current page's H2 headings.
+   Owns:
+   1. Mobile nav drawer (hamburger, focus trap, on-this-page)
+   2. data-mobile-only <details>: auto-opens on desktop so
+      badge legends, explainers, etc. are always visible ≥900px
+   3. Literature filter bottom sheet (mobile only)
 
    Loaded with `defer` so the DOM is ready when this runs.
    ============================================================ */
@@ -164,4 +165,93 @@
             if (divider) { divider.style.display = 'none'; }
         }
     }
+})();
+
+/* ============================================================
+   Auto-open data-mobile-only details on desktop (≥900px).
+   CSS display:contents handles the badge legend; this JS
+   ensures all other collapsible sections are open on desktop
+   regardless of the user's prior on-mobile interaction.
+   ============================================================ */
+(function () {
+    var mobileOnlyDetails = document.querySelectorAll('details[data-mobile-only]');
+    if (!mobileOnlyDetails.length) { return; }
+
+    function syncOpen(isDesktop) {
+        mobileOnlyDetails.forEach(function (d) {
+            if (isDesktop) { d.open = true; }
+        });
+    }
+
+    var mq = window.matchMedia('(min-width: 900px)');
+    syncOpen(mq.matches);
+    var handler = function (e) { syncOpen(e.matches); };
+    if (mq.addEventListener) { mq.addEventListener('change', handler); }
+    else if (mq.addListener) { mq.addListener(handler); }
+})();
+
+/* ============================================================
+   Literature filter bottom sheet (mobile <900px only).
+   Opens a bottom sheet containing the topic chips, sort
+   controls, and advanced search. Reuses the same backdrop/
+   body-class pattern as the nav drawer.
+   ============================================================ */
+(function () {
+    var filterToggle = document.getElementById('filter-toggle');
+    var filterPanel = document.getElementById('filter-panel');
+    var filterBackdrop = document.getElementById('filter-sheet-backdrop');
+    var filterClose = document.getElementById('filter-panel-close');
+
+    if (!filterToggle || !filterPanel) { return; }
+
+    var body = document.body;
+
+    function openSheet() {
+        body.classList.add('filter-open');
+        filterToggle.setAttribute('aria-expanded', 'true');
+        if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'false'); }
+        if (filterClose) {
+            window.setTimeout(function () { filterClose.focus(); }, 50);
+        }
+    }
+
+    function closeSheet() {
+        body.classList.remove('filter-open');
+        filterToggle.setAttribute('aria-expanded', 'false');
+        if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'true'); }
+        filterToggle.focus();
+    }
+
+    filterToggle.addEventListener('click', openSheet);
+
+    if (filterClose) { filterClose.addEventListener('click', closeSheet); }
+    if (filterBackdrop) { filterBackdrop.addEventListener('click', closeSheet); }
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && body.classList.contains('filter-open')) {
+            e.preventDefault();
+            closeSheet();
+        }
+    });
+
+    /* Close sheet after a topic chip or control button is tapped
+       so the user immediately sees the updated results. */
+    if (filterPanel) {
+        filterPanel.addEventListener('click', function (e) {
+            var t = e.target;
+            if (t.classList.contains('topic-chip') || t.classList.contains('control-btn')) {
+                window.setTimeout(closeSheet, 240);
+            }
+        });
+    }
+
+    /* Close if viewport grows past the mobile breakpoint while open. */
+    var desktopMQ = window.matchMedia('(min-width: 900px)');
+    function handleBreakpoint(mq) {
+        if (mq.matches && body.classList.contains('filter-open')) {
+            closeSheet();
+        }
+    }
+    if (desktopMQ.addEventListener) { desktopMQ.addEventListener('change', handleBreakpoint); }
+    else if (desktopMQ.addListener) { desktopMQ.addListener(handleBreakpoint); }
 })();

@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TOS Literature — Published Research on Thoracic Outlet Syndrome</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -19,9 +16,9 @@
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, sans-serif;
-            background: #f7f4ef;
-            color: #1c1c1c;
+            font-family: var(--font-sans);
+            background: var(--color-bg);
+            color: var(--color-text);
             font-size: 17px;
             line-height: 1.7;
             min-height: 100vh;
@@ -31,11 +28,11 @@
         }
 
         h1, h2, h3 {
-            font-family: 'Fraunces', Georgia, serif;
+            font-family: var(--font-serif);
         }
 
         a {
-            color: #5c3d2e;
+            color: var(--color-accent);
         }
 
         a:hover {
@@ -53,13 +50,13 @@
         .header-bar span {
             font-size: 0.8rem;
             font-weight: 500;
-            color: #f7f4ef;
+            color: var(--color-bg);
             letter-spacing: 0.08em;
             text-transform: uppercase;
         }
 
         .header-bar a {
-            color: #f7f4ef;
+            color: var(--color-bg);
             text-decoration: none;
         }
 
@@ -83,7 +80,7 @@
         .page-nav a {
             display: block;
             padding: 12px 20px;
-            color: #f7f4ef;
+            color: var(--color-bg);
             text-decoration: none;
             font-size: 0.76rem;
             font-weight: 500;
@@ -113,7 +110,7 @@
         .hero h1 {
             font-size: 2.6rem;
             font-weight: 700;
-            color: #1c1c1c;
+            color: var(--color-text);
             margin-bottom: 16px;
             line-height: 1.15;
             letter-spacing: -0.02em;
@@ -121,7 +118,7 @@
 
         .hero p {
             font-size: 1rem;
-            color: #5a5347;
+            color: var(--color-text-muted);
             line-height: 1.7;
             max-width: 600px;
             margin: 0 auto;
@@ -133,7 +130,7 @@
             padding: 8px 24px 0;
             font-size: 0.78rem;
             font-weight: 500;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             letter-spacing: 0.06em;
             text-transform: uppercase;
         }
@@ -151,21 +148,21 @@
             align-items: center;
             gap: 10px;
             background: #ffffff;
-            border: 1px solid #ddd8d0;
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             padding: 14px 18px;
             transition: border-color 0.2s;
         }
 
         .search-input-wrapper:focus-within {
-            border-color: #5c3d2e;
+            border-color: var(--color-accent);
         }
 
         .search-icon {
             width: 20px;
             height: 20px;
             flex-shrink: 0;
-            color: #8a8279;
+            color: var(--color-text-subtle);
         }
 
         .search-input {
@@ -173,20 +170,20 @@
             border: none;
             background: transparent;
             font-size: 1.05rem;
-            color: #1c1c1c;
+            color: var(--color-text);
             outline: none;
             font-family: inherit;
         }
 
         .search-input::placeholder {
-            color: #a8a095;
+            color: var(--color-text-muted);
         }
 
         .search-clear {
             display: none;
             border: none;
             background: none;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             font-size: 1.2rem;
             cursor: pointer;
             padding: 0 4px;
@@ -199,14 +196,14 @@
 
         .search-hint {
             font-size: 0.75rem;
-            color: #a8a095;
+            color: var(--color-text-muted);
             margin-top: 8px;
             text-align: right;
         }
 
         .search-hint kbd {
-            background: #ede8e0;
-            border: 1px solid #ddd8d0;
+            background: var(--color-surface-alt);
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             padding: 1px 5px;
             font-size: 0.7rem;
@@ -215,7 +212,7 @@
 
         .results-count {
             font-size: 0.82rem;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             padding: 12px 0 0;
         }
 
@@ -231,23 +228,23 @@
 
         .article-card {
             background: #ffffff;
-            border: 1px solid #ddd8d0;
-            border-left: 3px solid #5c3d2e;
+            border: 1px solid var(--color-border);
+            border-left: 1px solid var(--color-border);
             border-radius: 4px;
             padding: 28px 32px;
             transition: border-color 0.2s;
         }
 
         .article-card:hover {
-            border-color: #c4b8aa;
-            border-left-color: #5c3d2e;
+            border-color: var(--color-border-strong);
+            border-left-color: var(--color-accent);
         }
 
         .article-title {
-            font-family: 'Fraunces', Georgia, serif;
+            font-family: var(--font-serif);
             font-size: 1.1rem;
             font-weight: 600;
-            color: #1c1c1c;
+            color: var(--color-text);
             line-height: 1.4;
             margin-bottom: 10px;
         }
@@ -258,38 +255,38 @@
         }
 
         .article-title a:hover {
-            color: #5c3d2e;
+            color: var(--color-accent);
             text-decoration: underline;
         }
 
         .article-meta {
             font-size: 0.82rem;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             margin-bottom: 6px;
             line-height: 1.5;
         }
 
         .article-meta .journal {
             font-weight: 500;
-            color: #5a5347;
+            color: var(--color-text-muted);
         }
 
         .article-authors {
             font-size: 0.82rem;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             margin-bottom: 14px;
             line-height: 1.5;
         }
 
         .article-abstract {
             font-size: 0.88rem;
-            color: #5a5347;
+            color: var(--color-text-muted);
             line-height: 1.7;
         }
 
         mark {
             background: #f5e6c8;
-            color: #1c1c1c;
+            color: var(--color-text);
             padding: 1px 2px;
             border-radius: 2px;
         }
@@ -309,7 +306,7 @@
             gap: 4px;
             border: none;
             background: none;
-            color: #5c3d2e;
+            color: var(--color-accent);
             font-size: 0.82rem;
             font-weight: 500;
             cursor: pointer;
@@ -337,7 +334,7 @@
             margin-top: 14px;
             font-size: 0.82rem;
             font-weight: 500;
-            color: #5c3d2e;
+            color: var(--color-accent);
             text-decoration: none;
         }
 
@@ -361,28 +358,28 @@
             padding: 3px 8px;
             border-radius: 3px;
             margin-bottom: 10px;
-            background: #ede8e0;
-            color: #5a5347;
+            background: var(--color-surface-alt);
+            color: var(--color-text-muted);
         }
 
         .article-type.review, .article-type.systematic-review {
             background: #e0e8ed;
-            color: #2e4a5c;
+            color: var(--color-text);
         }
 
         .article-type.meta-analysis {
             background: #e0ede4;
-            color: #2e5c3d;
+            color: var(--color-text);
         }
 
         .article-type.case-report {
             background: #ede0e8;
-            color: #5c2e4a;
+            color: var(--color-text);
         }
 
         .article-type.clinical-trial {
             background: #e4ede0;
-            color: #3d5c2e;
+            color: var(--color-text);
         }
 
         /* --- Topic Filter Chips --- */
@@ -396,7 +393,7 @@
         .topic-filter-label {
             font-size: 0.72rem;
             font-weight: 600;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             text-transform: uppercase;
             letter-spacing: 0.06em;
             margin-bottom: 8px;
@@ -410,10 +407,10 @@
 
         .topic-chip {
             padding: 6px 12px;
-            border: 1px solid #ddd8d0;
+            border: 1px solid var(--color-border);
             border-radius: 20px;
             background: #ffffff;
-            color: #5a5347;
+            color: var(--color-text-muted);
             font-size: 0.78rem;
             font-weight: 500;
             cursor: pointer;
@@ -421,12 +418,12 @@
             transition: border-color 0.15s, background 0.15s, color 0.15s;
         }
 
-        .topic-chip:hover { border-color: #5c3d2e; color: #5c3d2e; }
+        .topic-chip:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
         .topic-chip.active {
-            background: #5c3d2e;
+            background: var(--color-accent);
             color: #fff;
-            border-color: #5c3d2e;
+            border-color: var(--color-accent);
         }
 
         /* --- Advanced Search (collapsible) --- */
@@ -439,7 +436,7 @@
 
         .advanced-search details {
             background: #ffffff;
-            border: 1px solid #ddd8d0;
+            border: 1px solid var(--color-border);
             border-radius: 4px;
         }
 
@@ -447,7 +444,7 @@
             padding: 10px 16px;
             font-size: 0.78rem;
             font-weight: 600;
-            color: #5a5347;
+            color: var(--color-text-muted);
             letter-spacing: 0.03em;
             cursor: pointer;
             list-style: none;
@@ -462,7 +459,7 @@
 
         .advanced-search-body {
             padding: 4px 16px 16px;
-            border-top: 1px solid #ede8e0;
+            border-top: 1px solid var(--color-surface-alt);
             display: flex;
             flex-wrap: wrap;
             gap: 18px;
@@ -490,17 +487,17 @@
         .controls-label {
             font-size: 0.72rem;
             font-weight: 600;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             text-transform: uppercase;
             letter-spacing: 0.06em;
         }
 
         .control-btn {
             padding: 6px 12px;
-            border: 1px solid #ddd8d0;
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             background: #ffffff;
-            color: #5a5347;
+            color: var(--color-text-muted);
             font-size: 0.75rem;
             font-weight: 500;
             cursor: pointer;
@@ -509,13 +506,13 @@
         }
 
         .control-btn:hover {
-            border-color: #5c3d2e;
+            border-color: var(--color-accent);
         }
 
         .control-btn.active {
-            background: #5c3d2e;
+            background: var(--color-accent);
             color: #fff;
-            border-color: #5c3d2e;
+            border-color: var(--color-accent);
         }
 
         /* --- Load More --- */
@@ -531,10 +528,10 @@
             align-items: center;
             gap: 8px;
             padding: 12px 32px;
-            border: 1px solid #ddd8d0;
+            border: 1px solid var(--color-border);
             border-radius: 4px;
             background: #ffffff;
-            color: #5c3d2e;
+            color: var(--color-accent);
             font-size: 0.9rem;
             font-weight: 600;
             cursor: pointer;
@@ -543,13 +540,13 @@
         }
 
         .load-more-btn:hover {
-            border-color: #5c3d2e;
+            border-color: var(--color-accent);
             background: #f2ede6;
         }
 
         .load-more-count {
             font-size: 0.78rem;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             margin-top: 8px;
         }
 
@@ -577,7 +574,7 @@
         .loading, .error-msg, .no-results {
             text-align: center;
             padding: 48px 24px;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             font-size: 0.95rem;
         }
 
@@ -585,8 +582,8 @@
             display: inline-block;
             width: 24px;
             height: 24px;
-            border: 2.5px solid #ddd8d0;
-            border-top-color: #5c3d2e;
+            border: 2.5px solid var(--color-border);
+            border-top-color: var(--color-accent);
             border-radius: 50%;
             animation: spin 0.8s linear infinite;
             margin-bottom: 12px;
@@ -602,7 +599,7 @@
             margin: 40px auto 0;
             padding: 24px 28px;
             background: #ffffff;
-            border: 1px solid #ddd8d0;
+            border: 1px solid var(--color-border);
             border-left: 4px solid #b09a3a;
             border-radius: 4px;
             text-align: left;
@@ -611,7 +608,7 @@
         .disclaimer h3 {
             font-size: 0.85rem;
             font-weight: 600;
-            color: #8a7a2e;
+            color: var(--color-text);
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 10px;
@@ -619,7 +616,7 @@
 
         .disclaimer p {
             font-size: 0.82rem;
-            color: #5a5347;
+            color: var(--color-text-muted);
             line-height: 1.7;
         }
 
@@ -628,12 +625,12 @@
             margin-top: auto;
             padding: 48px 24px;
             text-align: center;
-            color: #8a8279;
+            color: var(--color-text-subtle);
             font-size: 0.85rem;
         }
 
         footer a {
-            color: #5c3d2e;
+            color: var(--color-accent);
             text-decoration: none;
             font-weight: 500;
         }
@@ -644,7 +641,7 @@
 
         .last-updated-note {
             font-size: 0.78rem;
-            color: #a8a095;
+            color: var(--color-text-muted);
             margin-top: 4px;
         }
 
@@ -656,7 +653,7 @@
             width: 44px;
             height: 44px;
             border-radius: 50%;
-            background: #5c3d2e;
+            background: var(--color-accent);
             color: #fff;
             border: none;
             cursor: pointer;
@@ -676,7 +673,7 @@
         }
 
         .back-to-top:hover {
-            background: #4a3125;
+            background: var(--color-accent-hover);
         }
 
         /* --- Mobile --- */
@@ -731,264 +728,6 @@
         }
 
         /* --- Dark Mode --- */
-        @media (prefers-color-scheme: dark) {
-            body {
-                background: #1a1714;
-                color: #e8e0d5;
-            }
-
-            .header-bar {
-                background: #111010;
-            }
-
-            .header-bar span,
-            .header-bar a {
-                color: #e8e0d5;
-            }
-
-            .page-nav {
-                background: #111010;
-                border-top-color: rgba(255,255,255,0.04);
-            }
-
-            .page-nav a {
-                color: #e8e0d5;
-            }
-
-            .page-nav a:hover {
-                background: rgba(255, 255, 255, 0.06);
-            }
-
-            .page-nav a.active {
-                color: #fff;
-                background: rgba(255, 255, 255, 0.04);
-            }
-
-            .hero h1 {
-                color: #e8e0d5;
-            }
-
-            .hero p {
-                color: #a69d90;
-            }
-
-            .stats-line {
-                color: #7a7168;
-            }
-
-            .search-input-wrapper {
-                background: #231f1b;
-                border-color: #3a3530;
-            }
-
-            .search-input-wrapper:focus-within {
-                border-color: #c49a6c;
-            }
-
-            .search-icon {
-                color: #7a7168;
-            }
-
-            .search-input {
-                color: #e8e0d5;
-            }
-
-            .search-input::placeholder {
-                color: #5a5347;
-            }
-
-            .search-clear {
-                color: #7a7168;
-            }
-
-            .search-hint {
-                color: #5a5347;
-            }
-
-            .search-hint kbd {
-                background: #2a2520;
-                border-color: #3a3530;
-                color: #7a7168;
-            }
-
-            .results-count {
-                color: #7a7168;
-            }
-
-            .article-card {
-                background: #231f1b;
-                border-color: #3a3530;
-                border-left: 3px solid #c49a6c;
-            }
-
-            .article-card:hover {
-                border-color: #4a4540;
-                border-left-color: #c49a6c;
-            }
-
-            .article-title {
-                color: #e8e0d5;
-            }
-
-            .article-title a:hover {
-                color: #c49a6c;
-            }
-
-            .article-meta {
-                color: #7a7168;
-            }
-
-            .article-meta .journal {
-                color: #a69d90;
-            }
-
-            .article-authors {
-                color: #7a7168;
-            }
-
-            .article-abstract {
-                color: #a69d90;
-            }
-
-            .abstract-toggle {
-                color: #c49a6c;
-            }
-
-            .article-link {
-                color: #c49a6c;
-            }
-
-            mark {
-                background: #5c4b12;
-                color: #e8d8a0;
-            }
-
-            .loading, .error-msg, .no-results {
-                color: #7a7168;
-            }
-
-            .loading-spinner {
-                border-color: #3a3530;
-                border-top-color: #c49a6c;
-            }
-
-            .disclaimer {
-                background: #231f1b;
-                border-color: #3a3530;
-                border-left-color: #b09a3a;
-            }
-
-            .disclaimer h3 {
-                color: #b09a3a;
-            }
-
-            .disclaimer p {
-                color: #a69d90;
-            }
-
-            footer {
-                color: #7a7168;
-            }
-
-            footer a {
-                color: #c49a6c;
-            }
-
-            .last-updated-note {
-                color: #5a5347;
-            }
-
-            .article-type {
-                background: #2a2520;
-                color: #a69d90;
-            }
-
-            .article-type.review, .article-type.systematic-review {
-                background: #1f2a30;
-                color: #6ca8c4;
-            }
-
-            .article-type.meta-analysis {
-                background: #1f2a22;
-                color: #8dbb6c;
-            }
-
-            .article-type.case-report {
-                background: #2a1f25;
-                color: #bb8faa;
-            }
-
-            .article-type.clinical-trial {
-                background: #222a1f;
-                color: #8dbb6c;
-            }
-
-            .controls-label {
-                color: #7a7168;
-            }
-
-            .control-btn {
-                background: #231f1b;
-                border-color: #3a3530;
-                color: #a69d90;
-            }
-
-            .control-btn:hover {
-                border-color: #c49a6c;
-            }
-
-            .control-btn.active {
-                background: #c49a6c;
-                color: #1a1714;
-                border-color: #c49a6c;
-            }
-
-            .topic-filter-label { color: #7a7168; }
-            .topic-chip {
-                background: #231f1b;
-                border-color: #3a3530;
-                color: #a69d90;
-            }
-            .topic-chip:hover { border-color: #c49a6c; color: #c49a6c; }
-            .topic-chip.active {
-                background: #c49a6c;
-                color: #1a1714;
-                border-color: #c49a6c;
-            }
-
-            .advanced-search details { background: #231f1b; border-color: #3a3530; }
-            .advanced-search summary { color: #a69d90; }
-            .advanced-search-body { border-top-color: #2a2520; }
-
-            .load-more-btn {
-                background: #231f1b;
-                border-color: #3a3530;
-                color: #c49a6c;
-            }
-
-            .load-more-btn:hover {
-                background: #2a2520;
-                border-color: #c49a6c;
-            }
-
-            .load-more-count {
-                color: #7a7168;
-            }
-
-            .back-to-top {
-                background: #c49a6c;
-                color: #1a1714;
-                box-shadow: 0 3px 12px rgba(0, 0, 0, 0.4);
-            }
-
-            .back-to-top:hover {
-                background: #b08a5e;
-            }
-
-            a {
-                color: #c49a6c;
-            }
-        }
 
         /* --- Print --- */
         @media print {
@@ -999,6 +738,7 @@
             a { color: #000 !important; text-decoration: none !important; }
         }
     </style>
+    <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
@@ -1012,12 +752,12 @@
 
     <nav class="page-nav">
         <a href="index.html">Home</a>
+        <a href="literature.html" class="active">Literature</a>
         <a href="diagnosis.html">Diagnosis</a>
         <a href="conservative.html">Conservative</a>
         <a href="community-discussion.html">Community</a>
         <a href="medications.html">Medications</a>
         <a href="surgery.html">Surgery</a>
-        <a href="literature.html" class="active">Literature</a>
         <a href="outreach.html">Outreach</a>
     </nav>
 

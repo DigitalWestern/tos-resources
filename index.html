@@ -792,7 +792,6 @@
             border-radius: 4px;
         }
 
-        .explainer h2,
         .explainer > summary {
             font-size: 1.3rem;
             font-weight: 700;
@@ -937,7 +936,15 @@
             text-align: left;
         }
 
-        .red-flags h2 {
+        .red-flags > summary {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            user-select: none;
+            -webkit-user-select: none;
+            padding-right: 4px;
             font-size: 0.95rem;
             font-weight: 700;
             color: var(--color-text);
@@ -945,6 +952,27 @@
             letter-spacing: 0.08em;
             margin-bottom: 12px;
             font-family: var(--font-sans);
+        }
+        .red-flags > summary::-webkit-details-marker { display: none; }
+        .red-flags > summary::after {
+            content: "▾";
+            font-size: 1rem;
+            color: var(--color-text-subtle);
+            transition: transform 0.2s;
+            flex-shrink: 0;
+            margin-left: 12px;
+            text-transform: none;
+            letter-spacing: normal;
+            font-weight: normal;
+        }
+        .red-flags[open] > summary::after { transform: rotate(-90deg); }
+        .red-flags[open] > summary { margin-bottom: 12px; }
+        @media (min-width: 900px) {
+            .red-flags > summary {
+                cursor: default;
+                pointer-events: none;
+            }
+            .red-flags > summary::after { display: none; }
         }
 
         .red-flags-lead {
@@ -1664,19 +1692,6 @@
         <p>TOS is a group of conditions where nerves or blood vessels between the collarbone and first rib get compressed — causing pain, numbness, tingling, or weakness in the neck, shoulder, arm, or hand. There are three main types: <strong>neurogenic</strong> (nerve compression, the most common), <strong>venous</strong>, and <strong>arterial</strong>. It's often underdiagnosed and can take years to pin down.</p>
     </details>
 
-    <aside class="red-flags" aria-labelledby="red-flags-heading">
-        <h2 id="red-flags-heading">When to Seek Emergency Care</h2>
-        <p class="red-flags-lead">Most TOS symptoms are chronic, not emergencies — but some are. If you have any of the following, <strong>go to the ER or call 911</strong>. Do not wait.</p>
-        <ul class="red-flags-list">
-            <li><strong>Sudden arm swelling or discoloration</strong> (blue, purple, or mottled), or a feeling of fullness/heaviness in the arm — possible blood clot (venous TOS / effort thrombosis).</li>
-            <li><strong>Loss of pulse, a cold or pale hand,</strong> or sudden ischemic pain — possible arterial compromise.</li>
-            <li><strong>Sudden severe weakness</strong> or inability to move the arm or hand.</li>
-            <li><strong>Chest pain, shortness of breath, or coughing up blood</strong> — possible pulmonary embolism from an arm clot.</li>
-            <li><strong>Sudden severe headache, vision changes, slurred speech, or fainting</strong> — possible vascular event (including subclavian steal).</li>
-        </ul>
-        <p class="red-flags-note">These events are rare but time-sensitive. When in doubt, get checked.</p>
-    </aside>
-
     <section class="start-here" id="start-here" aria-labelledby="start-here-heading">
         <h2 id="start-here-heading">Start Here</h2>
         <p class="start-here-lead">Where are you in your TOS journey? Pick the path that fits.</p>
@@ -1717,6 +1732,19 @@
         <div class="search-hint">Press <kbd>/</kbd> to focus &middot; <kbd>Esc</kbd> to clear</div>
         <div id="search-results" class="search-results"></div>
     </div>
+
+    <details class="red-flags" data-mobile-only aria-labelledby="red-flags-heading">
+        <summary id="red-flags-heading">When to Seek Emergency Care</summary>
+        <p class="red-flags-lead">Most TOS symptoms are chronic, not emergencies — but some are. If you have any of the following, <strong>go to the ER or call 911</strong>. Do not wait.</p>
+        <ul class="red-flags-list">
+            <li><strong>Sudden arm swelling or discoloration</strong> (blue, purple, or mottled), or a feeling of fullness/heaviness in the arm — possible blood clot (venous TOS / effort thrombosis).</li>
+            <li><strong>Loss of pulse, a cold or pale hand,</strong> or sudden ischemic pain — possible arterial compromise.</li>
+            <li><strong>Sudden severe weakness</strong> or inability to move the arm or hand.</li>
+            <li><strong>Chest pain, shortness of breath, or coughing up blood</strong> — possible pulmonary embolism from an arm clot.</li>
+            <li><strong>Sudden severe headache, vision changes, slurred speech, or fainting</strong> — possible vascular event (including subclavian steal).</li>
+        </ul>
+        <p class="red-flags-note">These events are rare but time-sensitive. When in doubt, get checked.</p>
+    </details>
 
     <div id="reports" class="section-label reports">
         <h2>Reports & Guides</h2>

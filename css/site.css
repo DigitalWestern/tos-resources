@@ -360,7 +360,8 @@ a.button.secondary:hover,
 .nav-toggle {
     position: absolute;
     top: 50%;
-    right: 16px;
+    left: 16px;
+    right: auto;
     transform: translateY(-50%);
     width: 44px;
     height: 44px;
@@ -396,18 +397,20 @@ a.button.secondary:hover,
     z-index: 200;
 }
 
-/* The drawer itself — right-aligned sheet, off-screen by default. */
+/* The drawer itself — full-screen sheet, slides in from the left. */
 .drawer {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
+    right: auto;
     bottom: 0;
-    width: 85vw;
-    max-width: 340px;
+    width: 100%;
+    max-width: 100%;
     background: var(--color-bg);
-    border-left: 1px solid var(--color-border);
-    box-shadow: -6px 0 20px rgba(0, 0, 0, 0.12);
-    transform: translateX(100%);
+    border-left: none;
+    border-right: 1px solid var(--color-border);
+    box-shadow: none;
+    transform: translateX(-100%);
     transition: transform 0.22s ease;
     z-index: 201;
     display: flex;
@@ -447,9 +450,10 @@ body.drawer-open .drawer {
     color: var(--color-header-text);
 }
 .drawer-close {
-    width: 40px;
-    height: 40px;
-    padding: 0;
+    width: auto;
+    height: 44px;
+    padding: 0 16px 0 12px;
+    gap: 8px;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: var(--radius-sm);
@@ -468,6 +472,15 @@ body.drawer-open .drawer {
     width: 18px;
     height: 18px;
     display: block;
+    flex-shrink: 0;
+}
+.drawer-close::after {
+    content: "Close Menu";
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 
 /* Navigation list inside the drawer. */
@@ -542,6 +555,27 @@ body.drawer-open .drawer {
 }
 .page-nav {
     display: none;
+}
+
+/* Mobile header: flex layout so the left-side hamburger doesn't
+   overlap the centered title. Nav-toggle goes first (order -1),
+   the title span gets padding-right to keep text visually centered. */
+@media (max-width: 899px) {
+    .header-bar {
+        display: flex;
+        align-items: center;
+    }
+    .header-bar > span {
+        flex: 1;
+        text-align: center;
+        padding-right: 56px;
+    }
+    .nav-toggle {
+        position: static;
+        transform: none;
+        order: -1;
+        flex-shrink: 0;
+    }
 }
 
 @media (min-width: 900px) {
@@ -744,6 +778,94 @@ body.filter-open .filter-sheet-backdrop {
 @media (prefers-reduced-motion: reduce) {
     #filter-panel,
     .filter-sheet-backdrop {
+        transition: none;
+    }
+}
+
+/* ============================================================
+   Phase 4 — Dense-page section collapsing (mobile only)
+
+   .entry-collapse  — wraps a single h3 + its content.
+                      summary styled to match .topic-content h3.
+   .section-collapse — wraps an entire section body (h2 becomes
+                       summary). Styled to match .topic-content h2.
+
+   Both carry data-mobile-only; syncOpen() in site.js opens them
+   at ≥900px. Desktop: summary non-interactive, content visible.
+   ============================================================ */
+
+.entry-collapse > summary {
+    list-style: none;
+    cursor: pointer;
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.4;
+    margin: 28px 0 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.entry-collapse > summary::-webkit-details-marker { display: none; }
+.entry-collapse > summary::after {
+    content: "▾";
+    font-size: 0.85rem;
+    font-family: var(--font-sans);
+    color: var(--color-text-subtle);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    margin-left: 10px;
+    font-weight: normal;
+}
+.entry-collapse[open] > summary::after { transform: rotate(-180deg); }
+
+.section-collapse > summary {
+    list-style: none;
+    cursor: pointer;
+    font-family: var(--font-serif);
+    font-size: 1.65rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.25;
+    margin-bottom: 14px;
+    letter-spacing: -0.01em;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.section-collapse > summary::-webkit-details-marker { display: none; }
+.section-collapse > summary::after {
+    content: "▾";
+    font-size: 1rem;
+    color: var(--color-text-subtle);
+    transition: transform 0.2s;
+    flex-shrink: 0;
+    margin-left: 12px;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+.section-collapse[open] > summary::after { transform: rotate(-180deg); }
+
+@media (min-width: 900px) {
+    .entry-collapse > summary,
+    .section-collapse > summary {
+        cursor: default;
+        pointer-events: none;
+    }
+    .entry-collapse > summary::after,
+    .section-collapse > summary::after {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .entry-collapse > summary::after,
+    .section-collapse > summary::after {
         transition: none;
     }
 }

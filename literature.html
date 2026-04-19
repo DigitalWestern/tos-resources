@@ -965,16 +965,15 @@
                         allArticles = data.articles || [];
                         loadingEl.style.display = 'none';
                         var filterToggle = document.getElementById('filter-toggle');
+                        var filterPanel = document.getElementById('filter-panel');
+                        topicFilter.style.display = 'block';
+                        controlsBar.style.display = 'flex';
+                        advancedSearch.style.display = 'block';
                         if (window.innerWidth < 900) {
                             if (filterToggle) { filterToggle.style.display = 'flex'; }
-                            var filterPanel = document.getElementById('filter-panel');
                             if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'true'); }
                         } else {
-                            topicFilter.style.display = 'block';
-                            controlsBar.style.display = 'flex';
-                            advancedSearch.style.display = 'block';
                             if (filterToggle) { filterToggle.style.display = 'none'; }
-                            var filterPanel = document.getElementById('filter-panel');
                             if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'false'); }
                         }
 

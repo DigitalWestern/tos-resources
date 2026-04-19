@@ -632,9 +632,13 @@
             .related-grid { grid-template-columns: 1fr; }
             .data-row { grid-template-columns: 1fr; gap: 4px; padding: 10px 16px; }
             .disclaimer { margin-left: 20px; margin-right: 20px; padding: 16px 18px; }
-            .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
+            .back-to-top { bottom: 20px; right: 20px; width: 44px; height: 44px; }
             .topic-downloads { padding: 24px 20px; }
             .dl-card { padding: 20px; }
+        }
+
+        @media (min-width: 768px) {
+            .related-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         /* Dark mode */

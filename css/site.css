@@ -47,6 +47,9 @@
     --font-sans: "Times New Roman", Times, Georgia, serif;
     --font-mono: "Times New Roman", Times, Georgia, serif;
 
+    /* Touch targets — WCAG 2.5.5 minimum */
+    --touch-min: 44px;
+
     /* Radii — flat, disciplined */
     --radius-sm: 2px;
     --radius-md: 3px;

@@ -1,0 +1,340 @@
+/* ============================================================
+   TOS Resources — Shared Site Stylesheet
+   Institutional monochrome redesign (April 2026)
+
+   Single palette — no dark mode. Warm off-white paper, charcoal
+   text, hairline gray borders. Times New Roman for all serif
+   content, Arial for UI chrome only.
+
+   Loaded after each page's inline <style> block so these rules
+   win the cascade on shared components. Page-specific rules
+   stay inline and keep working as-is.
+   ============================================================ */
+
+:root {
+    color-scheme: light;
+
+    /* Surfaces — pure white paper */
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-surface-alt: #f2efe6;
+    --color-surface-sunken: #e8e4d9;
+
+    /* Text — all body copy is black. Only truly tertiary
+       metadata (timestamps, tiny labels) uses the subtle gray. */
+    --color-text: #1a1a1a;
+    --color-text-muted: #1a1a1a;
+    --color-text-subtle: #5a5a5a;
+
+    /* Borders — soft hairlines */
+    --color-border: #c9c4b6;
+    --color-border-strong: #8a8578;
+    --color-rule: #d9d4c5;
+
+    /* Accent — charcoal, not a color. Plain document feel. */
+    --color-accent: #1a1a1a;
+    --color-accent-hover: #4a4a4a;
+    --color-accent-tint: #ece8dd;
+    --color-accent-on: #ffffff;
+
+    /* Header / top chrome — charcoal masthead */
+    --color-header-bg: #1a1a1a;
+    --color-header-text: #f5f2ea;
+    --color-header-hover: rgba(255, 255, 255, 0.08);
+
+    /* Typography — Times New Roman, universally. No exceptions. */
+    --font-serif: "Times New Roman", Times, Georgia, serif;
+    --font-sans: "Times New Roman", Times, Georgia, serif;
+    --font-mono: "Times New Roman", Times, Georgia, serif;
+
+    /* Radii — flat, disciplined */
+    --radius-sm: 2px;
+    --radius-md: 3px;
+
+    /* Elevation — flat by default */
+    --shadow-none: none;
+    --shadow-subtle: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+/* --------------------------------------------------------
+   Neutralize any dark-mode rules left in inline CSS.
+   The OS may still prefer dark; we explicitly stay light.
+   -------------------------------------------------------- */
+html {
+    color-scheme: light;
+    background: var(--color-bg);
+}
+
+/* Universal font: Times New Roman for EVERY element, including
+   form controls and UI chrome. This overrides browser defaults
+   on <button>, <input>, etc. that otherwise pick up the OS font. */
+*, *::before, *::after {
+    font-family: "Times New Roman", Times, Georgia, serif;
+}
+
+/* --------------------------------------------------------
+   Base typography
+   -------------------------------------------------------- */
+body {
+    font-family: var(--font-serif);
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-size: 17px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: 700;
+    color: var(--color-text);
+    letter-spacing: normal;
+}
+
+p {
+    color: var(--color-text);
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--color-rule);
+    margin: 32px 0;
+}
+
+/* --------------------------------------------------------
+   Content links — underlined, monochrome. Classic document.
+   -------------------------------------------------------- */
+a {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+}
+a:hover {
+    color: var(--color-accent-hover);
+    text-decoration: underline;
+}
+
+/* UI chrome — nav, buttons, cards. No underlines here. */
+.page-nav a,
+.header-bar a,
+.button,
+a.button,
+.btn,
+.btn-primary,
+.btn-secondary,
+.download-btn,
+.download-btn.primary,
+.download-btn.secondary,
+.card a.button,
+nav a,
+.tab,
+a.tab,
+.chip,
+a.chip,
+.topic-chip,
+a.topic-chip,
+.filter-chip,
+a.filter-chip {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------
+   UI chrome font — restrained sans for functional surfaces
+   -------------------------------------------------------- */
+.header-bar,
+.header-bar span,
+.page-nav,
+.page-nav a,
+button,
+.button,
+input,
+select,
+textarea,
+.badge,
+.source-badge,
+.meta,
+.metadata,
+.reading-time,
+.filter-chip,
+.topic-chip,
+.sort-btn,
+.chip,
+.pill,
+.tag,
+.label,
+.stats,
+.stat {
+    font-family: var(--font-sans);
+}
+
+code, kbd, samp, pre {
+    font-family: var(--font-mono);
+}
+
+/* --------------------------------------------------------
+   Header + primary nav — charcoal masthead
+   -------------------------------------------------------- */
+.header-bar {
+    background: var(--color-header-bg);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+.header-bar span {
+    color: var(--color-header-text);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+}
+
+.page-nav {
+    background: var(--color-header-bg);
+    border-top: 1px solid var(--color-header-hover);
+}
+.page-nav a {
+    color: var(--color-header-text);
+    font-weight: 500;
+    letter-spacing: 0.09em;
+}
+.page-nav a:hover {
+    background: var(--color-header-hover);
+    color: #ffffff;
+}
+.page-nav a.active {
+    background: var(--color-header-hover);
+    color: #ffffff;
+}
+
+/* --------------------------------------------------------
+   Hero / page intros
+   -------------------------------------------------------- */
+.hero h1 {
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-weight: 700;
+    letter-spacing: normal;
+}
+.hero p {
+    color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------
+   Cards — flat, hairline borders, no accent bar
+   -------------------------------------------------------- */
+.card,
+.literature-callout a,
+.resource-card,
+.topic-card,
+.related-card,
+.decision-card,
+.start-card,
+.download-card {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-left-width: 1px;
+    border-left-color: var(--color-border);
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-none);
+    color: var(--color-text);
+}
+
+.card:hover,
+.literature-callout a:hover,
+.resource-card:hover,
+.topic-card:hover,
+.related-card:hover,
+.decision-card:hover,
+.start-card:hover,
+.download-card:hover {
+    border-color: var(--color-border-strong);
+    border-left-color: var(--color-border-strong);
+    box-shadow: var(--shadow-subtle);
+}
+
+.card h2,
+.card h3,
+.card h4 {
+    color: var(--color-text);
+}
+
+.literature-callout .callout-text strong {
+    color: var(--color-text);
+}
+.literature-callout .callout-text span {
+    color: var(--color-text-muted);
+}
+
+/* --------------------------------------------------------
+   Buttons — functional, charcoal, no gloss
+   -------------------------------------------------------- */
+.btn,
+button.primary,
+.button.primary,
+a.button.primary,
+.download-btn.primary,
+.btn-primary {
+    background: var(--color-accent);
+    color: var(--color-accent-on);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    box-shadow: var(--shadow-none);
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+.btn:hover,
+button.primary:hover,
+.button.primary:hover,
+a.button.primary:hover,
+.download-btn.primary:hover,
+.btn-primary:hover {
+    background: var(--color-accent-hover);
+    border-color: var(--color-accent-hover);
+    box-shadow: var(--shadow-none);
+}
+
+.btn-secondary,
+.button.secondary,
+a.button.secondary,
+.download-btn.secondary {
+    background: transparent;
+    color: var(--color-accent);
+    border: 1px solid var(--color-border-strong);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-sans);
+    font-weight: 500;
+}
+.btn-secondary:hover,
+.button.secondary:hover,
+a.button.secondary:hover,
+.download-btn.secondary:hover {
+    border-color: var(--color-accent);
+    color: var(--color-text);
+    background: var(--color-accent-tint);
+}
+
+/* --------------------------------------------------------
+   Rules, separators, callouts
+   -------------------------------------------------------- */
+.section-divider,
+.rule {
+    border-top: 1px solid var(--color-rule);
+}
+
+.callout,
+.info-box,
+.note {
+    background: var(--color-surface-alt);
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-accent);
+    border-radius: var(--radius-sm);
+    color: var(--color-text);
+}
+
+/* --------------------------------------------------------
+   Focus — visible on paper
+   -------------------------------------------------------- */
+:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+}

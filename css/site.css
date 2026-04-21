@@ -893,7 +893,7 @@ body.filter-open .filter-sheet-backdrop {
 
 .reading-progress {
     position: fixed;
-    top: 0;
+    top: env(safe-area-inset-top, 0px);
     left: 0;
     height: 3px;
     background: #2563eb;

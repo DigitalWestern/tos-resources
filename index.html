@@ -79,10 +79,10 @@
 
         .page-nav a {
             display: block;
-            padding: 12px 20px;
+            padding: 12px 16px;
             color: var(--color-bg);
             text-decoration: none;
-            font-size: 0.76rem;
+            font-size: 0.72rem;
             font-weight: 500;
             letter-spacing: 0.1em;
             text-transform: uppercase;
@@ -1897,6 +1897,7 @@
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                 Download All Resources (.zip)
             </button>
+            <span class="sr-only" aria-live="polite" id="zip-status"></span>
             <p class="download-all-note">All 12 files bundled &mdash; reports, trackers, and expanded findings</p>
         </div>
 
@@ -2405,8 +2406,11 @@
         document.getElementById('download-all-btn').addEventListener('click', function() {
             var btn = this;
             var originalText = btn.innerHTML;
+            var zipStatus = document.getElementById('zip-status');
             btn.disabled = true;
+            btn.classList.add('zip-preparing');
             btn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Preparing download...';
+            if (zipStatus) { zipStatus.textContent = 'Preparing download. This may take a moment.'; }
 
             var files = [
                 'files/TOS_Community_Research_Report.docx',
@@ -2442,14 +2446,18 @@
                 document.body.removeChild(a);
                 URL.revokeObjectURL(a.href);
                 btn.disabled = false;
+                btn.classList.remove('zip-preparing');
                 btn.innerHTML = originalText;
+                if (zipStatus) { zipStatus.textContent = 'Download ready.'; }
 
                 if (window.goatcounter && goatcounter.count) {
                     goatcounter.count({ path: 'download/TOS_Resources.zip', title: 'Download: TOS_Resources.zip', event: true });
                 }
             }).catch(function() {
                 btn.disabled = false;
+                btn.classList.remove('zip-preparing');
                 btn.innerHTML = originalText;
+                if (zipStatus) { zipStatus.textContent = 'Download failed. Please try again.'; }
                 alert('Download failed. Please try downloading files individually.');
             });
         });

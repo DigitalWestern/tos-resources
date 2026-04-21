@@ -255,3 +255,16 @@
     if (desktopMQ.addEventListener) { desktopMQ.addEventListener('change', handleBreakpoint); }
     else if (desktopMQ.addListener) { desktopMQ.addListener(handleBreakpoint); }
 })();
+
+/* ============================================================
+   Reading progress bar — fills a .reading-progress element
+   from 0% to 100% width as the user scrolls.
+   ============================================================ */
+(function () {
+    var bar = document.querySelector('.reading-progress');
+    if (!bar) return;
+    window.addEventListener('scroll', function () {
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+    }, { passive: true });
+})();

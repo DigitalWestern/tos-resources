@@ -270,7 +270,7 @@
 
     if (btt) {
         var size = 52;
-        var strokeWidth = 3;
+        var strokeWidth = 5;
         var radius = (size - strokeWidth) / 2;
         circumference = 2 * Math.PI * radius;
 

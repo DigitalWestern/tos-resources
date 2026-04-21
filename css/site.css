@@ -893,13 +893,20 @@ body.filter-open .filter-sheet-backdrop {
 
 .reading-progress {
     position: fixed;
-    top: env(safe-area-inset-top, 0px);
+    top: 0;
     left: 0;
-    height: 3px;
     background: #2563eb;
-    width: 0%;
     z-index: 9999;
     pointer-events: none;
+    height: 3px;
+    width: var(--progress, 0%);
+}
+
+@media (max-width: 899px) {
+    .reading-progress {
+        width: 3px;
+        height: var(--progress, 0%);
+    }
 }
 
 /* ============================================================

@@ -265,6 +265,7 @@
     if (!bar) return;
     window.addEventListener('scroll', function () {
         var h = document.documentElement.scrollHeight - window.innerHeight;
-        bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+        var pct = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+        bar.style.setProperty('--progress', pct);
     }, { passive: true });
 })();

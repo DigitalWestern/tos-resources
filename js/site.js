@@ -257,15 +257,49 @@
 })();
 
 /* ============================================================
-   Reading progress bar — fills a .reading-progress element
-   from 0% to 100% width as the user scrolls.
+   Reading progress — desktop: horizontal top bar via --progress
+   custom property. Mobile: SVG ring around back-to-top button.
    ============================================================ */
 (function () {
     var bar = document.querySelector('.reading-progress');
     if (!bar) return;
+
+    var btt = document.getElementById('back-to-top');
+    var circle = null;
+    var circumference = 0;
+
+    if (btt) {
+        var size = 52;
+        var strokeWidth = 3;
+        var radius = (size - strokeWidth) / 2;
+        circumference = 2 * Math.PI * radius;
+
+        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('class', 'progress-ring');
+        svg.setAttribute('width', size);
+        svg.setAttribute('height', size);
+        svg.setAttribute('aria-hidden', 'true');
+
+        circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('class', 'progress-ring__circle');
+        circle.setAttribute('stroke-width', strokeWidth);
+        circle.setAttribute('r', radius);
+        circle.setAttribute('cx', size / 2);
+        circle.setAttribute('cy', size / 2);
+        circle.style.strokeDasharray = circumference;
+        circle.style.strokeDashoffset = circumference;
+
+        svg.appendChild(circle);
+        btt.style.position = btt.style.position || 'fixed';
+        btt.appendChild(svg);
+    }
+
     window.addEventListener('scroll', function () {
         var h = document.documentElement.scrollHeight - window.innerHeight;
-        var pct = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
-        bar.style.setProperty('--progress', pct);
+        var pct = h > 0 ? window.scrollY / h : 0;
+        bar.style.setProperty('--progress', (pct * 100) + '%');
+        if (circle) {
+            circle.style.strokeDashoffset = circumference * (1 - pct);
+        }
     }, { passive: true });
 })();

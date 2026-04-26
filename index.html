@@ -52,7 +52,7 @@
 
         .header-bar {
             width: 100%;
-            background: #1c1c1c;
+            background: #1b3560;
             padding: 16px 24px;
             text-align: center;
         }
@@ -70,7 +70,7 @@
             top: 0;
             z-index: 100;
             width: 100%;
-            background: #1c1c1c;
+            background: #1b3560;
             border-top: 1px solid rgba(255,255,255,0.06);
             display: flex;
             justify-content: center;
@@ -96,7 +96,7 @@
 
         .page-nav a.active {
             color: #fff;
-            background: rgba(255, 255, 255, 0.05);
+            background: #2e9d9a;
         }
 
         .literature-callout {
@@ -143,26 +143,127 @@
         }
 
         .hero {
-            text-align: center;
-            padding: 72px 24px 48px;
-            max-width: 720px;
+            width: 100%;
+            background: linear-gradient(135deg, #0f2340 0%, #1b3560 60%, #1f4a6e 100%);
+            padding: 80px 32px 72px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            max-width: none;
         }
-
-        .hero h1 {
-            font-size: 3rem;
+        .hero-inner {
+            max-width: 860px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            right: 60px;
+            top: -60px;
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            border: 2px solid #2e9d9a;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            right: 90px;
+            top: -30px;
+            width: 240px;
+            height: 240px;
+            border-radius: 50%;
+            border: 1px solid #ecc94b;
+            opacity: 0.12;
+            pointer-events: none;
+        }
+        .hero-eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .hero-eyebrow span {
+            font-size: 0.7rem;
             font-weight: 700;
-            color: var(--color-text);
-            margin-bottom: 16px;
-            line-height: 1.15;
-            letter-spacing: -0.02em;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #2e9d9a;
         }
-
+        .hero-eyebrow::before {
+            content: '';
+            display: block;
+            width: 24px;
+            height: 1.5px;
+            background: #2e9d9a;
+            flex-shrink: 0;
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            color: #ffffff;
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+        }
+        .hero h1 .hero-teal {
+            color: #2e9d9a;
+        }
         .hero p {
-            font-size: 1rem;
-            color: var(--color-text-muted);
-            line-height: 1.7;
-            max-width: 600px;
-            margin: 0 auto;
+            font-size: 1.05rem;
+            color: rgba(255,255,255,0.72);
+            line-height: 1.75;
+            max-width: 520px;
+            margin-bottom: 32px;
+        }
+        .hero-ctas {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        .hero-btn-primary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 26px;
+            background: #2e9d9a;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.15s;
+        }
+        .hero-btn-primary:hover { background: #237d7a; color: #fff; text-decoration: none; }
+        .hero-btn-secondary {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 26px;
+            background: transparent;
+            color: #ffffff;
+            border: 1.5px solid rgba(255,255,255,0.45);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background 0.15s, border-color 0.15s;
+        }
+        .hero-btn-secondary:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.7);
+            color: #fff;
+            text-decoration: none;
         }
 
         .cards {
@@ -1253,24 +1354,38 @@
         }
 
         .stats-bar {
+            width: 100%;
+            background: #122444;
+            padding: 32px 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
             max-width: 860px;
             width: 100%;
-            padding: 32px 24px;
-            margin: 40px auto 0;
             text-align: center;
         }
-
-        .stats-line {
-            font-size: 0.82rem;
-            font-weight: 500;
-            color: var(--color-text-muted);
-            letter-spacing: 0.06em;
-            text-transform: uppercase;
+        .stat-item .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #2e9d9a;
+            line-height: 1.2;
         }
-
-        /* Legacy grid classes kept for compatibility but hidden */
-        .stats-grid {
-            display: none;
+        .stat-item .stat-label {
+            font-size: 0.75rem;
+            color: #9baab8;
+            letter-spacing: 0.04em;
+            margin-top: 4px;
+        }
+        @media (max-width: 640px) {
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            .stat-item .stat-number { font-size: 1.5rem; }
         }
 
         .stat-item {
@@ -1468,10 +1583,11 @@
 
         @media (max-width: 640px) {
             .hero {
-                padding: 36px 20px 24px;
+                padding: 48px 20px 40px;
             }
+            .hero::before, .hero::after { display: none; }
             .hero h1 {
-                font-size: 1.6rem;
+                font-size: 2.2rem;
             }
             .hero p {
                 font-size: 0.95rem;
@@ -1790,6 +1906,81 @@
                 padding: 20px;
             }
         }
+
+        /* ── 3-column footer ── */
+        .site-footer {
+            background: #122444;
+            color: #ffffff;
+            width: 100%;
+        }
+        .site-footer-gradient {
+            height: 3px;
+            background: linear-gradient(90deg, #2e9d9a, #ecc94b, #2e9d9a);
+        }
+        .site-footer-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 24px 32px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        .footer-brand .wordmark {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        .footer-brand .wordmark span {
+            color: #2e9d9a;
+            font-weight: 400;
+        }
+        .footer-brand .tagline {
+            font-size: 0.65rem;
+            color: #9baab8;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+        .footer-brand p {
+            font-size: 0.82rem;
+            color: #9baab8;
+            line-height: 1.7;
+        }
+        .footer-col h4 {
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #2e9d9a;
+            margin-bottom: 14px;
+        }
+        .footer-col a {
+            display: block;
+            font-size: 0.88rem;
+            color: #ccd8e8;
+            text-decoration: none;
+            padding: 3px 0;
+        }
+        .footer-col a:hover { color: #ffffff; text-decoration: none; }
+        .footer-col p {
+            font-size: 0.8rem;
+            color: #9baab8;
+            line-height: 1.75;
+        }
+        .footer-copy {
+            font-size: 0.72rem;
+            color: #4a6070;
+            margin-top: 12px;
+        }
+        @media (max-width: 640px) {
+            .site-footer-inner {
+                grid-template-columns: 1fr;
+                gap: 28px;
+                padding: 36px 20px 28px;
+            }
+            .footer-col:nth-child(2) { display: none; }
+        }
     </style>
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/brand-tokens.css">
@@ -1852,8 +2043,23 @@
     </aside>
 
     <div class="hero">
-        <h1>Thoracic Outlet Syndrome Resources</h1>
-        <p>Free guides for understanding, diagnosing, and treating Thoracic Outlet Syndrome — built from 382 community posts and 669 peer-reviewed articles.</p>
+        <div class="hero-inner">
+            <div class="hero-eyebrow">
+                <span>Community Resources</span>
+            </div>
+            <h1>
+                Understanding<br>
+                <span class="hero-teal">Thoracic Outlet</span><br>
+                Syndrome.
+            </h1>
+            <p>
+                Patient-compiled guides, clinical literature, and community wisdom — all in one place. Built for people navigating one of medicine's most misunderstood conditions.
+            </p>
+            <div class="hero-ctas">
+                <a href="#start-here" class="hero-btn-primary">Start Here &rarr;</a>
+                <a href="literature.html" class="hero-btn-secondary">Browse Literature</a>
+            </div>
+        </div>
     </div>
 
 
@@ -2063,12 +2269,50 @@
     </div>
 
     <div class="stats-bar">
-        <p class="stats-line">382 Reddit posts · 669 research articles · 7 free guides &amp; trackers · 15+ surgeons referenced · ~84 min reading</p>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">14,000+</div>
+                <div class="stat-label">Reddit community members</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1,400+</div>
+                <div class="stat-label">PubMed articles indexed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Downloadable guides</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">Free</div>
+                <div class="stat-label">Always, for everyone</div>
+            </div>
+        </div>
     </div>
 
-    <footer>
-        Built with insights from the TOS community on Reddit.<br>
-        For more resources, visit <a href="https://www.tosoutreach.com" style="color: var(--color-accent); text-decoration: none; font-weight: 500;">tosoutreach.com</a>
+    <footer class="site-footer">
+        <div class="site-footer-gradient"></div>
+        <div class="site-footer-inner">
+            <div class="footer-brand">
+                <div class="wordmark">TOS<span>Resources</span>.com</div>
+                <div class="tagline">Thoracic Outlet Syndrome.</div>
+                <p>Community-compiled resources for patients navigating TOS. Not affiliated with any medical institution.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <a href="literature.html">Literature</a>
+                <a href="diagnosis.html">Diagnosis</a>
+                <a href="conservative.html">Conservative</a>
+                <a href="community-discussion.html">Community</a>
+                <a href="medications.html">Medications</a>
+                <a href="surgery.html">Surgery</a>
+                <a href="outreach.html">Outreach</a>
+            </div>
+            <div class="footer-col">
+                <h4>Disclaimer</h4>
+                <p>The information on this site is for general educational purposes only. It is not a substitute for professional medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider.</p>
+                <p class="footer-copy">&copy; 2026 TOS Resources &middot; tosresources.com</p>
+            </div>
+        </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" integrity="sha512-XMVd28F1oH/O71fzwBnV7HucLxVwtxf26XV8P4wPk26EDxuGZ91N8bsOttmnomcCD3CS5ZMRL50H0GgOHvegtg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

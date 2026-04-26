@@ -104,6 +104,28 @@ a.button.primary:hover,
   transform: translateY(-2px);
 }
 
+/* ── Topic page heroes: navy gradient ──────────────────── */
+.topic-hero {
+  background: linear-gradient(135deg, #0f2340 0%, #1b3560 70%) !important;
+  max-width: 100% !important;
+  padding: 48px 32px 40px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.topic-hero h1 {
+  color: #ffffff !important;
+}
+.topic-eyebrow {
+  color: #2e9d9a !important;
+}
+.topic-lede {
+  color: rgba(255,255,255,0.72) !important;
+}
+.topic-meta,
+.topic-meta .meta-item {
+  color: rgba(255,255,255,0.45) !important;
+}
+
 /* ── Wordmark: TOS white + Resources teal ──────────────── */
 .nav-tos {
   color: #ffffff;
@@ -117,30 +139,7 @@ a.button.primary:hover,
   margin-left: 0.3em;
 }
 
-/* ── Homepage hero: dark navy gradient ─────────────────── */
-.hero {
-  background: linear-gradient(135deg, #0f2340 0%, #1b3560 60%, #1f4a6e 100%) !important;
-  position: relative;
-  overflow: hidden;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  right: 60px;
-  top: -60px;
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
-  border: 2px solid var(--color-brand-teal);
-  opacity: 0.15;
-  pointer-events: none;
-}
-.hero h1 {
-  color: #ffffff !important;
-}
-.hero p {
-  color: rgba(255,255,255,0.72) !important;
-}
+/* ── Homepage hero colors (layout in index.html inline) ── */
 
 /* ── Back-to-top ring button: navy fill ────────────────── */
 #back-to-top-wrap {

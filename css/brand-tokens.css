@@ -1,0 +1,102 @@
+/* ============================================================
+   TOS Resources — Brand Token CSS
+   Drop into css/ and load BEFORE site.css in every page <head>:
+
+   <link rel="stylesheet" href="css/brand-tokens.css">
+   <link rel="stylesheet" href="css/site.css">
+
+   These vars override the charcoal monochrome defaults in
+   site.css with the real brand palette from the logo.
+   ============================================================ */
+
+:root {
+  /* ── Logo-extracted brand palette ───────────────────────── */
+  --color-brand-navy:    #1b3560;   /* "TOS" wordmark · left circle arc */
+  --color-brand-teal:    #2e9d9a;   /* "Resources" wordmark · right arc */
+  --color-brand-gold:    #ecc94b;   /* Nerve strand accents */
+  --color-brand-slate:   #9baab8;   /* Rib cage · ".com" · subtle text */
+
+  /* ── Remap site.css accent → brand navy ─────────────────── */
+  --color-accent:        var(--color-brand-navy);
+  --color-accent-hover:  #142848;
+  --color-accent-tint:   #e8f0f8;
+
+  /* ── Remap header → brand navy ───────────────────────────── */
+  --color-header-bg:     var(--color-brand-navy);
+  --color-header-text:   #f0f6ff;
+
+  /* ── Teal surface tint (replaces warm cream for tinted panels) */
+  /* Uncomment to adopt the teal-tinted alternative:
+  --color-surface-alt:   #f0f5f5;
+  --color-surface-sunken:#e2eeee;
+  */
+}
+
+/* ── Reading progress bar: teal→gold gradient ───────────── */
+.reading-progress {
+  background: linear-gradient(90deg,
+    var(--color-brand-teal),
+    var(--color-brand-gold)
+  ) !important;
+}
+
+/* ── Nav active tab: teal background ────────────────────── */
+.page-nav a.active {
+  background: var(--color-brand-teal) !important;
+  color: #ffffff !important;
+}
+
+/* ── Gradient accent rule below nav ─────────────────────── */
+.page-nav {
+  position: relative;
+}
+.page-nav::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    var(--color-brand-teal),
+    var(--color-brand-gold),
+    var(--color-brand-teal)
+  );
+}
+
+/* ── Primary buttons: teal fill ─────────────────────────── */
+.btn,
+.btn-primary,
+.download-btn,
+.download-btn.primary,
+button.primary,
+.button.primary,
+a.button.primary,
+.download-all-btn {
+  background: var(--color-brand-teal) !important;
+  border-color: var(--color-brand-teal) !important;
+  color: #ffffff !important;
+}
+
+.btn:hover,
+.btn-primary:hover,
+.download-btn:hover,
+.download-btn.primary:hover,
+button.primary:hover,
+.button.primary:hover,
+a.button.primary:hover,
+.download-all-btn:hover {
+  background: #237d7a !important;
+  border-color: #237d7a !important;
+}
+
+/* ── Card hover: teal top-border accent ─────────────────── */
+.card:hover,
+.resource-card:hover,
+.topic-card:hover,
+.start-card:hover,
+.download-card:hover {
+  border-top: 3px solid var(--color-brand-teal) !important;
+}

@@ -92,11 +92,158 @@ a.button.primary:hover,
   border-color: #237d7a !important;
 }
 
-/* ── Card hover: teal top-border accent ─────────────────── */
+/* ── Card hover: teal top-border accent + lift ─────────── */
 .card:hover,
 .resource-card:hover,
 .topic-card:hover,
 .start-card:hover,
+.start-here-card:hover,
 .download-card:hover {
   border-top: 3px solid var(--color-brand-teal) !important;
+  box-shadow: 0 8px 24px rgba(27,53,96,0.10) !important;
+  transform: translateY(-2px);
+}
+
+/* ── Wordmark: TOS white + Resources teal ──────────────── */
+.nav-tos {
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+.nav-resources {
+  color: var(--color-brand-teal);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-left: 0.3em;
+}
+
+/* ── Homepage hero: dark navy gradient ─────────────────── */
+.hero {
+  background: linear-gradient(135deg, #0f2340 0%, #1b3560 60%, #1f4a6e 100%) !important;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  right: 60px;
+  top: -60px;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  border: 2px solid var(--color-brand-teal);
+  opacity: 0.15;
+  pointer-events: none;
+}
+.hero h1 {
+  color: #ffffff !important;
+}
+.hero p {
+  color: rgba(255,255,255,0.72) !important;
+}
+
+/* ── Back-to-top ring button: navy fill ────────────────── */
+#back-to-top-wrap {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 40;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: scale(0.6);
+}
+#back-to-top-wrap.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+#back-to-top-ring-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--color-brand-navy);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(27,53,96,0.4);
+}
+
+/* ── Section rhythm: tinted download panel ─────────────── */
+.downloads-section {
+  background: #f4f8f8 !important;
+}
+
+/* ── Community callout: navy background ────────────────── */
+.community-callout,
+.site-origin {
+  background: var(--color-brand-navy) !important;
+  color: #f0f6ff !important;
+}
+.community-callout h2,
+.community-callout p,
+.community-callout a,
+.site-origin h2,
+.site-origin p {
+  color: #f0f6ff !important;
+}
+.site-origin a {
+  color: var(--color-brand-teal) !important;
+}
+
+/* ── Mobile drawer: navy + teal active ─────────────────── */
+.drawer {
+  background: var(--color-brand-navy) !important;
+}
+.drawer a {
+  color: #f0f6ff !important;
+}
+.drawer a:hover {
+  background: rgba(255,255,255,0.08) !important;
+  color: #ffffff !important;
+}
+.drawer a.active {
+  border-left-color: var(--color-brand-teal) !important;
+  background: rgba(255,255,255,0.06) !important;
+  color: #ffffff !important;
+  font-weight: 600;
+}
+.drawer-section-label {
+  color: var(--color-brand-slate) !important;
+}
+.drawer-divider {
+  background: rgba(255,255,255,0.1) !important;
+}
+.drawer-footer {
+  background: rgba(0,0,0,0.15) !important;
+  border-top-color: rgba(255,255,255,0.1) !important;
+}
+.drawer-footer a {
+  color: var(--color-brand-teal) !important;
+}
+.drawer-close {
+  border-color: rgba(255,255,255,0.2) !important;
+}
+.drawer-close:hover {
+  background: rgba(255,255,255,0.1) !important;
+}
+
+/* ── Stats bar: navy ────────────────────────────────────── */
+.stats-bar {
+  background: var(--color-brand-navy) !important;
+  color: rgba(255,255,255,0.7) !important;
+}
+.stats-bar p {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+/* ── Footer: dark navy ─────────────────────────────────── */
+footer {
+  background: #122444 !important;
+  color: #c8d6e5 !important;
+}
+footer a {
+  color: var(--color-brand-teal) !important;
+  text-decoration: none !important;
 }

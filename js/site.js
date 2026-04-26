@@ -257,49 +257,39 @@
 })();
 
 /* ============================================================
-   Reading progress — desktop: horizontal top bar via --progress
-   custom property. Mobile: SVG ring around back-to-top button.
+   Reading progress bar (horizontal top bar on content pages).
    ============================================================ */
 (function () {
     var bar = document.querySelector('.reading-progress');
     if (!bar) return;
+    window.addEventListener('scroll', function () {
+        var h = document.documentElement.scrollHeight - window.innerHeight;
+        bar.style.width = h > 0 ? (window.scrollY / h * 100) + '%' : '0%';
+    }, { passive: true });
+})();
 
-    var btt = document.getElementById('back-to-top');
-    var circle = null;
-    var circumference = 0;
-
-    if (btt) {
-        var size = 52;
-        var strokeWidth = 5;
-        var radius = (size - strokeWidth) / 2;
-        circumference = 2 * Math.PI * radius;
-
-        var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg.setAttribute('class', 'progress-ring');
-        svg.setAttribute('width', size);
-        svg.setAttribute('height', size);
-        svg.setAttribute('aria-hidden', 'true');
-
-        circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-        circle.setAttribute('class', 'progress-ring__circle');
-        circle.setAttribute('stroke-width', strokeWidth);
-        circle.setAttribute('r', radius);
-        circle.setAttribute('cx', size / 2);
-        circle.setAttribute('cy', size / 2);
-        circle.style.strokeDasharray = circumference;
-        circle.style.strokeDashoffset = circumference;
-
-        svg.appendChild(circle);
-        btt.style.position = btt.style.position || 'fixed';
-        btt.appendChild(svg);
-    }
+/* ============================================================
+   Back-to-top ring progress button.
+   ============================================================ */
+(function () {
+    var wrap = document.getElementById('back-to-top-wrap');
+    var btn  = document.getElementById('back-to-top-ring-btn');
+    var ring = document.getElementById('ring-progress');
+    if (!wrap || !btn || !ring) return;
+    var circ = 2 * Math.PI * 22;
 
     window.addEventListener('scroll', function () {
         var h = document.documentElement.scrollHeight - window.innerHeight;
         var pct = h > 0 ? window.scrollY / h : 0;
-        bar.style.setProperty('--progress', (pct * 100) + '%');
-        if (circle) {
-            circle.style.strokeDashoffset = circumference * (1 - pct);
+        ring.style.strokeDashoffset = circ - pct * circ;
+        if (pct > 0.06) {
+            wrap.classList.add('visible');
+        } else {
+            wrap.classList.remove('visible');
         }
     }, { passive: true });
+
+    btn.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 })();

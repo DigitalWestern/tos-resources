@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 
 # --- Configuration ---
 
-EMAIL = "dafran122333@gmail.com"
+EMAIL = "contact.tosresources@gmail.com"
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 OUTPUT_FILE = "pubmed_articles.json"
 REQUEST_DELAY = 0.4  # seconds between API calls (PubMed asks for ≤3/sec without key)

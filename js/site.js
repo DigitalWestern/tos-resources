@@ -269,7 +269,8 @@
     var circumference = 0;
 
     if (btt) {
-        var size = 52;
+        var buttonSize = Math.max(btt.offsetWidth || 44, btt.offsetHeight || 44);
+        var size = buttonSize + 8;
         var strokeWidth = 5;
         var radius = (size - strokeWidth) / 2;
         circumference = 2 * Math.PI * radius;

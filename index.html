@@ -1844,7 +1844,7 @@
 
     <div class="hero">
         <h1>Thoracic Outlet Syndrome Resources</h1>
-        <p>Free guides for understanding, diagnosing, and treating Thoracic Outlet Syndrome — built from 382 community posts and 669 peer-reviewed articles.</p>
+        <p>Free guides for understanding, diagnosing, and treating Thoracic Outlet Syndrome — built from 382 community posts and 600+ peer-reviewed articles.</p>
     </div>
 
 
@@ -1873,7 +1873,7 @@
             <a href="literature.html" class="start-here-card">
                 <span class="start-here-label">Path 04</span>
                 <h3>I want research &amp; doctor prep</h3>
-                <p>Browse 669+ peer-reviewed articles and bring the diagnostic checklist to your next appointment so nothing gets overlooked.</p>
+                <p>Browse 600+ peer-reviewed articles and bring the diagnostic checklist to your next appointment so nothing gets overlooked.</p>
                 <span class="start-here-cta">Research Library &rarr;</span>
             </a>
         </div>
@@ -2032,7 +2032,7 @@
     </section>
 
     <section class="site-origin">
-        <p>Built by a patient with neurogenic TOS. A Python script collected 382 posts from r/ThoracicOutletSupport &mdash; the entire subreddit at the time. That data, combined with 669 peer-reviewed PubMed articles, was synthesized into the guides above. <a href="methodology.html">Read the full methodology &rarr;</a></p>
+        <p>Built by a patient with neurogenic TOS. A Python script collected 382 posts from r/ThoracicOutletSupport &mdash; the entire subreddit at the time. That data, combined with 600+ peer-reviewed PubMed articles, was synthesized into the guides above. <a href="methodology.html">Read the full methodology &rarr;</a></p>
     </section>
 
     <details class="red-flags" data-mobile-only aria-labelledby="red-flags-heading">
@@ -2054,7 +2054,7 @@
     </div>
 
     <div class="stats-bar">
-        <p class="stats-line">382 Reddit posts · 669 research articles · 7 free guides &amp; trackers · 15+ surgeons referenced · ~84 min reading</p>
+        <p class="stats-line">382 Reddit posts · 600+ research articles · 7 free guides &amp; trackers · 15+ surgeons referenced · ~84 min reading</p>
     </div>
 
     <footer>
@@ -2430,7 +2430,12 @@
             var zip = new JSZip();
             Promise.all(files.map(function(filePath) {
                 return fetch(filePath)
-                    .then(function(resp) { return resp.blob(); })
+                    .then(function(resp) {
+                        if (!resp.ok) {
+                            throw new Error('Could not fetch ' + filePath + ' (' + resp.status + ')');
+                        }
+                        return resp.blob();
+                    })
                     .then(function(blob) {
                         var filename = filePath.split('/').pop();
                         zip.file(filename, blob);
@@ -2453,7 +2458,10 @@
                 if (window.goatcounter && goatcounter.count) {
                     goatcounter.count({ path: 'download/TOS_Resources.zip', title: 'Download: TOS_Resources.zip', event: true });
                 }
-            }).catch(function() {
+            }).catch(function(err) {
+                if (window.console && console.error) {
+                    console.error(err);
+                }
                 btn.disabled = false;
                 btn.classList.remove('zip-preparing');
                 btn.innerHTML = originalText;

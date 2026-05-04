@@ -22,9 +22,11 @@ BLOCKED=0
 CHANGED_FILES=""
 
 while read local_ref local_sha remote_ref remote_sha; do
+    is_new_branch=0
     # If remote_sha is all zeros, this is a new branch — compare against
     # the point it diverged from main (or the root if main doesn't exist).
     if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+        is_new_branch=1
         base=$(git merge-base main "$local_sha" 2>/dev/null || echo "")
         if [ -z "$base" ]; then
             # Brand new repo or no main branch — scan all files in the push
@@ -38,7 +40,7 @@ while read local_ref local_sha remote_ref remote_sha; do
 
     # Collect changed file paths (only files that exist, not deletions)
     FILES=$(git diff --name-only --diff-filter=d "$range" 2>/dev/null)
-    if [ -z "$FILES" ] && [ -n "$range" ]; then
+    if [ -z "$FILES" ] && [ "$is_new_branch" -eq 1 ]; then
         # Fallback for new branches: list all files in the commit
         FILES=$(git ls-tree -r --name-only "$local_sha" 2>/dev/null)
     fi
@@ -170,7 +172,7 @@ for file in $CHANGED_FILES; do
     for i in "${!PII_PATTERNS[@]}"; do
         pattern="${PII_PATTERNS[$i]}"
         label="${PII_NAMES[$i]}"
-        matches=$(grep -nE "$pattern" "$file" 2>/dev/null)
+        matches=$(grep -nE "$pattern" "$file" 2>/dev/null | grep -v 'contact.tosresources@gmail.com')
         if [ -n "$matches" ]; then
             echo -e "${RED}${BOLD}BLOCKED — Possible sensitive personal data${RESET}"
             echo -e "  File:    ${YELLOW}$file${RESET}"
@@ -189,6 +191,7 @@ done
 # ══════════════════════════════════════════════════════════════════
 # Scans HTML files for href/src paths pointing to local files
 # (not http/https/mailto/# links) and checks they exist on disk.
+# Also validates local hash fragments when the target HTML exists.
 
 for file in $CHANGED_FILES; do
     [ -f "$file" ] || continue
@@ -197,32 +200,77 @@ for file in $CHANGED_FILES; do
         *) continue ;;
     esac
 
-    # Extract href="..." and src="..." values, filter to local paths
-    refs=$(grep -oE '(href|src) *= *"[^"]*"' "$file" 2>/dev/null \
-        | grep -oE '"[^"]*"' \
-        | tr -d '"' \
-        | grep -v '^http' \
-        | grep -v '^//' \
-        | grep -v '^#' \
-        | grep -v '^mailto:' \
-        | grep -v '^data:' \
-        | grep -v '^javascript:' \
-        | sort -u)
+    broken_refs=$(python3 - "$file" <<'PY'
+import os
+import sys
+from html.parser import HTMLParser
+from urllib.parse import urlsplit, unquote
 
-    for ref in $refs; do
-        # Resolve relative to the HTML file's directory
-        dir=$(dirname "$file")
-        target="$dir/$ref"
+html_file = sys.argv[1]
 
-        if [ ! -e "$target" ]; then
+class RefParser(HTMLParser):
+    def __init__(self):
+        super().__init__()
+        self.refs = []
+        self.ids = set()
+        self.names = set()
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if "id" in attrs:
+            self.ids.add(attrs["id"])
+        if "name" in attrs:
+            self.names.add(attrs["name"])
+        for attr in ("href", "src"):
+            if attr in attrs:
+                self.refs.append((self.getpos()[0], attrs[attr]))
+
+with open(html_file, encoding="utf-8") as fh:
+    parser = RefParser()
+    parser.feed(fh.read())
+
+def is_external(ref):
+    return ref.startswith(("http://", "https://", "//", "mailto:", "data:", "javascript:"))
+
+for line, ref in parser.refs:
+    if not ref or is_external(ref):
+        continue
+    parsed = urlsplit(ref)
+    path = unquote(parsed.path)
+    fragment = parsed.fragment
+    if not path and fragment:
+        if fragment not in parser.ids and fragment not in parser.names:
+            print(f"{line}|{ref}|{html_file}#{fragment}|missing fragment")
+        continue
+    if not path:
+        continue
+    target = os.path.normpath(os.path.join(os.path.dirname(html_file), path))
+    if not os.path.exists(target):
+        print(f"{line}|{ref}|{target}|not found")
+        continue
+    if fragment and target.endswith(".html"):
+        try:
+            with open(target, encoding="utf-8") as fh:
+                target_parser = RefParser()
+                target_parser.feed(fh.read())
+            if fragment not in target_parser.ids and fragment not in target_parser.names:
+                print(f"{line}|{ref}|{target}#{fragment}|missing fragment")
+        except UnicodeDecodeError:
+            pass
+PY
+)
+
+    if [ -n "$broken_refs" ]; then
+        while IFS='|' read -r line ref expected reason; do
+            [ -n "$line" ] || continue
             echo -e "${YELLOW}${BOLD}WARNING — Broken asset reference${RESET}"
-            echo -e "  File:      ${YELLOW}$file${RESET}"
+            echo -e "  File:      ${YELLOW}$file:$line${RESET}"
             echo -e "  Reference: $ref"
-            echo -e "  Expected:  $target (not found)"
+            echo -e "  Expected:  $expected ($reason)"
             echo ""
             BLOCKED=1
-        fi
-    done
+        done <<< "$broken_refs"
+    fi
 done
 
 # ══════════════════════════════════════════════════════════════════

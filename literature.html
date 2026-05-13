@@ -940,7 +940,9 @@
 
     <script>
     (function() {
-        var JSON_URL = 'pubmed_articles.json';
+        // Versioned URL so corporate proxies / browser caches can't serve a
+        // stale 0-byte or HTML response indefinitely. Bump on data refresh.
+        var JSON_URL = 'pubmed_articles.json?v=20260513';
         var PAGE_SIZE = window.innerWidth < 900 ? 25 : 50;
         var allArticles = [];
         var displayedArticles = [];
@@ -1007,10 +1009,16 @@
 
                         applyFiltersAndRender();
                     } catch (e) {
-                        showError('Could not parse article database.');
+                        // Show enough detail to diagnose corporate-proxy interception,
+                        // CDN HTML error pages, or truncated responses.
+                        var body = xhr.responseText || '';
+                        var ctype = xhr.getResponseHeader('content-type') || 'unknown';
+                        var preview = body.substring(0, 120).replace(/\s+/g, ' ');
+                        console.error('Article DB parse failed:', e, { status: xhr.status, contentType: ctype, length: body.length, body: body.substring(0, 2000) });
+                        showError('Could not parse article database. (HTTP ' + xhr.status + ', ' + body.length + ' bytes, ' + ctype + '). First bytes: ' + (preview || '(empty)'));
                     }
                 } else {
-                    showError('Could not load article database.');
+                    showError('Could not load article database. HTTP ' + xhr.status + '.');
                 }
             };
             xhr.onerror = function() {

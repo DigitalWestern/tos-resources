@@ -9,7 +9,11 @@ Usage:
     python scripts/pubmed_fetch.py
 
 Output:
-    pubmed_articles.json (in repo root)
+    pubmed_articles.json (in repo root) — canonical data
+    pubmed_articles.js   (in repo root) — same payload wrapped as
+        `window.pubmedArticles = {...};` so corporate browser-isolation
+        gateways (e.g. Zscaler) that intercept .json XHRs can still
+        deliver the data via a normal <script> tag.
 """
 
 import json
@@ -24,6 +28,7 @@ from datetime import datetime, timezone
 EMAIL = "contact.tosresources@gmail.com"
 BASE_URL = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils"
 OUTPUT_FILE = "pubmed_articles.json"
+OUTPUT_FILE_JS = "pubmed_articles.js"
 REQUEST_DELAY = 0.4  # seconds between API calls (PubMed asks for ≤3/sec without key)
 
 SEARCH_TERMS = [
@@ -236,8 +241,7 @@ def main():
     if not all_pmids:
         print("No articles found. Writing empty JSON.")
         output = {"last_updated": datetime.now(tz=timezone.utc).strftime("%Y-%m-%d"), "articles": []}
-        with open(OUTPUT_FILE, "w") as f:
-            json.dump(output, f, indent=2)
+        write_outputs(output)
         return
 
     # Fetch article details in batches of 200
@@ -268,10 +272,23 @@ def main():
         "articles": articles,
     }
 
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(output, f, indent=2, ensure_ascii=False)
+    write_outputs(output)
 
-    print(f"\nDone! Wrote {len(articles)} articles to {OUTPUT_FILE}")
+    print(f"\nDone! Wrote {len(articles)} articles to {OUTPUT_FILE} and {OUTPUT_FILE_JS}")
+
+
+def write_outputs(output):
+    """Write the canonical JSON and the JS wrapper. The JS file embeds the
+    exact JSON text (no re-serialization) so diffs stay minimal."""
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    with open(OUTPUT_FILE, "r", encoding="utf-8") as f:
+        json_text = f.read()
+    with open(OUTPUT_FILE_JS, "w", encoding="utf-8") as f:
+        f.write("/* Auto-generated from pubmed_articles.json. Do not edit by hand. */\n")
+        f.write("window.pubmedArticles = ")
+        f.write(json_text)
+        f.write(";\n")
 
 
 if __name__ == "__main__":

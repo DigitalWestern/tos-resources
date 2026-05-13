@@ -938,10 +938,15 @@
     <script data-goatcounter="https://digitalwestern.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
+    <!-- Article database served as JS rather than JSON so corporate
+         browser-isolation gateways (e.g. Zscaler) don't intercept it.
+         Assigns window.pubmedArticles synchronously before the loader below
+         runs. Falls back to XHR on pubmed_articles.json if this fails. -->
+    <script src="pubmed_articles.js?v=20260513"></script>
+
     <script>
     (function() {
-        // Versioned URL so corporate proxies / browser caches can't serve a
-        // stale 0-byte or HTML response indefinitely. Bump on data refresh.
+        // Fallback JSON URL kept for non-isolated environments.
         var JSON_URL = 'pubmed_articles.json?v=20260513';
         var PAGE_SIZE = window.innerWidth < 900 ? 25 : 50;
         var allArticles = [];
@@ -981,36 +986,48 @@
         var loadMoreBtn = document.getElementById('load-more-btn');
         var loadMoreCount = document.getElementById('load-more-count');
 
-        // Load JSON
+        function renderData(data) {
+            allArticles = data.articles || [];
+            loadingEl.style.display = 'none';
+            var filterToggle = document.getElementById('filter-toggle');
+            var filterPanel = document.getElementById('filter-panel');
+            topicFilter.style.display = 'block';
+            controlsBar.style.display = 'flex';
+            advancedSearch.style.display = 'block';
+            if (window.innerWidth < 900) {
+                if (filterToggle) { filterToggle.style.display = 'flex'; }
+                if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'true'); }
+            } else {
+                if (filterToggle) { filterToggle.style.display = 'none'; }
+                if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'false'); }
+            }
+
+            statsLineEl.textContent = data.total_articles + ' articles \u00b7 ' + data.search_terms.length + ' search terms \u00b7 Updated ' + data.last_updated;
+            lastUpdatedEl.textContent = 'Article database last updated: ' + data.last_updated;
+
+            applyFiltersAndRender();
+        }
+
+        // Preferred path: pubmed_articles.js loaded as a script tag and assigned
+        // window.pubmedArticles. Falls back to XHR on the JSON for environments
+        // where the JS file didn't load (offline, deploy hiccup, etc.).
         function loadArticles() {
+            if (window.pubmedArticles && typeof window.pubmedArticles === 'object') {
+                try {
+                    renderData(window.pubmedArticles);
+                    return;
+                } catch (e) {
+                    console.error('Render from window.pubmedArticles failed:', e);
+                }
+            }
+
             var xhr = new XMLHttpRequest();
             xhr.open('GET', JSON_URL, true);
             xhr.onload = function() {
                 if (xhr.status === 200 || xhr.status === 0) {
                     try {
-                        var data = JSON.parse(xhr.responseText);
-                        allArticles = data.articles || [];
-                        loadingEl.style.display = 'none';
-                        var filterToggle = document.getElementById('filter-toggle');
-                        var filterPanel = document.getElementById('filter-panel');
-                        topicFilter.style.display = 'block';
-                        controlsBar.style.display = 'flex';
-                        advancedSearch.style.display = 'block';
-                        if (window.innerWidth < 900) {
-                            if (filterToggle) { filterToggle.style.display = 'flex'; }
-                            if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'true'); }
-                        } else {
-                            if (filterToggle) { filterToggle.style.display = 'none'; }
-                            if (filterPanel) { filterPanel.setAttribute('aria-hidden', 'false'); }
-                        }
-
-                        statsLineEl.textContent = data.total_articles + ' articles \u00b7 ' + data.search_terms.length + ' search terms \u00b7 Updated ' + data.last_updated;
-                        lastUpdatedEl.textContent = 'Article database last updated: ' + data.last_updated;
-
-                        applyFiltersAndRender();
+                        renderData(JSON.parse(xhr.responseText));
                     } catch (e) {
-                        // Show enough detail to diagnose corporate-proxy interception,
-                        // CDN HTML error pages, or truncated responses.
                         var body = xhr.responseText || '';
                         var ctype = xhr.getResponseHeader('content-type') || 'unknown';
                         var preview = body.substring(0, 120).replace(/\s+/g, ' ');

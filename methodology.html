@@ -386,8 +386,33 @@
             .back-to-top { bottom: 20px; right: 20px; width: 40px; height: 40px; }
         }
 
+        /* Critical fallback — keeps the page rendering if css/site.css
+           is blocked or cached as a stale 404. site.css below re-declares
+           these tokens and provides the full drawer styling. */
+        :root {
+            --color-bg: #ffffff;
+            --color-text: #1a1a1a;
+            --color-text-muted: #1a1a1a;
+            --color-text-subtle: #5a5a5a;
+            --color-border: #c9c4b6;
+            --color-border-strong: #8a8578;
+            --color-accent: #1a1a1a;
+            --color-accent-hover: #4a4a4a;
+            --color-accent-tint: #ece8dd;
+            --color-surface-alt: #f2efe6;
+            --font-serif: "Times New Roman", Times, Georgia, serif;
+            --font-sans: "Times New Roman", Times, Georgia, serif;
+        }
+        .drawer, .drawer-backdrop { display: none; }
+        body.drawer-open .drawer { display: flex; flex-direction: column; }
+        body.drawer-open .drawer-backdrop { display: block; }
+        .nav-toggle { display: none; }
+        @media (max-width: 899px) {
+            .nav-toggle { display: inline-flex; }
+            .page-nav { display: none; }
+        }
     </style>
-    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/site.css?v=20260513">
 </head>
 <body>
     <button class="back-to-top" id="back-to-top" aria-label="Back to top">

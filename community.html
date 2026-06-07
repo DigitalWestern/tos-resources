@@ -20,6 +20,17 @@
             padding: 24px;
             text-align: center;
         }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #4A7FA5;
+            z-index: 300;
+            pointer-events: none;
+        }
         .card { max-width: 440px; }
         h1 { font-size: 1.6rem; margin-bottom: 12px; }
         p { color: #1a1a1a; line-height: 1.6; margin-bottom: 16px; }

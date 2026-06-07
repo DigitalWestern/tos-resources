@@ -41,6 +41,7 @@
     --color-header-bg: #1a1a1a;
     --color-header-text: #f5f2ea;
     --color-header-hover: rgba(255, 255, 255, 0.08);
+    --color-browser-accent: #4A7FA5;
 
     /* Typography — Times New Roman, universally. No exceptions. */
     --font-serif: "Times New Roman", Times, Georgia, serif;
@@ -86,6 +87,18 @@ body {
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--color-browser-accent);
+    z-index: 300;
+    pointer-events: none;
 }
 
 h1, h2, h3, h4, h5, h6 {

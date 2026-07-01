@@ -1,7 +1,7 @@
 /* Auto-generated from pubmed_articles.json. Do not edit by hand. */
 window.pubmedArticles = {
-  "last_updated": "2026-06-01",
-  "total_articles": 661,
+  "last_updated": "2026-07-01",
+  "total_articles": 658,
   "search_terms": [
     "thoracic outlet syndrome",
     "neurogenic thoracic outlet syndrome",
@@ -12,6 +12,294 @@ window.pubmedArticles = {
     "arterial thoracic outlet syndrome"
   ],
   "articles": [
+    {
+      "pmid": "42351321",
+      "title": "Invasive Spinal Neuromodulation for Chronic Pain in Pediatric Patients: A Scoping Review.",
+      "authors": [
+        "Puneet Gupta",
+        "Vibha Sastri",
+        "Antony Sharobim",
+        "Bobga Gang",
+        "Jevaughn Davis",
+        "Geet Paul",
+        "Sina Davari Farid"
+      ],
+      "journal": "Pain practice : the official journal of World Institute of Pain",
+      "date": "2026 Jul",
+      "date_sort": "2026-07-01",
+      "abstract": "OBJECTIVE: Chronic pain affects up to 21% of pediatric patients and significantly impairs function and quality of life. Although spinal neuromodulation, including spinal cord stimulation (SCS) and dorsal root ganglion stimulation (DRG-S), has demonstrated efficacy in adults, evidence in children remains limited. This scoping review aims to systematically evaluate current evidence on spinal neuromodulation for pediatric chronic pain patients, focusing on clinical indications, outcomes, and safety. METHODS: A structured scoping review was conducted using PubMed/MEDLINE and Scopus databases on June 8, 2025. Studies were included if they reported on patients under 21 years undergoing SCS or DRG-S for chronic pain. Two independent reviewers screened articles and extracted data on demographics, diagnoses, interventions, outcomes, and follow-up. RESULTS: Out of 706 references, 17 studies met inclusion criteria. Of those, 16 reported on SCS and 1 reported on DRG-S. complex regional pain syndrome (CRPS) was the most common indication, with most patients reporting substantial pain reduction, improved functional outcomes, and decreased medication use. Erythromelalgia was another frequent diagnosis treated successfully with SCS, demonstrating significant reductions in pain, swelling, and erythema. Other conditions included recurrent tethered cord syndrome, neurogenic thoracic outlet syndrome, lymphangioma, postoperative neuropathic pain, and genetic syndromes. Overall, most patients experienced meaningful improvements in pain and daily functioning, with few major complications reported. CONCLUSIONS: Spinal neuromodulation, predominantly SCS, appears to be a promising adjunctive therapy for refractory chronic pain in pediatric patients, particularly for CRPS and erythromelalgia. Despite encouraging findings, the evidence remains limited to small series and case reports. High-quality prospective studies are needed to establish long-term safety, efficacy, and optimal patient selection in this vulnerable population.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42351321/",
+      "doi": "https://doi.org/10.1111/papr.70180"
+    },
+    {
+      "pmid": "42376266",
+      "title": "Unveiling Sunderland Zero Injury in a Patient with Brachial Plexus Trauma.",
+      "authors": [
+        "Shay N Nguyen",
+        "Aditya N Joshi",
+        "Leslie H Lee",
+        "Jaime R López",
+        "Catherine M Curtin"
+      ],
+      "journal": "Plastic and reconstructive surgery. Global open",
+      "date": "2026 Jun 29",
+      "date_sort": "2026-06-29",
+      "abstract": "Peripheral nerve injuries can profoundly impact patients' functionality and quality of life. Classification systems such as those proposed by Seddon and Sunderland have provided valuable frameworks for understanding the nature and severity of nerve injuries. However, recent emerging evidence has shed light on an underrecognized category of nerve injury. This article provides a review of nerve injury classification systems and presents information on the Sunderland zero injury, a milder category of nerve injury characterized by immediate recovery upon decompression. We present a focused Sunderland zero literature review and a case report of a 26-year-old with a brachial plexus injury who developed secondary proximal median nerve compression. Intraoperative somatosensory-evoked potentials and motor-evoked potentials were obtained immediately before and after surgical decompression to dynamically assess nerve function. Preoperatively, the patient demonstrated median nerve motor deficits despite interval recovery from the brachial plexus injury. Immediately following decompression at the level of the lacertus fibrosus, increased motor-evoked potential amplitude and improved somatosensory-evoked potential waveform quality were demonstrated. Early postoperative examination confirmed functional improvement without the expected temporal profile of axonal regeneration. Sunderland zero represents a reversible ischemic conduction block without demyelination or axonal loss. Recognition of this nerve injury category is critical, as timely intervention may result in immediate clinical improvement and meaningful functional recovery and improved patient outcomes. Further research is needed to refine diagnostic and therapeutic strategies to identify Sunderland zero injuries.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42376266/",
+      "doi": "https://doi.org/10.1097/GOX.0000000000007883"
+    },
+    {
+      "pmid": "42370780",
+      "title": "Imaging of Neurovascular Compression in Thoracic Outlet Syndrome.",
+      "authors": [
+        "Qing Sun",
+        "Tongxi Liu",
+        "Yibo Feng",
+        "Renbin Wang"
+      ],
+      "journal": "Annals of neurology",
+      "date": "2026 Jun 29",
+      "date_sort": "2026-06-29",
+      "abstract": "",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42370780/",
+      "doi": "https://doi.org/10.1002/ana.78288"
+    },
+    {
+      "pmid": "42361246",
+      "title": "Unlocking the scar: ultrasound-guided hydrodissection for post-surgical radial nerve entrapment following clinical plateau.",
+      "authors": [
+        "Alan Chang",
+        "Shu-Mei Yang",
+        "Huey-Wen Liang",
+        "Chueh-Hung Wu"
+      ],
+      "journal": "Medical ultrasonography",
+      "date": "2026 Jun 26",
+      "date_sort": "2026-06-26",
+      "abstract": "",
+      "article_type": "Letter",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42361246/",
+      "doi": "https://doi.org/10.11152/mu-4629"
+    },
+    {
+      "pmid": "42361239",
+      "title": "Ultrasound diagnosis of median nerve compression associated with an arterial variant at the elbow.",
+      "authors": [
+        "Wei-Ting Wu",
+        "Ke-Vin Chang",
+        "Levent Özçakar"
+      ],
+      "journal": "Medical ultrasonography",
+      "date": "2026 Jun 26",
+      "date_sort": "2026-06-26",
+      "abstract": "",
+      "article_type": "Letter",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42361239/",
+      "doi": "https://doi.org/10.11152/mu-4622"
+    },
+    {
+      "pmid": "42338304",
+      "title": "Surgery for unmeasurable neuropathy to alleviate non-specific upper extremity pain: round table discussion.",
+      "authors": [
+        "Teun Teunis",
+        "J Henk Coert",
+        "Lars B Dahlin",
+        "Steve Henry",
+        "Donald Lalonde",
+        "Shuguo G Xing"
+      ],
+      "journal": "The Journal of hand surgery, European volume",
+      "date": "2026 Jun 24",
+      "date_sort": "2026-06-24",
+      "abstract": "Nerve surgery for unmeasurable upper extremity neuropathophysiology - such as pronator syndrome, supinator syndrome/radial tunnel syndrome, lacertus syndrome, and neurogenic thoracic outlet syndrome - remains a subject of ongoing debate due to the lack of objective reference tests confirming the diagnoses. This round table discussion outlines the perspectives of five expert surgeons navigating the clinical and ethical uncertainties of offering surgery for theoretical neuropathies presenting as non-specific pain. The panel explores the balance between subjective patient reporting and objective diagnostic limitations, the ethical implications of surgical placebo effects, and how to determine treatment effectiveness. The discussion highlights the divergent strategies among specialists regarding risk tolerance, overtreatment, and the implementation of shared decision-making in the absence of measurable disease.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42338304/",
+      "doi": "https://doi.org/10.1177/17531934261454842"
+    },
+    {
+      "pmid": "42359109",
+      "title": "Brachial Plexus Wrapping by Free Perforator Fat Flap for Treatment of Recurrent Neurogenic Thoracic Outlet Syndrome: A Case Report.",
+      "authors": [
+        "F Thuau",
+        "G Gadbled",
+        "B Pradier",
+        "P Perrot",
+        "U Lancien"
+      ],
+      "journal": "Clinical case reports",
+      "date": "2026 Jun 23",
+      "date_sort": "2026-06-23",
+      "abstract": "A 35-year-old woman with recurrent neurogenic thoracic outlet syndrome underwent supraclavicular neurolysis and brachial plexus wrapping using a free DIEP flap. At 2-year follow-up, pain and functional scores (VAS, DASH, SF-36) significantly improved. Free fat flaps offer a low morbidity option for reducing perineural fibrosis in RNTOS.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42359109/",
+      "doi": "https://doi.org/10.1002/ccr3.72945"
+    },
+    {
+      "pmid": "42349847",
+      "title": "Injury and repair in limb deformities associated with peripheral neuropathy: Visualization analyses of research trends and hotspots.",
+      "authors": [
+        "Liying Sun",
+        "Yang Guo",
+        "Zongxuan Zhao",
+        "Li Zhuo",
+        "Qiaoxuan Deng"
+      ],
+      "journal": "Neural regeneration research",
+      "date": "2026 Jun 20",
+      "date_sort": "2026-06-20",
+      "abstract": "Limb deformities have a close pathological link with peripheral nerve injuries; however, there is currently a lack of analysis and summary of research trends in this field aimed at elucidating the close relationship between limb deformities and peripheral nerve repair. Based on the Web of Science Core Collection database, this study retrieved 897 articles published between 2001 and 2025. A bibliometric analysis using CiteSpace and VOSviewer was therefore conducted to comprehensively map the research landscape, hotspots, and evolving trends in this field, revealing a sustained annual upward trend in research output. The University of Washington (UW, Seattle) was the institution with the most publications and the greatest impact. The Journal of Pediatric Orthopaedics was the journal with the most publications, while the Journal of Bone and Joint Surgery-American Volume was the journal with the greatest academic impact. Keyword analysis identified two major clusters of interest: diabetic peripheral neuropathy and foot deformities, involving studies on Charcot neuroarthropathy, diabetic foot ulcers, and amputation prevention; and birth-related brachial plexus palsy and its secondary shoulder and elbow deformities, focusing on functional reconstruction strategies such as tendon transfer and osteotomy. Burst keyword analysis revealed a clear shift in the research focus. From 2003 to 2013 (the early period), studies primarily focused on single-site functional impairments and conservative treatments (such as botulinum toxin). From 2014 to 2025 (the recent period), the focus shifted toward investigating \"prevalence\" and \"risk factors,\" as well as conducting in-depth studies on \"reconstructive\" surgery, diabetic foot ulcers, and molecular mutation mechanisms. Current research in this field focuses on the bidirectional relationship between \"malformations\" and \"nerves,\" exploring how nerve injuries cause malformations and investigating secondary nerve compression and damage following malformations. Peripheral neuropathies, such as diabetic peripheral neuropathy, Charcot-Marie-Tooth disease, and obstetric brachial plexus palsy, are the key direct or indirect causes of specific limb deformities (such as foot deformities, talipes, and forearm supination deformities). Research on the mechanical effects of deformities on nerves focuses on how skeletal deformities (such as elbow valgus/varus or knee valgus) result in or exacerbate nerve entrapment syndromes (such as ulnar nerve or common peroneal nerve injuries) through abnormal biomechanical mechanisms (such as excessive traction or dynamic compression). During surgeries for correcting complex deformities, the use of intraoperative nerve monitoring provides real-time early warning to avoid iatrogenic brachial plexus injuries and ensure patient safety, which has become a prominent technical focus. Previous studies have established the criteria for early monitoring of shoulder deformities and Mallet functional assessment following obstetric paralysis. Research over the past 5 years has focused on the mechanisms by which deformities exert mechanical effects on nerves, as well as the application of precision surgical techniques and intraoperative nerve monitoring. Surgical repair strategies for cubital tunnel syndrome and ulnar nerve palsy-induced claw hand are also among the key clinical areas of interest. Overall, these findings indicate that research on limb deformities associated with peripheral neuropathy and injury repair has evolved into two major research domains, focusing on nerve repair for deformities caused by diabetic peripheral neuropathy and limb deformities resulting from obstetric paralysis. Current research trends are moving toward precision, minimally invasive approaches, and multidimensional efficacy assessments. Future research should deepen the understanding of the \"deformity-nerve\" interaction mechanisms, focus on early warning systems, intraoperative nerve monitoring, and individualized functional reconstruction, and thereby improve patient outcomes and surgical safety.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42349847/",
+      "doi": "https://doi.org/10.4103/NRR.NRR-D-26-00421"
+    },
+    {
+      "pmid": "42316325",
+      "title": "Brain metastatic paraganglioma from liver: a case report and review of the literature.",
+      "authors": [
+        "Hongwei Zhang",
+        "Xiaolong Qiao",
+        "Zixuan Wang",
+        "Qin Li",
+        "Chuandong Cheng"
+      ],
+      "journal": "Journal of medical case reports",
+      "date": "2026 Jun 18",
+      "date_sort": "2026-06-18",
+      "abstract": "BACKGROUND: Paraganglioma (PGL) is a rare non-epithelial neuroendocrine neoplasm that can occur in multiple locations within the body. Most PGLs grow slowly and are benign, but some can metastasize to distant sites. Reports of brain metastatic PGL are relatively rare, particularly those with comprehensive case histories. CASE PRESENTATION: A 52-year-old Asian female patient presented with a headache that had persisted for over a month. In 2018, the patient underwent surgical resection of a hepatic mass, with postoperative pathology confirming the diagnosis of primary hepatic PGL. In 2021, she received neurosurgical treatment, and histopathological and molecular analysis of the excised brain tissue revealed mutations in the CD274, KMT2B, and SDHB genes within the tumor cells. The final integrated pathological assessment confirmed a diagnosis of brain metastatic PGL, classified as a pseudohypoxia-driven subtype. Following temozolomide chemotherapy, no evidence of brain recurrence was observed as of June 2024. However, the patient developed multiple enlarged lymph nodes, with suspicious lesions detected in the thoracic, abdominal, pyramidal, and rib regions. CONCLUSIONS: Brain metastatic PGL is relatively rare and presents significant challenges in clinical practice, requiring careful consideration in diagnosis and treatment. Here, we present a case of PGL originating in the liver and metastasizing to the brain, reporting its clinical, radiological, histopathological, and molecular pathological features and the treatment process. A review of the relevant literature is also included to raise clinical awareness of this condition and provide new insights for diagnosis and treatment.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42316325/",
+      "doi": "https://doi.org/10.1186/s13256-026-06213-6"
+    },
+    {
+      "pmid": "42305395",
+      "title": "Blunt trauma precipitating arterial thoracic outlet syndrome: a case report.",
+      "authors": [
+        "Michael T Olson",
+        "Yun Beom Lee",
+        "Pranav Singh",
+        "Daniel J Scott",
+        "Marlin Wayne Causey",
+        "Theodore G Hart"
+      ],
+      "journal": "Journal of surgical case reports",
+      "date": "2026 Jun 15",
+      "date_sort": "2026-06-15",
+      "abstract": "A 39-year-old male who sustained polytraumatic injuries in a motor vehicle collision, including a neck seatbelt sign and acute thrombosis of the left subclavian artery adjacent to an undiagnosed hypoplastic cervical rib, presented with a threatened left upper extremity. He underwent emergent surgical exploration through a supraclavicular incision, with cervical rib resection, resection of the contused subclavian artery segment, and end-to-end anastomosis. Through an infraclavicular incision, he had a thrombectomy of the axillary and brachial arteries. Postoperatively, he developed progressive left upper extremity deficits. Imaging revealed proximal axillary and distal subclavian artery dissection with near occlusion, requiring re-exploration and subclavian-axillary bypass using prosthetic conduit to restore distal perfusion. He was discharged on hospital Day 6 on aspirin and anticoagulation. At 5-months, he had no ischemic symptoms, improving fine motor function, and a patent bypass. This case highlights a rare presentation of arterial thoracic outlet syndrome precipitated by blunt trauma.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42305395/",
+      "doi": "https://doi.org/10.1093/jscr/rjag467"
+    },
+    {
+      "pmid": "42288246",
+      "title": "Diaphragmatic Paralysis Following Thoracic Outlet Decompression: An Evaluation of Secondary Phrenic Nerve Reconstruction for Salvage.",
+      "authors": [
+        "Matthew R Kaufman",
+        "Ajul Shah",
+        "Robert T Nevitt",
+        "Reza Jarrahy",
+        "Cameron Santoro"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2026 Jun 13",
+      "date_sort": "2026-06-13",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) involves the compression of neurovascular structures within the thoracic outlet, defined as a space at the base of the neck, superior to the first rib and posterior to the clavicle. Surgical management most commonly requires a supraclavicular approach to allow for anterior and middle scalene muscle resection, cervical and first rib resection, and brachial plexus decompression. Pectoralis minor tenotomy and vascular decompression may also be indicated. While these interventions may successfully relieve compression within the thoracic outlet, they carry a risk of iatrogenic phrenic nerve injury (PNI). PNI-induced diaphragm paralysis often results in symptomatic pulmonary dysfunction. Phrenic nerve reconstruction may offer an effective treatment for functional diaphragm salvage after PNI following TOS surgery. METHODS: We performed a retrospective review of seventeen patients with PNI following TOS surgery referred for management at a tertiary referral center who underwent phrenic nerve reconstruction to restore functional diaphragm activity. RESULTS: There were seventeen patients (10 females and 7 males with a mean age of 47) who were treated for chronic, symptomatic PNI following TOS surgery. Two patients were lost to follow-up. The mean interval from PNI to secondary phrenic nerve reconstruction was 19 months. Following phrenic nerve intervention, twelve of fifteen patients (80%) reported improvement, ten of whom demonstrated partial or complete functional diaphragm recovery on objective analyses. CONCLUSIONS: Surgical treatment for TOS has demonstrable therapeutic benefits to patients suffering from this disease. However, PNI is a potential complication associated with TOS surgery. Secondary phrenic nerve reconstruction to achieve salvage of diaphragm function can successfully address this risk and reduce or eliminate the morbidity associated with TOS-related PNI.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42288246/",
+      "doi": "https://doi.org/10.1016/j.avsg.2026.05.110"
+    },
+    {
+      "pmid": "42290822",
+      "title": "Bizarre Parosteal Osteochondromatous Proliferation Arising From the Second Rib: A Case Report.",
+      "authors": [
+        "Yuji Nojima",
+        "Hiroki Sugiyama",
+        "Takashi Matsutani",
+        "Ai Maeda",
+        "Shinsuke Saisho",
+        "Katsuhiko Shimizu",
+        "Masao Nakata"
+      ],
+      "journal": "Clinical case reports",
+      "date": "2026 Jun 12",
+      "date_sort": "2026-06-12",
+      "abstract": "Bizarre parosteal osteochondromatous proliferation (BPOP) is a rare benign lesion, first described by Nora et al. in 1983, that typically affects the small bones of the hands and feet. We report a rare case of BPOP arising from the left second rib in a 41-year-old man, which was incidentally detected as a \"pulmonary mass\" on the chest X-ray during a routine health checkup. CT imaging revealed a lesion measuring 4.1 × 2.2 cm in size in the second left rib, and we performed surgical resection for both diagnosis and treatment. Postoperative histopathological examination revealed the diagnosis of BPOP. This case underscores the importance of including BPOP in the differential diagnosis of rib lesions, especially when the imaging findings suggest a benign osteocartilaginous lesion. Given the potential of the lesion for recurrence, long-term follow-up of persons with BPOP is recommended.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42290822/",
+      "doi": "https://doi.org/10.1002/ccr3.72932"
+    },
+    {
+      "pmid": "42276241",
+      "title": "Complex Management of Occult Snuffbox Arteriovenous Fistula Causing Refractory Upper Extremity Venous Hypertension in a Patient with End-Stage Renal Disease and Thoracic Outlet Syndrome.",
+      "authors": [
+        "Zohaa Faiz",
+        "Jeffrey L Weinstein",
+        "Brett Carroll",
+        "Lars Stangenberg",
+        "Mark Wyers",
+        "Julie C Bulman"
+      ],
+      "journal": "Journal of vascular and interventional radiology : JVIR",
+      "date": "2026 Jun 11",
+      "date_sort": "2026-06-11",
+      "abstract": "",
+      "article_type": "Letter",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42276241/",
+      "doi": "https://doi.org/10.1016/j.jvir.2026.108901"
+    },
+    {
+      "pmid": "42276365",
+      "title": "Diagnostic imaging modalities for vascular Thoracic Outlet Syndrome (TOS); a topical review and proposed diagnostic pathway.",
+      "authors": [
+        "Tjep Hoedemakers",
+        "Lara T Mascini",
+        "Gert J de Borst",
+        "Bart-Jeroen Petri",
+        "Maarten L J Smits",
+        "Evert-Jan P A Vonken",
+        "Eline S van Hattum"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2026 Jun 11",
+      "date_sort": "2026-06-11",
+      "abstract": "OBJECTIVE: This topical review aims to provide an overview of current literature on diagnostic modalities for vascular thoracic outlet syndrome (TOS) and evaluates their clinical applicability. Additionally, a structured diagnostic pathway is proposed for the assessment of arterial TOS (ATOS) and venous TOS (VTOS). METHODS: Given the absence of standardized guidelines, limited high-quality evidence, and heterogeneous cohorts, this review adopts a topical rather than a systematic approach. A comprehensive literature search of peer-reviewed articles between 2000 and 2006 was conducted in Pubmed. The available literature is summarized to assess the advantages, limitations, and clinical utility of each modality. RESULTS: Imaging plays a vital role in the evaluation of vascular TOS, although protocols vary substantially between centers. For suspected ATOS, computed tomography arteriography (CTA), using a dedicated TOS protocol is proposed as the preferred initial modality, while computed tomography venography (CTV) with TOS protocol is recommended for suspected VTOS. In patients presenting with suspected upper-extremity deep vein thrombosis (UEDVT), duplex ultrasound is recommended for initial assessment. Contrast angiography is reserved for selected cases when non-invasive imaging is inconclusive, or when endovascular intervention is anticipated. Chest radiography (CR) and photoplethysmography (PPG) appear to have limited additional diagnostic value. Intravascular ultrasound (IVUS) may offer complementary information in selected patients with VTOS. CONCLUSION: The diagnostic complexity of vascular TOS underscores the importance of an integrated approach combining clinical evaluation and imaging, preferably within specialized expert centers. The proposed diagnostic pathway provides a practical framework, and may serve as a step toward uniformity in clinical practice across different centers.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42276365/",
+      "doi": "https://doi.org/10.1016/j.avsg.2026.05.106"
+    },
+    {
+      "pmid": "42257460",
+      "title": "Integration of 4K 3D Exoscopic Visualization into Supraclavicular Brachial Plexus Decompression for Neurogenic Thoracic Outlet Syndrome.",
+      "authors": [
+        "Helen M Hall",
+        "Akira Wiberg",
+        "Tom Quick"
+      ],
+      "journal": "Plastic and reconstructive surgery",
+      "date": "2026 Jun 8",
+      "date_sort": "2026-06-08",
+      "abstract": "",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42257460/",
+      "doi": "https://doi.org/10.1097/PRS.0000000000013248"
+    },
+    {
+      "pmid": "42356084",
+      "title": "Pectoralis Minor Tenotomy with Occasional Secondary Neurolysis Significantly Reduces Self-Reported Pain and Headaches Across Heterogenous Chronic Pain Disorders of the Upper Limb.",
+      "authors": [
+        "Ketan Sharma",
+        "James M Friedman"
+      ],
+      "journal": "Medicina (Kaunas, Lithuania)",
+      "date": "2026 Jun 1",
+      "date_sort": "2026-06-01",
+      "abstract": "Background and Objectives: Many patients suffer from chronic pain of the shoulder, neck, upper back, and/or arm. They may be diagnosed with fibromyalgia, complex regional pain syndrome, myofascial pain, thoracic outlet, subacromial pain, cervical radiculopathy, cervicogenic headaches, post-mastectomy pain, and/or occupational shoulder disorder. The pectoralis minor (PM) is the only muscle of the scapula controlled by the lower trunk of the brachial plexus. In the Human Disharmony Loop (HDL), this neurologic asymmetry produces persistent protraction of the scapula. Protraction deforms the scapula's connections, generating headaches and neck stiffness, upper back tightness, shoulder weakness, and hand numbness. We hypothesize patients with the above who meet HDL diagnostic criteria will benefit from PM tenotomy with brachial plexus neurolysis (PM+ICN). Materials and Methods: Patients diagnosed with the above disorders who also met HDL criteria of medial coracoid tenderness and scapula protraction on exam underwent PM+ICN, with secondary neurolysis after 3 months if needed. Clinical neuropathy was diagnosed via the scratch-collapse test. Outcomes included self-reported Visual Analogue Score pain scores, active shoulder abduction range of motion (ROM), prevalence of occipital headaches. Results: N = 318 patients were included. Average age was 51; 68.0% were female. Following treatment, average pain decreased from 7.3/10 to 2.1/10 (p < 0.001), average shoulder ROM increased from 96 to 170 degrees (p < 0.001), and occipital headaches decreased from 76.7% to 1.6% (p < 0.001). Scapular protraction normalized from 98.8% static to 92.5% none (p < 0.001). Overall, 17% required subsequent neurolysis, chiefly of the axillary, radial, and ulnar nerves. The pain reductions were statistically indistinguishable across all diagnoses (p = 0.709, I2 = 0.02%). Average follow-up was 22 months. Conclusions: PM+ICN significantly reduced self-reported pain and headaches in select intractable patients. The PM pathologizing the scapula may constitute a shared anatomic mechanism that contributes to chronic pain across heterogenous disorders of the upper limb.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42356084/",
+      "doi": "https://doi.org/10.3390/medicina62061071"
+    },
     {
       "pmid": "42178597",
       "title": "Prevalence of Myofascial Pain Syndrome Among Overhead Athletes With Neck and Shoulder Pain: A Cross-Sectional Study.",
@@ -32,6 +320,68 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42178597/",
       "doi": "https://doi.org/10.1002/msc.70229"
+    },
+    {
+      "pmid": "42278523",
+      "title": "Metabolic Dysregulation, Inflammation, and Median Nerve Dysfunction in Patients with Type 2 Diabetes Mellitus with Carpal Tunnel Syndrome.",
+      "authors": [
+        "Adina Stoian",
+        "Simona Cernea",
+        "Claudia Bănescu",
+        "Mircea Stoian",
+        "Andrei Manea",
+        "Florina Gliga",
+        "Dumitru Golban",
+        "Andrei Stîngaciu",
+        "Rodica Bălașa"
+      ],
+      "journal": "International journal of molecular sciences",
+      "date": "2026 May 30",
+      "date_sort": "2026-05-30",
+      "abstract": "Carpal tunnel syndrome (CTS) is the most common compressive mononeuropathy. In patients with type 2 diabetes mellitus (T2DM), chronic hyperglycemia, microangiopathy, and systemic inflammation increase the vulnerability of peripheral nerves to compression. This study aimed to assess the relationship between CTS severity and clinical, metabolic, inflammatory, and electrophysiological parameters in patients with T2DM. A cross-sectional study was conducted from June 2023 to June 2024, involving patients diagnosed with T2DM. Electrophysiological assessment of the upper and lower limbs was performed using a four-channel electromyography apparatus. Clinical and anthropometric data and laboratory parameters were obtained, as well as the results of nerve conduction studies (NCS). One hundred and twenty-three patients with T2DM were included in the study. The prevalence of moderate-to-severe forms of CTS was 43.9%, and bilateral involvement was present in 21.95% of patients. Patients with moderate-to-severe CTS had significantly higher hemoglobin A1c (HbA1c) (p = 0.004), glycemia (p < 0.001), and Triglyceride-Glucose Index (p = 0.018) compared with those without CTS/with mild forms. The number of monocytes was significantly higher in the group with moderate-to-severe forms (p = 0.012), suggesting a chronic inflammatory state. In the logistic regression analysis, hemoglobin HbA1c emerged as an independent predictor of CTS severity, with each 1% increase associated with approximately a 60% higher risk of moderate/severe CTS. NCS analysis showed significant correlations between median nerve parameters and those of the lower-limb peripheral nerves, particularly the tibial and sural nerves, suggesting an association with generalized diabetic peripheral neuropathy. Professional activity was significantly associated with moderate-to-severe CTS (OR = 3.5). CTS is a common complication in patients with T2DM and is associated with worse glycemic control, insulin resistance, systemic inflammation, and peripheral neuropathic damage.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42278523/",
+      "doi": "https://doi.org/10.3390/ijms27114995"
+    },
+    {
+      "pmid": "42292273",
+      "title": "Ultrasound-guided hydrodissection of the subclavius muscle region in neurogenic thoracic outlet syndrome: a case report.",
+      "authors": [
+        "Yonghyun Yoon",
+        "King Hei Stanley Lam",
+        "Jason Lee",
+        "Jaewoo Lim",
+        "Jihyo Hwang",
+        "Rina Shin",
+        "Teinny Suryadi",
+        "Anwar Suhaimi",
+        "Jaeik Choi",
+        "Gyungseog Ko"
+      ],
+      "journal": "Frontiers in medicine",
+      "date": "2026 May 29",
+      "date_sort": "2026-05-29",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) is frequently underdiagnosed due to nonspecific symptoms and the absence of definitive radiographic findings. Neurogenic TOS (nTOS), the most common subtype, is typically caused by compression of the brachial plexus within anatomically constrained spaces. While muscular contributors such as the scalene and pectoralis minor muscles have been widely discussed, the role of the subclavius muscle remains underrecognized. CASE PRESENTATION: A 53-year-old male presented with an 18-month history of progressive right upper limb weakness and medial paresthesia refractory to prior treatments for presumed cervical spondylosis. Electrodiagnostic studies demonstrated persistent proximal motor slowing of the right ulnar nerve. Ultrasonography revealed marked atrophy of the right subclavius muscle compared with the contralateral side. Ultrasound-guided hydrodissection using 30 mL of 5% dextrose in water (D5W) was performed in the infraclavicular region with particular attention to the subclavius muscle and costoclavicular space. Immediate post-procedural assessment showed greater than 70% improvement in paresthesia, with subtle objective motor improvement on bedside examination that was not yet sufficient to change the MRC grade. Following six treatment sessions, complete resolution of symptoms and full motor strength recovery were achieved. CONCLUSION: In a patient with unexplained proximal neuropathy, ultrasonography identified focal subclavius muscle atrophy as a potential compressive contributor within the costoclavicular space, and ultrasound-guided hydrodissection of the infraclavicular region resulted in rapid and sustained clinical improvement. While the injectate volume (30 mL) likely affected adjacent structures such as the pectoralis minor and surrounding fascial planes, this minimally invasive approach may be a feasible option for selected patients with refractory nTOS. To our knowledge, this is the first reported case of ultrasound-guided hydrodissection of the infraclavicular region with attention to the subclavius muscle for neurogenic thoracic outlet syndrome associated with muscle atrophy. Further studies are warranted to confirm efficacy and to refine patient selection criteria.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42292273/",
+      "doi": "https://doi.org/10.3389/fmed.2026.1804081"
+    },
+    {
+      "pmid": "42255007",
+      "title": "Thoracic outlet syndrome in patients with clavicle fracture: Case report and national analysis.",
+      "authors": [
+        "Randall R Rainwater",
+        "William Griffin",
+        "Tera A Scott",
+        "Regis L Renard"
+      ],
+      "journal": "Trauma case reports",
+      "date": "2026 May 25",
+      "date_sort": "2026-05-25",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) is a neurovascular condition caused by compression of the brachial plexus or subclavian vessels as they pass through the thoracic outlet. Since the clavicle border the thoracic outlet, injury to the clavicle and potentially post-traumatic callus formation, malunion, or scarring may precipitate compression and TOS. This study aims to determine the incidence and key predictors of TOS after clavicle fracture. METHODS: We present a representative case description illustrating the clinical course and diagnostic considerations of post-traumatic TOS. We also conducted a large-scale retrospective analysis using a national claims database to identify patients with clavicle fracture and evaluate the incidence and factors of TOS development. RESULTS: A 53-year-old woman developed TOS 10 months after undergoing surgical fixation of a displaced mid diaphyseal (Allman Tyle 1) clavicle fracture sustained in a motor vehicle accident. She presented with swelling and discoloration of the left upper extremity, where computed tomographic contrast imaging demonstrated five centimeter left subclavian vein thrombosis. The patient underwent hardware removal and first-rib resection, which resulted in complete resolution of symptoms. On database analysis, TOS most frequently occurs in middle-aged adults (40-64 years) and is more common following displaced clavicle fractures fixed with open reduction and internal fixation, as observed in this case. Comorbid conditions such as hypercoagulable states, obesity, and tobacco use along with displaced fracture pattern and congenital factors-including cervical ribs or cervical scoliosis-may further elevate risk. CONCLUSIONS: Thoracic outlet syndrome should be considered in patients with history of recent clavicle fracture that develop symptoms such as paresthesia, swelling, or chronic pain of the ipsilateral upper extremity.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42255007/",
+      "doi": "https://doi.org/10.1016/j.tcr.2026.101392"
     },
     {
       "pmid": "42177489",
@@ -85,25 +435,20 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/GOX.0000000000007746"
     },
     {
-      "pmid": "42162861",
-      "title": "Birth Trauma and Thoracic Outlet Syndrome: Preliminary Evidence.",
+      "pmid": "42259093",
+      "title": "Chest surgery for patients with Poland's syndrome: Findings from co-produced group discussions.",
       "authors": [
-        "J Blade Hargiss",
-        "Houssam Farres",
-        "Joaquin Sarmiento Falen",
-        "Yaman Alsabbagh",
-        "Camila Esquetini-Vernon",
-        "Camilo Polania Sandoval",
-        "Christopher Jacobs",
-        "Young Erben"
+        "Janelle Kolas",
+        "Kim Daybell",
+        "Sam Fillingham"
       ],
-      "journal": "Annals of vascular surgery",
+      "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
       "date": "2026 May 19",
       "date_sort": "2026-05-19",
-      "abstract": "INTRODUCTION: Thoracic outlet syndrome (TOS) arises from compression of neurovascular structures as they traverse the thoracic outlet at the base of the neck, with three main types: neurogenic, venous, and arterial. Established risk factors include acute trauma, repetitive upper extremity use, or congenital anatomical variations. Birth trauma, although relatively rare, remains a recognized cause of injury to the brachial plexus, yet its role in TOS development has not been investigated. This study aims to explore the prevalence of reported birth trauma among patients with clinically diagnosed and surgically treated TOS at our institution. METHODS: We conducted a retrospective cross-sectional study using a survey-based methodology among patients diagnosed with TOS, who underwent first-rib resection at our institution between 2001 and 2024. Eligible patients were contacted by telephone or electronic communication and invited to participate in a brief standardized survey that was developed in conjunction with professionals in Obstetrics and Gynecology, screening for instances of birth trauma. RESULTS: A total of 41 responses were collected. Mean age was 40.1 years, with 29 females (71%) and 12 males (29%). Mean body mass index (BMI) was 27.1. Most reported Caucasian race (90%). Six of the 41 patients reported shoulder dystocia (SD) (15%). Five patients reported the occurrence of forceps assisted vaginal delivery (AVD) during their birth (12% of the entire cohort, 15% of those born vaginally). CONCLUSION: SD and AVD are relatively rare observations in the general population, with rates consistently falling between 1-3% per year for multiple decades. Our cohort reported a 4-to-10-fold increase in birth trauma, higher than expected. Almost one quarter (24%) of patients surveyed with established nTOS reported SD or forceps AVD. This finding could have profound clinical implications. If SD or AVD are found to be factors that influence the development of TOS later in life, clinicians can expect an increased incidence of TOS in the coming years, they can screen for symptoms earlier in the disease course, and earlier intervention may lead to decreased morbidity in the patients we serve. We believe our pilot study findings warrant further investigation with a larger sample size.",
+      "abstract": "Poland's syndrome (PS) is a rare congenital condition with unilateral impacts on the chest. In addressing chest differences, surgery is often offered but not consistently performed on patients with PS. The present study sought to identify areas of importance around decision-making and outcomes in surgeries performed to address reduced or missing pectoral muscles. A qualitative approach was employed and co-produced, semi-structured group discussions were conducted online primarily involving UK-based participants, who (1) have PS and (2) have been offered chest surgery for their affected side. The thematic analysis of collected data resulted in the identification of 6 themes and 10 subthemes. Those related to decision-making included self-esteem and body image (gendered pressures, the mental health impact of PS and a lack of mental health support), feeling medically Othered (shared uncertainty and being treated as a case study) and inconsistent treatment (agency and communication). Those related to outcomes included continued inconsistent treatment (condition comparison and lack of consistent care over time), empowerment and a lifetime of surgery (doing and re-doing surgeries, difficult recoveries and adverse outcomes). Overall, evidence from this study clarified the need for a more robust pathway to provide patients with PS with more informative and individualised care, including offers of psychological support.",
       "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42162861/",
-      "doi": "https://doi.org/10.1016/j.avsg.2026.04.069"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42259093/",
+      "doi": "https://doi.org/10.1016/j.bjps.2026.05.020"
     },
     {
       "pmid": "42169800",
@@ -126,6 +471,27 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/23259671261440925"
     },
     {
+      "pmid": "42162861",
+      "title": "Birth Trauma and Thoracic Outlet Syndrome: Preliminary Evidence.",
+      "authors": [
+        "J Blade Hargiss",
+        "Houssam Farres",
+        "Joaquin Sarmiento Falen",
+        "Yaman Alsabbagh",
+        "Camila Esquetini-Vernon",
+        "Camilo Polania Sandoval",
+        "Christopher Jacobs",
+        "Young Erben"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2026 May 19",
+      "date_sort": "2026-05-19",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) arises from compression of neurovascular structures as they traverse the thoracic outlet at the base of the neck, with 3 main types: neurogenic, venous, and arterial. Established risk factors include acute trauma, repetitive upper extremity use, or congenital anatomical variations. Birth trauma, although relatively rare, remains a recognized cause of injury to the brachial plexus, yet its role in TOS development has not been investigated. This study aims to explore the prevalence of reported birth trauma among patients with clinically diagnosed and surgically treated TOS at our institution. METHODS: We conducted a retrospective cross-sectional study using a survey-based methodology among patients diagnosed with TOS, who underwent first-rib resection at our institution between 2001 and 2024. Eligible patients were contacted by telephone or electronic communication and invited to participate in a brief standardized survey that was developed in conjunction with professionals in Obstetrics and Gynecology, screening for instances of birth trauma. RESULTS: A total of 41 responses were collected. Mean age was 40.1 years, with 29 females (71%) and 12 males (29%). Mean body mass index was 27.1. Most reported Caucasian race (90%). Six of the 41 patients reported shoulder dystocia (SD) (15%). Five patients reported the occurrence of forceps assisted vaginal delivery (AVD) during their birth (12% of the entire cohort, 15% of those born vaginally). CONCLUSION: SD and AVD are relatively rare observations in the general population, with rates consistently falling between 1 and 3% per year for multiple decades. Our cohort reported a 4- to 10-fold increase in birth trauma, higher than expected. Almost one-quarter (24%) of patients surveyed with established neurogenic thoracic outlet syndrome reported SD or forceps AVD. This finding could have profound clinical implications. If SD or AVD are found to be factors that influence the development of TOS later in life, clinicians can expect an increased incidence of TOS in the coming years, they can screen for symptoms earlier in the disease course, and earlier intervention may lead to decreased morbidity in the patients we serve. We believe our pilot study findings warrant further investigation with a larger sample size.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42162861/",
+      "doi": "https://doi.org/10.1016/j.avsg.2026.04.069"
+    },
+    {
       "pmid": "42149077",
       "title": "Strategies for Work-up and Treatment of Case Scenarios in Neurogenic Thoracic Outlet Syndrome.",
       "authors": [
@@ -139,6 +505,43 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42149077/",
       "doi": "https://doi.org/10.1016/j.jhsa.2026.03.014"
+    },
+    {
+      "pmid": "42244983",
+      "title": "First-in-human ex-vivo validation of carbonic anhydrase IX-PET for high-risk renal cancer (CAT-VHL - PNRR-POC-2023-12377493).",
+      "authors": [
+        "Alessandro Larcher",
+        "Fabrizia Gelardi",
+        "Lidija Antunovic",
+        "Annarita Savi",
+        "Michela Olivieri",
+        "Paolo Rainone",
+        "Martina Sollini",
+        "Rosa Maria Moresco",
+        "Chiara Re",
+        "Francesco Cei",
+        "Federico Belladelli",
+        "Giacomo Musso",
+        "Lucia Salerno",
+        "Francesco De Cobelli",
+        "Nazario Tenace",
+        "Maurilio Ponzoni",
+        "Antonio Cigliola",
+        "Paolo Verze",
+        "Roberto Bertini",
+        "Alberto Briganti",
+        "Francesco Montorsi",
+        "Umberto Capitanio",
+        "Andrea Salonia",
+        "Arturo Chiti"
+      ],
+      "journal": "Theranostics",
+      "date": "2026 May 18",
+      "date_sort": "2026-05-18",
+      "abstract": "RATIONALE: Carbonic Anhydrase IX (CAIX) positron emission tomography (PET) is an accurate and non-invasive imaging modality for the detection and characterisation of clear-cell renal cell carcinoma (ccRCC) but evidence in the setting of high-risk renal cancer is lacking. We conducted an exploratory investigation to integrate whole-body CAIX-PET imaging with tissue-level validation and to assess the potential impact of CAIX-PET on systemic staging in patients diagnosed with high-risk renal cancer. METHODS: Patients with cT3-cT4 or cN1 renal cancer scheduled for surgery underwent PET/CT imaging after intravenous administration of 37 MBq ±10% of [89Zr]Zr-girentuximab. Whole-body in-vivo was performed 5 ± 2 days following radiopharmaceutical injection, and surgical resection was planned 14 ± 2 days following radiopharmaceutical injection. Resected specimens were subsequently analyzed ex vivo using dedicated preclinical PET/CT imaging and correlated with histopathology and CAIX immunohistochemistry. RESULTS: No adverse events following [89Zr]Zr-girentuximab administration were recorded and the procedure was deemed non-relevant in terms of radiation exposure for the surgical team. At in-vivo imaging, CAIX-PET resulted positive in 2 patients with clear cell renal cell carcinoma and negative in 1 patient with chromophobe renal cell carcinoma. At ex-vivo imaging, images overlap allowed for the assessment of spatial co-localization of regions with increased radiopharmaceutical uptake and high expression of CAIX at immunohistochemistry. In 1 patient, focal uptake in the fourth rib at CAIX-PET was confirmed as metastatic ccRCC. In 1 patient, suspicious lymph nodes at standard imaging without PET uptake were negative at final pathology. CONCLUSION: Our findings generate the hypothesis that CAIX-PET might yield crucial information on cancer aggressiveness and systemic staging with potential key diagnostic, therapeutic and prognostic implications for patients with high-risk renal cancer.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42244983/",
+      "doi": "https://doi.org/10.7150/thno.122256"
     },
     {
       "pmid": "42145307",
@@ -199,25 +602,20 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/23247096261452328"
     },
     {
-      "pmid": "42104390",
-      "title": "Kikuchi-Fujimoto disease complicated with brachial plexus neuritis in a young woman: a case report and review of the literature.",
+      "pmid": "42281702",
+      "title": "Imaging Spectrum of Thoracic Outlet Syndrome: A Case Series Highlighting Arterial, Venous, and Neurogenic Subtypes.",
       "authors": [
-        "Yuling Mai",
-        "Mingqun Deng",
-        "Shengde Li",
-        "Yazi Yang",
-        "Wei Cao",
-        "Yue Guo",
-        "Chenglong Liu",
-        "Hao Cheng"
+        "Nishitha Utukuru",
+        "Bhargav Reddy",
+        "Rajoo Ramachandran"
       ],
-      "journal": "Journal of medical case reports",
-      "date": "2026 May 8",
-      "date_sort": "2026-05-08",
-      "abstract": "BACKGROUND: Kikuchi-Fujimoto disease (KFD) is a rare necrotizing lymphadenitis. Brachial plexus neuritis is an exceptionally rare complication of KFD. CASE PRESENTATION: A 31-year-old Asian female was diagnosed with KFD via excisional biopsy of a posterior cervical lymph node. Four days after the biopsy, pain and disability occurred in her left arm and shoulder. While Magnetic Resonance Imaging (MRI) suspected compression of the brachial plexus nerves, the ultrasound indicated inflammatory changes consistent with neuritis. Diagnosis was challenging; however, distinguishing between mechanical compression and inflammation was crucial. Instead of surgery, steroids and intravenous immunoglobulin (IVIG) were prescribed, and her pain was relieved within 1 week, while her disability did not disappear until 9 months later. CONCLUSIONS: We report a rare case of KFD-associated brachial plexus neuritis emerging shortly after lymph node biopsy. We hypothesize that surgical positioning or traction, superimposed on the KFD inflammatory background, may precipitate this condition. Clinicians should be vigilant for this complication to ensure prompt anti-inflammatory treatment and avoid unnecessary secondary surgeries.",
+      "journal": "Cureus",
+      "date": "2026 May 10",
+      "date_sort": "2026-05-10",
+      "abstract": "INTRODUCTION: Thoracic outlet syndrome (TOS) encompasses a spectrum of neurovascular compression disorders involving the brachial plexus, subclavian artery, and subclavian vein. Diagnosis remains challenging due to variable clinical presentations and limited specificity of imaging findings, particularly in neurogenic TOS. This case series aims to demonstrate the multimodality imaging spectrum of TOS across arterial, venous, and neurogenic subtypes, compare imaging appearances among subtypes, and emphasise the importance of clinicoradiological correlation in diagnosis. METHODS: This retrospective case series was conducted at Sri Ramachandra Medical Health Centre, Chennai, Tamil Nadu, India, from January 2020 to March 2026. Eight consecutive patients with clinical suspicion of TOS (upper limb pain, swelling, venous engorgement, neurological symptoms, or ischaemic changes) underwent imaging evaluation. Imaging included Doppler ultrasound with provocative manoeuvres, computed tomography angiography (CTA), CT venography (CTV), and magnetic resonance imaging (MRI), tailored to clinical presentation. Imaging was assessed for osseous anomalies, site of compression across thoracic outlet compartments, vascular stenosis or occlusion, thrombosis, aneurysmal change, collateralisation, and indirect signs of brachial plexus compression.  Results: Imaging demonstrated a broad spectrum of pathology across all TOS subtypes. Arterial TOS cases showed dynamic or fixed subclavian artery compromise, ranging from focal costoclavicular stenosis detected on CTA to long-segment chronic occlusion associated with an anomalous first rib. Venous TOS cases demonstrated subclavian vein compression at the costoclavicular space, including McCleery syndrome without thrombosis, muscular compression from a hypertrophied subclavius muscle, and chronic obstruction with extensive collateral venous channels. One patient demonstrated multi-level venous obstruction involving the subclavian and cephalic veins with associated central venous thrombosis. Neurogenic TOS demonstrated thoracic outlet narrowing due to a cervical rib with displacement of adjacent neurovascular structures on MRI. Dynamic Doppler imaging was critical in demonstrating haemodynamically significant stenosis not evident at rest.  Conclusion: This case series demonstrates the broad imaging spectrum of TOS, ranging from dynamic arterial stenosis and chronic arterial occlusion to venous compression with collateralisation and indirect signs of neurogenic involvement. The cases highlight that the imaging appearance varies significantly depending on the affected structure and the site of compression within the thoracic outlet. Recognition of characteristic vascular findings such as focal costoclavicular narrowing, thrombosis, chronic occlusion, and collateral venous pathways can facilitate subtype classification and guide further management. However, imaging findings must be interpreted in conjunction with clinical symptoms, particularly in neurogenic TOS, where radiologic abnormalities may be subtle or absent.",
       "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42104390/",
-      "doi": "https://doi.org/10.1186/s13256-026-06076-x"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42281702/",
+      "doi": "https://doi.org/10.7759/cureus.108620"
     },
     {
       "pmid": "42196803",
@@ -262,6 +660,45 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/MD.0000000000048577"
     },
     {
+      "pmid": "42104390",
+      "title": "Kikuchi-Fujimoto disease complicated with brachial plexus neuritis in a young woman: a case report and review of the literature.",
+      "authors": [
+        "Yuling Mai",
+        "Mingqun Deng",
+        "Shengde Li",
+        "Yazi Yang",
+        "Wei Cao",
+        "Yue Guo",
+        "Chenglong Liu",
+        "Hao Cheng"
+      ],
+      "journal": "Journal of medical case reports",
+      "date": "2026 May 8",
+      "date_sort": "2026-05-08",
+      "abstract": "BACKGROUND: Kikuchi-Fujimoto disease (KFD) is a rare necrotizing lymphadenitis. Brachial plexus neuritis is an exceptionally rare complication of KFD. CASE PRESENTATION: A 31-year-old Asian female was diagnosed with KFD via excisional biopsy of a posterior cervical lymph node. Four days after the biopsy, pain and disability occurred in her left arm and shoulder. While Magnetic Resonance Imaging (MRI) suspected compression of the brachial plexus nerves, the ultrasound indicated inflammatory changes consistent with neuritis. Diagnosis was challenging; however, distinguishing between mechanical compression and inflammation was crucial. Instead of surgery, steroids and intravenous immunoglobulin (IVIG) were prescribed, and her pain was relieved within 1 week, while her disability did not disappear until 9 months later. CONCLUSIONS: We report a rare case of KFD-associated brachial plexus neuritis emerging shortly after lymph node biopsy. We hypothesize that surgical positioning or traction, superimposed on the KFD inflammatory background, may precipitate this condition. Clinicians should be vigilant for this complication to ensure prompt anti-inflammatory treatment and avoid unnecessary secondary surgeries.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42104390/",
+      "doi": "https://doi.org/10.1186/s13256-026-06076-x"
+    },
+    {
+      "pmid": "42255824",
+      "title": "Ultrasound-Detected Ulnar Nerve Entrapment With Normal Electrodiagnostic Studies Following Thoracic Outlet Decompression: A Case Report.",
+      "authors": [
+        "Waseem Syed",
+        "Gurinder Singh",
+        "Justin McGinnis",
+        "Stephen Westfall",
+        "Joe Bhagratie"
+      ],
+      "journal": "Cureus",
+      "date": "2026 May 6",
+      "date_sort": "2026-05-06",
+      "abstract": "We report the case of a 38-year-old female who developed persistent right upper extremity paresthesia, neuropathic pain, and ulnar-sided sensory disturbance following surgical decompression for thoracic outlet syndrome (TOS). Despite clinically significant cubital tunnel tenderness and ultrasound evidence of focal ulnar nerve impingement, electrodiagnostic studies, including nerve conduction studies (NCS) and electromyography (EMG), were normal. The patient underwent ultrasound-guided ulnar nerve hydrodissection with corticosteroid and dextrose solution as part of conservative management. This case underscores that cubital tunnel syndrome should not be excluded solely on the basis of normal electrodiagnostic studies, particularly when clinical and imaging findings are suggestive.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42255824/",
+      "doi": "https://doi.org/10.7759/cureus.108345"
+    },
+    {
       "pmid": "42097361",
       "title": "Breaking the blockage by advancing treatment strategies for upper extremity deep vein thrombosis.",
       "authors": [
@@ -283,7 +720,7 @@ window.pubmedArticles = {
     },
     {
       "pmid": "42080466",
-      "title": "Anatomic predisposition and neurologic vulnerability to brachial plexus birth injury: a contemporary narrative review.",
+      "title": "Anatomical predisposition and neurological vulnerability to brachial plexus birth injury: a contemporary narrative review.",
       "authors": [
         "Hugo Oh Beaumont",
         "Akira Wiberg",
@@ -294,9 +731,44 @@ window.pubmedArticles = {
       "date": "2026 May 4",
       "date_sort": "2026-05-04",
       "abstract": "Erb's palsy, or brachial plexus birth injury (BPBI), is an injury sustained at birth to a vulnerable nervous system which even with the best care leaves many children with permanent impairments, growth retardation and pain. Established risk factors include maternal diabetes, increased foetal weight, shoulder dystocia and instrumental delivery. Yet these variables do not reliably predict which individual children will sustain injury. We propose an additional, largely neglected factor: developmental anatomical predisposition of the neonatal brachial plexus, with anomalies similar to those implicated in neurogenic thoracic outlet syndrome (nTOS) later in life. These include cervical ribs, aberrant scalene attachments and variant plexus branching - each capable of narrowing the supraclavicular corridor and concentrating mechanical strain during delivery. Such anatomical variants may lower the injury threshold and confer a 'neurologic vulnerability' when exposed to the forces of delivery. This may help explain why some infants sustain injury under normal obstetric conditions while others do not. We further propose that neonatal BPBI and adolescent nTOS represent distinct phenotypic expressions of a shared anatomical vulnerability, with a patterned molecular basis involving Hox gene regulation of axial skeletal patterning during embryogenesis. These insights carry direct clinical implications: in neonates undergoing brachial plexus exploration, recognition and decompression of anatomical compression may complement or replace standard nerve grafting strategies. We outline a research agenda including anatomical phenotyping, familial screening, biomarkers and prospective cohort studies to quantify this predisposition and integrate it into peripartum decision-making alongside conventional risk factors.Level of Evidence: Level V.",
-      "article_type": "Research",
+      "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42080466/",
       "doi": "https://doi.org/10.1177/17531934261443088"
+    },
+    {
+      "pmid": "42245866",
+      "title": "Evidence-Based Diagnostic and Therapeutic Methods for Thoracic Outlet Syndrome: A Systematic Review.",
+      "authors": [
+        "Akshaya V Joshi",
+        "Sandeep Shinde",
+        "Neha S Chaudhary",
+        "Sachin Chaudhary"
+      ],
+      "journal": "Cureus",
+      "date": "2026 May 4",
+      "date_sort": "2026-05-04",
+      "abstract": "Thoracic outlet syndrome (TOS) is a condition caused by the compression of neurovascular structures within the thoracic outlet. The primary objective of this systematic review is to evaluate evidence-based diagnostic and therapeutic methods for TOS, with a specific focus on physiotherapy-based interventions. Secondly, this study aims to synthesize recent academic findings to provide medical professionals with a contemporary perspective on effective treatment protocols and to highlight gaps in the existing literature warranting further research. Following the PRISMA framework, a digital search of major platforms, including PubMed, MEDLINE, and Google Scholar, was conducted for literature published up to April 2026. Ten articles met the inclusion criteria, which focused on neurogenic, arterial, and venous subtypes and prioritized physiotherapy-based interventions. Methodological quality was assessed using validated tools such as QUADAS-2, AXIS, and ROBINS-1. The results demonstrate that structured physiotherapy, including postural correction, stretching of the scalenes and pectoralis minor, scapular stabilization, and neural mobilization, is highly effective as a primary conservative treatment for reducing pain and improving upper limb function. Intensive inpatient rehabilitation programs also showed significant, sustained improvements in strength and functional capacity. Additionally, the review highlights that persistent symptoms are often influenced by psychosocial factors such as central sensitization and kinesiophobia, necessitating a multidisciplinary, biopsychosocial approach to management. Despite these findings, the review identifies a significant lack of standardized diagnostic and therapeutic protocols. The study concludes that early identification and the integration of pain neuroscience education into standardized rehabilitation protocols are essential for optimizing patient outcomes and preventing symptom recurrence.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42245866/",
+      "doi": "https://doi.org/10.7759/cureus.108241"
+    },
+    {
+      "pmid": "42263282",
+      "title": "Brachial Plexopathy Following Rapid Weight Loss from Tirzepatide: A Case Report.",
+      "authors": [
+        "Jimmy Wen",
+        "Shannon Dwyer",
+        "Megan Kou",
+        "Arsh Alam",
+        "Jose Silva",
+        "Foad Elahi"
+      ],
+      "journal": "Pain medicine case reports",
+      "date": "2026 May",
+      "date_sort": "2026-05-01",
+      "abstract": "BACKGROUND: Weight reduction and metabolic changes have been associated with the development of compressive peripheral neuropathies. CASE REPORT: We present the case of a right-handed 60-year-old man who had a medical history of hypertension and hypercholesterolemia and developed neuromuscular symptoms after being treated with tirzepatide. During a 6-month course of tirzepatide use, the patient lost 60 pounds. However, the treatment was complicated by right-sided brachial plexopathy symptoms, including scapular pain, paresthesia, and progressive triceps weakness. Electromyography and nerve conduction studies confirmed denervation potentials at the right C5-C7 roots. Imaging studies were unremarkable. Symptoms persisted despite conservative interventions but improved gradually after the tirzepatide regimen was ended. At 2 months after the cessation, the patient's pain decreased from a 5/10 score to a score of one-2/10, and his strength improved. The follow-up EMG/NCV demonstrated the resolution of the denervation-caused changes. CONCLUSION: This case highlights a possible association between the rapid weight loss caused by GLP-1 RAs and the development of brachial plexopathy. In this patient's case, the latter condition improved after his medication was discontinued.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42263282/"
     },
     {
       "pmid": "42037461",
@@ -357,23 +829,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1111/sdi.70023"
     },
     {
-      "pmid": "42182971",
-      "title": "From pitch to palsy: A rare case of acute brachial plexopathy following medial clavicle fracture in women's rugby.",
+      "pmid": "42232348",
+      "title": "Early UK Experience with Aspiration Thrombectomy Followed by Urgent Surgical Decompression for Acute Venous Thoracic Outlet Syndrome.",
       "authors": [
-        "Imad Mirza",
-        "P J O'Donoghue",
-        "Nicholas Stratford",
-        "Emma Carr",
-        "Roisin Dolan",
-        "Kieran O'Shea"
+        "Peter Labib",
+        "Gary Lambert",
+        "Fatemeh Sakhinia",
+        "Arun D Pherwani"
       ],
-      "journal": "Trauma case reports",
-      "date": "2026 Apr 29",
-      "date_sort": "2026-04-29",
-      "abstract": "BACKGROUND: Medial third clavicle fractures represent less than 5% of all clavicle fractures and are rarely associated with acute brachial plexus injury. Early recognition is critical, as timely surgical intervention may influence neurological recovery. CASE: A 17-year-old elite rugby player sustained a closed, displaced medial third clavicle fracture following a high-energy tackle, confirmed on radiographs. Within 48 h, she developed profound C5-C6 sensorimotor deficits. CT angiography excluded vascular injury. MRI demonstrated focal T2 hyperintensity and enlargement of the upper trunk consistent with nerve oedema and axonal injury. The posteriorly displaced medial clavicle fragment compressed the brachial plexus, the sharp edges raised concern for a focal injury. A dual-level injury involving traction at the root and focal injury at the trunk could not be excluded. Nerve conduction studies revealed conduction block without axonal disruption. At two weeks, she underwent open reduction, internal fixation, and brachial plexus exploration. The C5-C6 roots were in continuity, and the upper trunk was contused; external neurolysis was performed. Sensory symptoms resolved by week 3; motor recovery began at week 4; complete functional recovery and return-to-play was achieved at 6-month follow-up. CONCLUSION: Early imaging and decompression are essential to optimise recovery in medial clavicle fractures with acute brachial plexopathy.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42182971/",
-      "doi": "https://doi.org/10.1016/j.tcr.2026.101333"
+      "journal": "EJVES vascular forum",
+      "date": "2026 Apr 30",
+      "date_sort": "2026-04-30",
+      "abstract": "INTRODUCTION: Venous thoracic outlet syndrome (vTOS) results from compression of the axillary or subclavian vein and may present with acute upper limb deep vein thrombosis. Catheter directed thrombolysis followed by decompression is widely performed but carries bleeding risk and may delay definitive surgery. Mechanical thrombectomy offers a lysis free alternative. This study aimed to assess early outcomes of mechanical thrombectomy followed by urgent surgical decompression in vTOS patients. METHOD: This paper reports a retrospective single centre case series of patients with vTOS treated with Penumbra Indigo (Penumbra Inc., California, USA) mechanical thrombectomy followed by urgent surgical decompression between January 2025 and February 2026. RESULTS: Four patients (ages 17, 27, 42, and 35 years) underwent successful thrombectomy between one and 21 days after the deep vein thrombosis but within one and six days from referral, followed by first rib decompression within zero to four days. All patients achieved full resolution of symptoms and technical success, evident on follow up venograms, with restoration of central venous flow and no major complications. CONCLUSION: Early experience suggests that mechanical thrombectomy followed by urgent decompression is feasible and safe in selected patients with acute vTOS. Larger studies with longer follow up are required.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42232348/",
+      "doi": "https://doi.org/10.1016/j.ejvsvf.2026.04.007"
     },
     {
       "pmid": "42062136",
@@ -396,6 +866,49 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.hlc.2025.12.023"
     },
     {
+      "pmid": "42182971",
+      "title": "From pitch to palsy: A rare case of acute brachial plexopathy following medial clavicle fracture in women's rugby.",
+      "authors": [
+        "Imad Mirza",
+        "P J O'Donoghue",
+        "Nicholas Stratford",
+        "Emma Carr",
+        "Roisin Dolan",
+        "Kieran O'Shea"
+      ],
+      "journal": "Trauma case reports",
+      "date": "2026 Apr 29",
+      "date_sort": "2026-04-29",
+      "abstract": "BACKGROUND: Medial third clavicle fractures represent less than 5% of all clavicle fractures and are rarely associated with acute brachial plexus injury. Early recognition is critical, as timely surgical intervention may influence neurological recovery. CASE: A 17-year-old elite rugby player sustained a closed, displaced medial third clavicle fracture following a high-energy tackle, confirmed on radiographs. Within 48 h, she developed profound C5-C6 sensorimotor deficits. CT angiography excluded vascular injury. MRI demonstrated focal T2 hyperintensity and enlargement of the upper trunk consistent with nerve oedema and axonal injury. The posteriorly displaced medial clavicle fragment compressed the brachial plexus, the sharp edges raised concern for a focal injury. A dual-level injury involving traction at the root and focal injury at the trunk could not be excluded. Nerve conduction studies revealed conduction block without axonal disruption. At two weeks, she underwent open reduction, internal fixation, and brachial plexus exploration. The C5-C6 roots were in continuity, and the upper trunk was contused; external neurolysis was performed. Sensory symptoms resolved by week 3; motor recovery began at week 4; complete functional recovery and return-to-play was achieved at 6-month follow-up. CONCLUSION: Early imaging and decompression are essential to optimise recovery in medial clavicle fractures with acute brachial plexopathy.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42182971/",
+      "doi": "https://doi.org/10.1016/j.tcr.2026.101333"
+    },
+    {
+      "pmid": "42045631",
+      "title": "Osborne's ligament: Anatomical study with application to better understanding ulnar nerve compression at the elbow.",
+      "authors": [
+        "Emily M Persons",
+        "Brianna L Hines",
+        "Marcela Herrera",
+        "Emma R Lesser",
+        "Muralidharan Anbalagan",
+        "Mitesh Dave",
+        "Samir Anadkat",
+        "Georgi P Georgiev",
+        "Aaron S Dumont",
+        "Joe Iwanaga",
+        "R Shane Tubbs"
+      ],
+      "journal": "Neurosurgical review",
+      "date": "2026 Apr 28",
+      "date_sort": "2026-04-28",
+      "abstract": "Objective Almost 70 years ago, Osborne described a fibrous band, Osborne’s ligament, stretching between the humeral and ulnar heads of the flexor carpi ulnaris, which forms the cubital tunnel’s roof. Prior to this account, this ligament had received limited attention in the anatomical literature and had been poorly studied. Therefore, the present anatomical study was performed to better elucidate this structure. Methods thirty adult anatomical donors (60 sides) underwent dissection of the medial aspect of the elbow with a focus on Osborne’s ligament. Identified ligaments were documented, classified, and measured. Additionally, histological evaluation of these structures was performed. Results osborne’s ligaments were identified on 49 sides (81.7%). These were classified as absent (type I; 18.3%), wide and thin and more distally located (type II; 51%), narrow and more proximally located (type III: 39%), coexistent with an anconeus epitrochlearis muscle (type IV; 6%), and absent with only anconeus epitrochlearis muscle (type V; 4.1%). When coexistent with anconeus epitrochlearis muscle (6%), the anconeus epitrochlearis muscle was usually located more proximally, although in some cases, it was in the same plane, especially with larger anconeus epitrochlearis muscles. Conclusions based on our findings, the Osborne’s ligament is not a ligament but is usually made up of aponeurosis/tendon over the proximal flexor carpi ulnaris muscle and can coexist with the anconeus epitrochlearis muscle. This structure comes in various forms, illustrating that this term is not specific to a single structure.Clinical trial number: Not applicable.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42045631/",
+      "doi": "https://doi.org/10.1007/s10143-026-04307-9"
+    },
+    {
       "pmid": "42130932",
       "title": "Postpartum Parsonage-Turner Syndrome with Hourglass Constrictions and Spontaneous Recovery without Surgical Intervention.",
       "authors": [
@@ -410,6 +923,22 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.12890/2026_006571"
     },
     {
+      "pmid": "42299398",
+      "title": "Extensive MRSA-positive sternoclavicular septic arthritis with uncommon origin: a case report.",
+      "authors": [
+        "Amir Hossein Bassirani",
+        "Katinka Andrási",
+        "Attila Farkas"
+      ],
+      "journal": "AME case reports",
+      "date": "2026 Apr 27",
+      "date_sort": "2026-04-27",
+      "abstract": "BACKGROUND: Sternoclavicular joint (SCJ) septic arthritis is a rare entity, representing less than 1% of all bone infections. It is generally associated with hematogenous spread from sources such as skin or soft tissue infections, intravenous drug use, or central venous access devices. Methicillin-resistant Staphylococcus aureus (MRSA) is an uncommon but aggressive pathogen in this setting. CASE DESCRIPTION: We report the case of a 52-year-old male with a history of type 2 diabetes mellitus with poor glycemic control, hypertension, hypercholesterolemia, coronary artery disease, and prior lower-limb amputation who presented with an extensive MRSA-positive SCJ septic arthritis of unusual origin. The infection was traced to a chronically infected, non-healing amputation stump, which served as the hematogenous source, confirmed by hemoculture. Clinical examination, contrast-enhanced computed tomography (CT) imaging, and microbiological cultures confirmed extensive Osteomyelitis of the right sternoclavicular and first sternocostal joints, with a contiguous soft-tissue abscess extending from the upper arm to the neck. The patient underwent radical surgical debridement, including resection of the medial clavicle, first rib segment, and affected sternum, followed by vacuum-assisted closure therapy and prolonged intravenous vancomycin. Wound healing was achieved by secondary closure after granulation, and MRSA eradication was confirmed by repeat cultures. The source of the infection was also treated successfully to prevent recurrence of the inflammation. CONCLUSIONS: This case highlights a rare hematogenous origin of MRSA SCJ septic arthritis from a chronically infected amputation stump. Early recognition, aggressive surgical management, targeted antimicrobial therapy, and multidisciplinary care were critical to preventing life-threatening complications.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42299398/",
+      "doi": "https://doi.org/10.21037/acr-2025-311"
+    },
+    {
       "pmid": "42032734",
       "title": "Operative management of vascular thoracic outlet syndrome (VTOS) over two decades: patency, complications, and functional outcome.",
       "authors": [
@@ -419,7 +948,7 @@ window.pubmedArticles = {
       "journal": "Journal of cardiothoracic surgery",
       "date": "2026 Apr 24",
       "date_sort": "2026-04-24",
-      "abstract": "",
+      "abstract": "BACKGROUND: Vascular thoracic outlet syndrome (VTOS), encompassing both venous and arterial subtypes, arises from extrinsic compression of the subclavian vessels within the thoracic outlet, leading to significant morbidity. Surgical decompression remains the definitive treatment to restore vascular patency and relieve neurovascular compromise. OBJECTIVES: This study analyzed the long-term outcomes of surgical management of VTOS over a twenty-year period, focusing on vessel patency, recurrence, functional recovery, and procedure-related complications. METHODS: A retrospective review was conducted on 325 patients (72.9% female; mean age, 37.7 ± 10.2 years) who underwent supraclavicular decompression with first-rib resection and scalenectomy between 2005 and 2025. Preoperative evaluation included duplex ultrasonography, radiography, and magnetic resonance imaging. Outcomes assessed were recurrence, vascular patency, and functional recovery using the Disabilities of the Arm, Shoulder and Hand (DASH) score, with follow-up extending to 48 months. RESULTS: Upper-limb edema (48.6%) and heaviness with activity (46.2%) were the most frequent presenting symptoms. Cervical ribs were present in 32.3% of cases. All patients underwent first-rib resection and scalenectomy; 32.0% required additional cervical rib excision with or without venolysis, sympathectomy, or thrombectomy. The mean operative time was 54.9 min (range: 50–90), with minimal blood loss and no intraoperative mortality. Mean DASH scores improved from 49.1 ± 4.0 to 20.0 ± 2.9 postoperatively. The recurrence rate was 3.7%, with over 95% recurrence-free survival and 90% vessel patency at 48 months. CONCLUSIONS: Standardized supraclavicular decompression with first-rib resection and scalenectomy offers durable symptomatic relief, excellent long-term vascular patency, and low morbidity for both arterial and venous VTOS.",
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42032734/",
       "doi": "https://doi.org/10.1186/s13019-026-04186-7"
@@ -478,6 +1007,20 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.21037/jss-2025-1-204"
     },
     {
+      "pmid": "42002785",
+      "title": "A minimally invasive hybrid approach to a complex challenge: VATS resection for superior sulcus tumor with literature review.",
+      "authors": [
+        "Xin Li"
+      ],
+      "journal": "Journal of cardiothoracic surgery",
+      "date": "2026 Apr 19",
+      "date_sort": "2026-04-19",
+      "abstract": "BACKGROUND: This study aims to evaluate the efficacy and safety of the hybrid approach in the management of superior sulcus (Pancoast) tumors, based on a clinical case and a review of the relevant literature. CASE PRESENTATION: A 56-year-old male patient with right superior sulcus tumor (SST) (pT3N0M0, stage IIB) was reported. After fully mobilizing the tumor and protecting key structures via a half-clamshell incision partial sternotomy, right upper lobectomy and systematic lymph node dissection were successfully completed under video-assisted thoracoscopic surgery (VATS). The intraoperative blood loss was approximately 500 mL, and the procedure was completed without any complications. The patient resumed ambulation on the fourth postoperative day and recovered uneventfully. At the 2-year follow-up, he remained in good condition with no evidence of recurrence or metastasis. LITERATURE REVIEW: A systematic review identified 8 studies reporting 12 patients who underwent anterior thoracotomy combined with VATS for SST. Including the present case, 13 patients were analyzed. The mean age was 57.15 years old. Rib resection (predominantly the first rib) was performed in 84.6% (11/13) of cases. The postoperative complication rate was 23.1% (3/13), including atelectasis with phrenic nerve palsy (n = 1), high fever (n = 1), and mild upper limb edema (n = 1). At a median follow-up of 12 months (range: 6–58 months), no local recurrence was observed. CONCLUSION: The integration of VATS with an anterior approach represents a safe and effective strategy for the resection of SST. Its incorporation into a multidisciplinary treatment protocol is recommended, especially for patients with early-stage, resectable disease.",
+      "article_type": "Systematic Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42002785/",
+      "doi": "https://doi.org/10.1186/s13019-026-04084-y"
+    },
+    {
       "pmid": "41992323",
       "title": "An original less-invasive surgical treatment for arterial thoracic outlet syndrome caused by cervical rib.",
       "authors": [
@@ -489,7 +1032,7 @@ window.pubmedArticles = {
       "journal": "Journal of cardiothoracic surgery",
       "date": "2026 Apr 16",
       "date_sort": "2026-04-16",
-      "abstract": "",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome affects 0.3-8% of the population, with arterial thoracic outlet syndrome being particularly rare. The management of arterial thoracic outlet syndrome requires complete thoracic outlet decompression along with arterial reconstruction when necessary, a procedure that is typically associated with significant risks, complications, and symptom recurrence. Our study aims to introduce a less invasive surgical method for treating arterial thoracic outlet syndrome caused by a cervical rib, which involves only cervical rib resection and scalenotomy. METHODS: Patients diagnosed with isolated arterial thoracic outlet syndrome attributed to an ipsilateral cervical rib who required thoracic outlet decompression between 2015 and 2022 were included. All patients underwent supraclavicular cervical rib resection and scalenotomy without first thoracic rib resection or sympathectomy. Outcomes were assessed based on symptom recurrence and functional improvement at a two-year follow-up. RESULTS: The cohort included 10 patients with a mean age of 29.1 years. Postoperatively, the results were promising, with no recurrence of arterial thoracic outlet syndrome symptoms, no complications, and excellent functional outcomes according to Derkash’s classification. Our modified surgical approach demonstrated favorable outcomes with minimal invasiveness, suggesting a viable alternative to traditional methods. CONCLUSION: This less invasive surgical method for treating arterial thoracic outlet syndrome caused by a cervical rib involving only cervical rib resection and scalenotomy had excellent functional outcomes and lower complication rates. However, given the small sample size, further studies are warranted to validate these findings and to establish long-term benefits.",
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41992323/",
       "doi": "https://doi.org/10.1186/s13019-026-04034-8"
@@ -539,27 +1082,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3390/medicina62040735"
     },
     {
-      "pmid": "41963104",
-      "title": "Double Crush Ulnar Nerve Palsy with Vascular Compression Causing First Dorsal Interosseous and Adductor Deficit: A Case Report.",
-      "authors": [
-        "Natalia A Pluta",
-        "Manuela Gaviria",
-        "Braden N Miller",
-        "J Alex Albright",
-        "Mariah Arave",
-        "Josiah Snowden",
-        "David J Wilson",
-        "Casey M Sabbag"
-      ],
-      "journal": "JBJS case connector",
-      "date": "2026 Apr 10",
-      "date_sort": "2026-04-10",
-      "abstract": "CASE: We present a case of a 30-year-old man with severe ulnar nerve neuropraxia and first dorsal interosseous muscle wasting. Intraoperatively, a large venous plexus compressing the terminal division of the deep motor branch of the ulnar nerve was identified as a contributing factor. CONCLUSION: This is the first documented instance of compression of the terminal branch of the ulnar nerve caused by a venous plexus, resulting in neurapraxia. This rare anatomical variant caused progressive functional impairment and was successfully treated with ligation of vessels distally along with proximal and distal nerve decompression.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41963104/",
-      "doi": "https://doi.org/e25.00543"
-    },
-    {
       "pmid": "42039349",
       "title": "Case Report: HHS-spectrum distal palmar arterial thrombosis in a volleyball athlete with provocative-position thoracic outlet narrowing.",
       "authors": [
@@ -581,6 +1103,27 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3389/fcvm.2026.1798334"
     },
     {
+      "pmid": "41963104",
+      "title": "Double Crush Ulnar Nerve Palsy with Vascular Compression Causing First Dorsal Interosseous and Adductor Deficit: A Case Report.",
+      "authors": [
+        "Natalia A Pluta",
+        "Manuela Gaviria",
+        "Braden N Miller",
+        "J Alex Albright",
+        "Mariah Arave",
+        "Josiah Snowden",
+        "David J Wilson",
+        "Casey M Sabbag"
+      ],
+      "journal": "JBJS case connector",
+      "date": "2026 Apr 10",
+      "date_sort": "2026-04-10",
+      "abstract": "CASE: We present a case of a 30-year-old man with severe ulnar nerve neuropraxia and first dorsal interosseous muscle wasting. Intraoperatively, a large venous plexus compressing the terminal division of the deep motor branch of the ulnar nerve was identified as a contributing factor. CONCLUSION: This is the first documented instance of compression of the terminal branch of the ulnar nerve caused by a venous plexus, resulting in neurapraxia. This rare anatomical variant caused progressive functional impairment and was successfully treated with ligation of vessels distally along with proximal and distal nerve decompression.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41963104/",
+      "doi": "https://doi.org/e25.00543"
+    },
+    {
       "pmid": "41922108",
       "title": "Traumatic posterior dislocation of the sternoclavicular joint in a 12-year-old boy: a case report.",
       "authors": [
@@ -596,6 +1139,23 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41922108/",
       "doi": "https://doi.org/10.20408/jti.2025.0057"
+    },
+    {
+      "pmid": "42066274",
+      "title": "Ulnar Nerve Stretch Injury Post Cervical Epidural Steroid Injection: A Case Report.",
+      "authors": [
+        "Alan D Kaye",
+        "Caroline E Gibbs",
+        "Aya Mouhaffel",
+        "Sahar Shekoohi",
+        "Alaa Abd-Elsayed"
+      ],
+      "journal": "Pain medicine case reports",
+      "date": "2026 Apr",
+      "date_sort": "2026-04-01",
+      "abstract": "BACKGROUND: For successful outcomes, interventional pain management procedures commonly require the patient to be prone under fluoroscopy. Nerve injuries can occur from stretching, compression, or direct nerve insult. CASE REPORT: In this case report, we describe a patient receiving a cervical epidural steroid injection while prone over a 17-minute period. He immediately postoperatively reported one-sided severe hand pain and spasm in his lateral fingers. He initially reported cervical radicular pain on the contralateral side, which the patient said felt better immediately after being injected with a mixture of lidocaine, ropivacaine, and dexamethasone into the C5-C6 epidural space. He was sent to the emergency department to rule out a hematoma or any other new pathology; his cervical magnetic resonance image was identical to his baseline preprocedure magnetic resonance image. A variety of medications were administered, including a methylprednisolone dose pack, hydrocodone, gabapentin, and methocarbamol. He was seen in the clinic the following week. At that time he reported ongoing hand pain; an electromyography test was consistent with his physical examination, which showed ulnar dermatome pain and weakness. All symptoms resolved within 2 weeks, and all sensation and motor strength returned to baseline. CONCLUSION: Brachial plexus injury can occur when a patient is prone. In order to minimize nerve injury, care should be taken when positioning patients about to receive an interventional pain management procedure..",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42066274/"
     },
     {
       "pmid": "41933401",
@@ -615,6 +1175,23 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1002/mp.70414"
     },
     {
+      "pmid": "41664623",
+      "title": "An algorithmic addition for Carotid Blowout Syndrome type 1.",
+      "authors": [
+        "Roel Henneman",
+        "Abrahim Al-Mamgani",
+        "Peter Lohuis",
+        "Alfons Balm"
+      ],
+      "journal": "The Journal of laryngology and otology",
+      "date": "2026 Apr",
+      "date_sort": "2026-04-01",
+      "abstract": "OBJECTIVE: This study focuses on early recognition of carotid blowout syndrome type 1 (threatened artery) and the results of integrity restoration of the surrounding tissue by a pectoralis major myofascial flap. METHODS: This retrospective study included all patients in the period 2010-2020 with carotid blowout syndrome type 1 of the common or internal carotid artery, treated by pectoralis major myofascial flap. RESULTS: Fifteen patients with carotid blowout syndrome type 1 were included, all but one after previous radiotherapy with a total dose up to 136 Gray (range 46-136). Median time from diagnosis till treatment was 1 day. None of the patients progressed to actual bleeding (type 2 or 3). CONCLUSION: Carotid blowout syndrome type 1 should be early recognised and treated by insertion of a pectoralis major myofascial flap that protects the common or internal carotid artery and might prevent progression to a potentially fatal bleed. In our opinion, this policy should be part of the algorithmic approach of this complication.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41664623/",
+      "doi": "https://doi.org/10.1017/S002221512610440X"
+    },
+    {
       "pmid": "41970767",
       "title": "Rare Presentation of Thoracic Outlet Syndrome with First Rib Fracture - Case Report.",
       "authors": [
@@ -629,6 +1206,41 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41970767/",
       "doi": "https://doi.org/10.13107/jocr.2026.v16.i04.7068"
+    },
+    {
+      "pmid": "41914701",
+      "title": "A Rare Cadaveric Case Report of the Median Nerve Passing Through the Brachialis Muscle.",
+      "authors": [
+        "Georgios Paraskevas",
+        "Christos Lyrtzis",
+        "Georgios Trikoilis",
+        "Alexia Maistrellis",
+        "Maria Piagkou"
+      ],
+      "journal": "Acta medica academica",
+      "date": "2026 Apr",
+      "date_sort": "2026-04-01",
+      "abstract": "OBJECTIVE: To describe a rare cadaveric topographical variation of the median nerve (MN) involving an atypical relationship with the brachialis muscle (BM). Such variations, although uncommon, may complicate surgical procedures, regional anesthesia, and imaging interpretation. This report documents a variation in which the MN traverses the BM without providing motor innervation. CASE REPORT: During the routine dissection of the right upper limb of a 75-year-old male donated cadaver, a unilateral (right-sided) topographical variation of the MN was identified. The MN diverged from its usual close association with the brachial artery (BA) and followed a medial and posterior course toward the BM. Within the middle third of the arm, the nerve penetrated a macroscopically distinct bundle of BM fibers, traversed the muscle belly, and exited in its distal third. Distally, the MN resumed a superficial course, re-approached the BA, and continued normally through the cubital fossa. No motor or accessory branches from the MN to the BM were identified during its intramuscular course. The surrounding muscle fibers closely encircled the nerve along its intramuscular segment, indicating a restricted anatomical corridor. The musculocutaneous nerve, BA, and the remaining neurovascular structures followed their typical anatomical pathways. CONCLUSION: This anatomical configuration may represent a potential anatomical substrate for proximal MN irritation or compression and may clinically resemble pronator teres syndrome. Awareness of such variants is important for clinicians evaluating MN neuropathies and for surgeons, anesthesiologists, and radiologists working in the anterior compartment of the arm.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41914701/",
+      "doi": "https://doi.org/10.5644/ama2006-124.503"
+    },
+    {
+      "pmid": "42226791",
+      "title": "Quantitative Analysis of the Radial Nerve Pathway Relative to the Humerus Shaft Length: A Cadaveric Study Aimed at Minimizing Nerve Injury in Fracture Treatment.",
+      "authors": [
+        "Chang-Jin Yon",
+        "Beom-Soo Kim",
+        "Eun-Seok Son",
+        "Chul-Hyun Cho"
+      ],
+      "journal": "Clinics in orthopedic surgery",
+      "date": "2026 Apr 1",
+      "date_sort": "2026-04-01",
+      "abstract": "BACKGROUND: The aim of this study was to provide a detailed anatomical mapping of the radial nerve's course relative to the humerus and to propose a length-normalized, ratio-based posterior \"safe zone\" for dual plate fixation in distal shaft fractures to reduce the risk of iatrogenic radial nerve injury. METHODS: We dissected 42 upper arms from 21 embalmed adult cadavers (mean age, 74.1 years) and measured the radial nerve in relation to key humeral landmarks from the posterior aspect. Two orthopedic surgeons performed 2 trials each, and intra- and interobserver reliability were high with Cronbach's alpha values of 0.813 and 0.910, respectively. A posterior safe zone for dual plate fixation using an 8-hole 3.5 locking compression plate (LCP) medially and a 7-hole LCP laterally with at least 2 screws per side was defined by expressing fracture location as proportions of humeral length relative to established landmarks. RESULTS: The radial nerve entered the medial humerus at 40.5% and exited laterally at 57.0% of humeral length measured from the proximal end. Key absolute measurements were as follows: proximal humerus to the upper margin of the radial groove, 101.4 mm (range, 58-134 mm); groove length, 43.8 mm (range, 14-72 mm); upper margin of the groove to the olecranon fossa, 127.3 mm (range, 118-159 mm). Expressed as proportions, the posterior safe zone for dual plating spanned 49.1%-76.8% on the posteromedial aspect and 65.5%-88.9% on the posterolateral aspect of the proximal-to-lateral-epicondyle distance, corresponding to 115.3-180.4 mm and 153.7-208.8 mm, respectively, based on the mean humeral length. CONCLUSIONS: This cadaveric study proposes a length-normalized posterior safe zone for dual plating in distal humerus fractures. These anatomical guidelines may assist preoperative planning to avoid radial nerve injury, but clinical validation is required.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42226791/",
+      "doi": "https://doi.org/10.4055/cios25016"
     },
     {
       "pmid": "42099380",
@@ -650,41 +1262,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42099380/",
       "doi": "https://doi.org/10.1016/j.xrrt.2026.100740"
-    },
-    {
-      "pmid": "41914701",
-      "title": "A Rare Cadaveric Case Report of the Median Nerve Passing Through the Brachialis Muscle.",
-      "authors": [
-        "Georgios Paraskevas",
-        "Christos Lyrtzis",
-        "Georgios Trikoilis",
-        "Alexia Maistrellis",
-        "Maria Piagkou"
-      ],
-      "journal": "Acta medica academica",
-      "date": "2026 Apr",
-      "date_sort": "2026-04-01",
-      "abstract": "OBJECTIVE: To describe a rare cadaveric topographical variation of the median nerve (MN) involving an atypical relationship with the brachialis muscle (BM). Such variations, although uncommon, may complicate surgical procedures, regional anesthesia, and imaging interpretation. This report documents a variation in which the MN traverses the BM without providing motor innervation. CASE REPORT: During the routine dissection of the right upper limb of a 75-year-old male donated cadaver, a unilateral (right-sided) topographical variation of the MN was identified. The MN diverged from its usual close association with the brachial artery (BA) and followed a medial and posterior course toward the BM. Within the middle third of the arm, the nerve penetrated a macroscopically distinct bundle of BM fibers, traversed the muscle belly, and exited in its distal third. Distally, the MN resumed a superficial course, re-approached the BA, and continued normally through the cubital fossa. No motor or accessory branches from the MN to the BM were identified during its intramuscular course. The surrounding muscle fibers closely encircled the nerve along its intramuscular segment, indicating a restricted anatomical corridor. The musculocutaneous nerve, BA, and the remaining neurovascular structures followed their typical anatomical pathways. CONCLUSION: This anatomical configuration may represent a potential anatomical substrate for proximal MN irritation or compression and may clinically resemble pronator teres syndrome. Awareness of such variants is important for clinicians evaluating MN neuropathies and for surgeons, anesthesiologists, and radiologists working in the anterior compartment of the arm.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41914701/",
-      "doi": "https://doi.org/10.5644/ama2006-124.503"
-    },
-    {
-      "pmid": "42066274",
-      "title": "Ulnar Nerve Stretch Injury Post Cervical Epidural Steroid Injection: A Case Report.",
-      "authors": [
-        "Alan D Kaye",
-        "Caroline E Gibbs",
-        "Aya Mouhaffel",
-        "Sahar Shekoohi",
-        "Alaa Abd-Elsayed"
-      ],
-      "journal": "Pain medicine case reports",
-      "date": "2026 Apr",
-      "date_sort": "2026-04-01",
-      "abstract": "BACKGROUND: For successful outcomes, interventional pain management procedures commonly require the patient to be prone under fluoroscopy. Nerve injuries can occur from stretching, compression, or direct nerve insult. CASE REPORT: In this case report, we describe a patient receiving a cervical epidural steroid injection while prone over a 17-minute period. He immediately postoperatively reported one-sided severe hand pain and spasm in his lateral fingers. He initially reported cervical radicular pain on the contralateral side, which the patient said felt better immediately after being injected with a mixture of lidocaine, ropivacaine, and dexamethasone into the C5-C6 epidural space. He was sent to the emergency department to rule out a hematoma or any other new pathology; his cervical magnetic resonance image was identical to his baseline preprocedure magnetic resonance image. A variety of medications were administered, including a methylprednisolone dose pack, hydrocodone, gabapentin, and methocarbamol. He was seen in the clinic the following week. At that time he reported ongoing hand pain; an electromyography test was consistent with his physical examination, which showed ulnar dermatome pain and weakness. All symptoms resolved within 2 weeks, and all sensation and motor strength returned to baseline. CONCLUSION: Brachial plexus injury can occur when a patient is prone. In order to minimize nerve injury, care should be taken when positioning patients about to receive an interventional pain management procedure..",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/42066274/"
     },
     {
       "pmid": "41879507",
@@ -754,6 +1331,22 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.5115/acb.25.280"
     },
     {
+      "pmid": "41849066",
+      "title": "A rare anomaly of the cervicobrachial plexus: penetration of the anterior scalene muscle tendon by the T1 nerve root.",
+      "authors": [
+        "Jun Kanazawa",
+        "Yukio Aizawa",
+        "Eiji Kimura"
+      ],
+      "journal": "Anatomical science international",
+      "date": "2026 Mar 18",
+      "date_sort": "2026-03-18",
+      "abstract": "The cervicobrachial plexus is known to exhibit anatomical variation, particularly the brachial plexus, which maintains a close anatomical relationship with the subclavian artery and the scalene muscles. Knowledge of these structural variations is critical for clinicians involved in the diagnosis and management of brachial plexus injuries. This case report describes a rare case involving multiple anomalies in the root formation of the brachial plexus, observed in a Japanese male cadaver. In this case, both brachial plexuses were formed from C4 to T1, and the both subclavian arteries passed between C8 and T1. Notably, the right T1 nerve root penetrated the insertion tendon of the anterior scalene muscle. In addition, the right subclavian artery also penetrated the insertion of the anterior scalene muscle. On the left side, further anatomical variations were observed, including anomalies in the intermediate supraclavicular nerve, the cervical ansa, and the dorsal scapular artery. The configuration in which the T1 nerve root penetrates the anterior scalene muscle tendon has not been previously reported and may have important clinical implications. These findings underscore the importance of careful preoperative assessment of the anatomical relationship between the T1 nerve root and the anterior scalene muscle during brachial plexus blocks via the interscalene approach, neurogenic thoracic outlet syndrome, and surgical procedures in the cervical and upper limb regions.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41849066/",
+      "doi": "https://doi.org/10.1007/s12565-026-00927-9"
+    },
+    {
       "pmid": "41900528",
       "title": "Cadaveric and Ultrasound-Guided Evaluation of Two Needling Approaches Targeting the Pectoralis Minor Muscle: A Pilot Feasibility Study.",
       "authors": [
@@ -817,6 +1410,23 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jvscit.2026.102222"
     },
     {
+      "pmid": "41911205",
+      "title": "From trauma to fibrosis: a case of ulnar nerve entrapment in Guyon’s canal.",
+      "authors": [
+        "Luan Nascimento Lázaro",
+        "Pedro Henrique de Oliveira Alvarenga",
+        "Ocacir de Souza Reis Soares",
+        "Márcio Luís Duarte"
+      ],
+      "journal": "Revista de la Facultad de Ciencias Medicas (Cordoba, Argentina)",
+      "date": "2026 Mar 11",
+      "date_sort": "2026-03-11",
+      "abstract": "Guyon's canal syndrome is an uncommon distal ulnar neuropathy caused by compression within the wrist. We report a case of delayed ulnar nerve entrapment secondary to post-traumatic fibrosis, diagnosed nine years after wrist injury and surgery. High-resolution ultrasonography demonstrated focal nerve compression within Guyon's canal adjacent to fibrotic tissue. The patient presented with chronic sensory deficits and hypothenar atrophy. Conservative treatment led to partial symptom control. This case highlights delayed post-surgical fibrosis as a potential cause of Guyon's canal syndrome and underscores the diagnostic value of ultrasound in chronic compressive neuropathies.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41911205/",
+      "doi": "https://doi.org/10.31053/1853.0605.v83.n1.48175"
+    },
+    {
       "pmid": "41812885",
       "title": "Publication Trends in Thoracic Outlet Syndrome: A Bibliometric Analysis.",
       "authors": [
@@ -840,7 +1450,7 @@ window.pubmedArticles = {
       "date": "2026 Mar 9",
       "date_sort": "2026-03-09",
       "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) encompasses neurogenic, arterial, and venous disorders caused by neurovascular compression at the thoracic outlet. Despite increasing clinical interest, contemporary evaluations of recent research trends remain limited. This study provides a bibliometric analysis of TOS publications, exploring authorship, geography, journals, and themes to identify research trends and gaps in the last 2 years. METHODS: A cross-sectional bibliometric analysis was conducted using Google Scholar to identify English-language journal articles on TOS published in 2024 and 2025. Eligible studies were screened by title, abstract, and full text. Data extracted included publication type, journal category, impact factor, access status, authorship characteristics, geographic origin, collaboration patterns, TOS subtype, and primary research focus. Descriptive statistics were used to summarize findings. RESULTS: Among 219 included articles, 118 (53.88%) were published in 2025 and 101 (46.12%) in 2024. Case reports predominated (72, 32.88%), followed by cohort studies (51, 23.29%). Vascular surgery journals published 50 studies (22.83%). Neurogenic TOS was most frequently addressed (97, 44.29%), followed by arterial (29, 13.24%) and venous TOS (26, 11.87%). Surgical management was the main focus in 66 studies (30.14%). Of 1,123 authors, vascular surgeons comprised the largest group (281, 25.02%). The United States led publication output (89, 36.33%), although international collaboration was limited to 21 studies (9.59%). CONCLUSION: Recent TOS research is characterized by predominantly low-level evidence and a strong surgical focus, with vascular surgeons leading much of the literature and the United States representing the primary source of publications, underscoring the need for higher-quality, collaborative studies.",
-      "article_type": "Research",
+      "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41812885/",
       "doi": "https://doi.org/10.1016/j.avsg.2026.02.055"
     },
@@ -898,32 +1508,10 @@ window.pubmedArticles = {
       "journal": "BMC surgery",
       "date": "2026 Mar 5",
       "date_sort": "2026-03-05",
-      "abstract": "OBJECTIVE: To evaluate the feasibility of thoracoscopic surgery for congenital pulmonary airway malformation (CPAM) with ipsilateral mediastinal bronchogenic cysts in children. METHODS: From January 2019 to January 2025, our medical center performed a total of 462 surgeries on children with CPAM. Among them, 7 children who were diagnosed with CPAM with bronchogenic cysts underwent thoracoscopic surgery. A three-port approach via the lateral chest was adopted. Patients were placed in a lateral decubitus position (healthy side down). The observation hole is located at the junction of the scapular line and the 5th rib space, while the surgical hole is created using the 5-millimeter cannula through the endoscopic triangular method.CO₂ pneumothorax was maintained at 4 mmHg (flow rate: 2 L/min), adjusted intraoperatively as needed. Surgical incisions were primarily designed for pulmonary resection, prioritizing CPAM excision followed by bronchogenic cyst removal. Piecemeal resection was performed when necessary to avoid severe tracheal complications. RESULTS: Among the 7 cases of CPAM with bronchogenic cysts, 5 were type II (bronchiolar) and 2 were type III (bronchiolar/alveolar). All procedures were successfully completed thoracoscopically without conversion to open surgery. Operative time ranged from 90 to 191 min (median: 110 min), with intraoperative blood loss of 3–15 mL (median: 10 mL). Chest tubes were placed in all cases for 3–5 days (median: 4 days). During follow-up (median: 29 months; range: 2–59 months), no disease recurrence was observed on chest CT. CONCLUSION: CPAM in children may coexist with bronchogenic cysts. Preoperative imaging should be meticulously correlated with intraoperative findings to avoid missed diagnoses. Thoracoscopic surgery is a method that can be attempted for treating CPAM in children with ipsilateral mediastinal bronchogenic cysts. SUPPLEMENTARY INFORMATION: The online version contains supplementary material available at 10.1186/s12893-026-03617-5.",
+      "abstract": "OBJECTIVE: To evaluate the feasibility of thoracoscopic surgery for congenital pulmonary airway malformation (CPAM) with ipsilateral mediastinal bronchogenic cysts in children. METHODS: From January 2019 to January 2025, our medical center performed a total of 462 surgeries on children with CPAM. Among them, 7 children who were diagnosed with CPAM with bronchogenic cysts underwent thoracoscopic surgery. A three-port approach via the lateral chest was adopted. Patients were placed in a lateral decubitus position (healthy side down). The observation hole is located at the junction of the scapular line and the 5th rib space, while the surgical hole is created using the 5-millimeter cannula through the endoscopic triangular method.CO₂ pneumothorax was maintained at 4 mmHg (flow rate: 2 L/min), adjusted intraoperatively as needed. Surgical incisions were primarily designed for pulmonary resection, prioritizing CPAM excision followed by bronchogenic cyst removal. Piecemeal resection was performed when necessary to avoid severe tracheal complications. RESULTS: Among the 7 cases of CPAM with bronchogenic cysts, 5 were type II (bronchiolar) and 2 were type III (bronchiolar/alveolar). All procedures were successfully completed thoracoscopically without conversion to open surgery. Operative time ranged from 90 to 191 min (median: 110 min), with intraoperative blood loss of 3–15 mL (median: 10 mL). Chest tubes were placed in all cases for 3–5 days (median: 4 days). During follow-up (median: 29 months; range: 2–59 months), no disease recurrence was observed on chest CT. CONCLUSION: CPAM in children may coexist with bronchogenic cysts. Preoperative imaging should be meticulously correlated with intraoperative findings to avoid missed diagnoses. Thoracoscopic surgery is a method that can be attempted for treating CPAM in children with ipsilateral mediastinal bronchogenic cysts.",
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41781945/",
       "doi": "https://doi.org/10.1186/s12893-026-03617-5"
-    },
-    {
-      "pmid": "41939658",
-      "title": "Ultrasound-Guided Hydrodissection for Neurogenic Thoracic Outlet Syndrome Caused by a Cervical Rib: A Case Report.",
-      "authors": [
-        "Yonghyun Yoon",
-        "Ji Hyo Hwang",
-        "Jaeyoung Lee",
-        "Jaewoo Lim",
-        "Teinny Suryadi",
-        "Anwar Suhaimi",
-        "Seungbeom Kim",
-        "Hyeongjik Kim",
-        "King Hei Stanley Lam"
-      ],
-      "journal": "Cureus",
-      "date": "2026 Mar 3",
-      "date_sort": "2026-03-03",
-      "abstract": "Thoracic outlet syndrome (TOS) is an underdiagnosed condition that is frequently misattributed to cervical spine pathology. Neurogenic TOS (nTOS), the most common subtype, often presents nonspecific upper extremity pain and paresthesia, making diagnosis challenging. We report a case of nTOS associated with a cervical rib that was successfully treated with ultrasound-guided hydrodissection (HD). Dynamic ultrasound examination demonstrated brachial plexus tethering with symptom reproduction. Serial HD resulted in immediate and sustained symptom relief, suggesting that this minimally invasive technique may represent a potential diagnostic adjunct and minimally invasive therapeutic option in carefully selected patients with cervical rib-associated nTOS.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41939658/",
-      "doi": "https://doi.org/10.7759/cureus.104595"
     },
     {
       "pmid": "41927150",
@@ -961,6 +1549,28 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/CND.0000000000000553"
     },
     {
+      "pmid": "41939658",
+      "title": "Ultrasound-Guided Hydrodissection for Neurogenic Thoracic Outlet Syndrome Caused by a Cervical Rib: A Case Report.",
+      "authors": [
+        "Yonghyun Yoon",
+        "Ji Hyo Hwang",
+        "Jaeyoung Lee",
+        "Jaewoo Lim",
+        "Teinny Suryadi",
+        "Anwar Suhaimi",
+        "Seungbeom Kim",
+        "Hyeongjik Kim",
+        "King Hei Stanley Lam"
+      ],
+      "journal": "Cureus",
+      "date": "2026 Mar 3",
+      "date_sort": "2026-03-03",
+      "abstract": "Thoracic outlet syndrome (TOS) is an underdiagnosed condition that is frequently misattributed to cervical spine pathology. Neurogenic TOS (nTOS), the most common subtype, often presents nonspecific upper extremity pain and paresthesia, making diagnosis challenging. We report a case of nTOS associated with a cervical rib that was successfully treated with ultrasound-guided hydrodissection (HD). Dynamic ultrasound examination demonstrated brachial plexus tethering with symptom reproduction. Serial HD resulted in immediate and sustained symptom relief, suggesting that this minimally invasive technique may represent a potential diagnostic adjunct and minimally invasive therapeutic option in carefully selected patients with cervical rib-associated nTOS.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41939658/",
+      "doi": "https://doi.org/10.7759/cureus.104595"
+    },
+    {
       "pmid": "42023676",
       "title": "Neurogenic thoracic outlet syndrome secondary to an unilateral cervical rib in a poodle mix.",
       "authors": [
@@ -978,21 +1588,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1093/jvimsj/aalag068"
     },
     {
-      "pmid": "41781844",
-      "title": "Cubital Tunnel Syndrome Caused by Ulnar Nerve Compression by a Flexor Ulnaris Tendon Sheath Cyst.",
-      "authors": [
-        "Xiaoli Zhu",
-        "Yao Huang"
-      ],
-      "journal": "Journal of the College of Physicians and Surgeons--Pakistan : JCPSP",
-      "date": "2026 Mar",
-      "date_sort": "2026-03-01",
-      "abstract": "",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41781844/",
-      "doi": "https://doi.org/10.29271/jcpsp.2026.03.421"
-    },
-    {
       "pmid": "40990056",
       "title": "Backpack Load Carriage Affects Motor and Sensory Responses of the Median Nerve.",
       "authors": [
@@ -1007,6 +1602,39 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40990056/",
       "doi": "https://doi.org/10.1093/milmed/usaf459"
+    },
+    {
+      "pmid": "41781844",
+      "title": "Cubital Tunnel Syndrome Caused by Ulnar Nerve Compression by a Flexor Ulnaris Tendon Sheath Cyst.",
+      "authors": [
+        "Xiaoli Zhu",
+        "Yao Huang"
+      ],
+      "journal": "Journal of the College of Physicians and Surgeons--Pakistan : JCPSP",
+      "date": "2026 Mar",
+      "date_sort": "2026-03-01",
+      "abstract": "",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41781844/",
+      "doi": "https://doi.org/10.29271/jcpsp.2026.03.421"
+    },
+    {
+      "pmid": "41913889",
+      "title": "Thoracic Outlet Syndrome Presenting With Unilateral Upper Extremity Venous Congestion: A Diagnostic Role for Dermatology.",
+      "authors": [
+        "Alyssa Sayegh",
+        "Lauren Fleshner",
+        "Frederick Pereira",
+        "Mehmet Fatih Atak",
+        "Banu Farabi"
+      ],
+      "journal": "Cureus",
+      "date": "2026 Feb 27",
+      "date_sort": "2026-02-27",
+      "abstract": "Thoracic outlet syndrome (TOS) is a constellation of symptoms associated with compression of the neurovascular bundle of the brachial plexus or subclavian vessels. TOS can be classified as neurogenic, arterial, or venous depending on the structure that is compressed. Symptoms include arm pain, swelling, fatigue, paresthesia, weakness, and discoloration of the hand. While neurogenic and vascular symptoms are well described, cutaneous manifestations of TOS are less often described. We present the case of a 43- year-old woman with acute right upper extremity (RUE) pain, swelling, and progressive erythema with venous engorgement. Initial workup included Doppler ultrasound, coagulation studies, and D-dimer to rule out deep vein thrombosis (DVT), which were all negative. CT chest with contrast revealed no evidence of a thrombus in the right subclavian vein or dilated collateral veins. Rheumatology suspected superficial thrombophlebitis, suggested warm compresses, and RUE elevation. Dermatology was subsequently consulted and identified a constellation of cutaneous signs, including palmar erythema, prominent superficial venous distension on the RUE, petechiae, and pitting edema. These findings prompted repeat vascular evaluation, and venous duplex ultrasonography confirmed venous TOS (vTOS), for which surgical management was scheduled. This case highlights the diagnostic importance of dermatologic assessment in systemic vascular disorders. Cutaneous changes such as unilateral erythema, venous engorgement, temperature asymmetry, and petechiae may represent early indicators of vTOS, yet are frequently misinterpreted as infectious, rheumatologic, or thrombotic conditions. Incorporating dermatologic clues with vascular examination and targeted imaging may reduce misdiagnosis and expedite definitive management.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41913889/",
+      "doi": "https://doi.org/10.7759/cureus.104409"
     },
     {
       "pmid": "41760087",
@@ -1045,24 +1673,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41836252/",
       "doi": "https://doi.org/10.3389/fonc.2026.1776713"
-    },
-    {
-      "pmid": "41913889",
-      "title": "Thoracic Outlet Syndrome Presenting With Unilateral Upper Extremity Venous Congestion: A Diagnostic Role for Dermatology.",
-      "authors": [
-        "Alyssa Sayegh",
-        "Lauren Fleshner",
-        "Frederick Pereira",
-        "Mehmet Fatih Atak",
-        "Banu Farabi"
-      ],
-      "journal": "Cureus",
-      "date": "2026 Feb 27",
-      "date_sort": "2026-02-27",
-      "abstract": "Thoracic outlet syndrome (TOS) is a constellation of symptoms associated with compression of the neurovascular bundle of the brachial plexus or subclavian vessels. TOS can be classified as neurogenic, arterial, or venous depending on the structure that is compressed. Symptoms include arm pain, swelling, fatigue, paresthesia, weakness, and discoloration of the hand. While neurogenic and vascular symptoms are well described, cutaneous manifestations of TOS are less often described. We present the case of a 43- year-old woman with acute right upper extremity (RUE) pain, swelling, and progressive erythema with venous engorgement. Initial workup included Doppler ultrasound, coagulation studies, and D-dimer to rule out deep vein thrombosis (DVT), which were all negative. CT chest with contrast revealed no evidence of a thrombus in the right subclavian vein or dilated collateral veins. Rheumatology suspected superficial thrombophlebitis, suggested warm compresses, and RUE elevation. Dermatology was subsequently consulted and identified a constellation of cutaneous signs, including palmar erythema, prominent superficial venous distension on the RUE, petechiae, and pitting edema. These findings prompted repeat vascular evaluation, and venous duplex ultrasonography confirmed venous TOS (vTOS), for which surgical management was scheduled. This case highlights the diagnostic importance of dermatologic assessment in systemic vascular disorders. Cutaneous changes such as unilateral erythema, venous engorgement, temperature asymmetry, and petechiae may represent early indicators of vTOS, yet are frequently misinterpreted as infectious, rheumatologic, or thrombotic conditions. Incorporating dermatologic clues with vascular examination and targeted imaging may reduce misdiagnosis and expedite definitive management.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41913889/",
-      "doi": "https://doi.org/10.7759/cureus.104409"
     },
     {
       "pmid": "41748458",
@@ -1166,7 +1776,7 @@ window.pubmedArticles = {
       "date": "2026 Feb 18",
       "date_sort": "2026-02-18",
       "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) treatment remains a challenge in this context of functional pathology. After an initial surgical treatment, TOS may recur, and its management becomes a challenge again. We report our experience about recurrent-TOS after complete first rib resection and scalenotomy. After a new diagnostic assessment, and failure of physiotherapy, we performed a second surgical treatment. CASE PRESENTATION: A 32-year-old patient presented with symptoms consistent with left-sided neurogenic thoracic outlet syndrome (NTOS). After the failure of physiotherapy, a first rib resection with anterior and middle scalenectomy via Roos-axillary approach was performed. He initially felt an improvement, allowing him to go back to work. At 9 months, the patient had recurrent TOS with left arm pain. At 18 months, he consulted our department. The examination revealed positive dynamic manoeuvres. For an objective assessment, the patient completed the Disabilities of the Arm, Shoulder and Hand score (DASH-score), and the Physical Component of Short-Form-12 score (PCS-SF12).DASH-score was 43.3 and the PCS-SF12 was 32.2. Electroneuromyogram shows a left plexus C8-T1 dysfunction. Dynamic ultrasound showed complete arteriovenous compression under the left clavicle at 30 degrees abduction. X-ray shows a complete resection of the first rib. Dynamic arteriography shows compression between the second rib and the clavicle, and a pectoralis minor compression syndrom. Our surgical management consisted of second rib resection with a posterior scalenectomy and section of the left pectoralis minor muscle, by Roos axillary approach, without complication. Dynamic manoeuvres are now negative. He no longer has paresthesia in his left hand. The DASH-score at 6 weeks is 16.6 and the PCS-SF12 is 46.5. This clinical improvement will continue throughout the first year of follow-up. The DASH-score is 1.7 at 6 months and 0.83 at 12 months. The PCS-SF12 is 51.7 at 6 months and 55.5 at 12 months. CONCLUSIONS: In the case of recurrent TOS, a new maximalist diagnostic management should be performed to clearly identify the etiology of the compression. In the event of failure of physiotherapy systematically proposed as first-line treatment, a surgical treatment can be performed. Resection of the second rib is a surgical option in case of a new costoclavicular compression.",
-      "article_type": "Research",
+      "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41709328/",
       "doi": "https://doi.org/10.1186/s13019-026-03842-2"
     },
@@ -1188,23 +1798,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.wneu.2026.124872"
     },
     {
-      "pmid": "41846666",
-      "title": "Brentuximab-Induced Peripheral Neuropathy in the Setting of Radiation-Induced Brachial Plexopathy.",
-      "authors": [
-        "Auden Gu",
-        "Yehuda Masturov",
-        "Mark Rekant",
-        "Andrew Miller"
-      ],
-      "journal": "Cureus",
-      "date": "2026 Feb 13",
-      "date_sort": "2026-02-13",
-      "abstract": "Peripheral neuropathy is characterized by progressive, debilitating sensory loss and motor dysfunction. Radiation-induced brachial plexopathy (RIBP) causes significant motor disability in approximately 1.2% of patients receiving radiotherapy. The incidence of chemotherapy-induced peripheral neuropathy (CIPN) has increased with the expanded use of chemotherapeutic agents. Brentuximab vedotin (BV), an anti-CD30 monoclonal antibody approved for Hodgkin's lymphoma (HL) in the pediatric population, induces sensory neuropathy. The double crush phenomenon describes two sites of nerve compression along a peripheral nerve, resulting in greater neurological dysfunction than at one site. One example is when CIPN is concomitant with RIBP, although these cases are not well described in the literature. A patient with BV-induced CIPN with concomitant RIBP was seen at our tertiary referral center, which specializes in complex upper extremity care. This case contributes to the literature by describing the diagnosis and clinical characteristics of chemoradiotherapy-related neuropathies and their subsequent management. A 16-year-old male with a history of refractory HL presented with significant right upper extremity weakness. Nine months prior, he had completed 14 rounds of stereotactic body radiotherapy; seven months prior, he had begun maintenance therapy with BV. Within four months of his visit, weakness progressed to his bilateral lower extremities and contralateral upper extremity with mild distal sensory loss. Electromyography and nerve conduction studies evaluating peripheral nerve function demonstrated an asymmetric, non-length-dependent, predominantly motor-sensory polyradiculoneuropathy. MRI of the brachial plexus and cervical spine demonstrated asymmetric thickening of the right C5-C8 nerve roots and trunks with a high T2 signal and subtle enhancement with contrast and no infiltrative neoplastic lesion. Treatment with oral prednisone for four weeks resulted in objective clinical improvement three months after treatment was initiated. Neurotoxic chemotherapeutic agents may potentiate the effects of radiotherapy, resulting in progressive sensory symptoms. BV neurotoxicity may be related to autoimmunity or inhibition of axonal transport. The double crush phenomenon accounts for atypical presentations in patients receiving local radiotherapy or chemotherapeutic agents. Further studies are required to characterize the double crush phenomenon in cancer patients.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41846666/",
-      "doi": "https://doi.org/10.7759/cureus.103554"
-    },
-    {
       "pmid": "41783201",
       "title": "Complications and clinical benefits of the combined supra- and infraclavicular approach in neurogenic thoracic outlet syndrome.",
       "authors": [
@@ -1220,6 +1813,23 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41783201/",
       "doi": "https://doi.org/10.25259/SNI_1362_2025"
+    },
+    {
+      "pmid": "41846666",
+      "title": "Brentuximab-Induced Peripheral Neuropathy in the Setting of Radiation-Induced Brachial Plexopathy.",
+      "authors": [
+        "Auden Gu",
+        "Yehuda Masturov",
+        "Mark Rekant",
+        "Andrew Miller"
+      ],
+      "journal": "Cureus",
+      "date": "2026 Feb 13",
+      "date_sort": "2026-02-13",
+      "abstract": "Peripheral neuropathy is characterized by progressive, debilitating sensory loss and motor dysfunction. Radiation-induced brachial plexopathy (RIBP) causes significant motor disability in approximately 1.2% of patients receiving radiotherapy. The incidence of chemotherapy-induced peripheral neuropathy (CIPN) has increased with the expanded use of chemotherapeutic agents. Brentuximab vedotin (BV), an anti-CD30 monoclonal antibody approved for Hodgkin's lymphoma (HL) in the pediatric population, induces sensory neuropathy. The double crush phenomenon describes two sites of nerve compression along a peripheral nerve, resulting in greater neurological dysfunction than at one site. One example is when CIPN is concomitant with RIBP, although these cases are not well described in the literature. A patient with BV-induced CIPN with concomitant RIBP was seen at our tertiary referral center, which specializes in complex upper extremity care. This case contributes to the literature by describing the diagnosis and clinical characteristics of chemoradiotherapy-related neuropathies and their subsequent management. A 16-year-old male with a history of refractory HL presented with significant right upper extremity weakness. Nine months prior, he had completed 14 rounds of stereotactic body radiotherapy; seven months prior, he had begun maintenance therapy with BV. Within four months of his visit, weakness progressed to his bilateral lower extremities and contralateral upper extremity with mild distal sensory loss. Electromyography and nerve conduction studies evaluating peripheral nerve function demonstrated an asymmetric, non-length-dependent, predominantly motor-sensory polyradiculoneuropathy. MRI of the brachial plexus and cervical spine demonstrated asymmetric thickening of the right C5-C8 nerve roots and trunks with a high T2 signal and subtle enhancement with contrast and no infiltrative neoplastic lesion. Treatment with oral prednisone for four weeks resulted in objective clinical improvement three months after treatment was initiated. Neurotoxic chemotherapeutic agents may potentiate the effects of radiotherapy, resulting in progressive sensory symptoms. BV neurotoxicity may be related to autoimmunity or inhibition of axonal transport. The double crush phenomenon accounts for atypical presentations in patients receiving local radiotherapy or chemotherapeutic agents. Further studies are required to characterize the double crush phenomenon in cancer patients.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41846666/",
+      "doi": "https://doi.org/10.7759/cureus.103554"
     },
     {
       "pmid": "41677348",
@@ -1291,6 +1901,25 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3390/medicina62020332"
     },
     {
+      "pmid": "41653968",
+      "title": "Functional Short-Term Outcomes After Transaxillary First Rib Resection in Thoracic Outlet Syndrome.",
+      "authors": [
+        "Eva Deveze",
+        "Myriam Ammi",
+        "Mickael Daligault",
+        "Jeanne Hersant",
+        "Pierre Abraham",
+        "Jean Picquet"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2026 Feb 5",
+      "date_sort": "2026-02-05",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome is a disabling condition in which surgical treatment is considered for patients after failure of physical therapy or in the presence of vascular complications. The aim of this study was to evaluate the outcomes of first rib resection via the transaxillary approach using patient-reported outcomes measures with Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) and Short Form 36 (SF-36), and to identify potential predictors of surgical success. METHODS: We conducted a single-center prospective study over 1 year. All patients undergoing surgery for thoracic outlet syndrome were asked to complete QuickDASH and SF-36 questionnaires preoperatively and at last follow-up. RESULTS: Eighty-eight patients were included, with a mean age of 38.5 ± 10 years; 65 (73.8%) were women. All patients underwent first rib resection via the transaxillary approach, associated with pectoralis minor section in 46 cases (52.2%). The mean duration of follow-up was 92.2 ± 56 days postoperatively. The mean preoperative QuickDASH score was 61 ± 1.8 which improved significantly to 44.3 ± 2.04 postoperatively (P < 0.05). Significant improvement was reported in all SF-36 domains except for physical functioning. On multivariate analysis, female sex was identified as an independent predictor factor of favorable surgical outcomes (Relative Risk [RR] 1.6291 (Interval Confidence [IC] 95% 1.00-2.63) P = 0.046). CONCLUSION: At 3 months follow-up, transaxillary first ribs resection results in functional improvement in patients with thoracic outlet syndrome, with female sex identified as an independent predictor of better outcomes.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41653968/",
+      "doi": "https://doi.org/10.1016/j.avsg.2026.01.014"
+    },
+    {
       "pmid": "41706649",
       "title": "Overcoming First Rib Obstruction During Left Internal Thoracic Artery Harvesting in Minimally Invasive-Coronary Artery Bypass Grafting: A Practical Approach Using Ultrasonic Bone Sculpting.",
       "authors": [
@@ -1348,25 +1977,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/17589983251411877"
     },
     {
-      "pmid": "41653968",
-      "title": "Functional Short-Term Outcomes After Transaxillary First Rib Resection in Thoracic Outlet Syndrome.",
-      "authors": [
-        "Eva Deveze",
-        "Myriam Ammi",
-        "Mickael Daligault",
-        "Jeanne Hersant",
-        "Pierre Abraham",
-        "Jean Picquet"
-      ],
-      "journal": "Annals of vascular surgery",
-      "date": "2026 Feb 5",
-      "date_sort": "2026-02-05",
-      "abstract": "BACKGROUND: Thoracic outlet syndrome is a disabling condition in which surgical treatment is considered for patients after failure of physical therapy or in the presence of vascular complications. The aim of this study was to evaluate the outcomes of first rib resection via the transaxillary approach using patient-reported outcomes measures with Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) and Short Form 36 (SF-36), and to identify potential predictors of surgical success. METHODS: We conducted a single-center prospective study over 1 year. All patients undergoing surgery for thoracic outlet syndrome were asked to complete QuickDASH and SF-36 questionnaires preoperatively and at last follow-up. RESULTS: Eighty-eight patients were included, with a mean age of 38.5 ± 10 years; 65 (73.8%) were women. All patients underwent first rib resection via the transaxillary approach, associated with pectoralis minor section in 46 cases (52.2%). The mean duration of follow-up was 92.2 ± 56 days postoperatively. The mean preoperative QuickDASH score was 61 ± 1.8 which improved significantly to 44.3 ± 2.04 postoperatively (P < 0.05). Significant improvement was reported in all SF-36 domains except for physical functioning. On multivariate analysis, female sex was identified as an independent predictor factor of favorable surgical outcomes (Relative Risk [RR] 1.6291 (Interval Confidence [IC] 95% 1.00-2.63) P = 0.046). CONCLUSION: At 3 months follow-up, transaxillary first ribs resection results in functional improvement in patients with thoracic outlet syndrome, with female sex identified as an independent predictor of better outcomes.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41653968/",
-      "doi": "https://doi.org/10.1016/j.avsg.2026.01.014"
-    },
-    {
       "pmid": "41643844",
       "title": "Current Perspectives on Pectoralis Minor Syndrome: A Narrative Review.",
       "authors": [
@@ -1404,7 +2014,7 @@ window.pubmedArticles = {
       "journal": "Journal of orthopaedic surgery and research",
       "date": "2026 Feb 2",
       "date_sort": "2026-02-02",
-      "abstract": "INTRODUCTION: Neurogenic Thoracic Outlet Syndrome (nTOS) is characterized by compression of neural structures within the interscalene triangle of the thoracic outlet, with anatomical variations frequently implicated in its etiology. In patients with TOS, spinal nerves pass through a narrow anatomical space as they exit the foramen and traverse the thoracic inlet. The tension of the suprapleural bands extending between the C7 transverse process and the first rib, along with changes in neck position and certain anatomical variations, can lead to compression of the lower trunk. The condition of this anatomical space, where compression occurs, is influenced by the relationship between the lower cervical vertebrae and the first rib. This study aims to determine whether these cervicothoracic angles could lead to lower trunk compression as it passes over the suprapleural membrane. It is hypothesized that this radiological variation may present a higher likelihood of causing compression in TOS patients compared to the normal population. METHODS: This retrospective study included patients diagnosed with neurogenic TOS who underwent surgery between 2015 and 2023, patients managed with physical therapy without surgery, and a matched control group. The control group consisted of patients presenting to the orthopedic clinic with neck pain but without any pathological findings. Cervical anteroposterior and lateral radiographs were evaluated to measure T1 slope, cervical inclination, the length of the T1 transverse process, and the angle between the T1 transverse process and the T1 vertebral body. We hypothesize that differences in these radiological parameters, often assessed in patients with cervical spondylosis, might contribute to nerve compression at the thoracic outlet. These parameters were compared between groups. Thoracic Outlet Syndrome Index (TOSI) scores and surgical approaches were documented for the operated patients. RESULTS: The study included 52 patients with a mean age of 34.23 ± 11.15 years. Of these, 24 patients were in the TOS group, and 28 were in the control group. Sixteen of the 24 TOS patients underwent surgery, while 8 were managed with physical therapy. Significant differences were observed between the TOS and control groups in cervical inclination and T1 transverse process angle (p = 0.04, p = 0.004). However, no significant relationship was found between T1 slope, T1 transverse process length, and TOS. Cervical inclination was 43 degrees in the TOS group and 48 degrees in the control group. The T1 transverse process angle was 106.5 degrees in the TOS group and 116.5 degrees in the control group. Among the 16 operated patients, 13 (81.25%) underwent a supraclavicular approach, 2 (12.5%) had a combined supraclavicular and pectoralis minor approach, and 1 (6.25%) underwent a pectoralis minor approach. Supraclavicular surgeries included fibrous band excision and anterior and middle scalenectomy. The preoperative and postoperative TOSI scores for the 16 operated patients were 26.2 and 2.23, respectively, with a statistically significant difference (p < 0.001). DISCUSSIONS: Increased tension in the fibrous bands over the Sibson-Truffert fascia, exacerbated by poor neck posture, may contribute to lower trunk compression in TOS. The literature supports treatment through excision of these bands via a supraclavicular approach, yielding clinically satisfactory outcomes. CONCLUSION: In conclusion, demonstrating cervical inclination and T1 transverse process angle preoperatively as indicators of lower trunk compression may predict favorable outcomes with supraclavicular surgery. SUPPLEMENTARY INFORMATION: The online version contains supplementary material available at 10.1186/s13018-026-06694-7.",
+      "abstract": "INTRODUCTION: Neurogenic Thoracic Outlet Syndrome (nTOS) is characterized by compression of neural structures within the interscalene triangle of the thoracic outlet, with anatomical variations frequently implicated in its etiology. In patients with TOS, spinal nerves pass through a narrow anatomical space as they exit the foramen and traverse the thoracic inlet. The tension of the suprapleural bands extending between the C7 transverse process and the first rib, along with changes in neck position and certain anatomical variations, can lead to compression of the lower trunk. The condition of this anatomical space, where compression occurs, is influenced by the relationship between the lower cervical vertebrae and the first rib. This study aims to determine whether these cervicothoracic angles could lead to lower trunk compression as it passes over the suprapleural membrane. It is hypothesized that this radiological variation may present a higher likelihood of causing compression in TOS patients compared to the normal population. METHODS: This retrospective study included patients diagnosed with neurogenic TOS who underwent surgery between 2015 and 2023, patients managed with physical therapy without surgery, and a matched control group. The control group consisted of patients presenting to the orthopedic clinic with neck pain but without any pathological findings. Cervical anteroposterior and lateral radiographs were evaluated to measure T1 slope, cervical inclination, the length of the T1 transverse process, and the angle between the T1 transverse process and the T1 vertebral body. We hypothesize that differences in these radiological parameters, often assessed in patients with cervical spondylosis, might contribute to nerve compression at the thoracic outlet. These parameters were compared between groups. Thoracic Outlet Syndrome Index (TOSI) scores and surgical approaches were documented for the operated patients. RESULTS: The study included 52 patients with a mean age of 34.23 ± 11.15 years. Of these, 24 patients were in the TOS group, and 28 were in the control group. Sixteen of the 24 TOS patients underwent surgery, while 8 were managed with physical therapy. Significant differences were observed between the TOS and control groups in cervical inclination and T1 transverse process angle (p = 0.04, p = 0.004). However, no significant relationship was found between T1 slope, T1 transverse process length, and TOS. Cervical inclination was 43 degrees in the TOS group and 48 degrees in the control group. The T1 transverse process angle was 106.5 degrees in the TOS group and 116.5 degrees in the control group. Among the 16 operated patients, 13 (81.25%) underwent a supraclavicular approach, 2 (12.5%) had a combined supraclavicular and pectoralis minor approach, and 1 (6.25%) underwent a pectoralis minor approach. Supraclavicular surgeries included fibrous band excision and anterior and middle scalenectomy. The preoperative and postoperative TOSI scores for the 16 operated patients were 26.2 and 2.23, respectively, with a statistically significant difference (p < 0.001). DISCUSSIONS: Increased tension in the fibrous bands over the Sibson-Truffert fascia, exacerbated by poor neck posture, may contribute to lower trunk compression in TOS. The literature supports treatment through excision of these bands via a supraclavicular approach, yielding clinically satisfactory outcomes. CONCLUSION: In conclusion, demonstrating cervical inclination and T1 transverse process angle preoperatively as indicators of lower trunk compression may predict favorable outcomes with supraclavicular surgery.",
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41629948/",
       "doi": "https://doi.org/10.1186/s13018-026-06694-7"
@@ -1429,21 +2039,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3389/fmed.2026.1718663"
     },
     {
-      "pmid": "41779989",
-      "title": "Bilateral Upper Extremity Neuropathy and Paraplegia: A Case Report.",
-      "authors": [
-        "Alexander E Deiongh",
-        "Komalpreet K Badial",
-        "Kyaw Z Lin"
-      ],
-      "journal": "Pain medicine case reports",
-      "date": "2026 Feb",
-      "date_sort": "2026-02-01",
-      "abstract": "BACKGROUND: Patients who experience spinal injury and secondary paraplegia encounter a variety of risk factors that contribute to the development of subsequent upper extremity pathology. Trauma to surrounding structures, invasive surgical interventions, hardware placement, and overuse of the upper extremity among manual wheelchair users may further increase this risk. CASE REPORT: A 36-year-old woman suffered spinal and rib injuries, requiring surgical fixation, and recently developed paresthesias in her upper extremities. Prolonged manual wheelchair use presumably contributed to further associated injury. Thorough evaluation of the patient, including electrodiagnostic studies, supported a diagnosis of carpal tunnel syndrome. However, additional factors in the patient's history and physical examination findings supported concomitant thoracic outlet syndrome. CONCLUSIONS: Our case emphasizes the importance of recognizing the nonclassical presentation of peripheral compression syndromes, performing a thorough evaluation, and providing the most appropriate management to promote optimal functioning and ultimately preserve one's quality of life.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41779989/"
-    },
-    {
       "pmid": "40742865",
       "title": "Coordinate-Independent Ultrasound Assessment for Complex Tissue Kinematics: A Preliminary Study on Median Nerve Mobility.",
       "authors": [
@@ -1462,6 +2057,21 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40742865/",
       "doi": "https://doi.org/10.1109/TBME.2025.3590541"
+    },
+    {
+      "pmid": "41779989",
+      "title": "Bilateral Upper Extremity Neuropathy and Paraplegia: A Case Report.",
+      "authors": [
+        "Alexander E Deiongh",
+        "Komalpreet K Badial",
+        "Kyaw Z Lin"
+      ],
+      "journal": "Pain medicine case reports",
+      "date": "2026 Feb",
+      "date_sort": "2026-02-01",
+      "abstract": "BACKGROUND: Patients who experience spinal injury and secondary paraplegia encounter a variety of risk factors that contribute to the development of subsequent upper extremity pathology. Trauma to surrounding structures, invasive surgical interventions, hardware placement, and overuse of the upper extremity among manual wheelchair users may further increase this risk. CASE REPORT: A 36-year-old woman suffered spinal and rib injuries, requiring surgical fixation, and recently developed paresthesias in her upper extremities. Prolonged manual wheelchair use presumably contributed to further associated injury. Thorough evaluation of the patient, including electrodiagnostic studies, supported a diagnosis of carpal tunnel syndrome. However, additional factors in the patient's history and physical examination findings supported concomitant thoracic outlet syndrome. CONCLUSIONS: Our case emphasizes the importance of recognizing the nonclassical presentation of peripheral compression syndromes, performing a thorough evaluation, and providing the most appropriate management to promote optimal functioning and ultimately preserve one's quality of life.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41779989/"
     },
     {
       "pmid": "41660453",
@@ -1621,6 +2231,38 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1136/bcr-2025-268469"
     },
     {
+      "pmid": "41539700",
+      "title": "[State-of-the-art in peripheral nerve injury diagnosis and therapy].",
+      "authors": [
+        "Jiayu Sun",
+        "Liang Chen"
+      ],
+      "journal": "Zhongguo xiu fu chong jian wai ke za zhi = Zhongguo xiufu chongjian waike zazhi = Chinese journal of reparative and reconstructive surgery",
+      "date": "2026 Jan 15",
+      "date_sort": "2026-01-15",
+      "abstract": "The undulating characteristics of nerve fibers and the endoneurium are important factors in resisting traction force. The diagnostic accuracies of magnetic resonance neurography and ultrasonography for nerve injuries are 85.4% and 70.6%, respectively. Epineurial repair is the most commonly used nerve repair technique. Nerve grafts are generally required when the defect exceeds 2 cm. Nerve transfers are primarily indicated for brachial plexus root avulsions or intraforaminal lesions. Painful neuromas can be treated with target muscle reinnervation. Surgery yields reliable results for carpal-tunnel syndrome, cubital-tunnel syndrome, the common peroneal nerve entrapment, and the lateral femoral cutaneous nerve entrapment syndrome. Effective rehabilitation interventions related to the central nervous system include sensory reeducation, cross-modal sensory substitution, motor imagery, and action observation with simultaneous peripheral nerve stimulation.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41539700/",
+      "doi": "https://doi.org/10.7507/1002-1892.202511056"
+    },
+    {
+      "pmid": "41534853",
+      "title": "Ultrasound findings in 46 cases of incomplete release of the transverse carpal ligament in carpal tunnel surgery.",
+      "authors": [
+        "Marco Becciolini",
+        "Giorgio Tamborrini",
+        "Christopher Pivec",
+        "Georg Riegler"
+      ],
+      "journal": "Ultraschall in der Medizin (Stuttgart, Germany : 1980)",
+      "date": "2026 Jan 14",
+      "date_sort": "2026-01-14",
+      "abstract": "PURPOSE: To describe the ultrasound (US) features of a complication in patients who have undergone surgery for carpal tunnel syndrome (CTS): the incomplete release of the transverse carpal ligament (TCL). MATERIALS AND METHODS: Reports from two institutions were searched using the keywords \"persistent CTS\" and \"incomplete TCL release\". Post-surgical US examinations were performed using a standardized approach at both institutions, first assessing the muscles supplied by the median nerve (MN) and then conducting a detailed evaluation of the MN course at the wrist. To avoid misinterpreting ligament regrowth, patients with recurrent symptoms two months or later after surgery were excluded. Only cases showing clear compression by the TCL were selected. RESULTS: A total of 46 patients were identified with incomplete release of the TCL, with the average uncut portion of the ligament measuring 6.7 mm. The proximal margin of the TCL was incompletely released in 65% of the cases, while the distal margin was affected in 35%. Symptoms in these patients persisted after surgery, and, in 52%, they were worse than before surgery. A reduction in thenar muscle bulk was observed in 37 patients. Follow-up clinical data were available in eight patients, with three undergoing US evaluation after revision surgery. CONCLUSION: US can effectively demonstrate the incomplete release of the TCL, visualized as a fibrillar uncut structure compressing the MN and producing an hourglass appearance of the nerve. In addition, US may help detect other factors that contribute to persistent symptoms and help to guide revision surgery.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41534853/",
+      "doi": "https://doi.org/10.1055/a-2672-2835"
+    },
+    {
       "pmid": "41537208",
       "title": "Surgically Oriented Ultrasound-Based AI of Median Nerve Morphology as a Decision Support for Carpal Tunnel Release: A Calibrated ConvNeXt-CBAM Framework With Supervised Contrastive Warm-Up.",
       "authors": [
@@ -1675,42 +2317,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/10538135251407693"
     },
     {
-      "pmid": "40623827",
-      "title": "Enhanced Neonatal Brachial Plexus MR Neurography: A Comparative Analysis of Compressed Sensitivity Encoding versus Sensitivity Encoding.",
-      "authors": [
-        "Baiqi Zhu",
-        "Yu Guo",
-        "Xuehua Peng",
-        "Aiguo Zhai",
-        "Jian Li",
-        "Jianbo Shao"
-      ],
-      "journal": "AJNR. American journal of neuroradiology",
-      "date": "2026 Jan 5",
-      "date_sort": "2026-01-05",
-      "abstract": "BACKGROUND AND PURPOSE: Neonatal brachial plexus imaging faces challenges with extended scan times and motion artifacts. This study assessed whether compressed sensitivity encoding (CS) acceleration could achieve image quality comparable with conventional sensitivity encoding (SENSE) while significantly reducing scanning time, potentially enhancing diagnostic accuracy and success rates in neonatal brachial plexus imaging. MATERIALS AND METHODS: Forty-five neonates (18 male, 27 female; mean age 14.82 ± 9.62 days) with clinical suspicion of brachial plexus nerve injury were examined by using both CS and SENSE 3D NerveVIEW sequences on a 3T MRI scanner. The parallel acquisition acceleration factor was 1.3 for SENSE and 6 for CS. Image quality was evaluated quantitatively by using SNR and nerve-to-muscle contrast-to-noise ratio (CNR), and qualitatively through a 5-point semiquantitative scale assessment by 2 senior pediatric radiologists. RESULTS: CS reduced acquisition time by approximately 30% (3:36 versus 5:08 minutes) compared with SENSE, without compromising image quality. No significant differences were found in SNR and nerve-to-muscle CNR between CS and SENSE, with equivalence testing confirming comparable image quality (SNR: t(44) = 3.109, P = .002; nerve-to-muscle CNR: t(44) = 1.984, P = .03). Radiologists' subjective evaluations revealed no significant difference in image quality scores between CS and SENSE, with strong interrater agreement for both methods (CS: κ = 0.773; SENSE: κ = 0.617). CONCLUSIONS: Implementation of CS technology in 3D NerveVIEW sequences for neonatal brachial plexus imaging is feasible and effective, providing image quality comparable to SENSE while significantly reducing scanning time. This advancement potentially improves patient outcomes through higher success rates in imaging examinations.",
-      "article_type": "Comparative Study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40623827/",
-      "doi": "https://doi.org/10.3174/ajnr.A8915"
-    },
-    {
-      "pmid": "41494707",
-      "title": "Entrapment of the median nerve within the radius following diaphyseal antebrachial fractures treated with nail osteosynthesis in two paediatric patients.",
-      "authors": [
-        "Lucas Emil Jørgensen Østergaard",
-        "Erisela Qerama",
-        "Mats Bue",
-        "Maiken Stilling"
-      ],
-      "journal": "BMJ case reports",
-      "date": "2026 Jan 5",
-      "date_sort": "2026-01-05",
-      "abstract": "Antebrachial fractures are common among paediatric patients. Some exhibit neurological symptoms, making it initially challenging to determine nerve injury severity. We present two paediatric cases of median nerve entrapment within the radius following mid-shaft antebrachial fractures. Both cases showed persistent sensory and motor deficits, paraesthesia and pain in the distribution area of the median nerve after nail osteosynthesis. Nerve conduction studies and ultrasound suggested nerve entrapment at the fracture site, leading to surgical exploration and nerve autograft repair at 12 months (case 1) and nerve allografting at 34 months (case 2) post injury. At 18 months follow-up, case 1 had regained full sensory function but showed no clinical signs of motor reinnervation. Case 2 regained normal motor function, but sensory function remained impaired at 39 months follow-up. Early recognition and intervention of nerve injuries are crucial for improving the likelihood of better outcomes and minimising the risk of disabling sequelae.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41494707/",
-      "doi": "https://doi.org/10.1136/bcr-2025-265860"
-    },
-    {
       "pmid": "41561759",
       "title": "Management of malignant breast phyllodes tumor with rib invasion during pregnancy: a rare case report and literature review.",
       "authors": [
@@ -1736,6 +2342,61 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3389/fonc.2025.1703191"
     },
     {
+      "pmid": "41494707",
+      "title": "Entrapment of the median nerve within the radius following diaphyseal antebrachial fractures treated with nail osteosynthesis in two paediatric patients.",
+      "authors": [
+        "Lucas Emil Jørgensen Østergaard",
+        "Erisela Qerama",
+        "Mats Bue",
+        "Maiken Stilling"
+      ],
+      "journal": "BMJ case reports",
+      "date": "2026 Jan 5",
+      "date_sort": "2026-01-05",
+      "abstract": "Antebrachial fractures are common among paediatric patients. Some exhibit neurological symptoms, making it initially challenging to determine nerve injury severity. We present two paediatric cases of median nerve entrapment within the radius following mid-shaft antebrachial fractures. Both cases showed persistent sensory and motor deficits, paraesthesia and pain in the distribution area of the median nerve after nail osteosynthesis. Nerve conduction studies and ultrasound suggested nerve entrapment at the fracture site, leading to surgical exploration and nerve autograft repair at 12 months (case 1) and nerve allografting at 34 months (case 2) post injury. At 18 months follow-up, case 1 had regained full sensory function but showed no clinical signs of motor reinnervation. Case 2 regained normal motor function, but sensory function remained impaired at 39 months follow-up. Early recognition and intervention of nerve injuries are crucial for improving the likelihood of better outcomes and minimising the risk of disabling sequelae.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41494707/",
+      "doi": "https://doi.org/10.1136/bcr-2025-265860"
+    },
+    {
+      "pmid": "40623827",
+      "title": "Enhanced Neonatal Brachial Plexus MR Neurography: A Comparative Analysis of Compressed Sensitivity Encoding versus Sensitivity Encoding.",
+      "authors": [
+        "Baiqi Zhu",
+        "Yu Guo",
+        "Xuehua Peng",
+        "Aiguo Zhai",
+        "Jian Li",
+        "Jianbo Shao"
+      ],
+      "journal": "AJNR. American journal of neuroradiology",
+      "date": "2026 Jan 5",
+      "date_sort": "2026-01-05",
+      "abstract": "BACKGROUND AND PURPOSE: Neonatal brachial plexus imaging faces challenges with extended scan times and motion artifacts. This study assessed whether compressed sensitivity encoding (CS) acceleration could achieve image quality comparable with conventional sensitivity encoding (SENSE) while significantly reducing scanning time, potentially enhancing diagnostic accuracy and success rates in neonatal brachial plexus imaging. MATERIALS AND METHODS: Forty-five neonates (18 male, 27 female; mean age 14.82 ± 9.62 days) with clinical suspicion of brachial plexus nerve injury were examined by using both CS and SENSE 3D NerveVIEW sequences on a 3T MRI scanner. The parallel acquisition acceleration factor was 1.3 for SENSE and 6 for CS. Image quality was evaluated quantitatively by using SNR and nerve-to-muscle contrast-to-noise ratio (CNR), and qualitatively through a 5-point semiquantitative scale assessment by 2 senior pediatric radiologists. RESULTS: CS reduced acquisition time by approximately 30% (3:36 versus 5:08 minutes) compared with SENSE, without compromising image quality. No significant differences were found in SNR and nerve-to-muscle CNR between CS and SENSE, with equivalence testing confirming comparable image quality (SNR: t(44) = 3.109, P = .002; nerve-to-muscle CNR: t(44) = 1.984, P = .03). Radiologists' subjective evaluations revealed no significant difference in image quality scores between CS and SENSE, with strong interrater agreement for both methods (CS: κ = 0.773; SENSE: κ = 0.617). CONCLUSIONS: Implementation of CS technology in 3D NerveVIEW sequences for neonatal brachial plexus imaging is feasible and effective, providing image quality comparable to SENSE while significantly reducing scanning time. This advancement potentially improves patient outcomes through higher success rates in imaging examinations.",
+      "article_type": "Comparative Study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40623827/",
+      "doi": "https://doi.org/10.3174/ajnr.A8915"
+    },
+    {
+      "pmid": "41792064",
+      "title": "A New Method for the Diagnosis of Early Carpal Tunnel Syndrome by Means of Pressurised Electromyography.",
+      "authors": [
+        "Lishuai Miao",
+        "Xiaokuan Fu",
+        "Peng Li",
+        "Tongling Wu",
+        "Yuanhui Zhou",
+        "Yue Liu"
+      ],
+      "journal": "Journal of the College of Physicians and Surgeons--Pakistan : JCPSP",
+      "date": "2026 Jan",
+      "date_sort": "2026-01-01",
+      "abstract": "OBJECTIVE: To test the diagnosis of early carpal tunnel syndrome (CTS) by assessing dorsal extension, distal sensation, and motor latency. STUDY DESIGN: An observational study. Place and Duration of the Study: Department of Orthopaedic Surgery, Longgang District People's Hospital of Shenzhen and the Second Affiliated Hospital of the Chinese University of Hong Kong, Shenzhen, China, from March 2018 to July 2023. METHODOLOGY: Electromyography was performed on 82 hands of 62 patients with CTS. Distal sensory and motor latency measurements before and after the compression were analysed. Paired t-test was used to analyse the experimental data. RESULTS: Compared to before compression (DSL = 4.17 ms, DML = 5.25 ms), the results showed that the distal sensory and motor latency of the median nerve were significantly longer in mild cases (DSL = 4.73 ms, DML = 5.51 ms). However, the sensory nerve action potential (SNAP) and compound muscle action potential (CMAP) were significantly lower, decreasing from 13.56 μv and 6.69 mv to 13.09 μv and 6.27 mv, respectively. In moderately severe patients, the DSL was significantly longer than before compression, with the mean value increasing from 4.38 ms to 4.86 ms. CONCLUSION: Electromyography in the dorsal extension position of the wrist has practical value in the diagnosis of early CTS. KEY WORDS: Wrist carpal tunnel syndrome, Median nerve, Electromyography, Dorsal extension.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41792064/",
+      "doi": "https://doi.org/10.29271/jcpsp.2026.01.38"
+    },
+    {
       "pmid": "42036341",
       "title": "[Shortening the Scan Time of Three-dimensional T2-weighted Fat-suppressed Imaging Using DIXON and Compressed Sensing for the Brachial Plexus].",
       "authors": [
@@ -1750,24 +2411,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/42036341/",
       "doi": "https://doi.org/10.6009/jjrt.26-1615"
-    },
-    {
-      "pmid": "41563882",
-      "title": "Reverse End-to-Side Abductor Digiti Minimi-to-Recurrent Motor Branch Nerve Transfer for Severe Carpal Tunnel Syndrome: Report of Three Cases.",
-      "authors": [
-        "Ethan Blum",
-        "Ashley Brantingham",
-        "Jennifer Goodlin",
-        "Nathaniel P Olafsen",
-        "Christopher J Dy"
-      ],
-      "journal": "Microsurgery",
-      "date": "2026 Jan",
-      "date_sort": "2026-01-01",
-      "abstract": "Severe carpal tunnel syndrome (CTS) with advanced thenar denervation has limited reconstructive options, and reliable reinnervation remains challenging. Reverse end-to-side (RETS) nerve transfers have been described in other contexts but to our knowledge, have not been applied clinically to compressive median neuropathy at the wrist. Here, we present three patients, ages 59, 68, and 72 years, with severe CTS, visible thenar atrophy, and electrodiagnostic evidence of profound median motor axon loss who underwent carpal tunnel release with abductor digiti minimi (ADM)-to-recurrent motor branch (RMB) RETS transfer. All procedures were performed using a standardized microsurgical technique. Follow-up was 10 months (Case 1), 24 months (Case 2), and 8 months (Case 3). Postoperatively, each patient demonstrated early return of visible thenar contraction between 6 weeks and 4 months, with final abductor pollicis brevis (APB) strength of 4 to 4+. Sensory recovery improved across all cases, with two-point discrimination normalizing to 5-8 mm. Follow-up electrodiagnostic studies in two patients showed markedly greater APB compound muscle action potential (CMAP) amplitudes when stimulating through the ulnar nerve than through the median nerve, consistent with donor-derived reinnervation through the transfer. Patient-reported outcome measurement information system (PROMIS) upper extremity (UE) and physical function (PF) scores improved by 9-22 points. Although these early results suggest the potential for donor-derived reinnervation in severe CTS, the findings are preliminary and should be interpreted with caution. Larger prospective studies will be necessary to determine the true functional benefit, appropriate patient selection criteria, and comparative effectiveness of this technique.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41563882/",
-      "doi": "https://doi.org/10.1002/micr.70184"
     },
     {
       "pmid": "41778881",
@@ -1807,23 +2450,22 @@ window.pubmedArticles = {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41474925/"
     },
     {
-      "pmid": "41792064",
-      "title": "A New Method for the Diagnosis of Early Carpal Tunnel Syndrome by Means of Pressurised Electromyography.",
+      "pmid": "41563882",
+      "title": "Reverse End-to-Side Abductor Digiti Minimi-to-Recurrent Motor Branch Nerve Transfer for Severe Carpal Tunnel Syndrome: Report of Three Cases.",
       "authors": [
-        "Lishuai Miao",
-        "Xiaokuan Fu",
-        "Peng Li",
-        "Tongling Wu",
-        "Yuanhui Zhou",
-        "Yue Liu"
+        "Ethan Blum",
+        "Ashley Brantingham",
+        "Jennifer Goodlin",
+        "Nathaniel P Olafsen",
+        "Christopher J Dy"
       ],
-      "journal": "Journal of the College of Physicians and Surgeons--Pakistan : JCPSP",
+      "journal": "Microsurgery",
       "date": "2026 Jan",
       "date_sort": "2026-01-01",
-      "abstract": "OBJECTIVE: To test the diagnosis of early carpal tunnel syndrome (CTS) by assessing dorsal extension, distal sensation, and motor latency. STUDY DESIGN: An observational study. Place and Duration of the Study: Department of Orthopaedic Surgery, Longgang District People's Hospital of Shenzhen and the Second Affiliated Hospital of the Chinese University of Hong Kong, Shenzhen, China, from March 2018 to July 2023. METHODOLOGY: Electromyography was performed on 82 hands of 62 patients with CTS. Distal sensory and motor latency measurements before and after the compression were analysed. Paired t-test was used to analyse the experimental data. RESULTS: Compared to before compression (DSL = 4.17 ms, DML = 5.25 ms), the results showed that the distal sensory and motor latency of the median nerve were significantly longer in mild cases (DSL = 4.73 ms, DML = 5.51 ms). However, the sensory nerve action potential (SNAP) and compound muscle action potential (CMAP) were significantly lower, decreasing from 13.56 μv and 6.69 mv to 13.09 μv and 6.27 mv, respectively. In moderately severe patients, the DSL was significantly longer than before compression, with the mean value increasing from 4.38 ms to 4.86 ms. CONCLUSION: Electromyography in the dorsal extension position of the wrist has practical value in the diagnosis of early CTS. KEY WORDS: Wrist carpal tunnel syndrome, Median nerve, Electromyography, Dorsal extension.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41792064/",
-      "doi": "https://doi.org/10.29271/jcpsp.2026.01.38"
+      "abstract": "Severe carpal tunnel syndrome (CTS) with advanced thenar denervation has limited reconstructive options, and reliable reinnervation remains challenging. Reverse end-to-side (RETS) nerve transfers have been described in other contexts but to our knowledge, have not been applied clinically to compressive median neuropathy at the wrist. Here, we present three patients, ages 59, 68, and 72 years, with severe CTS, visible thenar atrophy, and electrodiagnostic evidence of profound median motor axon loss who underwent carpal tunnel release with abductor digiti minimi (ADM)-to-recurrent motor branch (RMB) RETS transfer. All procedures were performed using a standardized microsurgical technique. Follow-up was 10 months (Case 1), 24 months (Case 2), and 8 months (Case 3). Postoperatively, each patient demonstrated early return of visible thenar contraction between 6 weeks and 4 months, with final abductor pollicis brevis (APB) strength of 4 to 4+. Sensory recovery improved across all cases, with two-point discrimination normalizing to 5-8 mm. Follow-up electrodiagnostic studies in two patients showed markedly greater APB compound muscle action potential (CMAP) amplitudes when stimulating through the ulnar nerve than through the median nerve, consistent with donor-derived reinnervation through the transfer. Patient-reported outcome measurement information system (PROMIS) upper extremity (UE) and physical function (PF) scores improved by 9-22 points. Although these early results suggest the potential for donor-derived reinnervation in severe CTS, the findings are preliminary and should be interpreted with caution. Larger prospective studies will be necessary to determine the true functional benefit, appropriate patient selection criteria, and comparative effectiveness of this technique.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41563882/",
+      "doi": "https://doi.org/10.1002/micr.70184"
     },
     {
       "pmid": "41289458",
@@ -1893,6 +2535,25 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.33029/1027-6661-2025-31-4-132-136"
     },
     {
+      "pmid": "41475622",
+      "title": "Bibliometric and Visualization Analysis of Ultrasound Imaging in Carpal Tunnel Syndrome Based on CiteSpace.",
+      "authors": [
+        "Chao Wang",
+        "Jing Wang",
+        "Xiaoqing Shen",
+        "Fengyu Zheng",
+        "Congxin Zhuang",
+        "Jinzhong Wang"
+      ],
+      "journal": "Seminars in ultrasound, CT, and MR",
+      "date": "2025 Dec 29",
+      "date_sort": "2025-12-29",
+      "abstract": "Carpal tunnel syndrome (CTS) is a common peripheral nerve disease that is addressed by hand surgery, and it is caused by increased pressure in the carpal tunnel, which compresses the median nerve. Ultrasound can clearly visualize the internal structures of the carpal tunnel and assess the morphology and mobility of the median nerve, which play an important role in the diagnosis of CTS. In this study, CiteSpace (version 6.2 R6) was employed to analyze the academic literature concerning countries, institutions, journals, authors, and keywords to identify the research trends and hotspots of ultrasound in CTS and to identify future research directions. Literature on ultrasound imaging of CTS published between 1998 and June 2025 was retrieved from the Web of Science Core Collection. CiteSpace software was used to analyze countries, institutions, journals, authors, and keywords. The United States had the highest number of publications. Keyword analysis showed that CTS, the median nerve, diagnosis, cross-sectional area reference values, and ultrasound evaluation were the main research focuses. The United States, the United Kingdom, and Austria play important roles in ultrasound research on CTS. Ultrasound evaluation of the median nerve cross-sectional area and mobility is a key direction for the diagnosis of CTS, and current research hotspots focus on shear wave elastography techniques. In addition, we predict that with the advancement of ultrasound blood flow detection technology, assessing blood flow in the median nerve will become an important research direction.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41475622/",
+      "doi": "https://doi.org/10.1053/j.sult.2025.12.005"
+    },
+    {
       "pmid": "41457202",
       "title": "Clinical Efficacy of Erector Spinae Plane Block for Pain Management After Breast Surgeries: A Narrative Review.",
       "authors": [
@@ -1913,25 +2574,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41457202/",
       "doi": "https://doi.org/10.1007/s11916-025-01457-1"
-    },
-    {
-      "pmid": "41475622",
-      "title": "Bibliometric and Visualization Analysis of Ultrasound Imaging in Carpal Tunnel Syndrome Based on CiteSpace.",
-      "authors": [
-        "Chao Wang",
-        "Jing Wang",
-        "Xiaoqing Shen",
-        "Fengyu Zheng",
-        "Congxin Zhuang",
-        "Jinzhong Wang"
-      ],
-      "journal": "Seminars in ultrasound, CT, and MR",
-      "date": "2025 Dec 29",
-      "date_sort": "2025-12-29",
-      "abstract": "Carpal tunnel syndrome (CTS) is a common peripheral nerve disease that is addressed by hand surgery, and it is caused by increased pressure in the carpal tunnel, which compresses the median nerve. Ultrasound can clearly visualize the internal structures of the carpal tunnel and assess the morphology and mobility of the median nerve, which play an important role in the diagnosis of CTS. In this study, CiteSpace (version 6.2 R6) was employed to analyze the academic literature concerning countries, institutions, journals, authors, and keywords to identify the research trends and hotspots of ultrasound in CTS and to identify future research directions. Literature on ultrasound imaging of CTS published between 1998 and June 2025 was retrieved from the Web of Science Core Collection. CiteSpace software was used to analyze countries, institutions, journals, authors, and keywords. The United States had the highest number of publications. Keyword analysis showed that CTS, the median nerve, diagnosis, cross-sectional area reference values, and ultrasound evaluation were the main research focuses. The United States, the United Kingdom, and Austria play important roles in ultrasound research on CTS. Ultrasound evaluation of the median nerve cross-sectional area and mobility is a key direction for the diagnosis of CTS, and current research hotspots focus on shear wave elastography techniques. In addition, we predict that with the advancement of ultrasound blood flow detection technology, assessing blood flow in the median nerve will become an important research direction.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41475622/",
-      "doi": "https://doi.org/10.1053/j.sult.2025.12.005"
     },
     {
       "pmid": "41589147",
@@ -2007,6 +2649,23 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jvscit.2025.102111"
     },
     {
+      "pmid": "41971849",
+      "title": "Repeat thoracoscopic cryoablation for chronic chest-wall pain after first rib resection.",
+      "authors": [
+        "Theodore Lin",
+        "Mark Shacker",
+        "Andrew Keogan",
+        "Samad Hashimi"
+      ],
+      "journal": "JTCVS techniques",
+      "date": "2025 Dec 18",
+      "date_sort": "2025-12-18",
+      "abstract": "",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41971849/",
+      "doi": "https://doi.org/10.1016/j.xjtc.2025.102186"
+    },
+    {
       "pmid": "41198403",
       "title": "Chronic thromboembolic pulmonary hypertension associated with venous thoracic outlet syndrome: a retrospective case series.",
       "authors": [
@@ -2047,26 +2706,27 @@ window.pubmedArticles = {
       "date": "2025 Dec 18",
       "date_sort": "2025-12-18",
       "abstract": "Thoracic Outlet Syndrome (TOS) refers to the compression of the neurovascular structures at the thoracic outlet. Its incidence is estimated at 2-3 cases per 100000 individuals per year. Patients are frequently affected by pain and/or functional impairment. The diagnostic and therapeutic process typically involves multiple medical specialties. Diagnosis is primarily clinical and requires the exclusion of differential diagnoses. Additional diagnostic modalities, such as ultrasound, MRI, angiography, or electroneurography, may provide supportive information. Depending on the treating discipline, different classifications and therapeutic strategies are applied. The availability of high-quality studies on treatment remains limited, although evidence has improved in recent years. To date, no standardised, interdisciplinary guidelines for the diagnosis and management of Thoracic Outlet Syndrome have been established.",
-      "article_type": "Research",
+      "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41412186/",
       "doi": "https://doi.org/10.1055/a-2734-3580"
     },
     {
-      "pmid": "41971849",
-      "title": "Repeat thoracoscopic cryoablation for chronic chest-wall pain after first rib resection.",
+      "pmid": "42266996",
+      "title": "Spontaneous Bilateral Second Rib Fractures After Robotic Thoracic Outlet Surgery: A Rare Complication.",
       "authors": [
-        "Theodore Lin",
-        "Mark Shacker",
-        "Andrew Keogan",
-        "Samad Hashimi"
+        "Valeriya Vasenina",
+        "Jessica Magarinos",
+        "Brian Mitzman",
+        "Thomas K Varghese",
+        "Nicolas Contreras"
       ],
-      "journal": "JTCVS techniques",
-      "date": "2025 Dec 18",
-      "date_sort": "2025-12-18",
-      "abstract": "",
+      "journal": "Annals of thoracic surgery short reports",
+      "date": "2025 Dec 15",
+      "date_sort": "2025-12-15",
+      "abstract": "Thoracic outlet syndrome (TOS) involves the compression of vascular or neural structures between the first rib and the scalene muscles that leads to diverse symptoms. Traditional surgical treatments include transaxillary or supraclavicular first rib resection, but robotic first rib resection is increasingly popular because of enhanced visualization of the thoracic inlet. We report a unique complication of spontaneous bilateral second rib fractures after robotic bilateral first rib resection in a 34-year-old man with neurogenic and venous TOS. As robotic TOS surgery becomes more common, recognizing the risk of spontaneous second rib fractures is crucial, particularly in patients with potentially reduced bone integrity.",
       "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41971849/",
-      "doi": "https://doi.org/10.1016/j.xjtc.2025.102186"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42266996/",
+      "doi": "https://doi.org/10.1016/j.atssr.2025.11.020"
     },
     {
       "pmid": "41392533",
@@ -2119,8 +2779,8 @@ window.pubmedArticles = {
       "journal": "Annals of plastic surgery",
       "date": "2025 Dec 12",
       "date_sort": "2025-12-12",
-      "abstract": "BACKGROUND: Neurogenic thoracic outlet syndrome (nTOS) results from compression of the brachial plexus and can lead to debilitating symptoms such as pain, paresthesia, and motor weakness. This study aimed to compare outcomes between patients undergoing rib-sparing scalenectomy (RSS) and those receiving first rib resection (FRR). METHODS: The TrinetX Collaborative Network was queried for patients who underwent surgical treatment of nTOS. Adult patients with a diagnosis of nTOS who underwent either RSS or FRR between 2013 and 2025 were included. Patients were identified using Current Procedural Terminology codes and matched 1:1 via propensity score matching based on age, sex, and comorbidities. One-year outcomes including postoperative hand pain, hematoma, and reintervention rates were compared using risk differences, odds ratios, and Kaplan-Meier analysis. RESULTS: There were a total of 5359 patients meeting the inclusion criteria, with 4352 (81.2%) patients in the FRR cohort and 1007 (18.8%) patients in the RSS cohort. After matching, 973 patients were included in each group. The incidence rates of postoperative pain (3.7% FRR vs 3.2% RSS) and hematoma (1.85% vs 2.05%) were similar between groups (P > 0.05). Reintervention rates were also comparable for both FRR (7.8%) and RSS (7.6%). Kaplan-Meier analysis showed no significant difference in 1-year reintervention-free survival (FRR: 89.4% vs RSS: 89.5%, P > 0.05). CONCLUSION: In this large, matched cohort, rib-sparing scalenectomy and first rib resection yielded comparable 1-year outcomes for nTOS. Given the similar complication and reintervention rates, RSS may serve as an effective, less invasive alternative to FRR in select patients.",
-      "article_type": "Research",
+      "abstract": "BACKGROUND: Neurogenic thoracic outlet syndrome (nTOS) results from compression of the brachial plexus and can lead to debilitating symptoms such as pain, paresthesia, and motor weakness. This study aimed to compare outcomes between patients undergoing rib-sparing scalenectomy (RSS) and those receiving first rib resection (FRR). METHODS: The TrinetX Collaborative Network was queried for patients who underwent surgical treatment of nTOS. Adult patients with a diagnosis of nTOS who underwent either RSS or FRR between 2013 and 2025 were included. Patients were identified using Current Procedural Terminology codes and matched 1:1 via propensity score matching based on age, sex, and comorbidities. One-year outcomes including postoperative hand pain, hematoma, and reintervention rates were compared using risk differences, odds ratios, and Kaplan-Meier analysis. RESULTS: There were a total of 5359 patients meeting the inclusion criteria, with 4352 (81.2%) patients in the FRR cohort and 1007 (18.8%) patients in the RSS cohort. After matching, 973 patients were included in each group. The incidence rates of postoperative pain (3.7% FRR vs 3.2% RSS) and hematoma (1.85% vs 2.05%) were similar between groups ( P  > 0.05). Reintervention rates were also comparable for both FRR (7.8%) and RSS (7.6%). Kaplan-Meier analysis showed no significant difference in 1-year reintervention-free survival (FRR: 89.4% vs RSS: 89.5%, P  > 0.05). CONCLUSION: In this large, matched cohort, rib-sparing scalenectomy and first rib resection yielded comparable 1-year outcomes for nTOS. Given the similar complication and reintervention rates, RSS may serve as an effective, less invasive alternative to FRR in select patients.",
+      "article_type": "Comparative Study",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41379641/",
       "doi": "https://doi.org/10.1097/SAP.0000000000004587"
     },
@@ -2514,22 +3174,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/22925503251392201"
     },
     {
-      "pmid": "41190096",
-      "title": "Autologous Breast Reconstruction With Deep Inferior Epigastric Perforator Flap Reconstruction for Poland Syndrome.",
-      "authors": [
-        "David Dugue",
-        "Anna M Vaeth",
-        "Leslie E Cohen"
-      ],
-      "journal": "Plastic and reconstructive surgery. Global open",
-      "date": "2025 Nov 3",
-      "date_sort": "2025-11-03",
-      "abstract": "Poland syndrome is a disorder characterized by hypoplasia or absence of the pectoralis major, pectoralis minor, ipsilateral breast tissue, and associated excavatum deformities. The underlying mechanism of Poland syndrome is thought to be embryological abnormalities in the vasculature of the subclavian arteries and branches. Autologous breast reconstruction using free tissue transfer in female patients with Poland syndrome may still be achieved despite potentially anomalous vascular anatomy. We present a novel case of a 19-year-old female patient with right-sided Poland syndrome who underwent a successful 2-stage unilateral deep inferior epigastric perforator free flap reconstruction with an atypical substernal location of the internal mammary artery. Following free tissue transfer, the patient's native minimal breast parenchyma was mobilized on a superiorly based pedicle to further enhance the upper breast contour and improve symmetry. Autologous free flap reconstruction has been previously described for correcting breast asymmetry in patients with Poland syndrome. Microanastomosis using internal mammary vessels may be successfully performed in the presence of anatomic variants. Additionally, hypoplastic breast parenchyma can successfully be mobilized as an adjunct to free tissue transfer.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41190096/",
-      "doi": "https://doi.org/10.1097/GOX.0000000000007246"
-    },
-    {
       "pmid": "41178550",
       "title": "Cervicobrachialgia in a female in her fourth decade of life: Have Eagle's syndrome and thoracic outlet syndrome been considered?",
       "authors": [
@@ -2548,22 +3192,20 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.23938/ASSN.1146"
     },
     {
-      "pmid": "41927182",
-      "title": "Effect of osteopathic technique on respiratory parameters and pain in thoracic outlet syndrome.",
+      "pmid": "41190096",
+      "title": "Autologous Breast Reconstruction With Deep Inferior Epigastric Perforator Flap Reconstruction for Poland Syndrome.",
       "authors": [
-        "Ahmed M Elshinnawy",
-        "Zeezy S Eraky",
-        "Ehab A Abdallah",
-        "Haitham M Elmasry",
-        "Hatem Mohamed El-Samouly"
+        "David Dugue",
+        "Anna M Vaeth",
+        "Leslie E Cohen"
       ],
-      "journal": "Journal of bodywork and movement therapies",
-      "date": "2025 Nov 1",
-      "date_sort": "2025-11-01",
-      "abstract": "BACKGROUND: To help patients with thoracic outlet syndrome (TOS) regain pulmonary function and endurance, it's critical to enhance their inspiratory muscle strength and endurance as well as their perception of pain. OBJECTIVE: to reduce pain and enhance breathing characteristics in patients with thoracic outlet syndrome. SUBJECTS AND METHODS: Following the start of TOS, forty adults were divided into two equal groups at random. Group B underwent a traditional physical therapy program consisting of three sessions per week for three months, whereas Group A was assigned to a program consisting of one session of osteopathic technique per week and traditional physical therapy program consisting of three sessions per week for three months. Measured at baseline and three months later, the following respiratory measures were chosen using a spirometer: maximum inspiratory pressure (MIP), maximum expiratory pressure (MEP), and a visual analogue scale of pain severity. RESULTS: The forced expiratory volume in 1 s (P = 0.0001), forced vital capacity (P = 0.0001), maximum inspiratory pressure (P = 0.002), maximal expiratory pressure (P = 0.0001), upper arm discomfort (P = 0.0001), and neck pain (P = 0.0001) between Group A and Group B were all significantly different (P < 0.05). CONCLUSION: Thoracic outlet syndrome pain can be effectively reduced and respiratory parameters can be positively impacted by osteopathic treatment when combined with a traditional physical therapy program.",
-      "article_type": "Clinical Trial",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41927182/",
-      "doi": "https://doi.org/10.1016/j.jbmt.2025.10.051"
+      "journal": "Plastic and reconstructive surgery. Global open",
+      "date": "2025 Nov 3",
+      "date_sort": "2025-11-03",
+      "abstract": "Poland syndrome is a disorder characterized by hypoplasia or absence of the pectoralis major, pectoralis minor, ipsilateral breast tissue, and associated excavatum deformities. The underlying mechanism of Poland syndrome is thought to be embryological abnormalities in the vasculature of the subclavian arteries and branches. Autologous breast reconstruction using free tissue transfer in female patients with Poland syndrome may still be achieved despite potentially anomalous vascular anatomy. We present a novel case of a 19-year-old female patient with right-sided Poland syndrome who underwent a successful 2-stage unilateral deep inferior epigastric perforator free flap reconstruction with an atypical substernal location of the internal mammary artery. Following free tissue transfer, the patient's native minimal breast parenchyma was mobilized on a superiorly based pedicle to further enhance the upper breast contour and improve symmetry. Autologous free flap reconstruction has been previously described for correcting breast asymmetry in patients with Poland syndrome. Microanastomosis using internal mammary vessels may be successfully performed in the presence of anatomic variants. Additionally, hypoplastic breast parenchyma can successfully be mobilized as an adjunct to free tissue transfer.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41190096/",
+      "doi": "https://doi.org/10.1097/GOX.0000000000007246"
     },
     {
       "pmid": "41333486",
@@ -2582,6 +3224,24 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41333486/",
       "doi": "https://doi.org/10.7759/cureus.95903"
+    },
+    {
+      "pmid": "41927182",
+      "title": "Effect of osteopathic technique on respiratory parameters and pain in thoracic outlet syndrome.",
+      "authors": [
+        "Ahmed M Elshinnawy",
+        "Zeezy S Eraky",
+        "Ehab A Abdallah",
+        "Haitham M Elmasry",
+        "Hatem Mohamed El-Samouly"
+      ],
+      "journal": "Journal of bodywork and movement therapies",
+      "date": "2025 Nov 1",
+      "date_sort": "2025-11-01",
+      "abstract": "BACKGROUND: To help patients with thoracic outlet syndrome (TOS) regain pulmonary function and endurance, it's critical to enhance their inspiratory muscle strength and endurance as well as their perception of pain. OBJECTIVE: to reduce pain and enhance breathing characteristics in patients with thoracic outlet syndrome. SUBJECTS AND METHODS: Following the start of TOS, forty adults were divided into two equal groups at random. Group B underwent a traditional physical therapy program consisting of three sessions per week for three months, whereas Group A was assigned to a program consisting of one session of osteopathic technique per week and traditional physical therapy program consisting of three sessions per week for three months. Measured at baseline and three months later, the following respiratory measures were chosen using a spirometer: maximum inspiratory pressure (MIP), maximum expiratory pressure (MEP), and a visual analogue scale of pain severity. RESULTS: The forced expiratory volume in 1 s (P = 0.0001), forced vital capacity (P = 0.0001), maximum inspiratory pressure (P = 0.002), maximal expiratory pressure (P = 0.0001), upper arm discomfort (P = 0.0001), and neck pain (P = 0.0001) between Group A and Group B were all significantly different (P < 0.05). CONCLUSION: Thoracic outlet syndrome pain can be effectively reduced and respiratory parameters can be positively impacted by osteopathic treatment when combined with a traditional physical therapy program.",
+      "article_type": "Clinical Trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41927182/",
+      "doi": "https://doi.org/10.1016/j.jbmt.2025.10.051"
     },
     {
       "pmid": "41175526",
@@ -2671,6 +3331,24 @@ window.pubmedArticles = {
       "doi": "https://doi.org/e25.00405"
     },
     {
+      "pmid": "41131401",
+      "title": "Cervical rib synostosis with the first rib and an elongated C7 transverse process: a rare variation causing thoracic outlet syndrome.",
+      "authors": [
+        "George Triantafyllou",
+        "Savvas Melissanidis",
+        "Nikolaos-Achilleas Arkoudis",
+        "Panagiotis Papadopoulos-Manolarakis",
+        "Maria Piagkou"
+      ],
+      "journal": "Surgical and radiologic anatomy : SRA",
+      "date": "2025 Oct 23",
+      "date_sort": "2025-10-23",
+      "abstract": "Morphological variants in the cervical and thoracic regions, although often asymptomatic, can have significant clinical implications when they contribute to conditions such as thoracic outlet syndrome (TOS). We report a rare case of a 39-year-old female patient presenting with vascular TOS. Detailed imaging via high-resolution computed tomography (CT) and magnetic resonance angiography (MRA) revealed a right-sided elongated transverse process (ETP) of the C7 (24.70 mm in length) articulating with a cervical rib (CR), which showed synostosis with the first rib. The coexistence of CR synostosis with the first rib and an ETP of C7 is a rare variation. Three-dimensional CT reconstructions were crucial in visualizing the osseous architecture, while dynamic MRA confirmed vascular compression. While both anomalies have been previously identified as independent contributors to TOS, their simultaneous presence has not been previously documented in symptomatic patients. This unique combination likely exacerbates neurovascular compression, complicating both diagnosis and surgical intervention. Preoperative imaging is crucial for identifying such rare variants and for informing surgical planning. This case highlights the diagnostic and surgical importance of recognizing complex rib and vertebral anomalies using advanced imaging modalities.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41131401/",
+      "doi": "https://doi.org/10.1007/s00276-025-03759-w"
+    },
+    {
       "pmid": "41135323",
       "title": "Surgical Approaches and Prediction of Symptom Improvement for Neurogenic Thoracic Outlet Syndrome.",
       "authors": [
@@ -2691,24 +3369,6 @@ window.pubmedArticles = {
       "article_type": "Comparative Study",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41135323/",
       "doi": "https://doi.org/10.1016/j.jss.2025.09.074"
-    },
-    {
-      "pmid": "41131401",
-      "title": "Cervical rib synostosis with the first rib and an elongated C7 transverse process: a rare variation causing thoracic outlet syndrome.",
-      "authors": [
-        "George Triantafyllou",
-        "Savvas Melissanidis",
-        "Nikolaos-Achilleas Arkoudis",
-        "Panagiotis Papadopoulos-Manolarakis",
-        "Maria Piagkou"
-      ],
-      "journal": "Surgical and radiologic anatomy : SRA",
-      "date": "2025 Oct 23",
-      "date_sort": "2025-10-23",
-      "abstract": "",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41131401/",
-      "doi": "https://doi.org/10.1007/s00276-025-03759-w"
     },
     {
       "pmid": "41126284",
@@ -2910,6 +3570,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/WNP.0000000000001211"
     },
     {
+      "pmid": "41135019",
+      "title": "Graded Improvement of Pectoralis Minor Syndrome Symptom Duration With Repeat Botulinum Neurotoxin Injections: A Case Report.",
+      "authors": [
+        "Jasmine J Lin",
+        "Heidi M Heyman",
+        "Andrew Lobonc"
+      ],
+      "journal": "Pain medicine case reports",
+      "date": "2025 Oct",
+      "date_sort": "2025-10-01",
+      "abstract": "BACKGROUND: Neurogenic thoracic outlet syndrome (NTOS) and pectoralis minor syndrome (PMS) are clinically similar syndromes that originate from different sites of neurovascular compression, respectively, at or below the thoracic outlet. Botulinum neurotoxin (BoNT) has demonstrated therapeutic relief for NTOS but has limited study in PMS. CASE REPORT: We present a case of a 67-year-old woman who experienced graded improvement of PMS symptomatic relief with BoNT treatments. She received 5 rounds of BoNT treatments over 2 years, all with significant symptomatic relief that increased in duration and resulted in decreased severity of symptoms upon pain return. CONCLUSIONS: Our case contributes to the limited body of evidence that BoNT can have therapeutic benefits for PMS. Additionally, this case also shows an interesting finding of graded improvement of symptomatic relief duration, which is not commonly seen with BoNT injections that typically provide neuromuscular relaxation for a predictable 3-4 months.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41135019/"
+    },
+    {
       "pmid": "41135024",
       "title": "Role of Peripheral Nerve Blocks for Management of Chronic Pain From Inoperable Neurofibromatosis Type 1-Associated Neurofibromas: A Case Report.",
       "authors": [
@@ -2927,21 +3602,6 @@ window.pubmedArticles = {
       "abstract": "BACKGROUND: Neurofibromatosis (NF) is a genetic condition resulting in tumor formation around neural structures, including peripheral nerves, spinal cord, and brain. Patients afflicted with NF can develop a constellation of symptoms ranging from cutaneous findings to sensory deficits and pain. When pain occurs, it could be associated with compression of neural structures or development of neuropathy itself. CASE REPORT: A 60-year-old woman with a history of NF Type 1 (NF1) presented to our clinic for evaluation of left arm pain. Despite several neuropathic medications and surgical procedures, she continues to have neuropathic arm pain associated with neurofibromas in her brachial plexus. Further surgery was advised against by her surgeons, and she underwent a supraclavicular nerve block with us, with sustained relief of her pain. CONCLUSIONS: Here, we present a patient diagnosed with NF1 and neuropathic pain due to an inoperable brachial plexus neurofibroma burden in the left axilla, successfully managed by supraclavicular nerve blocks.",
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41135024/"
-    },
-    {
-      "pmid": "41135019",
-      "title": "Graded Improvement of Pectoralis Minor Syndrome Symptom Duration With Repeat Botulinum Neurotoxin Injections: A Case Report.",
-      "authors": [
-        "Jasmine J Lin",
-        "Heidi M Heyman",
-        "Andrew Lobonc"
-      ],
-      "journal": "Pain medicine case reports",
-      "date": "2025 Oct",
-      "date_sort": "2025-10-01",
-      "abstract": "BACKGROUND: Neurogenic thoracic outlet syndrome (NTOS) and pectoralis minor syndrome (PMS) are clinically similar syndromes that originate from different sites of neurovascular compression, respectively, at or below the thoracic outlet. Botulinum neurotoxin (BoNT) has demonstrated therapeutic relief for NTOS but has limited study in PMS. CASE REPORT: We present a case of a 67-year-old woman who experienced graded improvement of PMS symptomatic relief with BoNT treatments. She received 5 rounds of BoNT treatments over 2 years, all with significant symptomatic relief that increased in duration and resulted in decreased severity of symptoms upon pain return. CONCLUSIONS: Our case contributes to the limited body of evidence that BoNT can have therapeutic benefits for PMS. Additionally, this case also shows an interesting finding of graded improvement of symptomatic relief duration, which is not commonly seen with BoNT injections that typically provide neuromuscular relaxation for a predictable 3-4 months.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41135019/"
     },
     {
       "pmid": "41041660",
@@ -3022,31 +3682,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.ejvs.2025.09.054"
     },
     {
-      "pmid": "41003707",
-      "title": "Rib Remodeling Without Rib Resection: A Systematic Review and Meta-analysis.",
-      "authors": [
-        "Andre Milani-Reis",
-        "Maria Meritxell Roca Mora",
-        "Pedro Bicudo Bregion",
-        "Luiz Fábio Silva Ribeiro",
-        "Pedro Henrique Meis",
-        "Iqbal Farhan Sayudo",
-        "Leonardo Kreutz-Rodrigues",
-        "Cesar Milani-Reis",
-        "Samyd S Bustos",
-        "Raúl Martín Manzaneda Cipriani",
-        "Mauricio Viaro",
-        "Lucas Kreutz-Rodrigues"
-      ],
-      "journal": "Aesthetic plastic surgery",
-      "date": "2025 Sep 26",
-      "date_sort": "2025-09-26",
-      "abstract": "PURPOSE: Interest in body contouring has led to developing techniques for waistline reduction. Rib remodeling is one such method. Traditional rib resection is invasive, limiting its cosmetic use. This review and meta-analysis evaluate the efficacy and safety of a novel rib remodeling technique that avoids rib removal. METHODS: A systematic search of PubMed, Cochrane Central, and Embase was performed up to August 2024. Outcomes included patient satisfaction, waistline reduction, pneumothorax, hemothorax, infection, skin burns, and asymmetry. The Freeman-Tukey Double Arcsine Transformation was used for data analysis, and statistical evaluations were conducted using R version 4.1.2. RESULTS: Four studies with 318 patients were included, predominantly women (98.1%), with an average age of 32.7 years and BMI of 22.4 kg/m2. The pooled analysis showed a satisfaction rate of 94.89 per 100 (95% CI 94.89-99.15); a significant reduction in waistline from preoperative to 3 months postoperative (MD - 8.59 cm; 95% CI - 10.27 to - 6.92; p < 0.01); pneumothorax and hemothorax rates were 0.00 per 100 (95% CI 0.00-0.66); infection prevalence was 0.00 per 100 (95% CI 0.00-1.18); skin burns prevalence was 0.57 per 100 (95% CI 0.00-3.91); and asymmetry prevalence was 1.85 per 100 (95% CI 0.25-4.41). CONCLUSION: Rib remodeling without resection effectively reduces the waistline, achieving high patient satisfaction and minimal serious complications. LEVEL OF EVIDENCE II: This journal requires that authors assign a level of evidence to each article. For a full description of these Evidence-Based Medicine ratings, please refer to the Table of Contents or the online Instructions to Authors www.springer.com/00266 .",
-      "article_type": "Meta-Analysis",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41003707/",
-      "doi": "https://doi.org/10.1007/s00266-025-05240-w"
-    },
-    {
       "pmid": "41020023",
       "title": "An Unusual Presentation of Paget-Schroetter Syndrome: A Reminder on the Importance of Clinical Judgment.",
       "authors": [
@@ -3079,24 +3714,29 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1186/s13256-025-05523-5"
     },
     {
-      "pmid": "40991022",
-      "title": "[Thoracic outlet syndrome : Interdisciplinary diagnostics and treatment].",
+      "pmid": "41003707",
+      "title": "Rib Remodeling Without Rib Resection: A Systematic Review and Meta-analysis.",
       "authors": [
-        "Marc Ahrens",
-        "Jan-H Egberts",
-        "Julia Umstadt",
-        "Thomas Bürger",
-        "Rouven Berndt",
-        "E S Debus",
-        "Mark Preuß"
+        "Andre Milani-Reis",
+        "Maria Meritxell Roca Mora",
+        "Pedro Bicudo Bregion",
+        "Luiz Fábio Silva Ribeiro",
+        "Pedro Henrique Meis",
+        "Iqbal Farhan Sayudo",
+        "Leonardo Kreutz-Rodrigues",
+        "Cesar Milani-Reis",
+        "Samyd S Bustos",
+        "Raúl Martín Manzaneda Cipriani",
+        "Mauricio Viaro",
+        "Lucas Kreutz-Rodrigues"
       ],
-      "journal": "Chirurgie (Heidelberg, Germany)",
-      "date": "2025 Sep 24",
-      "date_sort": "2025-09-24",
-      "abstract": "The thoracic outlet syndrome (TOS) refers to a group of clinical conditions caused by compression of nerves and blood vessels in congenital or acquired anatomical narrowing of the upper thoracic aperture. This includes the anatomical structures, such as the scalene muscles, the first rib, a possibly present cervical rib, the costoclavicular joint or the pectoralis minor muscle. Isolated venous compression is also known as thoracic inlet syndrome (TIS). The symptoms are diverse and the path to a correct diagnosis is often prolonged. In the absence of anatomical anomalies, conservative treatment is indicated, such as physical therapy and adequate pain management. Especially in young patients, TOS should be considered when embolic events in the upper extremities occur without other risk factors. Appropriate multimodal diagnostics and targeted therapy are challenging and require treatment in specialized departments. Surgical treatment is complex and over the years various procedures with a favorable outcome for the affected patients have been established.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40991022/",
-      "doi": "https://doi.org/10.1007/s00104-025-02371-3"
+      "journal": "Aesthetic plastic surgery",
+      "date": "2025 Sep 26",
+      "date_sort": "2025-09-26",
+      "abstract": "PURPOSE: Interest in body contouring has led to developing techniques for waistline reduction. Rib remodeling is one such method. Traditional rib resection is invasive, limiting its cosmetic use. This review and meta-analysis evaluate the efficacy and safety of a novel rib remodeling technique that avoids rib removal. METHODS: A systematic search of PubMed, Cochrane Central, and Embase was performed up to August 2024. Outcomes included patient satisfaction, waistline reduction, pneumothorax, hemothorax, infection, skin burns, and asymmetry. The Freeman-Tukey Double Arcsine Transformation was used for data analysis, and statistical evaluations were conducted using R version 4.1.2. RESULTS: Four studies with 318 patients were included, predominantly women (98.1%), with an average age of 32.7 years and BMI of 22.4 kg/m2. The pooled analysis showed a satisfaction rate of 94.89 per 100 (95% CI 94.89-99.15); a significant reduction in waistline from preoperative to 3 months postoperative (MD - 8.59 cm; 95% CI - 10.27 to - 6.92; p < 0.01); pneumothorax and hemothorax rates were 0.00 per 100 (95% CI 0.00-0.66); infection prevalence was 0.00 per 100 (95% CI 0.00-1.18); skin burns prevalence was 0.57 per 100 (95% CI 0.00-3.91); and asymmetry prevalence was 1.85 per 100 (95% CI 0.25-4.41). CONCLUSION: Rib remodeling without resection effectively reduces the waistline, achieving high patient satisfaction and minimal serious complications. LEVEL OF EVIDENCE II: This journal requires that authors assign a level of evidence to each article. For a full description of these Evidence-Based Medicine ratings, please refer to the Table of Contents or the online Instructions to Authors www.springer.com/00266 .",
+      "article_type": "Meta-Analysis",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41003707/",
+      "doi": "https://doi.org/10.1007/s00266-025-05240-w"
     },
     {
       "pmid": "41095656",
@@ -3125,6 +3765,26 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3390/diagnostics15192437"
     },
     {
+      "pmid": "40991022",
+      "title": "[Thoracic outlet syndrome : Interdisciplinary diagnostics and treatment].",
+      "authors": [
+        "Marc Ahrens",
+        "Jan-H Egberts",
+        "Julia Umstadt",
+        "Thomas Bürger",
+        "Rouven Berndt",
+        "E S Debus",
+        "Mark Preuß"
+      ],
+      "journal": "Chirurgie (Heidelberg, Germany)",
+      "date": "2025 Sep 24",
+      "date_sort": "2025-09-24",
+      "abstract": "The thoracic outlet syndrome (TOS) refers to a group of clinical conditions caused by compression of nerves and blood vessels in congenital or acquired anatomical narrowing of the upper thoracic aperture. This includes the anatomical structures, such as the scalene muscles, the first rib, a possibly present cervical rib, the costoclavicular joint or the pectoralis minor muscle. Isolated venous compression is also known as thoracic inlet syndrome (TIS). The symptoms are diverse and the path to a correct diagnosis is often prolonged. In the absence of anatomical anomalies, conservative treatment is indicated, such as physical therapy and adequate pain management. Especially in young patients, TOS should be considered when embolic events in the upper extremities occur without other risk factors. Appropriate multimodal diagnostics and targeted therapy are challenging and require treatment in specialized departments. Surgical treatment is complex and over the years various procedures with a favorable outcome for the affected patients have been established.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40991022/",
+      "doi": "https://doi.org/10.1007/s00104-025-02371-3"
+    },
+    {
       "pmid": "41082691",
       "title": "Double Crush Syndrome at Cervical Preganglionic Level and Thoracic Outlet Region, Presenting as Ulnar Neuropathy at the Elbow.",
       "authors": [
@@ -3143,22 +3803,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/PHM.0000000000002876"
     },
     {
-      "pmid": "40974351",
-      "title": "A Case of Misdiagnosed Thoracic Outlet Syndrome With Extensive Upper Extremity Thrombosis.",
-      "authors": [
-        "Steven Callori",
-        "Thomas C Bower",
-        "Robert D McBane"
-      ],
-      "journal": "Mayo Clinic proceedings",
-      "date": "2025 Sep 19",
-      "date_sort": "2025-09-19",
-      "abstract": "",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40974351/",
-      "doi": "https://doi.org/10.1016/j.mayocp.2025.05.005"
-    },
-    {
       "pmid": "40968515",
       "title": "Comparative Study of Ultrasound-Guided Corticosteroid Injection with Acupotomy Release Versus Injection Alone in Carpal Tunnel Syndrome: A Randomized Controlled Trial.",
       "authors": [
@@ -3175,6 +3819,22 @@ window.pubmedArticles = {
       "article_type": "Clinical Trial",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40968515/",
       "doi": "https://doi.org/10.12659/MSM.948970"
+    },
+    {
+      "pmid": "40974351",
+      "title": "A Case of Misdiagnosed Thoracic Outlet Syndrome With Extensive Upper Extremity Thrombosis.",
+      "authors": [
+        "Steven Callori",
+        "Thomas C Bower",
+        "Robert D McBane"
+      ],
+      "journal": "Mayo Clinic proceedings",
+      "date": "2025 Sep 19",
+      "date_sort": "2025-09-19",
+      "abstract": "",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40974351/",
+      "doi": "https://doi.org/10.1016/j.mayocp.2025.05.005"
     },
     {
       "pmid": "41035750",
@@ -3213,6 +3873,36 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jtha.2025.08.026"
     },
     {
+      "pmid": "41111794",
+      "title": "Radiological Diagnosis of Axillary Artery and Brachial Plexus Involvement in a Proximal Humerus Fracture-Dislocation: A Case Report.",
+      "authors": [
+        "Nadir Parkar",
+        "Tanujan Thangarajah"
+      ],
+      "journal": "Cureus",
+      "date": "2025 Sep 16",
+      "date_sort": "2025-09-16",
+      "abstract": "Proximal humerus fracture-dislocations are uncommon in elderly patients and rarely associated with neurovascular compromise. The anatomical proximity of the axillary artery and brachial plexus to the humeral head places them at risk during trauma, but diagnosis can be challenging when distal pulses are preserved. We present the case of a 79-year-old female who sustained a fracture-dislocation of the proximal humerus following a low-energy fall. CT angiography demonstrated humeral head displacement into the axilla with bony impingement on the axillary artery compression and brachial plexus tenting without transection. The patient underwent reverse total shoulder arthroplasty with neurovascular exploration. The patient developed postoperative neuropraxia, which gradually improved with rehabilitation. This case highlights the diagnostic challenge of vascular injury without overt clinical signs and underscores the role of CT angiography in surgical planning. Early imaging allowed a multidisciplinary operative approach, facilitating preservation of vascular integrity and functional recovery. In patients with severely displaced proximal humerus fracture-dislocations, particularly when neurovascular injury is suspected, early CT angiography should be strongly considered to guide surgical decision-making and optimise outcomes.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41111794/",
+      "doi": "https://doi.org/10.7759/cureus.92425"
+    },
+    {
+      "pmid": "40967399",
+      "title": "Images May Be Everything; However, One Must Know the Story.",
+      "authors": [
+        "Justin Linden",
+        "Julie Ann Freischlag"
+      ],
+      "journal": "European journal of vascular and endovascular surgery : the official journal of the European Society for Vascular Surgery",
+      "date": "2025 Sep 16",
+      "date_sort": "2025-09-16",
+      "abstract": "",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40967399/",
+      "doi": "https://doi.org/10.1016/j.ejvs.2025.09.014"
+    },
+    {
       "pmid": "41064713",
       "title": "What are the Safest and Easiest Extra-Cardiac Biopsy Sites for the Diagnosis of Wild-Type Transthyretin Cardiac Amyloidosis? Confirmation of the Diagnosis by Biopsy of the Pectoralis Muscle During Pacemaker Insertion.",
       "authors": [
@@ -3233,50 +3923,20 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.12890/2025_005785"
     },
     {
-      "pmid": "40967399",
-      "title": "Images May Be Everything; However, One Must Know the Story.",
+      "pmid": "41112393",
+      "title": "Giant cervicothoracic extradural meningioma involving the brachial plexus: A case report.",
       "authors": [
-        "Justin Linden",
-        "Julie Ann Freischlag"
+        "Carlo Mandelli",
+        "Cinzia Mura",
+        "Pietro Mortini"
       ],
-      "journal": "European journal of vascular and endovascular surgery : the official journal of the European Society for Vascular Surgery",
-      "date": "2025 Sep 16",
-      "date_sort": "2025-09-16",
-      "abstract": "",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40967399/",
-      "doi": "https://doi.org/10.1016/j.ejvs.2025.09.014"
-    },
-    {
-      "pmid": "41111794",
-      "title": "Radiological Diagnosis of Axillary Artery and Brachial Plexus Involvement in a Proximal Humerus Fracture-Dislocation: A Case Report.",
-      "authors": [
-        "Nadir Parkar",
-        "Tanujan Thangarajah"
-      ],
-      "journal": "Cureus",
-      "date": "2025 Sep 16",
-      "date_sort": "2025-09-16",
-      "abstract": "Proximal humerus fracture-dislocations are uncommon in elderly patients and rarely associated with neurovascular compromise. The anatomical proximity of the axillary artery and brachial plexus to the humeral head places them at risk during trauma, but diagnosis can be challenging when distal pulses are preserved. We present the case of a 79-year-old female who sustained a fracture-dislocation of the proximal humerus following a low-energy fall. CT angiography demonstrated humeral head displacement into the axilla with bony impingement on the axillary artery compression and brachial plexus tenting without transection. The patient underwent reverse total shoulder arthroplasty with neurovascular exploration. The patient developed postoperative neuropraxia, which gradually improved with rehabilitation. This case highlights the diagnostic challenge of vascular injury without overt clinical signs and underscores the role of CT angiography in surgical planning. Early imaging allowed a multidisciplinary operative approach, facilitating preservation of vascular integrity and functional recovery. In patients with severely displaced proximal humerus fracture-dislocations, particularly when neurovascular injury is suspected, early CT angiography should be strongly considered to guide surgical decision-making and optimise outcomes.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41111794/",
-      "doi": "https://doi.org/10.7759/cureus.92425"
-    },
-    {
-      "pmid": "41224378",
-      "title": "Uses and technique of ultrasound-guided botulinum toxin infiltration.",
-      "authors": [
-        "J Llorente Peris",
-        "J Miranda Bautista",
-        "P Menéndez Fernández-Miranda"
-      ],
-      "journal": "Radiologia",
+      "journal": "Surgical neurology international",
       "date": "2025 Sep 12",
       "date_sort": "2025-09-12",
-      "abstract": "Botulinum toxin (BT) is a neurotoxin that causes flaccid paralysis by inhibiting the release of acetylcholine at the neuromuscular junction, and it may lead to long-term muscle atrophy. It is used to treat conditions associated with muscle hypertrophy or to enhance muscle flexibility, thereby facilitating surgical procedures. It has been shown that ultrasound-guided administration is superior to the anatomical landmarks technique as it reduces side effects and improves efficacy. Although some applications are not officially approved, evidence supports its efficacy and safety in the treatment of various conditions. Some of these more established conditions include anterior abdominal wall hernias, piriformis syndrome, thoracic outlet syndrome, bruxism, spasticity and cervical dystonia. The objective of this study is to review the uses of botulinum toxin in muscular and neuromuscular disorders, analysing its efficacy, safety and the importance of ultrasound guidance in its administration.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41224378/",
-      "doi": "https://doi.org/10.1016/j.rxeng.2025.501695"
+      "abstract": "BACKGROUND: Spinal meningiomas account for 25% of spinal tumors, with the majority being intradural neoplasms. Extradural spinal meningiomas, however, represent only 2-3.5% of cases. These tumors tend to be more aggressive, often invading neural structures, particularly the brachial plexus. This results in faster progression, higher recurrence rates, and challenges in achieving complete resection. CASE DESCRIPTION: A 52-year-old male presented with right-hand muscle hypotrophy and motor deficits. Magnetic resonance imaging (MRI) revealed a large extradural mass from C7 to D3, compressing neural structures. Surgical resection was performed, and histopathology confirmed a World Health Organization Grade I meningothelial meningioma. Postoperative follow-up showed significant neurological improvement, and control MRI confirmed optimal decompression of the spinal cord and neural structures. CONCLUSION: Extradural spinal meningiomas are rare and challenging to treat due to their invasive nature. Surgical resection with decompression, combined with adjuvant therapies like radiotherapy, is crucial for managing residual disease and improving long-term outcomes. A multidisciplinary approach is essential to optimize patient recovery and quality of life.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41112393/",
+      "doi": "https://doi.org/10.25259/SNI_840_2025"
     },
     {
       "pmid": "40958327",
@@ -3310,20 +3970,38 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1002/ca.70023"
     },
     {
-      "pmid": "41112393",
-      "title": "Giant cervicothoracic extradural meningioma involving the brachial plexus: A case report.",
+      "pmid": "41224378",
+      "title": "Uses and technique of ultrasound-guided botulinum toxin infiltration.",
       "authors": [
-        "Carlo Mandelli",
-        "Cinzia Mura",
-        "Pietro Mortini"
+        "J Llorente Peris",
+        "J Miranda Bautista",
+        "P Menéndez Fernández-Miranda"
       ],
-      "journal": "Surgical neurology international",
+      "journal": "Radiologia",
       "date": "2025 Sep 12",
       "date_sort": "2025-09-12",
-      "abstract": "BACKGROUND: Spinal meningiomas account for 25% of spinal tumors, with the majority being intradural neoplasms. Extradural spinal meningiomas, however, represent only 2-3.5% of cases. These tumors tend to be more aggressive, often invading neural structures, particularly the brachial plexus. This results in faster progression, higher recurrence rates, and challenges in achieving complete resection. CASE DESCRIPTION: A 52-year-old male presented with right-hand muscle hypotrophy and motor deficits. Magnetic resonance imaging (MRI) revealed a large extradural mass from C7 to D3, compressing neural structures. Surgical resection was performed, and histopathology confirmed a World Health Organization Grade I meningothelial meningioma. Postoperative follow-up showed significant neurological improvement, and control MRI confirmed optimal decompression of the spinal cord and neural structures. CONCLUSION: Extradural spinal meningiomas are rare and challenging to treat due to their invasive nature. Surgical resection with decompression, combined with adjuvant therapies like radiotherapy, is crucial for managing residual disease and improving long-term outcomes. A multidisciplinary approach is essential to optimize patient recovery and quality of life.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41112393/",
-      "doi": "https://doi.org/10.25259/SNI_840_2025"
+      "abstract": "Botulinum toxin (BT) is a neurotoxin that causes flaccid paralysis by inhibiting the release of acetylcholine at the neuromuscular junction, and it may lead to long-term muscle atrophy. It is used to treat conditions associated with muscle hypertrophy or to enhance muscle flexibility, thereby facilitating surgical procedures. It has been shown that ultrasound-guided administration is superior to the anatomical landmarks technique as it reduces side effects and improves efficacy. Although some applications are not officially approved, evidence supports its efficacy and safety in the treatment of various conditions. Some of these more established conditions include anterior abdominal wall hernias, piriformis syndrome, thoracic outlet syndrome, bruxism, spasticity and cervical dystonia. The objective of this study is to review the uses of botulinum toxin in muscular and neuromuscular disorders, analysing its efficacy, safety and the importance of ultrasound guidance in its administration.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41224378/",
+      "doi": "https://doi.org/10.1016/j.rxeng.2025.501695"
+    },
+    {
+      "pmid": "40998664",
+      "title": "Comparison of hand responses to recipient nerve stimulation in sequential variations of supercharged anterior interosseous nerve transfer to the ulnar nerve - Identifying the golden recipient fascicles.",
+      "authors": [
+        "Soo Min Cha",
+        "Jing Xu",
+        "Seung Hoo Lee",
+        "In Ho Ga",
+        "Yong Hwan Kim"
+      ],
+      "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
+      "date": "2025 Sep 9",
+      "date_sort": "2025-09-09",
+      "abstract": "BACKGROUND: In supercharged end-to-side (SETS) anterior interosseous nerve (AIN) transfer for compressive ulnar neuropathy, selecting the optimal recipient fascicle remains challenging owing to weak or absent motor responses. We hypothesized that modifying the procedural sequence would improve intraoperative nerve responsiveness, thereby enhancing the identification of recipient fascicles in the thumb, 4 digits, and hypothenar muscles (3 target muscle groups). METHODS: We retrospectively reviewed 52 patients who underwent SETS AIN transfer from 2019 to 2024. Group 1 (n = 25) followed this sequence: Elbow decompression-Guyon's canal release-preparation of the recipient ulnar nerve-donor harvest-coaptation of AIN to the ulnar nerve. Group 2 (n = 27) followed: Guyon-recipient-donor-elbow-coaptation. Intraoperative responses to ulnar nerve stimulation were categorized into 3 muscle groups and graded as \"Definitive\"-(2), \"Trace\"-(1), or \"No response\"-(0). Tourniquet time was recorded during recipient stimulation. RESULTS: Demographics and preoperative clinical status did not differ significantly between the groups. However, tourniquet time was significantly shorter in Group 2 (P < 0.05). Group 2 also demonstrated significantly higher responsiveness scores across all the 3 muscle groups (P < 0.05). When analyzing all the cases, responsiveness in the thumb and 4 digits was significantly associated with total grip strength, key and oppositional pinch strength, specific ulnar-innervated muscle strength, and tourniquet time (P < 0.05). For hypothenar responsiveness, only tourniquet time was a significant factor. CONCLUSIONS: Optimizing the procedural sequence in SETS AIN transfer enhances intraoperative nerve responsiveness, particularly when \"Guyon's canal release-preparation of the recipient\" precedes \"elbow decompression\". This approach facilitates more accurate fascicle selection and may improve surgical outcomes. LEVEL OF EVIDENCE: A retrospective comparative study.",
+      "article_type": "Comparative Study",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40998664/",
+      "doi": "https://doi.org/10.1016/j.bjps.2025.08.041"
     },
     {
       "pmid": "40933928",
@@ -3343,24 +4021,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40933928/",
       "doi": "https://doi.org/10.1093/jscr/rjaf378"
-    },
-    {
-      "pmid": "40998664",
-      "title": "Comparison of hand responses to recipient nerve stimulation in sequential variations of supercharged anterior interosseous nerve transfer to the ulnar nerve - Identifying the golden recipient fascicles.",
-      "authors": [
-        "Soo Min Cha",
-        "Jing Xu",
-        "Seung Hoo Lee",
-        "In Ho Ga",
-        "Yong Hwan Kim"
-      ],
-      "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
-      "date": "2025 Sep 9",
-      "date_sort": "2025-09-09",
-      "abstract": "BACKGROUND: In supercharged end-to-side (SETS) anterior interosseous nerve (AIN) transfer for compressive ulnar neuropathy, selecting the optimal recipient fascicle remains challenging owing to weak or absent motor responses. We hypothesized that modifying the procedural sequence would improve intraoperative nerve responsiveness, thereby enhancing the identification of recipient fascicles in the thumb, 4 digits, and hypothenar muscles (3 target muscle groups). METHODS: We retrospectively reviewed 52 patients who underwent SETS AIN transfer from 2019 to 2024. Group 1 (n = 25) followed this sequence: Elbow decompression-Guyon's canal release-preparation of the recipient ulnar nerve-donor harvest-coaptation of AIN to the ulnar nerve. Group 2 (n = 27) followed: Guyon-recipient-donor-elbow-coaptation. Intraoperative responses to ulnar nerve stimulation were categorized into 3 muscle groups and graded as \"Definitive\"-(2), \"Trace\"-(1), or \"No response\"-(0). Tourniquet time was recorded during recipient stimulation. RESULTS: Demographics and preoperative clinical status did not differ significantly between the groups. However, tourniquet time was significantly shorter in Group 2 (P < 0.05). Group 2 also demonstrated significantly higher responsiveness scores across all the 3 muscle groups (P < 0.05). When analyzing all the cases, responsiveness in the thumb and 4 digits was significantly associated with total grip strength, key and oppositional pinch strength, specific ulnar-innervated muscle strength, and tourniquet time (P < 0.05). For hypothenar responsiveness, only tourniquet time was a significant factor. CONCLUSIONS: Optimizing the procedural sequence in SETS AIN transfer enhances intraoperative nerve responsiveness, particularly when \"Guyon's canal release-preparation of the recipient\" precedes \"elbow decompression\". This approach facilitates more accurate fascicle selection and may improve surgical outcomes. LEVEL OF EVIDENCE: A retrospective comparative study.",
-      "article_type": "Comparative Study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40998664/",
-      "doi": "https://doi.org/10.1016/j.bjps.2025.08.041"
     },
     {
       "pmid": "40933363",
@@ -3458,28 +4118,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.redare.2025.501902"
     },
     {
-      "pmid": "40912633",
-      "title": "Association between subclavian vein patency and health-related quality of life outcomes among patients with venous thoracic outlet syndrome.",
-      "authors": [
-        "Michaela E Corvi",
-        "Nikhil Panda",
-        "Beverly J Fu",
-        "Jacob C Hurd",
-        "Margaret E Yang",
-        "Jacob N Anderson",
-        "Sangkavi Kuhan",
-        "Chi-Fu Jeffery Yang",
-        "Dean M Donahue"
-      ],
-      "journal": "The Journal of thoracic and cardiovascular surgery",
-      "date": "2025 Sep 3",
-      "date_sort": "2025-09-03",
-      "abstract": "OBJECTIVE: The study objective was to evaluate the association between subclavian vein patency and health-related quality of life after supraclavicular thoracic outlet decompression among patients with venous thoracic outlet syndrome. METHODS: Patients who underwent supraclavicular thoracic outlet decompression (ie, first thoracic rib resection, scalenectomy, and subclavian venolysis) were identified from a prospectively maintained database. Demography, perioperative venography, and catheter-directed interventions were recorded. The primary end points were subclavian vein patency and health-related quality of life after decompression. The association between subclavian vein patency and health-related quality of life was evaluated in unadjusted and logistic regression analyses. RESULTS: Among 1032 patients with thoracic outlet syndrome who underwent surgery (2007-2021), 275 patients presented with venous thoracic outlet syndrome. A total of 225 patients (81.8%) underwent preoperative venography; 221 patients (98.2%) had completely or partially stenosed subclavian veins. Preoperative catheter-based interventions were performed in 166 patients (60.4%); stenosis remained in 130 patients (78.3%). Postoperatively, 216 patients (78.5%) underwent routine venography; improvement in stenosis was observed in 54 patients (25.0%). Additional catheter-based interventions were performed in 155 patients (56.4%) with improvement in stenosis observed in 131 patients (84.5%). At a median follow-up of 279 days (interquartile range, 95-674), 94.0% of patients reported improvement in health-related quality of life. Improvement in subclavian vein patency was associated with improved health-related quality of life (adjusted odds ratio, 2.19 [95% CI, 1.12-4.28], P = .021). CONCLUSIONS: Subclavian vein patency is associated with improved health-related quality of life among patients with venous thoracic outlet syndrome. Effective venolysis during thoracic outlet decompression with perioperative catheter-directed intervention contributes most significantly to vein patency.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40912633/",
-      "doi": "https://doi.org/10.1016/j.jtcvs.2025.08.035"
-    },
-    {
       "pmid": "41050023",
       "title": "Axillary Artery Variant: A Cadaveric Case Report and Clinical Significance.",
       "authors": [
@@ -3500,6 +4138,28 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41050023/",
       "doi": "https://doi.org/10.7759/cureus.91533"
+    },
+    {
+      "pmid": "40912633",
+      "title": "Association between subclavian vein patency and health-related quality of life outcomes among patients with venous thoracic outlet syndrome.",
+      "authors": [
+        "Michaela E Corvi",
+        "Nikhil Panda",
+        "Beverly J Fu",
+        "Jacob C Hurd",
+        "Margaret E Yang",
+        "Jacob N Anderson",
+        "Sangkavi Kuhan",
+        "Chi-Fu Jeffery Yang",
+        "Dean M Donahue"
+      ],
+      "journal": "The Journal of thoracic and cardiovascular surgery",
+      "date": "2025 Sep 3",
+      "date_sort": "2025-09-03",
+      "abstract": "OBJECTIVE: The study objective was to evaluate the association between subclavian vein patency and health-related quality of life after supraclavicular thoracic outlet decompression among patients with venous thoracic outlet syndrome. METHODS: Patients who underwent supraclavicular thoracic outlet decompression (ie, first thoracic rib resection, scalenectomy, and subclavian venolysis) were identified from a prospectively maintained database. Demography, perioperative venography, and catheter-directed interventions were recorded. The primary end points were subclavian vein patency and health-related quality of life after decompression. The association between subclavian vein patency and health-related quality of life was evaluated in unadjusted and logistic regression analyses. RESULTS: Among 1032 patients with thoracic outlet syndrome who underwent surgery (2007-2021), 275 patients presented with venous thoracic outlet syndrome. A total of 225 patients (81.8%) underwent preoperative venography; 221 patients (98.2%) had completely or partially stenosed subclavian veins. Preoperative catheter-based interventions were performed in 166 patients (60.4%); stenosis remained in 130 patients (78.3%). Postoperatively, 216 patients (78.5%) underwent routine venography; improvement in stenosis was observed in 54 patients (25.0%). Additional catheter-based interventions were performed in 155 patients (56.4%) with improvement in stenosis observed in 131 patients (84.5%). At a median follow-up of 279 days (interquartile range, 95-674), 94.0% of patients reported improvement in health-related quality of life. Improvement in subclavian vein patency was associated with improved health-related quality of life (adjusted odds ratio, 2.19 [95% CI, 1.12-4.28], P = .021). CONCLUSIONS: Subclavian vein patency is associated with improved health-related quality of life among patients with venous thoracic outlet syndrome. Effective venolysis during thoracic outlet decompression with perioperative catheter-directed intervention contributes most significantly to vein patency.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40912633/",
+      "doi": "https://doi.org/10.1016/j.jtcvs.2025.08.035"
     },
     {
       "pmid": "40907821",
@@ -3524,6 +4184,23 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40907821/",
       "doi": "https://doi.org/10.1016/j.avsg.2025.08.024"
+    },
+    {
+      "pmid": "40905490",
+      "title": "Unresectable Primary Enteric-Type Thymic Adenocarcinoma Treated With FOLFOX Chemotherapy: A Case Report.",
+      "authors": [
+        "Carl He",
+        "Georgia Bentick",
+        "Patrick Hosking",
+        "Andrew Mant"
+      ],
+      "journal": "Cancer reports (Hoboken, N.J.)",
+      "date": "2025 Sep",
+      "date_sort": "2025-09-01",
+      "abstract": "BACKGROUND: Enteric-type thymic adenocarcinomas are an extremely rare and distinct subtype of thymic malignancies, as classified by the 2021 World Health Organization classification of thymic tumors. These tumors exhibit close molecular and morphologic similarity to primary gastrointestinal malignancies. To date, there are no tailored treatment guidelines for enteric-type thymic adenocarcinoma. CASE: A 65-year-old woman was admitted to the Oncology unit of a Melbourne Metropolitan Hospital after presenting with progressive symptoms of thoracic outlet syndrome, where a CT scan identified a localized anterior mediastinal mass measuring up to 7.5 × 6.0 × 6.0 cm (transverse × Anterior-Posterior × Superior-inferior). The mass was deemed unresectable. A core biopsy diagnosed the patient with a primary enteric-type thymic adenocarcinoma, based on positive immunohistochemical staining for the intestinal markers CK20 and CDX2, positive staining for CD5-a marker commonly associated with thymic carcinoma, and positive staining for CK7-a marker not classically expressed in colonic adenocarcinoma. The patient received five fractions of 20 Gray palliative radiotherapy for superior vena cava syndrome, followed by four cycles of Oxaliplatin/5-fluorouracil/leucovorin (FOLFOX) chemotherapy. FOLFOX, a common systemic therapy for gastrointestinal adenocarcinomas, was chosen due to the tumor's enteric profile and was selected over the then-NCCN-recommended carboplatin/paclitaxel regimen, which did not have trial-backed evidence of efficacy in thymic adenocarcinomas, particularly adenocarcinomas of the enteric type. After starting on frontline systemic therapy with FOLFOX, restaging scans after Cycle 3 showed a reduction in the size of her anterior mediastinal mass, which further decreased in size after cycle 4. Treatment was then discontinued per the patient's goals of care; however, follow-up imaging showed ongoing disease stability for 6 months. The patient died of disease 8 months after treatment discontinuation and 13 months after her initial diagnosis. CONCLUSION: We report the first case of primary enteric-type thymic adenocarcinoma treated at an Australian institution, and the first published case using FOLFOX as frontline systemic therapy in a patient with unresectable primary enteric-type thymic adenocarcinoma. Noting the close molecular resemblance between enteric-type thymic adenocarcinoma and gastrointestinal malignancies, chemotherapy regimens commonly used in the treatment of gastrointestinal cancer may offer a more effective option than standard frontline therapies used in thymic carcinomas for the management of enteric-type thymic adenocarcinoma.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40905490/",
+      "doi": "https://doi.org/10.1002/cnr2.70318"
     },
     {
       "pmid": "40986903",
@@ -3556,23 +4233,6 @@ window.pubmedArticles = {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41031870/"
     },
     {
-      "pmid": "40905490",
-      "title": "Unresectable Primary Enteric-Type Thymic Adenocarcinoma Treated With FOLFOX Chemotherapy: A Case Report.",
-      "authors": [
-        "Carl He",
-        "Georgia Bentick",
-        "Patrick Hosking",
-        "Andrew Mant"
-      ],
-      "journal": "Cancer reports (Hoboken, N.J.)",
-      "date": "2025 Sep",
-      "date_sort": "2025-09-01",
-      "abstract": "BACKGROUND: Enteric-type thymic adenocarcinomas are an extremely rare and distinct subtype of thymic malignancies, as classified by the 2021 World Health Organization classification of thymic tumors. These tumors exhibit close molecular and morphologic similarity to primary gastrointestinal malignancies. To date, there are no tailored treatment guidelines for enteric-type thymic adenocarcinoma. CASE: A 65-year-old woman was admitted to the Oncology unit of a Melbourne Metropolitan Hospital after presenting with progressive symptoms of thoracic outlet syndrome, where a CT scan identified a localized anterior mediastinal mass measuring up to 7.5 × 6.0 × 6.0 cm (transverse × Anterior-Posterior × Superior-inferior). The mass was deemed unresectable. A core biopsy diagnosed the patient with a primary enteric-type thymic adenocarcinoma, based on positive immunohistochemical staining for the intestinal markers CK20 and CDX2, positive staining for CD5-a marker commonly associated with thymic carcinoma, and positive staining for CK7-a marker not classically expressed in colonic adenocarcinoma. The patient received five fractions of 20 Gray palliative radiotherapy for superior vena cava syndrome, followed by four cycles of Oxaliplatin/5-fluorouracil/leucovorin (FOLFOX) chemotherapy. FOLFOX, a common systemic therapy for gastrointestinal adenocarcinomas, was chosen due to the tumor's enteric profile and was selected over the then-NCCN-recommended carboplatin/paclitaxel regimen, which did not have trial-backed evidence of efficacy in thymic adenocarcinomas, particularly adenocarcinomas of the enteric type. After starting on frontline systemic therapy with FOLFOX, restaging scans after Cycle 3 showed a reduction in the size of her anterior mediastinal mass, which further decreased in size after cycle 4. Treatment was then discontinued per the patient's goals of care; however, follow-up imaging showed ongoing disease stability for 6 months. The patient died of disease 8 months after treatment discontinuation and 13 months after her initial diagnosis. CONCLUSION: We report the first case of primary enteric-type thymic adenocarcinoma treated at an Australian institution, and the first published case using FOLFOX as frontline systemic therapy in a patient with unresectable primary enteric-type thymic adenocarcinoma. Noting the close molecular resemblance between enteric-type thymic adenocarcinoma and gastrointestinal malignancies, chemotherapy regimens commonly used in the treatment of gastrointestinal cancer may offer a more effective option than standard frontline therapies used in thymic carcinomas for the management of enteric-type thymic adenocarcinoma.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40905490/",
-      "doi": "https://doi.org/10.1002/cnr2.70318"
-    },
-    {
       "pmid": "40919190",
       "title": "Improvement in Chest Pain Following Surgical Treatment for Thoracic Outlet Syndrome.",
       "authors": [
@@ -3590,6 +4250,30 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40919190/",
       "doi": "https://doi.org/10.3400/avd.cr.25-00043"
+    },
+    {
+      "pmid": "40862189",
+      "title": "Minimally invasive surgical approach for slipping rib syndrome: A case report.",
+      "authors": [
+        "Francesca Spinelli",
+        "Francesco Petrella",
+        "Andrea Cara",
+        "Enrico Cassina",
+        "Lidia Libretti",
+        "Emanuele Pirondini",
+        "Matilde De Simone",
+        "Ugo Cioffi",
+        "Antonio Tuoro",
+        "Gerardo Cioffi",
+        "Federico Raveglia"
+      ],
+      "journal": "World journal of clinical cases",
+      "date": "2025 Aug 26",
+      "date_sort": "2025-08-26",
+      "abstract": "BACKGROUND: Slipping rib syndrome (SRS) is caused by abnormal subluxation of floating ribs, resulting in chronic pain and possible tissue damage. Its prevalence is often overlooked, as it shares symptoms with other musculoskeletal conditions, and is more common in young females and athletes. Symptoms include pain along the lower rib margin, aggravated by trunk movements, deep breathing and coughing. Treatment usually starts conservatively with physiotherapy and analgesics. In severe cases, extrapleural rib resection may be required. CASE SUMMARY: In April 2023, a 24-year-old woman presented with persistent right hemithorax pain in the eleventh rib for one year. Instrumental examinations, including ultrasonography and magnetic resonance imaging, were negative for abdominal and osteochondral abnormalities. The pain intensity, rated 8/10 on the numeric rating scale (NRS), remained unresponsive to pain therapy. After a careful literature review and discussion with the patient, we opted for a minimally invasive surgical approach. Under general anesthesia, a mini-thoracotomy was performed along the anterior course of the eleventh rib. After exposure, abnormal rib mobility was detected, which led to resection of the medial margin and anchoring to the overlying rib with nonabsorbable sutures. Histological examination revealed no abnormalities. The patient was discharged on the first postoperative day. Pain decreased significantly, reaching 1/10 on the NRS at one month. At 3 months, the patient had mild fluctuating pain (2/10) requiring occasional analgesics but did not interfere with daily activities. CONCLUSION: Minimally invasive rib-preserving surgery effectively reduces pain and hospitalization time, offering a valid alternative to conventional rib resection for refractory SRS.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40862189/",
+      "doi": "https://doi.org/10.12998/wjcc.v13.i24.107384"
     },
     {
       "pmid": "41356623",
@@ -3626,28 +4310,22 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jpra.2025.08.025"
     },
     {
-      "pmid": "40862189",
-      "title": "Minimally invasive surgical approach for slipping rib syndrome: A case report.",
+      "pmid": "40847307",
+      "title": "Anatomical and histological analysis of the scalene triangle in a Japanese population: implications for thoracic outlet syndrome diagnosis and management.",
       "authors": [
-        "Francesca Spinelli",
-        "Francesco Petrella",
-        "Andrea Cara",
-        "Enrico Cassina",
-        "Lidia Libretti",
-        "Emanuele Pirondini",
-        "Matilde De Simone",
-        "Ugo Cioffi",
-        "Antonio Tuoro",
-        "Gerardo Cioffi",
-        "Federico Raveglia"
+        "Toshiya Nito",
+        "Hiroshi Satake",
+        "Masahiro Tsuchiya",
+        "Naomi Hanaka",
+        "Michiaki Takagi"
       ],
-      "journal": "World journal of clinical cases",
-      "date": "2025 Aug 26",
-      "date_sort": "2025-08-26",
-      "abstract": "BACKGROUND: Slipping rib syndrome (SRS) is caused by abnormal subluxation of floating ribs, resulting in chronic pain and possible tissue damage. Its prevalence is often overlooked, as it shares symptoms with other musculoskeletal conditions, and is more common in young females and athletes. Symptoms include pain along the lower rib margin, aggravated by trunk movements, deep breathing and coughing. Treatment usually starts conservatively with physiotherapy and analgesics. In severe cases, extrapleural rib resection may be required. CASE SUMMARY: In April 2023, a 24-year-old woman presented with persistent right hemithorax pain in the eleventh rib for one year. Instrumental examinations, including ultrasonography and magnetic resonance imaging, were negative for abdominal and osteochondral abnormalities. The pain intensity, rated 8/10 on the numeric rating scale (NRS), remained unresponsive to pain therapy. After a careful literature review and discussion with the patient, we opted for a minimally invasive surgical approach. Under general anesthesia, a mini-thoracotomy was performed along the anterior course of the eleventh rib. After exposure, abnormal rib mobility was detected, which led to resection of the medial margin and anchoring to the overlying rib with nonabsorbable sutures. Histological examination revealed no abnormalities. The patient was discharged on the first postoperative day. Pain decreased significantly, reaching 1/10 on the NRS at one month. At 3 months, the patient had mild fluctuating pain (2/10) requiring occasional analgesics but did not interfere with daily activities. CONCLUSION: Minimally invasive rib-preserving surgery effectively reduces pain and hospitalization time, offering a valid alternative to conventional rib resection for refractory SRS.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40862189/",
-      "doi": "https://doi.org/10.12998/wjcc.v13.i24.107384"
+      "journal": "BMC musculoskeletal disorders",
+      "date": "2025 Aug 22",
+      "date_sort": "2025-08-22",
+      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) arises from compression of neurovascular structures within the scalene triangle, costoclavicular space, or pectoralis minor insertion. In Western populations, the average scalene triangle base width is 10.7 mm; however, corresponding anatomical data for Japanese individuals are lacking, and the association between triangle dimensions and body size remains unclear. METHODS: This study assessed 42 Japanese cadavers (21 males, 21 females) to measure the scalene triangle base width, transverse anterior scalene muscle insertion width, and clavicle length using a sliding caliper (Model No. 19976; Shinwa Measures, Japan). The scalene triangle was defined as the space between the anterior scalene muscle, the middle scalene muscle, and the first rib. Muscle insertions were histologically evaluated using hematoxylin-eosin, Elastica-Masson, and Safranin O staining after formalin fixation and paraffin embedding. Statistical analysis was performed with EZR (version 4.0.2). RESULTS: The average base width of the scalene triangle was 8.2 mm, which was narrower than that reported in Western populations. Males had significantly wider triangle bases and longer clavicles than did females (p < 0.01). A positive correlation was found between the base width and clavicle length (r = 0.45, p < 0.01), suggesting that body size may influence the dimensions of the scalene triangle. In larger individuals, however, an increase in triangle size may be offset by proportionally larger nerves and vessels, potentially maintaining similar spatial crowding. Histologically, the anterior scalene muscle consistently inserted onto the superior, posterior, and inferior surfaces of the first rib and was adjacent to the parietal pleura. Conversely, the middle scalene muscle is inserted only onto the superior surface of the first rib. No fibrocartilage was observed at either insertion site, indicating a fibrous enthesis. CONCLUSIONS: This study presents the first detailed anatomical and histological analysis of the scalene triangle in Japanese individuals, revealing wider base widths in cadavers than those reported in Japanese TOS patients undergoing endoscopic surgery. This discrepancy suggests a possible link between triangle narrowing and TOS pathogenesis, with implications for diagnosis and treatment strategies. Additionally, the proximity of the anterior scalene muscle to the parietal pleura may increase the risk of pleural injury during surgery in this region. CLINICAL TRIAL REGISTRATION: Not applicable.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40847307/",
+      "doi": "https://doi.org/10.1186/s12891-025-09048-2"
     },
     {
       "pmid": "40847403",
@@ -3668,24 +4346,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1186/s13018-025-06200-5"
     },
     {
-      "pmid": "40847307",
-      "title": "Anatomical and histological analysis of the scalene triangle in a Japanese population: implications for thoracic outlet syndrome diagnosis and management.",
-      "authors": [
-        "Toshiya Nito",
-        "Hiroshi Satake",
-        "Masahiro Tsuchiya",
-        "Naomi Hanaka",
-        "Michiaki Takagi"
-      ],
-      "journal": "BMC musculoskeletal disorders",
-      "date": "2025 Aug 22",
-      "date_sort": "2025-08-22",
-      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) arises from compression of neurovascular structures within the scalene triangle, costoclavicular space, or pectoralis minor insertion. In Western populations, the average scalene triangle base width is 10.7 mm; however, corresponding anatomical data for Japanese individuals are lacking, and the association between triangle dimensions and body size remains unclear. METHODS: This study assessed 42 Japanese cadavers (21 males, 21 females) to measure the scalene triangle base width, transverse anterior scalene muscle insertion width, and clavicle length using a sliding caliper (Model No. 19976; Shinwa Measures, Japan). The scalene triangle was defined as the space between the anterior scalene muscle, the middle scalene muscle, and the first rib. Muscle insertions were histologically evaluated using hematoxylin-eosin, Elastica-Masson, and Safranin O staining after formalin fixation and paraffin embedding. Statistical analysis was performed with EZR (version 4.0.2). RESULTS: The average base width of the scalene triangle was 8.2 mm, which was narrower than that reported in Western populations. Males had significantly wider triangle bases and longer clavicles than did females (p < 0.01). A positive correlation was found between the base width and clavicle length (r = 0.45, p < 0.01), suggesting that body size may influence the dimensions of the scalene triangle. In larger individuals, however, an increase in triangle size may be offset by proportionally larger nerves and vessels, potentially maintaining similar spatial crowding. Histologically, the anterior scalene muscle consistently inserted onto the superior, posterior, and inferior surfaces of the first rib and was adjacent to the parietal pleura. Conversely, the middle scalene muscle is inserted only onto the superior surface of the first rib. No fibrocartilage was observed at either insertion site, indicating a fibrous enthesis. CONCLUSIONS: This study presents the first detailed anatomical and histological analysis of the scalene triangle in Japanese individuals, revealing wider base widths in cadavers than those reported in Japanese TOS patients undergoing endoscopic surgery. This discrepancy suggests a possible link between triangle narrowing and TOS pathogenesis, with implications for diagnosis and treatment strategies. Additionally, the proximity of the anterior scalene muscle to the parietal pleura may increase the risk of pleural injury during surgery in this region. CLINICAL TRIAL REGISTRATION: Not applicable.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40847307/",
-      "doi": "https://doi.org/10.1186/s12891-025-09048-2"
-    },
-    {
       "pmid": "40848844",
       "title": "Cerebral Venous Drainage Disorders: A Potential Missing Piece in Thoracic Outlet Syndrome.",
       "authors": [
@@ -3698,6 +4358,22 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40848844/",
       "doi": "https://doi.org/10.1016/j.avsg.2025.08.022"
+    },
+    {
+      "pmid": "41210565",
+      "title": "Reaching a higher plane: can a T1 erector spinae plane block be a useful adjunct for pain relief in the surgical repair of thoracic outlet syndrome?",
+      "authors": [
+        "Christian Horazeck",
+        "Emily H Garmon",
+        "Russell K McAllister"
+      ],
+      "journal": "Proceedings (Baylor University. Medical Center)",
+      "date": "2025 Aug 19",
+      "date_sort": "2025-08-19",
+      "abstract": "",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41210565/",
+      "doi": "https://doi.org/10.1080/08998280.2025.2546238"
     },
     {
       "pmid": "40978926",
@@ -3716,22 +4392,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40978926/",
       "doi": "https://doi.org/10.7759/cureus.90494"
-    },
-    {
-      "pmid": "41210565",
-      "title": "Reaching a higher plane: can a T1 erector spinae plane block be a useful adjunct for pain relief in the surgical repair of thoracic outlet syndrome?",
-      "authors": [
-        "Christian Horazeck",
-        "Emily H Garmon",
-        "Russell K McAllister"
-      ],
-      "journal": "Proceedings (Baylor University. Medical Center)",
-      "date": "2025 Aug 19",
-      "date_sort": "2025-08-19",
-      "abstract": "",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41210565/",
-      "doi": "https://doi.org/10.1080/08998280.2025.2546238"
     },
     {
       "pmid": "40821725",
@@ -3763,6 +4423,32 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40896787/",
       "doi": "https://doi.org/10.3389/fsurg.2025.1619195"
+    },
+    {
+      "pmid": "40818789",
+      "title": "Outcomes of Fontan patients undergoing combined heart-liver transplantation in pediatric hospitals across the United States.",
+      "authors": [
+        "Grant Chappell",
+        "Amir Mehdizadeh-Shrifi",
+        "Darren Turner",
+        "Alexander Bondoc",
+        "Suzanne Evans",
+        "Alexander G Miethke",
+        "Gregory Tiao",
+        "Meghan M Chlebowski",
+        "Alexander R Opotowsky",
+        "David Lehenbauer",
+        "Marco Ricci",
+        "Awais Ashfaq",
+        "David L S Morales"
+      ],
+      "journal": "The Journal of thoracic and cardiovascular surgery",
+      "date": "2025 Aug 14",
+      "date_sort": "2025-08-14",
+      "abstract": "BACKGROUND: With increasing numbers of patients surviving Fontan palliation, there is a rise in Fontan-associated liver disease and transplantation strategies inclusive of combined heart-liver transplantation (CHLT). Therefore, we reviewed a combined dataset assessing outcomes of pediatric patients undergoing CHLT. METHODS: Patients undergoing Fontan CHLT between 2010 and 2024 at pediatric hospitals were queried from a merged dataset of the Pediatric Health Information System and United Network for Organ Sharing. Matching (2:1) was completed with Fontan heart-only transplant recipients. RESULTS: A total of 34 patients underwent Fontan CHLT at 9 pediatric hospitals between 2010 and 2024, 82% (n = 28) after 2019. Almost one-half (47%; n = 16) were age ≤18 years at the time of CHLT, with a median age of 19 years (interquartile range, 15-24 years). More than two-thirds (68%) had hypoplastic left heart syndrome, 38% had double-inlet left ventricle, 26% had double-outlet right ventricle, and 18% had tricuspid atresia. One-third of the patients (n = 11) had a Model for End-Stage Liver Disease/Pediatric End-Stage Liver Disease score of ≤10 at CHLT, with 91% hospital survival, and those with a score >10 had 82% survival. One-year survival was 85% overall, 94% for those age >18 years, and 75% for those age ≤18 years. All deaths occurred before hospital discharge and within 6 months of transplantation, with a mean follow-up of 4 years. Three-year survival was similar in the CHLT and heart transplant -only (HT) groups (85% vs 84%; P = .96, log-rank test). CONCLUSIONS: This multi-institutional analysis demonstrates the rapidly increasing numbers of Fontan palliated patients successfully undergoing CHLT in pediatric hospitals. Conditional on surviving to discharge, long-term survival has been excellent, demonstrating a success story in transplantation management for this complex population.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40818789/",
+      "doi": "https://doi.org/10.1016/j.jtcvs.2025.08.011"
     },
     {
       "pmid": "40810529",
@@ -3799,30 +4485,36 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1136/bmjno-2025-001218"
     },
     {
-      "pmid": "40818789",
-      "title": "Outcomes of Fontan patients undergoing combined heart-liver transplantation in pediatric hospitals across the United States.",
+      "pmid": "40804365",
+      "title": "Ultrasound-guided pulsed radiofrequency versus perineural platelet rich plasma injection for the treatment of idiopathic carpal tunnel syndrome: a prospective randomized controlled study.",
       "authors": [
-        "Grant Chappell",
-        "Amir Mehdizadeh-Shrifi",
-        "Darren Turner",
-        "Alexander Bondoc",
-        "Suzanne Evans",
-        "Alexander G Miethke",
-        "Gregory Tiao",
-        "Meghan M Chlebowski",
-        "Alexander R Opotowsky",
-        "David Lehenbauer",
-        "Marco Ricci",
-        "Awais Ashfaq",
-        "David L S Morales"
+        "Engi Yousry Hashem",
+        "Faten Saeed Shamandy",
+        "Ahmed Fawzy Elmulla",
+        "Magdy AbdelAziz Mansour"
       ],
-      "journal": "The Journal of thoracic and cardiovascular surgery",
-      "date": "2025 Aug 14",
-      "date_sort": "2025-08-14",
-      "abstract": "BACKGROUND: With increasing numbers of patients surviving Fontan palliation, there is a rise in Fontan-associated liver disease and transplantation strategies inclusive of combined heart-liver transplantation (CHLT). Therefore, we reviewed a combined dataset assessing outcomes of pediatric patients undergoing CHLT. METHODS: Patients undergoing Fontan CHLT between 2010 and 2024 at pediatric hospitals were queried from a merged dataset of the Pediatric Health Information System and United Network for Organ Sharing. Matching (2:1) was completed with Fontan heart-only transplant recipients. RESULTS: A total of 34 patients underwent Fontan CHLT at 9 pediatric hospitals between 2010 and 2024, 82% (n = 28) after 2019. Almost one-half (47%; n = 16) were age ≤18 years at the time of CHLT, with a median age of 19 years (interquartile range, 15-24 years). More than two-thirds (68%) had hypoplastic left heart syndrome, 38% had double-inlet left ventricle, 26% had double-outlet right ventricle, and 18% had tricuspid atresia. One-third of the patients (n = 11) had a Model for End-Stage Liver Disease/Pediatric End-Stage Liver Disease score of ≤10 at CHLT, with 91% hospital survival, and those with a score >10 had 82% survival. One-year survival was 85% overall, 94% for those age >18 years, and 75% for those age ≤18 years. All deaths occurred before hospital discharge and within 6 months of transplantation, with a mean follow-up of 4 years. Three-year survival was similar in the CHLT and heart transplant -only (HT) groups (85% vs 84%; P = .96, log-rank test). CONCLUSIONS: This multi-institutional analysis demonstrates the rapidly increasing numbers of Fontan palliated patients successfully undergoing CHLT in pediatric hospitals. Conditional on surviving to discharge, long-term survival has been excellent, demonstrating a success story in transplantation management for this complex population.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40818789/",
-      "doi": "https://doi.org/10.1016/j.jtcvs.2025.08.011"
+      "journal": "BMC anesthesiology",
+      "date": "2025 Aug 13",
+      "date_sort": "2025-08-13",
+      "abstract": "BACKGROUND: Carpal tunnel syndrome (CTS) is the most common focal mononeuropathy caused by the compression of the median nerve within the carpal tunnel. Ultrasound-guided hydrodissection with corticosteroids, platelet-rich plasma injection, and median nerve pulsed radiofrequency are all potential treatments for relieving symptoms of CTS in mild and moderate cases, comparison between their clinical outcomes is yet to be studied.The primary outcome was pain measured by Visual Analog Scale (VAS). The secondary outcomes included functional outcome evaluated by the Boston Carpal Tunnel Questionnaire (BCTQ), Nerve Conduction Velocity (NCV) and median nerve cross-sectional area (CSA). METHODS: This prospective, double-blinded, randomized controlled study was conducted on Seventy-five patients diagnosed with mild to moderate CTS, they were randomly allocated into three equal groups. The control group received a median nerve perineural injection of bupivacaine with methylprednisolone. The PRF group received median nerve pulsed radiofrequency in addition to bupivacaine. Finally, the PRP group received a perineural injection of platelet-rich plasma. MEASUREMENTS: Were conducted at specific time intervals: before the intervention, at one week, two months, and four months post-intervention for VAS, BCTQ, and CSA. NCV was only evaluated before the intervention and after four months. RESULTS: All patients experienced a statistically significant improvement in pain, symptoms, function, CSA of the median nerve and NCV following intervention. The PRF and steroid groups exhibited greater improvements than the PRP group. The PRP group showed the least improvement compared to the other two groups. LIMITATIONS: Short study period, single centred study. CONCLUSIONS: The current study suggests that ultrasound-guided hydrodissection of the median nerve, with local anesthetic/steroids or PRP and PRF are effective in alleviating pain and improving the functional outcome. Nevertheless, it was revealed that PRF and steroid injection were more efficacious in enhancing short term functional outcomes compared to PRP injection. TRIAL REGISTRATION: The study was retrospectively registered in the “Clinical Trials Library for Protocol Registration and Results System” under NCT05053477 on September 11, 2021.",
+      "article_type": "Clinical Trial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40804365/",
+      "doi": "https://doi.org/10.1186/s12871-025-03257-x"
+    },
+    {
+      "pmid": "41179447",
+      "title": "Operative Treatment of Clavicle Nonunion Complicated With Acute Thoracic Outlet Syndrome: A Case Report and Review of Literature.",
+      "authors": [
+        "Abbas Abdoli Tafti",
+        "Masoud Salmani"
+      ],
+      "journal": "JSES reviews, reports, and techniques",
+      "date": "2025 Aug 13",
+      "date_sort": "2025-08-13",
+      "abstract": "",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41179447/",
+      "doi": "https://doi.org/10.1016/j.xrrt.2025.07.016"
     },
     {
       "pmid": "41179415",
@@ -3844,21 +4536,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41179415/",
       "doi": "https://doi.org/10.1016/j.xrrt.2025.07.021"
-    },
-    {
-      "pmid": "41179447",
-      "title": "Operative Treatment of Clavicle Nonunion Complicated With Acute Thoracic Outlet Syndrome: A Case Report and Review of Literature.",
-      "authors": [
-        "Abbas Abdoli Tafti",
-        "Masoud Salmani"
-      ],
-      "journal": "JSES reviews, reports, and techniques",
-      "date": "2025 Aug 13",
-      "date_sort": "2025-08-13",
-      "abstract": "",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41179447/",
-      "doi": "https://doi.org/10.1016/j.xrrt.2025.07.016"
     },
     {
       "pmid": "40869475",
@@ -3967,24 +4644,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/MD.0000000000043735"
     },
     {
-      "pmid": "40742668",
-      "title": "Management of the ulnar nerve using an adipofascial flap in elbow surgery.",
-      "authors": [
-        "A Greco",
-        "L L Marcovici",
-        "I Molayem",
-        "C Amendola",
-        "A Pagnotta"
-      ],
-      "journal": "Musculoskeletal surgery",
-      "date": "2025 Jul 31",
-      "date_sort": "2025-07-31",
-      "abstract": "PURPOSE: Ulnar nerve entrapment is a common condition, with a recurrence rate after surgery reaching up to 25%. In such cases, treatment remains controversial. During elbow surgery, management of the ulnar nerve and performing neurolysis are often the initial steps, even in the absence of clear symptoms. In this study, we assessed the clinical applicability of using an adipofascial flap to cover the nerve during elbow surgery. METHODS: A retrospective study of 53 patients with elbow conditions who underwent surgery between December 2020 and December 2023 was performed. All patients received an X-ray of the elbow and electromyography (ENMG). The following scores were recorded: NRS, MEPS, and McGowan, both preoperatively and at the 1-year follow-up. RESULTS: The NRS score decreased from 7.9 ± 0.8 (range: 6-9) to 2.8 ± 1.3 (range: 0-7) at the 1-year follow-up. MEPS improved from 70.7 ± 15.9 (range: 20-100) to 96.5 ± 7.2 (range: 70-100), indicating reduced pain and improved elbow function. The McGowan scale showed improvements in 49 out of 53 cases. All patients, except one, were satisfied with the surgery, and no recurrence of ulnar nerve-related pain was observed. CONCLUSION: Preliminary results suggest that covering the ulnar nerve with an adipofascial flap following neurolysis and/or anterior transposition is an effective method for managing ulnar nerve entrapment. It appears to help prevent post-surgical complications and adhesions, which are the main causes of the high recurrence rates reported in the literature.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40742668/",
-      "doi": "https://doi.org/10.1007/s12306-025-00916-7"
-    },
-    {
       "pmid": "40744904",
       "title": "Round table discussion. Neurogenic thoracic outlet syndrome.",
       "authors": [
@@ -4001,6 +4660,24 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40744904/",
       "doi": "https://doi.org/10.1177/17531934251361644"
+    },
+    {
+      "pmid": "40742668",
+      "title": "Management of the ulnar nerve using an adipofascial flap in elbow surgery.",
+      "authors": [
+        "A Greco",
+        "L L Marcovici",
+        "I Molayem",
+        "C Amendola",
+        "A Pagnotta"
+      ],
+      "journal": "Musculoskeletal surgery",
+      "date": "2025 Jul 31",
+      "date_sort": "2025-07-31",
+      "abstract": "PURPOSE: Ulnar nerve entrapment is a common condition, with a recurrence rate after surgery reaching up to 25%. In such cases, treatment remains controversial. During elbow surgery, management of the ulnar nerve and performing neurolysis are often the initial steps, even in the absence of clear symptoms. In this study, we assessed the clinical applicability of using an adipofascial flap to cover the nerve during elbow surgery. METHODS: A retrospective study of 53 patients with elbow conditions who underwent surgery between December 2020 and December 2023 was performed. All patients received an X-ray of the elbow and electromyography (ENMG). The following scores were recorded: NRS, MEPS, and McGowan, both preoperatively and at the 1-year follow-up. RESULTS: The NRS score decreased from 7.9 ± 0.8 (range: 6-9) to 2.8 ± 1.3 (range: 0-7) at the 1-year follow-up. MEPS improved from 70.7 ± 15.9 (range: 20-100) to 96.5 ± 7.2 (range: 70-100), indicating reduced pain and improved elbow function. The McGowan scale showed improvements in 49 out of 53 cases. All patients, except one, were satisfied with the surgery, and no recurrence of ulnar nerve-related pain was observed. CONCLUSION: Preliminary results suggest that covering the ulnar nerve with an adipofascial flap following neurolysis and/or anterior transposition is an effective method for managing ulnar nerve entrapment. It appears to help prevent post-surgical complications and adhesions, which are the main causes of the high recurrence rates reported in the literature.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40742668/",
+      "doi": "https://doi.org/10.1007/s12306-025-00916-7"
     },
     {
       "pmid": "41220830",
@@ -4039,6 +4716,23 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jse.2025.06.011"
     },
     {
+      "pmid": "40749573",
+      "title": "Utility of the scratch collapse test for diagnosis of neurogenic thoracic outlet syndrome: Patient-reported outcomes after surgical treatment with at least 1 year follow-up.",
+      "authors": [
+        "Syeda Hoorulain Ahmed",
+        "Mohammed Mumtaz",
+        "Ramin Shekouhi",
+        "Harvey Chim"
+      ],
+      "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
+      "date": "2025 Jul 28",
+      "date_sort": "2025-07-28",
+      "abstract": "INTRODUCTION: This study introduces the Scratch Collapse Test as a diagnostic tool for Neurogenic Thoracic Outlet Syndrome (NTOS) and analyzes and evaluates functional and patient-reported outcomes with at least one year of post-surgical follow-up. METHODS: Forty-four consecutive patients who underwent surgery for NTOS were reviewed. Patients were contacted at least one year postoperatively and assessed using standardized patient-reported outcome measures (PROMs), including Visual Analog Scale (VAS) for pain, Derkash classification, Disabilities of the Arm, Shoulder, and Hand (DASH) score, Michigan Hand Outcomes Questionnaire (MHQ), and Cervical Brachial Symptom Questionnaire (CBSQ). Data were analyzed using t-tests and linear regression models. RESULTS: The NTOS site of involvement was supraclavicular (SC) in 12 (27.3%) patients, infraclavicular (IC) in 16 (36.4%), and both (SC and IC) in 16 (36.4%). A distal compression site was treated in 20 (45.5%) patients. The overall success rate, as assessed through the Derkash classification, was 87.5%. The mean postoperative VAS score (2.6 + 3.2) was significantly improved from the preoperative VAS score (8.0 + 2.9). Mean postoperative DASH, MHQ, and CBSQ scores were 32.8 ± 21.8, 68.1 ± 26.5, and 39.2 ± 32.6, respectively. Multiple linear regression analysis showed that a longer duration of symptoms before surgery was the most significant factor for a higher mean postoperative VAS pain score. CONCLUSION: Longer time to surgery was associated with higher postoperative VAS pain scores, suggesting that earlier surgical intervention in NTOS patients may be beneficial. Higher VAS scores were significantly correlated with poorer postoperative mid-term outcomes as assessed through the DASH, MHQ, CBSQ scores, and Derkash classification.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40749573/",
+      "doi": "https://doi.org/10.1016/j.bjps.2025.07.024"
+    },
+    {
       "pmid": "40726051",
       "title": "Magnetic Resonance Neurography of Sports-Related Peripheral Nerve Injuries of the Shoulder Region.",
       "authors": [
@@ -4055,23 +4749,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40726051/",
       "doi": "https://doi.org/10.1177/19417381251352500"
-    },
-    {
-      "pmid": "40749573",
-      "title": "Utility of the scratch collapse test for diagnosis of neurogenic thoracic outlet syndrome: Patient-reported outcomes after surgical treatment with at least 1 year follow-up.",
-      "authors": [
-        "Syeda Hoorulain Ahmed",
-        "Mohammed Mumtaz",
-        "Ramin Shekouhi",
-        "Harvey Chim"
-      ],
-      "journal": "Journal of plastic, reconstructive & aesthetic surgery : JPRAS",
-      "date": "2025 Jul 28",
-      "date_sort": "2025-07-28",
-      "abstract": "INTRODUCTION: This study introduces the Scratch Collapse Test as a diagnostic tool for Neurogenic Thoracic Outlet Syndrome (NTOS) and analyzes and evaluates functional and patient-reported outcomes with at least one year of post-surgical follow-up. METHODS: Forty-four consecutive patients who underwent surgery for NTOS were reviewed. Patients were contacted at least one year postoperatively and assessed using standardized patient-reported outcome measures (PROMs), including Visual Analog Scale (VAS) for pain, Derkash classification, Disabilities of the Arm, Shoulder, and Hand (DASH) score, Michigan Hand Outcomes Questionnaire (MHQ), and Cervical Brachial Symptom Questionnaire (CBSQ). Data were analyzed using t-tests and linear regression models. RESULTS: The NTOS site of involvement was supraclavicular (SC) in 12 (27.3%) patients, infraclavicular (IC) in 16 (36.4%), and both (SC and IC) in 16 (36.4%). A distal compression site was treated in 20 (45.5%) patients. The overall success rate, as assessed through the Derkash classification, was 87.5%. The mean postoperative VAS score (2.6 + 3.2) was significantly improved from the preoperative VAS score (8.0 + 2.9). Mean postoperative DASH, MHQ, and CBSQ scores were 32.8 ± 21.8, 68.1 ± 26.5, and 39.2 ± 32.6, respectively. Multiple linear regression analysis showed that a longer duration of symptoms before surgery was the most significant factor for a higher mean postoperative VAS pain score. CONCLUSION: Longer time to surgery was associated with higher postoperative VAS pain scores, suggesting that earlier surgical intervention in NTOS patients may be beneficial. Higher VAS scores were significantly correlated with poorer postoperative mid-term outcomes as assessed through the DASH, MHQ, CBSQ scores, and Derkash classification.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40749573/",
-      "doi": "https://doi.org/10.1016/j.bjps.2025.07.024"
     },
     {
       "pmid": "40809281",
@@ -4228,21 +4905,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.7759/cureus.87623"
     },
     {
-      "pmid": "40626394",
-      "title": "Neurogenic Thoracic Outlet Syndrome: A Current Literature Review.",
-      "authors": [
-        "Numair Attaar",
-        "Luigi Pascarella"
-      ],
-      "journal": "The American surgeon",
-      "date": "2025 Jul 8",
-      "date_sort": "2025-07-08",
-      "abstract": "Neurogenic Thoracic Outlet Syndrome (nTOS), the most prevalent type of thoracic outlet syndrome, results from compression of the compression of the brachial plexus as it traverses the scalene triangle and rectopectoralis minor space. It typically presents with upper extremity pain, hand weakness, paresthesia, and muscle atrophy that is often exacerbated by arm elevation or overhead activity. Etiology commonly includes congenital anatomical variants, trauma, and repetitive overhead activity. Diagnosis remains challenging as a result of significant symptom overlap with cervical radiculopathy, brachial plexopathies, and entrapment neuropathies. Work up involves a combination of thorough history and physical with electrophysiologic testing, diagnostic injections and imaging such as MRI or duplex ultrasonography. Initial therapy indicates physical therapy with a focus on decompression and postural correction. In patients with persistent symptoms, motor deficits or failed conservative management, surgical decompression using transaxillary, supraclavicular or minimally invasive techniques is indicated. Rib-sparing surgical decompression is increasingly favored given lower complication rates. Postoperative rehabilitation focuses on restoring range of motion and shoulder girdle strength. This review serves to outline clinical presentation, diagnostic strategies and operative options for nTOS while emphasizing an individualized, stepwise approach to optimize outcomes and minimize risk.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40626394/",
-      "doi": "https://doi.org/10.1177/00031348251358432"
-    },
-    {
       "pmid": "40639714",
       "title": "Brachial Artery Entrapment in a Professional Athlete.",
       "authors": [
@@ -4259,6 +4921,21 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40639714/",
       "doi": "https://doi.org/10.1016/j.avsg.2025.07.004"
+    },
+    {
+      "pmid": "40626394",
+      "title": "Neurogenic Thoracic Outlet Syndrome: A Current Literature Review.",
+      "authors": [
+        "Numair Attaar",
+        "Luigi Pascarella"
+      ],
+      "journal": "The American surgeon",
+      "date": "2025 Jul 8",
+      "date_sort": "2025-07-08",
+      "abstract": "Neurogenic Thoracic Outlet Syndrome (nTOS), the most prevalent type of thoracic outlet syndrome, results from compression of the compression of the brachial plexus as it traverses the scalene triangle and rectopectoralis minor space. It typically presents with upper extremity pain, hand weakness, paresthesia, and muscle atrophy that is often exacerbated by arm elevation or overhead activity. Etiology commonly includes congenital anatomical variants, trauma, and repetitive overhead activity. Diagnosis remains challenging as a result of significant symptom overlap with cervical radiculopathy, brachial plexopathies, and entrapment neuropathies. Work up involves a combination of thorough history and physical with electrophysiologic testing, diagnostic injections and imaging such as MRI or duplex ultrasonography. Initial therapy indicates physical therapy with a focus on decompression and postural correction. In patients with persistent symptoms, motor deficits or failed conservative management, surgical decompression using transaxillary, supraclavicular or minimally invasive techniques is indicated. Rib-sparing surgical decompression is increasingly favored given lower complication rates. Postoperative rehabilitation focuses on restoring range of motion and shoulder girdle strength. This review serves to outline clinical presentation, diagnostic strategies and operative options for nTOS while emphasizing an individualized, stepwise approach to optimize outcomes and minimize risk.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40626394/",
+      "doi": "https://doi.org/10.1177/00031348251358432"
     },
     {
       "pmid": "40633490",
@@ -4404,6 +5081,22 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jaccas.2025.103884"
     },
     {
+      "pmid": "40878456",
+      "title": "Thoracomelia in Poland Anomaly.",
+      "authors": [
+        "Marcus Sagerfors",
+        "Ásgerdur Thórdardóttir",
+        "Cathrine Widehammar"
+      ],
+      "journal": "Acta chirurgiae orthopaedicae et traumatologiae Cechoslovaca",
+      "date": "2025 Jun 24",
+      "date_sort": "2025-06-24",
+      "abstract": "Poland Anomaly (PA) represents pectoral muscle hypoplasia in combination with various forms of hand anomalies. We report a case of PA with pectoral hypoplasia, an upper limb deficiency and an accessory extremity/digit on the ipsilateral thoracic wall (thoracomelia). To our knowledge, this is the first reported case of thoracomelia in PA.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40878456/",
+      "doi": "https://doi.org/10.55095/achot2025/006"
+    },
+    {
       "pmid": "40552772",
       "title": "Preoperative Electrodiagnosis of Brachial Plexopathy is Associated With Diminished Functional Outcomes After Surgery for Neurogenic Thoracic Outlet Syndrome.",
       "authors": [
@@ -4419,22 +5112,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40552772/",
       "doi": "https://doi.org/10.1097/SLA.0000000000006811"
-    },
-    {
-      "pmid": "40878456",
-      "title": "Thoracomelia in Poland Anomaly.",
-      "authors": [
-        "Marcus Sagerfors",
-        "Ásgerdur Thórdardóttir",
-        "Cathrine Widehammar"
-      ],
-      "journal": "Acta chirurgiae orthopaedicae et traumatologiae Cechoslovaca",
-      "date": "2025 Jun 24",
-      "date_sort": "2025-06-24",
-      "abstract": "Poland Anomaly (PA) represents pectoral muscle hypoplasia in combination with various forms of hand anomalies. We report a case of PA with pectoral hypoplasia, an upper limb deficiency and an accessory extremity/digit on the ipsilateral thoracic wall (thoracomelia). To our knowledge, this is the first reported case of thoracomelia in PA.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40878456/",
-      "doi": "https://doi.org/10.55095/achot2025/006"
     },
     {
       "pmid": "40537202",
@@ -4999,45 +5676,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3748/wjg.v31.i17.105347"
     },
     {
-      "pmid": "40339958",
-      "title": "Percutaneous Transluminal Venous Angioplasty for Neurogenic Thoracic Outlet Syndrome.",
-      "authors": [
-        "Jenny N Wang",
-        "Meghan He",
-        "Snehal Bindra",
-        "Lauren E Jones",
-        "John Blebea",
-        "Samuel S Ahn"
-      ],
-      "journal": "Annals of vascular surgery",
-      "date": "2025 May 6",
-      "date_sort": "2025-05-06",
-      "abstract": "BACKGROUND: To characterize the effects of percutaneous transluminal venous angioplasty (PTVA) on relieving the symptoms of neurogenic thoracic outlet syndrome (nTOS). METHODS: Charts of 1,194 consecutive nTOS patients from 2010 to 2019 were analyzed. A total of 887 patients found adequate relief with conservative physical therapy, whereas 307 patients failed physical therapy and underwent diagnostic venography. Of these 307 patients, 291 (mean age 51 years, 72% female, 28% male) were found to have significant venous stenosis and were treated with PTVA. The mean follow-up period for all subjects was 19 ± 27 months (median = 13 months). RESULTS: Following PTVA, 173 (59%) reported initial symptomatic improvement, 60 (21%) no change, 52 (18%) worsened symptoms, and 6 (2%) were lost to follow-up. Furthermore, of the total 291 PTVA patients, 143 (49%) required no subsequent treatment, 48 (17%) had additional endovascular PTVA intervention, 93 (32%) eventually underwent open surgery, and 6 (2%) were lost to follow-up. Complications were seen in only one patient (0.3%) who had brief asymptomatic ventricular tachycardia in the recovery room. Overall, of the 285 patients treated with PTVA, 198 (69%) avoided open surgery. CONCLUSION: PTVA appears to be safe and effective treatment for nTOS. PTVA reduced the need for open surgical decompression in over two-thirds of patients, and thus should be considered before surgical intervention.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40339958/",
-      "doi": "https://doi.org/10.1016/j.avsg.2025.04.129"
-    },
-    {
-      "pmid": "40486434",
-      "title": "Use of Direct Oral Anticoagulants in Patients With Upper Extremity Deep Vein Thrombosis: A Meta-Analysis of Efficacy and Safety.",
-      "authors": [
-        "Ayman Zyada",
-        "Ayman Fakhry",
-        "Sohiel Nagib",
-        "Omar Alnadi",
-        "Ahmed Abouelseoud",
-        "Rahma Seken",
-        "Muhammad Jabr"
-      ],
-      "journal": "Cureus",
-      "date": "2025 May 6",
-      "date_sort": "2025-05-06",
-      "abstract": "Upper extremity deep vein thrombosis (UEDVT), distinct in etiology from lower limb DVT, often arises from catheter use, malignancy, or thoracic outlet syndrome. While direct oral anticoagulants (DOACs) are established for lower limb DVT, their role in UEDVT remains understudied. This meta-analysis evaluates the efficacy and safety of DOACs compared to low-molecular-weight heparin (LMWH) in UEDVT. A systematic PubMed search identified nine studies (643 DOAC-treated patients). Outcomes included mortality, venous thromboembolism (VTE) recurrence, pulmonary embolism (PE), and major bleeding. DOACs demonstrated significantly lower mortality (2.49% vs. 16.5-27.5%; p<0.001), VTE recurrence (0.93% vs. 5%; p<0.001), and PE incidence (0.31% vs. 5-8%; p<0.001) compared to historical LMWH data. However, major bleeding rates were higher with DOACs (2.02% vs. 0.25%; p<0.001). Patient cohorts predominantly had cancer-related (66.7%) or catheter-associated (64.5%) UEDVT, with rivaroxaban being the most used DOAC (70.9%). Median treatment duration was three months, with a six-month follow-up. These findings suggest DOACs may offer superior efficacy in reducing mortality and thrombotic complications in UEDVT, though with an increased bleeding risk. Limitations include reliance on historical LMWH comparisons, heterogeneity in study designs, and small event counts for PE. Standardized imaging and extended follow-up are needed to assess long-term outcomes. While DOACs present a promising alternative, cautious use in high-bleeding-risk patients is warranted. Further randomized trials are essential to validate these results and refine clinical guidelines.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40486434/",
-      "doi": "https://doi.org/10.7759/cureus.83570"
-    },
-    {
       "pmid": "40486293",
       "title": "Isolated Pectoralis Major and Tricep Atrophy Secondary to Neuralgic Amyotrophy.",
       "authors": [
@@ -5076,6 +5714,45 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40327207/",
       "doi": "https://doi.org/10.1007/s10439-025-03733-y"
+    },
+    {
+      "pmid": "40486434",
+      "title": "Use of Direct Oral Anticoagulants in Patients With Upper Extremity Deep Vein Thrombosis: A Meta-Analysis of Efficacy and Safety.",
+      "authors": [
+        "Ayman Zyada",
+        "Ayman Fakhry",
+        "Sohiel Nagib",
+        "Omar Alnadi",
+        "Ahmed Abouelseoud",
+        "Rahma Seken",
+        "Muhammad Jabr"
+      ],
+      "journal": "Cureus",
+      "date": "2025 May 6",
+      "date_sort": "2025-05-06",
+      "abstract": "Upper extremity deep vein thrombosis (UEDVT), distinct in etiology from lower limb DVT, often arises from catheter use, malignancy, or thoracic outlet syndrome. While direct oral anticoagulants (DOACs) are established for lower limb DVT, their role in UEDVT remains understudied. This meta-analysis evaluates the efficacy and safety of DOACs compared to low-molecular-weight heparin (LMWH) in UEDVT. A systematic PubMed search identified nine studies (643 DOAC-treated patients). Outcomes included mortality, venous thromboembolism (VTE) recurrence, pulmonary embolism (PE), and major bleeding. DOACs demonstrated significantly lower mortality (2.49% vs. 16.5-27.5%; p<0.001), VTE recurrence (0.93% vs. 5%; p<0.001), and PE incidence (0.31% vs. 5-8%; p<0.001) compared to historical LMWH data. However, major bleeding rates were higher with DOACs (2.02% vs. 0.25%; p<0.001). Patient cohorts predominantly had cancer-related (66.7%) or catheter-associated (64.5%) UEDVT, with rivaroxaban being the most used DOAC (70.9%). Median treatment duration was three months, with a six-month follow-up. These findings suggest DOACs may offer superior efficacy in reducing mortality and thrombotic complications in UEDVT, though with an increased bleeding risk. Limitations include reliance on historical LMWH comparisons, heterogeneity in study designs, and small event counts for PE. Standardized imaging and extended follow-up are needed to assess long-term outcomes. While DOACs present a promising alternative, cautious use in high-bleeding-risk patients is warranted. Further randomized trials are essential to validate these results and refine clinical guidelines.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40486434/",
+      "doi": "https://doi.org/10.7759/cureus.83570"
+    },
+    {
+      "pmid": "40339958",
+      "title": "Percutaneous Transluminal Venous Angioplasty for Neurogenic Thoracic Outlet Syndrome.",
+      "authors": [
+        "Jenny N Wang",
+        "Meghan He",
+        "Snehal Bindra",
+        "Lauren E Jones",
+        "John Blebea",
+        "Samuel S Ahn"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2025 May 6",
+      "date_sort": "2025-05-06",
+      "abstract": "BACKGROUND: To characterize the effects of percutaneous transluminal venous angioplasty (PTVA) on relieving the symptoms of neurogenic thoracic outlet syndrome (nTOS). METHODS: Charts of 1,194 consecutive nTOS patients from 2010 to 2019 were analyzed. A total of 887 patients found adequate relief with conservative physical therapy, whereas 307 patients failed physical therapy and underwent diagnostic venography. Of these 307 patients, 291 (mean age 51 years, 72% female, 28% male) were found to have significant venous stenosis and were treated with PTVA. The mean follow-up period for all subjects was 19 ± 27 months (median = 13 months). RESULTS: Following PTVA, 173 (59%) reported initial symptomatic improvement, 60 (21%) no change, 52 (18%) worsened symptoms, and 6 (2%) were lost to follow-up. Furthermore, of the total 291 PTVA patients, 143 (49%) required no subsequent treatment, 48 (17%) had additional endovascular PTVA intervention, 93 (32%) eventually underwent open surgery, and 6 (2%) were lost to follow-up. Complications were seen in only one patient (0.3%) who had brief asymptomatic ventricular tachycardia in the recovery room. Overall, of the 285 patients treated with PTVA, 198 (69%) avoided open surgery. CONCLUSION: PTVA appears to be safe and effective treatment for nTOS. PTVA reduced the need for open surgical decompression in over two-thirds of patients, and thus should be considered before surgical intervention.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40339958/",
+      "doi": "https://doi.org/10.1016/j.avsg.2025.04.129"
     },
     {
       "pmid": "40402064",
@@ -5136,6 +5813,22 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1002/14651858.CD006839.pub5"
     },
     {
+      "pmid": "40288526",
+      "title": "Median Nerve Compression by the Ligament of Struthers: Clinical Image.",
+      "authors": [
+        "G C W de Ruiter",
+        "M Wesstein",
+        "A Kurvers"
+      ],
+      "journal": "World neurosurgery",
+      "date": "2025 Apr 25",
+      "date_sort": "2025-04-25",
+      "abstract": "In case of weakness of finger flexors and/or persistence of symptoms after carpal tunnel release, a more proximal compression site of the median nerve should be considered. In this report we present a case of compression by a ligament of Struthers. It was detected with ultrasound, which showed a clear thickening of the nerve at the site of a bony spur on the humerus, which was confirmed with magnetic resonance imaging. Surgical decompression resulted in partial recovery of weakness. This case shows the added value of ultrasound in the detection of more proximal median nerve compression such as a ligament of Struthers.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40288526/",
+      "doi": "https://doi.org/10.1016/j.wneu.2025.124003"
+    },
+    {
       "pmid": "40577104",
       "title": "Lipofibromatous Hamartoma of the Median Nerve in a Child.",
       "authors": [
@@ -5153,22 +5846,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40577104/",
       "doi": "https://doi.org/10.1097/SAP.0000000000004375"
-    },
-    {
-      "pmid": "40288526",
-      "title": "Median Nerve Compression by the Ligament of Struthers: Clinical Image.",
-      "authors": [
-        "G C W de Ruiter",
-        "M Wesstein",
-        "A Kurvers"
-      ],
-      "journal": "World neurosurgery",
-      "date": "2025 Apr 25",
-      "date_sort": "2025-04-25",
-      "abstract": "In case of weakness of finger flexors and/or persistence of symptoms after carpal tunnel release, a more proximal compression site of the median nerve should be considered. In this report we present a case of compression by a ligament of Struthers. It was detected with ultrasound, which showed a clear thickening of the nerve at the site of a bony spur on the humerus, which was confirmed with magnetic resonance imaging. Surgical decompression resulted in partial recovery of weakness. This case shows the added value of ultrasound in the detection of more proximal median nerve compression such as a ligament of Struthers.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40288526/",
-      "doi": "https://doi.org/10.1016/j.wneu.2025.124003"
     },
     {
       "pmid": "40270459",
@@ -5262,22 +5939,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3390/diagnostics15081008"
     },
     {
-      "pmid": "40239764",
-      "title": "Can Vascular Flow Change During Provocation Maneuvers Predict Surgical Failure in Neurogenic Thoracic Outlet Syndrome?",
-      "authors": [
-        "Ji Sup Hwang",
-        "Changhyon Lee",
-        "Jihyeung Kim"
-      ],
-      "journal": "Annals of vascular surgery",
-      "date": "2025 Apr 14",
-      "date_sort": "2025-04-14",
-      "abstract": "BACKGROUND: The need for simultaneous first rib resection during supraclavicular scalenectomy in patients with neurogenic thoracic outlet syndrome (NTOS) remains controversial. We have routinely evaluated vascular flow changes during provocation maneuvers through digital photoplethysmography. We asked whether the vascular flow change during provocation maneuvers can predict surgical failure after isolated supraclavicular scalenectomy for NTOS. METHODS: For 50 patients (mean age of 42.0 ± 16.5 years) who underwent supraclavicular scalenectomy for NTOS, we evaluated vascular flow change through digital photoplethysmography during several provocation maneuvers including Roos test, costoclavicular maneuver, and Adson maneuver before surgery. We calculated the adjusted odds ratio (OR) for surgical failure in association with the vascular flow change during each maneuvers with age, symptom duration, electrodiagnostic study findings, and the number of visible vertebrae as covariates. RESULTS: Compared to the resting position, mean vascular flow during Roos test, costoclavicular maneuver, and Adson maneuver was 46.0 ± 51.3%, 42.9 ± 48.2%, and 85.4 ± 64.1%, respectively. Twelve patients (24%) were classified into surgical failure, and symptom duration (adjusted OR = 1.04, P = 0.04) and absent vascular flow during costoclavicular maneuver (adjusted OR = 23.30, P = 0.01) were significantly associated with failure. CONCLUSION: A quantitative evaluation of the vascular flow changes that occur during provocation maneuvers can aid not only the diagnosis of NTOS but also help determine the optimal surgical treatment. In particular, if patients show absent blood flow during the costoclavicular maneuver, simultaneous scalenectomy and first rib resection should be considered.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40239764/",
-      "doi": "https://doi.org/10.1016/j.avsg.2025.03.024"
-    },
-    {
       "pmid": "40353276",
       "title": "Posttraumatic Neurogenic Thoracic Outlet Syndrome and Immediate Effects of Decompressive Surgery: A Case Report.",
       "authors": [
@@ -5307,6 +5968,22 @@ window.pubmedArticles = {
       "article_type": "Comparative Study",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40239766/",
       "doi": "https://doi.org/10.1016/j.avsg.2025.03.032"
+    },
+    {
+      "pmid": "40239764",
+      "title": "Can Vascular Flow Change During Provocation Maneuvers Predict Surgical Failure in Neurogenic Thoracic Outlet Syndrome?",
+      "authors": [
+        "Ji Sup Hwang",
+        "Changhyon Lee",
+        "Jihyeung Kim"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2025 Apr 14",
+      "date_sort": "2025-04-14",
+      "abstract": "BACKGROUND: The need for simultaneous first rib resection during supraclavicular scalenectomy in patients with neurogenic thoracic outlet syndrome (NTOS) remains controversial. We have routinely evaluated vascular flow changes during provocation maneuvers through digital photoplethysmography. We asked whether the vascular flow change during provocation maneuvers can predict surgical failure after isolated supraclavicular scalenectomy for NTOS. METHODS: For 50 patients (mean age of 42.0 ± 16.5 years) who underwent supraclavicular scalenectomy for NTOS, we evaluated vascular flow change through digital photoplethysmography during several provocation maneuvers including Roos test, costoclavicular maneuver, and Adson maneuver before surgery. We calculated the adjusted odds ratio (OR) for surgical failure in association with the vascular flow change during each maneuvers with age, symptom duration, electrodiagnostic study findings, and the number of visible vertebrae as covariates. RESULTS: Compared to the resting position, mean vascular flow during Roos test, costoclavicular maneuver, and Adson maneuver was 46.0 ± 51.3%, 42.9 ± 48.2%, and 85.4 ± 64.1%, respectively. Twelve patients (24%) were classified into surgical failure, and symptom duration (adjusted OR = 1.04, P = 0.04) and absent vascular flow during costoclavicular maneuver (adjusted OR = 23.30, P = 0.01) were significantly associated with failure. CONCLUSION: A quantitative evaluation of the vascular flow changes that occur during provocation maneuvers can aid not only the diagnosis of NTOS but also help determine the optimal surgical treatment. In particular, if patients show absent blood flow during the costoclavicular maneuver, simultaneous scalenectomy and first rib resection should be considered.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40239764/",
+      "doi": "https://doi.org/10.1016/j.avsg.2025.03.024"
     },
     {
       "pmid": "40228620",
@@ -5348,24 +6025,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/15589447251331103"
     },
     {
-      "pmid": "40202307",
-      "title": "Brachial Plexus Lipoma Causing Neurological Impairment: A Case Series and Systematic Review.",
-      "authors": [
-        "Nathaniel B Dusseau",
-        "Adham M Khalafallah",
-        "Kyle Y Xu",
-        "S Shelby Burks",
-        "Allan D Levi"
-      ],
-      "journal": "Neurosurgery",
-      "date": "2025 Apr 9",
-      "date_sort": "2025-04-09",
-      "abstract": "BACKGROUND AND OBJECTIVES: Lipomas are benign adipocyte tumors that typically present as painless, firm nodules. In rare cases, lipomas may grow near the brachial plexus (BP) and compress various peripheral nerves. This can manifest as upper extremity motor and/or sensory deficits, numbness, tingling, or burning sensations. Surgical intervention of a brachial plexus lipoma (BPL) may be challenging because of variability in location and size. This study reviews previously reported cases of BPL causing neurological impairment and presents 5 additional cases, focusing on operative details and patient outcomes. METHODS: A systematic review of PubMed, Scopus, and World of Science was performed to identify all previously reported cases of BP lipomas resulting in neurological deficit. A retrospective review of a neurosurgeon's prospectively collected database was conducted to identify all patients operated on for BPL. Patient demographics, tumor characteristics, presentation, surgical notes, and outcomes were collected for both reviews. RESULTS: Our literature review yielded 13 articles presenting at least one case meeting the eligibility criteria, resulting in 22 eligible patients. The surgeon's database provided an additional 5 patients meeting the criteria. Of the 27 total cases, 15 were men and 12 were women. The average age was 46.5 with a range of 25 to 70. All patients had upper extremity motor and/or sensory dysfunction preoperatively. Tumors were found in various regions, with the involvement of the supraclavicular fossa reported in 52% of cases. Gross tumor resection was achieved in all but 2 of the 27 operations. Four patients had a nonconventional lipoma type on histology. Sixteen patients experienced complete resolution of neurological symptoms. CONCLUSION: BP lipomas are rare but can cause a wide range of neurological symptoms depending on their size and location. A thorough patient examination and imaging studies are essential for creating a successful surgical plan for tumor resection.",
-      "article_type": "Systematic Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40202307/",
-      "doi": "https://doi.org/10.1227/neu.0000000000003432"
-    },
-    {
       "pmid": "40488182",
       "title": "Single-center experience in hybrid approach for subclavian vein effort thrombosis.",
       "authors": [
@@ -5383,6 +6042,24 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40488182/",
       "doi": "https://doi.org/10.1016/j.jvscit.2025.101797"
+    },
+    {
+      "pmid": "40202307",
+      "title": "Brachial Plexus Lipoma Causing Neurological Impairment: A Case Series and Systematic Review.",
+      "authors": [
+        "Nathaniel B Dusseau",
+        "Adham M Khalafallah",
+        "Kyle Y Xu",
+        "S Shelby Burks",
+        "Allan D Levi"
+      ],
+      "journal": "Neurosurgery",
+      "date": "2025 Apr 9",
+      "date_sort": "2025-04-09",
+      "abstract": "BACKGROUND AND OBJECTIVES: Lipomas are benign adipocyte tumors that typically present as painless, firm nodules. In rare cases, lipomas may grow near the brachial plexus (BP) and compress various peripheral nerves. This can manifest as upper extremity motor and/or sensory deficits, numbness, tingling, or burning sensations. Surgical intervention of a brachial plexus lipoma (BPL) may be challenging because of variability in location and size. This study reviews previously reported cases of BPL causing neurological impairment and presents 5 additional cases, focusing on operative details and patient outcomes. METHODS: A systematic review of PubMed, Scopus, and World of Science was performed to identify all previously reported cases of BP lipomas resulting in neurological deficit. A retrospective review of a neurosurgeon's prospectively collected database was conducted to identify all patients operated on for BPL. Patient demographics, tumor characteristics, presentation, surgical notes, and outcomes were collected for both reviews. RESULTS: Our literature review yielded 13 articles presenting at least one case meeting the eligibility criteria, resulting in 22 eligible patients. The surgeon's database provided an additional 5 patients meeting the criteria. Of the 27 total cases, 15 were men and 12 were women. The average age was 46.5 with a range of 25 to 70. All patients had upper extremity motor and/or sensory dysfunction preoperatively. Tumors were found in various regions, with the involvement of the supraclavicular fossa reported in 52% of cases. Gross tumor resection was achieved in all but 2 of the 27 operations. Four patients had a nonconventional lipoma type on histology. Sixteen patients experienced complete resolution of neurological symptoms. CONCLUSION: BP lipomas are rare but can cause a wide range of neurological symptoms depending on their size and location. A thorough patient examination and imaging studies are essential for creating a successful surgical plan for tumor resection.",
+      "article_type": "Systematic Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40202307/",
+      "doi": "https://doi.org/10.1227/neu.0000000000003432"
     },
     {
       "pmid": "40198385",
@@ -5418,22 +6095,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1007/s11748-025-02140-3"
     },
     {
-      "pmid": "40330415",
-      "title": "Lipomatous Mass Effect on the Brachial Plexus: A Case Report.",
-      "authors": [
-        "Adrian O Campos",
-        "Daniel Blatt",
-        "Rehan Zahid"
-      ],
-      "journal": "Cureus",
-      "date": "2025 Apr 5",
-      "date_sort": "2025-04-05",
-      "abstract": "Peripheral nerve compression is a prevalent concern for primary care physicians and hand surgeons, with carpal tunnel syndrome (CTS) and median nerve compression at the wrist being some of the most commonly diagnosed conditions. However, for less common nerve entrapment syndromes, it is crucial for healthcare providers to recognize their symptoms and consider potential underlying issues, particularly those related to the brachial plexus. This case report highlights a 57-year-old male who presented with classic symptoms of left median and ulnar nerve compression in the setting of an enlarging left axillary mass. The patient, a right-hand-dominant male, reported numbness and tingling in the left ulnar-sided digits, as well as weakness in small and ring finger flexion, which began after a fall onto his elbow and outstretched hand a year prior. Initially, the patient experienced significant numbness, tingling, and pain radiating up to the shoulder. Weakness in hand grip, especially affecting the small and ring fingers, and thumb abduction and opposition were also noted. The patient reported transient symptomatic relief with shoulder abduction. Over time, his median nerve compression symptoms improved, with only mild residual tingling noted with shoulder adduction and compression of the axillary mass. However, his ulnar nerve compression symptoms showed minimal improvement despite occupational therapy. The patient had a history of a left axillary lipoma identified five years earlier, which had not been surgically treated, aside from an incisional biopsy that confirmed the pathology. Upon examination, the patient presented with a 7 cm × 10 cm, well-circumscribed, deeply adherent mass in the left axilla. Clinical findings included a positive Wartenberg's sign of the left small finger, decreased strength in small and ring finger flexion compared to the right, and impaired two-point discrimination of the small and ring fingers. A positive Tinel's sign was noted at the left cubital tunnel, while the carpal tunnel and Guyon's canal were negative. Electromyography revealed left-sided ulnar and median nerve compression at the cubital tunnel and carpal tunnel, but could not exclude brachial plexopathy. MRI of the left brachial plexus revealed the lipoma exerting mass effect on the brachial plexus cords and branches, as well as the left axillary vasculature. Surgical intervention involved excision of the left axillary lipoma, brachial plexus exploration and neurolysis, and cubital tunnel release with anterior transposition. Three lipomatous masses were identified, intertwined with the brachial plexus divisions and cords and the axillary vasculature. Meticulous dissection with 3.5× loupe magnification was performed to decompress the brachial plexus. At the six-month follow-up, the patient's symptoms had completely resolved, and he returned to full activity. This case underscores the importance of evaluating and ruling out brachial plexus pathology in patients presenting with peripheral nerve compression symptoms.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40330415/",
-      "doi": "https://doi.org/10.7759/cureus.81751"
-    },
-    {
       "pmid": "40186607",
       "title": "Atraumatic Disorders of the Pediatric Spinal Cord and Brachial Plexus.",
       "authors": [
@@ -5450,23 +6111,20 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jhsa.2025.02.006"
     },
     {
-      "pmid": "40101358",
-      "title": "Extreme variability of vascular responses to slightly different abduction angles during abduction and external rotation tests, in patients with suspected thoracic outlet syndrome.",
+      "pmid": "40330415",
+      "title": "Lipomatous Mass Effect on the Brachial Plexus: A Case Report.",
       "authors": [
-        "Simon Lecoq",
-        "Quentin Petit",
-        "Nathan Cronier",
-        "Samir Henni",
-        "Benedicte Noury",
-        "Pierre Abraham"
+        "Adrian O Campos",
+        "Daniel Blatt",
+        "Rehan Zahid"
       ],
-      "journal": "Physiological measurement",
-      "date": "2025 Apr 4",
-      "date_sort": "2025-04-04",
-      "abstract": "Objective.Patients may not always perform a perfect 90° upper limb abduction when doing an abduction, external rotation test for the evaluation of thoracic outlet syndrome (TOS). We aimed to study the vascular responses to three slightly different abduction angles.Approach.We recorded fingertip arterial (A-PPG) and forearm venous (V-PPG) photo-plethysmography in 111 patients referred for suspicion or follow up of TOS. The measurements were made bilaterally during a 30 s surrender position, followed by moving elbows in the frontal plane without changing elbow and hand level to open the costo-clavicular angle (prayer position) to standardize venous results, either: slightly below (<90°), at the same level of (∼90°), or slightly above (>90°) the shoulder level, in a random order.Main results.With abnormal results defined as A-PPG <5%rest and V-PPG < 70%max in the surrender position, 54 of the 222 upper limbs were normal at all three tests. The proportion of abnormal tests decreased with the increase in abduction angle (CochranQ< 0.05), 135 upper limbs showed impaired venous outflow for one (n= 74), two (n= 47) or the three angles (n= 14) without arterial inflow impairment at any of the three tests.Significance.Slight changes from a 'perfect' 90° abduction angle gave unreliable results during elevation, abduction, external rotation stress tests. A venous outflow impairment should probably be considered a physiologic response at <90° abduction.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40101358/",
-      "doi": "https://doi.org/10.1088/1361-6579/adc239"
+      "journal": "Cureus",
+      "date": "2025 Apr 5",
+      "date_sort": "2025-04-05",
+      "abstract": "Peripheral nerve compression is a prevalent concern for primary care physicians and hand surgeons, with carpal tunnel syndrome (CTS) and median nerve compression at the wrist being some of the most commonly diagnosed conditions. However, for less common nerve entrapment syndromes, it is crucial for healthcare providers to recognize their symptoms and consider potential underlying issues, particularly those related to the brachial plexus. This case report highlights a 57-year-old male who presented with classic symptoms of left median and ulnar nerve compression in the setting of an enlarging left axillary mass. The patient, a right-hand-dominant male, reported numbness and tingling in the left ulnar-sided digits, as well as weakness in small and ring finger flexion, which began after a fall onto his elbow and outstretched hand a year prior. Initially, the patient experienced significant numbness, tingling, and pain radiating up to the shoulder. Weakness in hand grip, especially affecting the small and ring fingers, and thumb abduction and opposition were also noted. The patient reported transient symptomatic relief with shoulder abduction. Over time, his median nerve compression symptoms improved, with only mild residual tingling noted with shoulder adduction and compression of the axillary mass. However, his ulnar nerve compression symptoms showed minimal improvement despite occupational therapy. The patient had a history of a left axillary lipoma identified five years earlier, which had not been surgically treated, aside from an incisional biopsy that confirmed the pathology. Upon examination, the patient presented with a 7 cm × 10 cm, well-circumscribed, deeply adherent mass in the left axilla. Clinical findings included a positive Wartenberg's sign of the left small finger, decreased strength in small and ring finger flexion compared to the right, and impaired two-point discrimination of the small and ring fingers. A positive Tinel's sign was noted at the left cubital tunnel, while the carpal tunnel and Guyon's canal were negative. Electromyography revealed left-sided ulnar and median nerve compression at the cubital tunnel and carpal tunnel, but could not exclude brachial plexopathy. MRI of the left brachial plexus revealed the lipoma exerting mass effect on the brachial plexus cords and branches, as well as the left axillary vasculature. Surgical intervention involved excision of the left axillary lipoma, brachial plexus exploration and neurolysis, and cubital tunnel release with anterior transposition. Three lipomatous masses were identified, intertwined with the brachial plexus divisions and cords and the axillary vasculature. Meticulous dissection with 3.5× loupe magnification was performed to decompress the brachial plexus. At the six-month follow-up, the patient's symptoms had completely resolved, and he returned to full activity. This case underscores the importance of evaluating and ruling out brachial plexus pathology in patients presenting with peripheral nerve compression symptoms.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40330415/",
+      "doi": "https://doi.org/10.7759/cureus.81751"
     },
     {
       "pmid": "40230826",
@@ -5586,6 +6244,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/02841851251327896"
     },
     {
+      "pmid": "40147766",
+      "title": "Ultrasound-guided radial nerve release for lateral intermuscular septum syndrome.",
+      "authors": [
+        "Thomas Apard",
+        "Vincent Martinel"
+      ],
+      "journal": "Hand surgery & rehabilitation",
+      "date": "2025 Mar 25",
+      "date_sort": "2025-03-25",
+      "abstract": "Radial nerve entrapment at the lateral intermuscular septum in the distal upper arm can cause debilitating pain and functional impairment. The nerve passes from the dorsal to the volar compartment through the LIS, approximately 8-10 cm proximal to the lateral epicondyle, making it susceptible to compression. Clinical signs include wrist drop, localized pain, and weakness in wrist and finger extension, often seen in manual laborers and athletes. A minimally invasive, ultrasound-guided, percutaneous technique using local anesthesia and no tourniquet allows precise nerve decompression while preserving function. Hydrodissection under Doppler ultrasound ensures safety and avoids complications such as nerve palsy. This approach minimizes tissue disruption compared to traditional open decompression. Despite promising results, the technique remains under-researched, with no large-scale clinical trials available. Prospective studies with long-term follow-up are essential to establish the efficacy of this innovative, patient-centered technique.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40147766/",
+      "doi": "https://doi.org/10.1016/j.hansur.2025.102131"
+    },
+    {
       "pmid": "40132943",
       "title": "Identifying and treating pectoralis minor syndrome in women with breast hypertrophy, poor posture and diffuse shoulder symptoms.",
       "authors": [
@@ -5601,21 +6274,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40132943/",
       "doi": "https://doi.org/10.1136/bcr-2024-262148"
-    },
-    {
-      "pmid": "40147766",
-      "title": "Ultrasound-guided radial nerve release for lateral intermuscular septum syndrome.",
-      "authors": [
-        "Thomas Apard",
-        "Vincent Martinel"
-      ],
-      "journal": "Hand surgery & rehabilitation",
-      "date": "2025 Mar 25",
-      "date_sort": "2025-03-25",
-      "abstract": "Radial nerve entrapment at the lateral intermuscular septum in the distal upper arm can cause debilitating pain and functional impairment. The nerve passes from the dorsal to the volar compartment through the LIS, approximately 8-10 cm proximal to the lateral epicondyle, making it susceptible to compression. Clinical signs include wrist drop, localized pain, and weakness in wrist and finger extension, often seen in manual laborers and athletes. A minimally invasive, ultrasound-guided, percutaneous technique using local anesthesia and no tourniquet allows precise nerve decompression while preserving function. Hydrodissection under Doppler ultrasound ensures safety and avoids complications such as nerve palsy. This approach minimizes tissue disruption compared to traditional open decompression. Despite promising results, the technique remains under-researched, with no large-scale clinical trials available. Prospective studies with long-term follow-up are essential to establish the efficacy of this innovative, patient-centered technique.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40147766/",
-      "doi": "https://doi.org/10.1016/j.hansur.2025.102131"
     },
     {
       "pmid": "40127092",
@@ -5684,42 +6342,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.5397/cise.2024.00717"
     },
     {
-      "pmid": "40098001",
-      "title": "Ulnar nerve double crush by entrapment of a peri-cubital tunnel ganglion cyst and cubital tunnel: a case report.",
-      "authors": [
-        "Gaoming Gong",
-        "Leining Wang",
-        "Jinhao Zhang",
-        "Zhihui Huang",
-        "Yulong Wang",
-        "Kunpeng Song"
-      ],
-      "journal": "BMC musculoskeletal disorders",
-      "date": "2025 Mar 17",
-      "date_sort": "2025-03-17",
-      "abstract": "BACKGROUND: Double crush syndrome (DCS) is a relatively rare nerve compression syndrome among peripheral nerve compression diseases. However, ulnar nerve double entrapment caused by peri-cubital tunnel ganglion cysts has been rarely reported. CASE PRESENTATION: Here, we present a case of a 54-year-old woman who experienced occasional pain, numbness and paralysis in her right half hand for 1 year. A B-ultrasound of the right elbow initially revealed cubital tunnel syndrome only. Further Magnetic Resonance Imaging (MRI) showed a ganglion cyst near the cubital tunnel. After evaluation, we performed open surgery to excise the cyst and incise the cubital tunnel, completely decompressing the ulnar nerve entrapment. Ulnar nerve anterior transposition was also performed simultaneously. CONCLUSIONS: The patient was followed up for 1 month, and she experienced a complete recovery with no functional limitations. CLINICAL TRIAL NUMBER: Not applicable.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40098001/",
-      "doi": "https://doi.org/10.1186/s12891-025-08526-x"
-    },
-    {
-      "pmid": "40091850",
-      "title": "Ultrasound examination following a suboptimal thoracic outlet syndrome surgery.",
-      "authors": [
-        "Alpaslan Fatih Kaynar",
-        "Abdullah Emre Uğur",
-        "Beytullah Yazar",
-        "Levent Özçakar"
-      ],
-      "journal": "PM & R : the journal of injury, function, and rehabilitation",
-      "date": "2025 Mar 17",
-      "date_sort": "2025-03-17",
-      "abstract": "",
-      "article_type": "Letter",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40091850/",
-      "doi": "https://doi.org/10.1002/pmrj.13375"
-    },
-    {
       "pmid": "40107349",
       "title": "Improving Short-Term Outcomes of Cubital Tunnel Syndrome Decompression with Intraoperative Dexamethasone.",
       "authors": [
@@ -5741,6 +6363,25 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.wneu.2025.123885"
     },
     {
+      "pmid": "40098001",
+      "title": "Ulnar nerve double crush by entrapment of a peri-cubital tunnel ganglion cyst and cubital tunnel: a case report.",
+      "authors": [
+        "Gaoming Gong",
+        "Leining Wang",
+        "Jinhao Zhang",
+        "Zhihui Huang",
+        "Yulong Wang",
+        "Kunpeng Song"
+      ],
+      "journal": "BMC musculoskeletal disorders",
+      "date": "2025 Mar 17",
+      "date_sort": "2025-03-17",
+      "abstract": "BACKGROUND: Double crush syndrome (DCS) is a relatively rare nerve compression syndrome among peripheral nerve compression diseases. However, ulnar nerve double entrapment caused by peri-cubital tunnel ganglion cysts has been rarely reported. CASE PRESENTATION: Here, we present a case of a 54-year-old woman who experienced occasional pain, numbness and paralysis in her right half hand for 1 year. A B-ultrasound of the right elbow initially revealed cubital tunnel syndrome only. Further Magnetic Resonance Imaging (MRI) showed a ganglion cyst near the cubital tunnel. After evaluation, we performed open surgery to excise the cyst and incise the cubital tunnel, completely decompressing the ulnar nerve entrapment. Ulnar nerve anterior transposition was also performed simultaneously. CONCLUSIONS: The patient was followed up for 1 month, and she experienced a complete recovery with no functional limitations. CLINICAL TRIAL NUMBER: Not applicable.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40098001/",
+      "doi": "https://doi.org/10.1186/s12891-025-08526-x"
+    },
+    {
       "pmid": "40095070",
       "title": "Single incision surgical approach for the release of lacertus syndrome and cubital tunnel syndrome.",
       "authors": [
@@ -5754,24 +6395,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40095070/",
       "doi": "https://doi.org/10.1007/s00264-025-06494-4"
-    },
-    {
-      "pmid": "40107194",
-      "title": "The medial antebrachial cutaneous nerve in thoracic outlet syndrome: A systematic review and meta-analysis.",
-      "authors": [
-        "Andrea Shehaj",
-        "Shareef Shaheen",
-        "Kimberly Kray",
-        "Junjia Zhu",
-        "Elias Rizk"
-      ],
-      "journal": "Clinical neurology and neurosurgery",
-      "date": "2025 Mar 16",
-      "date_sort": "2025-03-16",
-      "abstract": "OBJECTIVE: This systematic review aims to evaluate the existing literature to ascertain the utility of MABC in diagnosing TOS and the prognosis of TOS patients who have undergone surgical intervention. By synthesizing the available evidence regarding MABC's role in this patient population, this review seeks to enhance risk stratification and inform treatment decisions. METHODS: A systematic review was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) Statement for Reporting Systematic Reviews. Medline/Pubmed, Embase/Scopus, and Web of Science databases were queried for potential studies using the terms (\"Medial antebrachial cutaneous nerve\" AND \"Thoracic Outlet Syndrome\"). Inclusion criteria were studies published in peer-reviewed journals discussing the utilization of medial antebrachial cutaneous nerve conduction studies in the diagnosis and/or prognosis of Thoracic Outlet Syndrome. RESULTS: A systematic literature review yielded 10 manuscripts, which were included after a full-text review. We determined 137 symptomatic TOS limbs. Overall, 93 % and 84 % of TOS patients presented with sensory abnormalities and weakness, respectively. Overall, 92 % of patients had an abnormal MABC nerve amplitude prior to surgery. The overall effect size (Hedges g) for the meta-analysis of four studies was 1.80 with a 95 % confidence interval of (0.63; 2.97). Analyzing surgical outcomes, the compiled data indicate an overall improvement rate of 87 % in some sensory and/or motor functions. CONCLUSIONS: Our review demonstrates the utility of MABC as a diagnostic tool. Furthermore, we emphasize the positive response expected from surgical intervention, highlighting that more studies are needed to determine the utility of MABC as a surgical outcomes prognostic tool.",
-      "article_type": "Meta-Analysis",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40107194/",
-      "doi": "https://doi.org/10.1016/j.clineuro.2025.108842"
     },
     {
       "pmid": "40088430",
@@ -5789,6 +6412,29 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40088430/",
       "doi": "https://doi.org/10.1002/jor.26068"
+    },
+    {
+      "pmid": "40094077",
+      "title": "Arthroscopic Pectoralis Minor Release and Infraclavicular Brachial Plexus Decompression for Neurogenic Thoracic Outlet Syndrome: A Novel Treatment for an Old Problem.",
+      "authors": [
+        "Eric R Wagner",
+        "Thomas J McQuillan",
+        "Oluwakorede Omole",
+        "Sameer R Khawaja",
+        "Kevin R Cuneo",
+        "Zaamin B Hussain",
+        "Hayden L Cooke",
+        "Krishna N Chopra",
+        "Michael B Gottschalk",
+        "Robert L Bowers"
+      ],
+      "journal": "JB & JS open access",
+      "date": "2025 Mar 14",
+      "date_sort": "2025-03-14",
+      "abstract": "BACKGROUND: Neurogenic thoracic outlet syndrome (nTOS) of infraclavicular etiology is a complex condition involving the compression of the brachial plexus through the interscalene triangle and costoclavicular, infraclavicular, and pectoralis minor space. New insight into nTOS of infraclavicular etiology and its association with scapular dyskinesia has enabled minimally invasive treatments: endoscopic pectoralis minor release (PMR) and infraclavicular brachial plexus neurolysis. The purpose of this study was to analyze clinical outcomes of this technique compared with historically published outcomes for open first rib resection (FRR) and/or scalenectomy. METHODS: All patients who underwent endoscopic surgical decompression for nTOS of infraclavicular etiology were retrospectively reviewed at a single institution. Surgical treatment included endoscopic PMR, subclavius release, and neurolysis of the infraclavicular brachial plexus. Patient-reported outcomes were collected prospectively and compared with prior research on FRR and scalenectomy. A subgroup analysis was performed on patients with prior open FRR or anterior cervical discectomy and fusion (ACDF). RESULTS: Fifty-eight shoulders among 55 patients were included, with an average follow-up of 25.8 months (range: 12-52). Patients showed significant improvement in visual analog scale pain (7.0-2.1) and single alpha-numeric evaluation scores (37% to 84%). Overall, 90% of patients experienced good or excellent outcomes according to the Derkash classification. There were no major complications and only 2 minor ones (one wound infection and one case of adhesive capsulitis). Satisfaction and Derkash scores among patients undergoing endoscopic surgery were comparable with previously published studies on open FRR and scalenectomy, with lower rates of major complications and equivalent or improved clinical outcomes. Patients with prior ACDF or open FRR had worse postoperative American Shoulder and Elbow Surgeons; Quick Disabilities of the Arm, Shoulder, and Hand; and Derkash scores than the subgroup with no prior intervention. CONCLUSIONS: Endoscopic PMR and infraclavicular brachial plexus decompression is a viable and effective treatment option for nTOS of infraclavicular etiology driven by the pectoralis minor and associated scapular girdle dyskinesia. This cohort demonstrates improvements in clinical outcomes comparable with open scalenectomy and FRR with high patient satisfaction and no major neurologic, vascular, or thoracic complications. LEVEL OF EVIDENCE: Therapeutic Level IV-Case Series. See Instructions for Authors for a complete description of levels of evidence.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40094077/",
+      "doi": "https://doi.org/10.2106/JBJS.OA.24.00203"
     },
     {
       "pmid": "40082299",
@@ -5824,29 +6470,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40082300/",
       "doi": "https://doi.org/10.1007/s00264-025-06465-9"
-    },
-    {
-      "pmid": "40094077",
-      "title": "Arthroscopic Pectoralis Minor Release and Infraclavicular Brachial Plexus Decompression for Neurogenic Thoracic Outlet Syndrome: A Novel Treatment for an Old Problem.",
-      "authors": [
-        "Eric R Wagner",
-        "Thomas J McQuillan",
-        "Oluwakorede Omole",
-        "Sameer R Khawaja",
-        "Kevin R Cuneo",
-        "Zaamin B Hussain",
-        "Hayden L Cooke",
-        "Krishna N Chopra",
-        "Michael B Gottschalk",
-        "Robert L Bowers"
-      ],
-      "journal": "JB & JS open access",
-      "date": "2025 Mar 14",
-      "date_sort": "2025-03-14",
-      "abstract": "BACKGROUND: Neurogenic thoracic outlet syndrome (nTOS) of infraclavicular etiology is a complex condition involving the compression of the brachial plexus through the interscalene triangle and costoclavicular, infraclavicular, and pectoralis minor space. New insight into nTOS of infraclavicular etiology and its association with scapular dyskinesia has enabled minimally invasive treatments: endoscopic pectoralis minor release (PMR) and infraclavicular brachial plexus neurolysis. The purpose of this study was to analyze clinical outcomes of this technique compared with historically published outcomes for open first rib resection (FRR) and/or scalenectomy. METHODS: All patients who underwent endoscopic surgical decompression for nTOS of infraclavicular etiology were retrospectively reviewed at a single institution. Surgical treatment included endoscopic PMR, subclavius release, and neurolysis of the infraclavicular brachial plexus. Patient-reported outcomes were collected prospectively and compared with prior research on FRR and scalenectomy. A subgroup analysis was performed on patients with prior open FRR or anterior cervical discectomy and fusion (ACDF). RESULTS: Fifty-eight shoulders among 55 patients were included, with an average follow-up of 25.8 months (range: 12-52). Patients showed significant improvement in visual analog scale pain (7.0-2.1) and single alpha-numeric evaluation scores (37% to 84%). Overall, 90% of patients experienced good or excellent outcomes according to the Derkash classification. There were no major complications and only 2 minor ones (one wound infection and one case of adhesive capsulitis). Satisfaction and Derkash scores among patients undergoing endoscopic surgery were comparable with previously published studies on open FRR and scalenectomy, with lower rates of major complications and equivalent or improved clinical outcomes. Patients with prior ACDF or open FRR had worse postoperative American Shoulder and Elbow Surgeons; Quick Disabilities of the Arm, Shoulder, and Hand; and Derkash scores than the subgroup with no prior intervention. CONCLUSIONS: Endoscopic PMR and infraclavicular brachial plexus decompression is a viable and effective treatment option for nTOS of infraclavicular etiology driven by the pectoralis minor and associated scapular girdle dyskinesia. This cohort demonstrates improvements in clinical outcomes comparable with open scalenectomy and FRR with high patient satisfaction and no major neurologic, vascular, or thoracic complications. LEVEL OF EVIDENCE: Therapeutic Level IV-Case Series. See Instructions for Authors for a complete description of levels of evidence.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40094077/",
-      "doi": "https://doi.org/10.2106/JBJS.OA.24.00203"
     },
     {
       "pmid": "40067139",
@@ -5897,25 +6520,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3390/jcm14051769"
     },
     {
-      "pmid": "40038769",
-      "title": "Application feasibility of virtual models and computational fluid dynamics for the planning and evaluation of aortic repair surgery for Williams syndrome.",
-      "authors": [
-        "Jixiang Liang",
-        "Xuewei Fang",
-        "Dianyuan Li",
-        "Guangyu Pan",
-        "Gen Zhang",
-        "Bingheng Lu"
-      ],
-      "journal": "Journal of cardiothoracic surgery",
-      "date": "2025 Mar 4",
-      "date_sort": "2025-03-04",
-      "abstract": "BACKGROUND: Accurate diagnosis and evaluation of Williams Syndrome (WS) are essential yet challenging for effective surgical management. This study aimed to quantify the hemodynamic changes of surgical repair for WS through virtual surgery and computational fluid dynamics (CFD) for surgical guidance and postoperative evaluation. METHODS: A patient preliminarily diagnosed with WS was included in this study. 3D model alongside hemodynamic analysis was used to guide and evaluate the surgical procedure. Preoperative, predictive and postoperative models were created and analyzed using CFD. Key parameters, including blood flow velocity, pressure differences, wall shear stress, and other critical factors, were assessed to evaluate the surgery's effectiveness. RESULTS: In the hemodynamics analysis, the CFD results of predictive model and postoperative model demonstrated a high level of consistency, and showed significant differences compared to the preoperative model. The velocity at the stenosis on the aorta decreased from 5.6 m/s before the operation to 1.6 m/s in the virtual model and 1.5 m/s in the postoperative model. Surgical repair increased the proportion of outlet flow of the descending aorta (dAo) from 28.7% to 35.5%. CONCLUSIONS: Virtual surgery and CFD can predict surgical outcomes, enabling doctors to optimize and rehearse the procedure before the actual surgery. The method of predicting surgery through virtual surgery and CFD is accurate and feasible. TRIAL REGISTRATION: Registered by the Ethics Committee of Peking University International Hospital (No. IRB2019-062).",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40038769/",
-      "doi": "https://doi.org/10.1186/s13019-024-03286-6"
-    },
-    {
       "pmid": "40171366",
       "title": "Möbius Syndrome With Possible Poland Syndrome Overlap: A Case Report.",
       "authors": [
@@ -5952,18 +6556,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1007/s00264-025-06473-9"
     },
     {
-      "pmid": "40095227",
-      "title": "Comments on the Delphi Study, \"Consensus Recommendations for Neurogenic Thoracic Outlet Syndrome From the INTOS Workgroup\".",
+      "pmid": "40270175",
+      "title": "Anatomical variation of the superficial branch of the radial nerve and brachioradialis tendon: a case report with embryological and clinical insights.",
       "authors": [
-        "A Lee Dellon"
+        "Anand Verma",
+        "Seema Singh",
+        "Dibakar Borthakur",
+        "Harisha Kusuma"
       ],
-      "journal": "Microsurgery",
-      "date": "2025 Mar",
-      "date_sort": "2025-03-01",
-      "abstract": "",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40095227/",
-      "doi": "https://doi.org/10.1002/micr.70053"
+      "journal": "Folia medica",
+      "date": "2025 Feb 26",
+      "date_sort": "2025-02-26",
+      "abstract": "Anatomical variation of the peripheral nerves are important because they may have therapeutic implications. The variation of the brachioradialis muscle (BRM) and the superficial branch of the radial nerve (SBRN) was noted during a regular teaching dissection of the upper extremity of a cadaver. There was splitting of the brachioradialis tendon (BRT), and the SBRN emerged, and it eventually became cutaneous. Following that, it bifurcated and ran superficial to the extensor retinaculum and gave off digital branches. The SBRN may be compressed by the BRM/BRM tendon contraction, which may result in Wartenberg's syndrome. This anatomical variation likely results from a complex interplay of genetic factors, molecular signals, and embryological development. For the purpose of differentiating between pain and paresthesia on the dorsoradial aspect of the hand, awareness of this neuromuscular variation is clinically significant.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40270175/",
+      "doi": "https://doi.org/10.3897/folmed.67.e134607"
     },
     {
       "pmid": "40031127",
@@ -5988,42 +6595,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jbiomech.2025.112601"
     },
     {
-      "pmid": "40270175",
-      "title": "Anatomical variation of the superficial branch of the radial nerve and brachioradialis tendon: a case report with embryological and clinical insights.",
-      "authors": [
-        "Anand Verma",
-        "Seema Singh",
-        "Dibakar Borthakur",
-        "Harisha Kusuma"
-      ],
-      "journal": "Folia medica",
-      "date": "2025 Feb 26",
-      "date_sort": "2025-02-26",
-      "abstract": "Anatomical variation of the peripheral nerves are important because they may have therapeutic implications. The variation of the brachioradialis muscle (BRM) and the superficial branch of the radial nerve (SBRN) was noted during a regular teaching dissection of the upper extremity of a cadaver. There was splitting of the brachioradialis tendon (BRT), and the SBRN emerged, and it eventually became cutaneous. Following that, it bifurcated and ran superficial to the extensor retinaculum and gave off digital branches. The SBRN may be compressed by the BRM/BRM tendon contraction, which may result in Wartenberg's syndrome. This anatomical variation likely results from a complex interplay of genetic factors, molecular signals, and embryological development. For the purpose of differentiating between pain and paresthesia on the dorsoradial aspect of the hand, awareness of this neuromuscular variation is clinically significant.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40270175/",
-      "doi": "https://doi.org/10.3897/folmed.67.e134607"
-    },
-    {
-      "pmid": "39993409",
-      "title": "Reliability of a Standardized Ultrasound Protocol for the Diagnosis of Thoracic Outlet Syndrome.",
-      "authors": [
-        "Emilia Stegemann",
-        "Jana Larbig",
-        "Irene Portig",
-        "Nadine Weiske",
-        "Thomas Bürger",
-        "Berthold Stegemann"
-      ],
-      "journal": "Ultraschall in der Medizin (Stuttgart, Germany : 1980)",
-      "date": "2025 Feb 24",
-      "date_sort": "2025-02-24",
-      "abstract": "Arterial thoracic outlet syndrome (aTOS) is a rare condition, but if undiagnosed, it can have serious consequences for affected patients, up to and including limb loss. Ultrasound could be used here as a widely available method for screening, but it is said to have very high investigator dependence. The fact that ultrasound can be used safely for diagnostic purposes has already been demonstrated. The aim of this study was to evaluate the repeatability of a standardized examination for the diagnosis of aTOS.We recruited inpatients with high-grade suspected arterial thoracic outlet syndrome who were evaluated for invasive therapy at our TOS center. Routine diagnostics were performed according to clinic standards. In addition, 2 sonographers, one highly experienced and one less experienced, performed ultrasound diagnosis according to a standardized protocol. Image acquisition and interpretation were performed independently, and sonographers were mutually blinded. For analysis, the experienced sonographer served as a reference. Agreement between assessors was analyzed using concordance analysis.51 consecutive patients (67% female) aged 39.3±13.0 years were included within 11 months. The standardized ultrasound protocol could be performed in all patients. The prevalence of TOS was high (79.4%; CI: 71.4-87.3%) in our cohort. Ultrasound inter-rater agreement using the standardized protocol was very good at 0.820 (CI: 0.624-1.000).Ultrasound diagnosis of TOS using a standardized protocol can be performed effectively and shows a high agreement between 2 sonographers.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39993409/",
-      "doi": "https://doi.org/10.1055/a-2532-4823"
-    },
-    {
       "pmid": "40134999",
       "title": "Fall From a Car Resulting in a Right Upper Limb Axillary Artery Vascular Injury.",
       "authors": [
@@ -6039,21 +6610,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40134999/",
       "doi": "https://doi.org/10.7759/cureus.79520"
-    },
-    {
-      "pmid": "40125222",
-      "title": "Diagnosis and Treatment of Thoracic Outlet Syndrome in an Elderly Male Patient: A Case Report and Protocol Evaluation.",
-      "authors": [
-        "Joshua L Dale",
-        "Harpreet Sood Md"
-      ],
-      "journal": "Cureus",
-      "date": "2025 Feb 19",
-      "date_sort": "2025-02-19",
-      "abstract": "Thoracic outlet syndrome (TOS) is a relatively common condition in the United States. It is characterized by numbness or pain radiating down the ulnar aspect of the affected arm. This case report discusses a 76-year-old man who presented to a family medicine clinic with symptoms that caused him significant discomfort. He was seeking medications to alleviate his pain. After osteopathic manipulative treatment (OMT), the patient's symptoms were resolved. The osteopathic techniques utilized included myofascial release, thoracic inlet release (a lymphatic technique), and facilitated positional release. Although the patient reported improved symptomology post-treatment, he was lost to follow-up. This case suggests a potentially positive intervention using OMT for the treatment of a possible case of myofascial-induced TOS.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40125222/",
-      "doi": "https://doi.org/10.7759/cureus.79306"
     },
     {
       "pmid": "39971297",
@@ -6092,22 +6648,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3389/fonc.2025.1469072"
     },
     {
-      "pmid": "39960507",
-      "title": "A narrative review of nerve compression syndromes in overhead throwing athletes.",
-      "authors": [
-        "Frantzeska Zampeli",
-        "Theodorakys Marín Fermín",
-        "Elisabet Hagert"
-      ],
-      "journal": "International orthopaedics",
-      "date": "2025 Feb 17",
-      "date_sort": "2025-02-17",
-      "abstract": "PURPOSE OF REVIEW: The purpose of this narrative review is to highlight upper extremity nerve compression syndromes and peripheral neuropathies reported in throwing and overhead athletes. RECENT FINDINGS: The overhead-throwing athlete may experience unique patterns of injuries and pathology related to the biomechanics and demands of the throwing motion, a demanding manoeuvre that places a significant amount of stress across the upper limb. Nerve injuries that may appear in high-level throwers include suprascapular and long thoracic neuropathy, quadrilateral space syndrome, and thoracic outlet syndrome. Nerve compression syndromes around the shoulder may appear with pain, paresthesia, and upper limb weakness. Overlapping features may be common among these compression neuropathies or mimic other common shoulder pathologies. Prompt differential diagnosis and successful treatment should be based on knowledge of key anatomical features, pathophysiology, clinical examination, and appropriate paraclinical studies.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39960507/",
-      "doi": "https://doi.org/10.1007/s00264-025-06453-z"
-    },
-    {
       "pmid": "39928139",
       "title": "Imaging on the painful and compressed nerve: upper extremity.",
       "authors": [
@@ -6138,25 +6678,19 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1007/s13304-025-02125-0"
     },
     {
-      "pmid": "39904415",
-      "title": "Influence of body mass index on functional and surgical outcomes in transaxillary thoracic outlet decompression for neurogenic thoracic outlet syndrome.",
+      "pmid": "39987477",
+      "title": "[LACERTUS SYNDROME].",
       "authors": [
-        "Stijn B J Teijink",
-        "Maren R E Snoek",
-        "Yves Y Dujardin",
-        "Jens Goeteyn",
-        "Marc R H M van Sambeek",
-        "Bart F L van Nuenen",
-        "Niels Pesser",
-        "Joep A W Teijink"
+        "Ruth Fann Marko",
+        "Gershon Zinger",
+        "Ayman Khoury"
       ],
-      "journal": "Journal of vascular surgery",
-      "date": "2025 Feb 2",
-      "date_sort": "2025-02-02",
-      "abstract": "OBJECTIVE: Despite an increase in prevalence of obesity over the last decades, few studies examine the influence of body mass index (BMI) on the outcome of thoracic outlet decompression (TOD) for neurogenic thoracic outlet syndrome (NTOS). However, it is important to understand the safety and efficacy of this procedure in patients with elevated BMI. This study aimed to determine the influence of BMI on surgical and functional outcomes following transaxillary TOD in patients with NTOS. METHODS: We performed a retrospective review of a prospectively collected database with patients who underwent transaxillary TOD for NTOS from July 2016 to January 2023. Patients were categorized into three groups according to their BMI, normal weight (<25.0 kg/m2), overweight (25.0-30.0 kg/m2), and obesity (>30.0 kg/m2). Primary outcomes were peri- and postoperative complications, such as hematoma, scapula alata, Horner syndrome, and wound infections. Secondary outcomes were length of stay, drain placement duration, pleural catheter placement duration, and functional outcome. Functional outcome was evaluated by using the Derkash classification; Disability of the Arm, Shoulder, and Hand questionnaire; and Cervical Brachial Symptom questionnaire scores up to 24 months of follow-up. RESULTS: The surgical results of 346 patients undergoing NTOS were analyzed. Of these patients, 191 (55.2%) were classified as normal weight, 98 (28.3%) as overweight, and 57 (16.5%) as obese. No significant difference in complication rates between BMI groups was found (P = .672). All groups had significant postoperative improvements in Disability of the Arm, Shoulder, and Hand questionnaire and Cervical Brachial Symptom Questionnaire scores (P < .001). There were no significant differences in functional outcomes between the three BMI groups. CONCLUSIONS: The transaxillary approach for surgical treatment of NTOS can be used safely and effectively in patients of all BMI groups.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39904415/",
-      "doi": "https://doi.org/10.1016/j.jvs.2025.01.208"
+      "journal": "Harefuah",
+      "date": "2025 Feb",
+      "date_sort": "2025-02-01",
+      "abstract": "Lacertus syndrome is a relatively rare condition that occurs because of median nerve compression at the elbow. Despite its low prevalence, it is important for healthcare professionals to be aware of this condition and its potential symptoms to provide timely and accurate diagnosis and treatment. This review provides a comprehensive overview of lacertus syndrome, including its anatomy and physiology, symptoms, and challenges of diagnosis. In particular, the article highlights the potential for misdiagnosis as carpal tunnel syndrome or other conditions that affect the median nerve and provides guidance on the physical exam and other diagnostic tests that can be used to confirm the diagnosis. The available treatment options for lacertus syndrome are also discussed, including conservative measures such as rest, activity modification and physical therapy, as well as more invasive options such as surgery. Finally, the article concludes with recommendations for future research and practice in the area of lacertus syndrome, highlighting the need for continued education and awareness among healthcare professionals.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39987477/"
     },
     {
       "pmid": "40256003",
@@ -6176,39 +6710,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40256003/",
       "doi": "https://doi.org/10.18999/nagjms.87.1.150"
-    },
-    {
-      "pmid": "39987477",
-      "title": "[LACERTUS SYNDROME].",
-      "authors": [
-        "Ruth Fann Marko",
-        "Gershon Zinger",
-        "Ayman Khoury"
-      ],
-      "journal": "Harefuah",
-      "date": "2025 Feb",
-      "date_sort": "2025-02-01",
-      "abstract": "Lacertus syndrome is a relatively rare condition that occurs because of median nerve compression at the elbow. Despite its low prevalence, it is important for healthcare professionals to be aware of this condition and its potential symptoms to provide timely and accurate diagnosis and treatment. This review provides a comprehensive overview of lacertus syndrome, including its anatomy and physiology, symptoms, and challenges of diagnosis. In particular, the article highlights the potential for misdiagnosis as carpal tunnel syndrome or other conditions that affect the median nerve and provides guidance on the physical exam and other diagnostic tests that can be used to confirm the diagnosis. The available treatment options for lacertus syndrome are also discussed, including conservative measures such as rest, activity modification and physical therapy, as well as more invasive options such as surgery. Finally, the article concludes with recommendations for future research and practice in the area of lacertus syndrome, highlighting the need for continued education and awareness among healthcare professionals.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39987477/"
-    },
-    {
-      "pmid": "39883797",
-      "title": "Intra-articular Median Nerve Entrapment of the Elbow After Medial Epicondyle Fracture: A Case Report.",
-      "authors": [
-        "Valentin Rausch",
-        "Simon Pätzholz",
-        "Matthias Königshausen",
-        "Thomas A Schildhauer",
-        "Jan Gessmann"
-      ],
-      "journal": "JBJS case connector",
-      "date": "2025 Jan 30",
-      "date_sort": "2025-01-30",
-      "abstract": "CASE: We describe a 13-year-old adolescent girl experiencing persistent pain and reduced grip strength following nonoperative treatment of a medial epicondyle fracture-dislocation with closed reduction over 5 years before her referral to our clinic. Neurological examination and magnetic resonance imaging of the elbow revealed damage to the median nerve due to an entrapment within the elbow. Surgical release of the nerve resulted in complete pain relief and improved neurological function with normalized nerve conduction. CONCLUSION: Persistent neurologic deficits should be investigated following pediatric elbow trauma. Promising results can be achieved with surgical treatment even after long-term entrapment of the median nerve.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39883797/",
-      "doi": "https://doi.org/10.2106/JBJS.CC.24.00445"
     },
     {
       "pmid": "39883178",
@@ -6241,6 +6742,24 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39883806/",
       "doi": "https://doi.org/10.2106/JBJS.CC.23.00701"
+    },
+    {
+      "pmid": "39883797",
+      "title": "Intra-articular Median Nerve Entrapment of the Elbow After Medial Epicondyle Fracture: A Case Report.",
+      "authors": [
+        "Valentin Rausch",
+        "Simon Pätzholz",
+        "Matthias Königshausen",
+        "Thomas A Schildhauer",
+        "Jan Gessmann"
+      ],
+      "journal": "JBJS case connector",
+      "date": "2025 Jan 30",
+      "date_sort": "2025-01-30",
+      "abstract": "CASE: We describe a 13-year-old adolescent girl experiencing persistent pain and reduced grip strength following nonoperative treatment of a medial epicondyle fracture-dislocation with closed reduction over 5 years before her referral to our clinic. Neurological examination and magnetic resonance imaging of the elbow revealed damage to the median nerve due to an entrapment within the elbow. Surgical release of the nerve resulted in complete pain relief and improved neurological function with normalized nerve conduction. CONCLUSION: Persistent neurologic deficits should be investigated following pediatric elbow trauma. Promising results can be achieved with surgical treatment even after long-term entrapment of the median nerve.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39883797/",
+      "doi": "https://doi.org/10.2106/JBJS.CC.24.00445"
     },
     {
       "pmid": "40161478",
@@ -6324,65 +6843,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/17531934251314317"
     },
     {
-      "pmid": "39826007",
-      "title": "Associations of fat, bone, and muscle indices with disease severity in patients with obstructive sleep apnea hypopnea syndrome.",
-      "authors": [
-        "Yi-Xuan Liao",
-        "Adake Saiken",
-        "Xue Chang",
-        "Yan-Fei Guo",
-        "Zheng Tan",
-        "Fei Deng",
-        "Qing-Ling Meng",
-        "Hui Zhen",
-        "Yan-Ming Li",
-        "Bao-Min Fang"
-      ],
-      "journal": "Sleep & breathing = Schlaf & Atmung",
-      "date": "2025 Jan 18",
-      "date_sort": "2025-01-18",
-      "abstract": "PURPOSE: To investigate the relationship between obstructive sleep apnea hypopnea syndrome (OSAHS) severity and fat, bone, and muscle indices. METHODS: This study included 102 patients with OSAHS and retrospectively reviewed their physical examination data. All patients underwent polysomnography, body composition analysis, dual-energy X-ray absorptiometry, computed tomography (CT) and blood test. Correlation and multiple linear regression analyses were performed using SPSS 22.0. RESULTS: Among the fat indices, fat mass (FM) (r = 0.27-0.43), body fat percentage (BFP) (r = 0. 25-0.35), visceral fat area (VFA) (r = 0.28-0.40) and trunk fat mass (TFM) (r = 0.26-0.34) were positively correlated with hypopnea index (HI), apnea-hypopnea index (AHI), oxygen desaturation index (ODI), and percent of time spent with oxygen saturation below 90% (T90%), respectively, and negatively correlated with mean pulse oxygen saturation (SpO2) (r= -0.28--0.41). For bone indexes, T8, T9, T11, L1-CT value, mean vertebral CT value and 25-Hydroxyvitamin D3 were positively correlated with mean SpO2 (r = 0.23-0.32), respectively. For muscle indexes, pectoralis muscle density (PMD) was negatively correlated with HI, AHI, and ODI (r= -0.20--0.36) and positively correlated with mean SpO2 (r = 0.26). In separate models predicting sleep measures, AHI increased by 0.36, 0.29, 0.34 and 0.25 events/h per unit increase in FM, BFP, VFA, and triglyceride (TG), respectively. AHI decreased by 0.27 per unit increase in PMD. T90% increased with FM, BFP, VFA, WHR, TG and total cholesterol (TC), but decreased with appendicular skeletal muscle mass (ASM) and PMD respectively. CONCLUSION: Higher fat levels and lower vertebral CT values, muscle mass and density correlated with a higher degree of OSAHS severity. Intermittent hypoxia may affect fat, bone, and muscle metabolism in patients with OSAHS.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39826007/",
-      "doi": "https://doi.org/10.1007/s11325-024-03241-8"
-    },
-    {
-      "pmid": "41018820",
-      "title": "Incidentally Detected McCleery Syndrome during Handheld Breast Ultrasound.",
-      "authors": [
-        "Aydan Arslan",
-        "Nilgün Güldoğan",
-        "Özlem Fidanci",
-        "Bahadır Balkanli"
-      ],
-      "journal": "Journal of medical ultrasound",
-      "date": "2025 Jan 18",
-      "date_sort": "2025-01-18",
-      "abstract": "BACKGROUND: The goal of our study is to identify the prevalence of McCleery syndrome and categorize its clinical manifestations in patients who obtained a diagnostic breast ultrasonography at our clinic. METHODS: Five thousand four hundred and twenty cases were reviewed in our clinic for diagnostic breast imaging between May 2021 and May 2022. Five thousand three hundred and two of the cases were female, while 118 were male. Duplex Doppler scanning was used to assess the subclavian vein and the axillary venous structures. The same radiologist performed all examinations; in cases where suspicion was warranted, a second radiologist's opinion was acquired. The diagnosis was confirmed by consensus. RESULTS: In 52 cases, McCleery syndrome was identified. Between the ages of 36 and 54 years, the average age was 47 years. In four of the patients, magnetic resonance venography supported the diagnosis. In most cases, McCleery syndrome was unilateral. In only two cases was it bilateral. The incidence of McCleery syndrome was 0.95% in our study. Pain was the most often reported symptom (53.8% of 28 cases). No symptoms were reported in 26.9% of the patients. CONCLUSION: During a breast ultrasound, radiologists should be aware of McCleery syndrome while assessing the axilla.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41018820/",
-      "doi": "https://doi.org/10.4103/jmu.jmu_46_24"
-    },
-    {
-      "pmid": "39832642",
-      "title": "Radial nerve at Frohse's arcade: a new technique of release under total ultrasound guidance. First experience.",
-      "authors": [
-        "Olivier Marès",
-        "Javier Ferreira",
-        "Sarah Pradel",
-        "Vincent Martinel",
-        "Camillo Chaves",
-        "Thomas Apard"
-      ],
-      "journal": "Hand surgery & rehabilitation",
-      "date": "2025 Jan 18",
-      "date_sort": "2025-01-18",
-      "abstract": "Radial nerve compression at the arcade of Frohse is a rare but significant condition that typically presents with pain primarily after exertion and at night on the dorsal side of the forearm, more distally than tennis elbow pain, and weakness of the wrist extensors and the long fingers and thumb extensors. Traditional treatment often involves open surgery, resulting in significant scarring. This study introduces a novel percutaneous radial nerve release technique under complete ultrasound guidance and highlights its efficacy and safety. The procedure involves identifying the entry point, lateral of the radial nerve, allowing for targeted release of the superficial fascia surrounding the supinator muscle without damaging nearby vascular or nerve structures. A cadaveric study was performed on ten fresh-frozen specimens to validate the entry point and route, which successfully demonstrated complete fascial release without complications. Preliminary clinical results from five patients showed complete resolution of symptoms associated with radial tunnel syndrome with no reported complications. The technique results in a significantly smaller incision (<1 cm) compared to traditional methods (up to 10 cm) and can be performed under WALANT anesthesia, making it suitable for the outpatient setting. This approach offers a minimally invasive alternative for patients with isolated posterior interosseous nerve compression and highlights the importance of ultrasound guidance in achieving optimal results. Because the technique requires a learning curve, it is recommended for surgeons with experience in ultrasound-guided procedures.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39832642/",
-      "doi": "https://doi.org/10.1016/j.hansur.2025.102089"
-    },
-    {
       "pmid": "39860607",
       "title": "Regional Anesthesia with Spontaneous Breathing for Trans-Axillary Surgery in Thoracic Outlet Syndrome: A Retrospective Comparative Study.",
       "authors": [
@@ -6414,20 +6874,63 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3390/jcm14020601"
     },
     {
-      "pmid": "39824457",
-      "title": "Anterograde ultrasound guided lacertus fibrosus release at the elbow under WALANT - Technical note.",
+      "pmid": "39826007",
+      "title": "Associations of fat, bone, and muscle indices with disease severity in patients with obstructive sleep apnea hypopnea syndrome.",
       "authors": [
-        "Carla Ricardo Nunes",
+        "Yi-Xuan Liao",
+        "Adake Saiken",
+        "Xue Chang",
+        "Yan-Fei Guo",
+        "Zheng Tan",
+        "Fei Deng",
+        "Qing-Ling Meng",
+        "Hui Zhen",
+        "Yan-Ming Li",
+        "Bao-Min Fang"
+      ],
+      "journal": "Sleep & breathing = Schlaf & Atmung",
+      "date": "2025 Jan 18",
+      "date_sort": "2025-01-18",
+      "abstract": "PURPOSE: To investigate the relationship between obstructive sleep apnea hypopnea syndrome (OSAHS) severity and fat, bone, and muscle indices. METHODS: This study included 102 patients with OSAHS and retrospectively reviewed their physical examination data. All patients underwent polysomnography, body composition analysis, dual-energy X-ray absorptiometry, computed tomography (CT) and blood test. Correlation and multiple linear regression analyses were performed using SPSS 22.0. RESULTS: Among the fat indices, fat mass (FM) (r = 0.27-0.43), body fat percentage (BFP) (r = 0. 25-0.35), visceral fat area (VFA) (r = 0.28-0.40) and trunk fat mass (TFM) (r = 0.26-0.34) were positively correlated with hypopnea index (HI), apnea-hypopnea index (AHI), oxygen desaturation index (ODI), and percent of time spent with oxygen saturation below 90% (T90%), respectively, and negatively correlated with mean pulse oxygen saturation (SpO2) (r= -0.28--0.41). For bone indexes, T8, T9, T11, L1-CT value, mean vertebral CT value and 25-Hydroxyvitamin D3 were positively correlated with mean SpO2 (r = 0.23-0.32), respectively. For muscle indexes, pectoralis muscle density (PMD) was negatively correlated with HI, AHI, and ODI (r= -0.20--0.36) and positively correlated with mean SpO2 (r = 0.26). In separate models predicting sleep measures, AHI increased by 0.36, 0.29, 0.34 and 0.25 events/h per unit increase in FM, BFP, VFA, and triglyceride (TG), respectively. AHI decreased by 0.27 per unit increase in PMD. T90% increased with FM, BFP, VFA, WHR, TG and total cholesterol (TC), but decreased with appendicular skeletal muscle mass (ASM) and PMD respectively. CONCLUSION: Higher fat levels and lower vertebral CT values, muscle mass and density correlated with a higher degree of OSAHS severity. Intermittent hypoxia may affect fat, bone, and muscle metabolism in patients with OSAHS.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39826007/",
+      "doi": "https://doi.org/10.1007/s11325-024-03241-8"
+    },
+    {
+      "pmid": "39832642",
+      "title": "Radial nerve at Frohse's arcade: a new technique of release under total ultrasound guidance. First experience.",
+      "authors": [
+        "Olivier Marès",
+        "Javier Ferreira",
+        "Sarah Pradel",
         "Vincent Martinel",
-        "Olivier Marès"
+        "Camillo Chaves",
+        "Thomas Apard"
       ],
       "journal": "Hand surgery & rehabilitation",
-      "date": "2025 Jan 15",
-      "date_sort": "2025-01-15",
-      "abstract": "Dynamic compression of the median nerve under the lacertus fibrosus at the elbow causes pain and weakness. It is a frequently overlooked pathology and a cause of failed recovery after carpal tunnel release. The purpose was to present a technical note on minimally invasive ultrasound-guided lacertus syndrome surgical treatment under WALANT. We believe the technique is indicated in patients who present with a positive Hagert's triad of pain over the median nerve at the lacertus, weakness on testing of the flexor pollicis longus, second flexor digitorum profundus, and flexor carpi radialis, and a positive sensitive collapse test. Contraindications include static median nerve compression at the elbow and allergy to lidocaine. The technique is preceded by local anesthesia, which is completed under ultrasound guidance for deeper or more proximal structures. The entry point is calculated proximal to the lacertus and the special knife is introduced through a 0.5 cm incision. The lacertus is divided anterogradely under ultrasound guidance. Full recovery of strength is evidenced by the completion of the division. The patient returns to full activity within days to a week after surgery. Minimally invasive, ultrasound-guided release allows for rapid return of full-strength motion with minimal scarring.",
+      "date": "2025 Jan 18",
+      "date_sort": "2025-01-18",
+      "abstract": "Radial nerve compression at the arcade of Frohse is a rare but significant condition that typically presents with pain primarily after exertion and at night on the dorsal side of the forearm, more distally than tennis elbow pain, and weakness of the wrist extensors and the long fingers and thumb extensors. Traditional treatment often involves open surgery, resulting in significant scarring. This study introduces a novel percutaneous radial nerve release technique under complete ultrasound guidance and highlights its efficacy and safety. The procedure involves identifying the entry point, lateral of the radial nerve, allowing for targeted release of the superficial fascia surrounding the supinator muscle without damaging nearby vascular or nerve structures. A cadaveric study was performed on ten fresh-frozen specimens to validate the entry point and route, which successfully demonstrated complete fascial release without complications. Preliminary clinical results from five patients showed complete resolution of symptoms associated with radial tunnel syndrome with no reported complications. The technique results in a significantly smaller incision (<1 cm) compared to traditional methods (up to 10 cm) and can be performed under WALANT anesthesia, making it suitable for the outpatient setting. This approach offers a minimally invasive alternative for patients with isolated posterior interosseous nerve compression and highlights the importance of ultrasound guidance in achieving optimal results. Because the technique requires a learning curve, it is recommended for surgeons with experience in ultrasound-guided procedures.",
       "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39824457/",
-      "doi": "https://doi.org/10.1016/j.hansur.2025.102086"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39832642/",
+      "doi": "https://doi.org/10.1016/j.hansur.2025.102089"
+    },
+    {
+      "pmid": "41018820",
+      "title": "Incidentally Detected McCleery Syndrome during Handheld Breast Ultrasound.",
+      "authors": [
+        "Aydan Arslan",
+        "Nilgün Güldoğan",
+        "Özlem Fidanci",
+        "Bahadır Balkanli"
+      ],
+      "journal": "Journal of medical ultrasound",
+      "date": "2025 Jan 18",
+      "date_sort": "2025-01-18",
+      "abstract": "BACKGROUND: The goal of our study is to identify the prevalence of McCleery syndrome and categorize its clinical manifestations in patients who obtained a diagnostic breast ultrasonography at our clinic. METHODS: Five thousand four hundred and twenty cases were reviewed in our clinic for diagnostic breast imaging between May 2021 and May 2022. Five thousand three hundred and two of the cases were female, while 118 were male. Duplex Doppler scanning was used to assess the subclavian vein and the axillary venous structures. The same radiologist performed all examinations; in cases where suspicion was warranted, a second radiologist's opinion was acquired. The diagnosis was confirmed by consensus. RESULTS: In 52 cases, McCleery syndrome was identified. Between the ages of 36 and 54 years, the average age was 47 years. In four of the patients, magnetic resonance venography supported the diagnosis. In most cases, McCleery syndrome was unilateral. In only two cases was it bilateral. The incidence of McCleery syndrome was 0.95% in our study. Pain was the most often reported symptom (53.8% of 28 cases). No symptoms were reported in 26.9% of the patients. CONCLUSION: During a breast ultrasound, radiologists should be aware of McCleery syndrome while assessing the axilla.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41018820/",
+      "doi": "https://doi.org/10.4103/jmu.jmu_46_24"
     },
     {
       "pmid": "40083811",
@@ -6443,6 +6946,22 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40083811/",
       "doi": "https://doi.org/10.1016/j.jvscit.2025.101731"
+    },
+    {
+      "pmid": "39824457",
+      "title": "Anterograde ultrasound guided lacertus fibrosus release at the elbow under WALANT - Technical note.",
+      "authors": [
+        "Carla Ricardo Nunes",
+        "Vincent Martinel",
+        "Olivier Marès"
+      ],
+      "journal": "Hand surgery & rehabilitation",
+      "date": "2025 Jan 15",
+      "date_sort": "2025-01-15",
+      "abstract": "Dynamic compression of the median nerve under the lacertus fibrosus at the elbow causes pain and weakness. It is a frequently overlooked pathology and a cause of failed recovery after carpal tunnel release. The purpose was to present a technical note on minimally invasive ultrasound-guided lacertus syndrome surgical treatment under WALANT. We believe the technique is indicated in patients who present with a positive Hagert's triad of pain over the median nerve at the lacertus, weakness on testing of the flexor pollicis longus, second flexor digitorum profundus, and flexor carpi radialis, and a positive sensitive collapse test. Contraindications include static median nerve compression at the elbow and allergy to lidocaine. The technique is preceded by local anesthesia, which is completed under ultrasound guidance for deeper or more proximal structures. The entry point is calculated proximal to the lacertus and the special knife is introduced through a 0.5 cm incision. The lacertus is divided anterogradely under ultrasound guidance. Full recovery of strength is evidenced by the completion of the division. The patient returns to full activity within days to a week after surgery. Minimally invasive, ultrasound-guided release allows for rapid return of full-strength motion with minimal scarring.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39824457/",
+      "doi": "https://doi.org/10.1016/j.hansur.2025.102086"
     },
     {
       "pmid": "39897765",
@@ -6465,23 +6984,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.radcr.2024.12.045"
     },
     {
-      "pmid": "39799259",
-      "title": "Kyphectomy followed by self-sliding pedicle screw and translumbosacral rod impaction and fixation: a novel growth-friendly technique in myelomeningocele patients.",
-      "authors": [
-        "Alderico Girão Campos Barros",
-        "Diogo R Noronha",
-        "Luis E Carelli",
-        "David L Skaggs"
-      ],
-      "journal": "Spine deformity",
-      "date": "2025 Jan 11",
-      "date_sort": "2025-01-11",
-      "abstract": "INTRODUCTION: Congenital lumbar kyphosis is present in about 15% of patients with myelomeningocele. Worsening of deformity with complications such as chronic skin ulcers and bone exposure is common. In patients under 8 years of age, treatment becomes even more challenging: in addition to resecting the apex of the kyphotic deformity, we should ideally stabilize the spine with fixation methods that do not interrupt the growth of the rib cage, associated with the challenging pelvic fixation in this population. The emergence of growth-friendly techniques has greatly benefited patients with early-onset deformity, allowing for correction and control of deviation without interrupting trunk growth, which is often already compromised in these patients. We describe the surgical technique and present preliminary clinical outcomes for a novel approach which combines self-sliding screws that allow for trunk growth with impaction of translumbosacral rods for distal fixation. METHODOLOGY: Candidates for the technique were patients with myelomeningocele and congenital lumbar kyphosis, inability to assume supine position, and a history of skin ulcers, recurrent osteomyelitis and poor weight gain. They all lacked sensory or motor function below the level of the myelomeningocele. They underwent the same reconstruction technique after kyphectomy which combines self-sliding screws that allow for trunk growth with impaction of the translumbosacral rods for distal fixation. RESULTS: Case 1: Female; 4.5 years old at surgery; 5 year follow-up. 1 complication: loosening of one blocker. The child is doing well and did not require surgical revision. Mean growth per year: 9.5 mm. Case 2: Male; 7.4 Years old at surgery; 4 year follow-up. 1 complication: post-surgical infection which required 2 debridements in the operating room and prolonged antibiotic therapy. Mean growth per year: 6 mm. Case 3: Female; 5.5 Years old at surgery; 27 month follow-up. No complications reported so far. Mean growth per year: 9.42 mm. None of the cases showed signs of sacral osteolysis or rod migration. DISCUSSION / CONCLUSION: To our knowledge, this is the first study that combines sliding screws with translumbosacral rod impaction. Although this technique has proven to be safe and effective, we are aware that the number of cases is limited and the follow-up is short. Further studies are necessary to confirm the method.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39799259/",
-      "doi": "https://doi.org/10.1007/s43390-024-01036-1"
-    },
-    {
       "pmid": "39926404",
       "title": "Management of refractory postpneumonectomy empyema with bronchopleural fistula.",
       "authors": [
@@ -6498,6 +7000,23 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39926404/",
       "doi": "https://doi.org/10.4103/atm.atm_93_24"
+    },
+    {
+      "pmid": "39799259",
+      "title": "Kyphectomy followed by self-sliding pedicle screw and translumbosacral rod impaction and fixation: a novel growth-friendly technique in myelomeningocele patients.",
+      "authors": [
+        "Alderico Girão Campos Barros",
+        "Diogo R Noronha",
+        "Luis E Carelli",
+        "David L Skaggs"
+      ],
+      "journal": "Spine deformity",
+      "date": "2025 Jan 11",
+      "date_sort": "2025-01-11",
+      "abstract": "INTRODUCTION: Congenital lumbar kyphosis is present in about 15% of patients with myelomeningocele. Worsening of deformity with complications such as chronic skin ulcers and bone exposure is common. In patients under 8 years of age, treatment becomes even more challenging: in addition to resecting the apex of the kyphotic deformity, we should ideally stabilize the spine with fixation methods that do not interrupt the growth of the rib cage, associated with the challenging pelvic fixation in this population. The emergence of growth-friendly techniques has greatly benefited patients with early-onset deformity, allowing for correction and control of deviation without interrupting trunk growth, which is often already compromised in these patients. We describe the surgical technique and present preliminary clinical outcomes for a novel approach which combines self-sliding screws that allow for trunk growth with impaction of translumbosacral rods for distal fixation. METHODOLOGY: Candidates for the technique were patients with myelomeningocele and congenital lumbar kyphosis, inability to assume supine position, and a history of skin ulcers, recurrent osteomyelitis and poor weight gain. They all lacked sensory or motor function below the level of the myelomeningocele. They underwent the same reconstruction technique after kyphectomy which combines self-sliding screws that allow for trunk growth with impaction of the translumbosacral rods for distal fixation. RESULTS: Case 1: Female; 4.5 years old at surgery; 5 year follow-up. 1 complication: loosening of one blocker. The child is doing well and did not require surgical revision. Mean growth per year: 9.5 mm. Case 2: Male; 7.4 Years old at surgery; 4 year follow-up. 1 complication: post-surgical infection which required 2 debridements in the operating room and prolonged antibiotic therapy. Mean growth per year: 6 mm. Case 3: Female; 5.5 Years old at surgery; 27 month follow-up. No complications reported so far. Mean growth per year: 9.42 mm. None of the cases showed signs of sacral osteolysis or rod migration. DISCUSSION / CONCLUSION: To our knowledge, this is the first study that combines sliding screws with translumbosacral rod impaction. Although this technique has proven to be safe and effective, we are aware that the number of cases is limited and the follow-up is short. Further studies are necessary to confirm the method.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39799259/",
+      "doi": "https://doi.org/10.1007/s43390-024-01036-1"
     },
     {
       "pmid": "39792759",
@@ -6571,43 +7090,34 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jhsa.2024.11.018"
     },
     {
-      "pmid": "40966050",
-      "title": "Clinically relevant variations in the area of the ulnar nerve sulcus and their relationship to surgical approaches to the elbow.",
+      "pmid": "39801852",
+      "title": "Brachial Plexus Paralysis after Thoracotomy through Median Sternotomy: A New Case Report of Poor Prognosis Despite Lower Radiculopathy.",
       "authors": [
-        "J Kamlerová",
-        "H Zítek",
-        "V Kunc"
+        "Ryunosuke Fukushi"
       ],
-      "journal": "Rozhledy v chirurgii : mesicnik Ceskoslovenske chirurgicke spolecnosti",
+      "journal": "Journal of orthopaedic case reports",
       "date": "2025 Jan",
       "date_sort": "2025-01-01",
-      "abstract": "Clinically relevant variations in the area of the groove for the ulnar nerve include accessory muscles, accessory bones, and fibrous structures. Accessory muscles involve the epitrochleoanconeus muscle, chondroepitrochlearis muscle, and high origin of the pronator teres muscle. The nerve can also be compressed by the medial head of the triceps brachii muscle. Fibrous structures are found proximally, distally to the cubital tunnel, or directly at the location of the cubital tunnel and can cause compression of the ulnar nerve. Structures located proximally to the cubital tunnel include the medial intermuscular septum of the arm and Struthers' arcade. The roof of the cubital tunnel is formed by Osborne's ligament, which can cause compression of the ulnar nerve. Its absence is a predisposing factor for nerve dislocation. Among the bony structures, the clinical significance lies in the variability of the depth of the groove for the ulnar nerve. A shallow groove is a predisposing factor for compression of the ulnar nerve, especially during elbow flexion, which can lead to its subluxation or dislocation. The ulnar nerve itself also shows considerable variability. The ulnar nerve gives off branches inner-vating the joint capsule and motor branches for the both heads of the flexor carpi ulnaris muscle and a part of the flexor digitorum profundus muscle. Articular branches can hinder sufficient mobilization of the nerve during transposition, which can be over-come by intraneural dissection. During transposition, it is important to protect the motor branches to prevent paresis of the innervated muscles. The variability of anatomical structures in the groove for the ulnar nerve is cru-cial for clinical practice, as it can complicate surgical approaches to the elbow, limit ulnar nerve transposition, or contribute to the development of cubital tunnel syndrome.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40966050/",
-      "doi": "https://doi.org/10.48095/ccrvch2025332"
+      "abstract": "INTRODUCTION: Thoracotomy through a median sternotomy is considered a risk factor for brachial plexus paralysis. We report a new case of poor prognosis despite lower radiculopathy. CASE REPORT: A 53-year-old female (height 152 cm and weight 41 kg) complained of motor impairment in her left fingers, numbness in her left forearm, and paresthesia after left thoracotomy. A descending thoracic aortic replacement (20 mg J-graft 1 branch) had been performed through a left thoracotomy. After the surgery, she noticed movement disorder, numbness, and paresthesia and was referred to an orthopedic surgeon. Vitamin B12 formulation was administered, and she was followed up. The patient recovered motor function 8 months postoperatively, but numbness in the median nerve region remained 18 months after thoracotomy. CONCLUSION: Even if brachial plexus paralysis persists as lower radiculopathy, nerve compression is relatively more severe in petite patients, suggesting that the prognosis may be poor.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39801852/",
+      "doi": "https://doi.org/10.13107/jocr.2025.v15.i01.5132"
     },
     {
-      "pmid": "41307980",
-      "title": "[Neurovascular compression syndrome of the upper thoracic outlet].",
+      "pmid": "41403868",
+      "title": "Esophageal Cancer in a Patient With Poland Syndrome.",
       "authors": [
-        "I I Tsuladze",
-        "D Yu Usachev",
-        "O N Dreval",
-        "R K Magomedov",
-        "A V Kuznetsov",
-        "D V Vakatov",
-        "Yu A Kozlova",
-        "G N Chapandze",
-        "K A Kuldashev",
-        "O V Mukhina"
+        "Glen D Myatt",
+        "Kyle Finney",
+        "Vani Vijayakumar"
       ],
-      "journal": "Zhurnal voprosy neirokhirurgii imeni N. N. Burdenko",
+      "journal": "Ochsner journal",
       "date": "2025 Jan",
       "date_sort": "2025-01-01",
-      "abstract": "UNLABELLED: Neurovascular compression syndrome of the upper thoracic outlet is a collective term encompassing various entities: cervical ribs, structural variations of the first rib, costoclavicular syndrome, fibromuscular anomalies of anterior and middle scalene muscles, pectoralis minor syndrome and various pathologies of subclavian vessels. Their combination is based on the common substrate subject to compression (neurovascular bundle passing through narrow cervicoaxillary canal). OBJECTIVE: To analyze research of etiology, pathogenesis and treatment of neurovascular compression syndrome of the upper thoracic outlet. RESULTS: Cervical ribs were described by Galen. However, these ribs have been associated with symptoms of neurovascular compression only in the 18th century. In 1903, F. Bramwell identified the second possible cause of neurovascular compression (structural variations of the first rib). In 1912, T.W. Todd described narrowing of costoclavicular space. In 1920, A.A. Law described fibromuscular bands in costoclavicular space. In 1929, H.C. Naffziger and W.I. Grant pointed out the role of hypertrophy or spasm of anterior scalene muscle. In 1945, I.S. Wright described pectoralis minor muscle syndrome («hyperabduction»). The main treatment was scalenotomy. Less common option was rib or clavicle resection. Modern methods of pathogenetic treatment and less traumatic surgical approaches began to be developed only in the late 20th - early 21st centuries. All above-described entities were considered separately. The common term «thoracic outlet syndrome» does not accurately reflect the mechanism and structures subject to compression. CONCLUSION: It seems appropriate to group all forms of thoracic outlet pathology causing neurovascular compression into a single unit (neurovascular compression syndrome of the upper thoracic outlet).",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41307980/",
-      "doi": "https://doi.org/10.17116/neiro202589061106"
+      "abstract": "BACKGROUND: Poland syndrome is an uncommon congenital condition marked by the absence of major chest muscles, typically on one side. Individuals with congenital abnormalities such as Poland syndrome are at increased risk for cancer. CASE REPORT: A 53-year-old male with undiagnosed Poland syndrome initially presented with dysphagia. The patient had a 20 pack-year smoking history but had quit smoking at the time of presentation. Endoscopic ultrasound showed a large obstructing mass in the distal third of the esophagus, and computed tomography (CT) scan showed an esophageal mass and congenital absence of the left pectoralis major and pectoralis minor muscles. Positron emission tomography-CT (PET-CT) showed a hypermetabolic mass with no evidence of distant metastases. The patient was treated with radiation, chemotherapy, and distal esophagectomy. PET-CT obtained nearly a year postoperatively showed no esophageal mass but some reactive hilar and mediastinal lymph nodes. The patient is monitored annually via CT imaging for recurrent or metastatic disease. CONCLUSION: While Poland syndrome has been associated with various malignancies, to our knowledge, the occurrence of esophageal adenocarcinoma in a patient with Poland syndrome has not been previously reported.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41403868/",
+      "doi": "https://doi.org/10.31486/toj.25.0036"
     },
     {
       "pmid": "40864538",
@@ -6677,6 +7187,43 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.5137/1019-5149.JTN.46720-24.2"
     },
     {
+      "pmid": "39900072",
+      "title": "Thoracic outlet syndrome secondary to a cavernous hemangioma of the first rib.",
+      "authors": [
+        "Agustín Buero",
+        "Soledad Olivera Lopez",
+        "Constanza Pereyra",
+        "Michel David",
+        "Leonardo G Pankl",
+        "Mayra Samudio",
+        "Julián Méndez",
+        "Gustavo A Lyons",
+        "Domingo J Chimondeguy"
+      ],
+      "journal": "Medicina",
+      "date": "2025 Jan",
+      "date_sort": "2025-01-01",
+      "abstract": "Bone hemangiomas are slow-growing benign tumors, with rib involvement being exceptionally rare. Thoracic outlet syndrome caused by a bone neoplasm of the first rib is even more uncommon, with only a few cases documented in the literature. We present the case of a patient with a clinical diagnosis of neurogenic thoracic outlet syndrome secondary to a bone tumor of the first rib, treated using a combined approach of video-assisted thoracoscopy and posterior access for resection. To our knowledge, this is the second reported case in the literature of a young man with thoracic outlet syndrome secondary to a cavernous hemangioma of the first rib.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39900072/"
+    },
+    {
+      "pmid": "40966050",
+      "title": "Clinically relevant variations in the area of the ulnar nerve sulcus and their relationship to surgical approaches to the elbow.",
+      "authors": [
+        "J Kamlerová",
+        "H Zítek",
+        "V Kunc"
+      ],
+      "journal": "Rozhledy v chirurgii : mesicnik Ceskoslovenske chirurgicke spolecnosti",
+      "date": "2025 Jan",
+      "date_sort": "2025-01-01",
+      "abstract": "Clinically relevant variations in the area of the groove for the ulnar nerve include accessory muscles, accessory bones, and fibrous structures. Accessory muscles involve the epitrochleoanconeus muscle, chondroepitrochlearis muscle, and high origin of the pronator teres muscle. The nerve can also be compressed by the medial head of the triceps brachii muscle. Fibrous structures are found proximally, distally to the cubital tunnel, or directly at the location of the cubital tunnel and can cause compression of the ulnar nerve. Structures located proximally to the cubital tunnel include the medial intermuscular septum of the arm and Struthers' arcade. The roof of the cubital tunnel is formed by Osborne's ligament, which can cause compression of the ulnar nerve. Its absence is a predisposing factor for nerve dislocation. Among the bony structures, the clinical significance lies in the variability of the depth of the groove for the ulnar nerve. A shallow groove is a predisposing factor for compression of the ulnar nerve, especially during elbow flexion, which can lead to its subluxation or dislocation. The ulnar nerve itself also shows considerable variability. The ulnar nerve gives off branches inner-vating the joint capsule and motor branches for the both heads of the flexor carpi ulnaris muscle and a part of the flexor digitorum profundus muscle. Articular branches can hinder sufficient mobilization of the nerve during transposition, which can be over-come by intraneural dissection. During transposition, it is important to protect the motor branches to prevent paresis of the innervated muscles. The variability of anatomical structures in the groove for the ulnar nerve is cru-cial for clinical practice, as it can complicate surgical approaches to the elbow, limit ulnar nerve transposition, or contribute to the development of cubital tunnel syndrome.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40966050/",
+      "doi": "https://doi.org/10.48095/ccrvch2025332"
+    },
+    {
       "pmid": "40183619",
       "title": "Combined extravasal compression of the right subclavian artery caused by stellate ganglion schwannoma and additional rudimentary cervical rib. Clinical case and literature review.",
       "authors": [
@@ -6697,55 +7244,27 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.17116/neiro20258902172"
     },
     {
-      "pmid": "39801852",
-      "title": "Brachial Plexus Paralysis after Thoracotomy through Median Sternotomy: A New Case Report of Poor Prognosis Despite Lower Radiculopathy.",
+      "pmid": "41307980",
+      "title": "[Neurovascular compression syndrome of the upper thoracic outlet].",
       "authors": [
-        "Ryunosuke Fukushi"
+        "I I Tsuladze",
+        "D Yu Usachev",
+        "O N Dreval",
+        "R K Magomedov",
+        "A V Kuznetsov",
+        "D V Vakatov",
+        "Yu A Kozlova",
+        "G N Chapandze",
+        "K A Kuldashev",
+        "O V Mukhina"
       ],
-      "journal": "Journal of orthopaedic case reports",
+      "journal": "Zhurnal voprosy neirokhirurgii imeni N. N. Burdenko",
       "date": "2025 Jan",
       "date_sort": "2025-01-01",
-      "abstract": "INTRODUCTION: Thoracotomy through a median sternotomy is considered a risk factor for brachial plexus paralysis. We report a new case of poor prognosis despite lower radiculopathy. CASE REPORT: A 53-year-old female (height 152 cm and weight 41 kg) complained of motor impairment in her left fingers, numbness in her left forearm, and paresthesia after left thoracotomy. A descending thoracic aortic replacement (20 mg J-graft 1 branch) had been performed through a left thoracotomy. After the surgery, she noticed movement disorder, numbness, and paresthesia and was referred to an orthopedic surgeon. Vitamin B12 formulation was administered, and she was followed up. The patient recovered motor function 8 months postoperatively, but numbness in the median nerve region remained 18 months after thoracotomy. CONCLUSION: Even if brachial plexus paralysis persists as lower radiculopathy, nerve compression is relatively more severe in petite patients, suggesting that the prognosis may be poor.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39801852/",
-      "doi": "https://doi.org/10.13107/jocr.2025.v15.i01.5132"
-    },
-    {
-      "pmid": "41403868",
-      "title": "Esophageal Cancer in a Patient With Poland Syndrome.",
-      "authors": [
-        "Glen D Myatt",
-        "Kyle Finney",
-        "Vani Vijayakumar"
-      ],
-      "journal": "Ochsner journal",
-      "date": "2025 Jan",
-      "date_sort": "2025-01-01",
-      "abstract": "BACKGROUND: Poland syndrome is an uncommon congenital condition marked by the absence of major chest muscles, typically on one side. Individuals with congenital abnormalities such as Poland syndrome are at increased risk for cancer. CASE REPORT: A 53-year-old male with undiagnosed Poland syndrome initially presented with dysphagia. The patient had a 20 pack-year smoking history but had quit smoking at the time of presentation. Endoscopic ultrasound showed a large obstructing mass in the distal third of the esophagus, and computed tomography (CT) scan showed an esophageal mass and congenital absence of the left pectoralis major and pectoralis minor muscles. Positron emission tomography-CT (PET-CT) showed a hypermetabolic mass with no evidence of distant metastases. The patient was treated with radiation, chemotherapy, and distal esophagectomy. PET-CT obtained nearly a year postoperatively showed no esophageal mass but some reactive hilar and mediastinal lymph nodes. The patient is monitored annually via CT imaging for recurrent or metastatic disease. CONCLUSION: While Poland syndrome has been associated with various malignancies, to our knowledge, the occurrence of esophageal adenocarcinoma in a patient with Poland syndrome has not been previously reported.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41403868/",
-      "doi": "https://doi.org/10.31486/toj.25.0036"
-    },
-    {
-      "pmid": "39900072",
-      "title": "Thoracic outlet syndrome secondary to a cavernous hemangioma of the first rib.",
-      "authors": [
-        "Agustín Buero",
-        "Soledad Olivera Lopez",
-        "Constanza Pereyra",
-        "Michel David",
-        "Leonardo G Pankl",
-        "Mayra Samudio",
-        "Julián Méndez",
-        "Gustavo A Lyons",
-        "Domingo J Chimondeguy"
-      ],
-      "journal": "Medicina",
-      "date": "2025 Jan",
-      "date_sort": "2025-01-01",
-      "abstract": "Bone hemangiomas are slow-growing benign tumors, with rib involvement being exceptionally rare. Thoracic outlet syndrome caused by a bone neoplasm of the first rib is even more uncommon, with only a few cases documented in the literature. We present the case of a patient with a clinical diagnosis of neurogenic thoracic outlet syndrome secondary to a bone tumor of the first rib, treated using a combined approach of video-assisted thoracoscopy and posterior access for resection. To our knowledge, this is the second reported case in the literature of a young man with thoracic outlet syndrome secondary to a cavernous hemangioma of the first rib.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39900072/"
+      "abstract": "UNLABELLED: Neurovascular compression syndrome of the upper thoracic outlet is a collective term encompassing various entities: cervical ribs, structural variations of the first rib, costoclavicular syndrome, fibromuscular anomalies of anterior and middle scalene muscles, pectoralis minor syndrome and various pathologies of subclavian vessels. Their combination is based on the common substrate subject to compression (neurovascular bundle passing through narrow cervicoaxillary canal). OBJECTIVE: To analyze research of etiology, pathogenesis and treatment of neurovascular compression syndrome of the upper thoracic outlet. RESULTS: Cervical ribs were described by Galen. However, these ribs have been associated with symptoms of neurovascular compression only in the 18th century. In 1903, F. Bramwell identified the second possible cause of neurovascular compression (structural variations of the first rib). In 1912, T.W. Todd described narrowing of costoclavicular space. In 1920, A.A. Law described fibromuscular bands in costoclavicular space. In 1929, H.C. Naffziger and W.I. Grant pointed out the role of hypertrophy or spasm of anterior scalene muscle. In 1945, I.S. Wright described pectoralis minor muscle syndrome («hyperabduction»). The main treatment was scalenotomy. Less common option was rib or clavicle resection. Modern methods of pathogenetic treatment and less traumatic surgical approaches began to be developed only in the late 20th - early 21st centuries. All above-described entities were considered separately. The common term «thoracic outlet syndrome» does not accurately reflect the mechanism and structures subject to compression. CONCLUSION: It seems appropriate to group all forms of thoracic outlet pathology causing neurovascular compression into a single unit (neurovascular compression syndrome of the upper thoracic outlet).",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41307980/",
+      "doi": "https://doi.org/10.17116/neiro202589061106"
     },
     {
       "pmid": "39818015",
@@ -6784,43 +7303,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39730748/",
       "doi": "https://doi.org/10.1038/s41598-024-82357-z"
-    },
-    {
-      "pmid": "39733780",
-      "title": "Inpatient pediatric clinical consultations to vascular surgery within a children's hospital.",
-      "authors": [
-        "Casey Reid",
-        "Dakory Lee",
-        "Kathryn Pillai",
-        "Michael Zhang",
-        "Ghaleb Darwazeh",
-        "Ahmed M Abou-Zamzam"
-      ],
-      "journal": "Journal of vascular surgery",
-      "date": "2024 Dec 27",
-      "date_sort": "2024-12-27",
-      "abstract": "OBJECTIVE: Acute pediatric vascular issues are infrequent and result in a diverse, unpredictable experience for vascular surgeons and trainees. We reviewed the indications for consult and resulting interventions provided by the Vascular Surgery (VS) service at a freestanding Children's Hospital (CH) adjacent to a university hospital. METHODS: Consults to VS at our CH were reviewed over a 4.5-year period. The acuity of the patient, nature of the disease (arterial, venous, and other), and etiology were documented. Treatments resulting from consultation (medical therapy, observation, or intervention - open/endovascular), and patient outcomes were documented. RESULTS: One hundred consults to VS occurred. Average patient age was 8.5 years (range, 1 day to 18 years). Ninety consults were for acute conditions. Pathology included arterial (n = 64), venous (n = 20), and other (n = 16). Primary etiologies were iatrogenic injury (n = 40) and trauma (n = 31). Nearly two-thirds of patients were in the intensive care unit (n = 66), and one-third of intensive care unit consults were for children <1 year old. Medical management alone was utilized in 46 cases: 65% receiving anticoagulation, 13% ASA, 9% blood pressure control, 4% antibiotics, and 9% other. In 37 cases, no interventions for the vascular query were needed. Overall, 17 consults resulted in 19 surgical interventions (5 bypass/interposition/patch, 4 primary vascular repairs, 3 fasciotomies, 2 angiograms, 2 embolectomies, 1 amputation, 1 thoracic endograft, 1 first rib resection). The one early graft failure required revision. No operative interventions were performed in children <3 years old. Of 17 deaths, none were due to vascular injury. CONCLUSIONS: Consults to VS in a CH are infrequent and encompass a wide breadth of vascular disease. In contrast to the adult population, medical therapies are frequently utilized, whereas a minority undergo open or endovascular interventions. At 20 consults per year, a typical trainee may be involved in 40 to 60 pediatric cases during their residency. Exposure to the pediatric population is a small but important niche in vascular education and practice.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39733780/",
-      "doi": "https://doi.org/10.1016/j.jvs.2024.12.123"
-    },
-    {
-      "pmid": "39737724",
-      "title": "The Versatility of the Supinator to Posterior Interosseus Nerve Transfer: Indications and Outcomes-A Case Series.",
-      "authors": [
-        "Samuel George",
-        "Chane Kulenkampff",
-        "Tahseen Chaudhry",
-        "Liron S Duraku",
-        "Dominic M Power"
-      ],
-      "journal": "Plastic and reconstructive surgery",
-      "date": "2024 Dec 27",
-      "date_sort": "2024-12-27",
-      "abstract": "BACKGROUND: Transfer of the supinator motor branches to the posterior interosseous nerve (SPIN) was first described as a reliable method of restoration of digit extension in cases of paralysis when there is retained function in the 5th and 6th cervical nerve roots with loss of function in the 8th cervical nerve root. METHODS: The authors performed a retrospective review of all SPIN transfers that were performed in their unit over a 6-year period, which included 16 limbs of 14 patients. The median age was 49 years (range, 22 to 74 years). The average follow-up period was 15 months (range, 6 to 24 months). The pathogenesis included spinal cord injury (SCI) in 5, plexus root avulsion in 3, degenerate spondyloradiculopathy in 3, paralysis from oncologic resection in 1, inflammation in 1, and compressive neuropathy in 1. RESULTS: Functional digit extension (Medical Research Council grade 3 or above) was achieved in 12 of 16 limbs. Patients with degenerative spinal lesions had the worst outcome, with a median of Medical Research Council grade 2, and a median time to surgery of 20 months (average age, 67 years), compared with 13 months in the SCI group (average age, 32.8 years) and 4 months in the brachial plexus injuries group (average age, 34.6 years). CONCLUSIONS: The SPIN transfer may be performed safely in a wide spectrum of pathologies, including brachial plexus injuries, SCIs, and neuritis. However, in degenerative spondyloradiculopathy, inferior outcomes were obtained, which may be due to late referral, chronic denervation, possible involvement of the donor nerve, an older age group, or potentially diminished rehabilitation and neural plasticity potential. CLINICAL QUESTION/LEVEL OF EVIDENCE: Therapeutic, IV.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39737724/",
-      "doi": "https://doi.org/10.1097/PRS.0000000000011946"
     },
     {
       "pmid": "39729194",
@@ -6863,6 +7345,43 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.hansur.2024.102071"
     },
     {
+      "pmid": "39733780",
+      "title": "Inpatient pediatric clinical consultations to vascular surgery within a children's hospital.",
+      "authors": [
+        "Casey Reid",
+        "Dakory Lee",
+        "Kathryn Pillai",
+        "Michael Zhang",
+        "Ghaleb Darwazeh",
+        "Ahmed M Abou-Zamzam"
+      ],
+      "journal": "Journal of vascular surgery",
+      "date": "2024 Dec 27",
+      "date_sort": "2024-12-27",
+      "abstract": "OBJECTIVE: Acute pediatric vascular issues are infrequent and result in a diverse, unpredictable experience for vascular surgeons and trainees. We reviewed the indications for consult and resulting interventions provided by the Vascular Surgery (VS) service at a freestanding Children's Hospital (CH) adjacent to a university hospital. METHODS: Consults to VS at our CH were reviewed over a 4.5-year period. The acuity of the patient, nature of the disease (arterial, venous, and other), and etiology were documented. Treatments resulting from consultation (medical therapy, observation, or intervention - open/endovascular), and patient outcomes were documented. RESULTS: One hundred consults to VS occurred. Average patient age was 8.5 years (range, 1 day to 18 years). Ninety consults were for acute conditions. Pathology included arterial (n = 64), venous (n = 20), and other (n = 16). Primary etiologies were iatrogenic injury (n = 40) and trauma (n = 31). Nearly two-thirds of patients were in the intensive care unit (n = 66), and one-third of intensive care unit consults were for children <1 year old. Medical management alone was utilized in 46 cases: 65% receiving anticoagulation, 13% ASA, 9% blood pressure control, 4% antibiotics, and 9% other. In 37 cases, no interventions for the vascular query were needed. Overall, 17 consults resulted in 19 surgical interventions (5 bypass/interposition/patch, 4 primary vascular repairs, 3 fasciotomies, 2 angiograms, 2 embolectomies, 1 amputation, 1 thoracic endograft, 1 first rib resection). The one early graft failure required revision. No operative interventions were performed in children <3 years old. Of 17 deaths, none were due to vascular injury. CONCLUSIONS: Consults to VS in a CH are infrequent and encompass a wide breadth of vascular disease. In contrast to the adult population, medical therapies are frequently utilized, whereas a minority undergo open or endovascular interventions. At 20 consults per year, a typical trainee may be involved in 40 to 60 pediatric cases during their residency. Exposure to the pediatric population is a small but important niche in vascular education and practice.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39733780/",
+      "doi": "https://doi.org/10.1016/j.jvs.2024.12.123"
+    },
+    {
+      "pmid": "39737724",
+      "title": "The Versatility of the Supinator to Posterior Interosseus Nerve Transfer: Indications and Outcomes-A Case Series.",
+      "authors": [
+        "Samuel George",
+        "Chane Kulenkampff",
+        "Tahseen Chaudhry",
+        "Liron S Duraku",
+        "Dominic M Power"
+      ],
+      "journal": "Plastic and reconstructive surgery",
+      "date": "2024 Dec 27",
+      "date_sort": "2024-12-27",
+      "abstract": "BACKGROUND: Transfer of the supinator motor branches to the posterior interosseous nerve (SPIN) was first described as a reliable method of restoration of digit extension in cases of paralysis when there is retained function in the 5th and 6th cervical nerve roots with loss of function in the 8th cervical nerve root. METHODS: The authors performed a retrospective review of all SPIN transfers that were performed in their unit over a 6-year period, which included 16 limbs of 14 patients. The median age was 49 years (range, 22 to 74 years). The average follow-up period was 15 months (range, 6 to 24 months). The pathogenesis included spinal cord injury (SCI) in 5, plexus root avulsion in 3, degenerate spondyloradiculopathy in 3, paralysis from oncologic resection in 1, inflammation in 1, and compressive neuropathy in 1. RESULTS: Functional digit extension (Medical Research Council grade 3 or above) was achieved in 12 of 16 limbs. Patients with degenerative spinal lesions had the worst outcome, with a median of Medical Research Council grade 2, and a median time to surgery of 20 months (average age, 67 years), compared with 13 months in the SCI group (average age, 32.8 years) and 4 months in the brachial plexus injuries group (average age, 34.6 years). CONCLUSIONS: The SPIN transfer may be performed safely in a wide spectrum of pathologies, including brachial plexus injuries, SCIs, and neuritis. However, in degenerative spondyloradiculopathy, inferior outcomes were obtained, which may be due to late referral, chronic denervation, possible involvement of the donor nerve, an older age group, or potentially diminished rehabilitation and neural plasticity potential. CLINICAL QUESTION/LEVEL OF EVIDENCE: Therapeutic, IV.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39737724/",
+      "doi": "https://doi.org/10.1097/PRS.0000000000011946"
+    },
+    {
       "pmid": "39692085",
       "title": "The Median Nerve Displays Adaptive Characteristics When Exposed to Repeated Pinch Grip Efforts of Varying Rates of Force Development: An Ultrasonic Investigation.",
       "authors": [
@@ -6895,23 +7414,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39637082/",
       "doi": "https://doi.org/10.2106/JBJS.CC.24.00108"
-    },
-    {
-      "pmid": "39570623",
-      "title": "A case of superior trunk brachial plexus injury after right mini-thoracotomy mitral valve repair.",
-      "authors": [
-        "Tatsuya Ozaki",
-        "Masashi Kawamura",
-        "Toru Iwahashi",
-        "Shigeru Miyagawa"
-      ],
-      "journal": "Interdisciplinary cardiovascular and thoracic surgery",
-      "date": "2024 Dec 3",
-      "date_sort": "2024-12-03",
-      "abstract": "We report a case of superior trunk brachial plexus injury following a right mini-thoracotomy mitral valve repair. A 45-year-old woman with systemic lupus erythematosus, who was on steroids and immunosuppressive drugs, underwent mitral valve repair via right mini-thoracotomy. The patient was positioned in the left semisagittal position with the right upper arm elevated. Postoperatively, she exhibited focal motor and sensory deficits in the right upper extremity, and a superior trunk brachial plexus injury on the right side was diagnosed through brachial plexus MRI and electrophysiological examination. The nerve injury was likely due to excessive left lateral flexion of the head during the procedure. Sensation returned to normal 4 weeks postoperatively, and muscle strength fully recovered 3 months postoperatively. Careful attention to positioning during minimally invasive cardiac surgery is crucial to prevent nerve compression in superficial areas and excessive lateral flexion of the head.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39570623/",
-      "doi": "https://doi.org/10.1093/icvts/ivae190"
     },
     {
       "pmid": "41050218",
@@ -6985,6 +7487,24 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3389/fsurg.2024.1470205"
     },
     {
+      "pmid": "42232709",
+      "title": "Satisfactory outcome with robotic-assisted chest wall resection and reconstruction: a case report.",
+      "authors": [
+        "Chiara Catelli",
+        "Federico Mathieu",
+        "Antonio Fabiano",
+        "Piero Paladini",
+        "Luca Luzzi"
+      ],
+      "journal": "Journal of visualized surgery",
+      "date": "2024 Nov 25",
+      "date_sort": "2024-11-25",
+      "abstract": "BACKGROUND: The surgical management of chest wall tumors is challenging, particularly in balancing effective resection with preserving structural integrity, minimizing postoperative morbidity. While traditional open thoracotomy has been the standard approach, recently, minimally invasive techniques, especially robot-assisted thoracoscopic surgery (RATS), have emerged as effective alternatives with several benefits. CASE DESCRIPTION: A 35-year-old asymptomatic woman, with no documented exposure to carcinogens and a clear medical history, underwent chest magnetic resonance imaging (MRI) and subsequent computed tomography (CT)-scan for a >10 cm rib alteration on the left chest wall, with no signs of tissue infiltration. Suspecting osteochondroma, we performed a radical resection via RATS. Using three surgical ports, the rib was dissected and resected with robotic assistance. A non-absorbable mesh was placed to restore chest wall integrity and prevent pulmonary herniation. The final diagnosis was fibrous dysplasia (FD). The procedure had no complications, with 150 mL blood loss, and the patient was discharged on postoperative day 4 with excellent pain control. The patient reported no ongoing pain at the surgical site, denies any respiratory issues, and has not developed a lung hernia. Although several rib resections have been described using robotic techniques, particularly for the first and second ribs in thoracic outlet syndrome, this is the first reported case of a wide rib resection requiring chest wall reconstruction. Moreover, this case represents the first documented instance of rib wall reconstruction with mesh using a robotic approach. CONCLUSIONS: Robotic chest wall resection and reconstruction is feasible and safe. The use of robotic EndoWrist movement allows for easy chest wall reconstruction using mesh and running barbed sutures, without the need to make an additional skin incision at the level of the wall defect, potentially allowing for a reduction in post-operative pain and a quick recovery.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42232709/",
+      "doi": "https://doi.org/10.21037/jovs-24-20"
+    },
+    {
       "pmid": "39654566",
       "title": "Imaging features of the brachial plexus in neurogenic thoracic outlet syndrome: A case report.",
       "authors": [
@@ -7006,85 +7526,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.radcr.2024.10.158"
     },
     {
-      "pmid": "39579973",
-      "title": "Iatrogenic nerve injury during upper limb surgery (excluding the hand).",
-      "authors": [
-        "Laurent Obert",
-        "Sophie Spitael",
-        "François Loisel",
-        "Matthieu Mangin",
-        "Victor Rutka",
-        "Christophe Lebrun",
-        "Frédéric Sailhan",
-        "Philippe Clavert"
-      ],
-      "journal": "Orthopaedics & traumatology, surgery & research : OTSR",
-      "date": "2024 Nov 22",
-      "date_sort": "2024-11-22",
-      "abstract": "Nerve injury is the most feared complication of upper limb surgery. In about 17% of cases, the injury is iatrogenic and the potential for recovery is poor. In this context, patients file for compensation in about a quarter of cases. Defective patient installation or locoregional anaesthesia are rarely the cause of nerve injury. Nerves may be injured during creation of the surgical approach, implantation of the material or reduction of a traumatic injury. The injury is usually related to nerve release, retractor positioning or inappropriate limb-segment lengthening. Stretching and/or compression of a nerve trunk or branch is thus often the main cause. Among diagnostic tools, imaging studies (ultrasonography, computed tomography, and magnetic resonance imaging) provide information on nerve structure but not on the potential for recovery. Electromyography combined with a neurological examination establishes the diagnosis, guides the management strategy, allows nerve-function monitoring, and indicates when nerve repair or palliative surgery is indicated. Electromyography also has prognostic value, both at diagnosis and during follow-up, by showing whether nerve regeneration is taking place. When creating the surgical approaches, thorough familiarity with anatomic safe zones and nerve trajectories is crucial to ensure full control of the zones at highest risk for nerve injury. LEVEL OF EVIDENCE: IV.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39579973/",
-      "doi": "https://doi.org/10.1016/j.otsr.2024.104056"
-    },
-    {
-      "pmid": "39563656",
-      "title": "Quantitative Analysis of the Carpal Tunnel and Its Inner Structures in Primates.",
-      "authors": [
-        "Patrícia Rodríguez",
-        "Aroa Casado",
-        "Neus Ciurana",
-        "Marcel García",
-        "Francisco Pastor",
-        "Josep Maria Potau"
-      ],
-      "journal": "American journal of primatology",
-      "date": "2024 Nov 20",
-      "date_sort": "2024-11-20",
-      "abstract": "To explore the anatomical factors potentially involved in the high incidence of carpal tunnel syndrome in humans, we have quantified the anatomical variations of the carpal tunnel and its inner structures in humans, non-hominoid primates (monkeys), and hominoid primates (apes). In specimens of six humans, eight monkeys, and three apes, we assessed the size of the carpal tunnel, the tendons of the digit flexor muscles, and the median nerve. We compared the size of the carpal tunnel normalized by the wrist size, and the size of the median nerve and the tendons of the digit flexors normalized by the size of the carpal tunnel. Differences between humans and monkeys were calculated using the T test or Mann-Whitney U test, as appropriate. Data on the apes were not included in the statistical analyses due to the small sample size. The normalized size of the carpal tunnel was similar in all specimens. The normalized size of the tendons of the digit flexors was smaller in humans, while that of the median nerve was significantly larger. The median nerve was also larger in apes than in monkeys. The relatively larger median nerve observed in humans could suggest a greater vulnerability of the nerve to compression, which could predispose humans to carpal tunnel syndrome. However, the tendons of the digit flexor muscles were smaller in humans, and moreover, the proportional size of the median nerve was similar in apes, leading us to suggest that the factors predisposing humans to carpal tunnel syndrome must be sought beyond anatomical features and may be more closely related to functional or personal parameters.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39563656/",
-      "doi": "https://doi.org/10.1002/ajp.23700"
-    },
-    {
-      "pmid": "39569399",
-      "title": "Intractable pain due to thoracic outlet syndrome successfully treated with percutaneous epidural adhesiolysis: A case report.",
-      "authors": [
-        "Yusuke Ishida",
-        "Reon Kobayashi",
-        "Eiko Hara",
-        "Haruka Takaoka",
-        "Mayo Shintaku",
-        "Asae Taketomi",
-        "Hitoshi Mera",
-        "Katsunori Oe"
-      ],
-      "journal": "SAGE open medical case reports",
-      "date": "2024 Nov 19",
-      "date_sort": "2024-11-19",
-      "abstract": "Thoracic outlet syndrome (TOS) is characterized by intractable cervicobrachial pain caused by strangulation of the brachial plexus and subclavian artery by structures of the superior thoracic outlet. We describe percutaneous epidural adhesiolysis for refractory pain due to TOS. A man in his 40s had received nerve block therapy for right upper extremity pain of unknown origin for 5 years. Although imaging findings were negative for TOS, reproducible pain relieved by injection of a local anesthetic into the anterior scalene muscle suggested TOS due to compression by the muscle. Subsequently, since nerve block treatment had only temporary effect and the pain gradually worsened, right T1 epidural adhesiolysis was performed. Thereafter, the pain improved from a numerical rating scale score of 8-9/10 to 2-3/10, continuing for about 3 months. Epidural adhesiolysis was remarkably effective in treating intractable pain caused by TOS due to strangulation of the brachial plexus by the anterior scalene muscle.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39569399/",
-      "doi": "https://doi.org/10.1177/2050313X241299956"
-    },
-    {
-      "pmid": "39561748",
-      "title": "Multiparametric Ultrasound Assessment of Carpal Tunnel Syndrome: Beyond Nerve Cross-sectional Area.",
-      "authors": [
-        "Tjaša Tomažin",
-        "Luka Pušnik",
-        "Domenico Albano",
-        "Suren Armeni Jengojan",
-        "Žiga Snoj"
-      ],
-      "journal": "Seminars in musculoskeletal radiology",
-      "date": "2024 Nov 19",
-      "date_sort": "2024-11-19",
-      "abstract": "Carpal tunnel syndrome (CTS), the most common mononeuropathy, results from compression of the median nerve within the fibro-osseous carpal tunnel. Diagnosis is typically based on clinical evaluation and confirmed by nerve conduction studies. However, ultrasound (US) has emerged as a valuable noninvasive adjunct for CTS confirmation, offering potential advantages over electrodiagnostic testing in terms of patient comfort and diagnostic accuracy. This review begins with a concise summary of carpal tunnel anatomy and CTS pathophysiology as a foundation for exploring the diverse applications of US in CTS evaluation. B-mode US assessment is presented with a focus on cross-sectional imaging and dynamic evaluations, including the transverse translocation and longitudinal gliding of the median nerve. We also review current methods for assessing vascularization in CTS and explore the usefulness of elastography in CTS evaluation. The advantages and limitations of each US method are elucidated, highlighting their practical utility in clinical practice.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39561748/",
-      "doi": "https://doi.org/10.1055/s-0044-1790561"
-    },
-    {
       "pmid": "39545467",
       "title": "Treatment of thoracic outlet syndrome to relieve chronic migraine.",
       "authors": [
@@ -7100,26 +7541,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39545467/",
       "doi": "https://doi.org/10.1002/ca.24242"
-    },
-    {
-      "pmid": "39543482",
-      "title": "Comparison of different acceleration factors of artificial intelligence-compressed sensing for brachial plexus MRI imaging: scanning time and image quality.",
-      "authors": [
-        "Tianxin Cheng",
-        "Feifei Li",
-        "Xuetao Jiang",
-        "Dan Yu",
-        "Jie Wei",
-        "Ying Yuan",
-        "Hui Xu"
-      ],
-      "journal": "BMC medical imaging",
-      "date": "2024 Nov 14",
-      "date_sort": "2024-11-14",
-      "abstract": "BACKGROUND: 3D brachial plexus MRI scanning is prone to examination failure due to the lengthy scan times, which can lead to patient discomfort and motion artifacts. Our purpose is to investigate the efficacy of artificial intelligence-assisted compressed sensing (ACS) in improving the acceleration efficiency and maintaining or enhancing the image quality of brachial plexus MR imaging. METHODS: A total of 30 volunteers underwent 3D sampling perfection with application-optimized contrast using different flip angle evolution short time inversion recovery using a 3.0T MR scanner. The imaging protocol included parallel imaging (PI) and ACS employing acceleration factors of 4.37, 6.22, and 9.03. Radiologists evaluated the neural detail display, fat suppression effectiveness, presence of image artifacts, and overall image quality. Signal intensity and standard deviation of specific anatomical sites within the brachial plexus and background tissues were measured, with signal-to-noise ratio (SNR) and contrast-to-noise ratio (CNR) subsequently calculated. Cohen's weighted kappa (κ), One-way ANOVA, Kruskal-Wallis and pairwise comparisons with Bonferroni-adjusted significance level. P < 0.05 was considered statistically significant. RESULTS: ACS significantly reduced scanning times compared to PI. Evaluations revealed differences in subjective scores and SNR across the sequences (P < 0.05), with no marked differences in CNR (P > 0.05). For subjective scores, ACS 9.03 were lower than the other three sequences in neural details display, image artifacts and overall image quality. There was no significant difference in fat suppression. For objective quantitative evaluation, SNR of right C6 root in ACS 6.22 and ACS 9.03 was higher than that in PI; SNR of left C6 root in ACS 4.37, ACS 6.22 and ACS 9.03 was higher than that in PI; SNR of medial cord in ACS 6.22, ACS 9.03 was higher than that in PI. CONCLUSION: Compared with PI, ACS can shorten scanning time while ensuring good image quality.",
-      "article_type": "Comparative Study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39543482/",
-      "doi": "https://doi.org/10.1186/s12880-024-01493-0"
     },
     {
       "pmid": "39608328",
@@ -7163,92 +7584,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39593802/",
       "doi": "https://doi.org/10.3390/bioengineering11111142"
-    },
-    {
-      "pmid": "39535438",
-      "title": "Common sports-related nerve injuries seen by the electrodiagnostic medical consultant.",
-      "authors": [
-        "Jordan I Farag",
-        "Alexandre N McDougall",
-        "Michael Catapano"
-      ],
-      "journal": "Muscle & nerve",
-      "date": "2024 Nov 13",
-      "date_sort": "2024-11-13",
-      "abstract": "The high physiologic demands of sports create dynamic stress on joints, soft tissues, and nerves which may lead to injuries in the athlete. Electrodiagnostic (EDx) assessment is essential to identify the correct diagnosis, localization, and prognosis, to guide management of sports-related neuropathies. A comprehensive review was performed to provide the EDx medical consultant with a practical approach to the common peripheral nerve disorders seen in athletes. Sports-related neuropathies reviewed include transient traumatic irritation of the brachial plexus and/or cervical nerve roots (\"Burners and stingers,\") suprascapular and axillary neuropathies, ulnar neuropathy at the elbow (UNE) in throwers, ulnar neuropathy at the hand/wrist in cyclists, multi-ligamentous knee injury, and foot/ankle neuropathies including tarsal tunnel syndrome. A thorough understanding of peripheral anatomy, possible entrapment sites, mechanisms of injury, and key physical examination findings is essential for correct diagnosis. EDx assessments beyond routine studies are generally required for sports-related neuropathy, which may not necessarily follow typical entrapment patterns. Adjunct diagnostic imaging, such as point-of-care ultrasound and magnetic resonance imaging, are helpful tools to identify associated musculoskeletal pathology such as compressive cysts or nerve entrapment, which may be amenable to interventional or surgical treatment. When no clear reversible structural pathology exists, management of sports-related neuropathy is athlete-specific and generally multi-modal, involving a combination of physical rehabilitation techniques to address muscle imbalances, load management, protective equipment, and interventional pain procedures.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39535438/",
-      "doi": "https://doi.org/10.1002/mus.28298"
-    },
-    {
-      "pmid": "39503214",
-      "title": "Early and Late Intrinsic Hand Muscle Reinnervation After End-to-Side AIN to Ulnar Motor Nerve Transfer.",
-      "authors": [
-        "Eric C Mitchell",
-        "Mehran Mansouri",
-        "Thomas Miller",
-        "Douglas Ross",
-        "Joshua Gillis"
-      ],
-      "journal": "Hand (New York, N.Y.)",
-      "date": "2024 Nov 6",
-      "date_sort": "2024-11-06",
-      "abstract": "BACKGROUND: The \"supercharge\" end-to-side (SETS) anterior-interosseous-nerve (AIN) to ulnar-motor nerve transfer is used to improve intrinsic muscle recovery in cases of severe ulnar nerve compression or proximal axonotmetic injuries. Previous work has found differing intrinsic muscle recovery after this transfer. The objectives of this study were to examine the patterns of recovery in first dorsal interossei (FDI) and abductor digiti minimi (ADM) and the impact of AIN transfer to a specific fascicular location on the ulnar-motor nerve. METHODS: A retrospective review of one fellowship-trained surgeon's consecutive patients at a single center from December 2019 to September 2021 was conducted. Patients who had an AIN to ulnar-motor nerve transfer for any indication were included and were excluded if they had less than 9 months follow-up. RESULTS: Seventeen patients were included (88% male, mean age 55 ± 14 years). At early follow-up, compound muscle action potential amplitudes for ADM and FDI did not increase. Compound muscle action potential amplitude for ADM significantly increased at late follow-up (P < .01). Average British Medical Research Council (BMRC) strength increased at early follow-up for FDI (P < .05), but not ADM. The proportion of patients with BMRC ≥ 3 increased for FDI (P < .01) and ADM (P < .05) at late follow-up. Volar-ulnar AIN insertion position did not have a clear effect on outcomes. CONCLUSIONS: The SETS AIN to ulnar-motor nerve transfer demonstrates clinical and electrophysiologic evidence of intrinsic muscle recovery and reinnervation, with differing recovery of outcomes. The role of specific fascicular targeting is still unclear and required further examination as does the mechanism behind differing intrinsic recovering.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39503214/",
-      "doi": "https://doi.org/10.1177/15589447241286263"
-    },
-    {
-      "pmid": "39507316",
-      "title": "Technique and Expected Benefit of Intraoperative Perfusion Imaging of Peripheral Nerves.",
-      "authors": [
-        "Benedikt Schäfer",
-        "Gerrit Freund",
-        "Jonah Orr",
-        "Kay Nolte",
-        "Joachim Weis",
-        "Jörg Bahm",
-        "Justus P Beier"
-      ],
-      "journal": "Plastic and reconstructive surgery. Global open",
-      "date": "2024 Nov 5",
-      "date_sort": "2024-11-05",
-      "abstract": "Peripheral nerve surgery, particularly in cases of nerve compression syndrome (NCS), necessitates a comprehensive evaluation of intraneural blood flow, as localized reductions in nerve perfusion are integral to the etiopathogenesis of such conditions. Although nerve perfusion is currently guided by morphologic characteristics, this assessment is subjective and prone to bias. Intraoperative fluorescence-assisted perfusion imaging with indocyanine green (ICG) is an established tool in flap and lymphatic surgery to objectively assess perfusion intraoperatively. However, only a few unspecific applications of ICG in peripheral nerve surgery have been published so far. In this study, we performed intraoperative perfusion imaging using ICG in 16 consecutive operations within the peripheral nervous system, including microsurgical reconstructions after obstetric brachial plexus injury, decompression for NCS, and vascularized ulnar nerve interposition transfers. Our findings show the utility of ICG in delineating healthy perfusion borders at proximal and distal stump levels after neuroma resection, and we demonstrate a correlation between histological findings and these clinically observed perfusion patterns. In NCS cases, we demonstrate that ICG imaging is effective in highlighting reduced perfusion predecompression and improved perfusion postdecompression. Additionally, ICG proved valuable for assessing perfusion of free vascularized nerve grafts. Intraoperative ICG perfusion imaging is a valuable tool during surgery of the peripheral nervous system, providing insights into the etiopathogenesis of NCS and aiding in the visualization of perfusion. This study underscores the potential of ICG in nerve surgery and its applicability for improving surgical outcomes and advancing our understanding of peripheral nerve pathologies.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39507316/",
-      "doi": "https://doi.org/10.1097/GOX.0000000000006281"
-    },
-    {
-      "pmid": "39498708",
-      "title": "Compression-induced reversible brachial plexopathy: Urgent neurological approach.",
-      "authors": [
-        "Handan Uzunçakmak Uyanık",
-        "Refah Sayın"
-      ],
-      "journal": "Ulusal travma ve acil cerrahi dergisi = Turkish journal of trauma & emergency surgery : TJTES",
-      "date": "2024 Nov",
-      "date_sort": "2024-11-01",
-      "abstract": "Brachial plexus injuries are the second most common perioperative peripheral nerve injuries. Malposition is a significant predisposing factor to these injuries. Additionally, some drugs, including tacrolimus, are known to predispose individuals to peripheral neuropathy. Herein, we present the electroneuromyography (EMG) findings within the first 48 hours for a patient who has been under tacrolimus treatment for five years due to liver transplantation and developed compression-induced reversible brachial plexopathy. Through this case, we highlighted that brachial plexus injury may not always result in axonal involvement and discussed the findings that may be encountered in early neurophysiological examinations.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39498708/",
-      "doi": "https://doi.org/10.14744/tjtes.2024.26254"
-    },
-    {
-      "pmid": "39472854",
-      "title": "The relationship between ultrasound and electrodiagnostic findings in relation of the severity of carpal tunnel syndrome.",
-      "authors": [
-        "Seyed Mansoor Rayegani",
-        "Rashin Malekmahmoodi",
-        "Kianmehr Aalipour",
-        "Farshad Nouri"
-      ],
-      "journal": "BMC musculoskeletal disorders",
-      "date": "2024 Oct 29",
-      "date_sort": "2024-10-29",
-      "abstract": "INTRODUCTION: Carpal tunnel syndrome is the most common compression neuropathy. Grading the severity of carpal tunnel syndrome is an important factor in deciding on the type of treatment. This study aims to determine the relationships between the findings of the electrodiagnosis and ultrasonography methods based on the severity of carpal tunnel syndrome. METHODS: In this prospective clinical study, 50 patients (96 wrists) who were referred to the Physical Medicine and Rehabilitation Department of the Shohada Tajrish Hospital, Tehran, Iran (from March 2021 to November 2022) were studied. All patients with a history and clinical examination related to CTS underwent electrodiagnosis studies. Based on the results of electrodiagnosis, patients were divided into three groups: mild, moderate, and severe. All eligible patients underwent ultrasound at the cross-section of the wrist (at the level of the pisiform bone, the entrance of the canal) and the middle of the forearm. RESULTS: In this study, the cross-sectional area of the median nerve was measured in 96 wrists of 50 patients with a mean age of 51.78 ± 9.80 years. The mean CSA of the median nerve in the mild, moderate, and severe groups was reported as 0.12 ± 0.03, 0.14 ± 0.02, and 0.21 ± 0.06, respectively. The mean WFR in different groups of CTS was reported as 1.85 ± 0.56, 1.93 ± 0.56, and 2.45 ± 0.49, respectively. A significant relationship between ultrasound findings, including CSA-inlet and WFR, and electrodiagnosis findings was presented (P value < 0.05). CONCLUSION: Based on our findings, there is a statistically significant relationship between the sonographic findings, including the mean CSA-inlet and WFR, and the severity of CTS based on the electrodiagnosis study. Our findings revealed that as disease severity increases, sonographic parameters also increase significantly.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39472854/",
-      "doi": "https://doi.org/10.1186/s12891-024-07987-w"
     },
     {
       "pmid": "39550816",
@@ -7336,45 +7671,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/15589447241286240"
     },
     {
-      "pmid": "39417847",
-      "title": "Special issue: nerve compression syndromes \"Brachioradialis, or \"High Wartenberg\", syndrome - compression of the sensory branch of the radial nerve in the proximal forearm.",
-      "authors": [
-        "Elisabet Hagert",
-        "Camila Azocar",
-        "Ulrika Jedeskog",
-        "Ashraf Hantouly"
-      ],
-      "journal": "International orthopaedics",
-      "date": "2024 Oct 17",
-      "date_sort": "2024-10-17",
-      "abstract": "PURPOSE: Compression of the sensory branch of the radial nerve (SBRN) in the proximal forearm is an uncommon condition, leading to both motor and sensory deficits. The aim of this study is to assess the surgical outcomes of SBRN release at the level of the brachioradialis arcade. METHODS: A retrospective study of prospectively collected data was conducted on patients undergoing brachioradialis release (BRR) from March 2014 to March 2021. The measured outcomes included quick-DASH (Disability of the Arm Shoulder Hand questionnaire), work-DASH, visual analog scale (VAS) scores for pain, and patient satisfaction with surgery, at a minimum six month follow-up. RESULTS: A total of twenty patients (mean age of 44.1 (range 25-62) were included in this study, of which nine (45%) were males. Eleven patients (55%) underwent isolated BRR, while the other nine patients (45%) underwent concomitant BRR and lacertus release. The three most common presenting symptoms in patients with isolated BRS were radiovolar forearm pain (100%), disturbed sensation in the SBRN territory (85%), and hand/thumb fatigue (75%). Forearm pain and fatigue were found in all patients with combined BRS and lacertus syndrome. The response rate for the functional outcome scores was 65% (13/20). Quick-DASH significantly improved (preoperative 29.6 (range 13.6-57.5) to postoperative 6.9 (range 0-27.27), p < 0.0001) as did the work DASH (p < 0.0001). Follow-up VAS Pain was 1 and satisfaction with surgery 9.6. CONCLUSION: BRS is an uncommon radial nerve compression syndrome in the proximal forearm that differs from the more commonly recognized radial tunnel syndrome. It presents with radio-volar forearm pain, disturbed sensation in the SBRN distribution, and loss of hand/thumb endurance. Minimally invasive BRR immediately restores wrist extension strength, significantly improves DASH scores, and yields positive outcomes at a minimum six-month follow-up.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39417847/",
-      "doi": "https://doi.org/10.1007/s00264-024-06350-x"
-    },
-    {
-      "pmid": "39414755",
-      "title": "Comparing the efficacy of multiple quantitative and qualitative ultrasound parameters for the diagnosis of carpal tunnel syndrome.",
-      "authors": [
-        "Isha Gupta",
-        "Shashank Sharma",
-        "Kshitij Gupta",
-        "Meenu Bagarhatta",
-        "Naima Mannan",
-        "Parul Gupta",
-        "Vikas Jhanwar",
-        "Deepak Gupta",
-        "Jitendra Yadav"
-      ],
-      "journal": "Journal of ultrasound",
-      "date": "2024 Oct 16",
-      "date_sort": "2024-10-16",
-      "abstract": "PURPOSE: Carpal tunnel syndrome (CTS) is a compression neuropathy causing significant morbidity. Over the years, ultrasound has been evaluated as an alternative to nerve conduction study (NCS) for diagnosing CTS, however, there is no consensus as to which ultrasound parameter is the best. Our study aimed to determine and compare the efficacy of various ultrasound-based variables for diagnosis of CTS. METHODS: 80 patients with clinical suspicion of CTS underwent ultrasound examination with calculation of cross-sectional area (CSA), delta CSA, wrist forearm ratio (WFR), palmer bowing (PB), flattening ratio (FR), flexor retinaculum thickness (FT), and evaluation of echogenicity and vascularity of median nerve. NCS was taken as the gold standard and the diagnostic efficacy of all these variables was compared, followed by receiver operator curve (ROC) analysis. RESULTS: Delta CSA had the highest accuracy (91.25%), followed by CSAc (80%), WFR (78.75%), and PB (73.75%). Youden's index and sensitivity were highest for delta CSA (0.783 and 96.15% respectively), while specificity was highest for FT (89.29%). The highest area under the curve was noted for delta CSA (97.1%), followed by WFR (AUC = 87.4%) and CSAc (AUC = 86.0%). CONCLUSION: Delta CSA was found to be the best ultrasound parameter for diagnosis of CTS, followed by CSAc, WFR, and PB, and can be used as an alternative to NCS. Using ROC analysis this study also predicted the best cut-off values for these parameters which could improve their diagnostic accuracy and further research is needed to confirm these findings.",
-      "article_type": "Comparative Study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39414755/",
-      "doi": "https://doi.org/10.1007/s40477-024-00959-9"
-    },
-    {
       "pmid": "39419324",
       "title": "Early Results of Interventions in Patients with Venous Thoracic Outlet Syndrome.",
       "authors": [
@@ -7392,21 +7688,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39419324/",
       "doi": "https://doi.org/10.1016/j.avsg.2024.08.030"
-    },
-    {
-      "pmid": "39593552",
-      "title": "The management of thoracic outlet syndrome induced by bilateral cervical ribs in young, female athlete - a case report.",
-      "authors": [
-        "Justyna Głowa",
-        "Bartosz Trybulec"
-      ],
-      "journal": "Journal of bodywork and movement therapies",
-      "date": "2024 Oct 16",
-      "date_sort": "2024-10-16",
-      "abstract": "INTRODUCTION: The presence of additional cervical ribs is a rare and relatively unknown pathology. The brachial plexus is most often compressed. Thoracic Outlet Syndrome (TOS) is the one of discussed of mixed compression syndromes, due to diagnostic difficulties and the lack of evidence to resolve the effectiveness of surgical treatment over conservative treatment. CASE REPORT: Presentation of the case of a 22-year-old female athlete with cervical ribs with neurogenic TOS symptoms and presentation of the rehabilitation model and its results. Functional diagnosis included TOS specific clinical tests performed before, immediately after the treatment and one month later. The range of motion (ROM) in the cervical spine, body posture, the pulse on the left and right radial artery, blood pressure on both upper limbs, as well as pain intensity were examined. Management included 8 therapeutic sessions using trigger point therapy, deep tissue massage and cervical rotational manipulations. The maximum muscle relaxation and pain relief (decrease of 3-5 points in VAS) occurred after 5 therapeutic sessions. The rotation and lateral flexion in the cervical spine was significantly improved - the active ROM increased 2,5 in rotation bilaterally and 3,5/4 cm (left/right) in lateral flexion and passive ROM increased 3,5/3 cm (left/right) in rotation and 3.5/4.5 cm (left/right) in lateral flexion. The joint play of the cervical segments was normalized and the result of costo-clavicular test for the right side and the brachial stretch test for the left side become negative while the change of blood pressure in both upper limbs after the therapy as well as after one month was marginal ( ± 1-4 mmHg). CONCLUSION: Conservative treatment based on the therapy of trigger points, deep tissue massage and rotational manipulations of the cervical spine appears to be an effective form of management of TOS induced by additional cervical ribs. However, further studies on are required to determine the most effective treatment options in this condition.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39593552/",
-      "doi": "https://doi.org/10.1016/j.jbmt.2024.10.053"
     },
     {
       "pmid": "39553137",
@@ -7431,25 +7712,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39553137/",
       "doi": "https://doi.org/10.7759/cureus.71608"
-    },
-    {
-      "pmid": "39593546",
-      "title": "Effectiveness of the scapula mobilization technique on the neural mechanosensitivity of the upper limb neural test 1 in individuals with mechanical cervicalgia. A randomized controlled trial.",
-      "authors": [
-        "Carlos Heredia Macias",
-        "Javier Ramos Ortega",
-        "Francisco Javier Serrano-Sánchez",
-        "Juan Antonio Díaz-Mancha",
-        "Lourdes Fernández Seguín",
-        "Jaime Cabañes-García"
-      ],
-      "journal": "Journal of bodywork and movement therapies",
-      "date": "2024 Oct 11",
-      "date_sort": "2024-10-11",
-      "abstract": "OBJECTIVE: to observe whether the mobilization of the scapula improves the mechanosensitivity of the median nerve in patients with cervicalgia. Localized cervical pain caused by compression of a nerve root without presenting irradiated features along the nerve path is diagnosed as cervicalgia. Muscles around the scapula can be directly responsible of this compression. METHODS: 60 adults diagnosed with cervicalgia and with a positive upper limb neural test 1(ULNT1) were recruited. Participants in the experimental group received a scapula mobilization technique. Participants in the control group, with electrodes on both sides of the neck and connected to turned off analgesic current device, received an abduction-adduction mobilization of the calcaneus in the lower limb contralateral to the painful area. The variables measured were pain, goniometry of elbow extension in movement for the median neurodynamic test (ULNT1) and hand grip strength. RESULTS: Results showed that the increase in strength (p = 0.01) and elbow extension movement (p = 0.01) and the decrease in pain (p < 0.01) from the intervention group showed significant changes compared to the changes from control group. CONCLUSION: Scapula mobilization technique in subjects presenting with cervicalgia and a positive ULNT1 significantly appears to help improve the neural mechanosensitivity of the median nerve and pain.",
-      "article_type": "Clinical Trial",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39593546/",
-      "doi": "https://doi.org/10.1016/j.jbmt.2024.10.006"
     },
     {
       "pmid": "39552906",
@@ -7493,27 +7755,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1186/s44215-024-00169-z"
     },
     {
-      "pmid": "39378755",
-      "title": "Alterations of meat quality, lipid composition and flavor in breast meat of laying hens with fatty liver hemorrhagic syndrome.",
-      "authors": [
-        "Shaobo Zhang",
-        "Panpan Sun",
-        "Honglei Guo",
-        "Xinbo Zhang",
-        "Manhua You",
-        "Xin He",
-        "Xinghua Zhao",
-        "Ning Ma"
-      ],
-      "journal": "Poultry science",
-      "date": "2024 Sep 26",
-      "date_sort": "2024-09-26",
-      "abstract": "Fatty liver hemorrhagic syndrome (FLHS) has a high incidence rate in laying hens, and lots of FLHS-affected meat products enter the market every year. At the same time, the meat of laying hens is an important component of the human diet. However, the impact of FLHS on meat of laying hens is unknown, which could have a negative impact on consumers. To explore the effects of FLHS on chicken breast meat, a total of 36 twenty-five-wk-old Jingfen laying hens were used in the experiment. The hens were randomly divided into Control group and Model group, with 6 replicates per group and 3 hens per replicate. All chickens were raised in double-story step cages with individual pens. After a 3-wk acclimation period, the formal experiment began at 28 wk of age and lasted for 8 wk. Blood, liver, and breast meat samples were collected for the study of FLHS effects on breast meat. The impact of FLHS on meat quality was assessed by measuring indicators such as water-holding capacity and tenderness of the breast meat. Absolute quantitative lipidomics was employed to reveal the impact of FLHS on the lipid composition of chicken breast meat, and then validated by using RT-qPCR. Moreover, the volatilomics was utilized to detect changes in volatile organic compounds (VOCs) in chicken breast meat and to elucidate the resulting flavor changes. This research results showed that the meat quality of chicken breast meat decreased under FLHS, mainly manifested as reduced water holding capacity and decreased tenderness. The lipid content in the breast meat of FLHS-affected hens was significantly increased (P < 0.05). Among the affected lipids, 38 triglycerides exhibited notable elevation, possibly linked to heightened gene expression, such as lysophosphatidylcholine acyltransferase 3. The breast meat of laying hens with FLHS demonstrated an increased presence of VOCs, with 20 differential VOCs identified. Notably, 14 VOCs, particularly in 2-Undecenal, trans-Geranylacetone and ethyl nonanoate, exhibited substantial increases. These 3 VOCs had been identified as playing an important role in the formation of flavor in the breast meat of FLHS-affected laying hens. Correlation analysis suggested that the increase in these 3 VOCs might be related to the increase in lipid molecules such as phosphatidylethanolamine (38;3e) and acyl carnitine (10:3). In summary, FLHS reduced the breast meat quality of laying hens, altered its lipid profiles, and enhanced its flavor. These findings underscore the profound impact of FLHS on lipid and VOC profiles in chicken breast meat, offering valuable insights for chicken meat quality affected by FLHS.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39378755/",
-      "doi": "https://doi.org/10.1016/j.psj.2024.104360"
-    },
-    {
       "pmid": "39332077",
       "title": "Thrombolysis and Surgical Decompression for Venous Thoracic Outlet Syndrome.",
       "authors": [
@@ -7533,6 +7774,27 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39332077/",
       "doi": "https://doi.org/10.1016/j.jss.2024.08.023"
+    },
+    {
+      "pmid": "39378755",
+      "title": "Alterations of meat quality, lipid composition and flavor in breast meat of laying hens with fatty liver hemorrhagic syndrome.",
+      "authors": [
+        "Shaobo Zhang",
+        "Panpan Sun",
+        "Honglei Guo",
+        "Xinbo Zhang",
+        "Manhua You",
+        "Xin He",
+        "Xinghua Zhao",
+        "Ning Ma"
+      ],
+      "journal": "Poultry science",
+      "date": "2024 Sep 26",
+      "date_sort": "2024-09-26",
+      "abstract": "Fatty liver hemorrhagic syndrome (FLHS) has a high incidence rate in laying hens, and lots of FLHS-affected meat products enter the market every year. At the same time, the meat of laying hens is an important component of the human diet. However, the impact of FLHS on meat of laying hens is unknown, which could have a negative impact on consumers. To explore the effects of FLHS on chicken breast meat, a total of 36 twenty-five-wk-old Jingfen laying hens were used in the experiment. The hens were randomly divided into Control group and Model group, with 6 replicates per group and 3 hens per replicate. All chickens were raised in double-story step cages with individual pens. After a 3-wk acclimation period, the formal experiment began at 28 wk of age and lasted for 8 wk. Blood, liver, and breast meat samples were collected for the study of FLHS effects on breast meat. The impact of FLHS on meat quality was assessed by measuring indicators such as water-holding capacity and tenderness of the breast meat. Absolute quantitative lipidomics was employed to reveal the impact of FLHS on the lipid composition of chicken breast meat, and then validated by using RT-qPCR. Moreover, the volatilomics was utilized to detect changes in volatile organic compounds (VOCs) in chicken breast meat and to elucidate the resulting flavor changes. This research results showed that the meat quality of chicken breast meat decreased under FLHS, mainly manifested as reduced water holding capacity and decreased tenderness. The lipid content in the breast meat of FLHS-affected hens was significantly increased (P < 0.05). Among the affected lipids, 38 triglycerides exhibited notable elevation, possibly linked to heightened gene expression, such as lysophosphatidylcholine acyltransferase 3. The breast meat of laying hens with FLHS demonstrated an increased presence of VOCs, with 20 differential VOCs identified. Notably, 14 VOCs, particularly in 2-Undecenal, trans-Geranylacetone and ethyl nonanoate, exhibited substantial increases. These 3 VOCs had been identified as playing an important role in the formation of flavor in the breast meat of FLHS-affected laying hens. Correlation analysis suggested that the increase in these 3 VOCs might be related to the increase in lipid molecules such as phosphatidylethanolamine (38;3e) and acyl carnitine (10:3). In summary, FLHS reduced the breast meat quality of laying hens, altered its lipid profiles, and enhanced its flavor. These findings underscore the profound impact of FLHS on lipid and VOC profiles in chicken breast meat, offering valuable insights for chicken meat quality affected by FLHS.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39378755/",
+      "doi": "https://doi.org/10.1016/j.psj.2024.104360"
     },
     {
       "pmid": "39345894",
@@ -7662,20 +7924,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1249/JSR.0000000000001192"
     },
     {
-      "pmid": "39155676",
-      "title": "Evaluation of the Dysfunctional Scapula.",
-      "authors": [
-        "Joaquin Sanchez-Sotelo"
-      ],
-      "journal": "Techniques in hand & upper extremity surgery",
-      "date": "2024 Sep 1",
-      "date_sort": "2024-09-01",
-      "abstract": "Periscapular pain and dysfunction are relatively common complaints in the practice of upper extremity surgeons. However, evaluation of the dysfunctional scapula is intimidating for most. Physical examination of the periscapular muscles is very rich, and a systematic approach provides the opportunity to establish a diagnosis for most patients. Conditions underlying scapular dysfunction include trapezius palsy, serratus palsy, brachial plexus injuries, muscular dystrophy, snapping scapula, pectoralis minor syndrome, congenital undescended scapula, and functional scapular dyskinesis, among others. Patients should be examined with their torso uncovered and assessed from the front and back. Inspection, evaluation of motion, and strength testing may be followed by certain examination maneuvers specific for each condition. The scapular assistance test may help predict the outcome of treatment for certain conditions. Plain radiographs oftentimes need to be complemented with magnetic resonance of the chest to capture periscapular muscles as well as an electromyogram with nerve conduction studies. Computed tomography is particularly helpful for skeletal abnormalities. Ultrasound is used to assess certain peripheral nerve injuries and to guide diagnostic and therapeutic injections. A focused evaluation of the scapula followed by a more specific and directed approach for each condition suspected will allow upper extremity surgeons to approach the evaluation of the dysfunctional scapula with much more confidence.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/39155676/",
-      "doi": "https://doi.org/10.1097/BTH.0000000000000484"
-    },
-    {
       "pmid": "39225063",
       "title": "Use of Free Internal Mammary Artery Perforator Flap Harvested With Minimally Invasive Approach for Facial Reconstruction: Report of Two Cases.",
       "authors": [
@@ -7689,6 +7937,20 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/39225063/",
       "doi": "https://doi.org/10.1002/micr.31233"
+    },
+    {
+      "pmid": "39155676",
+      "title": "Evaluation of the Dysfunctional Scapula.",
+      "authors": [
+        "Joaquin Sanchez-Sotelo"
+      ],
+      "journal": "Techniques in hand & upper extremity surgery",
+      "date": "2024 Sep 1",
+      "date_sort": "2024-09-01",
+      "abstract": "Periscapular pain and dysfunction are relatively common complaints in the practice of upper extremity surgeons. However, evaluation of the dysfunctional scapula is intimidating for most. Physical examination of the periscapular muscles is very rich, and a systematic approach provides the opportunity to establish a diagnosis for most patients. Conditions underlying scapular dysfunction include trapezius palsy, serratus palsy, brachial plexus injuries, muscular dystrophy, snapping scapula, pectoralis minor syndrome, congenital undescended scapula, and functional scapular dyskinesis, among others. Patients should be examined with their torso uncovered and assessed from the front and back. Inspection, evaluation of motion, and strength testing may be followed by certain examination maneuvers specific for each condition. The scapular assistance test may help predict the outcome of treatment for certain conditions. Plain radiographs oftentimes need to be complemented with magnetic resonance of the chest to capture periscapular muscles as well as an electromyogram with nerve conduction studies. Computed tomography is particularly helpful for skeletal abnormalities. Ultrasound is used to assess certain peripheral nerve injuries and to guide diagnostic and therapeutic injections. A focused evaluation of the scapula followed by a more specific and directed approach for each condition suspected will allow upper extremity surgeons to approach the evaluation of the dysfunctional scapula with much more confidence.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/39155676/",
+      "doi": "https://doi.org/10.1097/BTH.0000000000000484"
     },
     {
       "pmid": "39440096",
@@ -8176,19 +8438,19 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1002/rcr2.1358"
     },
     {
-      "pmid": "38644173",
-      "title": "[Video-assisted Thoracoscopic Surgery for Chest Trauma].",
+      "pmid": "40026796",
+      "title": "Pancoast Syndrome Due to Metastatic Hepatocellular Carcinoma.",
       "authors": [
-        "Osamu Kakazu",
-        "Morio Ohta",
-        "Tetsuo Touyama"
+        "Margaret C Slack",
+        "Evan M Shannon"
       ],
-      "journal": "Kyobu geka. The Japanese journal of thoracic surgery",
-      "date": "2024 Apr",
+      "journal": "Journal of Brown hospital medicine",
+      "date": "2024 Apr 1",
       "date_sort": "2024-04-01",
-      "abstract": "Video-assisted thoracoscopic surgery (VATS) is now commonly used in emergency surgery to confirm the site of injury and observe the thoracic cavity, especially in cases of chest trauma with stable vital signs. VATS was used in all 33 chest trauma surgeries performed at our department from October 2009 to July 2023. The common injury mechanisms were traffic trauma and falls, but there were also cases of trauma from a bullhorn, heavy machinery and farm equipment, and penetrating injury. The common surgical procedures were treatment of rib fractures and pulmonary suture or partial lung resection, followed by treatment of diaphragmatic injuries. Unusual surgical procedures included extrapleural hematoma drainage, pericardial drainage, hemostasis of intrathoracic bleeding from thoracic vertebral fracture, and lobectomy for airway bleeding. Here, we report our surgical policies and techniques for chest trauma. First, the thoracic cavity should be observed thoracoscopically to determine the site of injury. The key to repair is placement of a small thoracotomy directly above the rib fracture site, where dislocation is largest, followed by suture repair of the lung and diaphragm by combining direct and thoracoscopic views.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38644173/"
+      "abstract": "Pancoast tumors are aggressive and locally invasive apical lung cancers that often compress and infiltrate adjacent structures including the brachial plexus, stellate ganglion, ribs, and vertebral bodies. Symptoms of Pancoast tumors include Pancoast Syndrome, characterized by Horner Syndrome and pain and weakness of the ipsilateral upper extremity. Pancoast tumors by definition are primary lung cancer and are nearly always non-small cell lung cancer (NSCLC). There are rare case reports of metastatic non-pulmonary malignancies forming apical lung tumors mimicking Pancoast tumors and causing Pancoast Syndrome. Here, we present a case of a 66-year-old male with a history of unresectable hepatocellular carcinoma (HCC) who presented with one year of progressive left wrist and forearm pain and hand weakness and was found on cross-sectional imaging to have a left upper lobe lung mass invading the T1 and T2 vertebral bodies. Pathology showed very poorly differentiated carcinoma that required specialized testing to achieve diagnostic clarity. The tumor was positive for albumin mRNA, which aided in confirming the lung mass as metastatic HCC. This case highlights a rare incidence of Pancoast Syndrome due to metastatic HCC and emphasizes the importance of considering this diagnosis as an etiology of left upper extremity pain in a patient with previously diagnosed malignancy. This case also demonstrates the utility of albumin mRNA in-situ hybridization as an additional tool in identifying metastatic HCC and reviews general principles of symptomatic management of Pancoast Syndrome.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40026796/",
+      "doi": "https://doi.org/10.56305/001c.115809"
     },
     {
       "pmid": "38680226",
@@ -8214,19 +8476,19 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.30476/ijms.2023.97060.2873"
     },
     {
-      "pmid": "40026796",
-      "title": "Pancoast Syndrome Due to Metastatic Hepatocellular Carcinoma.",
+      "pmid": "38644173",
+      "title": "[Video-assisted Thoracoscopic Surgery for Chest Trauma].",
       "authors": [
-        "Margaret C Slack",
-        "Evan M Shannon"
+        "Osamu Kakazu",
+        "Morio Ohta",
+        "Tetsuo Touyama"
       ],
-      "journal": "Journal of Brown hospital medicine",
-      "date": "2024 Apr 1",
+      "journal": "Kyobu geka. The Japanese journal of thoracic surgery",
+      "date": "2024 Apr",
       "date_sort": "2024-04-01",
-      "abstract": "Pancoast tumors are aggressive and locally invasive apical lung cancers that often compress and infiltrate adjacent structures including the brachial plexus, stellate ganglion, ribs, and vertebral bodies. Symptoms of Pancoast tumors include Pancoast Syndrome, characterized by Horner Syndrome and pain and weakness of the ipsilateral upper extremity. Pancoast tumors by definition are primary lung cancer and are nearly always non-small cell lung cancer (NSCLC). There are rare case reports of metastatic non-pulmonary malignancies forming apical lung tumors mimicking Pancoast tumors and causing Pancoast Syndrome. Here, we present a case of a 66-year-old male with a history of unresectable hepatocellular carcinoma (HCC) who presented with one year of progressive left wrist and forearm pain and hand weakness and was found on cross-sectional imaging to have a left upper lobe lung mass invading the T1 and T2 vertebral bodies. Pathology showed very poorly differentiated carcinoma that required specialized testing to achieve diagnostic clarity. The tumor was positive for albumin mRNA, which aided in confirming the lung mass as metastatic HCC. This case highlights a rare incidence of Pancoast Syndrome due to metastatic HCC and emphasizes the importance of considering this diagnosis as an etiology of left upper extremity pain in a patient with previously diagnosed malignancy. This case also demonstrates the utility of albumin mRNA in-situ hybridization as an additional tool in identifying metastatic HCC and reviews general principles of symptomatic management of Pancoast Syndrome.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40026796/",
-      "doi": "https://doi.org/10.56305/001c.115809"
+      "abstract": "Video-assisted thoracoscopic surgery (VATS) is now commonly used in emergency surgery to confirm the site of injury and observe the thoracic cavity, especially in cases of chest trauma with stable vital signs. VATS was used in all 33 chest trauma surgeries performed at our department from October 2009 to July 2023. The common injury mechanisms were traffic trauma and falls, but there were also cases of trauma from a bullhorn, heavy machinery and farm equipment, and penetrating injury. The common surgical procedures were treatment of rib fractures and pulmonary suture or partial lung resection, followed by treatment of diaphragmatic injuries. Unusual surgical procedures included extrapleural hematoma drainage, pericardial drainage, hemostasis of intrathoracic bleeding from thoracic vertebral fracture, and lobectomy for airway bleeding. Here, we report our surgical policies and techniques for chest trauma. First, the thoracic cavity should be observed thoracoscopically to determine the site of injury. The key to repair is placement of a small thoracotomy directly above the rib fracture site, where dislocation is largest, followed by suture repair of the lung and diaphragm by combining direct and thoracoscopic views.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38644173/"
     },
     {
       "pmid": "38529885",
@@ -8459,21 +8721,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jhsa.2023.12.013"
     },
     {
-      "pmid": "38549833",
-      "title": "Efficacy of trigger point injection therapy in noncardiac chest pain: A randomized controlled trial.",
-      "authors": [
-        "Mustafa Şengül",
-        "Sebahat Tekeli Şengül"
-      ],
-      "journal": "Turkish journal of physical medicine and rehabilitation",
-      "date": "2024 Feb 1",
-      "date_sort": "2024-02-01",
-      "abstract": "OBJECTIVES: This study aimed to compare the effects of trigger point injections and stretching exercises in patients with noncardiac chest pain (NCCP) associated with myofascial pain syndrome. PATIENTS AND METHODS: This prospective randomized controlled trial included 50 patients with noncardiac chest pain and trigger points in the pectoralis muscles between October 2019 and June 2020. The patients were randomly assigned to receive trigger point injections into the pectoralis muscles and exercise (n=25; 15 males, 10 females; mean age: 42.8±9.2 years; range, 25 to 57 years) or only perform exercise (n=25; 11 males, 14 females; mean age: 41.8±11.2 years; range, 18 to 60 years). The primary outcome was pain intensity at the first month and three months after the first treatment session, measured using the Visual Analog Scale from 0 to 100. The secondary outcome was the Nottingham Health Profile score. RESULTS: Treatment with stretching exercises and trigger point injection resulted in significant pain reduction compared to stretching exercises alone, and the reduction was persistent at the three-month follow-up (p<0.001). A between-group comparison showed no significant difference in the Nottingham Health Profile (p=0.522). Complications related to the procedure or severe adverse events attributable to treatment were not reported. CONCLUSION: Trigger point injection combined with stretching exercises is an efficient treatment for noncardiac chest pain related to myofascial pain syndrome compared to exercise treatment alone.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38549833/",
-      "doi": "https://doi.org/10.5606/tftrd.2024.12716"
-    },
-    {
       "pmid": "38704182",
       "title": "Diagnosis and management of thoracic outlet syndrome in athletes.",
       "authors": [
@@ -8487,6 +8734,21 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38704182/",
       "doi": "https://doi.org/10.1053/j.semvascsurg.2024.01.007"
+    },
+    {
+      "pmid": "38549833",
+      "title": "Efficacy of trigger point injection therapy in noncardiac chest pain: A randomized controlled trial.",
+      "authors": [
+        "Mustafa Şengül",
+        "Sebahat Tekeli Şengül"
+      ],
+      "journal": "Turkish journal of physical medicine and rehabilitation",
+      "date": "2024 Feb 1",
+      "date_sort": "2024-02-01",
+      "abstract": "OBJECTIVES: This study aimed to compare the effects of trigger point injections and stretching exercises in patients with noncardiac chest pain (NCCP) associated with myofascial pain syndrome. PATIENTS AND METHODS: This prospective randomized controlled trial included 50 patients with noncardiac chest pain and trigger points in the pectoralis muscles between October 2019 and June 2020. The patients were randomly assigned to receive trigger point injections into the pectoralis muscles and exercise (n=25; 15 males, 10 females; mean age: 42.8±9.2 years; range, 25 to 57 years) or only perform exercise (n=25; 11 males, 14 females; mean age: 41.8±11.2 years; range, 18 to 60 years). The primary outcome was pain intensity at the first month and three months after the first treatment session, measured using the Visual Analog Scale from 0 to 100. The secondary outcome was the Nottingham Health Profile score. RESULTS: Treatment with stretching exercises and trigger point injection resulted in significant pain reduction compared to stretching exercises alone, and the reduction was persistent at the three-month follow-up (p<0.001). A between-group comparison showed no significant difference in the Nottingham Health Profile (p=0.522). Complications related to the procedure or severe adverse events attributable to treatment were not reported. CONCLUSION: Trigger point injection combined with stretching exercises is an efficient treatment for noncardiac chest pain related to myofascial pain syndrome compared to exercise treatment alone.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38549833/",
+      "doi": "https://doi.org/10.5606/tftrd.2024.12716"
     },
     {
       "pmid": "38704187",
@@ -8582,25 +8844,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jseint.2023.12.004"
     },
     {
-      "pmid": "38184951",
-      "title": "Partial sterno-costo-claviculectomy for Ewing's sarcoma of the medial clavicle (case report).",
-      "authors": [
-        "A Rajaallah",
-        "F Lamnaouar",
-        "A Rafaoui",
-        "A Messoudi",
-        "M Rahmi",
-        "M Rafai"
-      ],
-      "journal": "International journal of surgery case reports",
-      "date": "2024 Jan 3",
-      "date_sort": "2024-01-03",
-      "abstract": "INTRODUCTION: Primary clavicle tumors are uncommon and account for <1 % of primary bone tumors. The majority of primary clavicle tumors are malignant. Approximately 1.4 % of all cases of Ewing's sarcoma occur in the clavicle. CASE PRESENTATION: Here, we report the case of a patient diagnosed with Ewing's sarcoma who received neoadjuvant chemotherapy and had an important reduction in the tumoral volume; second, the patient had undergone partial resection of the medial clavicle, first rib, and the sternum. DISCUSSION: The survival rate of patients with nonmetastatic lesions is 56-79 %. The clavicle is connected to major anatomical structures, which makes surgery challenging. Even if there is little morbidity after resection, these studies did not show the superiority of reconstruction. CONCLUSION: The location of Ewing's sarcoma in our patient indicated that the surgical approach was needed for large resection. The functional outcomes were excellent, with no signs of recurrence at the 2-year follow-up.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38184951/",
-      "doi": "https://doi.org/10.1016/j.ijscr.2023.109213"
-    },
-    {
       "pmid": "38751683",
       "title": "Poland syndrome combined with breast cancer: a case report.",
       "authors": [
@@ -8618,6 +8861,25 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38751683/",
       "doi": "https://doi.org/10.21037/tbcr-23-46"
+    },
+    {
+      "pmid": "38184951",
+      "title": "Partial sterno-costo-claviculectomy for Ewing's sarcoma of the medial clavicle (case report).",
+      "authors": [
+        "A Rajaallah",
+        "F Lamnaouar",
+        "A Rafaoui",
+        "A Messoudi",
+        "M Rahmi",
+        "M Rafai"
+      ],
+      "journal": "International journal of surgery case reports",
+      "date": "2024 Jan 3",
+      "date_sort": "2024-01-03",
+      "abstract": "INTRODUCTION: Primary clavicle tumors are uncommon and account for <1 % of primary bone tumors. The majority of primary clavicle tumors are malignant. Approximately 1.4 % of all cases of Ewing's sarcoma occur in the clavicle. CASE PRESENTATION: Here, we report the case of a patient diagnosed with Ewing's sarcoma who received neoadjuvant chemotherapy and had an important reduction in the tumoral volume; second, the patient had undergone partial resection of the medial clavicle, first rib, and the sternum. DISCUSSION: The survival rate of patients with nonmetastatic lesions is 56-79 %. The clavicle is connected to major anatomical structures, which makes surgery challenging. Even if there is little morbidity after resection, these studies did not show the superiority of reconstruction. CONCLUSION: The location of Ewing's sarcoma in our patient indicated that the surgical approach was needed for large resection. The functional outcomes were excellent, with no signs of recurrence at the 2-year follow-up.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38184951/",
+      "doi": "https://doi.org/10.1016/j.ijscr.2023.109213"
     },
     {
       "pmid": "38218722",
@@ -8639,6 +8901,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1093/ejcts/ezae019"
     },
     {
+      "pmid": "38417895",
+      "title": "Videothoracoscopic First Rib Resection for Neurogenic Thoracic Outlet Syndrome: Results of 13 Patients.",
+      "authors": [
+        "Onur Derdiyok",
+        "Ugˇur Temel"
+      ],
+      "journal": "Annals of thoracic and cardiovascular surgery : official journal of the Association of Thoracic and Cardiovascular Surgeons of Asia",
+      "date": "2024 Jan",
+      "date_sort": "2024-01-01",
+      "abstract": "PURPOSE: To present the clinical experience in video-assisted thoracic surgery (VATS) of first rib resection for patients with neurogenic thoracic outlet syndrome (NTOS). METHODS: The files of 13 patients (10 males, 3 females) having unilateral NTOS undergoing first rib resection via VATS were retrospectively investigated. The symptoms, operative times, durations of chest tube and hospital stay, complications, and postoperative courses were analyzed. All patients underwent VATS using a camera port and 3-5 cm utility incision. RESULTS: There was no morbidity. The average operation time was 81 ± 11 min (range 65-100 min). Chest tubes were removed in the first or second postoperative day (mean 1.23 ± 0.43 days). The mean postoperative length of hospital stay was 2.1 ± 0.9 days (range 1-3 days). The average duration of follow-up was 19 ± 13 months (range 2-38 months). Ten patients completed a follow-up during 6 months. One patient (10%) had minor residual symptoms, and the remaining patients (90%) were fully asymptomatic. CONCLUSION: The VATS approach in the resection of the first rib for thoracic outlet syndrome is a safe method. It should be performed with acceptable risks under experienced hands. The magnified view and optimal visualization from the scope are beneficial. Avoiding neurovascular bundle retraction may seem to decrease the postoperative pain.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38417895/",
+      "doi": "https://doi.org/10.5761/atcs.oa.23-00110"
+    },
+    {
       "pmid": "38090927",
       "title": "The Scapula: The Greater Masquerader of  Shoulder Pathologies.",
       "authors": [
@@ -8655,44 +8932,6 @@ window.pubmedArticles = {
       "abstract": "A comprehensive review of scapular pathologies and their effect on shoulder function is necessary to determine the best treatment options. The coordinated motion between the scapulothoracic and glenohumeral joints is essential for shoulder motion and depends on the balanced activity of the periscapular muscles. Disruption in these muscles can cause abnormal scapular motion and compensatory glenohumeral movements, leading to misdiagnosis or delayed diagnosis. Scapular pathologies can arise from muscle overactivity or underactivity/paralysis, resulting in a range of scapulothoracic abnormal motion (STAM). STAM can lead to various glenohumeral pathologies, including instability, impingement, or nerve compression. It is important to highlight the critical periscapular muscles involved in scapulohumeral rhythm (such as the upper, middle, and lower trapezius; rhomboid major and minor; serratus anterior; levator scapulae; and pectoralis minor). A discussion of the different etiologies of STAM should include examples of muscle dysfunction, such as overactivity of the pectoralis minor, underactivity or paralysis of the serratus anterior or trapezius muscles, and dyskinesis resulting from compensatory mechanisms in patients with recurrent glenohumeral instability due to Ehlers-Danlos syndrome. The evaluation and workup of STAM has shown that patients typically present with radiating shoulder pain, especially in the posterior aspect of the shoulder and scapula, and limitations in active shoulder overhead motion associated with glenohumeral pain, instability, or rotator cuff pathologies.",
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/38090927/"
-    },
-    {
-      "pmid": "38470440",
-      "title": "Gorlin-Goltz Syndrome - A Rare Case Entity in Young Child.",
-      "authors": [
-        "Shovita Mondal",
-        "Nikil Kumar Jain",
-        "Abhishek Dutta",
-        "Nishant",
-        "Abhijit Dutta",
-        "Moushumi Shil",
-        "Suman Sen"
-      ],
-      "journal": "Prague medical report",
-      "date": "2024 Jan",
-      "date_sort": "2024-01-01",
-      "abstract": "Gorlin-Goltz syndrome (GGS) is an infrequent multisystemic disease with an autosomal dominant trait, which depicted presence of numerous basal cell carcinoma in conjunction with multiorgan abnormalities. This syndrome may be diagnosed early by a dentist by routine radiographic exams in the first decade of life, since the keratocystic odontogenic tumour are usually one of the first manifestations of the syndrome. This article includes a case report of the GGS with regard to its history, incidence, etiology, features, investigations, diagnostic criteria, keratocystic odontogenic tumour and treatment modalities.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38470440/",
-      "doi": "https://doi.org/10.14712/23362936.2024.7"
-    },
-    {
-      "pmid": "38090928",
-      "title": "Scapular Dyskinesia: How to Differentiate  Between Etiologies.",
-      "authors": [
-        "Eric R Wagner",
-        "Anthony L Karzon",
-        "Zaamin B Hussain",
-        "Jon J P Warner",
-        "Bassem T Elhassan",
-        "Joaquin Sanchez-Sotelo"
-      ],
-      "journal": "Instructional course lectures",
-      "date": "2024 Jan",
-      "date_sort": "2024-01-01",
-      "abstract": "It is important to discuss the importance of synchronous balance between periscapular muscles for scapulothoracic motion and resultant scapulohumeral rhythm. Abnormalities in this balance can lead to scapular dyskinesia and winging, affecting shoulder motion and leading to impingement. Strategies exist to diagnose and differentiate between pathologies such as muscle paralysis (eg, trapezius or serratus anterior) or overactivity (eg, pectoralis minor). The physician should be aware of the role of diagnostic imaging, as well as the unique considerations for patients with Ehlers-Danlos syndrome. Overall, a comprehensive physical examination to accurately diagnose and treat scapular pathologies is particularly important.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38090928/"
     },
     {
       "pmid": "39140942",
@@ -8716,19 +8955,42 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.17116/hirurgia202408141"
     },
     {
-      "pmid": "38417895",
-      "title": "Videothoracoscopic First Rib Resection for Neurogenic Thoracic Outlet Syndrome: Results of 13 Patients.",
+      "pmid": "38090928",
+      "title": "Scapular Dyskinesia: How to Differentiate  Between Etiologies.",
       "authors": [
-        "Onur Derdiyok",
-        "Ugˇur Temel"
+        "Eric R Wagner",
+        "Anthony L Karzon",
+        "Zaamin B Hussain",
+        "Jon J P Warner",
+        "Bassem T Elhassan",
+        "Joaquin Sanchez-Sotelo"
       ],
-      "journal": "Annals of thoracic and cardiovascular surgery : official journal of the Association of Thoracic and Cardiovascular Surgeons of Asia",
+      "journal": "Instructional course lectures",
       "date": "2024 Jan",
       "date_sort": "2024-01-01",
-      "abstract": "PURPOSE: To present the clinical experience in video-assisted thoracic surgery (VATS) of first rib resection for patients with neurogenic thoracic outlet syndrome (NTOS). METHODS: The files of 13 patients (10 males, 3 females) having unilateral NTOS undergoing first rib resection via VATS were retrospectively investigated. The symptoms, operative times, durations of chest tube and hospital stay, complications, and postoperative courses were analyzed. All patients underwent VATS using a camera port and 3-5 cm utility incision. RESULTS: There was no morbidity. The average operation time was 81 ± 11 min (range 65-100 min). Chest tubes were removed in the first or second postoperative day (mean 1.23 ± 0.43 days). The mean postoperative length of hospital stay was 2.1 ± 0.9 days (range 1-3 days). The average duration of follow-up was 19 ± 13 months (range 2-38 months). Ten patients completed a follow-up during 6 months. One patient (10%) had minor residual symptoms, and the remaining patients (90%) were fully asymptomatic. CONCLUSION: The VATS approach in the resection of the first rib for thoracic outlet syndrome is a safe method. It should be performed with acceptable risks under experienced hands. The magnified view and optimal visualization from the scope are beneficial. Avoiding neurovascular bundle retraction may seem to decrease the postoperative pain.",
+      "abstract": "It is important to discuss the importance of synchronous balance between periscapular muscles for scapulothoracic motion and resultant scapulohumeral rhythm. Abnormalities in this balance can lead to scapular dyskinesia and winging, affecting shoulder motion and leading to impingement. Strategies exist to diagnose and differentiate between pathologies such as muscle paralysis (eg, trapezius or serratus anterior) or overactivity (eg, pectoralis minor). The physician should be aware of the role of diagnostic imaging, as well as the unique considerations for patients with Ehlers-Danlos syndrome. Overall, a comprehensive physical examination to accurately diagnose and treat scapular pathologies is particularly important.",
       "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/38417895/",
-      "doi": "https://doi.org/10.5761/atcs.oa.23-00110"
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38090928/"
+    },
+    {
+      "pmid": "38470440",
+      "title": "Gorlin-Goltz Syndrome - A Rare Case Entity in Young Child.",
+      "authors": [
+        "Shovita Mondal",
+        "Nikil Kumar Jain",
+        "Abhishek Dutta",
+        "Nishant",
+        "Abhijit Dutta",
+        "Moushumi Shil",
+        "Suman Sen"
+      ],
+      "journal": "Prague medical report",
+      "date": "2024 Jan",
+      "date_sort": "2024-01-01",
+      "abstract": "Gorlin-Goltz syndrome (GGS) is an infrequent multisystemic disease with an autosomal dominant trait, which depicted presence of numerous basal cell carcinoma in conjunction with multiorgan abnormalities. This syndrome may be diagnosed early by a dentist by routine radiographic exams in the first decade of life, since the keratocystic odontogenic tumour are usually one of the first manifestations of the syndrome. This article includes a case report of the GGS with regard to its history, incidence, etiology, features, investigations, diagnostic criteria, keratocystic odontogenic tumour and treatment modalities.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38470440/",
+      "doi": "https://doi.org/10.14712/23362936.2024.7"
     },
     {
       "pmid": "38304291",
@@ -9438,22 +9700,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jhsa.2023.03.005"
     },
     {
-      "pmid": "37040840",
-      "title": "Hybrid Paraclavicular Decompression for Venous Thoracic Outlet Syndrome with Primary Endovascular Reconstruction.",
-      "authors": [
-        "Angela L Miciura",
-        "Jarred A Napier",
-        "Abdulhameed Aziz"
-      ],
-      "journal": "Annals of vascular surgery",
-      "date": "2023 Apr 10",
-      "date_sort": "2023-04-10",
-      "abstract": "BACKGROUND: Venous thoracic outlet syndrome (vTOS) is characterized by severe stenosis and potential thrombosis of the axillary-subclavian vein (effort thrombosis) with significant effects on patient mobility, quality of life, and risks associated with possible anticoagulation. Treatment goals are aimed at symptomatic improvement and freedom from recurrent thrombosis. To date, there exist no clear protocols or recommendations on surgical approach that result in optimal outcomes. We highlight our institution's experience with a systematized, paraclavicular approach with intraoperative balloon angioplasty only, if needed. METHODS: This was a retrospective case series identifying 33 patients that underwent thoracic outlet decompression for vTOS from 2014 to 2021 via paraclavicular approach at Trinity Health Ann Arbor. Demographics, presenting symptoms, perioperative details, and follow-up details describing symptomatic improvement and imaging surveillance were obtained. RESULTS: The average age of our patients was 37 years with the most common presenting symptoms of pain and swelling (91%). The average time from diagnosis to thrombolysis for effort thrombosis was 4 days, with an average time to operative intervention of 46 days. All patients underwent a paraclavicular approach with full first rib resection, anterior and middle scalenectomy, subclavian vein venolysis, and intraoperative venogram. Of these, 20 (61%) underwent endovascular balloon angioplasty, 1 required balloon with stent placement, 13 (39%) required no additional intervention, and no patients required surgical reconstruction of the subclavian-axillary vein. Duplex imaging was used to evaluate recurrence in 26 patients at an average of 6 months postop. Of these, 23 demonstrated complete patency (89%), 1 demonstrated chronic nonocclusive thrombus, and 2 demonstrated chronic occlusive thrombus. Almost all our patients (97%) had moderate or significant improvement of their symptoms. None of our patients required a subsequent operation for recurrence of symptomatic thrombosis. The mode length of anticoagulation use postoperatively was 3 months, with an average use of 4.5 months. CONCLUSIONS: A systematized surgical approach of paraclavicular decompression for venous thoracic outlet syndrome with primary endovascular balloon angioplasty carries minimal morbidity with excellent functional results and symptomatic relief.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/37040840/",
-      "doi": "https://doi.org/10.1016/j.avsg.2023.03.016"
-    },
-    {
       "pmid": "37038229",
       "title": "Autologous myocutaneous flap implantation for chronic refractory chest wall sinus with infection: a case report.",
       "authors": [
@@ -9469,6 +9715,22 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37038229/",
       "doi": "https://doi.org/10.1186/s13019-023-02205-5"
+    },
+    {
+      "pmid": "37040840",
+      "title": "Hybrid Paraclavicular Decompression for Venous Thoracic Outlet Syndrome with Primary Endovascular Reconstruction.",
+      "authors": [
+        "Angela L Miciura",
+        "Jarred A Napier",
+        "Abdulhameed Aziz"
+      ],
+      "journal": "Annals of vascular surgery",
+      "date": "2023 Apr 10",
+      "date_sort": "2023-04-10",
+      "abstract": "BACKGROUND: Venous thoracic outlet syndrome (vTOS) is characterized by severe stenosis and potential thrombosis of the axillary-subclavian vein (effort thrombosis) with significant effects on patient mobility, quality of life, and risks associated with possible anticoagulation. Treatment goals are aimed at symptomatic improvement and freedom from recurrent thrombosis. To date, there exist no clear protocols or recommendations on surgical approach that result in optimal outcomes. We highlight our institution's experience with a systematized, paraclavicular approach with intraoperative balloon angioplasty only, if needed. METHODS: This was a retrospective case series identifying 33 patients that underwent thoracic outlet decompression for vTOS from 2014 to 2021 via paraclavicular approach at Trinity Health Ann Arbor. Demographics, presenting symptoms, perioperative details, and follow-up details describing symptomatic improvement and imaging surveillance were obtained. RESULTS: The average age of our patients was 37 years with the most common presenting symptoms of pain and swelling (91%). The average time from diagnosis to thrombolysis for effort thrombosis was 4 days, with an average time to operative intervention of 46 days. All patients underwent a paraclavicular approach with full first rib resection, anterior and middle scalenectomy, subclavian vein venolysis, and intraoperative venogram. Of these, 20 (61%) underwent endovascular balloon angioplasty, 1 required balloon with stent placement, 13 (39%) required no additional intervention, and no patients required surgical reconstruction of the subclavian-axillary vein. Duplex imaging was used to evaluate recurrence in 26 patients at an average of 6 months postop. Of these, 23 demonstrated complete patency (89%), 1 demonstrated chronic nonocclusive thrombus, and 2 demonstrated chronic occlusive thrombus. Almost all our patients (97%) had moderate or significant improvement of their symptoms. None of our patients required a subsequent operation for recurrence of symptomatic thrombosis. The mode length of anticoagulation use postoperatively was 3 months, with an average use of 4.5 months. CONCLUSIONS: A systematized surgical approach of paraclavicular decompression for venous thoracic outlet syndrome with primary endovascular balloon angioplasty carries minimal morbidity with excellent functional results and symptomatic relief.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/37040840/",
+      "doi": "https://doi.org/10.1016/j.avsg.2023.03.016"
     },
     {
       "pmid": "37048351",
@@ -9605,21 +9867,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1097/PHM.0000000000002202"
     },
     {
-      "pmid": "36372535",
-      "title": "Robotic First Rib Resection and Robotic Chest Wall Resection.",
-      "authors": [
-        "Matthew R L Egyud",
-        "Bryan M Burt"
-      ],
-      "journal": "Thoracic surgery clinics",
-      "date": "2023 Feb",
-      "date_sort": "2023-02-01",
-      "abstract": "Robot-assisted thoracoscopic surgery for the treatment of thoracic outlet syndrome and chest wall lesions are burgeoning topics on thoracic surgery. Following publication of the Society of Vascular Surgeons expert statement in 2016, the diagnosis and management of thoracic outlet syndrome is favorably evolving. Robot-assisted first rib resection is a novel approach to the surgical management of thoracic outlet syndrome that may have advantages compared with traditional open surgical approaches. Robot-assisted chest wall resection is technically feasible for a variety of chest wall conditions and may also have advantages compared with thoracotomy approaches.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36372535/",
-      "doi": "https://doi.org/10.1016/j.thorsurg.2022.08.003"
-    },
-    {
       "pmid": "36793991",
       "title": "Uniportal fully robotic-assisted major pulmonary resections.",
       "authors": [
@@ -9675,6 +9922,24 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1530/EDM-22-0317"
     },
     {
+      "pmid": "36698717",
+      "title": "Unusual presentation of an aneurysmal bone cyst: A case report and literature review.",
+      "authors": [
+        "Jibran Ahmad Khan",
+        "Tariq Saleh",
+        "Areez Shafqat",
+        "Ibrahem Albalkhi",
+        "Waleed Saleh"
+      ],
+      "journal": "Radiology case reports",
+      "date": "2023 Jan 18",
+      "date_sort": "2023-01-18",
+      "abstract": "Aneurysmal bone cysts (ABCs) are non-neoplastic primary bone tumors, typically involving the long bones and vertebrae in the first 2 decades of life. ABCs require prompt diagnosis and intervention due to their rapidly expansile nature and ability to destroy the adjacent normal bone. ABCs rarely affect the rib. We report a case of a 51-year-old female presenting with chronic dry cough and right upper back pain. A chest X-ray and computed tomography scan revealed an expansile, lytic mass affecting the posterior aspect of the third right rib. The third right rib was resected using a posterolateral, Shaw-Paulson approach. Histopathology of the resected mass confirmed the diagnosis of ABC. There were no intra- or perioperative complications, and follow-up X-ray was normal.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36698717/",
+      "doi": "https://doi.org/10.1016/j.radcr.2022.12.059"
+    },
+    {
       "pmid": "37521545",
       "title": "Modern Treatment of Neurogenic Thoracic Outlet Syndrome: Pathoanatomy, Diagnosis, and Arthroscopic Surgical Technique.",
       "authors": [
@@ -9692,24 +9957,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/37521545/",
       "doi": "https://doi.org/10.1016/j.jhsg.2022.07.004"
-    },
-    {
-      "pmid": "36698717",
-      "title": "Unusual presentation of an aneurysmal bone cyst: A case report and literature review.",
-      "authors": [
-        "Jibran Ahmad Khan",
-        "Tariq Saleh",
-        "Areez Shafqat",
-        "Ibrahem Albalkhi",
-        "Waleed Saleh"
-      ],
-      "journal": "Radiology case reports",
-      "date": "2023 Jan 18",
-      "date_sort": "2023-01-18",
-      "abstract": "Aneurysmal bone cysts (ABCs) are non-neoplastic primary bone tumors, typically involving the long bones and vertebrae in the first 2 decades of life. ABCs require prompt diagnosis and intervention due to their rapidly expansile nature and ability to destroy the adjacent normal bone. ABCs rarely affect the rib. We report a case of a 51-year-old female presenting with chronic dry cough and right upper back pain. A chest X-ray and computed tomography scan revealed an expansile, lytic mass affecting the posterior aspect of the third right rib. The third right rib was resected using a posterolateral, Shaw-Paulson approach. Histopathology of the resected mass confirmed the diagnosis of ABC. There were no intra- or perioperative complications, and follow-up X-ray was normal.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36698717/",
-      "doi": "https://doi.org/10.1016/j.radcr.2022.12.059"
     },
     {
       "pmid": "36726955",
@@ -9807,6 +10054,25 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.7759/cureus.33192"
     },
     {
+      "pmid": "36793986",
+      "title": "Uniportal robotic-assisted thoracoscopic surgery: resection of the first rib.",
+      "authors": [
+        "Anna Ureña",
+        "Carlos Déniz",
+        "Anna Muñoz",
+        "Ivan Macía",
+        "Francisco Rivas",
+        "Ricard Ramos"
+      ],
+      "journal": "Annals of cardiothoracic surgery",
+      "date": "2022 Dec 30",
+      "date_sort": "2022-12-30",
+      "abstract": "",
+      "article_type": "Editorial",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36793986/",
+      "doi": "https://doi.org/10.21037/acs-2022-urats-12"
+    },
+    {
       "pmid": "36581828",
       "title": "Poland-Möbius syndrome: a case report implicating a novel mutation of the PLXND1 gene and literature review.",
       "authors": [
@@ -9825,25 +10091,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36581828/",
       "doi": "https://doi.org/10.1186/s12887-022-03803-3"
-    },
-    {
-      "pmid": "36793986",
-      "title": "Uniportal robotic-assisted thoracoscopic surgery: resection of the first rib.",
-      "authors": [
-        "Anna Ureña",
-        "Carlos Déniz",
-        "Anna Muñoz",
-        "Ivan Macía",
-        "Francisco Rivas",
-        "Ricard Ramos"
-      ],
-      "journal": "Annals of cardiothoracic surgery",
-      "date": "2022 Dec 30",
-      "date_sort": "2022-12-30",
-      "abstract": "",
-      "article_type": "Editorial",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36793986/",
-      "doi": "https://doi.org/10.21037/acs-2022-urats-12"
     },
     {
       "pmid": "36620382",
@@ -9870,6 +10117,23 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3389/fsurg.2022.1080584"
     },
     {
+      "pmid": "36544244",
+      "title": "Trends in the Surgical Management of Thoracic Outlet Syndrome.",
+      "authors": [
+        "Tariq Z Issa",
+        "Jasmine S Lin",
+        "Fernando Herrera",
+        "Brian Mailey"
+      ],
+      "journal": "Hand (New York, N.Y.)",
+      "date": "2022 Dec 21",
+      "date_sort": "2022-12-21",
+      "abstract": "BACKGROUND: The operative treatment for thoracic outlet syndrome (TOS) varies in the United States. This may be due to differences in specialty training of the provider. We sought to identify which procedures are primarily performed by specialty, identify patient characteristics presenting for different neurogenic TOS surgical interventions, and describe the safety of TOS surgery. METHODS: Patients treated for neurogenic TOS between 2016 and 2018 were identified from the American College of Surgeons National Surgical Quality Improvement Program (NSQIP). Patient characteristics, surgeon details, intraoperative variables, and complication outcomes were abstracted. Patient cohorts were stratified by type of operative intervention and by treating specialty. RESULTS: Transthoracic first rib resection was the most common procedure performed for TOS relief (46.1%), followed by division of the scalene muscles with rib resection (23.9%) and brachial plexus exploration with decompression (19.4%). Vascular surgeons performed 87% of TOS repairs. Thirty-day complication rate was 3.5%. Addition of scalenectomy to first rib resection was common and resulted in increased operative time but did not increase early complication rate or readmission rate. CONCLUSION: Patient characteristics and dispositions are similar between the various TOS operative approaches. All major surgical treatments for TOS have low complication rates. Transthoracic first rib resection performed by vascular surgeons remains the most common surgical treatment for patients with TOS in the United States. Despite neurogenic symptoms representing most cases, less than 10% of operations are performed by peripheral nerve specialists, highlighting a potential need for greater incorporation of TOS release into peripheral nerve practices.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36544244/",
+      "doi": "https://doi.org/10.1177/15589447221141479"
+    },
+    {
       "pmid": "36539826",
       "title": "A case report of robotic-assisted resection of large fibrous benign tumor of second rib.",
       "authors": [
@@ -9889,23 +10153,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1186/s13019-022-02041-z"
     },
     {
-      "pmid": "36544244",
-      "title": "Trends in the Surgical Management of Thoracic Outlet Syndrome.",
-      "authors": [
-        "Tariq Z Issa",
-        "Jasmine S Lin",
-        "Fernando Herrera",
-        "Brian Mailey"
-      ],
-      "journal": "Hand (New York, N.Y.)",
-      "date": "2022 Dec 21",
-      "date_sort": "2022-12-21",
-      "abstract": "BACKGROUND: The operative treatment for thoracic outlet syndrome (TOS) varies in the United States. This may be due to differences in specialty training of the provider. We sought to identify which procedures are primarily performed by specialty, identify patient characteristics presenting for different neurogenic TOS surgical interventions, and describe the safety of TOS surgery. METHODS: Patients treated for neurogenic TOS between 2016 and 2018 were identified from the American College of Surgeons National Surgical Quality Improvement Program (NSQIP). Patient characteristics, surgeon details, intraoperative variables, and complication outcomes were abstracted. Patient cohorts were stratified by type of operative intervention and by treating specialty. RESULTS: Transthoracic first rib resection was the most common procedure performed for TOS relief (46.1%), followed by division of the scalene muscles with rib resection (23.9%) and brachial plexus exploration with decompression (19.4%). Vascular surgeons performed 87% of TOS repairs. Thirty-day complication rate was 3.5%. Addition of scalenectomy to first rib resection was common and resulted in increased operative time but did not increase early complication rate or readmission rate. CONCLUSION: Patient characteristics and dispositions are similar between the various TOS operative approaches. All major surgical treatments for TOS have low complication rates. Transthoracic first rib resection performed by vascular surgeons remains the most common surgical treatment for patients with TOS in the United States. Despite neurogenic symptoms representing most cases, less than 10% of operations are performed by peripheral nerve specialists, highlighting a potential need for greater incorporation of TOS release into peripheral nerve practices.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36544244/",
-      "doi": "https://doi.org/10.1177/15589447221141479"
-    },
-    {
       "pmid": "36548186",
       "title": "Hemispheric Asymmetry on the Electroencephalogram during General Anesthesia Responsive to Blood Pressure Manipulations.",
       "authors": [
@@ -9922,6 +10169,21 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36548186/",
       "doi": "https://doi.org/10.3390/neurolint14040081"
+    },
+    {
+      "pmid": "36455159",
+      "title": "Anterior Scalene Anomaly in a Patient With Arterial and Neurogenic Thoracic Outlet Syndrome.",
+      "authors": [
+        "Dominique L Tucker",
+        "Julie Ann Freischlag"
+      ],
+      "journal": "Vascular and endovascular surgery",
+      "date": "2022 Dec 1",
+      "date_sort": "2022-12-01",
+      "abstract": "Compression of the neurovascular structures of the upper extremity as they pass through the thoracic outlet result in thoracic outlet syndrome. The myriad of symptoms associated with the syndrome vary based on the structure(s) compressed: the subclavian artery/vein or the inferior trunk of the brachial plexus. This is a common site of compression especially in the presence of upper extremity injury, overuse or anatomical abnormalities. Majority of patients present with neurogenic pain and weakness; herein, we present the case of a patient with symptoms of both arterial and neurogenic compression caused by aberrant anterior scalene anatomy. These patients are excellent surgical candidates for first rib resection and anterior scalenectomy. A transaxillary approach offers the clinician an adequate window to identify anatomical abnormalities intraoperatively and safely excise the first rib and anterior scalene muscle.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36455159/",
+      "doi": "https://doi.org/10.1177/15385744221143652"
     },
     {
       "pmid": "36524582",
@@ -9957,21 +10219,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.3310/THBQ1793"
     },
     {
-      "pmid": "36455159",
-      "title": "Anterior Scalene Anomaly in a Patient With Arterial and Neurogenic Thoracic Outlet Syndrome.",
-      "authors": [
-        "Dominique L Tucker",
-        "Julie Ann Freischlag"
-      ],
-      "journal": "Vascular and endovascular surgery",
-      "date": "2022 Dec 1",
-      "date_sort": "2022-12-01",
-      "abstract": "Compression of the neurovascular structures of the upper extremity as they pass through the thoracic outlet result in thoracic outlet syndrome. The myriad of symptoms associated with the syndrome vary based on the structure(s) compressed: the subclavian artery/vein or the inferior trunk of the brachial plexus. This is a common site of compression especially in the presence of upper extremity injury, overuse or anatomical abnormalities. Majority of patients present with neurogenic pain and weakness; herein, we present the case of a patient with symptoms of both arterial and neurogenic compression caused by aberrant anterior scalene anatomy. These patients are excellent surgical candidates for first rib resection and anterior scalenectomy. A transaxillary approach offers the clinician an adequate window to identify anatomical abnormalities intraoperatively and safely excise the first rib and anterior scalene muscle.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36455159/",
-      "doi": "https://doi.org/10.1177/15385744221143652"
-    },
-    {
       "pmid": "36589355",
       "title": "Pectoralis minor syndrome.",
       "authors": [
@@ -9985,27 +10232,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36589355/",
       "doi": "https://doi.org/10.5606/tftrd.2023.12037"
-    },
-    {
-      "pmid": "36367782",
-      "title": "Impact of Scalene Muscle Botulinum Toxin Injection With and Without Surgery in Neurogenic Thoracic Outlet Syndrome.",
-      "authors": [
-        "Arash Fereydooni",
-        "Vy T Ho",
-        "Emily Miller Olson",
-        "Paige Dyrek",
-        "Taylor Harris",
-        "Andrea Kussman",
-        "Eugene Roh",
-        "Jason T Lee"
-      ],
-      "journal": "Clinical journal of sport medicine : official journal of the Canadian Academy of Sport Medicine",
-      "date": "2022 Nov 11",
-      "date_sort": "2022-11-11",
-      "abstract": "OBJECTIVE: Scalene blocks are part of both the diagnostic and treatment algorithm for patients presenting with symptoms of neurogenic thoracic outlet syndrome (nTOS). However, there is a paucity of data on the utility of scalene botulinum toxin injection (BTI) before surgical decompression. We sought to determine the impact of BTI with and without surgery at a multidisciplinary referral center. DESIGN: Retrospective cohort study. SETTING: Single institution tertiary academic center, 2011 to 2020. PATIENTS: Seventy-seven consecutive patients. INTERVENTIONS: Scalene muscle BTI for nTOS with or without surgical decompression. MAIN OUTCOME MEASURES: Pain relief and Quick Disability of the Arm, Shoulder and Hand (QDASH) score. RESULTS: Seventy-seven patients, with a mean age of 31.4 years, had BTI for symptoms of nTOS. All patients underwent pretreatment physical therapy through the Edgelow protocol for a mean duration of 3.4 months. However, 72.7% had dynamic vascular compression on duplex ultrasound with provocative maneuvers and 85.7% had a positive physical examination finding. After BTI, 77.9% reported subjective relief, confirmed by an improved QDASH disability score. Thirty-one patients (40.3%) then went on to have further persistent symptoms and proceeded with first rib resection. After BTI + Surgery, 96.8% reported symptomatic relief and had a median QDASH score improvement of 21 (range: 10-40), with all reaching minimal clinically important differences in the QDASH score after combination therapy. CONCLUSIONS: In this reported series of chemodenervation in patients with nTOS, BTI is helpful in alleviating symptoms before definitive surgical decompression. BTI followed by first rib resection provides additional symptom improvement over BTI alone.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36367782/",
-      "doi": "https://doi.org/10.1097/JSM.0000000000001094"
     },
     {
       "pmid": "36473381",
@@ -10024,24 +10250,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36473381/",
       "doi": "https://doi.org/10.1016/j.psj.2022.102307"
-    },
-    {
-      "pmid": "36327061",
-      "title": "Thoracic outlet syndrome: a retrospective analysis of robotic assisted first rib resections.",
-      "authors": [
-        "Luis Filipe Azenha",
-        "Gregor J Kocher",
-        "Peter B Kestenholz",
-        "Konstantinos Gioutsos",
-        "Fabrizio Minervini"
-      ],
-      "journal": "Journal of robotic surgery",
-      "date": "2022 Nov 3",
-      "date_sort": "2022-11-03",
-      "abstract": "Thoracic Outlet Syndrome (TOS) is caused by compression of the neurovascular bundle between the first rib and the clavicula, which can cause a large panel of symptoms and has a reported incidence of approximately 2-4/100.000. Surgical treatment consists of the resection of the first rib and is historically performed using an open, mainly transaxillary, approach. Recent developments resulted in a minimally invasive approach using Robotic Assisted Thoracic Surgery (RATS). With this study, the investigators want to provide a descriptive study of first rib resection using RATS approach at two different centers. We reviewed the files of 47 patients affected by TOS and who benefited from first rib resection using RATS approach between 2016 and 2021. Patient characteristics as well as Length of Stay (LOS), affected side, operative time (OT), complications, etiology, VAS score and post-operative QOL were gathered in the database. Statistical analysis was performed using IBM SPSS statistics 25 ®. Results were reported in mean and standard deviation. 47 patients affected by TOS received first rib resection using robotic approach. Mean age was 47 ± 12 yrs. 16 patients were operated on the left side and 31 on the right side. All the patients reported complete resolution of symptoms. At 1-year follow-up, no patient suffered from recurrence. There were no intraoperative complications. Postoperative complications occurred in two patients, one patient developed pneumothorax after chest tube removal and one patient developed recurrent pleural effusion which required surgery. Mean LOS was 3 ± 1 days and mean OT was 122 ± 40 min. First rib resection performed using a RATS approach is a safe technique with excellent outcomes and which is beneficial for the patient in terms of LOS, pain and symptom resolution.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36327061/",
-      "doi": "https://doi.org/10.1007/s11701-022-01486-7"
     },
     {
       "pmid": "36481062",
@@ -10085,77 +10293,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.5115/acb.22.139"
     },
     {
-      "pmid": "36273663",
-      "title": "Development and validation of a prediction model for outcomes after transaxillary first rib resection for neurogenic thoracic outlet syndrome following strict Society for Vascular Surgery diagnostic criteria.",
-      "authors": [
-        "Arinze J Ochuba",
-        "Deepthi P Mallela",
-        "James Feghali",
-        "Daniel Lubelski",
-        "Allan J Belzberg",
-        "Caitlin W Hicks",
-        "Christopher J Abularrage",
-        "Ying Wei Lum"
-      ],
-      "journal": "Journal of vascular surgery",
-      "date": "2022 Oct 20",
-      "date_sort": "2022-10-20",
-      "abstract": "OBJECTIVE: Neurogenic thoracic outlet syndrome (NTOS) is the most common form of thoracic outlet syndrome. However, NTOS has remained difficult to diagnose and treat successfully. The purpose of the present study was to generate a predictive clinical calculator for postoperative outcomes after first rib resection (FRR) for NTOS. METHODS: We performed a retrospective review of patients who had undergone FRR for NTOS at a single tertiary care institution between 2016 and 2020. A multivariate stepwise logistic regression analysis was performed to assess the association of the percentage of improvement after FRR with the patient baseline characteristics, pertinent clinical characteristics, and diagnostic criteria set by the Society for Vascular Surgery. The primary outcome was subjective patient improvement after FRR. A prediction risk calculator was developed using backward stepwise multivariate logistic regression coefficients. Bootstrapping was used for internal validation. RESULTS: A total of 208 patients (22.2% male; mean age, 35.8 ± 12.8 years; median follow-up, 44.9 months) had undergone 243 FRRs. Of the 208 patients, 94.7% had had symptoms localized to the supraclavicular area, and 97.6% had had symptoms in the hand. All the patients had had positive symptoms reproduced by the elevated arm stress test and upper limb tension test. Another reasonably likely diagnosis was absent for all the patients. Of the 196 patients who had received a lidocaine injection, 180 (93.3%) had experienced improvement of NTOS symptoms. Of the 95 patients who had received a Botox injection, 82 (74.6%) had experienced improvement of NTOS symptoms. Receiver operating characteristic curve analysis was used to assess the model. The area under the curve for the backward stepwise multivariate logistic regression model was 0.8. The multivariate logistic regression analyses revealed that the significant predictors of worsened clinical outcomes included hand weakness (adjusted odds ratio [aOR], 4.28; 95% confidence interval [CI], 1.04-17.74), increasing age (aOR, 0.93; 95% CI, 0.88-0.99), workers' compensation or litigation case (aOR, 0.09; 95% CI, 0.01-0.82), and symptoms in the dominant hand (aOR, 0.20; 95% CI, 0.05-0.88). CONCLUSIONS: Using retrospective data from a single-institution database, we have developed a prediction calculator with moderate to high predictive ability, as demonstrated by an area under the curve of 0.8. The tool (available at: https://jhhntosriskcalculator.shinyapps.io/NTOS_calc/) is an important adjunct to clinical decision-making that can offer patients and providers realistic and personalized expectations of the postoperative outcome after FRR for NTOS. The findings from the present study have reinforced the diagnostic criteria set by the Society for Vascular Surgery. The calculator could aid physicians in surgical planning, referrals, and counseling patients on whether to proceed with surgery.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36273663/",
-      "doi": "https://doi.org/10.1016/j.jvs.2022.10.014"
-    },
-    {
-      "pmid": "36273741",
-      "title": "Excellent results seen with both transaxillary and infraclavicular approaches to first rib resection in patients with subclavian vein thrombosis.",
-      "authors": [
-        "Lydia L Faber",
-        "Randolph L Geary",
-        "Kevin Z Chang",
-        "Matthew P Goldman",
-        "Julie Freischlag",
-        "Gabriela Velazquez"
-      ],
-      "journal": "Journal of vascular surgery. Venous and lymphatic disorders",
-      "date": "2022 Oct 20",
-      "date_sort": "2022-10-20",
-      "abstract": "BACKGROUND: Venous thoracic outlet syndrome (VTOS) is a debilitating condition with several well-documented treatment paradigms. We reviewed the outcomes from a large academic institution of patients who had undergone transaxillary first rib resection with delayed venography (TA) or infraclavicular first rib and subclavius muscle resection with concomitant venography (ICV) for VTOS with subclavian vein thrombosis. METHODS: We performed a retrospective review of the medical records of all patients who had undergone first rib resection and scalenectomy for VTOS with subclavian vein thrombosis at a single academic institution. The demographics, presentation, operative records, and outcomes were collected. Descriptive statistics were used to compare the two groups. RESULTS: A total of 73 patients had undergone first rib resection for VTOS during the study period. Of the 73 patients, 36 (49%) had presented with thrombosis of the subclavian vein and were included in the present review. Of the 36 patients, 26 (72%) had undergone TA and 10 (28%) had undergone ICV. No significant differences were seen between the two groups in female gender (54% vs 50%; P = 1.00) or age (28.7 years vs 29.5 years; P = .88). A higher percentage of the ICV group had undergone preoperative thrombolysis (70% vs 27%; P = .02). All the patients in the ICV group had undergone intraoperative balloon venoplasty at resection. The mean time from thrombosis to resection was 2.3 months. All of the TA group had undergone venography at 2 weeks postoperatively. Venography had revealed 15 stenotic veins requiring venoplasty, 8 widely patent veins, 1 acutely thrombosed vein, and 3 chronically occluded veins. The time from initial thrombosis to surgical intervention was 10 months for the patent group, 6 months for the stenotic group, and 4 months for the occluded group. In the TA group, 19% of the patients had required chest tube placement intraoperatively for pneumothorax. In the ICV group, complications included postoperative hematoma (n = 1), wound infection (n = 1), and hemothorax (n = 1). The mean length of stay was 1.04 days for the TA group and 2.00 days for the ICV group (P < .0001). The mean follow-up was 10.4 months and 15.8 months for the TA and ICV groups, respectively. No mortalities were reported. No differences in the vein patency rates were seen between the two groups at follow-up (TA, 93%; vs ICV, 100%; P = 1.00). All the patients were asymptomatic at follow-up. CONCLUSIONS: The outcomes for the patients who had undergone TA or ICV for subclavian vein thrombosis were excellent with no mortality and few complications. The subclavian vein patency rates were high, and all the patients were asymptomatic at follow-up.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36273741/",
-      "doi": "https://doi.org/10.1016/j.jvsv.2022.09.012"
-    },
-    {
-      "pmid": "36275395",
-      "title": "Erector spinae plane block with catheter infusion for analgesia in a patient undergoing transaxillary first rib resection.",
-      "authors": [
-        "L McCance",
-        "E C Smith",
-        "J Moore",
-        "P Forget"
-      ],
-      "journal": "Anaesthesia reports",
-      "date": "2022 Oct 19",
-      "date_sort": "2022-10-19",
-      "abstract": "Analgesia for first rib resection can be challenging with short- and long-term consequences for patients such as acute distress, difficulty participating in physiotherapy and chronic pain. We report utilising an erector spinae plane block with a continuous infusion catheter as analgesia for a transaxillary first rib removal in a patient with venous thoracic outlet syndrome (Paget-Schroetter syndrome). We could find no reports of erector spinae plane block in transaxillary rib resection, and a limited number of reports using a paravertebral approach to analgesia for this procedure. In our case, an erector spinae plane block provided effective analgesia, allowing the patient to participate freely in postoperative physiotherapy; no complications of erector spinae plane block were encountered. Further research into the safety and efficacy of erector spinae plane block for first rib resection is warranted.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36275395/",
-      "doi": "https://doi.org/10.1002/anr3.12190"
-    },
-    {
-      "pmid": "36265556",
-      "title": "Venous Stenting After First Rib Resection: Is It Safe?",
-      "authors": [
-        "Linda M Harris"
-      ],
-      "journal": "European journal of vascular and endovascular surgery : the official journal of the European Society for Vascular Surgery",
-      "date": "2022 Oct 17",
-      "date_sort": "2022-10-17",
-      "abstract": "",
-      "article_type": "Letter",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36265556/",
-      "doi": "https://doi.org/10.1016/j.ejvs.2022.10.021"
-    },
-    {
       "pmid": "36381460",
       "title": "Paralysis of the Upper Extremity Due to Acute Thoracic Outlet Syndrome Caused by the Subclavius Posticus Muscle: A Case Report With Literature Review.",
       "authors": [
@@ -10170,22 +10307,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36381460/",
       "doi": "https://doi.org/10.13004/kjnt.2022.18.e58"
-    },
-    {
-      "pmid": "36243264",
-      "title": "Adolescent athletes can get back in the game after surgery for thoracic outlet syndrome.",
-      "authors": [
-        "Stephanie D Talutis",
-        "Jesus G Ulloa",
-        "Hugh A Gelabert"
-      ],
-      "journal": "Journal of vascular surgery",
-      "date": "2022 Oct 12",
-      "date_sort": "2022-10-12",
-      "abstract": "OBJECTIVE: We compared the functional outcomes among adolescent athletes with venous thoracic outlet syndrome (VTOS) and neurogenic TOS (NTOS) after thoracic outlet decompression. METHODS: We performed a single-institution retrospective review of a prospective database of adolescent athletes (aged 13-19 years) from June 1, 1996 to December 31, 2021 who had undergone operative decompression for TOS. The demographic data, preoperative symptoms, operative details, and postoperative outcomes were compared. The primary outcome was the postoperative return to sport. The secondary outcomes included symptom resolution and assessment of the somatic pain scale, QuickDASH, and Derkash scores. The Fisher exact test and t test were used to evaluate the categorical and continuous variables, respectively. A logistic regression model was constructed to adjust for the influence of preoperative factors and return to sport. RESULTS: A total of 60 patients (40.0% with VTOS and 60.0% with NTOS) were included. The average age of the VTOS patients was 17.2 years vs 16.6 years for the NTOS patients (P = .265). The NTOS patients were more likely to be female (88.9% vs 62.5%; P = .024). The NTOS patients had more frequently presented with pain (97.2% vs 70.8%; P = .005), paresthesia (94.4% vs 29.1%; P = .021), and weakness (67.7% vs 12.5%; P = .004) but had less often reported swelling (25.0% vs 95.8%; P < .001). At presentation, the NTOS patients had also reported a longer symptom duration (17.7 months vs 3.1 months; P < .001). Transaxillary first rib resection with subtotal scalenectomy was performed for 100% of the VTOS patients and 94.4% of the NTOS patients undergoing cervical rib resection (2.8%) or scalenectomy alone (2.8%). Additionally, 11.1% of the NTOS patients had undergone combined first rib resection and cervical rib resection. For the VTOS patients, postoperative venography showed patent subclavian veins in 27.8%. In addition, 44.4% had required venoplasty, 16.8% had required thrombolysis, and 11% were chronically occluded. No significant differences were found in blood loss, operative time, or length of stay between the groups. No surgical complications occurred. The average follow-up was 6.3 months. Significant differences were found between the VTOS and NTOS groups for the pre- and postoperative somatic pain scale, QuickDASH, and Derkash scores. Complete symptom resolution had occurred in 83.3% of the VTOS and 75% of the NTOS patients (P = .074). No statistically significant difference in the return to sport was observed between the two groups (VTOS, 94.4%; vs NTOS, 73.9%; P = .123). Of the NTOS patients, 10.0% had had other concomitant injuries and 5.0% had had medical conditions that had precluded their return to sport. Logistic regression found no significant relationship between the preoperative somatic pain scale score, QuickDASH score, or duration of symptoms and the return to sport. CONCLUSIONS: Adolescent athletes with VTOS and NTOS can have good functional outcomes, and most will be able to return to sport after surgery. Greater initial symptom severity and concomitant injuries were observed in adolescents with NTOS. Of those who had not returned to sport postoperatively, three of seven had had unrelated health issues that had prevented their return to sport.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36243264/",
-      "doi": "https://doi.org/10.1016/j.jvs.2022.10.002"
     },
     {
       "pmid": "36620144",
@@ -10220,59 +10341,6 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/36337788/",
       "doi": "https://doi.org/10.7759/cureus.29831"
-    },
-    {
-      "pmid": "36162629",
-      "title": "When Healing Hands Hurt: Epidemiology of Thoracic Outlet Syndrome Among Physicians.",
-      "authors": [
-        "Stephanie D Talutis",
-        "Hugh A Gelabert",
-        "Jessica O'Connell",
-        "Jesus G Ulloa"
-      ],
-      "journal": "Annals of vascular surgery",
-      "date": "2022 Sep 24",
-      "date_sort": "2022-09-24",
-      "abstract": "BACKGROUND: Thoracic outlet syndrome (TOS) is an infrequent condition which results in disability in use of upper extremity. While TOS is often associated with manual labor, industrial workers, and accidents, it has not been reported in a physician (MD) population. Given the investment of time and effort in training to become a MD, the impact of TOS may be devastating. Our objective is to report the presentation and outcome of TOS in MDs. METHODS: A prospectively surgical database was reviewed for MDs who sought care of disabling TOS between 1997 and 2022. Demographic, clinical, outcome and pathological data were reviewed. Outcomes were assessed based on Somatic Pain Scale (SPS), Quick Disabilities of Arm, Shoulder and Hand (DASH) scores, and Derkash scores. Results were also assessed based on return to employment. RESULTS: A total of 19 MDs were identified, from 1,687 TOS cases. The group included 13 (63%) men, 6 (31%) women, average age 45 years (range 27-57). Presentations included 1 (5.3%) arterial TOS (ATOS), 9 (47.4%) venous TOS (VTOS), and 9 (47.4) neurogenic TOS (NTOS). All patients were right-handed, and symptomatic side was dominant hand in 7 (37%) patients. Etiologies included repetitive motion injury, athletic injury, and congenital bony abnormalities. Repetitive motion was associated with 3/9 (33%) NTOS. Significant athletic activities were noted in 12 of 19 (63%) MDs, including 8/9 (89%) VTOS and 4/9 (44%) NTOS. Athletic activities associated with VTOS included triathletes (2), rock climbing (1), long distance swimming (2), and weightlifting (3). Of the 9 NTOS cases, 3 were associated with weightlifting and 1 with skiing. Congenital causes included 1 (5%) abnormal first rib and 1 (5%) cervical rib. Time from symptom onset to consultation varied significantly according to diagnosis: ATOS 6 days, VTOS 97 days, and NTOS 2,335 days (P < 0.05). All underwent first rib resection (FRR), and 4 (4) patients required contralateral FRR. Time from surgery to last follow-up averaged 1,005 days (range: 37-4,535 days). On presentation, 6 patients were work disabled and 13 patients were work restricted. Following surgery, 4 MDs remained work restricted with mild to moderate symptoms. After surgery, standardized outcomes (SPS, Quick DASH, and Derkash score) improved in all metrics. All who were initially disabled returned to work without restriction. Significant non-TOS related comorbidities were present in all who had residual restriction. Return to work was documented in all. CONCLUSIONS: Although it has not been reported, MDs are subject to developing TOS. Causes include repetitive motions, athletic injuries, and congenital bony abnormalities. Surgical decompression is beneficial with significant reduction in pain and disability. MDs are highly motivated and insightful; accordingly, they have a very high probability of successful work resumption, with all returning to their medical positions.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36162629/",
-      "doi": "https://doi.org/10.1016/j.avsg.2022.08.019"
-    },
-    {
-      "pmid": "36280995",
-      "title": "Solitary rib metastasis from primary nasopharyngeal carcinoma: A rare clinical presentation.",
-      "authors": [
-        "Sehrish Abrar",
-        "Bilal Mazhar Qureshi",
-        "Nasir Ali",
-        "Asim Hafiz",
-        "Agha Mohammad Hammad Khan",
-        "Ahmed Nadeem Abbasi"
-      ],
-      "journal": "JPMA. The Journal of the Pakistan Medical Association",
-      "date": "2022 Sep",
-      "date_sort": "2022-09-01",
-      "abstract": "We report a case of a middle age male who presented to our tertiary care university hospital with the complaints of nasal obstruction and decrease hearing. The CT scan of head and neck exhibited a mass in nasopharynx and enlarged bilateral cervical lymph nodes. Biopsy from nasopharynx confirmed the lesion as poorly differentiated non-keratinizing squamous cell carcinoma and staged as cT2N2M0. He received neoadjuvant chemotherapy. Subsequently, he underwent chemo radiation therapy. He represented with left chest wall pain. Imaging confirmed isolated lesion on left sided 6th rib. Rib lesion was resected followed by radiation therapy to surgical bed and systemic treatment. The patient remained disease free for 4.5 years. Later, his disease relapsed, and he died of systemic disease progression. To the best of the author's knowledge, only few cases have been reported with isolated rib metastasis from nasopharyngeal carcinoma and this is the first case in which metastasectomy was considered.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36280995/",
-      "doi": "https://doi.org/10.47391/JPMA.4158"
-    },
-    {
-      "pmid": "36157794",
-      "title": "Traumatic giant cell tumor of rib: A case report.",
-      "authors": [
-        "Ying-Shian Chen",
-        "Hon-We Kao",
-        "Hsin-Ya Huang",
-        "Tsai-Wang Huang"
-      ],
-      "journal": "World journal of clinical cases",
-      "date": "2022 Aug 26",
-      "date_sort": "2022-08-26",
-      "abstract": "BACKGROUND: Giant cell tumor (GCT) of the anterior rib origin is extremely rare. We report the first case of trauma-induced GCT of the rib. CASE SUMMARY: A 22-year-old female developed a mass over the right anterior chest wall with pain 3 mo after a falling injury with blunt trauma of the right chest wall. Chest computed tomography (CT) showed a tumor originating from the right 6th rib with bony destruction, and a CT-guided needle biopsy revealed a GCT. We completely resected the tumor with chest wall and performed reconstruction. The pathological diagnosis was GCT of the bone. Twelve months after surgery, no signs of recurrence were observed. CONCLUSION: GCT of the rib after trauma has not been reported. Meticulous history-taking and image evaluation are essential for the differential diagnosis of unusual chest wall tumors.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/36157794/",
-      "doi": "https://doi.org/10.12998/wjcc.v10.i24.8662"
     },
     {
       "pmid": "35879910",
@@ -10508,6 +10576,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.xrrt.2021.11.006"
     },
     {
+      "pmid": "34940973",
+      "title": "Sternal Gap Syndrome Caused by Improperly Fitted Body Armor: A Preventable Military Injury.",
+      "authors": [
+        "Arada Wongmek",
+        "Matthew Parry",
+        "Shawna Scully"
+      ],
+      "journal": "Medical journal (Fort Sam Houston, Tex.)",
+      "date": "2022 Jan",
+      "date_sort": "2022-01-01",
+      "abstract": "Isolated atrophy of the pectoralis major muscle (PMM) secondary to traumatic lesion of the medial pectoral nerve is a known entity in the field of neuromuscular electrodiagnostics. Recent literature has begun describing a Pectoral Gap Phenomenon in which this atrophy occurs bilaterally as an overuse injury, leading to a marked concavity in the central chest wall musculature. While there is limited information in science journals on this topic, social media posts on weight lifting discuss the topic frequently. We report a case in which a soldier's body armor crushed the lateral medial and pectoral nerves against the anterior chest wall causing permanent upper body weakness. To optimize military medical readiness, awareness of this disorder and the pathophysiology causing it should spread so as to mitigate this potential for significant disability.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34940973/"
+    },
+    {
       "pmid": "34994238",
       "title": "Diagnostic value of chest computed tomography images in adult Poland syndrome: a report of two cases.",
       "authors": [
@@ -10527,21 +10610,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/34994238/",
       "doi": "https://doi.org/10.1177/03000605211069485"
-    },
-    {
-      "pmid": "34940973",
-      "title": "Sternal Gap Syndrome Caused by Improperly Fitted Body Armor: A Preventable Military Injury.",
-      "authors": [
-        "Arada Wongmek",
-        "Matthew Parry",
-        "Shawna Scully"
-      ],
-      "journal": "Medical journal (Fort Sam Houston, Tex.)",
-      "date": "2022 Jan",
-      "date_sort": "2022-01-01",
-      "abstract": "Isolated atrophy of the pectoralis major muscle (PMM) secondary to traumatic lesion of the medial pectoral nerve is a known entity in the field of neuromuscular electrodiagnostics. Recent literature has begun describing a Pectoral Gap Phenomenon in which this atrophy occurs bilaterally as an overuse injury, leading to a marked concavity in the central chest wall musculature. While there is limited information in science journals on this topic, social media posts on weight lifting discuss the topic frequently. We report a case in which a soldier's body armor crushed the lateral medial and pectoral nerves against the anterior chest wall causing permanent upper body weakness. To optimize military medical readiness, awareness of this disorder and the pathophysiology causing it should spread so as to mitigate this potential for significant disability.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34940973/"
     },
     {
       "pmid": "34952267",
@@ -10807,22 +10875,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.amsu.2021.102280"
     },
     {
-      "pmid": "34012849",
-      "title": "A narrative review of Poland's syndrome: theories of its genesis, evolution and its diagnosis and treatment.",
-      "authors": [
-        "Eman Awadh Abduladheem Hashim",
-        "Bin Huey Quek",
-        "Suresh Chandran"
-      ],
-      "journal": "Translational pediatrics",
-      "date": "2021 Apr",
-      "date_sort": "2021-04-01",
-      "abstract": "Poland's syndrome (PS) is a rare musculoskeletal congenital anomaly with a wide spectrum of presentations. It is typically characterized by hypoplasia or aplasia of pectoral muscles, mammary hypoplasia and variably associated ipsilateral limb anomalies. Limb defects can vary in severity, ranging from syndactyly to phocomelia. Most cases are sporadic but familial cases with intrafamilial variability have been reported. Several theories have been proposed regarding the genesis of PS. Vascular disruption theory, \"the subclavian artery supply disruption sequence\" (SASDS) remains the most accepted pathogenic mechanism. Clinical presentations can vary in severity from syndactyly to phocomelia in the limbs and in the thorax, rib defects to severe chest wall anomalies with impaired lung function. Most patients have subtle presentation at birth and milder forms in childhood. Functional limitations due to PS are usually minimal. Surgical treatment aims to improve pulmonary functions arising from severe thoracic deformities but is more often done to enhance the cosmesis. The use of adipose-derived mesenchymal stem cells and fat transfer have shown promising results in recent times for correction of chest defects and breast augmentation. Gaining deeper insights into the etiopathogenesis and clinical presentation of PS will improve the clinical recognition and management of this rare condition. In this review article, we aim to outline the details of this syndrome including its etiopathogenesis, evolution, spectrum of clinical manifestations, other systemic associations, diagnostic modalities, and recent advances in treatment.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/34012849/",
-      "doi": "https://doi.org/10.21037/tp-20-320"
-    },
-    {
       "pmid": "33181754",
       "title": "18F-FDG PET/CT in a Rare Case of Poland Syndrome and Gastric Cancer.",
       "authors": [
@@ -10837,6 +10889,22 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/33181754/",
       "doi": "https://doi.org/10.1097/RLU.0000000000003392"
+    },
+    {
+      "pmid": "34012849",
+      "title": "A narrative review of Poland's syndrome: theories of its genesis, evolution and its diagnosis and treatment.",
+      "authors": [
+        "Eman Awadh Abduladheem Hashim",
+        "Bin Huey Quek",
+        "Suresh Chandran"
+      ],
+      "journal": "Translational pediatrics",
+      "date": "2021 Apr",
+      "date_sort": "2021-04-01",
+      "abstract": "Poland's syndrome (PS) is a rare musculoskeletal congenital anomaly with a wide spectrum of presentations. It is typically characterized by hypoplasia or aplasia of pectoral muscles, mammary hypoplasia and variably associated ipsilateral limb anomalies. Limb defects can vary in severity, ranging from syndactyly to phocomelia. Most cases are sporadic but familial cases with intrafamilial variability have been reported. Several theories have been proposed regarding the genesis of PS. Vascular disruption theory, \"the subclavian artery supply disruption sequence\" (SASDS) remains the most accepted pathogenic mechanism. Clinical presentations can vary in severity from syndactyly to phocomelia in the limbs and in the thorax, rib defects to severe chest wall anomalies with impaired lung function. Most patients have subtle presentation at birth and milder forms in childhood. Functional limitations due to PS are usually minimal. Surgical treatment aims to improve pulmonary functions arising from severe thoracic deformities but is more often done to enhance the cosmesis. The use of adipose-derived mesenchymal stem cells and fat transfer have shown promising results in recent times for correction of chest defects and breast augmentation. Gaining deeper insights into the etiopathogenesis and clinical presentation of PS will improve the clinical recognition and management of this rare condition. In this review article, we aim to outline the details of this syndrome including its etiopathogenesis, evolution, spectrum of clinical manifestations, other systemic associations, diagnostic modalities, and recent advances in treatment.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/34012849/",
+      "doi": "https://doi.org/10.21037/tp-20-320"
     },
     {
       "pmid": "33725865",
@@ -10875,21 +10943,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1007/s00276-021-02703-y"
     },
     {
-      "pmid": "33220775",
-      "title": "Reoperation for Persistent or Recurrent Neurogenic Thoracic Outlet Syndrome.",
-      "authors": [
-        "William W Phillips",
-        "Dean M Donahue"
-      ],
-      "journal": "Thoracic surgery clinics",
-      "date": "2021 Feb",
-      "date_sort": "2021-02-01",
-      "abstract": "Identifying the exact cause for persistent and recurrent neurogenic thoracic outlet syndrome (NTOS) is challenging even with high-resolution imaging of the thoracic outlet. Improvement can be achieved with redo first rib resection, although the posterior first rib remnant is one of several potential points of brachial plexus compression. In approaching reoperative surgery for NTOS, the aim is to provide complete thoracic outlet decompression as guided by the patient's history, physical examination, and adjunctive imaging. This may involve resection of the posterior first rib remnant, scar tissue encasing the brachial plexus, elongated C7 transverse process, cervical rib, and/or pectoralis minor tendon.",
-      "article_type": "Review",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33220775/",
-      "doi": "https://doi.org/10.1016/j.thorsurg.2020.08.011"
-    },
-    {
       "pmid": "33220766",
       "title": "Anatomy and Embryology of the Thoracic Outlet.",
       "authors": [
@@ -10903,6 +10956,21 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/33220766/",
       "doi": "https://doi.org/10.1016/j.thorsurg.2020.09.007"
+    },
+    {
+      "pmid": "33220775",
+      "title": "Reoperation for Persistent or Recurrent Neurogenic Thoracic Outlet Syndrome.",
+      "authors": [
+        "William W Phillips",
+        "Dean M Donahue"
+      ],
+      "journal": "Thoracic surgery clinics",
+      "date": "2021 Feb",
+      "date_sort": "2021-02-01",
+      "abstract": "Identifying the exact cause for persistent and recurrent neurogenic thoracic outlet syndrome (NTOS) is challenging even with high-resolution imaging of the thoracic outlet. Improvement can be achieved with redo first rib resection, although the posterior first rib remnant is one of several potential points of brachial plexus compression. In approaching reoperative surgery for NTOS, the aim is to provide complete thoracic outlet decompression as guided by the patient's history, physical examination, and adjunctive imaging. This may involve resection of the posterior first rib remnant, scar tissue encasing the brachial plexus, elongated C7 transverse process, cervical rib, and/or pectoralis minor tendon.",
+      "article_type": "Review",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33220775/",
+      "doi": "https://doi.org/10.1016/j.thorsurg.2020.08.011"
     },
     {
       "pmid": "33637466",
@@ -11222,23 +11290,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1093/ptj/pzz174"
     },
     {
-      "pmid": "33078151",
-      "title": "Venous Thoracic Outlet Syndrome Caused by Double Compression of the Axillosubclavian Vein: A Case Report.",
-      "authors": [
-        "Niels Pesser",
-        "Marijn M L van den Houten",
-        "Marc R H M van Sambeek",
-        "Joep A W Teijink"
-      ],
-      "journal": "EJVES vascular forum",
-      "date": "2020 Feb 27",
-      "date_sort": "2020-02-27",
-      "abstract": "INTRODUCTION: In venous thoracic outlet syndrome (VTOS), pathology around the axillosubclavian vein causes venous compression with the subsequent development of upper extremity symptoms. This case report describes the analysis of all possible compression sites and subsequent treatment of VTOS patients with multiple compression points. REPORT: A 22 year old male presented with severe pain and swelling in his right arm, which persisted after a conservatively managed primary upper extremity deep vein thrombosis. Compression of the axillosubclavian vein was seen both at the level of the pectoralis minor and the costoclavicular spaces. Both compression points were successfully treated by combining thoracic outlet decompression surgery with pectoralis minor tenotomy. DISCUSSION: This report underlines the importance of considering the possibility of multiple compression sites in patients with VTOS. Incomplete surgical release of all compression points leaves patients prone to re-thrombosis and/or persistent post-thrombotic syndrome. Timely recognition of all abnormalities on venography may allow for adjustment of surgical treatment accordingly.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/33078151/",
-      "doi": "https://doi.org/10.1016/j.ejvsvf.2020.02.002"
-    },
-    {
       "pmid": "32115317",
       "title": "Differences in quality of life outcomes after paraclavicular decompression for thoracic outlet syndrome.",
       "authors": [
@@ -11258,6 +11309,23 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/32115317/",
       "doi": "https://doi.org/10.1016/j.jvs.2019.12.037"
+    },
+    {
+      "pmid": "33078151",
+      "title": "Venous Thoracic Outlet Syndrome Caused by Double Compression of the Axillosubclavian Vein: A Case Report.",
+      "authors": [
+        "Niels Pesser",
+        "Marijn M L van den Houten",
+        "Marc R H M van Sambeek",
+        "Joep A W Teijink"
+      ],
+      "journal": "EJVES vascular forum",
+      "date": "2020 Feb 27",
+      "date_sort": "2020-02-27",
+      "abstract": "INTRODUCTION: In venous thoracic outlet syndrome (VTOS), pathology around the axillosubclavian vein causes venous compression with the subsequent development of upper extremity symptoms. This case report describes the analysis of all possible compression sites and subsequent treatment of VTOS patients with multiple compression points. REPORT: A 22 year old male presented with severe pain and swelling in his right arm, which persisted after a conservatively managed primary upper extremity deep vein thrombosis. Compression of the axillosubclavian vein was seen both at the level of the pectoralis minor and the costoclavicular spaces. Both compression points were successfully treated by combining thoracic outlet decompression surgery with pectoralis minor tenotomy. DISCUSSION: This report underlines the importance of considering the possibility of multiple compression sites in patients with VTOS. Incomplete surgical release of all compression points leaves patients prone to re-thrombosis and/or persistent post-thrombotic syndrome. Timely recognition of all abnormalities on venography may allow for adjustment of surgical treatment accordingly.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33078151/",
+      "doi": "https://doi.org/10.1016/j.ejvsvf.2020.02.002"
     },
     {
       "pmid": "32217273",
@@ -11383,6 +11451,21 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1080/10749357.2019.1691807"
     },
     {
+      "pmid": "31727421",
+      "title": "[Poland syndrome: Presentation of a case].",
+      "authors": [
+        "A Marmesat Montes",
+        "A Cabal García"
+      ],
+      "journal": "Semergen",
+      "date": "2019 Nov 11",
+      "date_sort": "2019-11-11",
+      "abstract": "",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31727421/",
+      "doi": "https://doi.org/10.1016/j.semerg.2019.10.004"
+    },
+    {
       "pmid": "31713182",
       "title": "Anomalous insertion of the pectoralis minor tendon at the greater tuberosity.",
       "authors": [
@@ -11397,21 +11480,6 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/31713182/",
       "doi": "https://doi.org/10.1007/s40477-019-00414-0"
-    },
-    {
-      "pmid": "31727421",
-      "title": "[Poland syndrome: Presentation of a case].",
-      "authors": [
-        "A Marmesat Montes",
-        "A Cabal García"
-      ],
-      "journal": "Semergen",
-      "date": "2019 Nov 11",
-      "date_sort": "2019-11-11",
-      "abstract": "",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/31727421/",
-      "doi": "https://doi.org/10.1016/j.semerg.2019.10.004"
     },
     {
       "pmid": "31094638",
@@ -11563,23 +11631,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.ptsp.2019.08.003"
     },
     {
-      "pmid": "30335171",
-      "title": "Complete Bilateral Brachial Plexus Injury from Rhabdomyolysis and Compartment Syndrome: Surgical Case Report.",
-      "authors": [
-        "Daniel A Tonetti",
-        "Ivan S Tarkin",
-        "Kiran Bandi",
-        "John J Moossy"
-      ],
-      "journal": "Operative neurosurgery (Hagerstown, Md.)",
-      "date": "2019 Aug 1",
-      "date_sort": "2019-08-01",
-      "abstract": "BACKGROUND AND IMPORTANCE: Acute bilateral brachial plexus injury is rare and usually a result of traction injury. Immediate operative intervention is reserved for rare cases of ongoing compression of the plexus; the role for acute decompression of the brachial plexus secondary to compartment syndrome has not been previously described. In this report, we describe the technique and role for urgent brachial plexus decompression. CLINICAL PRESENTATION: A 32-yr-old man presented with acute complete bilateral brachial plexus palsy due to focal rhabdomyolysis and brachial plexus compression after a night of excess alcohol and methadone ingestion. He had complete loss of motor and sensory function from C5 to T1, with the exception of partial sensory sparing of the C5 dermatome. Magnetic resonance imaging demonstrated diffuse muscular edema of the supraclavicular and infraclavicular fossae in addition to the pectoralis muscles and the deltoids bilaterally. He underwent urgent surgical decompression of his supraclavicular and infraclavicular fossae with fasciotomies of the pectoral muscles and the anterior deltoids, allowing direct visualization and decompression of the entire brachial plexus resulting in a near-complete functional recovery. CONCLUSION: Neurosurgeons should include brachial plexus compression due to compartment syndrome in the differential diagnosis of patients with acute upper extremity weakness, particularly when associated with prolonged immobilization and/or substance abuse. Prompt surgical decompression should be performed in these patients if imaging and laboratory data suggest compartment syndrome and resultant neurological deficit.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30335171/",
-      "doi": "https://doi.org/10.1093/ons/opy289"
-    },
-    {
       "pmid": "31107319",
       "title": "Altered Cocontraction Patterns of Humeral Head Depressors in Patients with Subacromial Pain Syndrome: A Cross-sectional Electromyography Analysis.",
       "authors": [
@@ -11599,6 +11650,23 @@ window.pubmedArticles = {
       "article_type": "Research",
       "url": "https://pubmed.ncbi.nlm.nih.gov/31107319/",
       "doi": "https://doi.org/10.1097/CORR.0000000000000745"
+    },
+    {
+      "pmid": "30335171",
+      "title": "Complete Bilateral Brachial Plexus Injury from Rhabdomyolysis and Compartment Syndrome: Surgical Case Report.",
+      "authors": [
+        "Daniel A Tonetti",
+        "Ivan S Tarkin",
+        "Kiran Bandi",
+        "John J Moossy"
+      ],
+      "journal": "Operative neurosurgery (Hagerstown, Md.)",
+      "date": "2019 Aug 1",
+      "date_sort": "2019-08-01",
+      "abstract": "BACKGROUND AND IMPORTANCE: Acute bilateral brachial plexus injury is rare and usually a result of traction injury. Immediate operative intervention is reserved for rare cases of ongoing compression of the plexus; the role for acute decompression of the brachial plexus secondary to compartment syndrome has not been previously described. In this report, we describe the technique and role for urgent brachial plexus decompression. CLINICAL PRESENTATION: A 32-yr-old man presented with acute complete bilateral brachial plexus palsy due to focal rhabdomyolysis and brachial plexus compression after a night of excess alcohol and methadone ingestion. He had complete loss of motor and sensory function from C5 to T1, with the exception of partial sensory sparing of the C5 dermatome. Magnetic resonance imaging demonstrated diffuse muscular edema of the supraclavicular and infraclavicular fossae in addition to the pectoralis muscles and the deltoids bilaterally. He underwent urgent surgical decompression of his supraclavicular and infraclavicular fossae with fasciotomies of the pectoral muscles and the anterior deltoids, allowing direct visualization and decompression of the entire brachial plexus resulting in a near-complete functional recovery. CONCLUSION: Neurosurgeons should include brachial plexus compression due to compartment syndrome in the differential diagnosis of patients with acute upper extremity weakness, particularly when associated with prolonged immobilization and/or substance abuse. Prompt surgical decompression should be performed in these patients if imaging and laboratory data suggest compartment syndrome and resultant neurological deficit.",
+      "article_type": "Case Report",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30335171/",
+      "doi": "https://doi.org/10.1093/ons/opy289"
     },
     {
       "pmid": "31687644",
@@ -11798,24 +11866,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1016/j.jbmt.2019.02.015"
     },
     {
-      "pmid": "30165657",
-      "title": "Near-infrared spectroscopy detects woody breast syndrome in chicken fillets by the markers protein content and degree of water binding.",
-      "authors": [
-        "Jens Petter Wold",
-        "Ingrid Måge",
-        "Atle Løvland",
-        "Karen Wahlstrøm Sanden",
-        "Ragni Ofstad"
-      ],
-      "journal": "Poultry science",
-      "date": "2019 Jan 1",
-      "date_sort": "2019-01-01",
-      "abstract": "The muscle syndrome woody breast (WB) impairs quality of chicken fillets and is a challenge to the poultry meat industry. There is a need for online detection of affected fillets for automatic quality sorting in process. Near-infrared spectroscopy (NIRS) is a promising method, and in this study we elucidate the spectral properties of WB versus normal fillets. On a training set of 50 chicken fillets (20 normal, 30 WB), we measured NIR, nuclear magnetic resonance (NMR) T2 relaxation distributions, and crude chemical composition. NIRS could estimate protein in the fillets with an accuracy of ±0.64 percentage points. T2 distributions showed that there was a larger share of free water in WB fillets. This difference in water binding generated a shift and narrowing of the water absorption peak in NIR around 980 nm, quantified by a bound water index (BWI). The correlation between BWI and T2 distributions was 0.78, indicating that NIRS contains information about degree of water binding. Discriminant analysis showed that NIRS obtained 100% correct classification of normal versus WB on the training set, and 96% correct classification on a test set of 52 fillets. The main reason for why NIRS can successfully discriminate between WB and normal fillets is the methods sensitivity to both protein content and degree of water binding in the muscle, both established markers for WB. The classification model can be based on NIR spectra only, calibration against protein is not needed. The affected muscle tissue associated with the WB syndrome is unevenly distributed in the fillets, and this heterogeneity was characterized by NIRS and NMR. Clear differences in water binding properties were found between the superficial 1 cm layer and the deeper layer at 1 to 2 cm depth. Significant differences in protein estimates by NIRS at different measurement points along the chicken fillets were obtained for WB fillets. The findings suggest how to obtain optimal sampling with NIRS for best possible discrimination between WB and normal breast fillets.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/30165657/",
-      "doi": "https://doi.org/10.3382/ps/pey351"
-    },
-    {
       "pmid": "32405476",
       "title": "A case report of Poland Syndrome with Absent Limb Anomalies.",
       "authors": [
@@ -11832,6 +11882,24 @@ window.pubmedArticles = {
       "article_type": "Case Report",
       "url": "https://pubmed.ncbi.nlm.nih.gov/32405476/",
       "doi": "https://doi.org/10.13107/jocr.2019.v09i04.1452"
+    },
+    {
+      "pmid": "30165657",
+      "title": "Near-infrared spectroscopy detects woody breast syndrome in chicken fillets by the markers protein content and degree of water binding.",
+      "authors": [
+        "Jens Petter Wold",
+        "Ingrid Måge",
+        "Atle Løvland",
+        "Karen Wahlstrøm Sanden",
+        "Ragni Ofstad"
+      ],
+      "journal": "Poultry science",
+      "date": "2019 Jan 1",
+      "date_sort": "2019-01-01",
+      "abstract": "The muscle syndrome woody breast (WB) impairs quality of chicken fillets and is a challenge to the poultry meat industry. There is a need for online detection of affected fillets for automatic quality sorting in process. Near-infrared spectroscopy (NIRS) is a promising method, and in this study we elucidate the spectral properties of WB versus normal fillets. On a training set of 50 chicken fillets (20 normal, 30 WB), we measured NIR, nuclear magnetic resonance (NMR) T2 relaxation distributions, and crude chemical composition. NIRS could estimate protein in the fillets with an accuracy of ±0.64 percentage points. T2 distributions showed that there was a larger share of free water in WB fillets. This difference in water binding generated a shift and narrowing of the water absorption peak in NIR around 980 nm, quantified by a bound water index (BWI). The correlation between BWI and T2 distributions was 0.78, indicating that NIRS contains information about degree of water binding. Discriminant analysis showed that NIRS obtained 100% correct classification of normal versus WB on the training set, and 96% correct classification on a test set of 52 fillets. The main reason for why NIRS can successfully discriminate between WB and normal fillets is the methods sensitivity to both protein content and degree of water binding in the muscle, both established markers for WB. The classification model can be based on NIR spectra only, calibration against protein is not needed. The affected muscle tissue associated with the WB syndrome is unevenly distributed in the fillets, and this heterogeneity was characterized by NIRS and NMR. Clear differences in water binding properties were found between the superficial 1 cm layer and the deeper layer at 1 to 2 cm depth. Significant differences in protein estimates by NIRS at different measurement points along the chicken fillets were obtained for WB fillets. The findings suggest how to obtain optimal sampling with NIRS for best possible discrimination between WB and normal breast fillets.",
+      "article_type": "Research",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30165657/",
+      "doi": "https://doi.org/10.3382/ps/pey351"
     },
     {
       "pmid": "30501388",
@@ -11952,27 +12020,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1177/0267659118794113"
     },
     {
-      "pmid": "29618110",
-      "title": "Identification of Myofascial Trigger Points in Breast Cancer Survivors with Upper Limb Pain: Interrater Reliability.",
-      "authors": [
-        "An De Groef",
-        "Marijke Van Kampen",
-        "Evi Dieltjens",
-        "Sophie De Geyter",
-        "Lore Vos",
-        "Tessa De Vrieze",
-        "Inge Geraerts",
-        "Nele Devoogdt"
-      ],
-      "journal": "Pain medicine (Malden, Mass.)",
-      "date": "2018 Aug 1",
-      "date_sort": "2018-08-01",
-      "abstract": "OBJECTIVE: Despite the increasing awareness of the contribution of myofascial dysfunctions to upper limb pain in breast cancer survivors, reliability of the identification of myofascial trigger points (MTPs) in this population has not yet been investigated. Therefore, the aim of the present study was to investigate the interrater reliability of the identification of MTPs by palpation at the upper limb region in breast cancer survivors with upper limb pain. DESIGN: Interrater reliability study. SETTING: University Hospitals Leuven, Belgium. SUBJECTS: Thirty breast cancer survivors with pain at the upper limb region. METHODS: Nine muscles (upper trapezius, levator scapulae, infraspinatus, supraspinatus, teres major and minor, subscapularis, pectoralis major, and scalene muscles) at the operated side were examined. The weighted kappa (WK) coefficient and Absolute Agreement with 95% confidence intervals were calculated. RESULTS: Moderate agreement was found for all examined upper limb muscles (WK = 0.41-0.60), except for the trapezius muscle, for which the agreement was almost perfect (WK = 0.83), and the supraspinatus muscle (WK = 0.23), for which the agreement was only fair. CONCLUSIONS: For most muscles, moderate interrater reliability for the identification of MTPs by palpation in breast cancer survivors with upper limb pain was found. Therefore, we concluded that the identification of MTPs by palpation may add to the diagnosis of the myofascial pain syndrome in breast cancer survivors.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29618110/",
-      "doi": "https://doi.org/10.1093/pm/pnx299"
-    },
-    {
       "pmid": "30002805",
       "title": "Successful use of adipose-derived mesenchymal stem cells to correct a male breast affected by Poland Syndrome: a case report.",
       "authors": [
@@ -11990,77 +12037,6 @@ window.pubmedArticles = {
       "doi": "https://doi.org/10.1093/jscr/rjy151"
     },
     {
-      "pmid": "29974181",
-      "title": "The prevalence and characteristics of the subclavius posticus muscle in the adult population on MRI.",
-      "authors": [
-        "Onur Levent Ulusoy",
-        "Deniz Alis",
-        "Aysegul Oz",
-        "Sezgi Burcin Barlas",
-        "Bedriye Koyuncu Sokmen",
-        "Sadik Sever",
-        "Ayhan Mutlu",
-        "Bulent Colakoglu"
-      ],
-      "journal": "Surgical and radiologic anatomy : SRA",
-      "date": "2018 Jul 4",
-      "date_sort": "2018-07-04",
-      "abstract": "PURPOSE: The subclavius posticus muscle (SPM) is an aberrant muscle, and the presence of the SPM has a clinical significance, since the SPM might lead to thoracic outlet syndrome (TOS). To date, no radiological study has been evaluated the prevalence of the SPM in the adult population. In this study, we aimed to assess the prevalence of the SPM using magnetic resonance imaging (MRI). METHODS: We retrospectively reviewed brachial plexus, neck, and thoracic MRI of the patients who underwent MRI for various pathologies. Only the patients whose MRI examinations did not have sufficient image quality and the patients who had any pathology that directly involved the thoracic outlet region were excluded from the study. The observers assessed images in the coronal plane to detect the presence of the SPM. The thickness of the muscle and the distance between the SPM and brachial plexus were also noted. RESULTS: MRI examinations of 350 patients, 174 males and 176 females, were evaluated. SPM was detected in 29 patients (8.3%). In 6 patients (1.7%), we identified bilateral SPM. The mean thickness of the muscle was 6.10 ± 1.60 mm (range 2.5-10 mm). In 21 sides (60%), the brachial plexus and SPM were touching each other. In the remaining 14 sides (40%), the mean distances between the SPM and brachial plexus were 2.32 ± 0.62 mm (range from 1.7 to 3.6 mm). CONCLUSIONS: We conducted the first radiological study that evaluated the prevalence of the SPM, and we also assessed the thickness of the SPM and the distance between the SPM and brachial plexus. We highlight that our study might be accounted as a first step for future studies to assess the role of the SPM in TOS.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29974181/",
-      "doi": "https://doi.org/10.1007/s00276-018-2065-6"
-    },
-    {
-      "pmid": "29569829",
-      "title": "Compartment syndrome of the deltoid and pectoralis major in a young man following quetiapine use.",
-      "authors": [
-        "Gayatri Seewoogoolam",
-        "George Miller",
-        "Beryl Tan"
-      ],
-      "journal": "ANZ journal of surgery",
-      "date": "2018 Mar 23",
-      "date_sort": "2018-03-23",
-      "abstract": "",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29569829/",
-      "doi": "https://doi.org/10.1111/ans.14468"
-    },
-    {
-      "pmid": "29396981",
-      "title": "Novel Surgical Approach for Decompression of the Scalene Triangle in Neurogenic Thoracic Outlet Syndrome.",
-      "authors": [
-        "Robert R Hagan",
-        "Joseph A Ricci",
-        "Kyle R Eberlin"
-      ],
-      "journal": "Journal of reconstructive microsurgery",
-      "date": "2018 Feb 2",
-      "date_sort": "2018-02-02",
-      "abstract": "Thoracic outlet syndrome (TOS) is a cause of upper extremity and shoulder dysfunction. TOS can present with a wide range of symptoms due to compression of the brachial plexus or its branches during their passage through the cervicothoracobrachial region or scalene triangle. There are three types of TOS: arterial, venous, and neurogenic. Neurogenic TOS (nTOS) is by far the most frequent type and represents more than 95% of all cases. Historically, surgical intervention for all types of TOS has evolved based on the treatment for a vascular etiology and has typically included a first rib resection. Despite nTOS being by far the more common type, most previous interventions have not considered treatment via peripheral nerve decompression.We describe surgical treatment of nTOS, performed on an outpatient basis, which focuses on the surgical decompression of the structures associated with the scalene triangle in conjunction with release of the pectoralis minor insertion through limited incisions. The procedure avoids the morbidity associated with first rib resection and is successful in ameliorating nTOS symptoms. Further, we propose a nomenclature shift to scalene triangle syndrome (STS) to reflect the nerve and arterial compressions needing to be addressed.",
-      "article_type": "Research",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29396981/",
-      "doi": "https://doi.org/10.1055/s-0037-1621728"
-    },
-    {
-      "pmid": "29578461",
-      "title": "Comparison of isometric cervical flexor and isometric cervical extensor system exercises on patients with neuromuscular imbalance and cervical crossed syndrome associated forward head posture.",
-      "authors": [
-        "Jaejin Lee",
-        "Dohyeon Kim",
-        "Kyunghoon Yu",
-        "Youngki Cho",
-        "Joshua H You"
-      ],
-      "journal": "Bio-medical materials and engineering",
-      "date": "2018 Jan",
-      "date_sort": "2018-01-01",
-      "abstract": "BACKGROUND: Isometric cervical flexor system exercise (ICF) and isometric cervical extensor system exercise (ICE) are cervical stabilization techniques that have been used to restore cervical crossed syndrome (CCS)-associated forward head posture. However, the therapeutic effects and underlying motor control mechanisms remain elusive. PURPOSE: The purpose of present study was investigating the concurrent therapeutic effects of ICF and ICE on muscle size, muscle imbalance ratio, and muscle recruitment sequence using ultrasound imaging and electromyography. METHODS: A total of 18 participants (7 females; age=24±4.0 years) with CCS associated with forward head posture underwent ICF and ICE. Paired t-test analysis was used for statistical analysis. RESULTS: Paired t-test analysis showed that sternocleidomastoid thickness was greater during ICF than ICE. Similarly, cross-sectional area and horizontal thickness of the longus colli were greater during ICE than ICF. The upper trapezius/lower trapezius muscle imbalance ratio and the pectoralis major/lower trapezius muscle imbalance ratio were significantly decreased during the application of ICE compared to ICF. CONCLUSIONS: These results provide compelling, mechanistic evidence as to how ICE is more beneficial for the restoration of neuromuscular imbalance than ICF in individuals with CCS.",
-      "article_type": "Comparative Study",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29578461/",
-      "doi": "https://doi.org/10.3233/BME-181728"
-    },
-    {
       "pmid": "30464140",
       "title": "Nonsyndromic Congenital Absence of the Pectoralis Muscles.",
       "authors": [
@@ -12073,27 +12049,6 @@ window.pubmedArticles = {
       "article_type": "Review",
       "url": "https://pubmed.ncbi.nlm.nih.gov/30464140/",
       "doi": "https://doi.org/10.1272/jnms.JNMS.2018_85-39"
-    },
-    {
-      "pmid": "29657625",
-      "title": "Poland Syndrome with Ipsilateral Hypoplasia of Gluteal Muscles and Contralateral Hidradenitis Suppurativa.",
-      "authors": [
-        "Pradeep Goyal",
-        "Henal Motiwala",
-        "Nishant Gupta",
-        "Sonali Gupta",
-        "Itisha Bansal",
-        "Kusum Hooda",
-        "Yogesh Kumar",
-        "Thomas D Olsavsky"
-      ],
-      "journal": "Polish journal of radiology",
-      "date": "2017 Oct 20",
-      "date_sort": "2017-10-20",
-      "abstract": "BACKGROUND: Poland syndrome (PS) is a rare congenital anomaly associated with absent or hypoplastic pectoralis major muscle and a wide spectrum of ipsilateral thoracic and upper extremity deformities. Hidradenitis suppurativa (HS) is a recurrent inflammatory follicular disease that commonly affects the apocrine-bearing skin and involves follicular occlusion and hyperkeratosis. CASE REPORT: We report a case of a 46-year-old male with a history of chronic recurrent hidradenitis suppurativa who was incidentally found to have a simple type of Poland syndrome with incidental hypoplasia of ipsilateral gluteal muscles. CONCLUSIONS: Not only can PS present with HS, which we describe for the first time, but it is also associated with a wide variability of symptoms such as previously unknown co-existence of gluteal muscles hypoplasia.",
-      "article_type": "Case Report",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/29657625/",
-      "doi": "https://doi.org/10.12659/PJR.902677"
     }
   ]
 };

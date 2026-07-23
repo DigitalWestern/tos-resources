@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4A7FA5">
     <title>Methodology — TOS Resources</title>
-    <meta name="description" content="How this site was built — who compiled the resources, data sources, update cadence, limitations, and how to report issues.">
+    <meta name="description" content="How this site was built: who compiled the resources, data sources, update cadence, limitations, and how to report issues.">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; scroll-padding-top: 72px; }
@@ -497,25 +497,25 @@
             <h2>Who compiled this</h2>
             <p>This site is maintained by a patient with neurogenic TOS (confirmed compression at the interscalene triangle and pec minor space, ulnar nerve involvement, ~15 months duration as of March 2026). I am not a clinician. I built this project to navigate my own TOS and found that the aggregated patient experience on r/ThoracicOutletSupport was a more useful starting point than any single website or paper I could find. The research documents and this website are the output of trying to organize that material into something other patients could use.</p>
 
-            <p>Because I am a patient, not a provider, the framing on this site is patient-centered: what to try, what to ask for, what to watch out for. Nothing here replaces a clinician. The goal is to help you have better conversations with your clinicians — not to substitute for them.</p>
+            <p>Because I am a patient, not a provider, the framing on this site is patient-centered: what to try, what to ask for, what to watch out for. Nothing here replaces a clinician. The goal is to help you have better conversations with your clinicians, not to substitute for them.</p>
         </section>
 
         <section id="sources">
             <h2>Data sources</h2>
             <p>Three categories of source feed into the pages on this site.</p>
 
-            <h3>Community data — r/ThoracicOutletSupport</h3>
-            <p>The core community dataset is 382 posts from r/ThoracicOutletSupport — the entire subreddit at time of scrape. The posts were collected using a Python script that queries Reddit's public JSON API with a 2-second rate limit between requests. The scraping process is described in <code>reddit-scraper/</code> in the project repo. Post numbers referenced on the topic pages (e.g., "Post #42") correspond to positions in this dataset.</p>
+            <h3>Community data from r/ThoracicOutletSupport</h3>
+            <p>The core community dataset is 382 posts from r/ThoracicOutletSupport, the entire subreddit at time of scrape. The posts were collected using a Python script that queries Reddit's public JSON API with a 2-second rate limit between requests. The scraping process is described in <code>reddit-scraper/</code> in the project repo. Post numbers referenced on the topic pages (e.g., "Post #42") correspond to positions in this dataset.</p>
             <p>From that dataset, four research documents were synthesized:</p>
             <ul>
-                <li><strong>TOS Community Research Report</strong> — treatments, exercises, recovery patterns (100 posts + expanded dataset).</li>
-                <li><strong>TOS Surgical Outcomes Report</strong> — procedures, surgeons, outcomes, failures (100 posts + expanded dataset).</li>
-                <li><strong>TOS Diagnostic Checklist</strong> — step-by-step diagnostic guide (100 posts + literature + expanded dataset).</li>
-                <li><strong>TOS Expanded Findings</strong> — companion doc covering the additional 282 posts beyond the first 100 (gaps the main docs didn't cover: POTS, cervical instability, EDS, cognitive symptoms, Botox practical details, robotic surgery).</li>
+                <li><strong>TOS Community Research Report</strong>: treatments, exercises, recovery patterns (100 posts + expanded dataset).</li>
+                <li><strong>TOS Surgical Outcomes Report</strong>: procedures, surgeons, outcomes, failures (100 posts + expanded dataset).</li>
+                <li><strong>TOS Diagnostic Checklist</strong>: step-by-step diagnostic guide (100 posts + literature + expanded dataset).</li>
+                <li><strong>TOS Expanded Findings</strong>: companion doc covering the additional 282 posts beyond the first 100 (gaps the main docs didn't cover: POTS, cervical instability, EDS, cognitive symptoms, Botox practical details, robotic surgery).</li>
             </ul>
 
-            <h3>Peer-reviewed literature — PubMed</h3>
-            <p>The <a href="literature.html">Literature page</a> indexes 600+ peer-reviewed articles sourced from PubMed via the E-utilities API. The fetch script (<code>scripts/pubmed_fetch.py</code>) queries seven TOS-related search terms and outputs a JSON database the page consumes client-side. It refreshes automatically on the 1st of every month via a GitHub Actions workflow (<code>pubmed-refresh.yml</code>) — the page shows the "last updated" date.</p>
+            <h3>Peer-reviewed literature from PubMed</h3>
+            <p>The <a href="literature.html">Literature page</a> indexes 600+ peer-reviewed articles sourced from PubMed via the E-utilities API. The fetch script (<code>scripts/pubmed_fetch.py</code>) queries seven TOS-related search terms and outputs a JSON database the page consumes client-side. It refreshes automatically on the 1st of every month via a GitHub Actions workflow (<code>pubmed-refresh.yml</code>), and the page shows the "last updated" date.</p>
 
             <h3>Clinical references embedded on the topic pages</h3>
             <p>The Surgical Outcomes Report and Medications guide cite specific published statistics (success rates, complication rates, follow-up trajectory data) from vascular and thoracic surgery journals. References are listed at the bottom of each report. Where a claim on a topic page is drawn from published literature, it carries the <span class="badge badge-peer-reviewed">Peer-reviewed</span> badge.</p>
@@ -532,7 +532,7 @@
                 <li><strong>Peer-reviewed literature</strong> is weak for: the patient experience between data points, nuanced practical guidance (specific dosing adjustments, sequential Botox strategies, PT exercise modifications), and long-term outcomes beyond typical 5-year study horizons.</li>
             </ul>
 
-            <p>The topic pages try to combine both — using community data for the practical texture and peer-reviewed data for the rate claims. The badge system (next section) is the mechanism for keeping them distinct.</p>
+            <p>The topic pages try to combine both, using community data for the practical texture and peer-reviewed data for the rate claims. The badge system (next section) is how they stay distinct.</p>
         </section>
 
         <section id="badges">
@@ -553,19 +553,19 @@
                 <div><strong>Actionable guidance</strong>Specific checklists, dosing observations, questions to ask, or sequencing suggestions drawn from the combined data.</div>
 
                 <span class="badge badge-anecdotal">Anecdotal / caution</span>
-                <div><strong>Individual report or mixed evidence</strong>A single person's experience, or an intervention where the community signal is split. Important to surface — not generalizable without context.</div>
+                <div><strong>Individual report or mixed evidence</strong>A single person's experience, or an intervention where the community signal is split. Important to surface, but not generalizable without context.</div>
             </div>
 
-            <p>Sections that combine evidence types carry multiple badges. The first two badges — peer-reviewed and clinical reference — represent the strongest evidence. The third — community-derived — is the largest proportion of content on this site, and its value is exactly what it is: high-volume, real-world patient reports that are not themselves clinical evidence but reveal patterns clinical evidence often misses.</p>
+            <p>Sections that combine evidence types carry multiple badges. Peer-reviewed and clinical reference represent the strongest evidence. Community-derived is the largest proportion of content on this site, and its value is exactly what it is: high-volume, real-world patient reports that are not themselves clinical evidence but reveal patterns clinical evidence often misses.</p>
         </section>
 
         <section id="cadence">
             <h2>Update cadence</h2>
             <ul>
-                <li><strong>Literature page.</strong> Automated monthly refresh on the 1st of each month via GitHub Actions. No manual intervention required — new PubMed articles appear within a day of being indexed.</li>
+                <li><strong>Literature page.</strong> Automated monthly refresh on the 1st of each month via GitHub Actions. No manual intervention required, and new PubMed articles appear within a day of being indexed.</li>
                 <li><strong>Topic pages &amp; research documents.</strong> Manually reviewed and updated when significant new patterns emerge from the community data or from published literature. Each page shows a "Last reviewed" date in its hero. The target review cadence is quarterly; substantive updates happen as needed between scheduled reviews.</li>
                 <li><strong>Reddit scrape.</strong> The current dataset (382 posts) is the full subreddit at time of scrape. Re-scraping is done on an as-needed basis when significant new community discussion accumulates, not on a fixed schedule.</li>
-                <li><strong>External links.</strong> The Outreach page is manually verified when referenced resources change — no automated link-checking.</li>
+                <li><strong>External links.</strong> The Outreach page is manually verified when referenced resources change. There is no automated link-checking.</li>
             </ul>
         </section>
 
@@ -590,30 +590,30 @@
             <p>Things worth being explicit about.</p>
 
             <h3>Forum population bias</h3>
-            <p>Patients who post on r/ThoracicOutletSupport are not a random sample of TOS patients. People with full, clean surgical recoveries often leave the community; people still struggling disproportionately remain and post. This biases the community signal <em>negative</em> on surgery and <em>toward</em> conservative-treatment advocacy. The topic pages try to flag this where relevant (especially on the <a href="surgery.html#surgeons">Surgery page</a>) but the bias is structural and unfixable from within the dataset.</p>
+            <p>Patients who post on r/ThoracicOutletSupport are not a random sample of TOS patients. People with full, clean surgical recoveries often leave the community. People still struggling disproportionately remain and post. This biases the community signal <em>negative</em> on surgery and <em>toward</em> conservative-treatment advocacy. The topic pages try to flag this where relevant (especially on the <a href="surgery.html#surgeons">Surgery page</a>) but the bias is structural and unfixable from within the dataset.</p>
 
             <h3>My personal bias</h3>
             <p>I am currently pursuing conservative treatment for my own nTOS. That means I have read the conservative-treatment material more carefully than the surgical material, and I've probably unconsciously weighted the conservative-treatment page more heavily toward nuance than I have the surgery page. I've tried to counterbalance this by leaning on the peer-reviewed literature more heavily in the surgical content, but the bias is real.</p>
 
             <h3>No RCT-grade evidence for many community claims</h3>
-            <p>Several of the specific practical claims on this site — serratus-before-scalenes sequencing, shoulders-up posture cues, sequential Botox injection strategy, cork-ball pec minor release — have strong community signal and mechanistic plausibility but no randomized controlled trial support. The badge system labels these as <span class="badge badge-community">Community-derived</span> or <span class="badge badge-practical">Practical tool</span> for exactly this reason.</p>
+            <p>Several of the specific practical claims on this site (serratus-before-scalenes sequencing, shoulders-up posture cues, sequential Botox injection strategy, cork-ball pec minor release) have strong community signal and mechanistic plausibility but no randomized controlled trial support. The badge system labels these as <span class="badge badge-community">Community-derived</span> or <span class="badge badge-practical">Practical tool</span> for exactly this reason.</p>
 
             <h3>Named surgeons are a snapshot</h3>
             <p>The named surgeons on the <a href="surgery.html#surgeons">Surgery page</a> are those with positive community sentiment in the 382-post dataset. Surgeons change practices, retire, or move. Community sentiment itself can lag reality. Treat the named list as a starting point, not a current directory. <a href="https://www.tosoutreach.com/find-a-surgeon" target="_blank" rel="noopener">tosoutreach.com/find-a-surgeon</a> maintains a more actively curated directory.</p>
 
             <h3>Single-maintainer project</h3>
-            <p>This site is maintained by one person (me). Content gaps, outdated sections, and inaccuracies are possible. The review log above is the honest current state — not a polished ideal.</p>
+            <p>This site is maintained by one person (me). Content gaps, outdated sections, and inaccuracies are possible. The review log above is the honest current state, not a polished ideal.</p>
         </section>
 
         <section id="ai-disclosure">
             <h2>AI &amp; automation disclosure</h2>
             <p>For full transparency about how this site is built and maintained.</p>
             <ul>
-                <li><strong>Reddit scraping:</strong> automated via a Python script using Reddit's public JSON API. Deterministic — no AI involved.</li>
-                <li><strong>PubMed literature fetch:</strong> automated via the PubMed E-utilities API on a monthly schedule. Deterministic — no AI involved.</li>
-                <li><strong>Research document synthesis:</strong> I worked with Claude (Anthropic) as a drafting and editing assistant while synthesizing the 382 raw posts into the research documents. The post-level findings, pattern extraction, and clinical interpretation are mine; Claude helped with structure, summarization, and prose. All content was reviewed by me before publication.</li>
+                <li><strong>Reddit scraping:</strong> automated via a Python script using Reddit's public JSON API. Deterministic, with no AI involved.</li>
+                <li><strong>PubMed literature fetch:</strong> automated via the PubMed E-utilities API on a monthly schedule. Deterministic, with no AI involved.</li>
+                <li><strong>Research document synthesis:</strong> I worked with Claude (Anthropic) as a drafting and editing assistant while synthesizing the 382 raw posts into the research documents. The post-level findings, pattern extraction, and clinical interpretation are mine. Claude helped with structure, summarization, and prose. All content was reviewed by me before publication.</li>
                 <li><strong>Website content:</strong> Same process. Topic pages are written with Claude as a drafting partner, from source material I've curated and reviewed. Every page is read and revised by me before it goes live.</li>
-                <li><strong>No AI is used to diagnose or interpret user health data on this site.</strong> There is no user-facing AI feature at the time of this writing. A future RAG chatbot is in the architecture stage but not yet built; when it ships, it will have its own disclosure on this page.</li>
+                <li><strong>No AI is used to diagnose or interpret user health data on this site.</strong> There is no user-facing AI feature at the time of this writing. A future RAG chatbot is in the architecture stage but not yet built. When it ships, it will have its own disclosure on this page.</li>
             </ul>
         </section>
 
@@ -627,7 +627,7 @@
             </ul>
             <div class="callout">
                 <h4>A note on feedback</h4>
-                <p>The best feedback I've gotten has been from other TOS patients reading the material critically. If you've been through something this site described incorrectly or incompletely, your experience is the correction — please share it.</p>
+                <p>The best feedback I've gotten has been from other TOS patients reading the material critically. If you've been through something this site described incorrectly or incompletely, your experience is the correction. Please share it.</p>
             </div>
         </section>
 
